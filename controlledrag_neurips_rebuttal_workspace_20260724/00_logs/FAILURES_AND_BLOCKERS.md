@@ -42,6 +42,17 @@ Artifact-tool CSV inspection could not load because macOS rejected its
 bundled native module's code signature. Python and shell CSV/schema checks
 were used instead. This does not affect the fixed-data calculations.
 
+Prompt 03 therefore produced CSV deliverables rather than a workbook and used
+its deterministic Python verifier for schema, value, hash, and interval
+checks. The verifier passed.
+
+## Resolved Prompt 03 script defect
+
+The first Prompt 03 verifier run selected the union of n=99 and n=100 scorer
+column names when loading the n=99 template and stopped with a `KeyError`
+before writing results. The selector was narrowed to the three n=99 columns;
+the rerun completed successfully. No source data was modified.
+
 ## Non-blocking structural discrepancy
 
 The actual Git root is nested under the diagrammed ingest directory. This was

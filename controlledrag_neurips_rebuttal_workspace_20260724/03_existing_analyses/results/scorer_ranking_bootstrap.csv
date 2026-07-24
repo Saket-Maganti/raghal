@@ -1,0 +1,7 @@
+panel,scorer_a,scorer_b,metric,estimate,ci_lower,ci_upper,n,valid_bootstrap_samples,classification
+n99_typical,legacy_second_nli_proxy,legacy_deberta_proxy,spearman_difference_a_minus_b,0.290945630,0.071024450,0.503885212,99,10000,stable_order
+n99_typical,ragas_style_judge,legacy_deberta_proxy,spearman_difference_a_minus_b,0.445676166,0.196244110,0.688183522,99,10000,stable_order
+n99_typical,ragas_style_judge,legacy_second_nli_proxy,spearman_difference_a_minus_b,0.154730536,0.017103880,0.313599637,99,10000,stable_order
+n100_disagreement_targeted,legacy_second_nli_proxy,legacy_deberta_proxy,spearman_difference_a_minus_b,0.602476426,0.379945677,0.806102158,100,10000,stable_order
+n100_disagreement_targeted,ragas_style_judge,legacy_deberta_proxy,spearman_difference_a_minus_b,0.540321306,0.228484635,0.835988516,100,10000,stable_order
+n100_disagreement_targeted,ragas_style_judge,legacy_second_nli_proxy,spearman_difference_a_minus_b,-0.062155120,-0.234400591,0.115665396,100,10000,ranking_uncertain

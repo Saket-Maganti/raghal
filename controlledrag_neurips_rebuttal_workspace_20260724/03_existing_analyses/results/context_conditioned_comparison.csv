@@ -1,0 +1,8 @@
+analysis,scorer,comparator,estimate,ci_lower,ci_upper,n_pairs,valid_bootstrap_samples,interpretation
+baseline_minus_hcpc_v1,legacy_deberta_proxy,,0.016773500,-0.003736387,0.036969600,200,10000,positive_means_baseline_scores_higher
+baseline_minus_hcpc_v1,context_conditioned_deberta,,-0.278688552,-0.338251491,-0.218827554,194,10000,positive_means_baseline_scores_higher
+baseline_minus_hcpc_v1,legacy_second_nli_proxy,,0.044187000,0.025390825,0.063180875,200,10000,positive_means_baseline_scores_higher
+baseline_minus_hcpc_v1,context_conditioned_second_nli,,-0.081417655,-0.122693713,-0.041601021,194,10000,positive_means_baseline_scores_higher
+baseline_minus_hcpc_v1,ragas_style_judge,,0.129850000,0.075847500,0.186103750,200,10000,positive_means_baseline_scores_higher
+context_minus_legacy_contrast_difference,context_conditioned_deberta,legacy_deberta_proxy,-0.292542160,-0.356130565,-0.230458460,194,10000,difference_of_baseline_minus_hcpc_v1_contrasts
+context_minus_legacy_contrast_difference,context_conditioned_second_nli,legacy_second_nli_proxy,-0.127160954,-0.165812432,-0.088646329,194,10000,difference_of_baseline_minus_hcpc_v1_contrasts

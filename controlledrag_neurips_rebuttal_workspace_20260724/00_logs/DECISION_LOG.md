@@ -74,3 +74,30 @@ from proposed rebuttal text. No unresolved number is silently promoted.
 Fixed-context re-encoding, fixed-generation rescoring, imported pilot
 summaries, original generated rows, aggregated statistics, and manually
 curated provenance decisions are labeled separately in the ledger.
+
+## D13 — Keep n=99 binary metrics secondary
+
+The `n=99` primary endpoint is ordinal. Prompt 03 does not invent an all-row
+binary collapse. A secondary sensitivity excludes all 16
+partially-supported rows, leaving 83 determinate rows and only four negatives;
+it is not headline evidence.
+
+## D14 — Correct legacy NLI naming
+
+Code inspection confirms that the default legacy DeBERTa and second-NLI
+zero-shot calls do not consume retrieved context. Their fixed values remain
+historically valid, but rebuttal wording must call them answer-only
+zero-shot label proxies.
+
+## D15 — Treat scorer ordering as slice-dependent
+
+RAGAS-style exceeds second NLI on the typical `n=99` slice, while their direct
+ordering is unresolved on the disagreement-targeted `n=100` slice. Prompt 03
+does not declare a universal best scorer.
+
+## D16 — Bound context, threshold, and cost findings
+
+Context-conditioned results are fixed-context re-encoding sensitivities.
+Threshold transfer is mixed across the fixed five-dataset grid. Pareto and
+cost-weight findings are point-estimate, two-dataset sensitivities. None is
+promoted to universal generalization.
