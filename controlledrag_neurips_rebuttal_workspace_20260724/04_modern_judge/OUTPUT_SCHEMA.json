@@ -1,0 +1,127 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "controlledrag-modern-judge-output-v2",
+  "title": "ControlledRAG modern-judge terminal or attempt record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "run_id",
+    "row_id",
+    "pair_id",
+    "condition",
+    "input_digest",
+    "prompt_digest",
+    "prompt_version",
+    "parser_version",
+    "requested_provider",
+    "requested_model",
+    "model_revision",
+    "returned_model",
+    "x_routed_via",
+    "x_fallback_attempts",
+    "attempt",
+    "max_attempts",
+    "status",
+    "raw_output",
+    "parsed_score",
+    "derived_label",
+    "reason",
+    "error",
+    "prompt_tokens",
+    "output_tokens",
+    "finish_reason",
+    "started_at_utc",
+    "finished_at_utc",
+    "latency_ms",
+    "device_assignment",
+    "dtype",
+    "quantization",
+    "prompt_transport",
+    "terminal",
+    "generation_metadata"
+  ],
+  "properties": {
+    "schema_version": {"const": "2.0"},
+    "run_id": {"type": "string", "minLength": 1},
+    "row_id": {"type": "string", "pattern": "^crj_[0-9a-f]{24}$"},
+    "pair_id": {"type": "string", "pattern": "^crjp_[0-9a-f]{24}$"},
+    "condition": {"enum": ["baseline", "hcpc_v1", "hcpc_v2"]},
+    "input_digest": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "prompt_digest": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "prompt_version": {"const": "controlledrag-modern-judge-prompt-v2"},
+    "parser_version": {"const": "strict-score-json-v2"},
+    "requested_provider": {"type": "string", "minLength": 1, "not": {"const": "auto"}},
+    "requested_model": {"type": "string", "minLength": 1, "not": {"const": "auto"}},
+    "model_revision": {"type": "string", "minLength": 1},
+    "returned_model": {"type": "string"},
+    "x_routed_via": {"type": "string"},
+    "x_fallback_attempts": {"type": "integer", "minimum": 0},
+    "attempt": {"type": "integer", "minimum": 1},
+    "max_attempts": {"type": "integer", "minimum": 1},
+    "status": {
+      "enum": [
+        "ok",
+        "parse_error",
+        "provider_error",
+        "routing_rejected",
+        "integrity_error"
+      ]
+    },
+    "raw_output": {"type": "string"},
+    "parsed_score": {
+      "oneOf": [
+        {"type": "null"},
+        {"type": "number", "minimum": 0.0, "maximum": 1.0}
+      ]
+    },
+    "derived_label": {
+      "oneOf": [
+        {"type": "null"},
+        {"enum": ["supported", "partially_supported", "unsupported"]}
+      ]
+    },
+    "reason": {"type": "string"},
+    "error": {"type": "string"},
+    "prompt_tokens": {
+      "oneOf": [{"type": "null"}, {"type": "integer", "minimum": 0}]
+    },
+    "output_tokens": {
+      "oneOf": [{"type": "null"}, {"type": "integer", "minimum": 0}]
+    },
+    "finish_reason": {"type": "string"},
+    "started_at_utc": {"type": "string", "format": "date-time"},
+    "finished_at_utc": {"type": "string", "format": "date-time"},
+    "latency_ms": {"type": "number", "minimum": 0},
+    "device_assignment": {"type": "string"},
+    "dtype": {"enum": ["fp16", "bf16", "fp32"]},
+    "quantization": {"enum": ["none", "4bit", "8bit"]},
+    "prompt_transport": {"enum": ["plain_text", "chat_template"]},
+    "terminal": {"type": "boolean"},
+    "generation_metadata": {"type": "object"}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"status": {"const": "ok"}}},
+      "then": {
+        "properties": {
+          "parsed_score": {"type": "number"},
+          "derived_label": {
+            "enum": ["supported", "partially_supported", "unsupported"]
+          },
+          "reason": {"type": "string", "minLength": 1},
+          "error": {"const": ""},
+          "terminal": {"const": true}
+        }
+      },
+      "else": {
+        "properties": {
+          "parsed_score": {"type": "null"},
+          "derived_label": {"type": "null"},
+          "reason": {"const": ""},
+          "error": {"type": "string", "minLength": 1}
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+analysis,claim_id,estimate,ci_lower,ci_upper,n,unit,scope,status
+scorer_ranking_uncertainty,n99_typical_legacy_second_nli_proxy_minus_legacy_deberta_proxy,0.290945630,0.071024450,0.503885212,99,Spearman rho difference,n99_typical,verified_rebuttal_safe
+scorer_ranking_uncertainty,n99_typical_ragas_style_judge_minus_legacy_deberta_proxy,0.445676166,0.196244110,0.688183522,99,Spearman rho difference,n99_typical,verified_rebuttal_safe
+scorer_ranking_uncertainty,n99_typical_ragas_style_judge_minus_legacy_second_nli_proxy,0.154730536,0.017103880,0.313599637,99,Spearman rho difference,n99_typical,verified_rebuttal_safe
+scorer_ranking_uncertainty,n100_disagreement_targeted_legacy_second_nli_proxy_minus_legacy_deberta_proxy,0.602476426,0.379945677,0.806102158,100,Spearman rho difference,n100_disagreement_targeted,verified_rebuttal_safe
+scorer_ranking_uncertainty,n100_disagreement_targeted_ragas_style_judge_minus_legacy_deberta_proxy,0.540321306,0.228484635,0.835988516,100,Spearman rho difference,n100_disagreement_targeted,verified_rebuttal_safe
+scorer_ranking_uncertainty,n100_disagreement_targeted_ragas_style_judge_minus_legacy_second_nli_proxy,-0.062155120,-0.234400591,0.115665396,100,Spearman rho difference,n100_disagreement_targeted,verified_conditional
+baseline_minus_hcpc_v1,context_legacy_deberta_proxy_baseline_minus_hcpc_v1,0.016773500,-0.003736387,0.036969600,200,mean score contrast,fixed-context re-encoding subset,verified_conditional
+baseline_minus_hcpc_v1,context_context_conditioned_deberta_baseline_minus_hcpc_v1,-0.278688552,-0.338251491,-0.218827554,194,mean score contrast,fixed-context re-encoding subset,verified_conditional
+baseline_minus_hcpc_v1,context_legacy_second_nli_proxy_baseline_minus_hcpc_v1,0.044187000,0.025390825,0.063180875,200,mean score contrast,fixed-context re-encoding subset,verified_conditional
+baseline_minus_hcpc_v1,context_context_conditioned_second_nli_baseline_minus_hcpc_v1,-0.081417655,-0.122693713,-0.041601021,194,mean score contrast,fixed-context re-encoding subset,verified_conditional
+baseline_minus_hcpc_v1,context_ragas_style_judge_baseline_minus_hcpc_v1,0.129850000,0.075847500,0.186103750,200,mean score contrast,fixed-context re-encoding subset,verified_conditional
+context_minus_legacy_contrast_difference,context_context_conditioned_deberta_context_minus_legacy_contrast_difference,-0.292542160,-0.356130565,-0.230458460,194,mean score contrast,fixed-context re-encoding subset,verified_conditional
+context_minus_legacy_contrast_difference,context_context_conditioned_second_nli_context_minus_legacy_contrast_difference,-0.127160954,-0.165812432,-0.088646329,194,mean score contrast,fixed-context re-encoding subset,verified_conditional
+threshold_transfer,threshold_transfer_pubmedqa,0.650943800,-0.290908000,1.452374000,5,recovery index across targets,tau=0.4; five fixed target datasets,verified_conditional
+threshold_transfer,threshold_transfer_naturalqs,0.448890200,-0.470518000,1.401456000,5,recovery index across targets,tau=0.5; five fixed target datasets,verified_conditional
+threshold_transfer,threshold_transfer_squad,0.051920600,-1.714244000,0.864512000,5,recovery index across targets,tau=0.3; five fixed target datasets,verified_conditional
+threshold_transfer,threshold_transfer_triviaqa,0.650943800,-0.290908000,1.452374000,5,recovery index across targets,tau=0.4; five fixed target datasets,verified_conditional
+threshold_transfer,threshold_transfer_hotpotqa,0.051920600,-1.714244000,0.864512000,5,recovery index across targets,tau=0.3; five fixed target datasets,verified_conditional
+pareto_frontier,pareto_hotpotqa,,,,600,frontier=crag,"hotpotqa; faithfulness maximize, latency/indexing minimize",verified_conditional
+pareto_frontier,pareto_squad,,,,600,frontier=crag;hcpc_v2;raptor_2l,"squad; faithfulness maximize, latency/indexing minimize",verified_conditional
