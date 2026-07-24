@@ -70,5 +70,6 @@ Use `HEADLINE_VERIFICATION_QUEUE.md` for the full order.
 
 ## Commit and push receipt
 
-The primary content commit SHA and final local metadata commit are recorded in
+The primary content commit is
+`8f66c29f24c2d56637a4ce55e6039766ee4f5ca3` and is recorded in
 `COMMIT_RECEIPT.md`. No push was attempted because visibility is public.
