@@ -1,0 +1,9 @@
+dataset,condition,n_queries,n_hallucinated,nli_faithfulness,hallucination_rate,mean_ret_similarity,mean_reranker_ce,mean_latency_s
+squad,baseline,30,0,0.8326,0.0,0.5877,0.0,5.149
+squad,reranker,30,0,0.8295,0.0,0.5705,3.8205,3.534
+squad,hcpc_v2,30,0,0.8192,0.0,0.5879,0.0,4.392
+squad,hcpc_v2_rr,30,0,0.8235,0.0,0.5879,0.0,4.354
+pubmedqa,baseline,30,7,0.5844,23.3,0.5128,0.0,14.353
+pubmedqa,reranker,30,6,0.568,20.0,0.493,1.8899,14.328
+pubmedqa,hcpc_v2,30,3,0.596,10.0,0.5128,0.0,16.893
+pubmedqa,hcpc_v2_rr,30,6,0.5811,20.0,0.5128,0.0,16.403

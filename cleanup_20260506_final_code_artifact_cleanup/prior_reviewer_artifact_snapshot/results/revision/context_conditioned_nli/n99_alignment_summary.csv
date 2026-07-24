@@ -1,0 +1,6 @@
+scorer,column,spearman_rho,ci_lo,ci_hi,n
+legacy_deberta_proxy_no_context,faith_deberta,0.1571745876035831,-0.0260929853881028,0.3306421799205681,99
+legacy_roberta_mnli_proxy_no_context,faith_second_nli,0.3933212247304472,0.220478312898171,0.5429049056173132,99
+context_conditioned_deberta,faith_deberta_ctx,0.1204342682509368,-0.0812732424909075,0.3105534720475494,95
+context_conditioned_roberta_mnli,faith_roberta_mnli_ctx,0.2241364190982664,0.0319241293240215,0.3955321885810487,95
+context_conditioned_ragas_style_judge,faith_ragas,0.4427433842414508,0.2543498432123709,0.6244301435342265,99

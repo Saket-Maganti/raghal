@@ -1,0 +1,4 @@
+dataset,seed,contrast,n_pairs,mean_diff,boot_ci95_lo,boot_ci95_hi,wilcoxon_stat,wilcoxon_p,cohens_dz
+squad,43,baseline_minus_v1,499,0.007796,-0.004504,0.020382,46325.0,0.173763569088911,0.054896
+squad,43,v2_minus_v1,499,0.005949,-0.006333,0.018181,45739.0,0.21463948083951162,0.042403
+squad,43,baseline_minus_v2,499,0.001847,-0.003824,0.007717,4281.0,0.6951371131527371,0.028331

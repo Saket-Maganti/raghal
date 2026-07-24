@@ -1,0 +1,93 @@
+\section{Human Validation}
+\label{sec:human}
+
+NLI-based faithfulness scoring captures entailment between answer claims
+and retrieved context, but reviewers reasonably question whether the
+metric tracks the kind of faithfulness humans actually care about. This
+section reports a Prolific study designed to (a) calibrate NLI scores
+against human judgement and (b) test whether the coherence paradox
+survives when faithfulness is judged by humans rather than a model.
+
+\subsection{Study design}
+
+We sample 500 (case, condition) items stratified across the five
+head-to-head conditions (§\ref{sec:headtohead}) — 100 items per
+condition, balanced within each condition across the six datasets in
+proportion to the multidataset query mix. Each item is double-annotated
+by independent Prolific workers (no overlap), yielding 1{,}000 annotation
+tasks. The full study budget is approximately £450 at the standard UK
+Prolific rate (£9/hour, 1.5~min per item).
+
+Annotators see the question, the retrieved passages, and the candidate
+answer; they do \emph{not} see the condition label or any system
+metadata. The rubric (full text in
+\texttt{results/human\_validation/study\_v1/annotation\_guide.md}) asks
+for:
+
+\begin{itemize}
+  \item A binary \textbf{Faithful} judgement (every claim supported by
+        the passages, yes/no), with explicit handling of honest
+        abstention (``I cannot find this in the passages'' = Faithful=YES
+        when correct).
+  \item A 1--5 \textbf{Correctness} rating.
+  \item A 1--5 \textbf{Helpfulness} rating.
+  \item An optional one-sentence comment.
+\end{itemize}
+
+Workers who fail a 3-item calibration set with $<$80\% agreement against
+the gold rubric are rejected and the items re-issued.
+
+\subsection{Preregistered reporting plan}
+\label{sec:human_plan}
+
+The human-validation outputs will be reported in three blocks, each
+preregistered before the Prolific launch. First, inter-annotator
+agreement: Fleiss' $\kappa$ on the binary \textbf{Faithful} judgement
+and on the two ordinal 1--5 ratings (\textbf{Correctness},
+\textbf{Helpfulness}), interpreted under the conventional bands
+($<$0.20 poor, 0.21--0.40 fair, 0.41--0.60 moderate, 0.61--0.80
+substantial, $>$0.81 almost perfect). Second, NLI-vs-human calibration:
+Spearman and Pearson correlations between the NLI faithfulness score
+and each human dimension, with $p$-values on $\rho$ and sample sizes
+restricted to items with at least two valid annotations and a defined
+NLI score. Third, per-condition human-faithfulness rates side-by-side
+with NLI-faithfulness rates for \texttt{baseline}, \texttt{hcpc\_v1},
+\texttt{hcpc\_v2}, \texttt{crag}, and \texttt{selfrag}.
+
+\subsection{Does the paradox survive human evaluation?}
+
+The load-bearing question is whether HCPC-v1 — which raises NLI-measured
+faithfulness above baseline on parts of the §\ref{sec:paradox} table
+while \emph{lowering} answer quality — also looks worse to humans, or
+whether the paradox is an artifact of the NLI scorer. The
+per-condition reporting block (human-faith rate, NLI-faith rate, and
+mean correctness for each of the five conditions) is the one the
+preregistered plan above reads directly on this question. The paradox
+is considered to survive human evaluation if \texttt{hcpc\_v1}'s human
+faithfulness rate is lower than \texttt{baseline}'s on the same matched
+query set; otherwise the §\ref{sec:paradox} effect is treated as an NLI
+artifact.
+
+\subsection{Reporting commitments}
+
+We commit in advance to reporting the human-evaluation outcome regardless
+of direction:
+
+\begin{itemize}
+  \item If $\rho_{\text{NLI},\text{human}} \geq 0.5$ \emph{and} the
+        paradox replicates (HCPC-v1 human-faith $<$ baseline human-faith),
+        the §\ref{sec:paradox} story stands.
+  \item If $\rho_{\text{NLI},\text{human}} < 0.3$, we narrow the
+        faithfulness claims to ``NLI-measured faithfulness'' throughout
+        and treat the human study as evidence that NLI is the wrong
+        oracle.
+  \item If the paradox does \emph{not} replicate under humans (HCPC-v1
+        human-faith $\geq$ baseline human-faith), we report it as a
+        falsification: the §\ref{sec:paradox} effect was an NLI
+        artifact and HCPC-v2's recovery would need a different
+        justification.
+\end{itemize}
+
+The annotation pipeline, rubric, and analysis script are released as
+part of ContextCoherenceBench (§\ref{sec:benchmark}) so the study can be
+replicated or extended on additional conditions.

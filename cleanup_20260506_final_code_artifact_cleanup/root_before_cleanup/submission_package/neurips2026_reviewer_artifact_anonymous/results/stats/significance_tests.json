@@ -1,0 +1,176 @@
+{
+  "chunk_size_squad": {
+    "factor": "chunk_size",
+    "f": 19.7203,
+    "p": 0.0,
+    "sig": true,
+    "means": {
+      "256": 0.7018,
+      "512": 0.7801,
+      "1024": 0.8105
+    },
+    "pairwise": [
+      {
+        "a": "256",
+        "b": "512",
+        "mean_a": 0.7018,
+        "mean_b": 0.7801,
+        "diff": -0.0783,
+        "p_bonf": 4.6e-05,
+        "cohen_d": -0.5723,
+        "sig": true
+      },
+      {
+        "a": "256",
+        "b": "1024",
+        "mean_a": 0.7018,
+        "mean_b": 0.8105,
+        "diff": -0.1086,
+        "p_bonf": 0.0,
+        "cohen_d": -0.8001,
+        "sig": true
+      },
+      {
+        "a": "512",
+        "b": "1024",
+        "mean_a": 0.7801,
+        "mean_b": 0.8105,
+        "diff": -0.0303,
+        "p_bonf": 0.291025,
+        "cohen_d": -0.216,
+        "sig": false
+      }
+    ]
+  },
+  "chunk_size_pubmedqa": {
+    "factor": "chunk_size",
+    "f": 3.6636,
+    "p": 0.026609,
+    "sig": true,
+    "means": {
+      "256": 0.5654,
+      "512": 0.5994,
+      "1024": 0.5965
+    },
+    "pairwise": [
+      {
+        "a": "256",
+        "b": "512",
+        "mean_a": 0.5654,
+        "mean_b": 0.5994,
+        "diff": -0.034,
+        "p_bonf": 0.050437,
+        "cohen_d": -0.3121,
+        "sig": false
+      },
+      {
+        "a": "256",
+        "b": "1024",
+        "mean_a": 0.5654,
+        "mean_b": 0.5965,
+        "diff": -0.0311,
+        "p_bonf": 0.075552,
+        "cohen_d": -0.2921,
+        "sig": false
+      },
+      {
+        "a": "512",
+        "b": "1024",
+        "mean_a": 0.5994,
+        "mean_b": 0.5965,
+        "diff": 0.0029,
+        "p_bonf": 1.0,
+        "cohen_d": 0.0269,
+        "sig": false
+      }
+    ]
+  },
+  "prompt_strategy_squad": {
+    "factor": "prompt_strategy",
+    "f": 0.046,
+    "p": 0.830261,
+    "sig": false,
+    "means": {
+      "cot": 0.7625,
+      "strict": 0.7658
+    },
+    "pairwise": [
+      {
+        "a": "cot",
+        "b": "strict",
+        "mean_a": 0.7625,
+        "mean_b": 0.7658,
+        "diff": -0.0033,
+        "p_bonf": 0.830261,
+        "cohen_d": -0.0227,
+        "sig": false
+      }
+    ]
+  },
+  "prompt_strategy_pubmedqa": {
+    "factor": "prompt_strategy",
+    "f": 1.1224,
+    "p": 0.290119,
+    "sig": false,
+    "means": {
+      "cot": 0.5931,
+      "strict": 0.581
+    },
+    "pairwise": [
+      {
+        "a": "cot",
+        "b": "strict",
+        "mean_a": 0.5931,
+        "mean_b": 0.581,
+        "diff": 0.0121,
+        "p_bonf": 0.290122,
+        "cohen_d": 0.112,
+        "sig": false
+      }
+    ]
+  },
+  "top_k_squad": {
+    "factor": "top_k",
+    "f": 2.9175,
+    "p": 0.08849,
+    "sig": false,
+    "means": {
+      "3": 0.7511,
+      "5": 0.7772
+    },
+    "pairwise": [
+      {
+        "a": "3",
+        "b": "5",
+        "mean_a": 0.7511,
+        "mean_b": 0.7772,
+        "diff": -0.0261,
+        "p_bonf": 0.08849,
+        "cohen_d": -0.1805,
+        "sig": false
+      }
+    ]
+  },
+  "top_k_pubmedqa": {
+    "factor": "top_k",
+    "f": 2.3231,
+    "p": 0.128352,
+    "sig": false,
+    "means": {
+      "3": 0.5958,
+      "5": 0.5784
+    },
+    "pairwise": [
+      {
+        "a": "3",
+        "b": "5",
+        "mean_a": 0.5958,
+        "mean_b": 0.5784,
+        "diff": 0.0174,
+        "p_bonf": 0.128355,
+        "cohen_d": 0.1611,
+        "sig": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+RAG faithfulness claims are often reported from one retriever, one
+generator, one scorer, one threshold, and one dataset. We argue that
+such single-cell numbers are \emph{under-identified}: any collapsed
+axis can materially change the reported headline under another
+defensible audit choice. We propose \textbf{ControlledRAG}, a
+seven-axis reporting standard covering generator, retriever, context
+structure, scorer, human calibration, threshold transfer, and cost,
+and demonstrate it through a self-audit of a previously published
+refinement-paradox claim about retrieval coherence. On the same fixed
+generations, NLI backbones sign-flip when moved from a zero-shot label
+proxy to a context-conditioned calling convention, with disjoint
+bootstrap CIs on a $600$-row balanced subset. Scorer rankings against
+adjudicated human labels also change across slices: RAGAS-style leads
+on a typical-row calibration ($n{=}99$), while
+\texttt{roberta-large-mnli} leads on a targeted disagreement slice
+($n{=}100$) and the legacy DeBERTa proxy turns weakly negative. A
+matched-context CCS intervention is null ($-0.002$, paired Wilcoxon
+$p{=}0.628$). The anonymized review artifact includes per-query CSVs,
+both human-evaluation slices, source traces, and analysis scripts.
+ControlledRAG turns RAG faithfulness from a single-score claim into an
+auditable, seven-axis standard.

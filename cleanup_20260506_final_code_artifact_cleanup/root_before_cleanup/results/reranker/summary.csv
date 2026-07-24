@@ -1,0 +1,14 @@
+model,dataset,chunk_size,condition,nli_faithfulness,hallucination_rate,n_samples
+mistral,pubmedqa,1024,reranked,0.5884,0.18,50
+llama3,squad,256,baseline,0.7233,0.05,100
+llama3,squad,256,reranked,0.7265,0.02,100
+llama3,squad,512,baseline,0.7523,0.05,100
+llama3,squad,512,reranked,0.7544,0.02,100
+llama3,squad,1024,baseline,0.7739,0.01,100
+llama3,squad,1024,reranked,0.7619,0.01,100
+llama3,pubmedqa,256,baseline,0.6136,0.18,50
+llama3,pubmedqa,256,reranked,0.6455,0.08,50
+llama3,pubmedqa,512,baseline,0.5862,0.2,50
+llama3,pubmedqa,512,reranked,0.5957,0.26,50
+llama3,pubmedqa,1024,baseline,0.5853,0.18,50
+llama3,pubmedqa,1024,reranked,0.5806,0.16,50

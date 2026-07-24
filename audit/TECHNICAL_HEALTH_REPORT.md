@@ -1,0 +1,410 @@
+# Technical Health Report
+
+- Checks passed: **20**
+- Checks failed: **4**
+- Checks blocked/timed out: **0**
+- No dependencies, models, or datasets were downloaded.
+- Python bytecode was redirected outside the staged source trees.
+- Builder tests that mutate generated paper artifacts were collection-checked but not executed.
+- Checks ran against the isolated copy before the final public-identity filter; paths later excluded for privacy remain represented in the manifests.
+
+## Results
+
+### cleanup_20260506_final_code_artifact_cleanup — python compileall
+
+- Status: **FAIL**
+- Duration: 0.092 seconds
+- Command: `/Library/Frameworks/Python.framework/Versions/3.11/bin/python3 -m compileall -q .`
+
+```text
+un_adaptive_chunking_ablation.py", line 38
+    from __future__ import annotations
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: from __future__ imports must occur at the beginning of the file
+
+*** Error compiling './root_before_cleanup/submission_package/neurips2026_reviewer_artifact_anonymous/experiments/run_coherence_analysis.py'...
+  File "./root_before_cleanup/submission_package/neurips2026_reviewer_artifact_anonymous/experiments/run_coherence_analysis.py", line 41
+    from __future__ import annotations
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: from __future__ imports must occur at the beginning of the file
+
+*** Error compiling './root_before_cleanup/submission_package/neurips2026_reviewer_artifact_anonymous/experiments/run_hcpc_ablation.py'...
+  File "./root_before_cleanup/submission_package/neurips2026_reviewer_artifact_anonymous/experiments/run_hcpc_ablation.py", line 45
+    from __future__ import annotations
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: from __future__ imports must occur at the beginning of the file
+
+*** Error compiling './root_before_cleanup/submission_package/neurips2026_reviewer_artifact_anonymous/experiments/run_reranker_experiment.py'...
+  File "./root_before_cleanup/submission_package/neurips2026_reviewer_artifact_anonymous/experiments/run_reranker_experiment.py", line 31
+    from __future__ import annotations
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: from __future__ imports must occur at the beginning of the file
+```
+
+### deleted_from_head — python compileall
+
+- Status: **PASS**
+- Duration: 0.026 seconds
+- Command: `/Library/Frameworks/Python.framework/Versions/3.11/bin/python3 -m compileall -q .`
+
+```text
+exit code 0
+```
+
+### moved_from_repo — python compileall
+
+- Status: **PASS**
+- Duration: 0.033 seconds
+- Command: `/Library/Frameworks/Python.framework/Versions/3.11/bin/python3 -m compileall -q .`
+
+```text
+exit code 0
+```
+
+### rag-hallucination-detection_main — python compileall
+
+- Status: **FAIL**
+- Duration: 0.042 seconds
+- Command: `/Library/Frameworks/Python.framework/Versions/3.11/bin/python3 -m compileall -q .`
+
+```text
+*** Error compiling './experiments/run_adaptive_chunking_ablation.py'...
+  File "./experiments/run_adaptive_chunking_ablation.py", line 38
+    from __future__ import annotations
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: from __future__ imports must occur at the beginning of the file
+
+*** Error compiling './experiments/run_coherence_analysis.py'...
+  File "./experiments/run_coherence_analysis.py", line 41
+    from __future__ import annotations
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: from __future__ imports must occur at the beginning of the file
+
+*** Error compiling './experiments/run_hcpc_ablation.py'...
+  File "./experiments/run_hcpc_ablation.py", line 45
+    from __future__ import annotations
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: from __future__ imports must occur at the beginning of the file
+
+*** Error compiling './experiments/run_reranker_experiment.py'...
+  File "./experiments/run_reranker_experiment.py", line 31
+    from __future__ import annotations
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: from __future__ imports must occur at the beginning of the file
+```
+
+### moved_from_repo — notebook JSON validation
+
+- Status: **PASS**
+- Duration: 0.001 seconds
+- Command: `json.loads + notebook structural keys`
+
+```text
+validated 8 notebooks
+```
+
+### all — shell syntax
+
+- Status: **PASS**
+- Duration: 0.039 seconds
+- Command: `bash -n <each .sh>`
+
+```text
+validated 17 shell scripts
+```
+
+### all — TOML parsing
+
+- Status: **PASS**
+- Duration: 0.000 seconds
+- Command: `tomllib.loads <each .toml>`
+
+```text
+validated 1 TOML files
+```
+
+### rag-hallucination-detection_main — pytest collection
+
+- Status: **PASS**
+- Duration: 0.493 seconds
+- Command: `/Library/Frameworks/Python.framework/Versions/3.11/bin/python3 -m pytest --collect-only -q tests`
+
+```text
+tests/test_ccs.py::test_ccs_single_doc_returns_one
+tests/test_ccs.py::test_ccs_in_unit_interval
+tests/test_ccs.py::test_ccs_higher_for_repeated_text
+tests/test_ccs.py::test_gate_fires_on_low_coherence
+tests/test_ccs.py::test_gate_skips_on_high_coherence
+tests/test_ccs.py::test_empty_retrieval_returns_empty
+tests/test_ccs.py::test_invalid_fallback_raises
+tests/test_ccs.py::test_log_keys_present
+tests/test_ccs.py::test_empty_log_has_full_schema
+
+9 tests collected in 0.08s
+```
+
+### rag-hallucination-detection_main — lightweight pytest
+
+- Status: **PASS**
+- Duration: 19.370 seconds
+- Command: `/Library/Frameworks/Python.framework/Versions/3.11/bin/python3 -m pytest -q tests`
+
+```text
+.........                                                                [100%]
+9 passed in 18.07s
+```
+
+### cleanup_20260506_final_code_artifact_cleanup/prior_reviewer_artifact_snapshot — pytest collection
+
+- Status: **PASS**
+- Duration: 0.496 seconds
+- Command: `/Library/Frameworks/Python.framework/Versions/3.11/bin/python3 -m pytest --collect-only -q tests`
+
+```text
+tests/test_ccs.py::test_ccs_single_doc_returns_one
+tests/test_ccs.py::test_ccs_in_unit_interval
+tests/test_ccs.py::test_ccs_higher_for_repeated_text
+tests/test_ccs.py::test_gate_fires_on_low_coherence
+tests/test_ccs.py::test_gate_skips_on_high_coherence
+tests/test_ccs.py::test_empty_retrieval_returns_empty
+tests/test_ccs.py::test_invalid_fallback_raises
+tests/test_ccs.py::test_log_keys_present
+tests/test_ccs.py::test_empty_log_has_full_schema
+
+9 tests collected in 0.08s
+```
+
+### cleanup_20260506_final_code_artifact_cleanup/prior_reviewer_artifact_snapshot — lightweight pytest
+
+- Status: **PASS**
+- Duration: 16.945 seconds
+- Command: `/Library/Frameworks/Python.framework/Versions/3.11/bin/python3 -m pytest -q tests`
+
+```text
+.........                                                                [100%]
+9 passed in 15.69s
+```
+
+### cleanup_20260506_final_code_artifact_cleanup/root_before_cleanup — pytest collection
+
+- Status: **PASS**
+- Duration: 0.499 seconds
+- Command: `/Library/Frameworks/Python.framework/Versions/3.11/bin/python3 -m pytest --collect-only -q tests`
+
+```text
+tests/test_ccs.py::test_ccs_single_doc_returns_one
+tests/test_ccs.py::test_ccs_in_unit_interval
+tests/test_ccs.py::test_ccs_higher_for_repeated_text
+tests/test_ccs.py::test_gate_fires_on_low_coherence
+tests/test_ccs.py::test_gate_skips_on_high_coherence
+tests/test_ccs.py::test_empty_retrieval_returns_empty
+tests/test_ccs.py::test_invalid_fallback_raises
+tests/test_ccs.py::test_log_keys_present
+tests/test_ccs.py::test_empty_log_has_full_schema
+
+9 tests collected in 0.08s
+```
+
+### cleanup_20260506_final_code_artifact_cleanup/root_before_cleanup — lightweight pytest
+
+- Status: **PASS**
+- Duration: 16.731 seconds
+- Command: `/Library/Frameworks/Python.framework/Versions/3.11/bin/python3 -m pytest -q tests`
+
+```text
+.........                                                                [100%]
+9 passed in 15.50s
+```
+
+### cleanup_20260506_final_code_artifact_cleanup/root_before_cleanup/submission_package/neurips2026_reviewer_artifact_anonymous — pytest collection
+
+- Status: **PASS**
+- Duration: 0.500 seconds
+- Command: `/Library/Frameworks/Python.framework/Versions/3.11/bin/python3 -m pytest --collect-only -q tests`
+
+```text
+tests/test_ccs.py::test_ccs_single_doc_returns_one
+tests/test_ccs.py::test_ccs_in_unit_interval
+tests/test_ccs.py::test_ccs_higher_for_repeated_text
+tests/test_ccs.py::test_gate_fires_on_low_coherence
+tests/test_ccs.py::test_gate_skips_on_high_coherence
+tests/test_ccs.py::test_empty_retrieval_returns_empty
+tests/test_ccs.py::test_invalid_fallback_raises
+tests/test_ccs.py::test_log_keys_present
+tests/test_ccs.py::test_empty_log_has_full_schema
+
+9 tests collected in 0.08s
+```
+
+### cleanup_20260506_final_code_artifact_cleanup/root_before_cleanup/submission_package/neurips2026_reviewer_artifact_anonymous — lightweight pytest
+
+- Status: **PASS**
+- Duration: 17.721 seconds
+- Command: `/Library/Frameworks/Python.framework/Versions/3.11/bin/python3 -m pytest -q tests`
+
+```text
+.........                                                                [100%]
+9 passed in 16.50s
+```
+
+### moved_from_repo — pytest collection
+
+- Status: **PASS**
+- Duration: 0.732 seconds
+- Command: `/Library/Frameworks/Python.framework/Versions/3.11/bin/python3 -m pytest --collect-only -q tests`
+
+```text
+tests/test_builders.py::test_headline_figure_builds
+tests/test_builders.py::test_ccs_calibration_builds
+tests/test_builders.py::test_disentanglement_figure_builds
+tests/test_builders.py::test_topk_table_builder_skips_when_no_data
+tests/test_builders.py::test_topk_table_populates_when_data_present
+tests/test_lint_paper.py::test_strip_comments_removes_line_comments
+tests/test_lint_paper.py::test_strip_comments_keeps_escaped_percent
+tests/test_lint_paper.py::test_strip_comments_preserves_non_comment_text
+tests/test_lint_paper.py::test_placeholder_re_catches_todo
+tests/test_lint_paper.py::test_double_word_re_catches_doubles
+tests/test_lint_paper.py::test_percent_re_catches_unescaped
+tests/test_lint_paper.py::test_collect_bib_keys_handles_real_file
+tests/test_lint_paper.py::test_collect_bib_keys_returns_empty_for_missing
+tests/test_lint_paper.py::test_paper_lints_clean
+
+14 tests collected in 0.26s
+```
+
+### moved_from_repo — lightweight pytest
+
+- Status: **PASS**
+- Duration: 0.957 seconds
+- Command: `/Library/Frameworks/Python.framework/Versions/3.11/bin/python3 -m pytest -q tests/test_lint_paper.py`
+
+```text
+.........                                                                [100%]
+9 passed in 0.11s
+```
+
+### moved_from_repo/pip-package — pytest collection
+
+- Status: **FAIL**
+- Duration: 0.555 seconds
+- Command: `/Library/Frameworks/Python.framework/Versions/3.11/bin/python3 -m pytest --collect-only -q tests`
+
+```text
+==================================== ERRORS ====================================
+_____________________ ERROR collecting tests/test_core.py ______________________
+ImportError while importing test module '<staging-repo>/moved_from_repo/pip-package/tests/test_core.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/test_core.py:6: in <module>
+    from context_coherence import CCSGate, ccs, ccs_from_embeddings, ccs_from_texts
+E   ModuleNotFoundError: No module named 'context_coherence'
+=========================== short test summary info ============================
+ERROR tests/test_core.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+no tests collected, 1 error in 0.13s
+```
+
+### moved_from_repo/pip-package — lightweight pytest
+
+- Status: **FAIL**
+- Duration: 0.553 seconds
+- Command: `/Library/Frameworks/Python.framework/Versions/3.11/bin/python3 -m pytest -q tests`
+
+```text
+==================================== ERRORS ====================================
+_____________________ ERROR collecting tests/test_core.py ______________________
+ImportError while importing test module '<staging-repo>/moved_from_repo/pip-package/tests/test_core.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/test_core.py:6: in <module>
+    from context_coherence import CCSGate, ccs, ccs_from_embeddings, ccs_from_texts
+E   ModuleNotFoundError: No module named 'context_coherence'
+=========================== short test summary info ============================
+ERROR tests/test_core.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 0.13s
+```
+
+### rag-hallucination-detection_main — import smoke
+
+- Status: **PASS**
+- Duration: 0.053 seconds
+- Command: `/Library/Frameworks/Python.framework/Versions/3.11/bin/python3 -c from src.ccs_gate_retriever import CCSGateRetriever; print(CCSGateRetriever.__name__)`
+
+```text
+CCSGateRetriever
+```
+
+### moved_from_repo/pip-package — import smoke
+
+- Status: **PASS**
+- Duration: 0.053 seconds
+- Command: `/Library/Frameworks/Python.framework/Versions/3.11/bin/python3 -c from context_coherence import ccs; print(ccs.__name__)`
+
+```text
+ccs
+```
+
+### moved_from_repo/pip-package — configured pytest collection
+
+- Status: **PASS**
+- Duration: 0.496 seconds
+- Command: `/Library/Frameworks/Python.framework/Versions/3.11/bin/python3 -m pytest --collect-only -q tests`
+
+```text
+tests/test_core.py::test_ccs_single_embedding_returns_one
+tests/test_core.py::test_ccs_identical_embeddings_near_one
+tests/test_core.py::test_ccs_orthogonal_embeddings_zero
+tests/test_core.py::test_ccs_in_unit_interval_with_random
+tests/test_core.py::test_dispatcher_handles_embeddings
+tests/test_core.py::test_dispatcher_requires_embedder_for_strings
+tests/test_core.py::test_ccs_from_texts_with_callable_embedder
+tests/test_core.py::test_invalid_shape_raises
+tests/test_core.py::test_gate_threshold_validation
+tests/test_core.py::test_gate_fires_on_low_coherence
+tests/test_core.py::test_gate_doesnt_fire_on_high_coherence
+tests/test_core.py::test_gate_decision_payload
+
+12 tests collected in 0.08s
+```
+
+### moved_from_repo/pip-package — configured lightweight pytest
+
+- Status: **PASS**
+- Duration: 0.513 seconds
+- Command: `/Library/Frameworks/Python.framework/Versions/3.11/bin/python3 -m pytest -q tests`
+
+```text
+............                                                             [100%]
+12 passed in 0.09s
+```
+
+### rag-hallucination-detection_main — documented lightweight workflow
+
+- Status: **PASS**
+- Duration: 1.616 seconds
+- Command: `bash run_all_analysis.sh`
+
+```text
+_label     DeBERTa                    auprc 100  0.764813 0.661970 0.853291
+scorer_alignment adjudicated_label     DeBERTa balanced_accuracy_at_0.5 100  0.415800 0.340979 0.506248
+scorer_alignment adjudicated_label     DeBERTa                  pearson 100 -0.187764      NaN      NaN
+scorer_alignment adjudicated_label     DeBERTa                 spearman 100 -0.156045      NaN      NaN
+scorer_alignment adjudicated_label  second_NLI                    auroc 100  0.793659 0.703515 0.874111
+scorer_alignment adjudicated_label  second_NLI                    auprc 100  0.928793 0.881731 0.963738
+scorer_alignment adjudicated_label  second_NLI balanced_accuracy_at_0.5 100  0.520270 0.500000 0.546672
+scorer_alignment adjudicated_label  second_NLI                  pearson 100  0.380276      NaN      NaN
+scorer_alignment adjudicated_label  second_NLI                 spearman 100  0.446432      NaN      NaN
+scorer_alignment adjudicated_label RAGAS_style                    auroc 100  0.717516 0.634608 0.789396
+scorer_alignment adjudicated_label RAGAS_style                    auprc 100  0.859367 0.785079 0.915560
+scorer_alignment adjudicated_label RAGAS_style balanced_accuracy_at_0.5 100  0.692308 0.598915 0.775239
+scorer_alignment adjudicated_label RAGAS_style                  pearson 100  0.365992      NaN      NaN
+scorer_alignment adjudicated_label RAGAS_style                 spearman 100  0.384277      NaN      NaN
+Wrote 15 rows to results/revision/fix_03/disagreement_alignment_n100.csv
+```

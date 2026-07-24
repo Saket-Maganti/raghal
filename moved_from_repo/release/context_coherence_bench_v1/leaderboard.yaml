@@ -1,0 +1,102 @@
+# Coherence Paradox benchmark — community leaderboard
+# Schema: see leaderboard/app.py.  Add new entries via PR.
+# Seed rows are from the original paper (Maganti et al., NeurIPS 2026).
+
+- method: "baseline (fixed 1024 chunks)"
+  authors: ["Maganti et al."]
+  dataset: "squad"
+  n_queries: 150
+  faith_mean: 0.7987
+  halluc_rate: 0.0267
+  ccs_mean: 0.71
+  paradox_drop: 0.0
+  submitted: "2026-04-25"
+  notes: "k=3, no rerank, paper's baseline reference"
+
+- method: "HCPC-v1"
+  authors: ["Maganti et al."]
+  dataset: "squad"
+  n_queries: 150
+  faith_mean: 0.7664
+  halluc_rate: 0.0400
+  ccs_mean: 0.72
+  paradox_drop: 0.0323
+  submitted: "2026-04-25"
+  notes: "sim_threshold=0.50, ce_threshold=0.00, sub_chunk=256"
+
+- method: "HCPC-v2"
+  authors: ["Maganti et al."]
+  dataset: "squad"
+  n_queries: 150
+  faith_mean: 0.8077
+  halluc_rate: 0.0133
+  ccs_mean: 0.70
+  paradox_drop: 0.0298
+  submitted: "2026-04-25"
+  notes: "sim=0.45, ce=-0.20, protected_top_k=2, max_refine=2"
+
+- method: "CRAG"
+  authors: ["Maganti et al."]
+  dataset: "squad"
+  n_queries: 30
+  faith_mean: 0.7872
+  halluc_rate: 0.0333
+  ccs_mean: 0.72
+  paradox_drop: 0.0115
+  submitted: "2026-04-25"
+  notes: "Corrective-RAG baseline, our reimplementation"
+
+- method: "baseline"
+  authors: ["Maganti et al."]
+  dataset: "pubmedqa"
+  n_queries: 150
+  faith_mean: 0.6013
+  halluc_rate: 0.1733
+  ccs_mean: 0.68
+  paradox_drop: 0.0
+  submitted: "2026-04-25"
+  notes: "reference"
+
+- method: "HCPC-v1"
+  authors: ["Maganti et al."]
+  dataset: "pubmedqa"
+  n_queries: 150
+  faith_mean: 0.5696
+  halluc_rate: 0.2333
+  ccs_mean: 0.70
+  paradox_drop: 0.0317
+  submitted: "2026-04-25"
+  notes: "paradox visible: worse faith, worse halluc"
+
+- method: "HCPC-v2"
+  authors: ["Maganti et al."]
+  dataset: "pubmedqa"
+  n_queries: 150
+  faith_mean: 0.5902
+  halluc_rate: 0.1667
+  ccs_mean: 0.68
+  paradox_drop: 0.0111
+  submitted: "2026-04-25"
+  notes: "v2 recovery positive (halluc lowest among 3 conds)"
+
+- method: "baseline"
+  authors: ["Maganti et al."]
+  dataset: "hotpotqa"
+  n_queries: 30
+  faith_mean: 0.6091
+  halluc_rate: 0.1667
+  ccs_mean: 0.55
+  paradox_drop: 0.0
+  submitted: "2026-04-25"
+  notes: "multi-hop reference"
+
+- method: "HCPC-v1"
+  authors: ["Maganti et al."]
+  dataset: "hotpotqa"
+  n_queries: 30
+  faith_mean: 0.6498
+  halluc_rate: 0.1667
+  ccs_mean: 0.57
+  paradox_drop: -0.0407
+  submitted: "2026-04-25"
+  notes: "v1 wins on multi-hop — paradox inverts"

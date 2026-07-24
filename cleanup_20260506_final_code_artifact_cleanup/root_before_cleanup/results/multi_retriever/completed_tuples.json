@@ -1,0 +1,10 @@
+{
+  "squad__minilm": true,
+  "squad__bge-large": true,
+  "squad__e5-large": true,
+  "squad__gte-large": true,
+  "pubmedqa__minilm": true,
+  "pubmedqa__bge-large": true,
+  "pubmedqa__e5-large": true,
+  "pubmedqa__gte-large": true
+}

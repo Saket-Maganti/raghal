@@ -1,0 +1,3 @@
+dataset,model,span_faith_base,span_faith_v1,span_faith_v2,span_paradox_drop,span_v2_recovery,claim_faith_base,claim_faith_v1,claim_faith_v2,claim_paradox_drop,claim_v2_recovery,rouge_l_base,rouge_l_v1,rouge_l_v2,unsupported_rate_base,unsupported_rate_v1,unsupported_rate_v2
+msmarco,mistral,0.6449,0.6781,0.6738,-0.0332,-0.0043,0.6462,0.6786,0.6736,-0.0324,-0.005,0.3189,0.323,0.3054,0.2242,0.075,0.1583
+qasper,mistral,0.649,0.6471,0.6483,0.0019,0.0012,0.649,0.6471,0.6506,0.0019,0.0035,0.0794,0.0869,0.0786,0.1583,0.1167,0.1292

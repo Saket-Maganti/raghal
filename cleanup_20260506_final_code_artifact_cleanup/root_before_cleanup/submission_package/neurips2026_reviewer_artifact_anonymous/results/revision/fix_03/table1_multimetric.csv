@@ -1,0 +1,4 @@
+dataset,condition,n,deberta,second_nli,ragas
+squad,baseline,2500,0.660947,0.350109,0.72964
+squad,hcpc_v1,2500,0.650271,0.318418,0.590434
+squad,hcpc_v2,2500,0.661196,0.350878,0.727948

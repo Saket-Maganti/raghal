@@ -1,0 +1,83 @@
+\section{Discussion and Limitations}
+\label{sec:discussion}
+
+\subsection{What CCS is — and is not}
+\label{sec:discussion:what_ccs_is}
+
+CCS is a \emph{measurement}, not a remedy. It tells the deployer that
+a retrieved set is internally fragmented relative to what the
+generator needs. It does not tell the deployer how to fix it. In our
+deployment policy, the remediation is to \emph{not} refine and trust
+the original retrieval. In other deployments the right move might be
+to re-retrieve with a larger $k$, fall back to zero-shot, or trigger
+external search. The diagnostic is decoupled from the response, by
+design.
+
+\subsection{Three regimes where CCS does not predict faithfulness}
+\label{sec:discussion:where_ccs_fails}
+
+A theory is more credible when its proponents articulate where it
+breaks. We find three regimes in which CCS does not reliably predict
+the paradox:
+
+\paragraph{(1) Highly redundant corpora.}
+When the corpus is dominated by near-duplicate passages (legal
+boilerplate, software changelogs), every retrieval set has high CCS
+by construction. The signal saturates and provides no
+discrimination. Diagnostic: if the median CCS across queries exceeds
+$0.85$, treat CCS as an availability check rather than a quality
+signal.
+
+\paragraph{(2) Long-context generators with single-document inputs.}
+If the generator's context window comfortably holds the entire
+relevant document and retrieval reduces to ``select this one
+document'', coherence is trivially $1.0$ and the paradox does not
+arise --- there is no fragmentation to begin with. This is consistent
+with our long-form non-result on QASPER (Table~\ref{tab:robustness_summary}).
+
+\paragraph{(3) Domain-mismatched encoders.}
+When the encoder is general-purpose and the corpus is specialised
+(MiniLM on biomedical PubMedQA), every retrieval set has \emph{low}
+CCS because the encoder cannot resolve fine-grained in-domain
+similarity. The CCS distribution collapses and the paradox is
+attenuated --- but the failure mode is different: the issue is now
+upstream encoder mismatch rather than refinement-induced
+fragmentation. CCS still detects the regime (its distribution flags
+the encoder mismatch) but cannot fix it.
+
+The common thread: CCS measures a specific structural property of the
+retrieved set. When that property is uninformative (saturated, trivial,
+or collapsed), CCS is uninformative. When it is informative, it is a
+clean predictor of refinement-induced failure.
+
+\subsection{Limitations}
+\label{sec:discussion:limits}
+
+We mark four limitations explicitly:
+
+\paragraph{Long-form generation.} The paradox is a property of
+short-answer QA where the generator must extract a precise span. On
+long-form generation (QASPER, MS-MARCO multi-sentence) the same
+intervention reduces unsupported-claim rate but the paradox itself
+does not generalise in the form measured by single-span NLI.
+
+\paragraph{Magnitude vs.\ generic noise.} On SQuAD the noise sensitivity
+slope ($-0.154$) exceeds the paradox magnitude ($0.100$). We can
+claim the paradox is sign-distinct from generic retrieval noise on
+multi-hop and biomedical datasets, but we cannot claim its magnitude
+exceeds noise on SQuAD specifically. The original $\textrm{ratio} \geq 2$
+target was not met; we report the result honestly.
+
+\paragraph{Adversarial set yield.} The auto-generated $200$-case
+adversarial set was filtered to $129$ validated cases by an NLI
+validator + length/overlap heuristic. The mechanistic classifier in
+the appendix is trained on a $20$-pair subset; full mechanistic
+validation across the $129$-case set remains a follow-up.
+
+\paragraph{Closed-model frontier.} We evaluate up to GPT-OSS-$120$B
+via Groq's free tier; we do not evaluate $400$B+ closed models
+(GPT-$4$, Claude-$3.5$). The coherence account predicts the paradox
+should attenuate further at very large scale on tasks where
+parametric memory can substitute for retrieval, and persist on tasks
+where retrieval supplies novel information. This is a clean
+prediction for follow-up work.

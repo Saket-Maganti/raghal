@@ -1,0 +1,13 @@
+table,item,n,statistic,estimate,ci_low,ci_high,n_bootstrap,seed,ci_method
+5_metric_agreement,DeBERTa / second NLI,7500,pearson_r,0.258666,0.240225,0.277546,10000,20260429,paired percentile bootstrap
+5_metric_agreement,DeBERTa / second NLI,7500,spearman_rho,0.265295,0.245049,0.284927,10000,20260429,paired percentile bootstrap
+5_metric_agreement,DeBERTa / RAGAS-style judge,7500,pearson_r,0.181871,0.161598,0.201804,10000,20260429,paired percentile bootstrap
+5_metric_agreement,DeBERTa / RAGAS-style judge,7500,spearman_rho,0.212055,0.191069,0.233460,10000,20260429,paired percentile bootstrap
+5_metric_agreement,Second NLI / RAGAS-style judge,7500,pearson_r,0.674177,0.661398,0.686447,10000,20260429,paired percentile bootstrap
+5_metric_agreement,Second NLI / RAGAS-style judge,7500,spearman_rho,0.651497,0.637773,0.664919,10000,20260429,paired percentile bootstrap
+6_human_calibration,DeBERTa-v3 NLI,99,pearson_r,0.110258,-0.045489,0.252427,10000,20260429,paired percentile bootstrap
+6_human_calibration,DeBERTa-v3 NLI,99,spearman_rho,0.103023,-0.083978,0.279126,10000,20260429,paired percentile bootstrap
+6_human_calibration,Second NLI,99,pearson_r,0.403683,0.236894,0.542764,10000,20260429,paired percentile bootstrap
+6_human_calibration,Second NLI,99,spearman_rho,0.393969,0.222611,0.541082,10000,20260429,paired percentile bootstrap
+6_human_calibration,RAGAS-style judge,99,pearson_r,0.449566,0.245765,0.621632,10000,20260429,paired percentile bootstrap
+6_human_calibration,RAGAS-style judge,99,spearman_rho,0.548699,0.375420,0.710921,10000,20260429,paired percentile bootstrap

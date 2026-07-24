@@ -1,0 +1,3 @@
+dataset,paradox_drop,paradox_drop_std,v2_recovery,v2_recovery_std,significant_drop
+pubmedqa,0.0431,0.0131,0.0439,0.0135,True
+squad,0.0693,0.004,0.0707,0.0044,True

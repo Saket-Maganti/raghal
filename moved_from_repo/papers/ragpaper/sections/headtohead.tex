@@ -1,0 +1,112 @@
+\section{Head-to-head: HCPC-v2 vs Self-RAG and CRAG}
+\label{sec:headtohead}
+
+The previous draft of this paper avoided direct comparison against
+external retrieval-augmentation methods on the grounds that our
+contribution is the failure-mode analysis rather than a new
+state-of-the-art system. Reviewers correctly noted that this leaves the
+question of whether HCPC-v2's advantage survives against published
+selective-refinement systems unanswered. This section addresses that gap
+by running Self-RAG and CRAG on the same query set, with the same
+retrieval corpus and top-$k$, alongside our four conditions.
+
+\subsection{Conditions}
+
+Five conditions are evaluated end-to-end on the multidataset query set:
+
+\begin{description}
+  \item[\textsc{Baseline}] fixed 1024-token chunks, standard top-$k$ = 3
+        retrieval, no refinement, Mistral-7B (Ollama) generator.
+  \item[\textsc{HCPC-v1}] OR-gate selective refinement on the same
+        retrieval. Always-refine when either similarity or cross-encoder
+        gate triggers.
+  \item[\textsc{HCPC-v2}] AND-gate + rank protection + merge-back, as
+        described in §\ref{sec:method}.
+  \item[\textsc{CRAG}] our reimplementation of \citet{yan2024crag}. The
+        published evaluator is a private fine-tuned T5-large; we
+        substitute a cross-encoder
+        (\texttt{ms-marco-MiniLM-L-6-v2}) and threshold its logits to
+        recover the three-bucket confidence signal (\texttt{correct} /
+        \texttt{ambiguous} / \texttt{incorrect}). Knowledge refinement
+        decomposes each retained passage into sentence-level strips and
+        keeps the top-$k$ scoring strips. Web-search augmentation is
+        disabled by default (closed-corpus comparison); the substitution
+        and the disabled web path are documented transparently in
+        \texttt{src/crag\_retriever.py}.
+  \item[\textsc{Self-RAG}] the published
+        \texttt{selfrag/selfrag\_llama2\_7b}
+        checkpoint~\citep{asai2024selfrag}, fed the same retrieval
+        passages and prompted with the model's training-time format
+        (\texttt{[Retrieve]<paragraph>...</paragraph>}). Reflection
+        tokens (\texttt{[Relevant]} / \texttt{[Fully supported]} /
+        \texttt{[Utility:N]}) are parsed and reported as diagnostics.
+        Self-RAG inference requires a CUDA GPU; the harness runs on M4
+        for the four other conditions and is re-invoked on a GPU host to
+        fill in the Self-RAG rows.
+\end{description}
+
+All conditions share: the same six datasets (§\ref{sec:multidataset}),
+the same retrieval corpus, the same NLI-based faithfulness scorer, and
+identical top-$k$ = 3.
+
+\subsection{Preregistered reporting plan}
+\label{sec:headtohead_plan}
+
+For each of the six datasets we will report two paired quantities per
+condition: the NLI-measured faithfulness rate and the binary
+hallucination rate. That is a $6 \times 2 \times 5$ grid of cells,
+populated from \texttt{results/headtohead/summary.csv}, with the
+best condition per (dataset, metric) marked in bold and 95\% bootstrap
+confidence intervals reported alongside the point estimate. All five
+conditions share the same retrieval corpus, top-$k$, and NLI scorer so
+that differences are attributable to the refinement policy rather than
+the upstream pipeline. We commit to releasing per-query records so that
+any conditional metric a reader wants (e.g., faithfulness on the subset
+where Self-RAG emits \texttt{[Fully supported]}) can be recomputed
+without re-running inference.
+
+\subsection{Diagnostics}
+
+Beyond aggregate metrics, the harness logs condition-specific decision
+traces to \texttt{results/headtohead/diagnostics.jsonl}:
+
+\begin{itemize}
+  \item \textbf{CRAG:} per-passage labels and the resulting query-level
+        decision (\texttt{correct} / \texttt{ambiguous} /
+        \texttt{incorrect}), the number of strips retained, and the
+        evaluator logits. These let us inspect whether CRAG's evaluator
+        triggers on the same queries our coherence signals flag.
+  \item \textbf{Self-RAG:} reflection-token counts per query and the
+        parsed \texttt{[Relevant]} / \texttt{[Fully supported]} /
+        \texttt{[Utility:N]} judgements. We report the conditional
+        hallucination rate when Self-RAG self-judges its output as
+        \texttt{Fully supported} versus when it does not — a measure of
+        the calibration of the model's own faithfulness self-assessment.
+\end{itemize}
+
+\subsection{What HCPC-v2 has to beat}
+
+We will treat the comparison as a success on three explicit conditions:
+
+\begin{enumerate}
+  \item HCPC-v2's faithfulness is within 1~pp of Self-RAG's on the
+        domain-matched datasets (SQuAD, NaturalQs, TriviaQA), \emph{and}
+        clearly better than CRAG-with-disabled-web.
+  \item HCPC-v2's coherence-paradox signal (faith\_drop on HCPC-v1
+        relative to baseline) reproduces the same direction we report on
+        the original 2-dataset study, on at least 4 of 6 datasets.
+  \item HCPC-v2's Self-RAG-style \emph{self-support rate} (the fraction
+        of queries on which Self-RAG itself emits \texttt{[Fully
+        supported]}) is correlated positively with our CCS metric on
+        matched queries, validating that CCS captures something the
+        Self-RAG model also tracks internally.
+\end{enumerate}
+
+\paragraph{Honest negative outcomes.} If Self-RAG dominates HCPC-v2 on
+all six datasets, the paper's contribution narrows to the failure-mode
+diagnosis (which is independently valuable but does not justify HCPC-v2
+as a deployment recommendation); we will state this outcome plainly in
+the discussion. If CRAG with web search disabled is competitive with
+Self-RAG, the practical implication is that retrieval refinement matters
+more than reflection-token training, which would also be worth reporting
+as written.

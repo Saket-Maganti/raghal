@@ -1,0 +1,9 @@
+### Gap 3 — RAG vs zero-shot (open/closed × open/closed)
+
+| domain   | retriever_strength   |   n_datasets | embedders_used   |   zs_faith |   rag_faith |   delta_faith | rag_helps   |   paradox_drop |   v2_recovery |
+|:---------|:---------------------|-------------:|:-----------------|-----------:|------------:|--------------:|:------------|---------------:|--------------:|
+| open     | weak                 |            1 | minilm           |     0.6895 |      0.7797 |        0.0902 | True        |         0.0753 |        0.0994 |
+| open     | strong               |            1 | gte-large        |     0.6895 |      0.8048 |        0.1153 | True        |        -0.0014 |       -0.0063 |
+| closed   | weak                 |            1 | minilm           |     0.6118 |      0.5913 |       -0.0205 | False       |         0.0239 |        0.0193 |
+| closed   | strong               |            1 | gte-large        |     0.6118 |      0.5872 |       -0.0246 | False       |         0.0055 |        0.002  |
+

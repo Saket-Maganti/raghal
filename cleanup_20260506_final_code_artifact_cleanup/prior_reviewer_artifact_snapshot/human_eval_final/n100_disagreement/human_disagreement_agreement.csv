@@ -1,0 +1,2 @@
+pair,n_compared,disagreements,raw_agreement,cohen_kappa
+rater1_vs_rater2,100,12,0.88,0.7209302325581395

@@ -1,0 +1,6 @@
+tune_dataset,diag_recovery,offdiag_mean_recovery,diag_minus_offdiag,must_flag_in_section8
+pubmedqa,1.452374,0.45058625,1.00178775,True
+naturalqs,1.401456,0.21074874999999998,1.19070725,True
+squad,0.822675,-0.140768,0.963443,True
+triviaqa,0.46388,0.69770975,-0.23382975,False
+hotpotqa,-0.111786,0.09284724999999998,-0.20463325,False

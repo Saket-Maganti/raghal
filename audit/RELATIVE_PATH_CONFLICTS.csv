@@ -1,0 +1,9 @@
+relative_path,folder_count,distinct_hashes,versions
+.DS_Store,4,4,cleanup_20260506_final_code_artifact_cleanup:b3ddcbf274ec:10244;deleted_from_head:2e854d407e0f:6148;moved_from_repo:8249a9b5eaa2:10244;rag-hallucination-detection_main:edc0811435bd:26628
+CLEANUP_PLAN.md,2,2,cleanup_20260506_final_code_artifact_cleanup:15ffb0debe06:4398;moved_from_repo:e2fb53ecb0af:5778
+Controlled_RAG___Saket/.DS_Store,2,2,moved_from_repo:38a08245c66a:6148;rag-hallucination-detection_main:ae33f2b882ae:6148
+Controlled_RAG___Saket/neurips_2026.pdf,2,2,moved_from_repo:bf44908e4d16:1484914;rag-hallucination-detection_main:93c827f5b66e:1491976
+Controlled_RAG___Saket/ref.bib,2,2,moved_from_repo:2d34402bf833:11002;rag-hallucination-detection_main:0018596c30fb:15229
+Controlled_RAG___Saket/sections/controlledrag_main.tex,2,2,moved_from_repo:1af84a28447b:36346;rag-hallucination-detection_main:9da9c2821675:36372
+Controlled_RAG___Saket/supplement.tex,2,2,moved_from_repo:08fec9bdc54c:38603;rag-hallucination-detection_main:297060c66827:38770
+papers/.DS_Store,2,2,deleted_from_head:0ce42f0c61ea:6148;moved_from_repo:0018c305d301:6148

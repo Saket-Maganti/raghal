@@ -1,0 +1,34 @@
+\begin{figure}[!htb]
+\centering
+\resizebox{0.98\linewidth}{!}{%
+\begin{tikzpicture}[
+  font=\small,
+  node distance=10mm and 11mm,
+  block/.style={draw, rounded corners=3pt, minimum width=2.8cm, minimum height=9mm, align=center, thick, inner sep=4pt},
+  flow/.style={-{Stealth[length=3mm]}, very thick},
+  aux/.style={flow, dashed}
+]
+\node[block, fill=blue!10] (query) {Input question};
+\node[block, fill=teal!10, right=of query] (embed) {Query encoder\\\texttt{all-MiniLM-L6-v2}};
+\node[block, fill=orange!12, right=of embed] (retrieve) {Dense retrieval\\top-$k$ candidates};
+\node[block, fill=red!10, right=of retrieve] (hcpc) {Optional HCPC\\refinement};
+\node[block, fill=violet!12, right=of hcpc] (generate) {Generator\\Mistral / Llama};
+\node[block, fill=gray!12, right=of generate] (nli) {NLI faithfulness\\scoring};
+
+\node[block, fill=green!10, above=of retrieve] (store) {ChromaDB index};
+\node[block, fill=green!6, left=of store] (chunks) {Document chunking};
+\node[block, fill=green!6, left=of chunks] (corpus) {Corpus};
+
+\draw[flow] (query) -- (embed);
+\draw[flow] (embed) -- (retrieve);
+\draw[flow] (retrieve) -- (hcpc);
+\draw[flow] (hcpc) -- (generate);
+\draw[flow] (generate) -- (nli);
+\draw[aux] (corpus) -- (chunks);
+\draw[aux] (chunks) -- (store);
+\draw[aux] (store) -- (retrieve);
+\end{tikzpicture}%
+}
+\caption{Shared experimental pipeline. All conditions use the same encoder, generator family, and NLI-based faithfulness scorer; only the retrieval strategy changes. This separation lets us attribute outcome differences to retrieval-side design choices rather than to the language model or evaluator.}
+\label{fig:pipeline}
+\end{figure}

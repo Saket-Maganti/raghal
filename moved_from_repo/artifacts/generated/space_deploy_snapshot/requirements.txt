@@ -1,0 +1,8 @@
+gradio>=4.44.0
+sentence-transformers>=2.2
+pandas>=2.0
+numpy>=1.24
+
+# Python 3.13 dropped stdlib `audioop`; pydub (a Gradio transitive dep)
+# still imports it at module load.  audioop-lts is the official backport.
+audioop-lts; python_version >= "3.13"

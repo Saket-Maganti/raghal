@@ -1,0 +1,1382 @@
+[
+  {
+    "n_strong": 0,
+    "n_weak": 3,
+    "n_refined": 3,
+    "strong_sims": [],
+    "weak_sims": [
+      0.3967,
+      0.2543,
+      0.1003
+    ],
+    "refinements": [
+      {
+        "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+        "parent_sim": 0.3967,
+        "parent_ce": 8.7047,
+        "n_sub_chunks": 5,
+        "best_sub_preview": ". The American Football Conference (AFC) champion Denver Broncos defeated the Na",
+        "best_sub_sim": 0.6368,
+        "best_sub_ce": 3.4854,
+        "sim_improvement": 0.2401,
+        "ce_improvement": -5.2193
+      },
+      {
+        "parent_preview": "The Panthers finished the regular season with a 15\u20131 record, and quarterback Cam Newton was named the NFL Most Valuable ",
+        "parent_sim": 0.2543,
+        "parent_ce": 0.5722,
+        "n_sub_chunks": 4,
+        "best_sub_preview": ". They joined the Patriots, Dallas Cowboys, and Pittsburgh Steelers as one of fo",
+        "best_sub_sim": 0.6745,
+        "best_sub_ce": 2.0008,
+        "sim_improvement": 0.4202,
+        "ce_improvement": 1.4286
+      },
+      {
+        "parent_preview": "As the designated home team in the annual rotation between AFC and NFC teams, the Broncos elected to wear their road whi",
+        "parent_sim": 0.1003,
+        "parent_ce": -0.8451,
+        "n_sub_chunks": 5,
+        "best_sub_preview": ". The only other AFC champion team to have worn white as the designated home tea",
+        "best_sub_sim": 0.6694,
+        "best_sub_ce": 3.8164,
+        "sim_improvement": 0.5691,
+        "ce_improvement": 4.6616
+      }
+    ]
+  },
+  {
+    "n_strong": 0,
+    "n_weak": 3,
+    "n_refined": 3,
+    "strong_sims": [],
+    "weak_sims": [
+      0.4176,
+      0.283,
+      0.0722
+    ],
+    "refinements": [
+      {
+        "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+        "parent_sim": 0.4176,
+        "parent_ce": 8.3569,
+        "n_sub_chunks": 5,
+        "best_sub_preview": "Super Bowl 50 was an American football game to determine the champion of the Nat",
+        "best_sub_sim": 0.6227,
+        "best_sub_ce": 4.1136,
+        "sim_improvement": 0.2051,
+        "ce_improvement": -4.2433
+      },
+      {
+        "parent_preview": "The Panthers finished the regular season with a 15\u20131 record, and quarterback Cam Newton was named the NFL Most Valuable ",
+        "parent_sim": 0.283,
+        "parent_ce": 1.243,
+        "n_sub_chunks": 4,
+        "best_sub_preview": ". They joined the Patriots, Dallas Cowboys, and Pittsburgh Steelers as one of fo",
+        "best_sub_sim": 0.6555,
+        "best_sub_ce": 1.8088,
+        "sim_improvement": 0.3725,
+        "ce_improvement": 0.5658
+      },
+      {
+        "parent_preview": "For the third straight season, the number one seeds from both conferences met in the Super Bowl. The Carolina Panthers b",
+        "parent_sim": 0.0722,
+        "parent_ce": -2.7134,
+        "n_sub_chunks": 5,
+        "best_sub_preview": ". Coincidentally, both teams were coached by John Fox in their last Super Bowl a",
+        "best_sub_sim": 0.5783,
+        "best_sub_ce": 1.3401,
+        "sim_improvement": 0.5061,
+        "ce_improvement": 4.0534
+      }
+    ]
+  },
+  {
+    "n_strong": 0,
+    "n_weak": 3,
+    "n_refined": 3,
+    "strong_sims": [],
+    "weak_sims": [
+      0.3872,
+      0.3318,
+      0.2147
+    ],
+    "refinements": [
+      {
+        "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+        "parent_sim": 0.3872,
+        "parent_ce": 8.4794,
+        "n_sub_chunks": 5,
+        "best_sub_preview": "which the game would have been known as \"Super Bowl L\"), so that the logo could ",
+        "best_sub_sim": 0.5887,
+        "best_sub_ce": -0.5422,
+        "sim_improvement": 0.2015,
+        "ce_improvement": -9.0216
+      },
+      {
+        "parent_preview": "On May 21, 2013, NFL owners at their spring meetings in Boston voted and awarded the game to Levi's Stadium. The $1.2 bi",
+        "parent_sim": 0.3318,
+        "parent_ce": 1.9241,
+        "n_sub_chunks": 2,
+        "best_sub_preview": ". It is the first Super Bowl held in the San Francisco Bay Area since Super Bowl",
+        "best_sub_sim": 0.682,
+        "best_sub_ce": 3.7908,
+        "sim_improvement": 0.3502,
+        "ce_improvement": 1.8667
+      },
+      {
+        "parent_preview": "The game's media day, which was typically held on the Tuesday afternoon prior to the game, was moved to the Monday eveni",
+        "parent_sim": 0.2147,
+        "parent_ce": 1.746,
+        "n_sub_chunks": 2,
+        "best_sub_preview": "The game's media day, which was typically held on the Tuesday afternoon prior to",
+        "best_sub_sim": 0.613,
+        "best_sub_ce": 1.4054,
+        "sim_improvement": 0.3983,
+        "ce_improvement": -0.3406
+      }
+    ]
+  },
+  {
+    "n_strong": 0,
+    "n_weak": 3,
+    "n_refined": 3,
+    "strong_sims": [],
+    "weak_sims": [
+      0.4426,
+      0.3528,
+      0.1819
+    ],
+    "refinements": [
+      {
+        "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+        "parent_sim": 0.4426,
+        "parent_ce": 9.7919,
+        "n_sub_chunks": 5,
+        "best_sub_preview": "Super Bowl 50 was an American football game to determine the champion of the Nat",
+        "best_sub_sim": 0.6572,
+        "best_sub_ce": 7.4511,
+        "sim_improvement": 0.2146,
+        "ce_improvement": -2.3408
+      },
+      {
+        "parent_preview": "The Panthers finished the regular season with a 15\u20131 record, and quarterback Cam Newton was named the NFL Most Valuable ",
+        "parent_sim": 0.3528,
+        "parent_ce": 0.6129,
+        "n_sub_chunks": 4,
+        "best_sub_preview": ". They joined the Patriots, Dallas Cowboys, and Pittsburgh Steelers as one of fo",
+        "best_sub_sim": 0.6716,
+        "best_sub_ce": 2.1886,
+        "sim_improvement": 0.3188,
+        "ce_improvement": 1.5757
+      },
+      {
+        "parent_preview": "The Broncos took an early lead in Super Bowl 50 and never trailed. Newton was limited by Denver's defense, which sacked ",
+        "parent_sim": 0.1819,
+        "parent_ce": 4.4651,
+        "n_sub_chunks": 2,
+        "best_sub_preview": "The Broncos took an early lead in Super Bowl 50 and never trailed. Newton was li",
+        "best_sub_sim": 0.5489,
+        "best_sub_ce": 3.533,
+        "sim_improvement": 0.367,
+        "ce_improvement": -0.932
+      }
+    ]
+  },
+  {
+    "n_strong": 0,
+    "n_weak": 3,
+    "n_refined": 3,
+    "strong_sims": [],
+    "weak_sims": [
+      0.2475,
+      0.1789,
+      0.1196
+    ],
+    "refinements": [
+      {
+        "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+        "parent_sim": 0.2475,
+        "parent_ce": 3.2164,
+        "n_sub_chunks": 5,
+        "best_sub_preview": ". As this was the 50th Super Bowl, the league emphasized the \"golden anniversary",
+        "best_sub_sim": 0.6888,
+        "best_sub_ce": 4.8062,
+        "sim_improvement": 0.4413,
+        "ce_improvement": 1.5899
+      },
+      {
+        "parent_preview": "Various gold-themed promotions and initiatives were held throughout the 2015 NFL season to tie into the \"Golden Super Bo",
+        "parent_sim": 0.1789,
+        "parent_ce": -0.8098,
+        "n_sub_chunks": 3,
+        "best_sub_preview": "Various gold-themed promotions and initiatives were held throughout the 2015 NFL",
+        "best_sub_sim": 0.561,
+        "best_sub_ce": -2.1772,
+        "sim_improvement": 0.3821,
+        "ce_improvement": -1.3674
+      },
+      {
+        "parent_preview": ". The Broncos' decision to wear white meant the Panthers would wear their standard home uniform: black jerseys with silv",
+        "parent_sim": 0.1196,
+        "parent_ce": -8.6678,
+        "n_sub_chunks": 1,
+        "best_sub_preview": ". The Broncos' decision to wear white meant the Panthers would wear their standa",
+        "best_sub_sim": 0.5598,
+        "best_sub_ce": -8.6678,
+        "sim_improvement": 0.4402,
+        "ce_improvement": 0.0
+      }
+    ]
+  },
+  {
+    "n_strong": 0,
+    "n_weak": 3,
+    "n_refined": 3,
+    "strong_sims": [],
+    "weak_sims": [
+      0.2742,
+      0.1615,
+      0.0841
+    ],
+    "refinements": [
+      {
+        "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+        "parent_sim": 0.2742,
+        "parent_ce": 5.7234,
+        "n_sub_chunks": 5,
+        "best_sub_preview": "which the game would have been known as \"Super Bowl L\"), so that the logo could ",
+        "best_sub_sim": 0.6354,
+        "best_sub_ce": 2.309,
+        "sim_improvement": 0.3612,
+        "ce_improvement": -3.4144
+      },
+      {
+        "parent_preview": "In early 2012, NFL Commissioner Roger Goodell stated that the league planned to make the 50th Super Bowl \"spectacular\" a",
+        "parent_sim": 0.1615,
+        "parent_ce": 1.8175,
+        "n_sub_chunks": 1,
+        "best_sub_preview": "In early 2012, NFL Commissioner Roger Goodell stated that the league planned to ",
+        "best_sub_sim": 0.5807,
+        "best_sub_ce": 1.8175,
+        "sim_improvement": 0.4192,
+        "ce_improvement": 0.0
+      },
+      {
+        "parent_preview": "CBS broadcast Super Bowl 50 in the U.S., and charged an average of $5 million for a 30-second commercial during the game",
+        "parent_sim": 0.0841,
+        "parent_ce": 3.6527,
+        "n_sub_chunks": 3,
+        "best_sub_preview": "CBS broadcast Super Bowl 50 in the U.S., and charged an average of $5 million fo",
+        "best_sub_sim": 0.5065,
+        "best_sub_ce": -0.599,
+        "sim_improvement": 0.4224,
+        "ce_improvement": -4.2517
+      }
+    ]
+  },
+  {
+    "n_strong": 0,
+    "n_weak": 3,
+    "n_refined": 3,
+    "strong_sims": [],
+    "weak_sims": [
+      0.0546,
+      0.0,
+      0.0
+    ],
+    "refinements": [
+      {
+        "parent_preview": "The game's media day, which was typically held on the Tuesday afternoon prior to the game, was moved to the Monday eveni",
+        "parent_sim": 0.0546,
+        "parent_ce": 4.9923,
+        "n_sub_chunks": 2,
+        "best_sub_preview": "The game's media day, which was typically held on the Tuesday afternoon prior to",
+        "best_sub_sim": 0.5556,
+        "best_sub_ce": 5.1865,
+        "sim_improvement": 0.501,
+        "ce_improvement": 0.1943
+      },
+      {
+        "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+        "parent_sim": 0.0,
+        "parent_ce": 3.6439,
+        "n_sub_chunks": 5,
+        "best_sub_preview": ". The game was played on February 7, 2016, at Levi's Stadium in the San Francisc",
+        "best_sub_sim": 0.5347,
+        "best_sub_ce": 8.2072,
+        "sim_improvement": 0.5347,
+        "ce_improvement": 4.5633
+      },
+      {
+        "parent_preview": "On May 21, 2013, NFL owners at their spring meetings in Boston voted and awarded the game to Levi's Stadium. The $1.2 bi",
+        "parent_sim": 0.0,
+        "parent_ce": -1.1904,
+        "n_sub_chunks": 2,
+        "best_sub_preview": "On May 21, 2013, NFL owners at their spring meetings in Boston voted and awarded",
+        "best_sub_sim": 0.3105,
+        "best_sub_ce": -0.5988,
+        "sim_improvement": 0.3105,
+        "ce_improvement": 0.5916
+      }
+    ]
+  },
+  {
+    "n_strong": 0,
+    "n_weak": 3,
+    "n_refined": 3,
+    "strong_sims": [],
+    "weak_sims": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "refinements": [
+      {
+        "parent_preview": ". With the defense carrying the team despite the issues with the offense, the Broncos finished the regular season with a",
+        "parent_sim": 0.0,
+        "parent_ce": -7.8142,
+        "n_sub_chunks": 1,
+        "best_sub_preview": ". With the defense carrying the team despite the issues with the offense, the Br",
+        "best_sub_sim": 0.4992,
+        "best_sub_ce": -7.8142,
+        "sim_improvement": 0.4992,
+        "ce_improvement": -0.0
+      },
+      {
+        "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+        "parent_sim": 0.0,
+        "parent_ce": -3.9234,
+        "n_sub_chunks": 5,
+        "best_sub_preview": ". The American Football Conference (AFC) champion Denver Broncos defeated the Na",
+        "best_sub_sim": 0.483,
+        "best_sub_ce": -2.0762,
+        "sim_improvement": 0.483,
+        "ce_improvement": 1.8472
+      },
+      {
+        "parent_preview": "The Broncos defeated the Pittsburgh Steelers in the divisional round, 23\u201316, by scoring 11 points in the final three min",
+        "parent_sim": 0.0,
+        "parent_ce": -7.9244,
+        "n_sub_chunks": 3,
+        "best_sub_preview": ". They then beat the defending Super Bowl XLIX champion New England Patriots in ",
+        "best_sub_sim": 0.4282,
+        "best_sub_ce": -6.961,
+        "sim_improvement": 0.4282,
+        "ce_improvement": 0.9634
+      }
+    ]
+  },
+  {
+    "n_strong": 0,
+    "n_weak": 3,
+    "n_refined": 3,
+    "strong_sims": [],
+    "weak_sims": [
+      0.2742,
+      0.1615,
+      0.0841
+    ],
+    "refinements": [
+      {
+        "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+        "parent_sim": 0.2742,
+        "parent_ce": 5.7234,
+        "n_sub_chunks": 5,
+        "best_sub_preview": "which the game would have been known as \"Super Bowl L\"), so that the logo could ",
+        "best_sub_sim": 0.6354,
+        "best_sub_ce": 2.309,
+        "sim_improvement": 0.3612,
+        "ce_improvement": -3.4144
+      },
+      {
+        "parent_preview": "In early 2012, NFL Commissioner Roger Goodell stated that the league planned to make the 50th Super Bowl \"spectacular\" a",
+        "parent_sim": 0.1615,
+        "parent_ce": 1.8175,
+        "n_sub_chunks": 1,
+        "best_sub_preview": "In early 2012, NFL Commissioner Roger Goodell stated that the league planned to ",
+        "best_sub_sim": 0.5807,
+        "best_sub_ce": 1.8175,
+        "sim_improvement": 0.4192,
+        "ce_improvement": 0.0
+      },
+      {
+        "parent_preview": "CBS broadcast Super Bowl 50 in the U.S., and charged an average of $5 million for a 30-second commercial during the game",
+        "parent_sim": 0.0841,
+        "parent_ce": 3.6527,
+        "n_sub_chunks": 3,
+        "best_sub_preview": "CBS broadcast Super Bowl 50 in the U.S., and charged an average of $5 million fo",
+        "best_sub_sim": 0.5065,
+        "best_sub_ce": -0.599,
+        "sim_improvement": 0.4224,
+        "ce_improvement": -4.2517
+      }
+    ]
+  },
+  {
+    "n_strong": 0,
+    "n_weak": 3,
+    "n_refined": 3,
+    "strong_sims": [],
+    "weak_sims": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "refinements": [
+      {
+        "parent_preview": ". With the defense carrying the team despite the issues with the offense, the Broncos finished the regular season with a",
+        "parent_sim": 0.0,
+        "parent_ce": -5.3964,
+        "n_sub_chunks": 1,
+        "best_sub_preview": ". With the defense carrying the team despite the issues with the offense, the Br",
+        "best_sub_sim": 0.4753,
+        "best_sub_ce": -5.3964,
+        "sim_improvement": 0.4753,
+        "ce_improvement": -0.0
+      },
+      {
+        "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+        "parent_sim": 0.0,
+        "parent_ce": -1.1417,
+        "n_sub_chunks": 5,
+        "best_sub_preview": ". The American Football Conference (AFC) champion Denver Broncos defeated the Na",
+        "best_sub_sim": 0.4775,
+        "best_sub_ce": 1.6907,
+        "sim_improvement": 0.4775,
+        "ce_improvement": 2.8323
+      },
+      {
+        "parent_preview": "The Broncos defeated the Pittsburgh Steelers in the divisional round, 23\u201316, by scoring 11 points in the final three min",
+        "parent_sim": 0.0,
+        "parent_ce": -5.9301,
+        "n_sub_chunks": 3,
+        "best_sub_preview": ". They then beat the defending Super Bowl XLIX champion New England Patriots in ",
+        "best_sub_sim": 0.3817,
+        "best_sub_ce": -4.2856,
+        "sim_improvement": 0.3817,
+        "ce_improvement": 1.6446
+      }
+    ]
+  },
+  {
+    "n_strong": 0,
+    "n_weak": 3,
+    "n_refined": 3,
+    "strong_sims": [],
+    "weak_sims": [
+      0.4012,
+      0.2868,
+      0.225
+    ],
+    "refinements": [
+      {
+        "parent_preview": "The game's media day, which was typically held on the Tuesday afternoon prior to the game, was moved to the Monday eveni",
+        "parent_sim": 0.4012,
+        "parent_ce": 8.0041,
+        "n_sub_chunks": 2,
+        "best_sub_preview": "The game's media day, which was typically held on the Tuesday afternoon prior to",
+        "best_sub_sim": 0.7261,
+        "best_sub_ce": 7.8981,
+        "sim_improvement": 0.3249,
+        "ce_improvement": -0.106
+      },
+      {
+        "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+        "parent_sim": 0.2868,
+        "parent_ce": 7.2583,
+        "n_sub_chunks": 5,
+        "best_sub_preview": ". The game was played on February 7, 2016, at Levi's Stadium in the San Francisc",
+        "best_sub_sim": 0.5624,
+        "best_sub_ce": 4.1029,
+        "sim_improvement": 0.2756,
+        "ce_improvement": -3.1554
+      },
+      {
+        "parent_preview": "On May 21, 2013, NFL owners at their spring meetings in Boston voted and awarded the game to Levi's Stadium. The $1.2 bi",
+        "parent_sim": 0.225,
+        "parent_ce": 3.0599,
+        "n_sub_chunks": 2,
+        "best_sub_preview": ". It is the first Super Bowl held in the San Francisco Bay Area since Super Bowl",
+        "best_sub_sim": 0.6102,
+        "best_sub_ce": 0.9417,
+        "sim_improvement": 0.3852,
+        "ce_improvement": -2.1181
+      }
+    ]
+  },
+  {
+    "n_strong": 0,
+    "n_weak": 3,
+    "n_refined": 3,
+    "strong_sims": [],
+    "weak_sims": [
+      0.396,
+      0.2162,
+      0.2063
+    ],
+    "refinements": [
+      {
+        "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+        "parent_sim": 0.396,
+        "parent_ce": 8.9704,
+        "n_sub_chunks": 5,
+        "best_sub_preview": "Super Bowl 50 was an American football game to determine the champion of the Nat",
+        "best_sub_sim": 0.6226,
+        "best_sub_ce": 6.7681,
+        "sim_improvement": 0.2266,
+        "ce_improvement": -2.2022
+      },
+      {
+        "parent_preview": "The Broncos took an early lead in Super Bowl 50 and never trailed. Newton was limited by Denver's defense, which sacked ",
+        "parent_sim": 0.2162,
+        "parent_ce": 4.572,
+        "n_sub_chunks": 2,
+        "best_sub_preview": "The Broncos took an early lead in Super Bowl 50 and never trailed. Newton was li",
+        "best_sub_sim": 0.5563,
+        "best_sub_ce": 3.2698,
+        "sim_improvement": 0.3401,
+        "ce_improvement": -1.3022
+      },
+      {
+        "parent_preview": "The Panthers finished the regular season with a 15\u20131 record, and quarterback Cam Newton was named the NFL Most Valuable ",
+        "parent_sim": 0.2063,
+        "parent_ce": -3.5305,
+        "n_sub_chunks": 4,
+        "best_sub_preview": ". They joined the Patriots, Dallas Cowboys, and Pittsburgh Steelers as one of fo",
+        "best_sub_sim": 0.5974,
+        "best_sub_ce": -3.3589,
+        "sim_improvement": 0.3911,
+        "ce_improvement": 0.1715
+      }
+    ]
+  },
+  {
+    "n_strong": 0,
+    "n_weak": 3,
+    "n_refined": 3,
+    "strong_sims": [],
+    "weak_sims": [
+      0.3661,
+      0.3275,
+      0.2689
+    ],
+    "refinements": [
+      {
+        "parent_preview": "On May 21, 2013, NFL owners at their spring meetings in Boston voted and awarded the game to Levi's Stadium. The $1.2 bi",
+        "parent_sim": 0.3661,
+        "parent_ce": 2.7831,
+        "n_sub_chunks": 2,
+        "best_sub_preview": ". It is the first Super Bowl held in the San Francisco Bay Area since Super Bowl",
+        "best_sub_sim": 0.6508,
+        "best_sub_ce": 3.123,
+        "sim_improvement": 0.2847,
+        "ce_improvement": 0.3399
+      },
+      {
+        "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+        "parent_sim": 0.3275,
+        "parent_ce": 8.1955,
+        "n_sub_chunks": 5,
+        "best_sub_preview": "which the game would have been known as \"Super Bowl L\"), so that the logo could ",
+        "best_sub_sim": 0.5588,
+        "best_sub_ce": -0.9251,
+        "sim_improvement": 0.2313,
+        "ce_improvement": -9.1206
+      },
+      {
+        "parent_preview": "The league announced on October 16, 2012, that the two finalists were Sun Life Stadium and Levi's Stadium. The South Flo",
+        "parent_sim": 0.2689,
+        "parent_ce": -0.7412,
+        "n_sub_chunks": 4,
+        "best_sub_preview": ". The San Francisco Bay Area last hosted in 1985 (Super Bowl XIX), held at Stanf",
+        "best_sub_sim": 0.6575,
+        "best_sub_ce": 0.375,
+        "sim_improvement": 0.3886,
+        "ce_improvement": 1.1162
+      }
+    ]
+  },
+  {
+    "n_strong": 0,
+    "n_weak": 3,
+    "n_refined": 3,
+    "strong_sims": [],
+    "weak_sims": [
+      0.4005,
+      0.322,
+      0.1917
+    ],
+    "refinements": [
+      {
+        "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+        "parent_sim": 0.4005,
+        "parent_ce": 7.8036,
+        "n_sub_chunks": 5,
+        "best_sub_preview": "Super Bowl 50 was an American football game to determine the champion of the Nat",
+        "best_sub_sim": 0.5887,
+        "best_sub_ce": 3.6163,
+        "sim_improvement": 0.1882,
+        "ce_improvement": -4.1873
+      },
+      {
+        "parent_preview": "On May 21, 2013, NFL owners at their spring meetings in Boston voted and awarded the game to Levi's Stadium. The $1.2 bi",
+        "parent_sim": 0.322,
+        "parent_ce": 2.5603,
+        "n_sub_chunks": 2,
+        "best_sub_preview": ". It is the first Super Bowl held in the San Francisco Bay Area since Super Bowl",
+        "best_sub_sim": 0.6705,
+        "best_sub_ce": 4.3771,
+        "sim_improvement": 0.3485,
+        "ce_improvement": 1.8168
+      },
+      {
+        "parent_preview": "The league announced on October 16, 2012, that the two finalists were Sun Life Stadium and Levi's Stadium. The South Flo",
+        "parent_sim": 0.1917,
+        "parent_ce": -0.7718,
+        "n_sub_chunks": 4,
+        "best_sub_preview": ". The San Francisco Bay Area last hosted in 1985 (Super Bowl XIX), held at Stanf",
+        "best_sub_sim": 0.6259,
+        "best_sub_ce": 1.0447,
+        "sim_improvement": 0.4342,
+        "ce_improvement": 1.8165
+      }
+    ]
+  },
+  {
+    "n_strong": 0,
+    "n_weak": 3,
+    "n_refined": 3,
+    "strong_sims": [],
+    "weak_sims": [
+      0.3753,
+      0.1931,
+      0.0
+    ],
+    "refinements": [
+      {
+        "parent_preview": "On June 4, 2014, the NFL announced that the practice of branding Super Bowl games with Roman numerals, a practice establ",
+        "parent_sim": 0.3753,
+        "parent_ce": 7.6579,
+        "n_sub_chunks": 6,
+        "best_sub_preview": "numerals as Super Bowl 50 as opposed to Super Bowl L",
+        "best_sub_sim": 0.8134,
+        "best_sub_ce": 3.3071,
+        "sim_improvement": 0.4381,
+        "ce_improvement": -4.3508
+      },
+      {
+        "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+        "parent_sim": 0.1931,
+        "parent_ce": 0.8118,
+        "n_sub_chunks": 5,
+        "best_sub_preview": "which the game would have been known as \"Super Bowl L\"), so that the logo could ",
+        "best_sub_sim": 0.7328,
+        "best_sub_ce": 4.7496,
+        "sim_improvement": 0.5397,
+        "ce_improvement": 3.9378
+      },
+      {
+        "parent_preview": "In early 2012, NFL Commissioner Roger Goodell stated that the league planned to make the 50th Super Bowl \"spectacular\" a",
+        "parent_sim": 0.0,
+        "parent_ce": -6.1084,
+        "n_sub_chunks": 1,
+        "best_sub_preview": "In early 2012, NFL Commissioner Roger Goodell stated that the league planned to ",
+        "best_sub_sim": 0.4761,
+        "best_sub_ce": -6.1084,
+        "sim_improvement": 0.4761,
+        "ce_improvement": 0.0
+      }
+    ]
+  },
+  {
+    "n_strong": 0,
+    "n_weak": 3,
+    "n_refined": 3,
+    "strong_sims": [],
+    "weak_sims": [
+      0.4222,
+      0.2343,
+      0.1772
+    ],
+    "refinements": [
+      {
+        "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+        "parent_sim": 0.4222,
+        "parent_ce": 9.5303,
+        "n_sub_chunks": 5,
+        "best_sub_preview": "Super Bowl 50 was an American football game to determine the champion of the Nat",
+        "best_sub_sim": 0.6978,
+        "best_sub_ce": 9.1312,
+        "sim_improvement": 0.2756,
+        "ce_improvement": -0.3991
+      },
+      {
+        "parent_preview": "The Panthers finished the regular season with a 15\u20131 record, and quarterback Cam Newton was named the NFL Most Valuable ",
+        "parent_sim": 0.2343,
+        "parent_ce": -1.4788,
+        "n_sub_chunks": 4,
+        "best_sub_preview": ". The Broncos finished the regular season with a 12\u20134 record, and denied the New",
+        "best_sub_sim": 0.5973,
+        "best_sub_ce": -1.8039,
+        "sim_improvement": 0.363,
+        "ce_improvement": -0.3251
+      },
+      {
+        "parent_preview": "In early 2012, NFL Commissioner Roger Goodell stated that the league planned to make the 50th Super Bowl \"spectacular\" a",
+        "parent_sim": 0.1772,
+        "parent_ce": 0.1188,
+        "n_sub_chunks": 1,
+        "best_sub_preview": "In early 2012, NFL Commissioner Roger Goodell stated that the league planned to ",
+        "best_sub_sim": 0.5886,
+        "best_sub_ce": 0.1188,
+        "sim_improvement": 0.4114,
+        "ce_improvement": -0.0
+      }
+    ]
+  },
+  {
+    "n_strong": 0,
+    "n_weak": 3,
+    "n_refined": 3,
+    "strong_sims": [],
+    "weak_sims": [
+      0.3971,
+      0.3311,
+      0.2962
+    ],
+    "refinements": [
+      {
+        "parent_preview": ". With the defense carrying the team despite the issues with the offense, the Broncos finished the regular season with a",
+        "parent_sim": 0.3971,
+        "parent_ce": -6.1077,
+        "n_sub_chunks": 1,
+        "best_sub_preview": ". With the defense carrying the team despite the issues with the offense, the Br",
+        "best_sub_sim": 0.6986,
+        "best_sub_ce": -6.1077,
+        "sim_improvement": 0.3015,
+        "ce_improvement": 0.0
+      },
+      {
+        "parent_preview": "The Broncos took an early lead in Super Bowl 50 and never trailed. Newton was limited by Denver's defense, which sacked ",
+        "parent_sim": 0.3311,
+        "parent_ce": 2.4509,
+        "n_sub_chunks": 2,
+        "best_sub_preview": "The Broncos took an early lead in Super Bowl 50 and never trailed. Newton was li",
+        "best_sub_sim": 0.6552,
+        "best_sub_ce": 1.7979,
+        "sim_improvement": 0.3241,
+        "ce_improvement": -0.653
+      },
+      {
+        "parent_preview": "The Panthers finished the regular season with a 15\u20131 record, and quarterback Cam Newton was named the NFL Most Valuable ",
+        "parent_sim": 0.2962,
+        "parent_ce": 2.0232,
+        "n_sub_chunks": 4,
+        "best_sub_preview": ". The Broncos finished the regular season with a 12\u20134 record, and denied the New",
+        "best_sub_sim": 0.7379,
+        "best_sub_ce": 1.3558,
+        "sim_improvement": 0.4417,
+        "ce_improvement": -0.6673
+      }
+    ]
+  },
+  {
+    "n_strong": 0,
+    "n_weak": 3,
+    "n_refined": 3,
+    "strong_sims": [],
+    "weak_sims": [
+      0.4005,
+      0.322,
+      0.1917
+    ],
+    "refinements": [
+      {
+        "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+        "parent_sim": 0.4005,
+        "parent_ce": 7.8036,
+        "n_sub_chunks": 5,
+        "best_sub_preview": "Super Bowl 50 was an American football game to determine the champion of the Nat",
+        "best_sub_sim": 0.5887,
+        "best_sub_ce": 3.6163,
+        "sim_improvement": 0.1882,
+        "ce_improvement": -4.1873
+      },
+      {
+        "parent_preview": "On May 21, 2013, NFL owners at their spring meetings in Boston voted and awarded the game to Levi's Stadium. The $1.2 bi",
+        "parent_sim": 0.322,
+        "parent_ce": 2.5603,
+        "n_sub_chunks": 2,
+        "best_sub_preview": ". It is the first Super Bowl held in the San Francisco Bay Area since Super Bowl",
+        "best_sub_sim": 0.6705,
+        "best_sub_ce": 4.3771,
+        "sim_improvement": 0.3485,
+        "ce_improvement": 1.8168
+      },
+      {
+        "parent_preview": "The league announced on October 16, 2012, that the two finalists were Sun Life Stadium and Levi's Stadium. The South Flo",
+        "parent_sim": 0.1917,
+        "parent_ce": -0.7718,
+        "n_sub_chunks": 4,
+        "best_sub_preview": ". The San Francisco Bay Area last hosted in 1985 (Super Bowl XIX), held at Stanf",
+        "best_sub_sim": 0.6259,
+        "best_sub_ce": 1.0447,
+        "sim_improvement": 0.4342,
+        "ce_improvement": 1.8165
+      }
+    ]
+  },
+  {
+    "n_strong": 0,
+    "n_weak": 3,
+    "n_refined": 3,
+    "strong_sims": [],
+    "weak_sims": [
+      0.3989,
+      0.3947,
+      0.3091
+    ],
+    "refinements": [
+      {
+        "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+        "parent_sim": 0.3989,
+        "parent_ce": 8.8889,
+        "n_sub_chunks": 5,
+        "best_sub_preview": "which the game would have been known as \"Super Bowl L\"), so that the logo could ",
+        "best_sub_sim": 0.5862,
+        "best_sub_ce": -0.9141,
+        "sim_improvement": 0.1873,
+        "ce_improvement": -9.803
+      },
+      {
+        "parent_preview": "On May 21, 2013, NFL owners at their spring meetings in Boston voted and awarded the game to Levi's Stadium. The $1.2 bi",
+        "parent_sim": 0.3947,
+        "parent_ce": 3.6774,
+        "n_sub_chunks": 2,
+        "best_sub_preview": ". It is the first Super Bowl held in the San Francisco Bay Area since Super Bowl",
+        "best_sub_sim": 0.6368,
+        "best_sub_ce": 2.3348,
+        "sim_improvement": 0.2421,
+        "ce_improvement": -1.3426
+      },
+      {
+        "parent_preview": "The league announced on October 16, 2012, that the two finalists were Sun Life Stadium and Levi's Stadium. The South Flo",
+        "parent_sim": 0.3091,
+        "parent_ce": 0.6277,
+        "n_sub_chunks": 4,
+        "best_sub_preview": ". The San Francisco Bay Area last hosted in 1985 (Super Bowl XIX), held at Stanf",
+        "best_sub_sim": 0.6763,
+        "best_sub_ce": 1.796,
+        "sim_improvement": 0.3672,
+        "ce_improvement": 1.1684
+      }
+    ]
+  },
+  {
+    "n_strong": 0,
+    "n_weak": 3,
+    "n_refined": 3,
+    "strong_sims": [],
+    "weak_sims": [
+      0.3342,
+      0.1304,
+      0.1215
+    ],
+    "refinements": [
+      {
+        "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+        "parent_sim": 0.3342,
+        "parent_ce": 5.5438,
+        "n_sub_chunks": 5,
+        "best_sub_preview": "Super Bowl 50 was an American football game to determine the champion of the Nat",
+        "best_sub_sim": 0.5729,
+        "best_sub_ce": 3.6404,
+        "sim_improvement": 0.2387,
+        "ce_improvement": -1.9034
+      },
+      {
+        "parent_preview": "The Broncos took an early lead in Super Bowl 50 and never trailed. Newton was limited by Denver's defense, which sacked ",
+        "parent_sim": 0.1304,
+        "parent_ce": -0.3846,
+        "n_sub_chunks": 2,
+        "best_sub_preview": "The Broncos took an early lead in Super Bowl 50 and never trailed. Newton was li",
+        "best_sub_sim": 0.5525,
+        "best_sub_ce": -0.3768,
+        "sim_improvement": 0.4221,
+        "ce_improvement": 0.0077
+      },
+      {
+        "parent_preview": "The Broncos defeated the Pittsburgh Steelers in the divisional round, 23\u201316, by scoring 11 points in the final three min",
+        "parent_sim": 0.1215,
+        "parent_ce": -2.1126,
+        "n_sub_chunks": 3,
+        "best_sub_preview": "The Broncos defeated the Pittsburgh Steelers in the divisional round, 23\u201316, by ",
+        "best_sub_sim": 0.5605,
+        "best_sub_ce": -6.795,
+        "sim_improvement": 0.439,
+        "ce_improvement": -4.6823
+      }
+    ]
+  },
+  {
+    "n_strong": 0,
+    "n_weak": 3,
+    "n_refined": 3,
+    "strong_sims": [],
+    "weak_sims": [
+      0.372,
+      0.2615,
+      0.2099
+    ],
+    "refinements": [
+      {
+        "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+        "parent_sim": 0.372,
+        "parent_ce": 6.6291,
+        "n_sub_chunks": 5,
+        "best_sub_preview": "Super Bowl 50 was an American football game to determine the champion of the Nat",
+        "best_sub_sim": 0.5842,
+        "best_sub_ce": 3.7768,
+        "sim_improvement": 0.2122,
+        "ce_improvement": -2.8524
+      },
+      {
+        "parent_preview": "The game's media day, which was typically held on the Tuesday afternoon prior to the game, was moved to the Monday eveni",
+        "parent_sim": 0.2615,
+        "parent_ce": 1.4206,
+        "n_sub_chunks": 2,
+        "best_sub_preview": "The game's media day, which was typically held on the Tuesday afternoon prior to",
+        "best_sub_sim": 0.6517,
+        "best_sub_ce": 1.4227,
+        "sim_improvement": 0.3902,
+        "ce_improvement": 0.0021
+      },
+      {
+        "parent_preview": "On May 21, 2013, NFL owners at their spring meetings in Boston voted and awarded the game to Levi's Stadium. The $1.2 bi",
+        "parent_sim": 0.2099,
+        "parent_ce": -0.9237,
+        "n_sub_chunks": 2,
+        "best_sub_preview": ". It is the first Super Bowl held in the San Francisco Bay Area since Super Bowl",
+        "best_sub_sim": 0.6414,
+        "best_sub_ce": -0.9719,
+        "sim_improvement": 0.4315,
+        "ce_improvement": -0.0482
+      }
+    ]
+  },
+  {
+    "n_strong": 0,
+    "n_weak": 3,
+    "n_refined": 3,
+    "strong_sims": [],
+    "weak_sims": [
+      0.4358,
+      0.177,
+      0.1637
+    ],
+    "refinements": [
+      {
+        "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+        "parent_sim": 0.4358,
+        "parent_ce": 9.1714,
+        "n_sub_chunks": 5,
+        "best_sub_preview": "Super Bowl 50 was an American football game to determine the champion of the Nat",
+        "best_sub_sim": 0.6352,
+        "best_sub_ce": 8.189,
+        "sim_improvement": 0.1994,
+        "ce_improvement": -0.9825
+      },
+      {
+        "parent_preview": "On May 21, 2013, NFL owners at their spring meetings in Boston voted and awarded the game to Levi's Stadium. The $1.2 bi",
+        "parent_sim": 0.177,
+        "parent_ce": -2.0812,
+        "n_sub_chunks": 2,
+        "best_sub_preview": ". It is the first Super Bowl held in the San Francisco Bay Area since Super Bowl",
+        "best_sub_sim": 0.6111,
+        "best_sub_ce": -0.1369,
+        "sim_improvement": 0.4341,
+        "ce_improvement": 1.9443
+      },
+      {
+        "parent_preview": "In early 2012, NFL Commissioner Roger Goodell stated that the league planned to make the 50th Super Bowl \"spectacular\" a",
+        "parent_sim": 0.1637,
+        "parent_ce": 4.5626,
+        "n_sub_chunks": 1,
+        "best_sub_preview": "In early 2012, NFL Commissioner Roger Goodell stated that the league planned to ",
+        "best_sub_sim": 0.5819,
+        "best_sub_ce": 4.5626,
+        "sim_improvement": 0.4182,
+        "ce_improvement": -0.0
+      }
+    ]
+  },
+  {
+    "n_strong": 0,
+    "n_weak": 3,
+    "n_refined": 3,
+    "strong_sims": [],
+    "weak_sims": [
+      0.1789,
+      0.1408,
+      0.1026
+    ],
+    "refinements": [
+      {
+        "parent_preview": ". With the defense carrying the team despite the issues with the offense, the Broncos finished the regular season with a",
+        "parent_sim": 0.1789,
+        "parent_ce": -1.6881,
+        "n_sub_chunks": 1,
+        "best_sub_preview": ". With the defense carrying the team despite the issues with the offense, the Br",
+        "best_sub_sim": 0.5895,
+        "best_sub_ce": -1.6881,
+        "sim_improvement": 0.4106,
+        "ce_improvement": -0.0
+      },
+      {
+        "parent_preview": "The Panthers finished the regular season with a 15\u20131 record, and quarterback Cam Newton was named the NFL Most Valuable ",
+        "parent_sim": 0.1408,
+        "parent_ce": 1.9863,
+        "n_sub_chunks": 4,
+        "best_sub_preview": ". The Broncos finished the regular season with a 12\u20134 record, and denied the New",
+        "best_sub_sim": 0.5973,
+        "best_sub_ce": 4.3914,
+        "sim_improvement": 0.4565,
+        "ce_improvement": 2.4051
+      },
+      {
+        "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+        "parent_sim": 0.1026,
+        "parent_ce": 5.3033,
+        "n_sub_chunks": 5,
+        "best_sub_preview": ". The American Football Conference (AFC) champion Denver Broncos defeated the Na",
+        "best_sub_sim": 0.6832,
+        "best_sub_ce": 6.9683,
+        "sim_improvement": 0.5806,
+        "ce_improvement": 1.665
+      }
+    ]
+  },
+  {
+    "n_strong": 0,
+    "n_weak": 3,
+    "n_refined": 3,
+    "strong_sims": [],
+    "weak_sims": [
+      0.2396,
+      0.2329,
+      0.1409
+    ],
+    "refinements": [
+      {
+        "parent_preview": "The Panthers finished the regular season with a 15\u20131 record, and quarterback Cam Newton was named the NFL Most Valuable ",
+        "parent_sim": 0.2396,
+        "parent_ce": 2.9751,
+        "n_sub_chunks": 4,
+        "best_sub_preview": ". They defeated the Arizona Cardinals 49\u201315 in the NFC Championship Game and adv",
+        "best_sub_sim": 0.7069,
+        "best_sub_ce": 4.5605,
+        "sim_improvement": 0.4673,
+        "ce_improvement": 1.5853
+      },
+      {
+        "parent_preview": "The Panthers beat the Seattle Seahawks in the divisional round, running up a 31\u20130 halftime lead and then holding off a f",
+        "parent_sim": 0.2329,
+        "parent_ce": 4.3451,
+        "n_sub_chunks": 2,
+        "best_sub_preview": ". The Panthers then blew out the Arizona Cardinals in the NFC Championship Game,",
+        "best_sub_sim": 0.6424,
+        "best_sub_ce": 5.0198,
+        "sim_improvement": 0.4095,
+        "ce_improvement": 0.6747
+      },
+      {
+        "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+        "parent_sim": 0.1409,
+        "parent_ce": 5.1885,
+        "n_sub_chunks": 5,
+        "best_sub_preview": ". The American Football Conference (AFC) champion Denver Broncos defeated the Na",
+        "best_sub_sim": 0.6414,
+        "best_sub_ce": 6.468,
+        "sim_improvement": 0.5005,
+        "ce_improvement": 1.2795
+      }
+    ]
+  },
+  {
+    "n_strong": 0,
+    "n_weak": 3,
+    "n_refined": 3,
+    "strong_sims": [],
+    "weak_sims": [
+      0.396,
+      0.2162,
+      0.2063
+    ],
+    "refinements": [
+      {
+        "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+        "parent_sim": 0.396,
+        "parent_ce": 8.9704,
+        "n_sub_chunks": 5,
+        "best_sub_preview": "Super Bowl 50 was an American football game to determine the champion of the Nat",
+        "best_sub_sim": 0.6226,
+        "best_sub_ce": 6.7681,
+        "sim_improvement": 0.2266,
+        "ce_improvement": -2.2022
+      },
+      {
+        "parent_preview": "The Broncos took an early lead in Super Bowl 50 and never trailed. Newton was limited by Denver's defense, which sacked ",
+        "parent_sim": 0.2162,
+        "parent_ce": 4.572,
+        "n_sub_chunks": 2,
+        "best_sub_preview": "The Broncos took an early lead in Super Bowl 50 and never trailed. Newton was li",
+        "best_sub_sim": 0.5563,
+        "best_sub_ce": 3.2698,
+        "sim_improvement": 0.3401,
+        "ce_improvement": -1.3022
+      },
+      {
+        "parent_preview": "The Panthers finished the regular season with a 15\u20131 record, and quarterback Cam Newton was named the NFL Most Valuable ",
+        "parent_sim": 0.2063,
+        "parent_ce": -3.5305,
+        "n_sub_chunks": 4,
+        "best_sub_preview": ". They joined the Patriots, Dallas Cowboys, and Pittsburgh Steelers as one of fo",
+        "best_sub_sim": 0.5974,
+        "best_sub_ce": -3.3589,
+        "sim_improvement": 0.3911,
+        "ce_improvement": 0.1715
+      }
+    ]
+  },
+  {
+    "n_strong": 0,
+    "n_weak": 3,
+    "n_refined": 3,
+    "strong_sims": [],
+    "weak_sims": [
+      0.4067,
+      0.2406,
+      0.1226
+    ],
+    "refinements": [
+      {
+        "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+        "parent_sim": 0.4067,
+        "parent_ce": 9.7538,
+        "n_sub_chunks": 5,
+        "best_sub_preview": "Super Bowl 50 was an American football game to determine the champion of the Nat",
+        "best_sub_sim": 0.7057,
+        "best_sub_ce": 9.5037,
+        "sim_improvement": 0.299,
+        "ce_improvement": -0.2501
+      },
+      {
+        "parent_preview": "The Panthers finished the regular season with a 15\u20131 record, and quarterback Cam Newton was named the NFL Most Valuable ",
+        "parent_sim": 0.2406,
+        "parent_ce": -2.0683,
+        "n_sub_chunks": 4,
+        "best_sub_preview": ". The Broncos finished the regular season with a 12\u20134 record, and denied the New",
+        "best_sub_sim": 0.5887,
+        "best_sub_ce": -2.3646,
+        "sim_improvement": 0.3481,
+        "ce_improvement": -0.2962
+      },
+      {
+        "parent_preview": "In early 2012, NFL Commissioner Roger Goodell stated that the league planned to make the 50th Super Bowl \"spectacular\" a",
+        "parent_sim": 0.1226,
+        "parent_ce": -0.3559,
+        "n_sub_chunks": 1,
+        "best_sub_preview": "In early 2012, NFL Commissioner Roger Goodell stated that the league planned to ",
+        "best_sub_sim": 0.5613,
+        "best_sub_ce": -0.3559,
+        "sim_improvement": 0.4387,
+        "ce_improvement": 0.0
+      }
+    ]
+  },
+  {
+    "n_strong": 0,
+    "n_weak": 3,
+    "n_refined": 3,
+    "strong_sims": [],
+    "weak_sims": [
+      0.4489,
+      0.224,
+      0.1245
+    ],
+    "refinements": [
+      {
+        "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+        "parent_sim": 0.4489,
+        "parent_ce": 9.6867,
+        "n_sub_chunks": 5,
+        "best_sub_preview": "Super Bowl 50 was an American football game to determine the champion of the Nat",
+        "best_sub_sim": 0.6477,
+        "best_sub_ce": 7.3587,
+        "sim_improvement": 0.1988,
+        "ce_improvement": -2.3281
+      },
+      {
+        "parent_preview": "The Panthers finished the regular season with a 15\u20131 record, and quarterback Cam Newton was named the NFL Most Valuable ",
+        "parent_sim": 0.224,
+        "parent_ce": -0.9937,
+        "n_sub_chunks": 4,
+        "best_sub_preview": ". They joined the Patriots, Dallas Cowboys, and Pittsburgh Steelers as one of fo",
+        "best_sub_sim": 0.6757,
+        "best_sub_ce": 0.9801,
+        "sim_improvement": 0.4517,
+        "ce_improvement": 1.9738
+      },
+      {
+        "parent_preview": "The Broncos took an early lead in Super Bowl 50 and never trailed. Newton was limited by Denver's defense, which sacked ",
+        "parent_sim": 0.1245,
+        "parent_ce": 5.6591,
+        "n_sub_chunks": 2,
+        "best_sub_preview": "The Broncos took an early lead in Super Bowl 50 and never trailed. Newton was li",
+        "best_sub_sim": 0.5231,
+        "best_sub_ce": 4.8937,
+        "sim_improvement": 0.3986,
+        "ce_improvement": -0.7654
+      }
+    ]
+  },
+  {
+    "n_strong": 0,
+    "n_weak": 3,
+    "n_refined": 3,
+    "strong_sims": [],
+    "weak_sims": [
+      0.4167,
+      0.3557,
+      0.2193
+    ],
+    "refinements": [
+      {
+        "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+        "parent_sim": 0.4167,
+        "parent_ce": 9.1582,
+        "n_sub_chunks": 5,
+        "best_sub_preview": "Super Bowl 50 was an American football game to determine the champion of the Nat",
+        "best_sub_sim": 0.5937,
+        "best_sub_ce": 5.3354,
+        "sim_improvement": 0.177,
+        "ce_improvement": -3.8228
+      },
+      {
+        "parent_preview": "On May 21, 2013, NFL owners at their spring meetings in Boston voted and awarded the game to Levi's Stadium. The $1.2 bi",
+        "parent_sim": 0.3557,
+        "parent_ce": 3.126,
+        "n_sub_chunks": 2,
+        "best_sub_preview": ". It is the first Super Bowl held in the San Francisco Bay Area since Super Bowl",
+        "best_sub_sim": 0.6666,
+        "best_sub_ce": 4.6895,
+        "sim_improvement": 0.3109,
+        "ce_improvement": 1.5635
+      },
+      {
+        "parent_preview": "The league announced on October 16, 2012, that the two finalists were Sun Life Stadium and Levi's Stadium. The South Flo",
+        "parent_sim": 0.2193,
+        "parent_ce": 1.1166,
+        "n_sub_chunks": 4,
+        "best_sub_preview": ". The San Francisco Bay Area last hosted in 1985 (Super Bowl XIX), held at Stanf",
+        "best_sub_sim": 0.6494,
+        "best_sub_ce": 2.7352,
+        "sim_improvement": 0.4301,
+        "ce_improvement": 1.6186
+      }
+    ]
+  },
+  {
+    "n_strong": 0,
+    "n_weak": 3,
+    "n_refined": 3,
+    "strong_sims": [],
+    "weak_sims": [
+      0.1479,
+      0.0221,
+      0.0
+    ],
+    "refinements": [
+      {
+        "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+        "parent_sim": 0.1479,
+        "parent_ce": 4.3633,
+        "n_sub_chunks": 5,
+        "best_sub_preview": ". The American Football Conference (AFC) champion Denver Broncos defeated the Na",
+        "best_sub_sim": 0.5498,
+        "best_sub_ce": -1.3664,
+        "sim_improvement": 0.4019,
+        "ce_improvement": -5.7298
+      },
+      {
+        "parent_preview": "The Panthers beat the Seattle Seahawks in the divisional round, running up a 31\u20130 halftime lead and then holding off a f",
+        "parent_sim": 0.0221,
+        "parent_ce": -3.6082,
+        "n_sub_chunks": 2,
+        "best_sub_preview": ". The Panthers then blew out the Arizona Cardinals in the NFC Championship Game,",
+        "best_sub_sim": 0.5116,
+        "best_sub_ce": -3.9739,
+        "sim_improvement": 0.4895,
+        "ce_improvement": -0.3657
+      },
+      {
+        "parent_preview": "The Broncos defeated the Pittsburgh Steelers in the divisional round, 23\u201316, by scoring 11 points in the final three min",
+        "parent_sim": 0.0,
+        "parent_ce": -2.1533,
+        "n_sub_chunks": 3,
+        "best_sub_preview": ". They then beat the defending Super Bowl XLIX champion New England Patriots in ",
+        "best_sub_sim": 0.4727,
+        "best_sub_ce": -1.8849,
+        "sim_improvement": 0.4727,
+        "ce_improvement": 0.2684
+      }
+    ]
+  },
+  {
+    "n_strong": 0,
+    "n_weak": 3,
+    "n_refined": 3,
+    "strong_sims": [],
+    "weak_sims": [
+      0.1026,
+      0.0644,
+      0.0324
+    ],
+    "refinements": [
+      {
+        "parent_preview": "The Panthers finished the regular season with a 15\u20131 record, and quarterback Cam Newton was named the NFL Most Valuable ",
+        "parent_sim": 0.1026,
+        "parent_ce": -1.8825,
+        "n_sub_chunks": 4,
+        "best_sub_preview": ". The Broncos finished the regular season with a 12\u20134 record, and denied the New",
+        "best_sub_sim": 0.5318,
+        "best_sub_ce": -0.9859,
+        "sim_improvement": 0.4292,
+        "ce_improvement": 0.8967
+      },
+      {
+        "parent_preview": ". With the defense carrying the team despite the issues with the offense, the Broncos finished the regular season with a",
+        "parent_sim": 0.0644,
+        "parent_ce": -1.0063,
+        "n_sub_chunks": 1,
+        "best_sub_preview": ". With the defense carrying the team despite the issues with the offense, the Br",
+        "best_sub_sim": 0.5322,
+        "best_sub_ce": -1.0063,
+        "sim_improvement": 0.4678,
+        "ce_improvement": -0.0
+      },
+      {
+        "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+        "parent_sim": 0.0324,
+        "parent_ce": 3.6708,
+        "n_sub_chunks": 5,
+        "best_sub_preview": "Super Bowl 50 was an American football game to determine the champion of the Nat",
+        "best_sub_sim": 0.6231,
+        "best_sub_ce": -0.3146,
+        "sim_improvement": 0.5907,
+        "ce_improvement": -3.9854
+      }
+    ]
+  }
+]

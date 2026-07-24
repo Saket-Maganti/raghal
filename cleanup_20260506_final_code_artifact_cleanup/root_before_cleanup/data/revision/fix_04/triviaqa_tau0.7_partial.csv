@@ -1,0 +1,301 @@
+dataset,tau,condition,question,ground_truth,faithfulness_score,is_hallucination,gate_fired,ccs_pre
+triviaqa,0.7,baseline,"Raclette, Tilsit and Sbrinz are all types of which foodstuff?",Cheese,0.6022,False,False,-1.0
+triviaqa,0.7,hcpc_v1,"Raclette, Tilsit and Sbrinz are all types of which foodstuff?",Cheese,1.0,False,False,-1.0
+triviaqa,0.7,ccs_gate,"Raclette, Tilsit and Sbrinz are all types of which foodstuff?",Cheese,1.0,False,True,0.5472
+triviaqa,0.7,baseline,At what Bikini Bottom restaurant does SpongeBob Squarepants earn a living as a fry cook?,The Krusty Krab,0.7683,False,False,-1.0
+triviaqa,0.7,hcpc_v1,At what Bikini Bottom restaurant does SpongeBob Squarepants earn a living as a fry cook?,The Krusty Krab,0.7422,False,False,-1.0
+triviaqa,0.7,ccs_gate,At what Bikini Bottom restaurant does SpongeBob Squarepants earn a living as a fry cook?,The Krusty Krab,0.7422,False,True,0.531
+triviaqa,0.7,baseline,"What, generally, is the par on a 300 yard golf hole?",Four,0.6474,False,False,-1.0
+triviaqa,0.7,hcpc_v1,"What, generally, is the par on a 300 yard golf hole?",Four,0.6472,False,False,-1.0
+triviaqa,0.7,ccs_gate,"What, generally, is the par on a 300 yard golf hole?",Four,0.6472,False,True,0.6403
+triviaqa,0.7,baseline,The lyrics of which song first put to music by Pete Seeger in 1959 and later made famous by The Byrds were taken almost entirely from the Book of Ecclesiastes in the Bible?,"""""""Turn! Turn! Turn! (to Everything There is a Season)""""""",0.7185,False,False,-1.0
+triviaqa,0.7,hcpc_v1,The lyrics of which song first put to music by Pete Seeger in 1959 and later made famous by The Byrds were taken almost entirely from the Book of Ecclesiastes in the Bible?,"""""""Turn! Turn! Turn! (to Everything There is a Season)""""""",0.5531,False,False,-1.0
+triviaqa,0.7,ccs_gate,The lyrics of which song first put to music by Pete Seeger in 1959 and later made famous by The Byrds were taken almost entirely from the Book of Ecclesiastes in the Bible?,"""""""Turn! Turn! Turn! (to Everything There is a Season)""""""",0.5531,False,True,0.264
+triviaqa,0.7,baseline,From which country was Fulgencio Batista ousted in 1959?,Cuba,0.6024,False,False,-1.0
+triviaqa,0.7,hcpc_v1,From which country was Fulgencio Batista ousted in 1959?,Cuba,0.701,False,False,-1.0
+triviaqa,0.7,ccs_gate,From which country was Fulgencio Batista ousted in 1959?,Cuba,0.701,False,True,0.5829
+triviaqa,0.7,baseline,In the book David Copperfield what was Mr Micawber's first name?,WILKINS,0.6602,False,False,-1.0
+triviaqa,0.7,hcpc_v1,In the book David Copperfield what was Mr Micawber's first name?,WILKINS,0.7241,False,False,-1.0
+triviaqa,0.7,ccs_gate,In the book David Copperfield what was Mr Micawber's first name?,WILKINS,0.7241,False,True,0.5373
+triviaqa,0.7,baseline,Author J.R.R. Tolkien was born in which country?,South Africa,0.5632,False,False,-1.0
+triviaqa,0.7,hcpc_v1,Author J.R.R. Tolkien was born in which country?,South Africa,0.5632,False,False,-1.0
+triviaqa,0.7,ccs_gate,Author J.R.R. Tolkien was born in which country?,South Africa,0.5632,False,True,0.503
+triviaqa,0.7,baseline,"The principal author of the US Constitution and writer of over 1/3 of the Federalist Papers, which US President, the 4th, was CIC during the War of 1812?",James Madison,0.7214,False,False,-1.0
+triviaqa,0.7,hcpc_v1,"The principal author of the US Constitution and writer of over 1/3 of the Federalist Papers, which US President, the 4th, was CIC during the War of 1812?",James Madison,0.7127,False,False,-1.0
+triviaqa,0.7,ccs_gate,"The principal author of the US Constitution and writer of over 1/3 of the Federalist Papers, which US President, the 4th, was CIC during the War of 1812?",James Madison,0.7127,False,True,0.0627
+triviaqa,0.7,baseline,What was Amy Williams sled called on which she won Olympic gold for Britain at Vancouver in the Skeleton event?,Arthur,0.7362,False,False,-1.0
+triviaqa,0.7,hcpc_v1,What was Amy Williams sled called on which she won Olympic gold for Britain at Vancouver in the Skeleton event?,Arthur,0.7049,False,False,-1.0
+triviaqa,0.7,ccs_gate,What was Amy Williams sled called on which she won Olympic gold for Britain at Vancouver in the Skeleton event?,Arthur,0.7049,False,True,0.2179
+triviaqa,0.7,baseline,Which kind of food can be either ‘blanket’ or ‘honeycomb’?,Tripe,0.5817,False,False,-1.0
+triviaqa,0.7,hcpc_v1,Which kind of food can be either ‘blanket’ or ‘honeycomb’?,Tripe,0.6731,False,False,-1.0
+triviaqa,0.7,ccs_gate,Which kind of food can be either ‘blanket’ or ‘honeycomb’?,Tripe,0.5817,False,False,0.7559
+triviaqa,0.7,baseline,Where in Europe is the Attila Line a major divide?,Cyprus,0.7036,False,False,-1.0
+triviaqa,0.7,hcpc_v1,Where in Europe is the Attila Line a major divide?,Cyprus,0.5432,False,False,-1.0
+triviaqa,0.7,ccs_gate,Where in Europe is the Attila Line a major divide?,Cyprus,0.5186,False,True,0.033
+triviaqa,0.7,baseline,Which character created by Dodie Smith always wore a black and white fur coat and drove a black and white car?,'CRUELLA DE VIL',0.8869,False,False,-1.0
+triviaqa,0.7,hcpc_v1,Which character created by Dodie Smith always wore a black and white fur coat and drove a black and white car?,'CRUELLA DE VIL',0.7471,False,False,-1.0
+triviaqa,0.7,ccs_gate,Which character created by Dodie Smith always wore a black and white fur coat and drove a black and white car?,'CRUELLA DE VIL',0.7471,False,True,-0.0439
+triviaqa,0.7,baseline,What colour cat is a Russian Blue?,Grey,0.6156,False,False,-1.0
+triviaqa,0.7,hcpc_v1,What colour cat is a Russian Blue?,Grey,0.5887,False,False,-1.0
+triviaqa,0.7,ccs_gate,What colour cat is a Russian Blue?,Grey,0.5887,False,False,0.782
+triviaqa,0.7,baseline,In one of Walter Scott's Waverley' novels what was The Heart of Midlothian?,A prison,0.4749,True,False,-1.0
+triviaqa,0.7,hcpc_v1,In one of Walter Scott's Waverley' novels what was The Heart of Midlothian?,A prison,0.4647,True,False,-1.0
+triviaqa,0.7,ccs_gate,In one of Walter Scott's Waverley' novels what was The Heart of Midlothian?,A prison,0.4647,True,True,0.5793
+triviaqa,0.7,baseline,In which year did Foinavon win the Grand National?,1967,1.0,False,False,-1.0
+triviaqa,0.7,hcpc_v1,In which year did Foinavon win the Grand National?,1967,0.7468,False,False,-1.0
+triviaqa,0.7,ccs_gate,In which year did Foinavon win the Grand National?,1967,0.7468,False,True,0.4647
+triviaqa,0.7,baseline,"""The US TV series """"Mad Men"""" centres around what industry or profession?""",Advertising,0.792,False,False,-1.0
+triviaqa,0.7,hcpc_v1,"""The US TV series """"Mad Men"""" centres around what industry or profession?""",Advertising,0.792,False,False,-1.0
+triviaqa,0.7,ccs_gate,"""The US TV series """"Mad Men"""" centres around what industry or profession?""",Advertising,0.792,False,True,0.5972
+triviaqa,0.7,baseline,Who wrote the plays ‘The Cocktail Party’ and ‘The Family Reunion’?,T.S.Eliot,0.7233,False,False,-1.0
+triviaqa,0.7,hcpc_v1,Who wrote the plays ‘The Cocktail Party’ and ‘The Family Reunion’?,T.S.Eliot,0.5493,False,False,-1.0
+triviaqa,0.7,ccs_gate,Who wrote the plays ‘The Cocktail Party’ and ‘The Family Reunion’?,T.S.Eliot,0.5493,False,True,0.554
+triviaqa,0.7,baseline,What is the value of the letter ‘K’ in the game of Scrabble?,FIVE,0.6282,False,False,-1.0
+triviaqa,0.7,hcpc_v1,What is the value of the letter ‘K’ in the game of Scrabble?,FIVE,0.6207,False,False,-1.0
+triviaqa,0.7,ccs_gate,What is the value of the letter ‘K’ in the game of Scrabble?,FIVE,0.6207,False,True,0.5201
+triviaqa,0.7,baseline,According to Latin grammatical rules what is the singular of candelabra?,Candelabrum,0.6363,False,False,-1.0
+triviaqa,0.7,hcpc_v1,According to Latin grammatical rules what is the singular of candelabra?,Candelabrum,0.6785,False,False,-1.0
+triviaqa,0.7,ccs_gate,According to Latin grammatical rules what is the singular of candelabra?,Candelabrum,0.6785,False,True,0.1006
+triviaqa,0.7,baseline,"What is the pen name of Jim Grant, the British author who writes stories about the former U.S. Military Police Major, Jack Reacher?",LEE CHILD,0.7216,False,False,-1.0
+triviaqa,0.7,hcpc_v1,"What is the pen name of Jim Grant, the British author who writes stories about the former U.S. Military Police Major, Jack Reacher?",LEE CHILD,0.655,False,False,-1.0
+triviaqa,0.7,ccs_gate,"What is the pen name of Jim Grant, the British author who writes stories about the former U.S. Military Police Major, Jack Reacher?",LEE CHILD,0.7216,False,True,0.5663
+triviaqa,0.7,baseline,What is the name of the backing band for noted bluesman Stevie Ray Vaughan?,Double Trouble,0.9047,False,False,-1.0
+triviaqa,0.7,hcpc_v1,What is the name of the backing band for noted bluesman Stevie Ray Vaughan?,Double Trouble,0.5129,False,False,-1.0
+triviaqa,0.7,ccs_gate,What is the name of the backing band for noted bluesman Stevie Ray Vaughan?,Double Trouble,0.5129,False,True,0.5979
+triviaqa,0.7,baseline,"Adi Dassler founded the Adidas company, which company was founded by his brother Rudolf in 1948?",Puma,0.8551,False,False,-1.0
+triviaqa,0.7,hcpc_v1,"Adi Dassler founded the Adidas company, which company was founded by his brother Rudolf in 1948?",Puma,0.6999,False,False,-1.0
+triviaqa,0.7,ccs_gate,"Adi Dassler founded the Adidas company, which company was founded by his brother Rudolf in 1948?",Puma,0.6999,False,True,0.6863
+triviaqa,0.7,baseline,"Which island has belonged to Carthage, Rome, the Saracens, the King of Aragon, the Dukes of Savoy, United Italy under Victor Emmanuel and was granted autonomous government in 1947?",Sardinia,0.5478,False,False,-1.0
+triviaqa,0.7,hcpc_v1,"Which island has belonged to Carthage, Rome, the Saracens, the King of Aragon, the Dukes of Savoy, United Italy under Victor Emmanuel and was granted autonomous government in 1947?",Sardinia,0.6329,False,False,-1.0
+triviaqa,0.7,ccs_gate,"Which island has belonged to Carthage, Rome, the Saracens, the King of Aragon, the Dukes of Savoy, United Italy under Victor Emmanuel and was granted autonomous government in 1947?",Sardinia,0.6329,False,True,0.1671
+triviaqa,0.7,baseline,"""Which nation's record in the final of football's World Cup, reads """"played one - lost one""""?""",SWEDEN,0.533,False,False,-1.0
+triviaqa,0.7,hcpc_v1,"""Which nation's record in the final of football's World Cup, reads """"played one - lost one""""?""",SWEDEN,0.5841,False,False,-1.0
+triviaqa,0.7,ccs_gate,"""Which nation's record in the final of football's World Cup, reads """"played one - lost one""""?""",SWEDEN,0.5841,False,True,0.078
+triviaqa,0.7,baseline,Who was the founder of the 'Mormon Church'?,JOSEPH SMITH,0.3864,True,False,-1.0
+triviaqa,0.7,hcpc_v1,Who was the founder of the 'Mormon Church'?,JOSEPH SMITH,0.7401,False,False,-1.0
+triviaqa,0.7,ccs_gate,Who was the founder of the 'Mormon Church'?,JOSEPH SMITH,0.7401,False,True,0.6131
+triviaqa,0.7,baseline,At which sport has Indonesia won several medals including gold in each Summer Olympics from 1992-2008?,Badminton,0.5828,False,False,-1.0
+triviaqa,0.7,hcpc_v1,At which sport has Indonesia won several medals including gold in each Summer Olympics from 1992-2008?,Badminton,0.6825,False,False,-1.0
+triviaqa,0.7,ccs_gate,At which sport has Indonesia won several medals including gold in each Summer Olympics from 1992-2008?,Badminton,0.6825,False,True,0.0759
+triviaqa,0.7,baseline,"""Who was the target of the failed """"Bomb Plot"""" of 1944?""",Hitler,0.6144,False,False,-1.0
+triviaqa,0.7,hcpc_v1,"""Who was the target of the failed """"Bomb Plot"""" of 1944?""",Hitler,0.6381,False,False,-1.0
+triviaqa,0.7,ccs_gate,"""Who was the target of the failed """"Bomb Plot"""" of 1944?""",Hitler,0.6381,False,True,0.5196
+triviaqa,0.7,baseline,Who was the first Olympic heavyweight boxing gold medallist to become world professional heavyweight boxing champion?,(Joe) FRAZIER,0.74,False,False,-1.0
+triviaqa,0.7,hcpc_v1,Who was the first Olympic heavyweight boxing gold medallist to become world professional heavyweight boxing champion?,(Joe) FRAZIER,0.7198,False,False,-1.0
+triviaqa,0.7,ccs_gate,Who was the first Olympic heavyweight boxing gold medallist to become world professional heavyweight boxing champion?,(Joe) FRAZIER,0.7198,False,True,0.5069
+triviaqa,0.7,baseline,Who was Poet Laureate from 1850 to 1892?,Alfred Lord Tennyson,0.6502,False,False,-1.0
+triviaqa,0.7,hcpc_v1,Who was Poet Laureate from 1850 to 1892?,Alfred Lord Tennyson,0.6605,False,False,-1.0
+triviaqa,0.7,ccs_gate,Who was Poet Laureate from 1850 to 1892?,Alfred Lord Tennyson,0.6605,False,True,0.5836
+triviaqa,0.7,baseline,Who coached New Zealand when they won the 2011 Rugby Union World Cup?,GRAHAM HENRY,0.7671,False,False,-1.0
+triviaqa,0.7,hcpc_v1,Who coached New Zealand when they won the 2011 Rugby Union World Cup?,GRAHAM HENRY,0.7638,False,False,-1.0
+triviaqa,0.7,ccs_gate,Who coached New Zealand when they won the 2011 Rugby Union World Cup?,GRAHAM HENRY,0.7638,False,True,0.5992
+triviaqa,0.7,baseline,"Oct 5, 1902 saw the birth of Ray Kroc, who started which ubiquitous food source, the most successful fast food operation in the world?",McDonalds,0.5514,False,False,-1.0
+triviaqa,0.7,hcpc_v1,"Oct 5, 1902 saw the birth of Ray Kroc, who started which ubiquitous food source, the most successful fast food operation in the world?",McDonalds,1.0,False,False,-1.0
+triviaqa,0.7,ccs_gate,"Oct 5, 1902 saw the birth of Ray Kroc, who started which ubiquitous food source, the most successful fast food operation in the world?",McDonalds,1.0,False,True,0.5012
+triviaqa,0.7,baseline,"""Where would one find """"Bachmann's bundle""""?""",The human heart,0.5279,False,False,-1.0
+triviaqa,0.7,hcpc_v1,"""Where would one find """"Bachmann's bundle""""?""",The human heart,0.9608,False,False,-1.0
+triviaqa,0.7,ccs_gate,"""Where would one find """"Bachmann's bundle""""?""",The human heart,0.5279,False,False,0.7174
+triviaqa,0.7,baseline,"What metric prefix, denoting ten to the power of minus twelve, is named from Spanish meaning 'little bit'?",Pico,0.5416,False,False,-1.0
+triviaqa,0.7,hcpc_v1,"What metric prefix, denoting ten to the power of minus twelve, is named from Spanish meaning 'little bit'?",Pico,0.6299,False,False,-1.0
+triviaqa,0.7,ccs_gate,"What metric prefix, denoting ten to the power of minus twelve, is named from Spanish meaning 'little bit'?",Pico,0.5196,False,False,0.7132
+triviaqa,0.7,baseline,In which year did Nick Faldo win both the Open and the US Masters Championships?,1990,0.6516,False,False,-1.0
+triviaqa,0.7,hcpc_v1,In which year did Nick Faldo win both the Open and the US Masters Championships?,1990,0.6042,False,False,-1.0
+triviaqa,0.7,ccs_gate,In which year did Nick Faldo win both the Open and the US Masters Championships?,1990,0.6042,False,True,0.581
+triviaqa,0.7,baseline,What city is considered the birthplace of jazz music?,New Orleans,0.5241,False,False,-1.0
+triviaqa,0.7,hcpc_v1,What city is considered the birthplace of jazz music?,New Orleans,0.5973,False,False,-1.0
+triviaqa,0.7,ccs_gate,What city is considered the birthplace of jazz music?,New Orleans,0.5973,False,True,0.5434
+triviaqa,0.7,baseline,In children's TV by what name is Sir Topham Hatt better known,The Fat Controller,0.5395,False,False,-1.0
+triviaqa,0.7,hcpc_v1,In children's TV by what name is Sir Topham Hatt better known,The Fat Controller,0.5107,False,False,-1.0
+triviaqa,0.7,ccs_gate,In children's TV by what name is Sir Topham Hatt better known,The Fat Controller,0.5107,False,True,0.4634
+triviaqa,0.7,baseline,What is the first name of Ragnor’s brother in the historical drama television series ‘Vikings’?,Rollo,1.0,False,False,-1.0
+triviaqa,0.7,hcpc_v1,What is the first name of Ragnor’s brother in the historical drama television series ‘Vikings’?,Rollo,0.6984,False,False,-1.0
+triviaqa,0.7,ccs_gate,What is the first name of Ragnor’s brother in the historical drama television series ‘Vikings’?,Rollo,0.6984,False,True,0.601
+triviaqa,0.7,baseline,"In Rome, who formed the 'First Triumvirate' with Julius Caesar and Crassus?",POMPEY,0.5103,False,False,-1.0
+triviaqa,0.7,hcpc_v1,"In Rome, who formed the 'First Triumvirate' with Julius Caesar and Crassus?",POMPEY,0.611,False,False,-1.0
+triviaqa,0.7,ccs_gate,"In Rome, who formed the 'First Triumvirate' with Julius Caesar and Crassus?",POMPEY,0.5401,False,True,0.4048
+triviaqa,0.7,baseline,Actress Fenella Fielding was the sister of which famous comedian and comic actor?,MARTY FELDMAN,0.6689,False,False,-1.0
+triviaqa,0.7,hcpc_v1,Actress Fenella Fielding was the sister of which famous comedian and comic actor?,MARTY FELDMAN,0.534,False,False,-1.0
+triviaqa,0.7,ccs_gate,Actress Fenella Fielding was the sister of which famous comedian and comic actor?,MARTY FELDMAN,0.534,False,True,0.4166
+triviaqa,0.7,baseline,"""Which actress played 'Valeria"""" in the film Carry On Screaming?""",Fenella Fielding,0.6474,False,False,-1.0
+triviaqa,0.7,hcpc_v1,"""Which actress played 'Valeria"""" in the film Carry On Screaming?""",Fenella Fielding,0.7207,False,False,-1.0
+triviaqa,0.7,ccs_gate,"""Which actress played 'Valeria"""" in the film Carry On Screaming?""",Fenella Fielding,0.7207,False,True,0.6031
+triviaqa,0.7,baseline,What Scottish city is at the confluence of the rivers Dee and Don?,Aberdeen,0.7253,False,False,-1.0
+triviaqa,0.7,hcpc_v1,What Scottish city is at the confluence of the rivers Dee and Don?,Aberdeen,0.738,False,False,-1.0
+triviaqa,0.7,ccs_gate,What Scottish city is at the confluence of the rivers Dee and Don?,Aberdeen,0.738,False,True,0.3288
+triviaqa,0.7,baseline,"May 8th, 1886 saw Civil War veteran and morphine addict John Pemberton sell what concoction at Jacob's Pharmacy in Atlanta, Ga?",Coca-cola,0.5837,False,False,-1.0
+triviaqa,0.7,hcpc_v1,"May 8th, 1886 saw Civil War veteran and morphine addict John Pemberton sell what concoction at Jacob's Pharmacy in Atlanta, Ga?",Coca-cola,0.6531,False,False,-1.0
+triviaqa,0.7,ccs_gate,"May 8th, 1886 saw Civil War veteran and morphine addict John Pemberton sell what concoction at Jacob's Pharmacy in Atlanta, Ga?",Coca-cola,0.7157,False,True,0.6427
+triviaqa,0.7,baseline,What was the first animated film to be nominated for an Oscar for best picture?,Disney's 'Beauty and the Beast',0.6815,False,False,-1.0
+triviaqa,0.7,hcpc_v1,What was the first animated film to be nominated for an Oscar for best picture?,Disney's 'Beauty and the Beast',0.5052,False,False,-1.0
+triviaqa,0.7,ccs_gate,What was the first animated film to be nominated for an Oscar for best picture?,Disney's 'Beauty and the Beast',0.5052,False,True,0.4721
+triviaqa,0.7,baseline,"What is the Christian service or ceremony, named from Greek meaning grateful, commemorating the Last Supper?",Eucharist,0.661,False,False,-1.0
+triviaqa,0.7,hcpc_v1,"What is the Christian service or ceremony, named from Greek meaning grateful, commemorating the Last Supper?",Eucharist,0.6745,False,False,-1.0
+triviaqa,0.7,ccs_gate,"What is the Christian service or ceremony, named from Greek meaning grateful, commemorating the Last Supper?",Eucharist,0.6745,False,True,0.6138
+triviaqa,0.7,baseline,The French town of Bordeaux lies on which river?,The Garonne River,0.7027,False,False,-1.0
+triviaqa,0.7,hcpc_v1,The French town of Bordeaux lies on which river?,The Garonne River,0.7027,False,False,-1.0
+triviaqa,0.7,ccs_gate,The French town of Bordeaux lies on which river?,The Garonne River,0.7027,False,True,0.4769
+triviaqa,0.7,baseline,"Which actor was the fifth Doctor Who from 1982-1984, and in that role often wore Edwardian cricket costume?",PETER DAVISON,0.5323,False,False,-1.0
+triviaqa,0.7,hcpc_v1,"Which actor was the fifth Doctor Who from 1982-1984, and in that role often wore Edwardian cricket costume?",PETER DAVISON,0.642,False,False,-1.0
+triviaqa,0.7,ccs_gate,"Which actor was the fifth Doctor Who from 1982-1984, and in that role often wore Edwardian cricket costume?",PETER DAVISON,0.642,False,True,0.61
+triviaqa,0.7,baseline,In which English city will you find the Ashmolean museum?,OXFORD,1.0,False,False,-1.0
+triviaqa,0.7,hcpc_v1,In which English city will you find the Ashmolean museum?,OXFORD,1.0,False,False,-1.0
+triviaqa,0.7,ccs_gate,In which English city will you find the Ashmolean museum?,OXFORD,1.0,False,True,0.5834
+triviaqa,0.7,baseline,What was the name of Jimmy James' backing group?,Vagabonds,0.7434,False,False,-1.0
+triviaqa,0.7,hcpc_v1,What was the name of Jimmy James' backing group?,Vagabonds,0.7107,False,False,-1.0
+triviaqa,0.7,ccs_gate,What was the name of Jimmy James' backing group?,Vagabonds,0.7107,False,True,0.3029
+triviaqa,0.7,baseline,"""Who wrote the 1993 Booker Prize winning novel """"Paddy Clarke Ha Ha Ha""""?""",Roddy Doyle,0.3561,True,False,-1.0
+triviaqa,0.7,hcpc_v1,"""Who wrote the 1993 Booker Prize winning novel """"Paddy Clarke Ha Ha Ha""""?""",Roddy Doyle,0.3561,True,False,-1.0
+triviaqa,0.7,ccs_gate,"""Who wrote the 1993 Booker Prize winning novel """"Paddy Clarke Ha Ha Ha""""?""",Roddy Doyle,0.3561,True,True,-0.0682
+triviaqa,0.7,baseline,What is measured by a Hygrometer?,Humidity,0.8473,False,False,-1.0
+triviaqa,0.7,hcpc_v1,What is measured by a Hygrometer?,Humidity,0.727,False,False,-1.0
+triviaqa,0.7,ccs_gate,What is measured by a Hygrometer?,Humidity,0.727,False,True,0.6067
+triviaqa,0.7,baseline,"June 2, 2004 saw the beginning of the streak in which what Edmonds, WA native won 74 consecutive games on Jeopardy?",Ken Jennings,0.6246,False,False,-1.0
+triviaqa,0.7,hcpc_v1,"June 2, 2004 saw the beginning of the streak in which what Edmonds, WA native won 74 consecutive games on Jeopardy?",Ken Jennings,0.5809,False,False,-1.0
+triviaqa,0.7,ccs_gate,"June 2, 2004 saw the beginning of the streak in which what Edmonds, WA native won 74 consecutive games on Jeopardy?",Ken Jennings,0.5809,False,True,0.1497
+triviaqa,0.7,baseline,Which Greek philosopher is popularly known as 'The Laughing Philosopher' because of his scoffing nature?,DEMOCRITUS,0.6077,False,False,-1.0
+triviaqa,0.7,hcpc_v1,Which Greek philosopher is popularly known as 'The Laughing Philosopher' because of his scoffing nature?,DEMOCRITUS,0.7268,False,False,-1.0
+triviaqa,0.7,ccs_gate,Which Greek philosopher is popularly known as 'The Laughing Philosopher' because of his scoffing nature?,DEMOCRITUS,0.7268,False,True,0.3929
+triviaqa,0.7,baseline,What was the first name of the father of the Bronte sisters?,PATRICK,0.5434,False,False,-1.0
+triviaqa,0.7,hcpc_v1,What was the first name of the father of the Bronte sisters?,PATRICK,0.6516,False,False,-1.0
+triviaqa,0.7,ccs_gate,What was the first name of the father of the Bronte sisters?,PATRICK,0.6516,False,True,0.4459
+triviaqa,0.7,baseline,"""""""Wuthering Heights"""" by Emily Bront tells the story of which two lovers?""",Catherine and Heathcliff,0.7124,False,False,-1.0
+triviaqa,0.7,hcpc_v1,"""""""Wuthering Heights"""" by Emily Bront tells the story of which two lovers?""",Catherine and Heathcliff,0.6463,False,False,-1.0
+triviaqa,0.7,ccs_gate,"""""""Wuthering Heights"""" by Emily Bront tells the story of which two lovers?""",Catherine and Heathcliff,0.6463,False,True,0.584
+triviaqa,0.7,baseline,What is a dish of pickled herring fillets wrapped around an onion or gerkhin called,Rollmops,1.0,False,False,-1.0
+triviaqa,0.7,hcpc_v1,What is a dish of pickled herring fillets wrapped around an onion or gerkhin called,Rollmops,1.0,False,False,-1.0
+triviaqa,0.7,ccs_gate,What is a dish of pickled herring fillets wrapped around an onion or gerkhin called,Rollmops,1.0,False,False,0.7453
+triviaqa,0.7,baseline,Which ‘P’ shot the arrow that killed Achilles by striking him on his heel?,PARIS,0.8371,False,False,-1.0
+triviaqa,0.7,hcpc_v1,Which ‘P’ shot the arrow that killed Achilles by striking him on his heel?,PARIS,0.583,False,False,-1.0
+triviaqa,0.7,ccs_gate,Which ‘P’ shot the arrow that killed Achilles by striking him on his heel?,PARIS,0.583,False,True,0.6483
+triviaqa,0.7,baseline,Which South American city is served by Simon Bolivar (Maiguetia) airport?,Caracas,0.6724,False,False,-1.0
+triviaqa,0.7,hcpc_v1,Which South American city is served by Simon Bolivar (Maiguetia) airport?,Caracas,0.7299,False,False,-1.0
+triviaqa,0.7,ccs_gate,Which South American city is served by Simon Bolivar (Maiguetia) airport?,Caracas,0.7299,False,True,0.672
+triviaqa,0.7,baseline,In which war was the charge of the Light Brigade?,Crimean,0.6974,False,False,-1.0
+triviaqa,0.7,hcpc_v1,In which war was the charge of the Light Brigade?,Crimean,0.7787,False,False,-1.0
+triviaqa,0.7,ccs_gate,In which war was the charge of the Light Brigade?,Crimean,0.7787,False,True,0.6137
+triviaqa,0.7,baseline,What was the name of two tyrants who ruled Syracuse in the 2nd century BC?,Dionysius,0.7196,False,False,-1.0
+triviaqa,0.7,hcpc_v1,What was the name of two tyrants who ruled Syracuse in the 2nd century BC?,Dionysius,0.7286,False,False,-1.0
+triviaqa,0.7,ccs_gate,What was the name of two tyrants who ruled Syracuse in the 2nd century BC?,Dionysius,0.7286,False,True,0.4812
+triviaqa,0.7,baseline,Which English town is home to the Stephen Joseph Theatre?,SCARBOROUGH,0.6626,False,False,-1.0
+triviaqa,0.7,hcpc_v1,Which English town is home to the Stephen Joseph Theatre?,SCARBOROUGH,0.556,False,False,-1.0
+triviaqa,0.7,ccs_gate,Which English town is home to the Stephen Joseph Theatre?,SCARBOROUGH,0.556,False,True,0.3573
+triviaqa,0.7,baseline,What is the title of Simon and Garfunkel’s only UK number one hit single?,Bridge Over Troubled Water,0.5881,False,False,-1.0
+triviaqa,0.7,hcpc_v1,What is the title of Simon and Garfunkel’s only UK number one hit single?,Bridge Over Troubled Water,0.6418,False,False,-1.0
+triviaqa,0.7,ccs_gate,What is the title of Simon and Garfunkel’s only UK number one hit single?,Bridge Over Troubled Water,0.6649,False,True,0.4499
+triviaqa,0.7,baseline,"The 3rd of his vice presidents (after John Nance Garner and Henry Wallace), who took over the reins of power when FDR kicked off?",Harry Truman,0.6583,False,False,-1.0
+triviaqa,0.7,hcpc_v1,"The 3rd of his vice presidents (after John Nance Garner and Henry Wallace), who took over the reins of power when FDR kicked off?",Harry Truman,0.6413,False,False,-1.0
+triviaqa,0.7,ccs_gate,"The 3rd of his vice presidents (after John Nance Garner and Henry Wallace), who took over the reins of power when FDR kicked off?",Harry Truman,0.6413,False,True,0.5688
+triviaqa,0.7,baseline,"""Where would you find a """"plimsoll line""""?""",On a ship,0.7029,False,False,-1.0
+triviaqa,0.7,hcpc_v1,"""Where would you find a """"plimsoll line""""?""",On a ship,0.5801,False,False,-1.0
+triviaqa,0.7,ccs_gate,"""Where would you find a """"plimsoll line""""?""",On a ship,0.693,False,True,0.6183
+triviaqa,0.7,baseline,Which British city is served by Eastleigh airport?,Southampton,0.6448,False,False,-1.0
+triviaqa,0.7,hcpc_v1,Which British city is served by Eastleigh airport?,Southampton,0.4753,True,False,-1.0
+triviaqa,0.7,ccs_gate,Which British city is served by Eastleigh airport?,Southampton,0.5869,False,True,0.0698
+triviaqa,0.7,baseline,Who always holds the title of the Supreme Governor of the Church of England?,The British monarch,0.6631,False,False,-1.0
+triviaqa,0.7,hcpc_v1,Who always holds the title of the Supreme Governor of the Church of England?,The British monarch,0.721,False,False,-1.0
+triviaqa,0.7,ccs_gate,Who always holds the title of the Supreme Governor of the Church of England?,The British monarch,0.721,False,True,0.4018
+triviaqa,0.7,baseline,Which monarch founded Ascot Racecourse?,QUEEN ANNE,0.6521,False,False,-1.0
+triviaqa,0.7,hcpc_v1,Which monarch founded Ascot Racecourse?,QUEEN ANNE,0.7537,False,False,-1.0
+triviaqa,0.7,ccs_gate,Which monarch founded Ascot Racecourse?,QUEEN ANNE,0.7537,False,True,0.5121
+triviaqa,0.7,baseline,National Flag Day is celebrated in Estonia during which month of the year?,June,0.7574,False,False,-1.0
+triviaqa,0.7,hcpc_v1,National Flag Day is celebrated in Estonia during which month of the year?,June,0.7634,False,False,-1.0
+triviaqa,0.7,ccs_gate,National Flag Day is celebrated in Estonia during which month of the year?,June,0.7634,False,True,0.4551
+triviaqa,0.7,baseline,What was the capital of the Confederacy in the American Civil War?,RICHMOND,0.7281,False,False,-1.0
+triviaqa,0.7,hcpc_v1,What was the capital of the Confederacy in the American Civil War?,RICHMOND,0.7064,False,False,-1.0
+triviaqa,0.7,ccs_gate,What was the capital of the Confederacy in the American Civil War?,RICHMOND,0.7064,False,True,0.6065
+triviaqa,0.7,baseline,Who's home runs record did Mark McGwire break in the 1998 season?,Roger Maris,0.7647,False,False,-1.0
+triviaqa,0.7,hcpc_v1,Who's home runs record did Mark McGwire break in the 1998 season?,Roger Maris,0.5052,False,False,-1.0
+triviaqa,0.7,ccs_gate,Who's home runs record did Mark McGwire break in the 1998 season?,Roger Maris,0.5084,False,True,0.3009
+triviaqa,0.7,baseline,Tybalt is a character in which of Shakespeare's plays?,ROMEO AND JULIET,0.6614,False,False,-1.0
+triviaqa,0.7,hcpc_v1,Tybalt is a character in which of Shakespeare's plays?,ROMEO AND JULIET,0.6614,False,False,-1.0
+triviaqa,0.7,ccs_gate,Tybalt is a character in which of Shakespeare's plays?,ROMEO AND JULIET,0.6614,False,True,0.6926
+triviaqa,0.7,baseline,Who wrote the musical Blood Brothers ?,WILLY RUSSELL,0.8211,False,False,-1.0
+triviaqa,0.7,hcpc_v1,Who wrote the musical Blood Brothers ?,WILLY RUSSELL,0.8211,False,False,-1.0
+triviaqa,0.7,ccs_gate,Who wrote the musical Blood Brothers ?,WILLY RUSSELL,0.8211,False,True,0.4778
+triviaqa,0.7,baseline,"What is the name of the enzyme usually added to milk to coagulate it, to make ""curds and whey""?",Rennet.,0.8146,False,False,-1.0
+triviaqa,0.7,hcpc_v1,"What is the name of the enzyme usually added to milk to coagulate it, to make ""curds and whey""?",Rennet.,0.5484,False,False,-1.0
+triviaqa,0.7,ccs_gate,"What is the name of the enzyme usually added to milk to coagulate it, to make ""curds and whey""?",Rennet.,0.8146,False,False,0.7424
+triviaqa,0.7,baseline,What is the name of the character played by actor Nicholas Lyndhurst in the British television series ‘Goodnight Sweetheart’?,Gary Sparrow,0.3945,True,False,-1.0
+triviaqa,0.7,hcpc_v1,What is the name of the character played by actor Nicholas Lyndhurst in the British television series ‘Goodnight Sweetheart’?,Gary Sparrow,0.3945,True,False,-1.0
+triviaqa,0.7,ccs_gate,What is the name of the character played by actor Nicholas Lyndhurst in the British television series ‘Goodnight Sweetheart’?,Gary Sparrow,0.3945,True,True,0.4219
+triviaqa,0.7,baseline,How is seasonal allergic rhinitis more commonly known ?,HAY FEVER,0.7974,False,False,-1.0
+triviaqa,0.7,hcpc_v1,How is seasonal allergic rhinitis more commonly known ?,HAY FEVER,0.5591,False,False,-1.0
+triviaqa,0.7,ccs_gate,How is seasonal allergic rhinitis more commonly known ?,HAY FEVER,0.5591,False,True,0.5464
+triviaqa,0.7,baseline,Which musical instrument was patented in Berlin by Freidrich Buschmann in 1822,Accordion,0.6877,False,False,-1.0
+triviaqa,0.7,hcpc_v1,Which musical instrument was patented in Berlin by Freidrich Buschmann in 1822,Accordion,0.6608,False,False,-1.0
+triviaqa,0.7,ccs_gate,Which musical instrument was patented in Berlin by Freidrich Buschmann in 1822,Accordion,0.6608,False,True,0.5737
+triviaqa,0.7,baseline,"According to famous American architect Louis Henri Sullivan, known as the father of skyscrapers, ""form follows what""?",Function,0.6671,False,False,-1.0
+triviaqa,0.7,hcpc_v1,"According to famous American architect Louis Henri Sullivan, known as the father of skyscrapers, ""form follows what""?",Function,0.9652,False,False,-1.0
+triviaqa,0.7,ccs_gate,"According to famous American architect Louis Henri Sullivan, known as the father of skyscrapers, ""form follows what""?",Function,0.9652,False,True,0.3542
+triviaqa,0.7,baseline,What is the international telephone dialling code for Germany?,49,0.701,False,False,-1.0
+triviaqa,0.7,hcpc_v1,What is the international telephone dialling code for Germany?,49,0.6994,False,False,-1.0
+triviaqa,0.7,ccs_gate,What is the international telephone dialling code for Germany?,49,0.6994,False,True,0.5259
+triviaqa,0.7,baseline,The Dodecanese Campaign of WWII that was an attempt by the Allied forces to capture islands in the Aegean Sea was the inspiration for which acclaimed 1961 commando film?,The Guns of Navarone,0.6139,False,False,-1.0
+triviaqa,0.7,hcpc_v1,The Dodecanese Campaign of WWII that was an attempt by the Allied forces to capture islands in the Aegean Sea was the inspiration for which acclaimed 1961 commando film?,The Guns of Navarone,0.6212,False,False,-1.0
+triviaqa,0.7,ccs_gate,The Dodecanese Campaign of WWII that was an attempt by the Allied forces to capture islands in the Aegean Sea was the inspiration for which acclaimed 1961 commando film?,The Guns of Navarone,0.6212,False,True,0.6676
+triviaqa,0.7,baseline,"Prince Rupert of the Rhine, who fought in the Thirty Years’ War, was nephew of which English King, who made him Duke of Cumberland?",CHARLES I,0.5153,False,False,-1.0
+triviaqa,0.7,hcpc_v1,"Prince Rupert of the Rhine, who fought in the Thirty Years’ War, was nephew of which English King, who made him Duke of Cumberland?",CHARLES I,0.5151,False,False,-1.0
+triviaqa,0.7,ccs_gate,"Prince Rupert of the Rhine, who fought in the Thirty Years’ War, was nephew of which English King, who made him Duke of Cumberland?",CHARLES I,0.5151,False,True,0.6629
+triviaqa,0.7,baseline,Which element is the main polluting substance in acid rain?,Sulphur,0.6622,False,False,-1.0
+triviaqa,0.7,hcpc_v1,Which element is the main polluting substance in acid rain?,Sulphur,0.7364,False,False,-1.0
+triviaqa,0.7,ccs_gate,Which element is the main polluting substance in acid rain?,Sulphur,0.7232,False,True,0.5879
+triviaqa,0.7,baseline,What play was President Lincoln watching the night he was assassinated in 1865?,Our American Cousin,0.374,True,False,-1.0
+triviaqa,0.7,hcpc_v1,What play was President Lincoln watching the night he was assassinated in 1865?,Our American Cousin,0.5829,False,False,-1.0
+triviaqa,0.7,ccs_gate,What play was President Lincoln watching the night he was assassinated in 1865?,Our American Cousin,0.5133,False,True,0.5461
+triviaqa,0.7,baseline,In what country is Tiahuanaco?,Bolivia,0.7241,False,False,-1.0
+triviaqa,0.7,hcpc_v1,In what country is Tiahuanaco?,Bolivia,0.5874,False,False,-1.0
+triviaqa,0.7,ccs_gate,In what country is Tiahuanaco?,Bolivia,0.5874,False,True,0.2676
+triviaqa,0.7,baseline,Which duo are associated with the classic comedy routine “Who’s on First”?,Abbott and Costello,0.4746,True,False,-1.0
+triviaqa,0.7,hcpc_v1,Which duo are associated with the classic comedy routine “Who’s on First”?,Abbott and Costello,0.4746,True,False,-1.0
+triviaqa,0.7,ccs_gate,Which duo are associated with the classic comedy routine “Who’s on First”?,Abbott and Costello,0.4746,True,True,0.2444
+triviaqa,0.7,baseline,Which admiral commanded the British fleet sent to repel the Spanish Armada in 1588?,Lord Howard of Effingham,0.6688,False,False,-1.0
+triviaqa,0.7,hcpc_v1,Which admiral commanded the British fleet sent to repel the Spanish Armada in 1588?,Lord Howard of Effingham,0.5346,False,False,-1.0
+triviaqa,0.7,ccs_gate,Which admiral commanded the British fleet sent to repel the Spanish Armada in 1588?,Lord Howard of Effingham,0.5346,False,True,0.6813
+triviaqa,0.7,baseline,What is the full name of the train robber played by Phil Collins in a 1988 movie?,Buster Edwards,0.7196,False,False,-1.0
+triviaqa,0.7,hcpc_v1,What is the full name of the train robber played by Phil Collins in a 1988 movie?,Buster Edwards,0.714,False,False,-1.0
+triviaqa,0.7,ccs_gate,What is the full name of the train robber played by Phil Collins in a 1988 movie?,Buster Edwards,0.714,False,True,0.0575
+triviaqa,0.7,baseline,Which member of the 'Dirty Dozen' was also in 'The Magnificent Seven'?,CHARLES BRONSON,0.7402,False,False,-1.0
+triviaqa,0.7,hcpc_v1,Which member of the 'Dirty Dozen' was also in 'The Magnificent Seven'?,CHARLES BRONSON,0.7402,False,False,-1.0
+triviaqa,0.7,ccs_gate,Which member of the 'Dirty Dozen' was also in 'The Magnificent Seven'?,CHARLES BRONSON,0.7402,False,True,0.3045
+triviaqa,0.7,baseline,Who was Queen of France as the wife of Henry II (who reigned for 15 years from 1547) and remained the dominant person in France after his death during the reign of 3 of her 4 sons until 1589?,Catherine de Medici,0.5268,False,False,-1.0
+triviaqa,0.7,hcpc_v1,Who was Queen of France as the wife of Henry II (who reigned for 15 years from 1547) and remained the dominant person in France after his death during the reign of 3 of her 4 sons until 1589?,Catherine de Medici,0.5502,False,False,-1.0
+triviaqa,0.7,ccs_gate,Who was Queen of France as the wife of Henry II (who reigned for 15 years from 1547) and remained the dominant person in France after his death during the reign of 3 of her 4 sons until 1589?,Catherine de Medici,0.5847,False,True,0.435
+triviaqa,0.7,baseline,To which order of monks does or did Pope Francis belong?,Jesuits,0.748,False,False,-1.0
+triviaqa,0.7,hcpc_v1,To which order of monks does or did Pope Francis belong?,Jesuits,0.5701,False,False,-1.0
+triviaqa,0.7,ccs_gate,To which order of monks does or did Pope Francis belong?,Jesuits,0.5701,False,True,0.5191
+triviaqa,0.7,baseline,What is the name given to the largest bee in a hive?,Queen,0.6115,False,False,-1.0
+triviaqa,0.7,hcpc_v1,What is the name given to the largest bee in a hive?,Queen,0.6271,False,False,-1.0
+triviaqa,0.7,ccs_gate,What is the name given to the largest bee in a hive?,Queen,0.6271,False,True,0.6447
+triviaqa,0.7,baseline,In 2006 Monty Panesar became the first person of what religion to play test cricket for England?,Sikh,0.7007,False,False,-1.0
+triviaqa,0.7,hcpc_v1,In 2006 Monty Panesar became the first person of what religion to play test cricket for England?,Sikh,0.4386,True,False,-1.0
+triviaqa,0.7,ccs_gate,In 2006 Monty Panesar became the first person of what religion to play test cricket for England?,Sikh,0.4386,True,True,0.6864
+triviaqa,0.7,baseline,The Misses World for both 1999 and 2000 represented which country?,India,0.5958,False,False,-1.0
+triviaqa,0.7,hcpc_v1,The Misses World for both 1999 and 2000 represented which country?,India,0.5599,False,False,-1.0
+triviaqa,0.7,ccs_gate,The Misses World for both 1999 and 2000 represented which country?,India,0.5599,False,True,0.4882
+triviaqa,0.7,baseline,Uncas is a principle character in which 1826 novel by James Fenimore Cooper?,The Last of the Mohicans: A Narrative of 1757,0.6267,False,False,-1.0
+triviaqa,0.7,hcpc_v1,Uncas is a principle character in which 1826 novel by James Fenimore Cooper?,The Last of the Mohicans: A Narrative of 1757,0.5629,False,False,-1.0
+triviaqa,0.7,ccs_gate,Uncas is a principle character in which 1826 novel by James Fenimore Cooper?,The Last of the Mohicans: A Narrative of 1757,0.6473,False,True,0.2505
+triviaqa,0.7,baseline,"Sometimes called the 'Invicta flag', which English county's flag is a white horse on a red background?",KENT,0.572,False,False,-1.0
+triviaqa,0.7,hcpc_v1,"Sometimes called the 'Invicta flag', which English county's flag is a white horse on a red background?",KENT,0.6118,False,False,-1.0
+triviaqa,0.7,ccs_gate,"Sometimes called the 'Invicta flag', which English county's flag is a white horse on a red background?",KENT,0.6118,False,True,0.6754
+triviaqa,0.7,baseline,Yuan Yuan was caught carrying drugs for which Chinese team?,Swimming,0.7036,False,False,-1.0
+triviaqa,0.7,hcpc_v1,Yuan Yuan was caught carrying drugs for which Chinese team?,Swimming,0.5531,False,False,-1.0
+triviaqa,0.7,ccs_gate,Yuan Yuan was caught carrying drugs for which Chinese team?,Swimming,0.5531,False,True,0.0772
+triviaqa,0.7,baseline,A merrythought is one of the popular names for which part of a bird?,WISHBONE,0.6095,False,False,-1.0
+triviaqa,0.7,hcpc_v1,A merrythought is one of the popular names for which part of a bird?,WISHBONE,0.5411,False,False,-1.0
+triviaqa,0.7,ccs_gate,A merrythought is one of the popular names for which part of a bird?,WISHBONE,0.5411,False,True,-0.104
+triviaqa,0.7,baseline,What is Mexico's most commonly used language?,Spanish,0.7935,False,False,-1.0
+triviaqa,0.7,hcpc_v1,What is Mexico's most commonly used language?,Spanish,0.5117,False,False,-1.0
+triviaqa,0.7,ccs_gate,What is Mexico's most commonly used language?,Spanish,0.5117,False,True,0.2311
+triviaqa,0.7,baseline,"Which long-running British TV series, now disappeared from our screens, began as a 1983 one-off drama called Woodentop'?",THE BILL,0.5333,False,False,-1.0
+triviaqa,0.7,hcpc_v1,"Which long-running British TV series, now disappeared from our screens, began as a 1983 one-off drama called Woodentop'?",THE BILL,0.6211,False,False,-1.0
+triviaqa,0.7,ccs_gate,"Which long-running British TV series, now disappeared from our screens, began as a 1983 one-off drama called Woodentop'?",THE BILL,0.6211,False,True,0.3458
+triviaqa,0.7,baseline,The documentary about the making of which 1970s groundbreaking film was titled Hearts of Darkness alluding not just to the novel that inspired it but also to it's chaotic production?,Apocalypse Now,0.9635,False,False,-1.0
+triviaqa,0.7,hcpc_v1,The documentary about the making of which 1970s groundbreaking film was titled Hearts of Darkness alluding not just to the novel that inspired it but also to it's chaotic production?,Apocalypse Now,0.4766,True,False,-1.0
+triviaqa,0.7,ccs_gate,The documentary about the making of which 1970s groundbreaking film was titled Hearts of Darkness alluding not just to the novel that inspired it but also to it's chaotic production?,Apocalypse Now,0.4766,True,True,0.5924
+triviaqa,0.7,baseline,In which country could you drive along the 1700 kilometre Bruce Highway?,Australia,1.0,False,False,-1.0
+triviaqa,0.7,hcpc_v1,In which country could you drive along the 1700 kilometre Bruce Highway?,Australia,1.0,False,False,-1.0
+triviaqa,0.7,ccs_gate,In which country could you drive along the 1700 kilometre Bruce Highway?,Australia,1.0,False,True,0.6323
+triviaqa,0.7,baseline,How was Moose the dog better known when he starred in a popular US sitcom?,EDDIE,0.5957,False,False,-1.0
+triviaqa,0.7,hcpc_v1,How was Moose the dog better known when he starred in a popular US sitcom?,EDDIE,0.5845,False,False,-1.0
+triviaqa,0.7,ccs_gate,How was Moose the dog better known when he starred in a popular US sitcom?,EDDIE,0.5845,False,True,0.2139

@@ -1,0 +1,2 @@
+dataset,stage,n_target,n_pairs_constructed,n_skipped,max_contexts,candidate_limit,seed,top_n,triple_k,sim_tolerance,ccs_gap_min
+squad,construct,200,200,0,400,400,42,20,3,0.02,0.05

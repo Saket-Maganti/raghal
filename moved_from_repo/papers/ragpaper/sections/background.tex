@@ -1,0 +1,68 @@
+\section{Background and Related Work}
+\label{sec:bg}
+
+\paragraph{The standard RAG pipeline.}
+A modern RAG system~\citep{lewis2020rag,gao2024ragsurvey} threads four
+stages: a dense retriever (e.g.\ MiniLM, BGE, E5) returns the top-$k$
+passages by query--passage similarity; an optional cross-encoder
+reranker rescores them~\citep{nogueira2019passage}; an optional
+refinement module further filters or compresses each retained passage
+(e.g.\ extractive sentence selection, query-conditioned summarization,
+or learned compression~\citep{xu2024recomp}); and a generator
+produces the final answer conditioned on the assembled context. Each
+stage individually is reported to improve task performance on standard
+benchmarks~\citep{karpukhin2020dpr,izacard2022few,xiong2024embedder}.
+
+\paragraph{Decoder-side correction.}
+Two influential lines move the correction \emph{into} the decoder.
+Self-RAG~\citep{asai2024selfrag} fine-tunes the generator to emit
+``reflection tokens'' that decide whether to retrieve, retrieve again,
+or stop, paying a fine-tune-time cost and a $2\text{--}3\times$
+inference latency cost. CRAG~\citep{yan2024crag} introduces a
+lightweight retrieval evaluator that triggers web search when document
+relevance is judged poor; it pays an external-call latency cost. Both
+take the position that the generator (or a learned auxiliary) is the
+right place to fix retrieval failures. We instead show that a simple
+retrieval-time signal (CCS) flags the same failures with no decoder
+work and no fine-tuning.
+
+\paragraph{Hierarchical retrieval.}
+RAPTOR~\citep{raptor2024} clusters retrieved passages into a tree and
+retrieves from both leaves and LLM-summarised internal nodes,
+producing higher-coherence summary contexts at the cost of an offline
+LLM-summarisation pass. We compare against RAPTOR directly
+(\S\ref{sec:robustness}); HCPC-v$2$ matches or beats it on $2/3$
+datasets at roughly an order-of-magnitude lower indexing cost.
+
+\paragraph{Faithfulness evaluation.}
+Faithfulness --- whether a generated answer is supported by the
+retrieved context --- is typically assessed via NLI scoring of the
+answer against the retrieved documents~\citep{honovich2022true,laban2022summac,
+es2024ragas}, occasionally complemented by human annotation. We
+follow this standard, using a DeBERTa-v$3$ NLI scorer
+(cross-encoder/nli-deberta-v$3$-base) released with
+SummaC~\citep{laban2022summac}, and report a hallucination rate at
+the conventional $0.5$ threshold.
+
+\paragraph{Coherence in NLP.}
+Discourse coherence has a long history in classical text
+generation~\citep{li2014coherence,mesgar2018neural,nguyen2021conditional}
+but has not, to our knowledge, been quantified as a deployment-time
+RAG signal. \citet{shi2023large} show that LLMs are distracted by
+irrelevant context but do not consider the case where each individual
+passage is relevant yet the \emph{set} is internally fragmented ---
+which is the regime our work targets. \citet{liu2024lostmiddle} document
+position-dependent context utilization in long contexts; coherence is
+orthogonal to position effects, and our results hold at top-$k$
+configurations small enough that position bias is negligible.
+
+\paragraph{What we add.}
+The closest existing work flags retrieval failures via the
+\emph{generator's} downstream behavior (Self-RAG, CRAG) or via
+hierarchical context restructuring (RAPTOR). We make three additions:
+(i) we identify a specific failure mode --- the refinement paradox ---
+that the standard pipeline systematically produces; (ii) we provide a
+generator-free retrieval-time signal (CCS) that detects it; and
+(iii) we ship the diagnostic as a deployment policy (HCPC-v$2$) that
+recovers faithfulness at one pairwise-similarity computation per
+query, with no fine-tuning, labels, or auxiliary model calls.

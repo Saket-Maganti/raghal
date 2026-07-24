@@ -1,0 +1,168 @@
+{"case_id": "disjoint_011", "category": "disjoint", "query": "What is the function of mitochondria in a cell?", "reason": "disjoint:mean_jaccard=0.151"}
+{"case_id": "disjoint_011", "category": "disjoint", "query": "What is the phenomenon responsible for quantum entanglement?", "reason": "disjoint:mean_jaccard=0.153"}
+{"case_id": "disjoint_012", "category": "disjoint", "query": "What are different methods for optimization in reinforcement learning?", "reason": "disjoint:mean_jaccard=0.269"}
+{"case_id": "disjoint_012", "category": "disjoint", "query": "What are the differences between distributed file systems and cluster file systems?", "reason": "disjoint:mean_jaccard=0.246"}
+{"case_id": "disjoint_013", "category": "disjoint", "query": "What are the functions of mitochondria in a cell?", "reason": "disjoint:mean_jaccard=0.165"}
+{"case_id": "disjoint_013", "category": "disjoint", "query": "What is the phenomenon responsible for the splitting of a single particle into two identical particles?", "reason": "disjoint:mean_jaccard=0.234"}
+{"case_id": "disjoint_013", "category": "disjoint", "query": "What are the different reactions involved in acid-base neutralization?", "reason": "disjoint:mean_jaccard=0.351"}
+{"case_id": "disjoint_013", "category": "disjoint", "query": "What are three different optimization algorithms used in deep learning?", "reason": "disjoint:mean_jaccard=0.296"}
+{"case_id": "disjoint_016", "category": "disjoint", "query": "What was the name of the American Civil War battle where Robert E. Lee surrendered?", "reason": "disjoint:mean_jaccard=0.398"}
+{"case_id": "disjoint_016", "category": "disjoint", "query": "What are different terms for the process of Earth's cooling?", "reason": "disjoint:mean_jaccard=0.158"}
+{"case_id": "disjoint_016", "category": "disjoint", "query": "What is the function of the pancreas in regulating blood sugar levels?", "reason": "disjoint:mean_jaccard=0.279"}
+{"case_id": "disjoint_016", "category": "disjoint", "query": "What is the function of the mitochondria in a cell?", "reason": "disjoint:mean_jaccard=0.184"}
+{"case_id": "disjoint_016", "category": "disjoint", "query": "What is the fundamental nature of quarks?", "reason": "disjoint:mean_jaccard=0.162"}
+{"case_id": "disjoint_016", "category": "disjoint", "query": "What are different names for hydrogen bond donors?", "reason": "disjoint:mean_jaccard=0.250"}
+{"case_id": "disjoint_016", "category": "disjoint", "query": "What are different techniques for gradient descent optimization?", "reason": "disjoint:mean_jaccard=0.190"}
+{"case_id": "disjoint_016", "category": "disjoint", "query": "What are the different ways a contractual obligation can be discharged?", "reason": "disjoint:mean_jaccard=0.160"}
+{"case_id": "disjoint_016", "category": "disjoint", "query": "What was the significance of the Paris Commune in 1871?", "reason": "disjoint:mean_jaccard=0.167"}
+{"case_id": "disjoint_016", "category": "disjoint", "query": "What are three different terms for ice caps?", "reason": "disjoint:mean_jaccard=0.244"}
+{"case_id": "disjoint_016", "category": "disjoint", "query": "What is the role of the liver in detoxification?", "reason": "disjoint:mean_jaccard=0.152"}
+{"case_id": "disjoint_016", "category": "disjoint", "query": "What is the function of mitochondria in a cell?", "reason": "disjoint:mean_jaccard=0.170"}
+{"case_id": "disjoint_016", "category": "disjoint", "query": "What is the nature of the Higgs Boson?", "reason": "disjoint:mean_jaccard=0.254"}
+{"case_id": "disjoint_017", "category": "disjoint", "query": "What is reinforcement learning used for in optimization?", "reason": "disjoint:mean_jaccard=0.253"}
+{"case_id": "disjoint_018", "category": "disjoint", "query": "What is GDP in economics?", "reason": "disjoint:mean_jaccard=0.413"}
+{"case_id": "disjoint_021", "category": "disjoint", "query": "What is the role of the pancreas in blood glucose regulation?", "reason": "disjoint:mean_jaccard=0.208"}
+{"case_id": "disjoint_022", "category": "disjoint", "query": "What are three different terms for a quantum state that is equally likely to be found in any one of its possible states?", "reason": "disjoint:mean_jaccard=0.274"}
+{"case_id": "disjoint_022", "category": "disjoint", "query": "What is the name and composition of a common compound found in table salt?", "reason": "disjoint:mean_jaccard=0.312"}
+{"case_id": "disjoint_022", "category": "disjoint", "query": "What are different optimization techniques in deep learning?", "reason": "disjoint:mean_jaccard=0.151"}
+{"case_id": "disjoint_023", "category": "disjoint", "query": "Define Gross Domestic Product (GDP)", "reason": "disjoint:mean_jaccard=0.494"}
+{"case_id": "disjoint_023", "category": "disjoint", "query": "What are three ways a party can be held liable for breach of contract?", "reason": "disjoint:mean_jaccard=0.243"}
+{"case_id": "disjoint_025", "category": "disjoint", "query": "What are the functions of the carotid arteries?", "reason": "disjoint:mean_jaccard=0.302"}
+{"case_id": "disjoint_025", "category": "disjoint", "query": "What are the three main components of a cell?", "reason": "disjoint:mean_jaccard=0.333"}
+{"case_id": "disjoint_025", "category": "disjoint", "query": "Describe the phenomenon responsible for the splitting of an atomic nucleus", "reason": "disjoint:mean_jaccard=0.301"}
+{"case_id": "disjoint_025", "category": "disjoint", "query": "What is the compound responsible for photosynthesis?", "reason": "disjoint:mean_jaccard=0.189"}
+{"case_id": "disjoint_026", "category": "disjoint", "query": "What are different methods of task scheduling in distributed systems?", "reason": "disjoint:mean_jaccard=0.179"}
+{"case_id": "disjoint_026", "category": "disjoint", "query": "Define inflation in economics", "reason": "disjoint:mean_jaccard=0.197"}
+{"case_id": "disjoint_026", "category": "disjoint", "query": "Define the concept of 'executory contract'", "reason": "disjoint:mean_jaccard=0.263"}
+{"case_id": "disjoint_026", "category": "disjoint", "query": "Describe three significant events in the Franco-Prussian War.", "reason": "disjoint:mean_jaccard=0.203"}
+{"case_id": "disjoint_026", "category": "disjoint", "query": "Describe the formation of glaciers and ice caps.", "reason": "disjoint:mean_jaccard=0.175"}
+{"case_id": "disjoint_026", "category": "disjoint", "query": "What are the three main types of heart valve disorders?", "reason": "disjoint:mean_jaccard=0.309"}
+{"case_id": "disjoint_026", "category": "disjoint", "query": "define DNA replication", "reason": "disjoint:mean_jaccard=0.159"}
+{"case_id": "disjoint_026", "category": "disjoint", "query": "Describe the behavior of a quantum particle in a double-slit experiment", "reason": "disjoint:mean_jaccard=0.265"}
+{"case_id": "disjoint_029", "category": "disjoint", "query": "Discuss inflation rates in different economies.", "reason": "disjoint:mean_jaccard=0.182"}
+{"case_id": "disjoint_029", "category": "disjoint", "query": "Define breach of contract and tort in law", "reason": "disjoint:mean_jaccard=0.196"}
+{"case_id": "disjoint_030", "category": "disjoint", "query": "Describe three different climates and their associated geological features.", "reason": "disjoint:mean_jaccard=0.153"}
+{"case_id": "disjoint_030", "category": "disjoint", "query": "What are the effects of a high-fat diet on cardiovascular health?", "reason": "disjoint:mean_jaccard=0.196"}
+{"case_id": "disjoint_030", "category": "disjoint", "query": "What are the names of three proteins involved in DNA replication?", "reason": "disjoint:mean_jaccard=0.279"}
+{"case_id": "disjoint_031", "category": "disjoint", "query": "What are three different names for hydroxide ion?", "reason": "disjoint:mean_jaccard=0.236"}
+{"case_id": "disjoint_032", "category": "disjoint", "query": "Define Gross Domestic Product in economics", "reason": "disjoint:mean_jaccard=0.424"}
+{"case_id": "disjoint_032", "category": "disjoint", "query": "What are three ways a contract can be breached?", "reason": "disjoint:mean_jaccard=0.252"}
+{"case_id": "disjoint_032", "category": "disjoint", "query": "Describe the effects of global warming on polar ice caps and glaciers", "reason": "disjoint:mean_jaccard=0.193"}
+{"case_id": "disjoint_032", "category": "disjoint", "query": "What are the functions of glucagon and insulin in the human body?", "reason": "disjoint:mean_jaccard=0.326"}
+{"case_id": "disjoint_033", "category": "disjoint", "query": "Describe the quantum Hall effect and the integer quantum Hall effect.", "reason": "disjoint:mean_jaccard=0.426"}
+{"case_id": "disjoint_033", "category": "disjoint", "query": "What are three different names for the element with atomic number 8 on the periodic table?", "reason": "disjoint:mean_jaccard=0.284"}
+{"case_id": "disjoint_033", "category": "disjoint", "query": "Describe different optimization methods used in deep learning", "reason": "disjoint:mean_jaccard=0.183"}
+{"case_id": "disjoint_033", "category": "disjoint", "query": "What are different methods for task scheduling in operating systems and distributed systems?", "reason": "disjoint:mean_jaccard=0.177"}
+{"case_id": "disjoint_033", "category": "disjoint", "query": "How are GDP and GNP different?", "reason": "disjoint:mean_jaccard=0.305"}
+{"case_id": "disjoint_033", "category": "disjoint", "query": "What are the different types of contractual breaches?", "reason": "disjoint:mean_jaccard=0.191"}
+{"case_id": "disjoint_033", "category": "disjoint", "query": "Describe three geological phenomena and their effects on climate.", "reason": "disjoint:mean_jaccard=0.167"}
+{"case_id": "disjoint_034", "category": "disjoint", "query": "What are the names of three different types of RNA in a cell?", "reason": "disjoint:mean_jaccard=0.597"}
+{"case_id": "disjoint_034", "category": "disjoint", "query": "Describe the behavior of photons in a double-slit experiment.", "reason": "disjoint:mean_jaccard=0.324"}
+{"case_id": "disjoint_037", "category": "disjoint", "query": "Define the concept of Gross Domestic Product (GDP) in economics.", "reason": "disjoint:mean_jaccard=0.459"}
+{"case_id": "disjoint_037", "category": "disjoint", "query": "Define the legal term 'consideration' in contract law.", "reason": "disjoint:mean_jaccard=0.211"}
+{"case_id": "disjoint_040", "category": "disjoint", "query": "What are three different terms for the genetic material in a cell?", "reason": "disjoint:mean_jaccard=0.205"}
+{"case_id": "disjoint_040", "category": "disjoint", "query": "Describe the behavior of a photon in a double-slit experiment", "reason": "disjoint:mean_jaccard=0.165"}
+{"case_id": "disjoint_040", "category": "disjoint", "query": "Describe the properties of a silicon atom", "reason": "disjoint:mean_jaccard=0.349"}
+{"case_id": "contradict_011", "category": "contradict", "query": "What is the role of reinforcement learning in optimization?", "reason": "contradict:max_contra=0.000"}
+{"case_id": "contradict_011", "category": "contradict", "query": "What is the role of reinforcement learning in optimization?", "reason": "contradict:max_contra=0.000"}
+{"case_id": "drift_011", "category": "drift", "query": "What is the role of DNA replication in cell division?", "reason": "drift:ccs_std=0.045"}
+{"case_id": "drift_011", "category": "drift", "query": "What is the role of entropy in quantum computing?", "reason": "drift:ccs_std=0.045"}
+{"case_id": "drift_014", "category": "drift", "query": "What is the impact of minimum wage increases on employment?", "reason": "drift:ccs_std=0.040"}
+{"case_id": "drift_018", "category": "drift", "query": "What is the role of DNA in protein synthesis?", "reason": "drift:ccs_std=0.025"}
+{"case_id": "drift_018", "category": "drift", "query": "Explain Heisenberg's Uncertainty Principle in quantum physics.", "reason": "drift:ccs_std=0.022"}
+{"case_id": "drift_019", "category": "drift", "query": "What are some optimization strategies in deep learning?", "reason": "drift:ccs_std=0.032"}
+{"case_id": "drift_022", "category": "drift", "query": "Discuss the Battle of Bull Run and the Battle of Gettysburg during the American Civil War.", "reason": "drift:ccs_std=0.046"}
+{"case_id": "drift_024", "category": "drift", "query": "What is the role of mitochondria in cellular respiration?", "reason": "drift:ccs_std=0.043"}
+{"case_id": "drift_026", "category": "drift", "query": "explain the concept of reinforcement learning in deep learning", "reason": "drift:ccs_std=0.016"}
+{"case_id": "drift_028", "category": "drift", "query": "describe three battles from the american civil war", "reason": "drift:ccs_std=0.007"}
+{"case_id": "drift_028", "category": "drift", "query": "What is the effect of glacier melting on global sea levels?", "reason": "drift:ccs_std=0.009"}
+{"case_id": "drift_040", "category": "drift", "query": "Compare the properties of silicon and carbon in terms of their chemical reactivity and physical states.", "reason": "drift:ccs_std=0.024"}
+{"case_id": "drift_046", "category": "drift", "query": "What is the role of DNA replication in cell division?", "reason": "drift:ccs_std=0.027"}
+{"case_id": "drift_046", "category": "drift", "query": "Explain the photoelectric effect and its significance in quantum physics", "reason": "drift:ccs_std=0.046"}
+{"case_id": "drift_049", "category": "drift", "query": "What is the role of inflation in economic growth?", "reason": "drift:ccs_std=0.033"}
+{"case_id": "control_012", "category": "control", "query": "Describe the photoelectric effect and its implications for wave-particle duality in quantum physics.", "reason": "control:ccs=0.467 jaccard=0.141"}
+{"case_id": "control_012", "category": "control", "query": "Compare ionic and covalent bonding in organic chemistry", "reason": "control:ccs=0.414 jaccard=0.161"}
+{"case_id": "control_012", "category": "control", "query": "What is reinforcement learning and how does it differ from deep learning?", "reason": "control:ccs=0.368 jaccard=0.158"}
+{"case_id": "control_012", "category": "control", "query": "Compare task scheduling methods in operating systems and distributed systems for efficiency.", "reason": "control:ccs=0.403 jaccard=0.050"}
+{"case_id": "control_012", "category": "control", "query": "Compare supply-side and demand-side economics in influencing inflation rates.", "reason": "control:ccs=0.463 jaccard=0.120"}
+{"case_id": "control_013", "category": "control", "query": "Compare the effects of volcanic eruptions and earthquakes on global geography.", "reason": "control:ccs=0.469 jaccard=0.099"}
+{"case_id": "control_013", "category": "control", "query": "What are the differences between deep learning and reinforcement learning in terms of optimization strategies?", "reason": "control:ccs=0.456 jaccard=0.129"}
+{"case_id": "control_013", "category": "control", "query": "What is the role of mitochondria in cellular respiration?", "reason": "control:ccs=0.604 jaccard=0.068"}
+{"case_id": "control_013", "category": "control", "query": "What is the Heisenberg Uncertainty Principle in quantum physics?", "reason": "control:ccs=0.579 jaccard=0.194"}
+{"case_id": "control_013", "category": "control", "query": "What is the difference between organic and inorganic chemistry?", "reason": "control:ccs=0.579 jaccard=0.166"}
+{"case_id": "control_013", "category": "control", "query": "Compare gradient descent and Adam optimization methods in deep learning", "reason": "control:ccs=0.730 jaccard=0.103"}
+{"case_id": "control_013", "category": "control", "query": "Compare task scheduling strategies in operating systems and distributed systems.", "reason": "control:ccs=0.407 jaccard=0.075"}
+{"case_id": "control_013", "category": "control", "query": "Compare demand-driven and supply-driven economic models.", "reason": "control:ccs=0.269 jaccard=0.107"}
+{"case_id": "control_013", "category": "control", "query": "Define the concept of negligence in tort law", "reason": "control:ccs=0.486 jaccard=0.190"}
+{"case_id": "control_013", "category": "control", "query": "Compare the impact of glacier melting and a high-energy particle colliding with an atom on global sea levels.", "reason": "control:ccs=0.383 jaccard=0.087"}
+{"case_id": "control_013", "category": "control", "query": "What is the difference between a pacemaker and an implantable cardioverter defibrillator (ICD)?", "reason": "control:ccs=0.476 jaccard=0.143"}
+{"case_id": "control_013", "category": "control", "query": "What is the role of DNA replication in cell division?", "reason": "control:ccs=0.421 jaccard=0.177"}
+{"case_id": "control_013", "category": "control", "query": "What is the Heisenberg Uncertainty Principle and how does it apply to position and momentum?", "reason": "control:ccs=0.251 jaccard=0.105"}
+{"case_id": "control_013", "category": "control", "query": "What is the role of Lewis acid and Lewis base in a chemical reaction?", "reason": "control:ccs=0.642 jaccard=0.170"}
+{"case_id": "control_013", "category": "control", "query": "Compare optimization strategies in deep learning and reinforcement learning", "reason": "control:ccs=0.460 jaccard=0.197"}
+{"case_id": "control_013", "category": "control", "query": "Compare task scheduling strategies in operating systems and distributed systems.", "reason": "control:ccs=0.583 jaccard=0.148"}
+{"case_id": "control_013", "category": "control", "query": "Compare the impact of Keynesian and Monetarist economic policies on inflation rate.", "reason": "control:ccs=0.484 jaccard=0.178"}
+{"case_id": "control_013", "category": "control", "query": "What are the key differences between contract law and tort law?", "reason": "control:ccs=0.600 jaccard=0.101"}
+{"case_id": "control_013", "category": "control", "query": "Compare the effects of melting glaciers and deforestation on global sea levels.", "reason": "control:ccs=0.709 jaccard=0.164"}
+{"case_id": "control_013", "category": "control", "query": "What is the role of insulin in regulating blood sugar levels?", "reason": "control:ccs=0.485 jaccard=0.096"}
+{"case_id": "control_013", "category": "control", "query": "What is the role of mitochondria in cellular respiration?", "reason": "control:ccs=0.627 jaccard=0.108"}
+{"case_id": "control_013", "category": "control", "query": "What is the Heisenberg Uncertainty Principle in quantum physics?", "reason": "control:ccs=0.409 jaccard=0.126"}
+{"case_id": "control_014", "category": "control", "query": "Compare task scheduling strategies in operating systems and distributed systems for managing concurrent tasks.", "reason": "control:ccs=0.687 jaccard=0.117"}
+{"case_id": "control_016", "category": "control", "query": "What were the consequences of the French Revolution for France?", "reason": "control:ccs=0.622 jaccard=0.123"}
+{"case_id": "control_016", "category": "control", "query": "Compare the effects of volcanic eruptions and earthquakes on geological structures.", "reason": "control:ccs=0.502 jaccard=0.102"}
+{"case_id": "control_016", "category": "control", "query": "Compare the effects of ACE inhibitors and ARBs in managing hypertension.", "reason": "control:ccs=0.712 jaccard=0.108"}
+{"case_id": "control_017", "category": "control", "query": "Compare the properties of superconductors and semiconductors in terms of conductivity, critical temperature, and type of materials", "reason": "control:ccs=0.413 jaccard=0.029"}
+{"case_id": "control_017", "category": "control", "query": "Compare the properties of silicon and germanium in terms of conductivity, hardness, and melting point.", "reason": "control:ccs=0.446 jaccard=0.257"}
+{"case_id": "control_017", "category": "control", "query": "Compare the optimization strategies in deep learning and reinforcement learning", "reason": "control:ccs=0.504 jaccard=0.207"}
+{"case_id": "control_017", "category": "control", "query": "Compare task scheduling strategies in distributed systems and operating systems for reducing latency.", "reason": "control:ccs=0.616 jaccard=0.101"}
+{"case_id": "control_017", "category": "control", "query": "Compare the effects of inflation and deflation on economic growth.", "reason": "control:ccs=0.487 jaccard=0.304"}
+{"case_id": "control_017", "category": "control", "query": "What are the differences between breach of contract and tort law?", "reason": "control:ccs=0.646 jaccard=0.169"}
+{"case_id": "control_017", "category": "control", "query": "Discuss the American Civil War and its impact on the United States.", "reason": "control:ccs=0.457 jaccard=0.148"}
+{"case_id": "control_017", "category": "control", "query": "Compare carbon and silicon in terms of hardness, conductivity, and melting point.", "reason": "control:ccs=0.291 jaccard=0.117"}
+{"case_id": "control_017", "category": "control", "query": "What are the differences between acetaminophen and ibuprofen in terms of pain relief and side effects?", "reason": "control:ccs=0.508 jaccard=0.116"}
+{"case_id": "control_017", "category": "control", "query": "What is the role of mitochondria in cellular respiration?", "reason": "control:ccs=0.477 jaccard=0.176"}
+{"case_id": "control_018", "category": "control", "query": "Compare the reactivity of aluminum and silicon in chemical reactions.", "reason": "control:ccs=0.523 jaccard=0.303"}
+{"case_id": "control_018", "category": "control", "query": "Compare optimization strategies in deep learning and reinforcement learning", "reason": "control:ccs=0.477 jaccard=0.104"}
+{"case_id": "control_018", "category": "control", "query": "Compare task scheduling strategies in operating systems and distributed systems for resource allocation.", "reason": "control:ccs=0.466 jaccard=0.054"}
+{"case_id": "control_018", "category": "control", "query": "Compare GDP and unemployment rate as indicators of a country's economic health.", "reason": "control:ccs=0.182 jaccard=0.091"}
+{"case_id": "control_018", "category": "control", "query": "What are the differences between the effects of aspirin and ibuprofen on blood clotting?", "reason": "control:ccs=0.626 jaccard=0.163"}
+{"case_id": "control_018", "category": "control", "query": "What is the role of protein phosphorylation in cell signaling?", "reason": "control:ccs=0.544 jaccard=0.060"}
+{"case_id": "control_018", "category": "control", "query": "Compare the properties of silicon and germanium in terms of lattice structure, bandgap energy, and electrical conductivity.", "reason": "control:ccs=0.481 jaccard=0.178"}
+{"case_id": "control_018", "category": "control", "query": "Compare reinforcement learning and evolution strategies in optimization", "reason": "control:ccs=0.315 jaccard=0.168"}
+{"case_id": "control_018", "category": "control", "query": "Compare scheduling strategies in operating systems and distributed systems for task management.", "reason": "control:ccs=0.415 jaccard=0.024"}
+{"case_id": "control_018", "category": "control", "query": "Compare inflation rates in the United States and Europe.", "reason": "control:ccs=0.564 jaccard=0.074"}
+{"case_id": "control_018", "category": "control", "query": "Discuss the differences between contract law and tort law in terms of liability.", "reason": "control:ccs=0.279 jaccard=0.013"}
+{"case_id": "control_018", "category": "control", "query": "Compare the melting points and boiling points of helium and neon.", "reason": "control:ccs=0.664 jaccard=0.166"}
+{"case_id": "control_018", "category": "control", "query": "What is the difference between glucagon and insulin in terms of their effects on blood sugar levels?", "reason": "control:ccs=0.688 jaccard=0.149"}
+{"case_id": "control_018", "category": "control", "query": "Compare DNA replication and transcription in terms of their role, process, and similarities.", "reason": "control:ccs=0.584 jaccard=0.162"}
+{"case_id": "control_018", "category": "control", "query": "Compare optimization strategies in deep learning and reinforcement learning", "reason": "control:ccs=0.287 jaccard=0.074"}
+{"case_id": "control_018", "category": "control", "query": "Compare task scheduling strategies in operating systems and distributed systems for efficient resource utilization.", "reason": "control:ccs=0.565 jaccard=0.170"}
+{"case_id": "control_019", "category": "control", "query": "Compare the American Civil War and the French Revolution in terms of their impact on their respective countries.", "reason": "control:ccs=0.144 jaccard=0.087"}
+{"case_id": "control_019", "category": "control", "query": "Describe the carbon cycle and the nitrogen cycle in terrestrial ecosystems.", "reason": "control:ccs=0.433 jaccard=0.118"}
+{"case_id": "control_020", "category": "control", "query": "What are the differences between DNA replication and RNA transcription in terms of process and function?", "reason": "control:ccs=0.565 jaccard=0.186"}
+{"case_id": "control_020", "category": "control", "query": "What is the difference between superconductivity and normal conductivity in solids?", "reason": "control:ccs=0.559 jaccard=0.122"}
+{"case_id": "control_020", "category": "control", "query": "Compare the reactivity of hydrogen and fluorine in terms of their electron affinities and ionization energies.", "reason": "control:ccs=0.402 jaccard=0.139"}
+{"case_id": "control_021", "category": "control", "query": "Compare task scheduling strategies in operating systems and distributed systems for high-energy particle colliders.", "reason": "control:ccs=0.336 jaccard=0.086"}
+{"case_id": "control_021", "category": "control", "query": "Compare the effects of monetary policy and fiscal policy on inflation in the United States.", "reason": "control:ccs=0.579 jaccard=0.193"}
+{"case_id": "control_022", "category": "control", "query": "Compare the Boston Tea Party and the Storming of the Bastille in terms of their impact on national politics.", "reason": "control:ccs=0.225 jaccard=0.097"}
+{"case_id": "control_023", "category": "control", "query": "Describe the differences between acetaminophen and ibuprofen in terms of pain relief and inflammation.", "reason": "control:ccs=0.432 jaccard=0.201"}
+{"case_id": "control_023", "category": "control", "query": "What are the differences between silicon and carbon in terms of hardness, conductivity, and melting point?", "reason": "control:ccs=0.528 jaccard=0.192"}
+{"case_id": "control_023", "category": "control", "query": "What is the difference between silicon and carbon in terms of hardness, conductivity, and melting point?", "reason": "control:ccs=0.476 jaccard=0.184"}
+{"case_id": "control_025", "category": "control", "query": "What is the liability of a party in a contract law dispute compared to a tort law case?", "reason": "control:ccs=0.493 jaccard=0.178"}
+{"case_id": "control_025", "category": "control", "query": "Compare the Boston Tea Party and the Fall of Bastille in terms of their impact on colonial America and France respectively.", "reason": "control:ccs=0.204 jaccard=0.167"}
+{"case_id": "control_025", "category": "control", "query": "Compare the melting points of gold and silver.", "reason": "control:ccs=0.650 jaccard=0.067"}
+{"case_id": "control_026", "category": "control", "query": "Discuss the differences between gradient descent and stochastic gradient descent in deep learning optimization.", "reason": "control:ccs=0.515 jaccard=0.095"}
+{"case_id": "control_026", "category": "control", "query": "Compare the scheduling strategies of operating systems and distributed systems for high-energy particle colliders.", "reason": "control:ccs=0.668 jaccard=0.113"}
+{"case_id": "control_026", "category": "control", "query": "Compare the effects of monetary policy and fiscal policy on inflation.", "reason": "control:ccs=0.605 jaccard=0.179"}
+{"case_id": "control_026", "category": "control", "query": "Compare the Battle of Waterloo and the Battle of Gettysburg", "reason": "control:ccs=0.354 jaccard=0.113"}
+{"case_id": "control_026", "category": "control", "query": "What are the differences between acetaminophen and ibuprofen in terms of pain relief and inflammation?", "reason": "control:ccs=0.479 jaccard=0.167"}
+{"case_id": "control_026", "category": "control", "query": "What is the role of RNA polymerase II in gene expression?", "reason": "control:ccs=0.501 jaccard=0.146"}
+{"case_id": "control_026", "category": "control", "query": "Compare the melting points of helium and neon.", "reason": "control:ccs=0.358 jaccard=0.251"}
+{"case_id": "control_027", "category": "control", "query": "Compare task scheduling strategies in operating systems and distributed systems for high-energy particle colliders.", "reason": "control:ccs=0.493 jaccard=0.148"}
+{"case_id": "control_027", "category": "control", "query": "Compare the inflation rates during the Great Depression and the Great Recession in the United States.", "reason": "control:ccs=0.542 jaccard=0.153"}
+{"case_id": "control_027", "category": "control", "query": "Compare the Battle of Gettysburg and the Battle of Waterloo in terms of troop numbers, casualties, and significance to the outcome of their respective wars.", "reason": "control:ccs=0.382 jaccard=0.135"}
+{"case_id": "control_027", "category": "control", "query": "Compare the melting points of gold and silver", "reason": "control:ccs=0.503 jaccard=0.200"}
+{"case_id": "control_028", "category": "control", "query": "What are the differences between superconductivity and normal conductivity?", "reason": "control:ccs=0.409 jaccard=0.150"}
+{"case_id": "control_028", "category": "control", "query": "What is the difference between silicon and carbon in terms of hardness, conductivity, and melting point?", "reason": "control:ccs=0.527 jaccard=0.135"}
+{"case_id": "control_028", "category": "control", "query": "Compare the role of round robin and least process scheduling algorithms in operating systems and distributed systems for high-energy particle colliders.", "reason": "control:ccs=0.378 jaccard=0.075"}
+{"case_id": "control_028", "category": "control", "query": "Compare the Battle of Gettysburg and the Battle of Waterloo in terms of scale, outcome, and impact on history", "reason": "control:ccs=0.431 jaccard=0.155"}

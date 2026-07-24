@@ -1,0 +1,125 @@
+\section{ContextCoherenceBench}
+\label{sec:benchmark}
+
+To enable replication and follow-on work we release
+\textbf{ContextCoherenceBench}, a public benchmark targeting the three
+empirical phenomena reported in this paper. The release is bundled by
+\texttt{scripts/package\_benchmark.py} and shipped to
+HuggingFace Datasets and a companion GitHub repository (URLs withheld for
+double-blind review; both are tagged \texttt{bench-v1} at the same git
+SHA).
+
+\subsection{Tasks}
+
+\begin{description}
+  \item[\texttt{adversarial\_coherence}] 40 hand-authored cases
+        (10 \textsc{disjoint} / 10 \textsc{contradict} / 10
+        \textsc{drift} / 10 \textsc{control}). Target metric: per-signal
+        detection AUC against the matched control set, scored under the
+        preregistered plan in §\ref{sec:adv_plan}. Designed to
+        dissociate which coherence signal catches which fragmentation
+        pattern.
+  \item[\texttt{coherence\_paradox}] the multi-dataset query set
+        (§\ref{sec:multidataset}) with per-query measurements for five
+        conditions (baseline, hcpc\_v1, hcpc\_v2, crag, selfrag). Target
+        metrics: \texttt{paradox\_drop} and \texttt{v2\_recovery}, under
+        the reporting plan in §\ref{sec:multidataset_plan}. Lets
+        researchers test whether their own retrievers / generators
+        reproduce the paradox.
+  \item[\texttt{human\_faithfulness}] 500 double-annotated items with
+        binary faithfulness, 1--5 correctness, 1--5 helpfulness, and
+        Fleiss' $\kappa$. Target metric: NLI $\leftrightarrow$ human
+        Spearman correlation, under the reporting plan in
+        §\ref{sec:human_plan}. Lets follow-on work calibrate new
+        faithfulness scorers against the same human ratings.
+\end{description}
+
+\subsection{Layout}
+
+The release directory mirrors the HuggingFace dataset spec:
+
+\begin{verbatim}
+release/context_coherence_bench_v1/
+  README.md                  (HF dataset card)
+  CITATION.bib  LICENSE
+  metadata.json              (provenance + sha256 per file)
+  adversarial/
+    {disjoint,contradict,drift,control}.jsonl
+  coherence_paradox/
+    per_query.csv
+    summary.csv
+  human_faithfulness/
+    aggregated.csv
+    manifest.csv
+\end{verbatim}
+
+The hand-authored adversarial cases are released under \textbf{CC-BY-4.0}.
+Per-dataset content inherits the upstream license recorded in
+\texttt{metadata.json}; the human-annotation ratings are
+\textbf{CC-BY-4.0} with annotator IDs redacted to opaque \texttt{A<n>}
+strings.
+
+\subsection{Intended use}
+
+We see three productive uses for the benchmark:
+
+\begin{enumerate}
+  \item \textbf{Coherence-signal research.} The
+        \texttt{adversarial\_coherence} subset isolates failure modes
+        cleanly enough that a new signal proposal can be evaluated on
+        category-stratified AUC rather than only aggregate detection.
+  \item \textbf{Selective-refinement comparison.} The
+        \texttt{coherence\_paradox} subset already reports five
+        conditions on the same queries; a new retrieval method (e.g., a
+        sixth condition) can be added without re-running ours.
+  \item \textbf{Faithfulness-scorer calibration.} The
+        \texttt{human\_faithfulness} subset gives any new
+        automatic-faithfulness model a fixed reference set to validate
+        against, including the paradox-survival check.
+\end{enumerate}
+
+We \emph{do not} intend the benchmark as a leaderboard. The metric the
+paper centers on (\texttt{paradox\_drop}) is a diagnostic, not a
+performance score; ranking systems by it would invert the intended use.
+The release ships scripts but no scoreboard.
+
+\subsection{Reproduction commands}
+
+The companion repository ships entry points matching each subset:
+
+\begin{verbatim}
+python3 experiments/run_adversarial_coherence.py
+python3 experiments/run_multidataset_validation.py
+python3 experiments/run_headtohead_comparison.py
+python3 experiments/run_mechanistic_analysis.py
+python3 experiments/prepare_prolific_study.py
+python3 experiments/analyze_prolific_results.py
+python3 scripts/package_benchmark.py
+\end{verbatim}
+
+Each script writes a self-contained results directory under
+\texttt{results/} that the packager copies into the release tree. Re-running
+any single experiment refreshes only its own subset, so partial reruns
+remain coherent.
+
+\subsection{Permanent identifier}
+
+The benchmark bundle is archived on Zenodo with a permanent DOI:
+\href{https://doi.org/10.5281/zenodo.19757291}
+     {\texttt{10.5281/zenodo.19757291}}.
+The DOI resolves to the v$2.0.0$ release tarball
+(\texttt{context\_coherence\_bench\_v1.tar.gz}) and includes the
+\texttt{CITATION.bib} entry below for citing this artifact independently
+of the paper:
+
+\begin{verbatim}
+@dataset{maganti2026ccbench,
+  title     = {ContextCoherenceBench: a benchmark for evaluating
+               context coherence in retrieval-augmented generation},
+  author    = {Maganti, Saket},
+  year      = {2026},
+  publisher = {Zenodo},
+  version   = {v2.0.0},
+  doi       = {10.5281/zenodo.19757291},
+}
+\end{verbatim}

@@ -1,0 +1,121 @@
+dataset,condition,question,faithfulness_score,is_hallucination,ret_mean_sim,ret_spread,ccs,semantic_continuity,embedding_variance,mean_jaccard,retrieval_entropy,mean_query_chunk_sim,sim_spread,hcpc_refined,hcpc_n_refined,hcpc_ccs
+squad,baseline,Which NFL team represented the AFC at Super Bowl 50?,0.6985,False,0.6027,0.1504,0.5905,0.5905,0.0013,0.1527,0.6423,0.6252,0.1482,,,
+squad,baseline,Which NFL team represented the NFC at Super Bowl 50?,0.6795,False,0.6001,0.1883,0.6902,0.6902,0.0043,0.2102,0.6636,0.6288,0.1727,,,
+squad,baseline,Where did Super Bowl 50 take place?,0.986,False,0.6432,0.0585,0.6464,0.6464,0.0019,0.1611,0.6747,0.6556,0.0863,,,
+squad,baseline,Which NFL team won Super Bowl 50?,0.9247,False,0.6554,0.126,0.6506,0.6506,0.0023,0.1363,0.6713,0.6629,0.1304,,,
+squad,baseline,What color was used to emphasize the 50th anniversary of the Super Bowl?,1.0,False,0.5495,0.0739,0.5689,0.5689,0.0081,0.0988,0.6245,0.591,0.064,,,
+squad,baseline,What was the theme of Super Bowl 50?,0.8574,False,0.558,0.0387,0.5143,0.5143,0.0042,0.145,0.6015,0.5866,0.0951,,,
+squad,baseline,What day was the game played on?,0.8019,False,0.3746,0.2417,0.6076,0.6076,0.0019,0.1652,0.3831,0.3937,0.2163,,,
+squad,baseline,What is the AFC short for?,0.5966,False,0.4121,0.1428,0.4999,0.4999,0.0065,0.0818,0.6439,0.441,0.1185,,,
+squad,baseline,What was the theme of Super Bowl 50?,0.8574,False,0.558,0.0387,0.5143,0.5143,0.0042,0.145,0.6015,0.5866,0.0951,,,
+squad,baseline,What does AFC stand for?,0.754,False,0.3787,0.1463,0.4999,0.4999,0.0065,0.0818,0.6346,0.4033,0.1435,,,
+squad,baseline,What day was the Super Bowl played on?,0.6946,False,0.6413,0.0897,0.6076,0.6076,0.0019,0.1652,0.5729,0.6522,0.0881,,,
+squad,baseline,Who won Super Bowl 50?,0.9247,False,0.6268,0.0896,0.6111,0.6111,0.0023,0.1091,0.1976,0.6364,0.0948,,,
+squad,baseline,What venue did Super Bowl 50 take place in?,0.986,False,0.6489,0.0546,0.6293,0.6293,0.0034,0.1532,0.6621,0.6604,0.0486,,,
+squad,baseline,What city did Super Bowl 50 take place in?,0.9154,False,0.6392,0.0702,0.7003,0.7003,0.0034,0.1858,0.6661,0.6524,0.1044,,,
+squad,baseline,"If Roman numerals were used, what would Super Bowl 50 have been called?",0.5988,False,0.5327,0.331,0.6205,0.6205,0.0038,0.17,0.655,0.5868,0.2115,,,
+squad,baseline,Super Bowl 50 decided the NFL champion for what season?,0.7723,False,0.6341,0.111,0.5438,0.5438,0.0058,0.137,0.4848,0.639,0.1225,,,
+squad,baseline,What year did the Denver Broncos secure a Super Bowl title for the third time?,0.5531,False,0.6795,0.033,0.635,0.635,0.0008,0.0959,0.5698,0.6707,0.0505,,,
+squad,baseline,What city did Super Bowl 50 take place in?,0.6452,False,0.6392,0.0702,0.7003,0.7003,0.0034,0.1858,0.6661,0.6524,0.1044,,,
+squad,baseline,What stadium did Super Bowl 50 take place in?,0.8599,False,0.6693,0.0443,0.7003,0.7003,0.0034,0.1858,0.6929,0.6838,0.0449,,,
+squad,baseline,What was the final score of Super Bowl 50? ,0.8929,False,0.584,0.0654,0.6129,0.6129,0.0044,0.1045,0.1684,0.5977,0.1064,,,
+squad,baseline,"What month, day and year did Super Bowl 50 take place? ",0.867,False,0.625,0.0344,0.5946,0.5946,0.0019,0.1626,0.5527,0.6406,0.0811,,,
+squad,baseline,What year was Super Bowl 50?,0.7844,False,0.6133,0.0877,0.5867,0.5867,0.0035,0.151,0.1886,0.6294,0.136,,,
+squad,baseline,What team was the AFC champion?,0.8254,False,0.5751,0.0399,0.6411,0.6411,0.0056,0.147,0.6367,0.5704,0.0381,,,
+squad,baseline,What team was the NFC champion?,0.6462,False,0.6039,0.0652,0.5934,0.5934,0.003,0.108,0.6925,0.6022,0.0493,,,
+squad,baseline,Who won Super Bowl 50?,0.9247,False,0.6268,0.0896,0.6111,0.6111,0.0023,0.1091,0.1976,0.6364,0.0948,,,
+squad,baseline,Super Bowl 50 determined the NFL champion for what season?,0.7723,False,0.6236,0.1316,0.5438,0.5438,0.0058,0.137,0.6053,0.6283,0.142,,,
+squad,baseline,Which team won Super Bowl 50.,0.9247,False,0.6228,0.1564,0.6506,0.6506,0.0023,0.1363,0.5448,0.6329,0.1622,,,
+squad,baseline,Where was Super Bowl 50 held?,0.9858,False,0.6592,0.0718,0.7003,0.7003,0.0034,0.1858,0.6763,0.6653,0.0987,,,
+squad,baseline,The name of the NFL championship game is?,1.0,False,0.5081,0.0356,0.5396,0.5396,0.0002,0.0875,0.5097,0.5246,0.0851,,,
+squad,baseline,What 2015 NFL team one the AFC playoff?,0.7449,False,0.5456,0.0202,0.5661,0.5661,0.0056,0.0943,0.6213,0.5332,0.0351,,,
+squad,hcpc_v2,Which NFL team represented the AFC at Super Bowl 50?,0.6985,False,0.6025,0.151,0.5905,0.5905,0.0013,0.1527,0.6423,0.6252,0.1482,True,1.0,0.5905
+squad,hcpc_v2,Which NFL team represented the NFC at Super Bowl 50?,0.6996,False,0.5991,0.1913,0.689,0.689,0.0047,0.2102,0.665,0.6277,0.1761,True,1.0,0.689
+squad,hcpc_v2,Where did Super Bowl 50 take place?,0.986,False,0.6432,0.0585,0.6464,0.6464,0.0019,0.1611,0.6747,0.6556,0.0863,False,0.0,0.6464
+squad,hcpc_v2,Which NFL team won Super Bowl 50?,0.9247,False,0.6554,0.126,0.6506,0.6506,0.0023,0.1363,0.6713,0.6629,0.1304,False,0.0,0.6506
+squad,hcpc_v2,What color was used to emphasize the 50th anniversary of the Super Bowl?,1.0,False,0.5495,0.0739,0.5689,0.5689,0.0081,0.0988,0.6245,0.591,0.064,True,1.0,0.5689
+squad,hcpc_v2,What was the theme of Super Bowl 50?,0.8574,False,0.558,0.0387,0.5143,0.5143,0.0042,0.145,0.6015,0.5866,0.0951,False,0.0,0.5143
+squad,hcpc_v2,What day was the game played on?,0.8019,False,0.3746,0.2417,0.6076,0.6076,0.0019,0.1652,0.3831,0.3937,0.2163,True,1.0,0.6076
+squad,hcpc_v2,What is the AFC short for?,0.8789,False,0.4121,0.1428,0.4999,0.4999,0.0065,0.0818,0.6439,0.441,0.1185,True,1.0,0.4999
+squad,hcpc_v2,What was the theme of Super Bowl 50?,0.8574,False,0.558,0.0387,0.5143,0.5143,0.0042,0.145,0.6015,0.5866,0.0951,False,0.0,0.5143
+squad,hcpc_v2,What does AFC stand for?,0.754,False,0.3787,0.1463,0.4999,0.4999,0.0065,0.0818,0.6346,0.4033,0.1435,True,1.0,0.4999
+squad,hcpc_v2,What day was the Super Bowl played on?,0.6946,False,0.6413,0.0897,0.6076,0.6076,0.0019,0.1652,0.5729,0.6522,0.0881,False,0.0,0.6076
+squad,hcpc_v2,Who won Super Bowl 50?,0.9247,False,0.6246,0.0962,0.6111,0.6111,0.0023,0.1091,0.1976,0.6364,0.0948,True,1.0,0.6111
+squad,hcpc_v2,What venue did Super Bowl 50 take place in?,0.986,False,0.653,0.0546,0.6293,0.6293,0.0034,0.1532,0.6621,0.6604,0.0486,True,1.0,0.6293
+squad,hcpc_v2,What city did Super Bowl 50 take place in?,0.9154,False,0.6431,0.0586,0.7003,0.7003,0.0034,0.1858,0.6661,0.6524,0.1044,True,1.0,0.7003
+squad,hcpc_v2,"If Roman numerals were used, what would Super Bowl 50 have been called?",0.5988,False,0.5327,0.331,0.6205,0.6205,0.0038,0.17,0.655,0.5868,0.2115,True,1.0,0.6205
+squad,hcpc_v2,Super Bowl 50 decided the NFL champion for what season?,0.7723,False,0.6341,0.111,0.5438,0.5438,0.0058,0.137,0.4848,0.639,0.1225,False,0.0,0.5438
+squad,hcpc_v2,What year did the Denver Broncos secure a Super Bowl title for the third time?,0.5531,False,0.6795,0.033,0.635,0.635,0.0008,0.0959,0.5698,0.6707,0.0505,False,0.0,0.635
+squad,hcpc_v2,What city did Super Bowl 50 take place in?,0.9154,False,0.6431,0.0586,0.7003,0.7003,0.0034,0.1858,0.6661,0.6524,0.1044,True,1.0,0.7003
+squad,hcpc_v2,What stadium did Super Bowl 50 take place in?,0.8599,False,0.6693,0.0443,0.7003,0.7003,0.0034,0.1858,0.6929,0.6838,0.0449,False,0.0,0.7003
+squad,hcpc_v2,What was the final score of Super Bowl 50? ,0.8904,False,0.584,0.0654,0.6129,0.6129,0.0044,0.1045,0.1684,0.5977,0.1064,True,1.0,0.6129
+squad,hcpc_v2,"What month, day and year did Super Bowl 50 take place? ",0.867,False,0.625,0.0344,0.5946,0.5946,0.0019,0.1626,0.5527,0.6406,0.0811,True,1.0,0.5946
+squad,hcpc_v2,What year was Super Bowl 50?,0.7844,False,0.6133,0.0877,0.5867,0.5867,0.0035,0.151,0.1886,0.6294,0.136,False,0.0,0.5867
+squad,hcpc_v2,What team was the AFC champion?,0.8254,False,0.5751,0.0399,0.6411,0.6411,0.0056,0.147,0.6367,0.5704,0.0381,False,0.0,0.6411
+squad,hcpc_v2,What team was the NFC champion?,0.7569,False,0.6039,0.0652,0.5934,0.5934,0.003,0.108,0.6925,0.6022,0.0493,False,0.0,0.5934
+squad,hcpc_v2,Who won Super Bowl 50?,0.9247,False,0.6246,0.0962,0.6111,0.6111,0.0023,0.1091,0.1976,0.6364,0.0948,True,1.0,0.6111
+squad,hcpc_v2,Super Bowl 50 determined the NFL champion for what season?,0.7723,False,0.6236,0.1316,0.5438,0.5438,0.0058,0.137,0.6053,0.6283,0.142,True,1.0,0.5438
+squad,hcpc_v2,Which team won Super Bowl 50.,0.9247,False,0.6228,0.1564,0.6506,0.6506,0.0023,0.1363,0.5448,0.6329,0.1622,False,0.0,0.6506
+squad,hcpc_v2,Where was Super Bowl 50 held?,0.9858,False,0.6592,0.0718,0.7003,0.7003,0.0034,0.1858,0.6763,0.6653,0.0987,False,0.0,0.7003
+squad,hcpc_v2,The name of the NFL championship game is?,0.8353,False,0.5081,0.0356,0.5396,0.5396,0.0002,0.0875,0.5097,0.5246,0.0851,True,1.0,0.5396
+squad,hcpc_v2,What 2015 NFL team one the AFC playoff?,0.7449,False,0.5456,0.0202,0.5661,0.5661,0.0056,0.0943,0.6213,0.5332,0.0351,False,0.0,0.5661
+pubmedqa,baseline,Do mitochondria play a role in remodelling lace plant leaves during programmed cell death?,0.7192,False,0.4265,0.6252,0.4305,0.4305,0.0598,0.1487,0.6819,0.5157,0.6031,,,
+pubmedqa,baseline,Landolt C and snellen e acuity: differences in strabismus amblyopia?,0.6055,False,0.6049,0.4249,0.7688,0.7688,0.0037,0.1357,0.5894,0.6847,0.2612,,,
+pubmedqa,baseline,"Syncope during bathing in infants, a pediatric form of water-induced urticaria?",0.6321,False,0.4139,0.338,0.3402,0.3402,0.0409,0.0789,0.6421,0.4697,0.5339,,,
+pubmedqa,baseline,Are the long-term results of the transanal pull-through equal to those of the transabdominal pull-through?,0.3294,True,0.3875,0.2458,0.3568,0.3568,0.0027,0.0814,0.021,0.4087,0.276,,,
+pubmedqa,baseline,Can tailored interventions increase mammography use among HMO women?,0.6543,False,0.5137,0.3684,0.576,0.576,0.053,0.1633,0.6925,0.5214,0.3754,,,
+pubmedqa,baseline,Double balloon enteroscopy: is it efficacious and safe in a community setting?,0.7074,False,0.3222,0.1722,0.2259,0.2259,0.0045,0.0799,0.6397,0.297,0.1556,,,
+pubmedqa,baseline,30-Day and 1-year mortality in emergency general surgery laparotomies: an area of concern and need for improvement?,0.4766,True,0.5245,0.5158,0.5526,0.5526,0.026,0.1594,0.3379,0.5249,0.4904,,,
+pubmedqa,baseline,Is adjustment for reporting heterogeneity necessary in sleep disorders?,0.4696,True,0.5493,0.3283,0.5068,0.5068,0.0529,0.1177,0.6867,0.5442,0.3423,,,
+pubmedqa,baseline,Do mutations causing low HDL-C promote increased carotid intima-media thickness?,0.4517,True,0.4427,0.4791,0.3348,0.3348,0.0042,0.1007,0.3041,0.419,0.4355,,,
+pubmedqa,baseline,A short stay or 23-hour ward in a general and academic children's hospital: are they effective?,0.5502,False,0.7454,0.1285,0.8368,0.8368,0.0029,0.2234,0.6909,0.7365,0.099,,,
+pubmedqa,baseline,Did Chile's traffic law reform push police enforcement?,0.7341,False,0.4542,0.5785,0.5222,0.5222,0.0393,0.1197,0.6691,0.4527,0.5821,,,
+pubmedqa,baseline,Therapeutic anticoagulation in the trauma patient: is it safe?,0.6215,False,0.5373,0.502,0.4549,0.4549,0.0153,0.1074,0.5981,0.5481,0.4169,,,
+pubmedqa,baseline,Differentiation of nonalcoholic from alcoholic steatohepatitis: are routine laboratory markers useful?,0.4313,True,0.4878,0.6108,0.5354,0.5354,0.0116,0.0914,0.436,0.4309,0.5184,,,
+pubmedqa,baseline,Prompting Primary Care Providers about Increased Patient Risk As a Result of Family History: Does It Work?,0.4828,True,0.5966,0.3843,0.5579,0.5579,0.0257,0.1348,0.6786,0.6051,0.3522,,,
+pubmedqa,baseline,Do emergency ultrasound fellowship programs impact emergency medicine residents' ultrasound education?,0.7341,False,0.549,0.4812,0.4383,0.4383,0.0491,0.1466,0.5122,0.5406,0.4564,,,
+pubmedqa,baseline,Patient-Controlled Therapy of Breathlessness in Palliative Care: A New Therapeutic Concept for Opioid Administration?,0.6097,False,0.5676,0.406,0.6289,0.6289,0.0248,0.1229,0.6921,0.6065,0.3976,,,
+pubmedqa,baseline,Is there still a need for living-related liver transplantation in children?,0.4326,True,0.4423,0.3118,0.5354,0.5354,0.0116,0.0914,0.2615,0.4186,0.2407,,,
+pubmedqa,baseline,Do patterns of knowledge and attitudes exist among unvaccinated seniors?,0.5433,False,0.4733,0.556,0.3596,0.3596,0.0004,0.0786,0.1903,0.4892,0.4827,,,
+pubmedqa,baseline,Is there a model to teach and practice retroperitoneoscopic nephrectomy?,0.7213,False,0.5035,0.4901,0.5284,0.5284,0.0282,0.1497,0.6688,0.5039,0.4315,,,
+pubmedqa,baseline,Cardiovascular risk in a rural adult West African population: is resting heart rate also relevant?,0.7308,False,0.543,0.4794,0.4476,0.4476,0.0062,0.1428,0.4252,0.5222,0.3975,,,
+pubmedqa,baseline,Israeli hospital preparedness for terrorism-related multiple casualty incidents: can the surge capacity and injury severity distribution be better predicted?,0.4847,True,0.557,0.3408,0.5611,0.5611,0.0262,0.1549,0.6256,0.5777,0.3793,,,
+pubmedqa,baseline,Acute respiratory distress syndrome in children with malignancy--can we predict outcome?,0.6113,False,0.566,0.4442,0.609,0.609,0.0248,0.1078,0.0669,0.5233,0.3285,,,
+pubmedqa,baseline,Secondhand smoke risk in infants discharged from an NICU: potential for significant health disparities?,0.4434,True,0.5102,0.4129,0.3568,0.3568,0.053,0.1269,0.222,0.5062,0.386,,,
+pubmedqa,baseline,Do nomograms designed to predict biochemical recurrence (BCR) do a better job of predicting more clinically relevant prostate cancer outcomes than BCR?,0.6588,False,0.6182,0.5615,0.5619,0.5619,0.0543,0.1231,0.692,0.6389,0.5591,,,
+pubmedqa,baseline,Are reports of mechanical dysfunction in chronic oro-facial pain related to somatisation?,0.4963,True,0.5869,0.5617,0.5028,0.5028,0.0953,0.1406,0.6923,0.5983,0.4832,,,
+pubmedqa,baseline,Amblyopia: is visual loss permanent?,0.5531,False,0.5044,0.1295,0.7688,0.7688,0.0037,0.1357,0.632,0.5877,0.0696,,,
+pubmedqa,baseline,Implementation of epidural analgesia for labor: is the standard of effective analgesia reachable in all women?,0.5036,False,0.4977,0.6097,0.3658,0.3658,0.0091,0.1071,0.5534,0.4992,0.5913,,,
+pubmedqa,baseline,Does HER2 immunoreactivity provide prognostic information in locally advanced urothelial carcinoma patients receiving adjuvant M-VEC chemotherapy?,0.6956,False,0.7043,0.515,0.5949,0.5949,0.0398,0.1687,0.6918,0.703,0.4962,,,
+pubmedqa,baseline,Is halofantrine ototoxic?,0.6682,False,0.3795,0.4112,0.1131,0.1131,0.0071,0.0948,0.1497,0.3761,0.3523,,,
+pubmedqa,baseline,Visceral adipose tissue area measurement at a single level: can it represent visceral adipose tissue volume?,0.5278,False,0.3739,0.3514,0.2529,0.2529,0.0027,0.0844,0.243,0.3746,0.3309,,,
+pubmedqa,hcpc_v2,Do mitochondria play a role in remodelling lace plant leaves during programmed cell death?,0.7192,False,0.4269,0.6242,0.4305,0.4305,0.0598,0.1487,0.6819,0.5157,0.6031,True,1.0,0.4305
+pubmedqa,hcpc_v2,Landolt C and snellen e acuity: differences in strabismus amblyopia?,0.5679,False,0.6053,0.4236,0.7688,0.7688,0.0037,0.1357,0.5894,0.6847,0.2612,True,1.0,0.7688
+pubmedqa,hcpc_v2,"Syncope during bathing in infants, a pediatric form of water-induced urticaria?",0.6182,False,0.4132,0.3401,0.3402,0.3402,0.0409,0.0789,0.6421,0.4697,0.5339,True,1.0,0.3402
+pubmedqa,hcpc_v2,Are the long-term results of the transanal pull-through equal to those of the transabdominal pull-through?,0.5847,False,0.3873,0.2463,0.3568,0.3568,0.0027,0.0814,0.021,0.4087,0.276,True,1.0,0.3568
+pubmedqa,hcpc_v2,Can tailored interventions increase mammography use among HMO women?,0.6543,False,0.5139,0.3677,0.576,0.576,0.053,0.1633,0.6925,0.5214,0.3754,True,1.0,0.576
+pubmedqa,hcpc_v2,Double balloon enteroscopy: is it efficacious and safe in a community setting?,0.6058,False,0.3169,0.1882,0.2309,0.2309,0.0033,0.0799,0.6474,0.2939,0.1649,True,1.0,0.2309
+pubmedqa,hcpc_v2,30-Day and 1-year mortality in emergency general surgery laparotomies: an area of concern and need for improvement?,0.5123,False,0.5245,0.5158,0.5526,0.5526,0.026,0.1594,0.3379,0.5249,0.4904,True,1.0,0.5526
+pubmedqa,hcpc_v2,Is adjustment for reporting heterogeneity necessary in sleep disorders?,0.5197,False,0.5493,0.3283,0.5068,0.5068,0.0529,0.1177,0.6867,0.5442,0.3423,True,1.0,0.5068
+pubmedqa,hcpc_v2,Do mutations causing low HDL-C promote increased carotid intima-media thickness?,0.4517,True,0.442,0.481,0.3348,0.3348,0.0042,0.1007,0.3041,0.419,0.4355,True,1.0,0.3348
+pubmedqa,hcpc_v2,A short stay or 23-hour ward in a general and academic children's hospital: are they effective?,0.5571,False,0.7454,0.1285,0.8368,0.8368,0.0029,0.2234,0.6909,0.7365,0.099,False,0.0,0.8368
+pubmedqa,hcpc_v2,Did Chile's traffic law reform push police enforcement?,0.7341,False,0.453,0.582,0.5222,0.5222,0.0393,0.1197,0.6691,0.4527,0.5821,True,1.0,0.5222
+pubmedqa,hcpc_v2,Therapeutic anticoagulation in the trauma patient: is it safe?,0.6215,False,0.5383,0.4992,0.4549,0.4549,0.0153,0.1074,0.5981,0.5481,0.4169,True,1.0,0.4549
+pubmedqa,hcpc_v2,Differentiation of nonalcoholic from alcoholic steatohepatitis: are routine laboratory markers useful?,0.5538,False,0.4874,0.6119,0.5354,0.5354,0.0116,0.0914,0.436,0.4309,0.5184,True,1.0,0.5354
+pubmedqa,hcpc_v2,Prompting Primary Care Providers about Increased Patient Risk As a Result of Family History: Does It Work?,0.5618,False,0.5972,0.3823,0.5579,0.5579,0.0257,0.1348,0.6786,0.6051,0.3522,True,1.0,0.5579
+pubmedqa,hcpc_v2,Do emergency ultrasound fellowship programs impact emergency medicine residents' ultrasound education?,0.7341,False,0.5478,0.4851,0.4383,0.4383,0.0491,0.1466,0.5122,0.5406,0.4564,True,1.0,0.4383
+pubmedqa,hcpc_v2,Patient-Controlled Therapy of Breathlessness in Palliative Care: A New Therapeutic Concept for Opioid Administration?,0.6097,False,0.5671,0.4074,0.6289,0.6289,0.0248,0.1229,0.6921,0.6065,0.3976,True,1.0,0.6289
+pubmedqa,hcpc_v2,Is there still a need for living-related liver transplantation in children?,0.4326,True,0.4424,0.3117,0.5354,0.5354,0.0116,0.0914,0.2615,0.4186,0.2407,True,1.0,0.5354
+pubmedqa,hcpc_v2,Do patterns of knowledge and attitudes exist among unvaccinated seniors?,0.5341,False,0.4733,0.556,0.3596,0.3596,0.0004,0.0786,0.1903,0.4892,0.4827,True,1.0,0.3596
+pubmedqa,hcpc_v2,Is there a model to teach and practice retroperitoneoscopic nephrectomy?,0.6444,False,0.5031,0.4913,0.5284,0.5284,0.0282,0.1497,0.6688,0.5039,0.4315,True,1.0,0.5284
+pubmedqa,hcpc_v2,Cardiovascular risk in a rural adult West African population: is resting heart rate also relevant?,0.6222,False,0.5418,0.4831,0.4476,0.4476,0.0062,0.1428,0.4252,0.5222,0.3975,True,1.0,0.4476
+pubmedqa,hcpc_v2,Israeli hospital preparedness for terrorism-related multiple casualty incidents: can the surge capacity and injury severity distribution be better predicted?,0.4847,True,0.5639,0.3202,0.563,0.563,0.0258,0.1549,0.6233,0.5792,0.3748,True,1.0,0.563
+pubmedqa,hcpc_v2,Acute respiratory distress syndrome in children with malignancy--can we predict outcome?,0.606,False,0.5668,0.4442,0.5981,0.5981,0.0221,0.1078,0.198,0.5187,0.3423,True,1.0,0.5981
+pubmedqa,hcpc_v2,Secondhand smoke risk in infants discharged from an NICU: potential for significant health disparities?,0.5489,False,0.5101,0.413,0.3568,0.3568,0.053,0.1269,0.222,0.5062,0.386,True,1.0,0.3568
+pubmedqa,hcpc_v2,Do nomograms designed to predict biochemical recurrence (BCR) do a better job of predicting more clinically relevant prostate cancer outcomes than BCR?,0.6588,False,0.6188,0.5596,0.5619,0.5619,0.0543,0.1231,0.692,0.6389,0.5591,True,1.0,0.5619
+pubmedqa,hcpc_v2,Are reports of mechanical dysfunction in chronic oro-facial pain related to somatisation?,0.5531,False,0.5901,0.5522,0.495,0.495,0.0996,0.1406,0.6924,0.5931,0.4987,True,1.0,0.4943
+pubmedqa,hcpc_v2,Amblyopia: is visual loss permanent?,0.5531,False,0.5044,0.1295,0.7688,0.7688,0.0037,0.1357,0.632,0.5877,0.0696,True,1.0,0.7688
+pubmedqa,hcpc_v2,Implementation of epidural analgesia for labor: is the standard of effective analgesia reachable in all women?,0.5313,False,0.4942,0.6202,0.3658,0.3658,0.0091,0.1071,0.5534,0.4992,0.5913,True,1.0,0.3658
+pubmedqa,hcpc_v2,Does HER2 immunoreactivity provide prognostic information in locally advanced urothelial carcinoma patients receiving adjuvant M-VEC chemotherapy?,0.6956,False,0.7039,0.5162,0.5949,0.5949,0.0398,0.1687,0.6918,0.703,0.4962,True,1.0,0.5949
+pubmedqa,hcpc_v2,Is halofantrine ototoxic?,0.6976,False,0.3813,0.4112,0.1131,0.1131,0.0071,0.0948,0.1497,0.3761,0.3523,True,1.0,0.1131
+pubmedqa,hcpc_v2,Visceral adipose tissue area measurement at a single level: can it represent visceral adipose tissue volume?,0.5332,False,0.3739,0.3514,0.2529,0.2529,0.0027,0.0844,0.243,0.3746,0.3309,True,1.0,0.2529

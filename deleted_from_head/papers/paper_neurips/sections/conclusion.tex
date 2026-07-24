@@ -1,0 +1,34 @@
+\section{Conclusion}
+\label{sec:conclusion}
+
+We have shown that better per-passage retrieval can make answer
+faithfulness \emph{worse} when refinement fragments the coherence of
+the retrieved set. The phenomenon is robust across $5$ datasets, $5$
+generator families ($7$B--$120$B), $9$ ablation axes, and $7{,}000+$
+queries. We have introduced a generator-free retrieval-time signal
+(CCS) that detects the failure, validated it cross-signal against the
+model's own self-confidence, and shipped it as a deployment policy
+(HCPC-v$2$) that recovers faithfulness with $0\%$ hallucination at one
+pairwise-similarity computation per query. The benchmark, the
+$\texttt{pip install}$-able metric, the LangChain integration, and a
+permanent Zenodo DOI are released.
+
+The broader message is methodological. RAG evaluation has been
+optimising the wrong quantity. We have been measuring how good each
+passage looks on its own, when what the generator actually needs is
+evidence that fits together. CCS is a small step toward measuring the
+right thing.
+
+\paragraph{Broader impact.}
+RAG is increasingly deployed in high-stakes settings (medical QA,
+legal research, customer support) where unsupported claims have
+direct downstream cost. Our work identifies a counter-intuitive
+failure mode in the dominant deployment pattern (rerank +
+per-passage refinement) and provides a generator-free,
+deployment-time signal that flags it. The expected positive impact
+is on deployers who can now flag low-coherence retrieval sets before
+they reach the generator. A possible negative impact is mis-use of
+the diagnostic to over-confidently certify ``high-coherence'' outputs
+as faithful: we explicitly mark CCS as a \emph{predictive signal,
+not a guarantee}, in \S\ref{sec:discussion:where_ccs_fails} and
+identify three regimes where it does not predict.

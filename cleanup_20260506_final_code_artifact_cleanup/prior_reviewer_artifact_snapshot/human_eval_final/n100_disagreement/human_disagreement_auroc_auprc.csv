@@ -1,0 +1,4 @@
+scorer,n,positive_label,auroc,auprc
+deberta_score,100,faithful,0.3976091476091477,0.7648126706992424
+second_nli_score,100,faithful,0.7936590436590436,0.9287932572363485
+ragas_style_score,100,faithful,0.7175155925155926,0.8593668251049509

@@ -1,0 +1,901 @@
+example_id,query_id,dataset,condition,question,retrieved_context,generated_answer,gold_answer,deberta_score,second_nli_score,ragas_style_score,abs_deberta_ragas_disagreement,disagreement_type,annotator_label,annotator_confidence,annotator_notes
+984,squad:41:984,squad,baseline,William would eventually gain what throne?,"In 1066, Duke William II of Normandy conquered England killing King Harold II at the Battle of Hastings. The invading Normans and their descendants replaced the Anglo-Saxons as the ruling class of England. The nobility of England were part of a single Normans culture and many had lands on both sides of the channel. Early Norman kings of England, as Dukes of Normandy, owed homage to the King of France for their land on the continent. They considered England to be their most important holding (it brought with it the title of King—an important status symbol).
+
+---
+
+One of the claimants of the English throne opposing William the Conqueror, Edgar Atheling, eventually fled to Scotland. King Malcolm III of Scotland married Edgar's sister Margaret, and came into opposition to William who had already disputed Scotland's southern borders. William invaded Scotland in 1072, riding as far as Abernethy where he met up with his fleet of ships. Malcolm submitted, paid homage to William and surrendered his son Duncan as a hostage, beginning a series of arguments as to whether the Scottish Crown owed allegiance to the King of England.
+
+---
+
+Various princes of the Holy Land arrived in Limassol at the same time, in particular Guy de Lusignan. All declared their support for Richard provided that he support Guy against his rival Conrad of Montferrat. The local barons abandoned Isaac, who considered making peace with Richard, joining him on the crusade, and offering his daughter in marriage to the person named by Richard. But Isaac changed his mind and tried to escape. Richard then proceeded to conquer the whole island, his troops being led by Guy de Lusignan. Isaac surrendered and was confined with silver chains, because Richard had promised that he would not place him in irons. By 1 June, Richard had conquered the whole island. His exploit was well publicized and contributed to his reputation; he also derived significant financial gains from the conquest of the island. Richard left for Acre on 5 June, with his allies. Before his departure, he named two of his Norman generals, Richard de Camville and Robert de Thornham, as governors of Cyprus.", England,King of England,1.0,0.3504,0.0,1.0,deberta_high_ragas_low,,,
+5688,squad:44:5688,squad,baseline,In what year did Nikola Tesla emigrate to the United States?,"On 30 July 1891, at the age of 35, Tesla became a naturalized citizen of the United States, and established his South Fifth Avenue laboratory, and later another at 46 E. Houston Street, in New York. He lit electric lamps wirelessly at both locations, demonstrating the potential of wireless power transmission. In the same year, he patented the Tesla coil.
+
+---
+
+In 1882, Tesla began working for the Continental Edison Company in France, designing and making improvements to electrical equipment. In June 1884, he relocated to New York City:57–60 where he was hired by Thomas Edison to work at his Edison Machine Works on Manhattan's lower east side. Tesla's work for Edison began with simple electrical engineering and quickly progressed to solving more difficult problems.
+
+---
+
+Nikola Tesla (Serbian Cyrillic: Никола Тесла; 10 July 1856 – 7 January 1943) was a Serbian American inventor, electrical engineer, mechanical engineer, physicist, and futurist best known for his contributions to the design of the modern alternating current (AC) electricity supply system.", June 1884,1884,1.0,0.4112,0.0,1.0,deberta_high_ragas_low,,,
+2766,squad:42:2766,squad,baseline,Who was the Most Valuable Player of Super Bowl II?,"In honor of the 50th Super Bowl, the pregame ceremony featured the on-field introduction of 39 of the 43 previous Super Bowl Most Valuable Players. Bart Starr (MVP of Super Bowls I and II) and Chuck Howley (MVP of Super Bowl V) appeared via video, while Peyton Manning (MVP of Super Bowl XLI and current Broncos quarterback) was shown in the locker room preparing for the game. No plans were announced regarding the recognition of Harvey Martin, co-MVP of Super Bowl XII, who died in 2001.
+
+---
+
+The Panthers finished the regular season with a 15–1 record, and quarterback Cam Newton was named the NFL Most Valuable Player (MVP). They defeated the Arizona Cardinals 49–15 in the NFC Championship Game and advanced to their second Super Bowl appearance since the franchise was founded in 1995. The Broncos finished the regular season with a 12–4 record, and denied the New England Patriots a chance to defend their title from Super Bowl XLIX by defeating them 20–18 in the AFC Championship Game. They joined the Patriots, Dallas Cowboys, and Pittsburgh Steelers as one of four teams that have made eight appearances in the Super Bowl.
+
+---
+
+The Panthers offense, which led the NFL in scoring (500 points), was loaded with talent, boasting six Pro Bowl selections. Pro Bowl quarterback Cam Newton had one of his best seasons, throwing for 3,837 yards and rushing for 636, while recording a career-high and league-leading 45 total touchdowns (35 passing, 10 rushing), a career-low 10 interceptions, and a career-best quarterback rating of 99.4. Newton's leading receivers were tight end Greg Olsen, who caught a career-high 77 passes for 1,104 yards and seven touchdowns, and wide receiver Ted Ginn, Jr., who caught 44 passes for 739 yards and 10 touchdowns; Ginn also rushed for 60 yards and returned 27 punts for 277 yards. Other key receivers included veteran Jerricho Cotchery (39 receptions for 485 yards), rookie Devin Funchess (31 receptions for 473 yards and five touchdowns), and second-year receiver Corey Brown (31 receptions for 447 yards)", Bart Starr,Bart Starr,1.0,0.374,0.0,1.0,deberta_high_ragas_low,,,
+6312,squad:45:6312,squad,baseline,What is the name of the quarterback who was 38 in Super Bowl XXXIII?,"Peyton Manning became the first quarterback ever to lead two different teams to multiple Super Bowls. He is also the oldest quarterback ever to play in a Super Bowl at age 39. The past record was held by John Elway, who led the Broncos to victory in Super Bowl XXXIII at age 38 and is currently Denver's Executive Vice President of Football Operations and General Manager.
+
+---
+
+In honor of the 50th Super Bowl, the pregame ceremony featured the on-field introduction of 39 of the 43 previous Super Bowl Most Valuable Players. Bart Starr (MVP of Super Bowls I and II) and Chuck Howley (MVP of Super Bowl V) appeared via video, while Peyton Manning (MVP of Super Bowl XLI and current Broncos quarterback) was shown in the locker room preparing for the game. No plans were announced regarding the recognition of Harvey Martin, co-MVP of Super Bowl XII, who died in 2001.
+
+---
+
+This was the first Super Bowl to feature a quarterback on both teams who was the #1 pick in their draft classes. Manning was the #1 selection of the 1998 NFL draft, while Newton was picked first in 2011. The matchup also pits the top two picks of the 2011 draft against each other: Newton for Carolina and Von Miller for Denver. Manning and Newton also set the record for the largest age difference between opposing Super Bowl quarterbacks at 13 years and 48 days (Manning was 39, Newton was 26).", John Elway,John Elway,1.0,0.3486,0.0,1.0,deberta_high_ragas_low,,,
+2334,squad:42:2334,squad,baseline,What CBS website provided a stream?,"CBS provided digital streams of the game via CBSSports.com, and the CBS Sports apps on tablets, Windows 10, Xbox One and other digital media players (such as Chromecast and Roku). Due to Verizon Communications exclusivity, streaming on smartphones was only provided to Verizon Wireless customers via the NFL Mobile service. The ESPN Deportes Spanish broadcast was made available through WatchESPN.
+
+---
+
+As opposed to broadcasts of primetime series, CBS broadcast special episodes of its late night talk shows as its lead-out programs for Super Bowl 50, beginning with a special episode of The Late Show with Stephen Colbert following the game. Following a break for late local programming, CBS also aired a special episode of The Late Late Show with James Corden.
+
+---
+
+In the United States, the game was televised by CBS, as part of a cycle between the three main broadcast television partners of the NFL. The network's lead broadcast team of Jim Nantz and Phil Simms called the contest, with Tracy Wolfson and Evan Washburn on the sidelines. CBS introduced new features during the telecast, including pylon cameras and microphones along with EyeVision 360—an array of 36 cameras along the upper deck that can be used to provide a 360-degree view of plays and ""bullet time"" effects. (An earlier version of EyeVision was last used in Super Bowl XXXV; for Super Bowl 50, the cameras were upgraded to 5K resolution.)", CBSSports.com,CBSSports.com,1.0,0.356,0.0,1.0,deberta_high_ragas_low,,,
+807,squad:41:807,squad,baseline,What CBS website provided a stream?,"CBS provided digital streams of the game via CBSSports.com, and the CBS Sports apps on tablets, Windows 10, Xbox One and other digital media players (such as Chromecast and Roku). Due to Verizon Communications exclusivity, streaming on smartphones was only provided to Verizon Wireless customers via the NFL Mobile service. The ESPN Deportes Spanish broadcast was made available through WatchESPN.
+
+---
+
+As opposed to broadcasts of primetime series, CBS broadcast special episodes of its late night talk shows as its lead-out programs for Super Bowl 50, beginning with a special episode of The Late Show with Stephen Colbert following the game. Following a break for late local programming, CBS also aired a special episode of The Late Late Show with James Corden.
+
+---
+
+In the United States, the game was televised by CBS, as part of a cycle between the three main broadcast television partners of the NFL. The network's lead broadcast team of Jim Nantz and Phil Simms called the contest, with Tracy Wolfson and Evan Washburn on the sidelines. CBS introduced new features during the telecast, including pylon cameras and microphones along with EyeVision 360—an array of 36 cameras along the upper deck that can be used to provide a 360-degree view of plays and ""bullet time"" effects. (An earlier version of EyeVision was last used in Super Bowl XXXV; for Super Bowl 50, the cameras were upgraded to 5K resolution.)", CBSSports.com,CBSSports.com,1.0,0.356,0.0,1.0,deberta_high_ragas_low,,,
+1287,squad:41:1287,squad,baseline,How did Luther's writings sound as he became less healthy?,"Luther had been suffering from ill health for years, including Ménière's disease, vertigo, fainting, tinnitus, and a cataract in one eye. From 1531 to 1546, his health deteriorated further. The years of struggle with Rome, the antagonisms with and among his fellow reformers, and the scandal which ensued from the bigamy of the Philip of Hesse incident, in which Luther had played a leading role, all may have contributed. In 1536, he began to suffer from kidney and bladder stones, and arthritis, and an ear infection ruptured an ear drum. In December 1544, he began to feel the effects of angina.
+
+---
+
+. When his efforts at conversion failed, he grew increasingly bitter toward them. In his 2010 book Bonhoeffer: Pastor, Martyr, Prophet, Spy, Christian author Eric Metaxas claimed that Luther's attitude towards Jews ""unraveled along with his health.""
+
+---
+
+Luther dedicated himself to the Augustinian order, devoting himself to fasting, long hours in prayer, pilgrimage, and frequent confession. Luther described this period of his life as one of deep spiritual despair. He said, ""I lost touch with Christ the Savior and Comforter, and made of him the jailer and hangman of my poor soul."" Johann von Staupitz, his superior, pointed Luther's mind away from continual reflection upon his sins toward the merits of Christ. He taught that true repentance does not involve self-inflicted penances and punishments but rather a change of heart.", The context provided does not include information about how Luther's writings sounded as he became less healthy.,harsher,0.9466,0.3314,0.0,0.9466,deberta_high_ragas_low,,,
+4137,squad:43:4137,squad,baseline,How did Luther's writings sound as he became less healthy?,"Luther had been suffering from ill health for years, including Ménière's disease, vertigo, fainting, tinnitus, and a cataract in one eye. From 1531 to 1546, his health deteriorated further. The years of struggle with Rome, the antagonisms with and among his fellow reformers, and the scandal which ensued from the bigamy of the Philip of Hesse incident, in which Luther had played a leading role, all may have contributed. In 1536, he began to suffer from kidney and bladder stones, and arthritis, and an ear infection ruptured an ear drum. In December 1544, he began to feel the effects of angina.
+
+---
+
+. When his efforts at conversion failed, he grew increasingly bitter toward them. In his 2010 book Bonhoeffer: Pastor, Martyr, Prophet, Spy, Christian author Eric Metaxas claimed that Luther's attitude towards Jews ""unraveled along with his health.""
+
+---
+
+Luther dedicated himself to the Augustinian order, devoting himself to fasting, long hours in prayer, pilgrimage, and frequent confession. Luther described this period of his life as one of deep spiritual despair. He said, ""I lost touch with Christ the Savior and Comforter, and made of him the jailer and hangman of my poor soul."" Johann von Staupitz, his superior, pointed Luther's mind away from continual reflection upon his sins toward the merits of Christ. He taught that true repentance does not involve self-inflicted penances and punishments but rather a change of heart.", The context provided does not include information about how Luther's writings sounded as he became less healthy.,harsher,0.9466,0.3314,0.0,0.9466,deberta_high_ragas_low,,,
+2745,squad:42:2745,squad,baseline,How did Luther's writings sound as he became less healthy?,"Luther had been suffering from ill health for years, including Ménière's disease, vertigo, fainting, tinnitus, and a cataract in one eye. From 1531 to 1546, his health deteriorated further. The years of struggle with Rome, the antagonisms with and among his fellow reformers, and the scandal which ensued from the bigamy of the Philip of Hesse incident, in which Luther had played a leading role, all may have contributed. In 1536, he began to suffer from kidney and bladder stones, and arthritis, and an ear infection ruptured an ear drum. In December 1544, he began to feel the effects of angina.
+
+---
+
+. When his efforts at conversion failed, he grew increasingly bitter toward them. In his 2010 book Bonhoeffer: Pastor, Martyr, Prophet, Spy, Christian author Eric Metaxas claimed that Luther's attitude towards Jews ""unraveled along with his health.""
+
+---
+
+Luther dedicated himself to the Augustinian order, devoting himself to fasting, long hours in prayer, pilgrimage, and frequent confession. Luther described this period of his life as one of deep spiritual despair. He said, ""I lost touch with Christ the Savior and Comforter, and made of him the jailer and hangman of my poor soul."" Johann von Staupitz, his superior, pointed Luther's mind away from continual reflection upon his sins toward the merits of Christ. He taught that true repentance does not involve self-inflicted penances and punishments but rather a change of heart.", The context provided does not include information about how Luther's writings sounded as he became less healthy.,harsher,0.9466,0.3314,0.0,0.9466,deberta_high_ragas_low,,,
+1536,squad:42:1536,squad,baseline,What yard marker on the field was painted gold?,"Various gold-themed promotions and initiatives were held throughout the 2015 NFL season to tie into the ""Golden Super Bowl""; gold-tinted logos were implemented across the NFL's properties and painted on fields, the numbering of the 50-yard line on fields was colored gold, and beginning on week 7, all sideline jackets and hats featured gold-trimmed logos. Gold footballs were given to each high school that has had a player or coach appear in the Super Bowl, and ""homecoming"" events were also held by Super Bowl-winning teams at games.
+
+---
+
+On 1 July 1851, writs were issued for the election of the first Victorian Legislative Council, and the absolute independence of Victoria from New South Wales was established proclaiming a new Colony of Victoria. Days later, still in 1851 gold was discovered near Ballarat, and subsequently at Bendigo. Later discoveries occurred at many sites across Victoria. This triggered one of the largest gold rushes the world has ever seen. The colony grew rapidly in both population and economic power. In ten years the population of Victoria increased sevenfold from 76,000 to 540,000. All sorts of gold records were produced including the ""richest shallow alluvial goldfield in the world"" and the largest gold nugget. Victoria produced in the decade 1851–1860 20 million ounces of gold, one third of the world's output[citation needed].
+
+---
+
+Immigrants arrived from all over the world to search for gold, especially from Ireland and China. Many Chinese miners worked in Victoria, and their legacy is particularly strong in Bendigo and its environs. Although there was some racism directed at them, there was not the level of anti-Chinese violence that was seen at the Lambing Flat riots in New South Wales. However, there was a riot at Buckland Valley near Bright in 1857. Conditions on the gold fields were cramped and unsanitary; an outbreak of typhoid at Buckland Valley in 1854 killed over 1,000 miners.", The provided context does not mention any information about a yard marker on a football field being painted gold.,50,0.946,0.3093,0.0,0.946,deberta_high_ragas_low,,,
+7065,squad:45:7065,squad,baseline,What service did Verizon customers need to use to stream the game on their smartphones?,"CBS provided digital streams of the game via CBSSports.com, and the CBS Sports apps on tablets, Windows 10, Xbox One and other digital media players (such as Chromecast and Roku). Due to Verizon Communications exclusivity, streaming on smartphones was only provided to Verizon Wireless customers via the NFL Mobile service. The ESPN Deportes Spanish broadcast was made available through WatchESPN.
+
+---
+
+Virgin Media (re-branded in 2007 from NTL:Telewest) started to offer a high-definition television (HDTV) capable set top box, although from 30 November 2006 until 30 July 2009 it only carried one linear HD channel, BBC HD, after the conclusion of the ITV HD trial. Virgin Media has claimed that other HD channels were ""locked up"" or otherwise withheld from their platform, although Virgin Media did in fact have an option to carry Channel 4 HD in the future. Nonetheless, the linear channels were not offered, Virgin Media instead concentrating on its Video On Demand service to carry a modest selection of HD content. Virgin Media has nevertheless made a number of statements over the years, suggesting that more linear HD channels are on the way.
+
+---
+
+Provided is a universal Ku band LNB (9.75/10.600 GHz) which is fitted at the end of the dish and pointed at the correct satellite constellation; most digital receivers will receive the free to air channels. Some broadcasts are free-to-air and unencrypted, some are encrypted but do not require a monthly subscription (known as free-to-view), some are encrypted and require a monthly subscription, and some are pay-per-view services. To view the encrypted content a VideoGuard UK equipped receiver (all of which are dedicated to the Sky service, and cannot be used to decrypt other services) needs to be used. Unofficial CAMs are now available to view the service, although use of them breaks the user's contract with Sky and invalidates the user's rights to use the card."," The context does not provide information about the specific service that Virgin Media customers needed to use, but for Verizon customers, they needed to use the NFL Mobile service to stream the game on their smartphones.",NFL Mobile,0.9459,0.3362,0.0,0.9459,deberta_high_ragas_low,,,
+4929,squad:44:4929,squad,baseline,Who hit the goal post on a field goal attempt?,"With 4:51 left in regulation, Carolina got the ball on their own 24-yard line with a chance to mount a game-winning drive, and soon faced 3rd-and-9. On the next play, Miller stripped the ball away from Newton, and after several players dove for it, it took a long bounce backwards and was recovered by Ward, who returned it five yards to the Panthers 4-yard line. Although several players dove into the pile to attempt to recover it, Newton did not and his lack of aggression later earned him heavy criticism. Meanwhile, Denver's offense was kept out of the end zone for three plays, but a holding penalty on cornerback Josh Norman gave the Broncos a new set of downs. Then Anderson scored on a 2-yard touchdown run and Manning completed a pass to Bennie Fowler for a 2-point conversion, giving Denver a 24–10 lead with 3:08 left and essentially putting the game away. Carolina had two more drives, but failed to get a first down on each one.
+
+---
+
+The Panthers seemed primed to score on their opening drive of the second half when Newton completed a 45-yard pass to Ted Ginn Jr. on the Denver 35-yard line on their second offensive play. But the Broncos defense halted the drive on the 26-yard line, and it ended with no points when Graham Gano hit the uprights on a 44-yard field goal attempt. After the miss, Manning completed a pair of passes to Emmanuel Sanders for gains of 25 and 22 yards, setting up McManus' 33-yard field goal that gave the Broncos a 16–7 lead. Carolina got off to another strong start after the kickoff, with Newton completing a 42-yard pass to Corey Brown. But once again they came up empty, this time as a result of a Newton pass that bounced off the hands of Ginn and was intercepted by safety T. J. Ward. Ward fumbled the ball during the return, but Trevathan recovered it to enable Denver to keep possession.
+
+---
+
+After a punt from both teams, Carolina got on track with a 9-play, 73-yard scoring drive. Newton completed 4 of 4 passes for 51 yards and rushed twice for 25 yards, while Jonathan Stewart finished the drive with a 1-yard touchdown run, cutting the score to 10–7 with 11:28 left in the second quarter. Later on, Broncos receiver Jordan Norwood received Brad Nortman's short 28-yard punt surrounded by Panthers players, but none of them attempted to make a tackle, apparently thinking Norwood had called a fair catch. Norwood had not done so, and with no resistance around him, he took off for a Super Bowl record 61-yard return before Mario Addison dragged him down on the Panthers 14-yard line. Despite Denver's excellent field position, they could not get the ball into the end zone, so McManus kicked a 33-yard field goal that increased their lead to 13–7.", Graham Gano hit the goal post on a field goal attempt.,Graham Gano,0.9334,0.2945,0.0,0.9334,deberta_high_ragas_low,,,
+3360,squad:43:3360,squad,baseline,Who recovered Tolbert's fumble?,"On Carolina's next possession fullback Mike Tolbert lost a fumble while being tackled by safety Darian Stewart, which linebacker Danny Trevathan recovered on the Broncos 40-yard line. However, the Panthers soon took the ball back when defensive end Kony Ealy tipped a Manning pass to himself and then intercepted it, returning the ball 19 yards to the Panthers 39-yard line with 1:55 left on the clock. The Panthers could not gain any yards with their possession and had to punt. After a Denver punt, Carolina drove to the Broncos 45-yard line. But with 11 seconds left, Newton was sacked by DeMarcus Ware as time expired in the half.
+
+---
+
+After each team punted, Panthers quarterback Cam Newton appeared to complete a 24-yard pass Jerricho Cotchery, but the call was ruled an incompletion and upheld after a replay challenge. CBS analyst and retired referee Mike Carey stated he disagreed with the call and felt the review clearly showed the pass was complete. A few plays later, on 3rd-and-10 from the 15-yard line, linebacker Von Miller knocked the ball out of Newton's hands while sacking him, and Malik Jackson recovered it in the end zone for a Broncos touchdown, giving the team a 10–0 lead. This was the first fumble return touchdown in a Super Bowl since Super Bowl XXVIII at the end of the 1993 season.
+
+---
+
+With 4:51 left in regulation, Carolina got the ball on their own 24-yard line with a chance to mount a game-winning drive, and soon faced 3rd-and-9. On the next play, Miller stripped the ball away from Newton, and after several players dove for it, it took a long bounce backwards and was recovered by Ward, who returned it five yards to the Panthers 4-yard line. Although several players dove into the pile to attempt to recover it, Newton did not and his lack of aggression later earned him heavy criticism. Meanwhile, Denver's offense was kept out of the end zone for three plays, but a holding penalty on cornerback Josh Norman gave the Broncos a new set of downs. Then Anderson scored on a 2-yard touchdown run and Manning completed a pass to Bennie Fowler for a 2-point conversion, giving Denver a 24–10 lead with 3:08 left and essentially putting the game away. Carolina had two more drives, but failed to get a first down on each one.", Danny Trevathan,Danny Trevathan,0.3006,0.3664,1.0,0.6994,near_threshold_disagreement,,,
+5358,squad:44:5358,squad,baseline,Who recovered Tolbert's fumble?,"On Carolina's next possession fullback Mike Tolbert lost a fumble while being tackled by safety Darian Stewart, which linebacker Danny Trevathan recovered on the Broncos 40-yard line. However, the Panthers soon took the ball back when defensive end Kony Ealy tipped a Manning pass to himself and then intercepted it, returning the ball 19 yards to the Panthers 39-yard line with 1:55 left on the clock. The Panthers could not gain any yards with their possession and had to punt. After a Denver punt, Carolina drove to the Broncos 45-yard line. But with 11 seconds left, Newton was sacked by DeMarcus Ware as time expired in the half.
+
+---
+
+After each team punted, Panthers quarterback Cam Newton appeared to complete a 24-yard pass Jerricho Cotchery, but the call was ruled an incompletion and upheld after a replay challenge. CBS analyst and retired referee Mike Carey stated he disagreed with the call and felt the review clearly showed the pass was complete. A few plays later, on 3rd-and-10 from the 15-yard line, linebacker Von Miller knocked the ball out of Newton's hands while sacking him, and Malik Jackson recovered it in the end zone for a Broncos touchdown, giving the team a 10–0 lead. This was the first fumble return touchdown in a Super Bowl since Super Bowl XXVIII at the end of the 1993 season.
+
+---
+
+With 4:51 left in regulation, Carolina got the ball on their own 24-yard line with a chance to mount a game-winning drive, and soon faced 3rd-and-9. On the next play, Miller stripped the ball away from Newton, and after several players dove for it, it took a long bounce backwards and was recovered by Ward, who returned it five yards to the Panthers 4-yard line. Although several players dove into the pile to attempt to recover it, Newton did not and his lack of aggression later earned him heavy criticism. Meanwhile, Denver's offense was kept out of the end zone for three plays, but a holding penalty on cornerback Josh Norman gave the Broncos a new set of downs. Then Anderson scored on a 2-yard touchdown run and Manning completed a pass to Bennie Fowler for a 2-point conversion, giving Denver a 24–10 lead with 3:08 left and essentially putting the game away. Carolina had two more drives, but failed to get a first down on each one.", Danny Trevathan,Danny Trevathan,0.3006,0.3664,1.0,0.6994,near_threshold_disagreement,,,
+1167,squad:41:1167,squad,baseline,What was the name of France's primary colony in the New World?,"Barred by the government from settling in New France, Huguenots led by Jessé de Forest, sailed to North America in 1624 and settled instead in the Dutch colony of New Netherland (later incorporated into New York and New Jersey); as well as Great Britain's colonies, including Nova Scotia. A number of New Amsterdam's families were of Huguenot origin, often having emigrated as refugees to the Netherlands in the previous century. In 1628 the Huguenots established a congregation as L'Église française à la Nouvelle-Amsterdam (the French church in New Amsterdam). This parish continues today as L'Eglise du Saint-Esprit, part of the Episcopal (Anglican) communion, and welcomes Francophone New Yorkers from all over the world
+
+---
+
+After the founding of the colony of New South Wales in 1788, Australia was divided into an eastern half named New South Wales and a western half named New Holland, under the administration of the colonial government in Sydney. The first European settlement in the area later known as Victoria was established in October 1803 under Lieutenant-Governor David Collins at Sullivan Bay on Port Phillip. It consisted of 402 people (5 Government officials, 9 officers of marines, 2 drummers, and 39 privates, 5 soldiers' wives, and a child, 307 convicts, 17 convicts' wives, and 7 children). They had been sent from England in HMS Calcutta under the command of Captain Daniel Woodriff, principally out of fear that the French, who had been exploring the area, might establish their own settlement and thereby challenge British rights to the continent.
+
+---
+
+The exodus of Huguenots from France created a brain drain, as many Huguenots had occupied important places in society. The kingdom did not fully recover for years. The French crown's refusal to allow non-Catholics to settle in New France may help to explain that colony's slow rate of population growth compared to that of the neighbouring British colonies, which opened settlement to religious dissenters. By the time of the French and Indian War (the North American front of the Seven Years' War), a sizeable population of Huguenot descent lived in the British colonies, and many participated in the British defeat of New France in 1759-60.", I cannot find this information in the provided context. The context does not mention the name of France's primary colony in the New World.,New France,0.6987,0.1355,0.0,0.6987,near_threshold_disagreement,,,
+1965,squad:42:1965,squad,baseline,What was the name of France's primary colony in the New World?,"Barred by the government from settling in New France, Huguenots led by Jessé de Forest, sailed to North America in 1624 and settled instead in the Dutch colony of New Netherland (later incorporated into New York and New Jersey); as well as Great Britain's colonies, including Nova Scotia. A number of New Amsterdam's families were of Huguenot origin, often having emigrated as refugees to the Netherlands in the previous century. In 1628 the Huguenots established a congregation as L'Église française à la Nouvelle-Amsterdam (the French church in New Amsterdam). This parish continues today as L'Eglise du Saint-Esprit, part of the Episcopal (Anglican) communion, and welcomes Francophone New Yorkers from all over the world
+
+---
+
+After the founding of the colony of New South Wales in 1788, Australia was divided into an eastern half named New South Wales and a western half named New Holland, under the administration of the colonial government in Sydney. The first European settlement in the area later known as Victoria was established in October 1803 under Lieutenant-Governor David Collins at Sullivan Bay on Port Phillip. It consisted of 402 people (5 Government officials, 9 officers of marines, 2 drummers, and 39 privates, 5 soldiers' wives, and a child, 307 convicts, 17 convicts' wives, and 7 children). They had been sent from England in HMS Calcutta under the command of Captain Daniel Woodriff, principally out of fear that the French, who had been exploring the area, might establish their own settlement and thereby challenge British rights to the continent.
+
+---
+
+The exodus of Huguenots from France created a brain drain, as many Huguenots had occupied important places in society. The kingdom did not fully recover for years. The French crown's refusal to allow non-Catholics to settle in New France may help to explain that colony's slow rate of population growth compared to that of the neighbouring British colonies, which opened settlement to religious dissenters. By the time of the French and Indian War (the North American front of the Seven Years' War), a sizeable population of Huguenot descent lived in the British colonies, and many participated in the British defeat of New France in 1759-60.", I cannot find this information in the provided context. The context does not mention the name of France's primary colony in the New World.,New France,0.6987,0.1355,0.0,0.6987,near_threshold_disagreement,,,
+4995,squad:44:4995,squad,baseline,What was the name of France's primary colony in the New World?,"Barred by the government from settling in New France, Huguenots led by Jessé de Forest, sailed to North America in 1624 and settled instead in the Dutch colony of New Netherland (later incorporated into New York and New Jersey); as well as Great Britain's colonies, including Nova Scotia. A number of New Amsterdam's families were of Huguenot origin, often having emigrated as refugees to the Netherlands in the previous century. In 1628 the Huguenots established a congregation as L'Église française à la Nouvelle-Amsterdam (the French church in New Amsterdam). This parish continues today as L'Eglise du Saint-Esprit, part of the Episcopal (Anglican) communion, and welcomes Francophone New Yorkers from all over the world
+
+---
+
+After the founding of the colony of New South Wales in 1788, Australia was divided into an eastern half named New South Wales and a western half named New Holland, under the administration of the colonial government in Sydney. The first European settlement in the area later known as Victoria was established in October 1803 under Lieutenant-Governor David Collins at Sullivan Bay on Port Phillip. It consisted of 402 people (5 Government officials, 9 officers of marines, 2 drummers, and 39 privates, 5 soldiers' wives, and a child, 307 convicts, 17 convicts' wives, and 7 children). They had been sent from England in HMS Calcutta under the command of Captain Daniel Woodriff, principally out of fear that the French, who had been exploring the area, might establish their own settlement and thereby challenge British rights to the continent.
+
+---
+
+The exodus of Huguenots from France created a brain drain, as many Huguenots had occupied important places in society. The kingdom did not fully recover for years. The French crown's refusal to allow non-Catholics to settle in New France may help to explain that colony's slow rate of population growth compared to that of the neighbouring British colonies, which opened settlement to religious dissenters. By the time of the French and Indian War (the North American front of the Seven Years' War), a sizeable population of Huguenot descent lived in the British colonies, and many participated in the British defeat of New France in 1759-60.", I cannot find this information in the provided context. The context does not mention the name of France's primary colony in the New World.,New France,0.6987,0.1355,0.0,0.6987,near_threshold_disagreement,,,
+4464,squad:43:4464,squad,baseline,What was put on pylons for Super Bowl 50?,"Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the ""golden anniversary"" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as ""Super Bowl L""), so that the logo could prominently feature the Arabic numerals 50.
+
+---
+
+Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the ""golden anniversary"" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as ""Super Bowl L""), so that the logo could prominently feature the Arabic numerals 50.
+
+---
+
+Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the ""golden anniversary"" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as ""Super Bowl L""), so that the logo could prominently feature the Arabic numerals 50.", The context does not provide information about what was put on pylons for Super Bowl 50.,cameras,0.6981,0.1723,0.0,0.6981,near_threshold_disagreement,,,
+315,squad:41:315,squad,baseline,"What was named ""The Tesla"" in his honor?","Tesla served as a vice president of the American Institute of Electrical Engineers, the forerunner (along with the Institute of Radio Engineers) of the modern-day IEEE, from 1892 to 1894.
+
+---
+
+Nikola Tesla (Serbian Cyrillic: Никола Тесла; 10 July 1856 – 7 January 1943) was a Serbian American inventor, electrical engineer, mechanical engineer, physicist, and futurist best known for his contributions to the design of the modern alternating current (AC) electricity supply system.
+
+---
+
+On Tesla's 75th birthday in 1931, Time magazine put him on its cover. The cover caption ""All the world's his power house"" noted his contribution to electrical power generation. He received congratulatory letters from more than 70 pioneers in science and engineering, including Albert Einstein.", I cannot find this information in the provided context. The context does not mention anything about a specific invention or entity being named after Nikola Tesla.,SI unit of magnetic flux density,0.6967,0.1404,0.0,0.6967,near_threshold_disagreement,,,
+1806,squad:42:1806,squad,baseline,"What was named ""The Tesla"" in his honor?","Tesla served as a vice president of the American Institute of Electrical Engineers, the forerunner (along with the Institute of Radio Engineers) of the modern-day IEEE, from 1892 to 1894.
+
+---
+
+Nikola Tesla (Serbian Cyrillic: Никола Тесла; 10 July 1856 – 7 January 1943) was a Serbian American inventor, electrical engineer, mechanical engineer, physicist, and futurist best known for his contributions to the design of the modern alternating current (AC) electricity supply system.
+
+---
+
+On Tesla's 75th birthday in 1931, Time magazine put him on its cover. The cover caption ""All the world's his power house"" noted his contribution to electrical power generation. He received congratulatory letters from more than 70 pioneers in science and engineering, including Albert Einstein.", I cannot find this information in the provided context. The context does not mention anything about a specific invention or entity being named after Nikola Tesla.,SI unit of magnetic flux density,0.6967,0.1404,0.0,0.6967,near_threshold_disagreement,,,
+4539,squad:44:4539,squad,baseline, Where did he claim he would transport energy to?,"Tesla was generally antagonistic towards theories about the conversion of matter into energy.:247 He was also critical of Einstein's theory of relativity, saying:
+
+---
+
+In 1935, in an annual birthday celebration interview, Tesla announced a method of transmitting mechanical energy with minimal loss over any terrestrial distance, a related new means of communication, and a method of accurately determining the location of underground mineral deposits.
+
+---
+
+. He typically did not make drawings by hand but worked from memory. Beginning in his childhood, Tesla had frequent flashbacks to events that had happened previously in his life.:33"," I cannot find this information in the provided context about where Tesla claimed he would transport energy to. The context only mentions that he announced a method of transmitting mechanical energy with minimal loss over any terrestrial distance, but it does not specify the destination or recipient of this energy.",Paris,0.6966,0.1401,0.0,0.6966,near_threshold_disagreement,,,
+6192,squad:45:6192,squad,baseline, Where did he claim he would transport energy to?,"Tesla was generally antagonistic towards theories about the conversion of matter into energy.:247 He was also critical of Einstein's theory of relativity, saying:
+
+---
+
+In 1935, in an annual birthday celebration interview, Tesla announced a method of transmitting mechanical energy with minimal loss over any terrestrial distance, a related new means of communication, and a method of accurately determining the location of underground mineral deposits.
+
+---
+
+. He typically did not make drawings by hand but worked from memory. Beginning in his childhood, Tesla had frequent flashbacks to events that had happened previously in his life.:33"," I cannot find this information in the provided context about where Tesla claimed he would transport energy to. The context only mentions that he announced a method of transmitting mechanical energy with minimal loss over any terrestrial distance, but it does not specify the destination or recipient of this energy.",Paris,0.6966,0.1401,0.0,0.6966,near_threshold_disagreement,,,
+3060,squad:43:3060,squad,baseline,"What is the name of the third, permanent Huguenot church in New Rochelle?","New Rochelle, located in the county of Westchester on the north shore of Long Island Sound, seemed to be the great location of the Huguenots in New York. It is said that they landed on the coastline peninsula of Davenports Neck called ""Bauffet's Point"" after traveling from England where they had previously taken refuge on account of religious persecution, four years before the revocation of the Edict of Nantes. They purchased from John Pell, Lord of Pelham Manor, a tract of land consisting of six thousand one hundred acres with the help of Jacob Leisler. It was named New Rochelle after La Rochelle, their former strong-hold in France. A small wooden church was first erected in the community, followed by a second church that built of stone. Previous to the erection of it, the strong men would often walk twenty-three miles on Saturday evening, the distance by the road from New Rochelle to New York, to attend the Sunday service. The church was eventually replaced by a third, Trinity-St
+
+---
+
+Huguenot immigrants did not disperse or settle in different parts of the country, but rather, formed three societies or congregations; one in the city of New York, another 21 miles north of New York in a town which they named New Rochelle, and a third further upstate in New Paltz. The ""Huguenot Street Historic District"" in New Paltz has been designated a National Historic Landmark site and contains the oldest street in the United States of America. A small group of Huguenots also settled on the south shore of Staten Island along the New York Harbor, for which the current neighborhood of Huguenot was named.
+
+---
+
+. The church was eventually replaced by a third, Trinity-St. Paul's Episcopal Church, which contains heirlooms including the original bell from the French Huguenot Church ""Eglise du St. Esperit"" on Pine Street in New York City, which is preserved as a relic in the tower room. The Huguenot cemetery, or ""Huguenot Burial Ground"", has since been recognized as a historic cemetery that is the final resting place for a wide range of the Huguenot founders, early settlers and prominent citizens dating back more than three centuries."," The context does not provide the name of the third, permanent Huguenot church in New Rochelle. However, it mentions that a small wooden church was first erected and later replaced by a second stone church, but no information about a third church is given.",Trinity-St. Paul's Episcopal Church,0.6961,0.2291,0.0,0.6961,near_threshold_disagreement,,,
+111,squad:41:111,squad,baseline,What was faith's greatest enemy according to Luther?,". ""That is why faith alone makes someone just and fulfills the law,"" he wrote. ""Faith is that which brings the Holy Spirit through the merits of Christ."" Faith, for Luther, was a gift from God; the experience of being justified by faith was ""as though I had been born again."" His entry into Paradise, no less, was a discovery about ""the righteousness of God"" – a discovery that ""the just person"" of whom the Bible speaks (as in Romans 1:17) lives by faith. He explained his concept of ""justification"" in the Smalcald Articles:
+
+---
+
+Some scholars have asserted that Luther taught that faith and reason were antithetical in the sense that questions of faith could not be illuminated by reason. He wrote, ""All the articles of our Christian faith, which God has revealed to us in His Word, are in presence of reason sheerly impossible, absurd, and false."" and ""[That] Reason in no way contributes to faith. [...] For reason is the greatest enemy that faith has; it never comes to the aid of spiritual things."" However, though seemingly contradictorily, he also wrote in the latter work that human reason ""strives not against faith, when enlightened, but rather furthers and advances it"", bringing claims he was a fideist into dispute. Contemporary Lutheran scholarship, however, has found a different reality in Luther. Luther rather seeks to separate faith and reason in order to honor the separate spheres of knowledge that each applies to
+
+---
+
+. He made clear, however, that the spiritual war against an alien faith was separate, to be waged through prayer and repentance. Around the time of the Siege of Vienna, Luther wrote a prayer for national deliverance from the Turks, asking God to ""give to our emperor perpetual victory over our enemies""."," According to the context provided, Luther considered reason as the greatest enemy that faith has.",reason,0.1727,0.2948,1.0,0.8273,ragas_high_deberta_low,,,
+5145,squad:44:5145,squad,baseline,How did the drive end for the Panthers?,"The Panthers seemed primed to score on their opening drive of the second half when Newton completed a 45-yard pass to Ted Ginn Jr. on the Denver 35-yard line on their second offensive play. But the Broncos defense halted the drive on the 26-yard line, and it ended with no points when Graham Gano hit the uprights on a 44-yard field goal attempt. After the miss, Manning completed a pair of passes to Emmanuel Sanders for gains of 25 and 22 yards, setting up McManus' 33-yard field goal that gave the Broncos a 16–7 lead. Carolina got off to another strong start after the kickoff, with Newton completing a 42-yard pass to Corey Brown. But once again they came up empty, this time as a result of a Newton pass that bounced off the hands of Ginn and was intercepted by safety T. J. Ward. Ward fumbled the ball during the return, but Trevathan recovered it to enable Denver to keep possession.
+
+---
+
+The Panthers beat the Seattle Seahawks in the divisional round, running up a 31–0 halftime lead and then holding off a furious second half comeback attempt to win 31–24, avenging their elimination from a year earlier. The Panthers then blew out the Arizona Cardinals in the NFC Championship Game, 49–15, racking up 487 yards and forcing seven turnovers.
+
+---
+
+There would be no more scoring in the third quarter, but early in the fourth, the Broncos drove to the Panthers 41-yard line. On the next play, Ealy knocked the ball out of Manning's hand as he was winding up for a pass, and then recovered it for Carolina on the 50-yard line. A 16-yard reception by Devin Funchess and a 12-yard run by Stewart then set up Gano's 39-yard field goal, cutting the Panthers deficit to one score at 16–10. The next three drives of the game would end in punts."," The drive ended for the Panthers with a field goal attempt by Graham Gano from 44 yards out, which hit the uprights and resulted in no points.",punt,0.2684,0.3628,1.0,0.7316,ragas_high_deberta_low,,,
+2682,squad:42:2682,squad,baseline,Where did Tesla work in Budapest?,"In 1881, Tesla moved to Budapest to work under Ferenc Puskás at a telegraph company, the Budapest Telephone Exchange. Upon arrival, Tesla realized that the company, then under construction, was not functional, so he worked as a draftsman in the Central Telegraph Office instead. Within a few months, the Budapest Telephone Exchange became functional and Tesla was allocated the chief electrician position. During his employment, Tesla made many improvements to the Central Station equipment and claimed to have perfected a telephone repeater or amplifier, which was never patented nor publicly described.
+
+---
+
+In 1952, following pressure from Tesla's nephew, Sava Kosanović, Tesla's entire estate was shipped to Belgrade in 80 trunks marked N.T. In 1957, Kosanović's secretary Charlotte Muzar transported Tesla's ashes from the United States to Belgrade. The ashes are displayed in a gold-plated sphere on a marble pedestal in the Nikola Tesla Museum.
+
+---
+
+In 1882, Tesla began working for the Continental Edison Company in France, designing and making improvements to electrical equipment. In June 1884, he relocated to New York City:57–60 where he was hired by Thomas Edison to work at his Edison Machine Works on Manhattan's lower east side. Tesla's work for Edison began with simple electrical engineering and quickly progressed to solving more difficult problems."," In Budapest, Tesla worked under Ferenc Puskás at the Budapest Telephone Exchange, but due to the company not being functional upon his arrival, he worked as a draftsman in the Central Telegraph Office instead.",a telegraph company,0.2715,0.1528,1.0,0.7285,ragas_high_deberta_low,,,
+2994,squad:42:2994,squad,baseline,What is an example of an NP-intermediate problem not known to exist in P or NP-complete? ,"It was shown by Ladner that if P ≠ NP then there exist problems in NP that are neither in P nor NP-complete. Such problems are called NP-intermediate problems. The graph isomorphism problem, the discrete logarithm problem and the integer factorization problem are examples of problems believed to be NP-intermediate. They are some of the very few NP problems not known to be in P or to be NP-complete.
+
+---
+
+What intractability means in practice is open to debate. Saying that a problem is not in P does not imply that all large cases of the problem are hard or even that most of them are. For example, the decision problem in Presburger arithmetic has been shown not to be in P, yet algorithms have been written that solve the problem in reasonable times in most cases. Similarly, algorithms can solve the NP-complete knapsack problem over a wide range of sizes in less than quadratic time and SAT solvers routinely handle large instances of the NP-complete Boolean satisfiability problem.
+
+---
+
+The question of whether P equals NP is one of the most important open questions in theoretical computer science because of the wide implications of a solution. If the answer is yes, many important problems can be shown to have more efficient solutions. These include various types of integer programming problems in operations research, many problems in logistics, protein structure prediction in biology, and the ability to find formal proofs of pure mathematics theorems. The P versus NP problem is one of the Millennium Prize Problems proposed by the Clay Mathematics Institute. There is a US$1,000,000 prize for resolving the problem."," The graph isomorphism problem, the discrete logarithm problem, and the integer factorization problem are examples of problems believed to be NP-intermediate and not known to exist in P or NP-complete.",graph isomorphism problem,0.2803,0.3321,1.0,0.7197,ragas_high_deberta_low,,,
+7095,squad:45:7095,squad,baseline,Why was Tesla returned to Gospic?,"On 24 March 1879, Tesla was returned to Gospić under police guard for not having a residence permit. On 17 April 1879, Milutin Tesla died at the age of 60 after contracting an unspecified illness (although some sources say that he died of a stroke). During that year, Tesla taught a large class of students in his old school, Higher Real Gymnasium, in Gospić.
+
+---
+
+On 7 January 1900, Tesla left Colorado Springs.[citation needed] His lab was torn down in 1904, and its contents were sold two years later to satisfy a debt.
+
+---
+
+Tesla's legacy has endured in books, films, radio, TV, music, live theater, comics and video games. The impact of the technologies invented or envisioned by Tesla is a recurring theme in several types of science fiction.", Tesla was returned to Gospić under police guard because he did not have a residence permit.,not having a residence permit,0.5009,0.2825,1.0,0.4991,ragas_high_deberta_low,,,
+6366,squad:45:6366,squad,baseline,What other health issues did Luther have?,"Luther had been suffering from ill health for years, including Ménière's disease, vertigo, fainting, tinnitus, and a cataract in one eye. From 1531 to 1546, his health deteriorated further. The years of struggle with Rome, the antagonisms with and among his fellow reformers, and the scandal which ensued from the bigamy of the Philip of Hesse incident, in which Luther had played a leading role, all may have contributed. In 1536, he began to suffer from kidney and bladder stones, and arthritis, and an ear infection ruptured an ear drum. In December 1544, he began to feel the effects of angina.
+
+---
+
+His poor physical health made him short-tempered and even harsher in his writings and comments. His wife Katharina was overheard saying, ""Dear husband, you are too rude,"" and he responded, ""They are teaching me to be rude."" In 1545 and 1546 Luther preached three times in the Market Church in Halle, staying with his friend Justus Jonas during Christmas.
+
+---
+
+. When his efforts at conversion failed, he grew increasingly bitter toward them. In his 2010 book Bonhoeffer: Pastor, Martyr, Prophet, Spy, Christian author Eric Metaxas claimed that Luther's attitude towards Jews ""unraveled along with his health."""," Luther had Ménière's disease, vertigo, fainting, tinnitus, a cataract in one eye, kidney and bladder stones, arthritis, an ear infection that ruptured an ear drum, and angina.","arthritis, and an ear infection",0.5015,0.3195,1.0,0.4985,ragas_high_deberta_low,,,
+2673,squad:42:2673,squad,baseline,What evidence between and among complexity classes would signify a theoretical watershed for complexity theory?,"Of course, some complexity classes have complicated definitions that do not fit into this framework. Thus, a typical complexity class has a definition like the following:
+
+---
+
+Many known complexity classes are suspected to be unequal, but this has not been proved. For instance P ⊆ NP ⊆ PP ⊆ PSPACE, but it is possible that P = PSPACE. If P is not equal to NP, then P is not equal to PSPACE either. Since there are many known complexity classes between P and PSPACE, such as RP, BPP, PP, BQP, MA, PH, etc., it is possible that all these complexity classes collapse to one class. Proving that any of these classes are unequal would be a major breakthrough in complexity theory.
+
+---
+
+Analogous definitions can be made for space requirements. Although time and space are the most well-known complexity resources, any complexity measure can be viewed as a computational resource. Complexity measures are very generally defined by the Blum complexity axioms. Other complexity measures used in complexity theory include communication complexity, circuit complexity, and decision tree complexity."," In the provided context, a major breakthrough in complexity theory would be proving that any of the known complexity classes between P and PSPACE are unequal. This is because it is currently suspected that many known complexity classes are equal or nested within each other (P ⊆ NP ⊆ PP ⊆ PSPACE), but it's possible that they collapse to one class. Proving that any of these classes are unequal would challenge the current understanding and potentially lead to new insights in complexity theory.",Proving that any of these classes are unequal,0.5024,0.4736,1.0,0.4976,ragas_high_deberta_low,,,
+6396,squad:45:6396,squad,baseline,Where in South Carolina did Huguenot nobility settle?,"In the early years, many Huguenots also settled in the area of present-day Charleston, South Carolina. In 1685, Rev. Elie Prioleau from the town of Pons in France, was among the first to settle there. He became pastor of the first Huguenot church in North America in that city. After the Revocation of the Edict of Nantes in 1685, several Huguenot families of Norman and Carolingian nobility and descent, including Edmund Bohun of Suffolk England from the Humphrey de Bohun line of French royalty descended from Charlemagne, Jean Postell of Dieppe France, Alexander Pepin, Antoine Poitevin of Orsement France, and Jacques de Bordeaux of Grenoble, immigrated to the Charleston Orange district. They were very successful at marriage and property speculation. After petitioning the British Crown in 1697 for the right to own land in the Baronies, they prospered as slave owners on the Cooper, Ashepoo, Ashley and Santee River plantations they purchased from the British Landgrave Edmund Bellinger
+
+---
+
+Paul Revere was descended from Huguenot refugees, as was Henry Laurens, who signed the Articles of Confederation for South Carolina; Jack Jouett, who made the ride from Cuckoo Tavern to warn Thomas Jefferson and others that Tarleton and his men were on their way to arrest him for crimes against the king; Francis Marion, and a number of other leaders of the American Revolution and later statesmen. The last active Huguenot congregation in North America worships in Charleston, South Carolina, at a church that dates to 1844. The Huguenot Society of America maintains Manakin Episcopal Church in Virginia as an historic shrine with occasional services. The Society has chapters in numerous states, with the one in Texas being the largest.
+
+---
+
+Individual Huguenots settled at the Cape of Good Hope from as early as 1671 with the arrival of François Villion (Viljoen). The first Huguenot to arrive at the Cape of Good Hope was however Maria de la Queillerie, wife of commander Jan van Riebeeck (and daughter of a Walloon church minister), who arrived on 6 April 1652 to establish a settlement at what is today Cape Town. The couple left for the Far East ten years later. On 31 December 1687 the first organised group of Huguenots set sail from the Netherlands to the Dutch East India Company post at the Cape of Good Hope. The largest portion of the Huguenots to settle in the Cape arrived between 1688 and 1689 in seven ships as part of the organised migration, but quite a few arrived as late as 1700; thereafter, the numbers declined and only small groups arrived at a time."," The Huguenot nobility settled in the area of present-day Charleston, Orange district, South Carolina.",the Charleston Orange district,0.5024,0.374,1.0,0.4976,ragas_high_deberta_low,,,
+3006,squad:43:3006,squad,baseline,"What individuals were responsible for authoring ""On the Computational Complexity of Algorithms""?","As Fortnow & Homer (2003) point out, the beginning of systematic studies in computational complexity is attributed to the seminal paper ""On the Computational Complexity of Algorithms"" by Juris Hartmanis and Richard Stearns (1965), which laid out the definitions of time and space complexity and proved the hierarchy theorems. Also, in 1965 Edmonds defined a ""good"" algorithm as one with running time bounded by a polynomial of the input size.
+
+---
+
+Before the actual research explicitly devoted to the complexity of algorithmic problems started off, numerous foundations were laid out by various researchers. Most influential among these was the definition of Turing machines by Alan Turing in 1936, which turned out to be a very robust and flexible simplification of a computer.
+
+---
+
+Computational complexity theory is a branch of the theory of computation in theoretical computer science that focuses on classifying computational problems according to their inherent difficulty, and relating those classes to each other. A computational problem is understood to be a task that is in principle amenable to being solved by a computer, which is equivalent to stating that the problem may be solved by mechanical application of mathematical steps, such as an algorithm.", Juris Hartmanis and Richard Stearns,Juris Hartmanis and Richard Stearns,0.5025,0.2721,1.0,0.4975,ragas_high_deberta_low,,,
+2757,squad:42:2757,squad,baseline,Who outbid General Electric to provide light to the World's Columbian Exposition?,"In 1893, George Westinghouse won the bid to light the 1893 World's Columbian Exposition in Chicago with alternating current, beating out a General Electric bid by one million dollars. This World's Fair devoted a building to electrical exhibits. It was a key event in the history of AC power, as Westinghouse demonstrated the safety, reliability, and efficiency of a fully integrated alternating current system to the American public. At the Columbian Exposition, under a banner announcing the ""Tesla Polyphase System"", Tesla demonstrated a series of electrical effects previously performed throughout America and Europe,:76 included using high-voltage, high-frequency alternating current to light a wireless gas-discharge lamp.:79 An observer noted:
+
+---
+
+In 1893 Richard Dean Adams, who headed up the Niagara Falls Cataract Construction Company sought Tesla's opinion on what system would be best to transmit power generated at the falls. Over several years there had been a series of proposals and open competitions on how best to utilize power generated by the falls with many systems being proposed by several US and European companies including two-phase and three-phase AC, high-voltage DC, and even compressed air. Adams pumped Tesla for information about the current state of all the competing systems. Tesla advised Adams that a two-phased system would be the most reliable and that there was a Westinghouse system to light incandescent bulbs using two-phase alternating current. Based on Tesla's advice and Westinghouse's demonstration that they could build a complete AC system at the Columbian Exposition, a contract for building a two-phase AC generating system at the Niagara Falls was awarded to Westinghouse Electric
+
+---
+
+In 1899, John Jacob Astor IV invested $100,000 for Tesla to further develop and produce a new lighting system. Instead, Tesla used the money to fund his Colorado Springs experiments.", George Westinghouse outbid General Electric to provide light to the World's Columbian Exposition.,George Westinghouse,0.5035,0.3671,1.0,0.4965,ragas_high_deberta_low,,,
+5919,squad:44:5919,squad,baseline,Who outbid General Electric to provide light to the World's Columbian Exposition?,"In 1893, George Westinghouse won the bid to light the 1893 World's Columbian Exposition in Chicago with alternating current, beating out a General Electric bid by one million dollars. This World's Fair devoted a building to electrical exhibits. It was a key event in the history of AC power, as Westinghouse demonstrated the safety, reliability, and efficiency of a fully integrated alternating current system to the American public. At the Columbian Exposition, under a banner announcing the ""Tesla Polyphase System"", Tesla demonstrated a series of electrical effects previously performed throughout America and Europe,:76 included using high-voltage, high-frequency alternating current to light a wireless gas-discharge lamp.:79 An observer noted:
+
+---
+
+In 1893 Richard Dean Adams, who headed up the Niagara Falls Cataract Construction Company sought Tesla's opinion on what system would be best to transmit power generated at the falls. Over several years there had been a series of proposals and open competitions on how best to utilize power generated by the falls with many systems being proposed by several US and European companies including two-phase and three-phase AC, high-voltage DC, and even compressed air. Adams pumped Tesla for information about the current state of all the competing systems. Tesla advised Adams that a two-phased system would be the most reliable and that there was a Westinghouse system to light incandescent bulbs using two-phase alternating current. Based on Tesla's advice and Westinghouse's demonstration that they could build a complete AC system at the Columbian Exposition, a contract for building a two-phase AC generating system at the Niagara Falls was awarded to Westinghouse Electric
+
+---
+
+In 1899, John Jacob Astor IV invested $100,000 for Tesla to further develop and produce a new lighting system. Instead, Tesla used the money to fund his Colorado Springs experiments.", George Westinghouse outbid General Electric to provide light to the World's Columbian Exposition.,George Westinghouse,0.5035,0.3671,1.0,0.4965,ragas_high_deberta_low,,,
+2656,squad:42:2656,squad,hcpc_v1,Who covered the halftime coverage?,". The Super Bowl 50 halftime show was headlined by the British rock group Coldplay with special guest performers Beyoncé and Bruno Mars, who headlined the Super Bowl XLVII and Super Bowl XLVIII halftime shows, respectively
+
+---
+
+. Bruno Mars, who headlined the Super Bowl XLVIII halftime show, and Mark Ronson also performed.
+
+---
+
+. Jim Gray will anchor the pre-game and halftime coverage.", Jim Gray,Jim Gray,1.0,0.3775,0.0,1.0,deberta_high_ragas_low,,,
+6664,squad:45:6664,squad,hcpc_v1,In what city did the last Super Bowl in California occur?,". It is the first Super Bowl held in the San Francisco Bay Area since Super Bowl XIX in 1985, and the first in California since Super Bowl XXXVII took place in San Diego in 2003.
+
+---
+
+. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title
+
+---
+
+. The San Francisco Bay Area last hosted in 1985 (Super Bowl XIX), held at Stanford Stadium in Stanford, California, won by the home team 49ers. The Miami bid depended on whether the stadium underwent renovations", San Diego,San Diego,1.0,0.3605,0.0,1.0,deberta_high_ragas_low,,,
+1255,squad:41:1255,squad,hcpc_v1,University City is an example of a business district located in which city?,"The San Bernardino-Riverside area maintains the business districts of Downtown San Bernardino, Hospitality Business/Financial Centre, University Town which are in San Bernardino and Downtown Riverside.
+
+---
+
+. Los Angeles itself has many business districts including the Downtown Los Angeles central business district as well as those lining the Wilshire Boulevard Miracle Mile including Century City, Westwood and Warner Center in the San Fernando Valley.
+
+---
+
+Downtown San Diego is the central business district of San Diego, though the city is filled with business districts. These include Carmel Valley, Del Mar Heights, Mission Valley, Rancho Bernardo, Sorrento Mesa, and University City", San Diego,San Diego,1.0,0.3605,0.0,1.0,deberta_high_ragas_low,,,
+1924,squad:42:1924,squad,hcpc_v1,University City is an example of a business district located in which city?,"The San Bernardino-Riverside area maintains the business districts of Downtown San Bernardino, Hospitality Business/Financial Centre, University Town which are in San Bernardino and Downtown Riverside.
+
+---
+
+. Los Angeles itself has many business districts including the Downtown Los Angeles central business district as well as those lining the Wilshire Boulevard Miracle Mile including Century City, Westwood and Warner Center in the San Fernando Valley.
+
+---
+
+Downtown San Diego is the central business district of San Diego, though the city is filled with business districts. These include Carmel Valley, Del Mar Heights, Mission Valley, Rancho Bernardo, Sorrento Mesa, and University City", San Diego,San Diego,1.0,0.3605,0.0,1.0,deberta_high_ragas_low,,,
+1123,squad:41:1123,squad,hcpc_v1,French Church Street is in what Irish town?,". Examples include the Huguenot District and French Church Street in Cork City; and D'Olier Street in Dublin, named after a High Sheriff and one of the founders of the Bank of Ireland
+
+---
+
+. Previous to the erection of it, the strong men would often walk twenty-three miles on Saturday evening, the distance by the road from New Rochelle to New York, to attend the Sunday service. The church was eventually replaced by a third, Trinity-St
+
+---
+
+. Names such as French, (De) Roche, Devereux, D'Arcy, Treacy and Lacy are particularly common in the southeast of Ireland, especially in the southern part of County Wexford where the first Norman settlements were established", Cork City,Cork City,1.0,0.3221,0.0,1.0,deberta_high_ragas_low,,,
+6100,squad:45:6100,squad,hcpc_v1,What team received the opening kickoff?,"The game's media day, which was typically held on the Tuesday afternoon prior to the game, was moved to the Monday evening and re-branded as Super Bowl Opening Night. The event was held on February 1, 2016 at SAP Center in San Jose
+
+---
+
+On May 21, 2013, NFL owners at their spring meetings in Boston voted and awarded the game to Levi's Stadium. The $1.2 billion stadium opened in 2014
+
+---
+
+. Carolina got off to another strong start after the kickoff, with Newton completing a 42-yard pass to Corey Brown. But once again they came up empty, this time as a result of a Newton pass that bounced off the hands of Ginn and was intercepted by safety T", The provided context does not mention which team received the opening kickoff.,Denver,0.9117,0.5585,0.0,0.9117,deberta_high_ragas_low,,,
+4567,squad:44:4567,squad,hcpc_v1,What team received the opening kickoff?,"The game's media day, which was typically held on the Tuesday afternoon prior to the game, was moved to the Monday evening and re-branded as Super Bowl Opening Night. The event was held on February 1, 2016 at SAP Center in San Jose
+
+---
+
+On May 21, 2013, NFL owners at their spring meetings in Boston voted and awarded the game to Levi's Stadium. The $1.2 billion stadium opened in 2014
+
+---
+
+. Carolina got off to another strong start after the kickoff, with Newton completing a 42-yard pass to Corey Brown. But once again they came up empty, this time as a result of a Newton pass that bounced off the hands of Ginn and was intercepted by safety T", The provided context does not mention which team received the opening kickoff.,Denver,0.9117,0.5585,0.0,0.9117,deberta_high_ragas_low,,,
+1774,squad:42:1774,squad,hcpc_v1,In what city is the Nikola Tesla Museum?,". The ashes are displayed in a gold-plated sphere on a marble pedestal in the Nikola Tesla Museum.
+
+---
+
+. Tesla published the document in an attempt to expound on the technical description of a ""superweapon that would put an end to all war."" This treatise is currently in the Nikola Tesla Museum archive in Belgrade
+
+---
+
+. and 81st St. A long-time friend and supporter of Tesla, Hugo Gernsback, commissioned a sculptor to create a death mask, now displayed in the Nikola Tesla Museum.", The provided context does not specify the city where the Nikola Tesla Museum is located.,Belgrade,0.9077,0.3038,0.0,0.9077,deberta_high_ragas_low,,,
+4756,squad:44:4756,squad,hcpc_v1,Who was designated as the home team in the Super Bowl?,". The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title
+
+---
+
+. It is the first Super Bowl held in the San Francisco Bay Area since Super Bowl XIX in 1985, and the first in California since Super Bowl XXXVII took place in San Diego in 2003.
+
+---
+
+. They joined the Patriots, Dallas Cowboys, and Pittsburgh Steelers as one of four teams that have made eight appearances in the Super Bowl.", The context does not provide information about which team was designated as the home team in the Super Bowl.,Broncos,0.9028,0.3017,0.0,0.9028,deberta_high_ragas_low,,,
+3418,squad:43:3418,squad,hcpc_v1,The region spans which mountains other than the Transverse ranges?,". The region spans from Pacific Ocean islands, shorelines, beaches, and coastal plains, through the Transverse and Peninsular Ranges with their peaks, into the large and small interior valleys, to the vast deserts of California.
+
+---
+
+To the east is the Colorado Desert and the Colorado River at the border with Arizona, and the Mojave Desert at the border with the state of Nevada. To the south is the Mexico–United States border.
+
+---
+
+. Another influence is the geographical phrase South of the Tehachapis, which would split the southern region off at the crest of that transverse range, but in that definition, the desert portions of north Los Angeles County and eastern Kern and San", I cannot find information in the provided context about any mountains other than the Transverse Ranges that are part of this region.,Peninsular,0.8851,0.1919,0.0,0.8851,deberta_high_ragas_low,,,
+1627,squad:42:1627,squad,hcpc_v1,How did Denver score at the end of the drive?,". Then Anderson scored on a 2-yard touchdown run and Manning completed a pass to Bennie Fowler for a 2-point conversion, giving Denver a 24–10 lead with 3:08 left and essentially putting the game away
+
+---
+
+Denver took the opening kickoff and started out strong with Peyton Manning completing an 18-yard pass to tight end Owen Daniels and a 22-yard throw to receiver Andre Caldwell. A pair of carries by C. J
+
+---
+
+. But the Broncos defense halted the drive on the 26-yard line, and it ended with no points when Graham Gano hit the uprights on a 44-yard field goal attempt", I cannot find information in the provided context about how Denver scored at the end of another drive apart from the one mentioned where Anderson scored a 2-yard touchdown run and Manning completed a pass to Bennie Fowler for a 2-point conversion.,field goal,0.8756,0.2693,0.0,0.8756,deberta_high_ragas_low,,,
+3439,squad:43:3439,squad,hcpc_v1,What year saw the earliest recorded use of the steam engine indicator?,"The most useful instrument for analyzing the performance of steam engines is the steam engine indicator. Early versions were in use by 1851, but the most successful indicator was developed for the high speed engine inventor and manufacturer Charles Porter by Charles Richard and exhibited at London Exhibition in 1862. The steam engine indicator traces on paper the pressure in the cylinder throughout the cycle, which can be used to spot various problems and calculate developed horsepower. It was routinely used by engineers, mechanics and insurance inspectors. The engine indicator can also be used on internal combustion engines. See image of indicator diagram below (in Types of motor units section).
+
+---
+
+. In the following centuries, the few steam-powered ""engines"" known were, like the aeolipile, essentially experimental devices used by inventors to demonstrate the properties of steam
+
+---
+
+. The stationary steam engine was a key component of the Industrial Revolution, allowing factories to locate where water power was unavailable", 1851,1851,1.0,0.3402,0.3,0.7,near_threshold_disagreement,,,
+4435,squad:43:4435,squad,hcpc_v1,What books did Bayle publish?,"Johann Eck, speaking on behalf of the Empire as assistant of the Archbishop of Trier, presented Luther with copies of his writings laid out on a table and asked him if the books were his, and whether he stood by their contents
+
+---
+
+Johann Eck, speaking on behalf of the Empire as assistant of the Archbishop of Trier, presented Luther with copies of his writings laid out on a table and asked him if the books were his, and whether he stood by their contents
+
+---
+
+Johann Eck, speaking on behalf of the Empire as assistant of the Archbishop of Trier, presented Luther with copies of his writings laid out on a table and asked him if the books were his, and whether he stood by their contents"," I cannot find information about any books published by Bayle in the provided context. The context only mentions Luther and Johann Eck, and does not mention Bayle or his publications.",Historical and Critical Dictionary,0.6996,0.1539,0.0,0.6996,near_threshold_disagreement,,,
+5359,squad:44:5359,squad,hcpc_v1,Who recovered Tolbert's fumble?,"On Carolina's next possession fullback Mike Tolbert lost a fumble while being tackled by safety Darian Stewart, which linebacker Danny Trevathan recovered on the Broncos 40-yard line
+
+---
+
+. This was the first fumble return touchdown in a Super Bowl since Super Bowl XXVIII at the end of the 1993 season.
+
+---
+
+. On the next play, Miller stripped the ball away from Newton, and after several players dove for it, it took a long bounce backwards and was recovered by Ward, who returned it five yards to the Panthers 4-yard line", Danny Trevathan,Danny Trevathan,0.3006,0.3664,1.0,0.6994,near_threshold_disagreement,,,
+3361,squad:43:3361,squad,hcpc_v1,Who recovered Tolbert's fumble?,"On Carolina's next possession fullback Mike Tolbert lost a fumble while being tackled by safety Darian Stewart, which linebacker Danny Trevathan recovered on the Broncos 40-yard line
+
+---
+
+. This was the first fumble return touchdown in a Super Bowl since Super Bowl XXVIII at the end of the 1993 season.
+
+---
+
+. On the next play, Miller stripped the ball away from Newton, and after several players dove for it, it took a long bounce backwards and was recovered by Ward, who returned it five yards to the Panthers 4-yard line", Danny Trevathan,Danny Trevathan,0.3006,0.3664,1.0,0.6994,near_threshold_disagreement,,,
+7117,squad:45:7117,squad,hcpc_v1,What is the name of the stadium in Miami that was considered?,"The league eventually narrowed the bids to three sites: New Orleans' Mercedes-Benz Superdome, Miami's Sun Life Stadium, and the San Francisco Bay Area's Levi's Stadium.
+
+---
+
+. The San Francisco Bay Area last hosted in 1985 (Super Bowl XIX), held at Stanford Stadium in Stanford, California, won by the home team 49ers. The Miami bid depended on whether the stadium underwent renovations
+
+---
+
+On May 21, 2013, NFL owners at their spring meetings in Boston voted and awarded the game to Levi's Stadium. The $1.2 billion stadium opened in 2014", I cannot find the name of the Miami stadium that was considered in the provided context.,Sun Life Stadium,0.6991,0.1831,0.0,0.6991,near_threshold_disagreement,,,
+6943,squad:45:6943,squad,hcpc_v1,What modern city is located on the original Huguenot colony?,". A small group of Huguenots also settled on the south shore of Staten Island along the New York Harbor, for which the current neighborhood of Huguenot was named.
+
+---
+
+. The Huguenot cemetery, or ""Huguenot Burial Ground"", has since been recognized as a historic cemetery that is the final resting place for a wide range of the Huguenot founders, early settlers and prominent citizens dating back more than three centuries.
+
+---
+
+Individual Huguenots settled at the Cape of Good Hope from as early as 1671 with the arrival of François Villion (Viljoen)"," I cannot find information in the provided context about a modern city being located on the original Huguenot colony. The context only mentions Staten Island, New York, as a location where Huguenots settled.",Cape Town,0.6989,0.1671,0.0,0.6989,near_threshold_disagreement,,,
+2854,squad:42:2854,squad,hcpc_v1,What modern city is located on the original Huguenot colony?,". A small group of Huguenots also settled on the south shore of Staten Island along the New York Harbor, for which the current neighborhood of Huguenot was named.
+
+---
+
+. The Huguenot cemetery, or ""Huguenot Burial Ground"", has since been recognized as a historic cemetery that is the final resting place for a wide range of the Huguenot founders, early settlers and prominent citizens dating back more than three centuries.
+
+---
+
+Individual Huguenots settled at the Cape of Good Hope from as early as 1671 with the arrival of François Villion (Viljoen)"," I cannot find information in the provided context about a modern city being located on the original Huguenot colony. The context only mentions Staten Island, New York, as a location where Huguenots settled.",Cape Town,0.6989,0.1671,0.0,0.6989,near_threshold_disagreement,,,
+2530,squad:42:2530,squad,hcpc_v1,Where is another indoor location for a teacher other than a school?,"In education, teachers facilitate student learning, often in a school or academy or perhaps in another environment such as outdoors. A teacher who teaches on an individual basis may be described as a tutor.
+
+---
+
+There are a variety of bodies designed to instill, preserve and update the knowledge and professional standing of teachers
+
+---
+
+. In other areas these roles may belong to the State Board of Education, the Superintendent of Public Instruction, the State Education Agency or other governmental bodies"," I cannot find this information in the provided context. The context only mentions schools and academies as potential locations for teachers, but does not specify any other indoor locations.",academy,0.6985,0.1508,0.0,0.6985,near_threshold_disagreement,,,
+6139,squad:45:6139,squad,hcpc_v1,Where is another indoor location for a teacher other than a school?,"In education, teachers facilitate student learning, often in a school or academy or perhaps in another environment such as outdoors. A teacher who teaches on an individual basis may be described as a tutor.
+
+---
+
+There are a variety of bodies designed to instill, preserve and update the knowledge and professional standing of teachers
+
+---
+
+. In other areas these roles may belong to the State Board of Education, the Superintendent of Public Instruction, the State Education Agency or other governmental bodies"," I cannot find this information in the provided context. The context only mentions schools and academies as potential locations for teachers, but does not specify any other indoor locations.",academy,0.6985,0.1508,0.0,0.6985,near_threshold_disagreement,,,
+5221,squad:44:5221,squad,hcpc_v1,Where is another indoor location for a teacher other than a school?,"In education, teachers facilitate student learning, often in a school or academy or perhaps in another environment such as outdoors. A teacher who teaches on an individual basis may be described as a tutor.
+
+---
+
+There are a variety of bodies designed to instill, preserve and update the knowledge and professional standing of teachers
+
+---
+
+. In other areas these roles may belong to the State Board of Education, the Superintendent of Public Instruction, the State Education Agency or other governmental bodies"," I cannot find this information in the provided context. The context only mentions schools and academies as potential locations for teachers, but does not specify any other indoor locations.",academy,0.6985,0.1508,0.0,0.6985,near_threshold_disagreement,,,
+3640,squad:43:3640,squad,hcpc_v1,Who voted on the venue for Super Bowl 50?,"which the game would have been known as ""Super Bowl L""), so that the logo could prominently feature the Arabic numerals 50.
+
+---
+
+. It is the first Super Bowl held in the San Francisco Bay Area since Super Bowl XIX in 1985, and the first in California since Super Bowl XXXVII took place in San Diego in 2003.
+
+---
+
+. The San Francisco Bay Area last hosted in 1985 (Super Bowl XIX), held at Stanford Stadium in Stanford, California, won by the home team 49ers. The Miami bid depended on whether the stadium underwent renovations", I cannot find this information in the provided context. The text does not mention who voted on the venue for Super Bowl 50.,NFL owners,0.6978,0.1242,0.0,0.6978,near_threshold_disagreement,,,
+5986,squad:44:5986,squad,hcpc_v1,Graham Gano kicked a field goal of how many yards?,". A 16-yard reception by Devin Funchess and a 12-yard run by Stewart then set up Gano's 39-yard field goal, cutting the Panthers deficit to one score at 16–10. The next three drives of the game would end in punts.
+
+---
+
+. Despite Denver's excellent field position, they could not get the ball into the end zone, so McManus kicked a 33-yard field goal that increased their lead to 13–7.
+
+---
+
+. But the Broncos defense halted the drive on the 26-yard line, and it ended with no points when Graham Gano hit the uprights on a 44-yard field goal attempt"," 39 yards (from the provided context: ""Gano's 39-yard field goal"") and 44 yards (from the provided context: ""Graham Gano hit the uprights on a 44-yard field goal attempt"").",39,0.1863,0.1657,1.0,0.8137,ragas_high_deberta_low,,,
+6325,squad:45:6325,squad,hcpc_v1,Which running back did the Panthers waive?,". The Panthers backfield featured Pro Bowl running back Jonathan Stewart, who led the team with 989 rushing yards and six touchdowns in 13 games, along with Pro Bowl fullback Mike Tolbert, who rushed for 256 yards and caught 18 passes for another 154 yards
+
+---
+
+. The Panthers could not gain any yards with their possession and had to punt. After a Denver punt, Carolina drove to the Broncos 45-yard line. But with 11 seconds left, Newton was sacked by DeMarcus Ware as time expired in the half.
+
+---
+
+Despite waiving longtime running back DeAngelo Williams and losing top wide receiver Kelvin Benjamin to a torn ACL in the preseason, the Carolina Panthers had their best regular season in franchise history, becoming the seventh team to win at least 15", DeAngelo Williams,DeAngelo Williams,0.2722,0.3899,1.0,0.7278,ragas_high_deberta_low,,,
+5422,squad:44:5422,squad,hcpc_v1,What is an example of an NP-intermediate problem not known to exist in P or NP-complete? ,"It was shown by Ladner that if P ≠ NP then there exist problems in NP that are neither in P nor NP-complete. Such problems are called NP-intermediate problems. The graph isomorphism problem, the discrete logarithm problem and the integer factorization problem are examples of problems believed to be NP-intermediate. They are some of the very few NP problems not known to be in P or to be NP-complete.
+
+---
+
+. For example, the decision problem in Presburger arithmetic has been shown not to be in P, yet algorithms have been written that solve the problem in reasonable times in most cases
+
+---
+
+. The P versus NP problem is one of the Millennium Prize Problems proposed by the Clay Mathematics Institute. There is a US$1,000,000 prize for resolving the problem."," The graph isomorphism problem, the discrete logarithm problem, and the integer factorization problem are examples of problems believed to be NP-intermediate, not known to exist in P or NP-complete.",graph isomorphism problem,0.2794,0.3883,1.0,0.7206,ragas_high_deberta_low,,,
+2995,squad:42:2995,squad,hcpc_v1,What is an example of an NP-intermediate problem not known to exist in P or NP-complete? ,"It was shown by Ladner that if P ≠ NP then there exist problems in NP that are neither in P nor NP-complete. Such problems are called NP-intermediate problems. The graph isomorphism problem, the discrete logarithm problem and the integer factorization problem are examples of problems believed to be NP-intermediate. They are some of the very few NP problems not known to be in P or to be NP-complete.
+
+---
+
+. For example, the decision problem in Presburger arithmetic has been shown not to be in P, yet algorithms have been written that solve the problem in reasonable times in most cases
+
+---
+
+. The P versus NP problem is one of the Millennium Prize Problems proposed by the Clay Mathematics Institute. There is a US$1,000,000 prize for resolving the problem."," The graph isomorphism problem, the discrete logarithm problem, and the integer factorization problem are examples of problems believed to be NP-intermediate, not known to exist in P or NP-complete.",graph isomorphism problem,0.2794,0.3883,1.0,0.7206,ragas_high_deberta_low,,,
+1051,squad:41:1051,squad,hcpc_v1,What did Martin's father view his entering the cloister as a waste of?,". Martin of Tours. His family moved to Mansfeld in 1484, where his father was a leaseholder of copper mines and smelters and served as one of four citizen representatives on the local council
+
+---
+
+. Those who attended a farewell supper walked him to the door of the Black Cloister. ""This day you see me, and then, not ever again,"" he said. His father was furious over what he saw as a waste of Luther's education.
+
+---
+
+. In the view of Luther's biographer Martin Brecht, ""giving confessional advice for Philip of Hesse was one of the worst mistakes Luther made, and, next to the landgrave himself, who was directly responsible for it, history chiefly holds Luther", Martin's father viewed Martin entering the Black Cloister (a monastery) as a waste of Luther's education.,Luther's education,0.2876,0.21,1.0,0.7124,ragas_high_deberta_low,,,
+916,squad:41:916,squad,hcpc_v1,When did Lev's Stadium open?,"On May 21, 2013, NFL owners at their spring meetings in Boston voted and awarded the game to Levi's Stadium. The $1.2 billion stadium opened in 2014
+
+---
+
+The game's media day, which was typically held on the Tuesday afternoon prior to the game, was moved to the Monday evening and re-branded as Super Bowl Opening Night. The event was held on February 1, 2016 at SAP Center in San Jose
+
+---
+
+The league eventually narrowed the bids to three sites: New Orleans' Mercedes-Benz Superdome, Miami's Sun Life Stadium, and the San Francisco Bay Area's Levi's Stadium."," The context does not provide a specific year for when Levi's Stadium opened, but we know it was opened in 2014 as the game awarded to it took place in May 21, 2013 and the stadium opened before the Super Bowl held there on February 1, 2016.",2014,0.2599,0.2875,0.8,0.5401,ragas_high_deberta_low,,,
+6040,squad:45:6040,squad,hcpc_v1,When did Lev's Stadium open?,"On May 21, 2013, NFL owners at their spring meetings in Boston voted and awarded the game to Levi's Stadium. The $1.2 billion stadium opened in 2014
+
+---
+
+The game's media day, which was typically held on the Tuesday afternoon prior to the game, was moved to the Monday evening and re-branded as Super Bowl Opening Night. The event was held on February 1, 2016 at SAP Center in San Jose
+
+---
+
+The league eventually narrowed the bids to three sites: New Orleans' Mercedes-Benz Superdome, Miami's Sun Life Stadium, and the San Francisco Bay Area's Levi's Stadium."," The context does not provide a specific year for when Levi's Stadium opened, but we know it was opened in 2014 as the game awarded to it took place in May 21, 2013 and the stadium opened before the Super Bowl held there on February 1, 2016.",2014,0.2599,0.2875,0.8,0.5401,ragas_high_deberta_low,,,
+2404,squad:42:2404,squad,hcpc_v1,What war in Ireland featured Huguenot regiments?,". Huguenot regiments fought for William of Orange in the Williamite war in Ireland, for which they were rewarded with land grants and titles, many settling in Dublin
+
+---
+
+A number of Huguenots served as mayors in Dublin, Cork, Youghal and Waterford in the 17th and 18th centuries
+
+---
+
+. The wars finally ended with the granting of the Edict of Nantes, which granted the Huguenots substantial religious, political and military autonomy.", The Williamite War in Ireland,Williamite war,0.5007,0.4119,1.0,0.4993,ragas_high_deberta_low,,,
+6223,squad:45:6223,squad,hcpc_v1,"In 1962, who was responsible for the authorship of a paper published on real time-computations?","well as Hisao Yamada's paper on real-time computations (1962)
+
+---
+
+As Fortnow & Homer (2003) point out, the beginning of systematic studies in computational complexity is attributed to the seminal paper ""On the Computational Complexity of Algorithms"" by Juris Hartmanis and Richard Stearns (1965), which laid out the
+
+---
+
+. In 1972, Richard Karp took this idea a leap forward with his landmark paper, ""Reducibility Among Combinatorial Problems"", in which he showed that 21 diverse combinatorial and graph theoretical problems, each infamous for its computational intractability,"," Hisao Yamada, according to the provided context.",Hisao Yamada,0.5024,0.495,1.0,0.4976,ragas_high_deberta_low,,,
+286,squad:41:286,squad,hcpc_v1,"In 1962, who was responsible for the authorship of a paper published on real time-computations?","well as Hisao Yamada's paper on real-time computations (1962)
+
+---
+
+As Fortnow & Homer (2003) point out, the beginning of systematic studies in computational complexity is attributed to the seminal paper ""On the Computational Complexity of Algorithms"" by Juris Hartmanis and Richard Stearns (1965), which laid out the
+
+---
+
+. In 1972, Richard Karp took this idea a leap forward with his landmark paper, ""Reducibility Among Combinatorial Problems"", in which he showed that 21 diverse combinatorial and graph theoretical problems, each infamous for its computational intractability,"," Hisao Yamada, according to the provided context.",Hisao Yamada,0.5024,0.495,1.0,0.4976,ragas_high_deberta_low,,,
+3007,squad:43:3007,squad,hcpc_v1,"What individuals were responsible for authoring ""On the Computational Complexity of Algorithms""?","As Fortnow & Homer (2003) point out, the beginning of systematic studies in computational complexity is attributed to the seminal paper ""On the Computational Complexity of Algorithms"" by Juris Hartmanis and Richard Stearns (1965), which laid out the
+
+---
+
+Before the actual research explicitly devoted to the complexity of algorithmic problems started off, numerous foundations were laid out by various researchers
+
+---
+
+Computational complexity theory is a branch of the theory of computation in theoretical computer science that focuses on classifying computational problems according to their inherent difficulty, and relating those classes to each other", Juris Hartmanis and Richard Stearns,Juris Hartmanis and Richard Stearns,0.5025,0.2721,1.0,0.4975,ragas_high_deberta_low,,,
+6314,squad:45:6314,squad,hcpc_v2,What is the name of the quarterback who was 38 in Super Bowl XXXIII?,"Peyton Manning became the first quarterback ever to lead two different teams to multiple Super Bowls. He is also the oldest quarterback ever to play in a Super Bowl at age 39. The past record was held by John Elway, who led the Broncos to victory in Super Bowl XXXIII at age 38 and is currently Denver's Executive Vice President of Football Operations and General Manager.
+
+---
+
+In honor of the 50th Super Bowl, the pregame ceremony featured the on-field introduction of 39 of the 43 previous Super Bowl Most Valuable Players. Bart Starr (MVP of Super Bowls I and II) and Chuck Howley (MVP of Super Bowl V) appeared via video, while Peyton Manning (MVP of Super Bowl XLI and current Broncos quarterback) was shown in the locker room preparing for the game. No plans were announced regarding the recognition of Harvey Martin, co-MVP of Super Bowl XII, who died in 2001.
+
+---
+
+This was the first Super Bowl to feature a quarterback on both teams who was the #1 pick in their draft classes. Manning was the #1 selection of the 1998 NFL draft, while Newton was picked first in 2011 . The matchup also pits the top two picks of the 2011 draft against each other: Newton for Carolina and Von Miller for Denver . Manning and Newton also set the record for the largest age difference between opposing Super Bowl quarterbacks at 13 years and 48 days (Manning was 39, Newton was 26).", John Elway,John Elway,1.0,0.3486,0.0,1.0,deberta_high_ragas_low,,,
+5690,squad:44:5690,squad,hcpc_v2,In what year did Nikola Tesla emigrate to the United States?,"On 30 July 1891, at the age of 35, Tesla became a naturalized citizen of the United States, and established his South Fifth Avenue laboratory, and later another at 46 E. Houston Street, in New York. He lit electric lamps wirelessly at both locations, demonstrating the potential of wireless power transmission. In the same year, he patented the Tesla coil.
+
+---
+
+In 1882, Tesla began working for the Continental Edison Company in France, designing and making improvements to electrical equipment. In June 1884, he relocated to New York City:57–60 where he was hired by Thomas Edison to work at his Edison Machine Works on Manhattan's lower east side. Tesla's work for Edison began with simple electrical engineering and quickly progressed to solving more difficult problems.
+
+---
+
+Nikola Tesla (Serbian Cyrillic: Никола Тесла; 10 July 1856 – 7 January 1943) was a Serbian American inventor, electrical engineer, mechanical engineer, physicist, and futurist best known for his contributions to the design of the modern alternating current (AC) electricity supply system.", June 1884,1884,1.0,0.4112,0.0,1.0,deberta_high_ragas_low,,,
+809,squad:41:809,squad,hcpc_v2,What CBS website provided a stream?,"CBS provided digital streams of the game via CBSSports.com, and the CBS Sports apps on tablets, Windows 10, Xbox One and other digital media players (such as Chromecast and Roku). Due to Verizon Communications exclusivity, streaming on smartphones was only provided to Verizon Wireless customers via the NFL Mobile service. The ESPN Deportes Spanish broadcast was made available through WatchESPN.
+
+---
+
+As opposed to broadcasts of primetime series, CBS broadcast special episodes of its late night talk shows as its lead-out programs for Super Bowl 50, beginning with a special episode of The Late Show with Stephen Colbert following the game. Following a break for late local programming, CBS also aired a special episode of The Late Late Show with James Corden.
+
+---
+
+In the United States, the game was televised by CBS, as part of a cycle between the three main broadcast television partners of the NFL . The network's lead broadcast team of Jim Nantz and Phil Simms called the contest, with Tracy Wolfson and Evan Washburn on the sidelines . CBS introduced new features during the telecast, including pylon cameras and microphones along with EyeVision 360—an array of 36 cameras along the upper deck that can be used to provide a 360-degree view of plays and ""bullet time"" effects . (An earlier version of EyeVision was last used in Super Bowl XXXV; for Super Bowl 50, the cameras were upgraded to 5K resolution.)", CBSSports.com,CBSSports.com,1.0,0.356,0.0,1.0,deberta_high_ragas_low,,,
+986,squad:41:986,squad,hcpc_v2,William would eventually gain what throne?,"In 1066, Duke William II of Normandy conquered England killing King Harold II at the Battle of Hastings. The invading Normans and their descendants replaced the Anglo-Saxons as the ruling class of England. The nobility of England were part of a single Normans culture and many had lands on both sides of the channel. Early Norman kings of England, as Dukes of Normandy, owed homage to the King of France for their land on the continent. They considered England to be their most important holding (it brought with it the title of King—an important status symbol).
+
+---
+
+One of the claimants of the English throne opposing William the Conqueror, Edgar Atheling, eventually fled to Scotland. King Malcolm III of Scotland married Edgar's sister Margaret, and came into opposition to William who had already disputed Scotland's southern borders. William invaded Scotland in 1072, riding as far as Abernethy where he met up with his fleet of ships. Malcolm submitted, paid homage to William and surrendered his son Duncan as a hostage, beginning a series of arguments as to whether the Scottish Crown owed allegiance to the King of England.
+
+---
+
+Various princes of the Holy Land arrived in Limassol at the same time, in particular Guy de Lusignan. All declared their support for Richard provided that he support Guy against his rival Conrad of Montferrat . The local barons abandoned Isaac, who considered making peace with Richard, joining him on the crusade, and offering his daughter in marriage to the person named by Richard. But Isaac changed his mind and tried to escape . Richard then proceeded to conquer the whole island, his troops being led by Guy de Lusignan. Isaac surrendered and was confined with silver chains, because Richard had promised that he would not place him in irons . By 1 June, Richard had conquered the whole island. His exploit was well publicized and contributed to his reputation; he also derived significant financial gains from the conquest of the island. Richard left for Acre on 5 June, with his allies . Before his departure, he named two of his Norman generals, Richard de Camville and Robert de Thornham, as governors of Cyprus.", England,King of England,1.0,0.3504,0.0,1.0,deberta_high_ragas_low,,,
+2336,squad:42:2336,squad,hcpc_v2,What CBS website provided a stream?,"CBS provided digital streams of the game via CBSSports.com, and the CBS Sports apps on tablets, Windows 10, Xbox One and other digital media players (such as Chromecast and Roku). Due to Verizon Communications exclusivity, streaming on smartphones was only provided to Verizon Wireless customers via the NFL Mobile service. The ESPN Deportes Spanish broadcast was made available through WatchESPN.
+
+---
+
+As opposed to broadcasts of primetime series, CBS broadcast special episodes of its late night talk shows as its lead-out programs for Super Bowl 50, beginning with a special episode of The Late Show with Stephen Colbert following the game. Following a break for late local programming, CBS also aired a special episode of The Late Late Show with James Corden.
+
+---
+
+In the United States, the game was televised by CBS, as part of a cycle between the three main broadcast television partners of the NFL . The network's lead broadcast team of Jim Nantz and Phil Simms called the contest, with Tracy Wolfson and Evan Washburn on the sidelines . CBS introduced new features during the telecast, including pylon cameras and microphones along with EyeVision 360—an array of 36 cameras along the upper deck that can be used to provide a 360-degree view of plays and ""bullet time"" effects . (An earlier version of EyeVision was last used in Super Bowl XXXV; for Super Bowl 50, the cameras were upgraded to 5K resolution.)", CBSSports.com,CBSSports.com,1.0,0.356,0.0,1.0,deberta_high_ragas_low,,,
+6773,squad:45:6773,squad,hcpc_v2,Who did the sign language of the National Anthem at Super Bowl 50?,"Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the ""golden anniversary"" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as ""Super Bowl L""), so that the logo could prominently feature the Arabic numerals 50.
+
+---
+
+On June 4, 2014, the NFL announced that the practice of branding Super Bowl games with Roman numerals, a practice established at Super Bowl V, would be temporarily suspended, and that the game would be named using Arabic numerals as Super Bowl 50 as opposed to Super Bowl L. The use of Roman numerals will be reinstated for Super Bowl LI. Jaime Weston, the league's vice president of brand and creative, explained that a primary reason for the change was the difficulty of designing an aesthetically pleasing logo with the letter ""L"" using the standardized logo template introduced at Super Bowl XLV. The logo also deviates from the template by featuring large numerals, colored in gold, behind the Vince Lombardi Trophy, instead of underneath and in silver as in the standard logo.
+
+---
+
+In honor of the 50th Super Bowl, the pregame ceremony featured the on-field introduction of 39 of the 43 previous Super Bowl Most Valuable Players . Bart Starr (MVP of Super Bowls I and II) and Chuck Howley (MVP of Super Bowl V) appeared via video, while Peyton Manning (MVP of Super Bowl XLI and current Broncos quarterback) was shown in the locker room preparing for the game . No plans were announced regarding the recognition of Harvey Martin, co-MVP of Super Bowl XII, who died in 2001.", The context does not provide information about who performed the sign language for the National Anthem at Super Bowl 50.,Marlee Matlin,0.9498,0.2563,0.0,0.9498,deberta_high_ragas_low,,,
+1289,squad:41:1289,squad,hcpc_v2,How did Luther's writings sound as he became less healthy?,"Luther had been suffering from ill health for years, including Ménière's disease, vertigo, fainting, tinnitus, and a cataract in one eye. From 1531 to 1546, his health deteriorated further. The years of struggle with Rome, the antagonisms with and among his fellow reformers, and the scandal which ensued from the bigamy of the Philip of Hesse incident, in which Luther had played a leading role, all may have contributed. In 1536, he began to suffer from kidney and bladder stones, and arthritis, and an ear infection ruptured an ear drum. In December 1544, he began to feel the effects of angina.
+
+---
+
+. When his efforts at conversion failed, he grew increasingly bitter toward them. In his 2010 book Bonhoeffer: Pastor, Martyr, Prophet, Spy, Christian author Eric Metaxas claimed that Luther's attitude towards Jews ""unraveled along with his health.""
+
+---
+
+Luther dedicated himself to the Augustinian order, devoting himself to fasting, long hours in prayer, pilgrimage, and frequent confession. Luther described this period of his life as one of deep spiritual despair . He said, ""I lost touch with Christ the Savior and Comforter, and made of him the jailer and hangman of my poor soul."" Johann von Staupitz, his superior, pointed Luther's mind away from continual reflection upon his sins toward the merits of Christ . He taught that true repentance does not involve self-inflicted penances and punishments but rather a change of heart.", The context provided does not include information about how Luther's writings sounded as he became less healthy.,harsher,0.9466,0.3314,0.0,0.9466,deberta_high_ragas_low,,,
+2747,squad:42:2747,squad,hcpc_v2,How did Luther's writings sound as he became less healthy?,"Luther had been suffering from ill health for years, including Ménière's disease, vertigo, fainting, tinnitus, and a cataract in one eye. From 1531 to 1546, his health deteriorated further. The years of struggle with Rome, the antagonisms with and among his fellow reformers, and the scandal which ensued from the bigamy of the Philip of Hesse incident, in which Luther had played a leading role, all may have contributed. In 1536, he began to suffer from kidney and bladder stones, and arthritis, and an ear infection ruptured an ear drum. In December 1544, he began to feel the effects of angina.
+
+---
+
+. When his efforts at conversion failed, he grew increasingly bitter toward them. In his 2010 book Bonhoeffer: Pastor, Martyr, Prophet, Spy, Christian author Eric Metaxas claimed that Luther's attitude towards Jews ""unraveled along with his health.""
+
+---
+
+Luther dedicated himself to the Augustinian order, devoting himself to fasting, long hours in prayer, pilgrimage, and frequent confession. Luther described this period of his life as one of deep spiritual despair . He said, ""I lost touch with Christ the Savior and Comforter, and made of him the jailer and hangman of my poor soul."" Johann von Staupitz, his superior, pointed Luther's mind away from continual reflection upon his sins toward the merits of Christ . He taught that true repentance does not involve self-inflicted penances and punishments but rather a change of heart.", The context provided does not include information about how Luther's writings sounded as he became less healthy.,harsher,0.9466,0.3314,0.0,0.9466,deberta_high_ragas_low,,,
+4139,squad:43:4139,squad,hcpc_v2,How did Luther's writings sound as he became less healthy?,"Luther had been suffering from ill health for years, including Ménière's disease, vertigo, fainting, tinnitus, and a cataract in one eye. From 1531 to 1546, his health deteriorated further. The years of struggle with Rome, the antagonisms with and among his fellow reformers, and the scandal which ensued from the bigamy of the Philip of Hesse incident, in which Luther had played a leading role, all may have contributed. In 1536, he began to suffer from kidney and bladder stones, and arthritis, and an ear infection ruptured an ear drum. In December 1544, he began to feel the effects of angina.
+
+---
+
+. When his efforts at conversion failed, he grew increasingly bitter toward them. In his 2010 book Bonhoeffer: Pastor, Martyr, Prophet, Spy, Christian author Eric Metaxas claimed that Luther's attitude towards Jews ""unraveled along with his health.""
+
+---
+
+Luther dedicated himself to the Augustinian order, devoting himself to fasting, long hours in prayer, pilgrimage, and frequent confession. Luther described this period of his life as one of deep spiritual despair . He said, ""I lost touch with Christ the Savior and Comforter, and made of him the jailer and hangman of my poor soul."" Johann von Staupitz, his superior, pointed Luther's mind away from continual reflection upon his sins toward the merits of Christ . He taught that true repentance does not involve self-inflicted penances and punishments but rather a change of heart.", The context provided does not include information about how Luther's writings sounded as he became less healthy.,harsher,0.9466,0.3314,0.0,0.9466,deberta_high_ragas_low,,,
+1538,squad:42:1538,squad,hcpc_v2,What yard marker on the field was painted gold?,"Various gold-themed promotions and initiatives were held throughout the 2015 NFL season to tie into the ""Golden Super Bowl""; gold-tinted logos were implemented across the NFL's properties and painted on fields, the numbering of the 50-yard line on fields was colored gold, and beginning on week 7, all sideline jackets and hats featured gold-trimmed logos. Gold footballs were given to each high school that has had a player or coach appear in the Super Bowl, and ""homecoming"" events were also held by Super Bowl-winning teams at games.
+
+---
+
+On 1 July 1851, writs were issued for the election of the first Victorian Legislative Council, and the absolute independence of Victoria from New South Wales was established proclaiming a new Colony of Victoria. Days later, still in 1851 gold was discovered near Ballarat, and subsequently at Bendigo. Later discoveries occurred at many sites across Victoria. This triggered one of the largest gold rushes the world has ever seen. The colony grew rapidly in both population and economic power. In ten years the population of Victoria increased sevenfold from 76,000 to 540,000. All sorts of gold records were produced including the ""richest shallow alluvial goldfield in the world"" and the largest gold nugget. Victoria produced in the decade 1851–1860 20 million ounces of gold, one third of the world's output[citation needed].
+
+---
+
+Immigrants arrived from all over the world to search for gold, especially from Ireland and China. Many Chinese miners worked in Victoria, and their legacy is particularly strong in Bendigo and its environs . Although there was some racism directed at them, there was not the level of anti-Chinese violence that was seen at the Lambing Flat riots in New South Wales. However, there was a riot at Buckland Valley near Bright in 1857 . Conditions on the gold fields were cramped and unsanitary; an outbreak of typhoid at Buckland Valley in 1854 killed over 1,000 miners.", The provided context does not mention any information about a yard marker on a football field being painted gold.,50,0.946,0.3093,0.0,0.946,deberta_high_ragas_low,,,
+7067,squad:45:7067,squad,hcpc_v2,What service did Verizon customers need to use to stream the game on their smartphones?,"CBS provided digital streams of the game via CBSSports.com, and the CBS Sports apps on tablets, Windows 10, Xbox One and other digital media players (such as Chromecast and Roku). Due to Verizon Communications exclusivity, streaming on smartphones was only provided to Verizon Wireless customers via the NFL Mobile service. The ESPN Deportes Spanish broadcast was made available through WatchESPN.
+
+---
+
+Virgin Media (re-branded in 2007 from NTL:Telewest) started to offer a high-definition television (HDTV) capable set top box, although from 30 November 2006 until 30 July 2009 it only carried one linear HD channel, BBC HD, after the conclusion of the ITV HD trial. Virgin Media has claimed that other HD channels were ""locked up"" or otherwise withheld from their platform, although Virgin Media did in fact have an option to carry Channel 4 HD in the future. Nonetheless, the linear channels were not offered, Virgin Media instead concentrating on its Video On Demand service to carry a modest selection of HD content. Virgin Media has nevertheless made a number of statements over the years, suggesting that more linear HD channels are on the way.
+
+---
+
+Provided is a universal Ku band LNB (9.75/10.600 GHz) which is fitted at the end of the dish and pointed at the correct satellite constellation; most digital receivers will receive the free to air channels . Some broadcasts are free-to-air and unencrypted, some are encrypted but do not require a monthly subscription (known as free-to-view), some are encrypted and require a monthly subscription, and some are pay-per-view services . To view the encrypted content a VideoGuard UK equipped receiver (all of which are dedicated to the Sky service, and cannot be used to decrypt other services) needs to be used . Unofficial CAMs are now available to view the service, although use of them breaks the user's contract with Sky and invalidates the user's rights to use the card."," The context does not provide information about the specific service that Virgin Media customers needed to use, but for Verizon customers, they needed to use the NFL Mobile service to stream the game on their smartphones.",NFL Mobile,0.9459,0.3362,0.0,0.9459,deberta_high_ragas_low,,,
+3362,squad:43:3362,squad,hcpc_v2,Who recovered Tolbert's fumble?,"On Carolina's next possession fullback Mike Tolbert lost a fumble while being tackled by safety Darian Stewart, which linebacker Danny Trevathan recovered on the Broncos 40-yard line. However, the Panthers soon took the ball back when defensive end Kony Ealy tipped a Manning pass to himself and then intercepted it, returning the ball 19 yards to the Panthers 39-yard line with 1:55 left on the clock. The Panthers could not gain any yards with their possession and had to punt. After a Denver punt, Carolina drove to the Broncos 45-yard line. But with 11 seconds left, Newton was sacked by DeMarcus Ware as time expired in the half.
+
+---
+
+After each team punted, Panthers quarterback Cam Newton appeared to complete a 24-yard pass Jerricho Cotchery, but the call was ruled an incompletion and upheld after a replay challenge. CBS analyst and retired referee Mike Carey stated he disagreed with the call and felt the review clearly showed the pass was complete. A few plays later, on 3rd-and-10 from the 15-yard line, linebacker Von Miller knocked the ball out of Newton's hands while sacking him, and Malik Jackson recovered it in the end zone for a Broncos touchdown, giving the team a 10–0 lead. This was the first fumble return touchdown in a Super Bowl since Super Bowl XXVIII at the end of the 1993 season.
+
+---
+
+With 4:51 left in regulation, Carolina got the ball on their own 24-yard line with a chance to mount a game-winning drive, and soon faced 3rd-and-9 . On the next play, Miller stripped the ball away from Newton, and after several players dove for it, it took a long bounce backwards and was recovered by Ward, who returned it five yards to the Panthers 4-yard line . Although several players dove into the pile to attempt to recover it, Newton did not and his lack of aggression later earned him heavy criticism . Meanwhile, Denver's offense was kept out of the end zone for three plays, but a holding penalty on cornerback Josh Norman gave the Broncos a new set of downs . Then Anderson scored on a 2-yard touchdown run and Manning completed a pass to Bennie Fowler for a 2-point conversion, giving Denver a 24–10 lead with 3:08 left and essentially putting the game away . Carolina had two more drives, but failed to get a first down on each one.", Danny Trevathan,Danny Trevathan,0.3006,0.3664,1.0,0.6994,near_threshold_disagreement,,,
+5360,squad:44:5360,squad,hcpc_v2,Who recovered Tolbert's fumble?,"On Carolina's next possession fullback Mike Tolbert lost a fumble while being tackled by safety Darian Stewart, which linebacker Danny Trevathan recovered on the Broncos 40-yard line. However, the Panthers soon took the ball back when defensive end Kony Ealy tipped a Manning pass to himself and then intercepted it, returning the ball 19 yards to the Panthers 39-yard line with 1:55 left on the clock. The Panthers could not gain any yards with their possession and had to punt. After a Denver punt, Carolina drove to the Broncos 45-yard line. But with 11 seconds left, Newton was sacked by DeMarcus Ware as time expired in the half.
+
+---
+
+After each team punted, Panthers quarterback Cam Newton appeared to complete a 24-yard pass Jerricho Cotchery, but the call was ruled an incompletion and upheld after a replay challenge. CBS analyst and retired referee Mike Carey stated he disagreed with the call and felt the review clearly showed the pass was complete. A few plays later, on 3rd-and-10 from the 15-yard line, linebacker Von Miller knocked the ball out of Newton's hands while sacking him, and Malik Jackson recovered it in the end zone for a Broncos touchdown, giving the team a 10–0 lead. This was the first fumble return touchdown in a Super Bowl since Super Bowl XXVIII at the end of the 1993 season.
+
+---
+
+With 4:51 left in regulation, Carolina got the ball on their own 24-yard line with a chance to mount a game-winning drive, and soon faced 3rd-and-9 . On the next play, Miller stripped the ball away from Newton, and after several players dove for it, it took a long bounce backwards and was recovered by Ward, who returned it five yards to the Panthers 4-yard line . Although several players dove into the pile to attempt to recover it, Newton did not and his lack of aggression later earned him heavy criticism . Meanwhile, Denver's offense was kept out of the end zone for three plays, but a holding penalty on cornerback Josh Norman gave the Broncos a new set of downs . Then Anderson scored on a 2-yard touchdown run and Manning completed a pass to Bennie Fowler for a 2-point conversion, giving Denver a 24–10 lead with 3:08 left and essentially putting the game away . Carolina had two more drives, but failed to get a first down on each one.", Danny Trevathan,Danny Trevathan,0.3006,0.3664,1.0,0.6994,near_threshold_disagreement,,,
+1169,squad:41:1169,squad,hcpc_v2,What was the name of France's primary colony in the New World?,"Barred by the government from settling in New France, Huguenots led by Jessé de Forest, sailed to North America in 1624 and settled instead in the Dutch colony of New Netherland (later incorporated into New York and New Jersey); as well as Great Britain's colonies, including Nova Scotia. A number of New Amsterdam's families were of Huguenot origin, often having emigrated as refugees to the Netherlands in the previous century. In 1628 the Huguenots established a congregation as L'Église française à la Nouvelle-Amsterdam (the French church in New Amsterdam). This parish continues today as L'Eglise du Saint-Esprit, part of the Episcopal (Anglican) communion, and welcomes Francophone New Yorkers from all over the world
+
+---
+
+After the founding of the colony of New South Wales in 1788, Australia was divided into an eastern half named New South Wales and a western half named New Holland, under the administration of the colonial government in Sydney. The first European settlement in the area later known as Victoria was established in October 1803 under Lieutenant-Governor David Collins at Sullivan Bay on Port Phillip. It consisted of 402 people (5 Government officials, 9 officers of marines, 2 drummers, and 39 privates, 5 soldiers' wives, and a child, 307 convicts, 17 convicts' wives, and 7 children). They had been sent from England in HMS Calcutta under the command of Captain Daniel Woodriff, principally out of fear that the French, who had been exploring the area, might establish their own settlement and thereby challenge British rights to the continent.
+
+---
+
+The exodus of Huguenots from France created a brain drain, as many Huguenots had occupied important places in society. The kingdom did not fully recover for years . The French crown's refusal to allow non-Catholics to settle in New France may help to explain that colony's slow rate of population growth compared to that of the neighbouring British colonies, which opened settlement to religious dissenters . By the time of the French and Indian War (the North American front of the Seven Years' War), a sizeable population of Huguenot descent lived in the British colonies, and many participated in the British defeat of New France in 1759-60.", I cannot find this information in the provided context. The context does not mention the name of France's primary colony in the New World.,New France,0.6987,0.1355,0.0,0.6987,near_threshold_disagreement,,,
+1967,squad:42:1967,squad,hcpc_v2,What was the name of France's primary colony in the New World?,"Barred by the government from settling in New France, Huguenots led by Jessé de Forest, sailed to North America in 1624 and settled instead in the Dutch colony of New Netherland (later incorporated into New York and New Jersey); as well as Great Britain's colonies, including Nova Scotia. A number of New Amsterdam's families were of Huguenot origin, often having emigrated as refugees to the Netherlands in the previous century. In 1628 the Huguenots established a congregation as L'Église française à la Nouvelle-Amsterdam (the French church in New Amsterdam). This parish continues today as L'Eglise du Saint-Esprit, part of the Episcopal (Anglican) communion, and welcomes Francophone New Yorkers from all over the world
+
+---
+
+After the founding of the colony of New South Wales in 1788, Australia was divided into an eastern half named New South Wales and a western half named New Holland, under the administration of the colonial government in Sydney. The first European settlement in the area later known as Victoria was established in October 1803 under Lieutenant-Governor David Collins at Sullivan Bay on Port Phillip. It consisted of 402 people (5 Government officials, 9 officers of marines, 2 drummers, and 39 privates, 5 soldiers' wives, and a child, 307 convicts, 17 convicts' wives, and 7 children). They had been sent from England in HMS Calcutta under the command of Captain Daniel Woodriff, principally out of fear that the French, who had been exploring the area, might establish their own settlement and thereby challenge British rights to the continent.
+
+---
+
+The exodus of Huguenots from France created a brain drain, as many Huguenots had occupied important places in society. The kingdom did not fully recover for years . The French crown's refusal to allow non-Catholics to settle in New France may help to explain that colony's slow rate of population growth compared to that of the neighbouring British colonies, which opened settlement to religious dissenters . By the time of the French and Indian War (the North American front of the Seven Years' War), a sizeable population of Huguenot descent lived in the British colonies, and many participated in the British defeat of New France in 1759-60.", I cannot find this information in the provided context. The context does not mention the name of France's primary colony in the New World.,New France,0.6987,0.1355,0.0,0.6987,near_threshold_disagreement,,,
+4997,squad:44:4997,squad,hcpc_v2,What was the name of France's primary colony in the New World?,"Barred by the government from settling in New France, Huguenots led by Jessé de Forest, sailed to North America in 1624 and settled instead in the Dutch colony of New Netherland (later incorporated into New York and New Jersey); as well as Great Britain's colonies, including Nova Scotia. A number of New Amsterdam's families were of Huguenot origin, often having emigrated as refugees to the Netherlands in the previous century. In 1628 the Huguenots established a congregation as L'Église française à la Nouvelle-Amsterdam (the French church in New Amsterdam). This parish continues today as L'Eglise du Saint-Esprit, part of the Episcopal (Anglican) communion, and welcomes Francophone New Yorkers from all over the world
+
+---
+
+After the founding of the colony of New South Wales in 1788, Australia was divided into an eastern half named New South Wales and a western half named New Holland, under the administration of the colonial government in Sydney. The first European settlement in the area later known as Victoria was established in October 1803 under Lieutenant-Governor David Collins at Sullivan Bay on Port Phillip. It consisted of 402 people (5 Government officials, 9 officers of marines, 2 drummers, and 39 privates, 5 soldiers' wives, and a child, 307 convicts, 17 convicts' wives, and 7 children). They had been sent from England in HMS Calcutta under the command of Captain Daniel Woodriff, principally out of fear that the French, who had been exploring the area, might establish their own settlement and thereby challenge British rights to the continent.
+
+---
+
+The exodus of Huguenots from France created a brain drain, as many Huguenots had occupied important places in society. The kingdom did not fully recover for years . The French crown's refusal to allow non-Catholics to settle in New France may help to explain that colony's slow rate of population growth compared to that of the neighbouring British colonies, which opened settlement to religious dissenters . By the time of the French and Indian War (the North American front of the Seven Years' War), a sizeable population of Huguenot descent lived in the British colonies, and many participated in the British defeat of New France in 1759-60.", I cannot find this information in the provided context. The context does not mention the name of France's primary colony in the New World.,New France,0.6987,0.1355,0.0,0.6987,near_threshold_disagreement,,,
+4859,squad:44:4859,squad,hcpc_v2,What sort of waves did he claim to observe?,"Tesla investigated atmospheric electricity, observing lightning signals via his receivers. He stated that he observed stationary waves during this time. The great distances and the nature of what Tesla was detecting from lightning storms confirmed his belief that the earth had a resonant frequency.
+
+---
+
+In the August 1917 edition of the magazine Electrical Experimenter Tesla postulated that electricity could be used to locate submarines via using the reflection of an ""electric ray"" of ""tremendous frequency,"" with the signal being viewed on a fluorescent screen (a system that has been noted to have a superficial resemblance to modern radar). Tesla was incorrect in his assumption that high frequency radio waves would penetrate water but Émile Girardeau, who helped develop France's first radar system in the 1930s, noted in 1953 that Tesla's general speculation that a very strong high frequency signal would be needed was correct stating ""(Tesla) was prophesying or dreaming, since he had at his disposal no means of carrying them out, but one must add that if he was dreaming, at least he was dreaming correctly."":266
+
+---
+
+. It has been hypothesized that he may have intercepted Marconi's European experiments in July 1899—Marconi may have transmitted the letter S (dot/dot/dot) in a naval demonstration, the same three impulses that Tesla hinted at hearing in Colorado—or at hearing in Colorado—or signals from another experimenter in wireless transmission."," The provided context states that Tesla observed stationary waves during his investigations into atmospheric electricity, specifically those related to lightning storms.",stationary,0.3016,0.7072,1.0,0.6984,near_threshold_disagreement,,,
+4466,squad:43:4466,squad,hcpc_v2,What was put on pylons for Super Bowl 50?,"Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the ""golden anniversary"" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as ""Super Bowl L""), so that the logo could prominently feature the Arabic numerals 50.
+
+---
+
+Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the ""golden anniversary"" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as ""Super Bowl L""), so that the logo could prominently feature the Arabic numerals 50.
+
+---
+
+Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the ""golden anniversary"" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as ""Super Bowl L""), so that the logo could prominently feature the Arabic numerals 50.", The context does not provide information about what was put on pylons for Super Bowl 50.,cameras,0.6981,0.1723,0.0,0.6981,near_threshold_disagreement,,,
+4055,squad:43:4055,squad,hcpc_v2,Who was the Denver head coach for Super Bowl 50?,"With Rivera having been a linebacker with the Chicago Bears in Super Bowl XX, and Kubiak replacing Elway at the end of the Broncos' defeats in Super Bowls XXI and XXIV, this will be the first Super Bowl in which both head coaches played in the game themselves.
+
+---
+
+The Broncos took an early lead in Super Bowl 50 and never trailed. Newton was limited by Denver's defense, which sacked him seven times and forced him into three turnovers, including a fumble which they recovered for a touchdown. Denver linebacker Von Miller was named Super Bowl MVP, recording five solo tackles, 2½ sacks, and two forced fumbles.
+
+---
+
+Peyton Manning became the first quarterback ever to lead two different teams to multiple Super Bowls. He is also the oldest quarterback ever to play in a Super Bowl at age 39. The past record was held by John Elway, who led the Broncos to victory in Super Bowl XXXIII at age 38 and is currently Denver's Executive Vice President of Football Operations and General Manager.", I cannot find this information in the provided context. The context does not mention who the Denver head coach for Super Bowl 50 was.,Gary Kubiak,0.6973,0.1364,0.0,0.6973,near_threshold_disagreement,,,
+1418,squad:41:1418,squad,hcpc_v2,"What was it called when Tesla lit a wireless gas-discharge lamp using a high-frequency, high-voltage alternating current?","Tesla went on to pursue his ideas of wireless lighting and electricity distribution in his high-voltage, high-frequency power experiments in New York and Colorado Springs, and made early (1893) pronouncements on the possibility of wireless communication with his devices. He tried to put these ideas to practical use in an ill-fated attempt at intercontinental wireless transmission, his unfinished Wardenclyffe Tower project. In his lab he also conducted a range of experiments with mechanical oscillators/generators, electrical discharge tubes, and early X-ray imaging. He also built a wireless controlled boat, one of the first ever exhibited.
+
+---
+
+In 1937, at a luncheon in his honor concerning the death ray, Tesla stated, ""But it is not an experiment ... I have built, demonstrated and used it. Only a little time will pass before I can give it to the world."" His records indicate that the device is based on a narrow stream of small tungsten pellets that are accelerated via high voltage (by means akin to his magnifying transformer).
+
+---
+
+On 17 May 1899, Tesla moved to Colorado Springs, where he would have room for his high-voltage, high-frequency experiments; his lab was located near Foote Ave. and Kiowa St. He chose this location because the polyphase alternating current power distribution system had been introduced there and he had associates who were willing to give him all the power he needed without charging for it. Upon his arrival, he told reporters that he was conducting wireless telegraphy experiments, transmitting signals from Pikes Peak to Paris.[citation needed] The 1978 book Colorado Springs Notes, 1899–1900 contains descriptions of Tesla's experiments. On 15 June 1899, Tesla performed his first experiments at his Colorado Springs lab; he recorded his initial spark length at five inches long, but very thick and noisy."," I cannot find this information in the provided context about what was called when Tesla lit a wireless gas-discharge lamp using a high-frequency, high-voltage alternating current. The context only mentions Tesla's experiments with wireless lighting and electricity distribution, but it does not specify a name for the particular experiment you described.",Tesla Polyphase System,0.6967,0.2336,0.0,0.6967,near_threshold_disagreement,,,
+1646,squad:42:1646,squad,hcpc_v2,What were high court proceedings being held about?,". It was publicly exhibited in a glass case at the Nuremberg rallies and quoted in a 54-page explanation of the Aryan Law by Dr. E.H. Schulz and Dr. R. Frercks.
+
+---
+
+In the United States especially, several high-profile cases such as Debra LaFave, Pamela Rogers, and Mary Kay Letourneau have caused increased scrutiny on teacher misconduct.
+
+---
+
+The enforcement of the ban on the 95 Theses fell to the secular authorities. On 18 April 1521, Luther appeared as ordered before the Diet of Worms . This was a general assembly of the estates of the Holy Roman Empire that took place in Worms, a town on the Rhine. It was conducted from 28 January to 25 May 1521, with Emperor Charles V presiding . Prince Frederick III, Elector of Saxony, obtained a safe conduct for Luther to and from the meeting."," I cannot find information in the provided context about any high court proceedings. The context discusses the public exhibition of the Nuremberg rallies, the Aryan Law, the 95 Theses, and a general assembly of the estates of the Holy Roman Empire, but no high court proceedings are mentioned.",basic channels,0.6963,0.2226,0.0,0.6963,near_threshold_disagreement,,,
+2957,squad:42:2957,squad,hcpc_v2,Where is the Asian influence strongest in Victoria?,"Victoria (abbreviated as Vic) is a state in the south-east of Australia. Victoria is Australia's most densely populated state and its second-most populous state overall. Most of its population is concentrated in the area surrounding Port Phillip Bay, which includes the metropolitan area of its capital and largest city, Melbourne, which is Australia's second-largest city. Geographically the smallest state on the Australian mainland, Victoria is bordered by Bass Strait and Tasmania to the south,[note 1] New South Wales to the north, the Tasman Sea to the east, and South Australia to the west.
+
+---
+
+The centre-left Australian Labor Party (ALP), the centre-right Liberal Party of Australia, the rural-based National Party of Australia, and the environmentalist Australian Greens are Victoria's main political parties. Traditionally, Labor is strongest in Melbourne's working class western and northern suburbs, and the regional cities of Ballarat, Bendigo and Geelong. The Liberals' main support lies in Melbourne's more affluent eastern and outer suburbs, and some rural and regional centres. The Nationals are strongest in Victoria's North Western and Eastern rural regional areas. The Greens, who won their first lower house seats in 2014, are strongest in inner Melbourne.
+
+---
+
+The Mallee and upper Wimmera are Victoria's warmest regions with hot winds blowing from nearby semi-deserts. Average temperatures exceed 32 °C (90 °F) during summer and 15 °C (59 °F) in winter . Except at cool mountain elevations, the inland monthly temperatures are 2–7 °C (4–13 °F) warmer than around Melbourne (see chart) . Victoria's highest maximum temperature since World War II, of 48.8 °C (119.8 °F) was recorded in Hopetoun on 7 February 2009, during the 2009 southeastern Australia heat wave.", I cannot find this information in the provided context. The context does not mention any Asian influence in Victoria.,Bendigo,0.6943,0.1387,0.0,0.6943,near_threshold_disagreement,,,
+113,squad:41:113,squad,hcpc_v2,What was faith's greatest enemy according to Luther?,". ""That is why faith alone makes someone just and fulfills the law,"" he wrote. ""Faith is that which brings the Holy Spirit through the merits of Christ."" Faith, for Luther, was a gift from God; the experience of being justified by faith was ""as though I had been born again."" His entry into Paradise, no less, was a discovery about ""the righteousness of God"" – a discovery that ""the just person"" of whom the Bible speaks (as in Romans 1:17) lives by faith. He explained his concept of ""justification"" in the Smalcald Articles:
+
+---
+
+Some scholars have asserted that Luther taught that faith and reason were antithetical in the sense that questions of faith could not be illuminated by reason. He wrote, ""All the articles of our Christian faith, which God has revealed to us in His Word, are in presence of reason sheerly impossible, absurd, and false."" and ""[That] Reason in no way contributes to faith. [...] For reason is the greatest enemy that faith has; it never comes to the aid of spiritual things."" However, though seemingly contradictorily, he also wrote in the latter work that human reason ""strives not against faith, when enlightened, but rather furthers and advances it"", bringing claims he was a fideist into dispute. Contemporary Lutheran scholarship, however, has found a different reality in Luther. Luther rather seeks to separate faith and reason in order to honor the separate spheres of knowledge that each applies to
+
+---
+
+. He made clear, however, that the spiritual war against an alien faith was separate, to be waged through prayer and repentance. Around the time of the Siege of Vienna, Luther wrote a prayer for national deliverance from the Turks, asking God to ""give to our emperor perpetual victory over our enemies""."," According to the context provided, Luther considered reason as the greatest enemy that faith has.",reason,0.1727,0.2948,1.0,0.8273,ragas_high_deberta_low,,,
+5147,squad:44:5147,squad,hcpc_v2,How did the drive end for the Panthers?,"The Panthers seemed primed to score on their opening drive of the second half when Newton completed a 45-yard pass to Ted Ginn Jr. on the Denver 35-yard line on their second offensive play. But the Broncos defense halted the drive on the 26-yard line, and it ended with no points when Graham Gano hit the uprights on a 44-yard field goal attempt. After the miss, Manning completed a pair of passes to Emmanuel Sanders for gains of 25 and 22 yards, setting up McManus' 33-yard field goal that gave the Broncos a 16–7 lead. Carolina got off to another strong start after the kickoff, with Newton completing a 42-yard pass to Corey Brown. But once again they came up empty, this time as a result of a Newton pass that bounced off the hands of Ginn and was intercepted by safety T. J. Ward. Ward fumbled the ball during the return, but Trevathan recovered it to enable Denver to keep possession.
+
+---
+
+The Panthers beat the Seattle Seahawks in the divisional round, running up a 31–0 halftime lead and then holding off a furious second half comeback attempt to win 31–24, avenging their elimination from a year earlier. The Panthers then blew out the Arizona Cardinals in the NFC Championship Game, 49–15, racking up 487 yards and forcing seven turnovers.
+
+---
+
+There would be no more scoring in the third quarter, but early in the fourth, the Broncos drove to the Panthers 41-yard line. On the next play, Ealy knocked the ball out of Manning's hand as he was winding up for a pass, and then recovered it for Carolina on the 50-yard line. A 16-yard reception by Devin Funchess and a 12-yard run by Stewart then set up Gano's 39-yard field goal, cutting the Panthers deficit to one score at 16–10. The next three drives of the game would end in punts."," The drive ended for the Panthers with a field goal attempt by Graham Gano from 44 yards out, which hit the uprights and resulted in no points.",punt,0.2684,0.3628,1.0,0.7316,ragas_high_deberta_low,,,
+2684,squad:42:2684,squad,hcpc_v2,Where did Tesla work in Budapest?,"In 1881, Tesla moved to Budapest to work under Ferenc Puskás at a telegraph company, the Budapest Telephone Exchange. Upon arrival, Tesla realized that the company, then under construction, was not functional, so he worked as a draftsman in the Central Telegraph Office instead. Within a few months, the Budapest Telephone Exchange became functional and Tesla was allocated the chief electrician position. During his employment, Tesla made many improvements to the Central Station equipment and claimed to have perfected a telephone repeater or amplifier, which was never patented nor publicly described.
+
+---
+
+In 1952, following pressure from Tesla's nephew, Sava Kosanović, Tesla's entire estate was shipped to Belgrade in 80 trunks marked N.T. In 1957, Kosanović's secretary Charlotte Muzar transported Tesla's ashes from the United States to Belgrade. The ashes are displayed in a gold-plated sphere on a marble pedestal in the Nikola Tesla Museum.
+
+---
+
+In 1882, Tesla began working for the Continental Edison Company in France, designing and making improvements to electrical equipment. In June 1884, he relocated to New York City:57–60 where he was hired by Thomas Edison to work at his Edison Machine Works on Manhattan's lower east side. Tesla's work for Edison began with simple electrical engineering and quickly progressed to solving more difficult problems."," In Budapest, Tesla worked under Ferenc Puskás at the Budapest Telephone Exchange, but due to the company not being functional upon his arrival, he worked as a draftsman in the Central Telegraph Office instead.",a telegraph company,0.2715,0.1528,1.0,0.7285,ragas_high_deberta_low,,,
+6326,squad:45:6326,squad,hcpc_v2,Which running back did the Panthers waive?,". The Panthers backfield featured Pro Bowl running back Jonathan Stewart, who led the team with 989 rushing yards and six touchdowns in 13 games, along with Pro Bowl fullback Mike Tolbert, who rushed for 256 yards and caught 18 passes for another 154 yards. Carolina's offensive line also featured two Pro Bowl selections: center Ryan Kalil and guard Trai Turner.
+
+---
+
+On Carolina's next possession fullback Mike Tolbert lost a fumble while being tackled by safety Darian Stewart, which linebacker Danny Trevathan recovered on the Broncos 40-yard line. However, the Panthers soon took the ball back when defensive end Kony Ealy tipped a Manning pass to himself and then intercepted it, returning the ball 19 yards to the Panthers 39-yard line with 1:55 left on the clock. The Panthers could not gain any yards with their possession and had to punt. After a Denver punt, Carolina drove to the Broncos 45-yard line. But with 11 seconds left, Newton was sacked by DeMarcus Ware as time expired in the half.
+
+---
+
+Despite waiving longtime running back DeAngelo Williams and losing top wide receiver Kelvin Benjamin to a torn ACL in the preseason, the Carolina Panthers had their best regular season in franchise history, becoming the seventh team to win at least 15 regular season games since the league expanded to a 16-game schedule in 1978. Carolina started the season 14–0, not only setting franchise records for the best start and the longest single-season winning streak, but also posting the best start to a season by an NFC team in NFL history, breaking the 13–0 record previously shared with the 2009 New Orleans Saints and the 2011 Green Bay Packers. With their NFC-best 15–1 regular season record, the Panthers clinched home-field advantage throughout the NFC playoffs for the first time in franchise history. Ten players were selected to the Pro Bowl (the most in franchise history) along with eight All-Pro selections.", DeAngelo Williams,DeAngelo Williams,0.2722,0.3899,1.0,0.7278,ragas_high_deberta_low,,,
+761,squad:41:761,squad,hcpc_v2,What is an example of a problem to which effective algorithms have provided a solution in spite of the intractability associated with the breadth of sizes?,"What intractability means in practice is open to debate. Saying that a problem is not in P does not imply that all large cases of the problem are hard or even that most of them are. For example, the decision problem in Presburger arithmetic has been shown not to be in P, yet algorithms have been written that solve the problem in reasonable times in most cases. Similarly, algorithms can solve the NP-complete knapsack problem over a wide range of sizes in less than quadratic time and SAT solvers routinely handle large instances of the NP-complete Boolean satisfiability problem.
+
+---
+
+To further highlight the difference between a problem and an instance, consider the following instance of the decision version of the traveling salesman problem: Is there a route of at most 2000 kilometres passing through all of Germany's 15 largest cities? The quantitative answer to this particular problem instance is of little use for solving other instances of the problem, such as asking for a round trip through all sites in Milan whose total length is at most 10 km. For this reason, complexity theory addresses computational problems and not particular problem instances.
+
+---
+
+Problems that can be solved in theory (e.g., given large but finite time), but which in practice take too long for their solutions to be useful, are known as intractable problems . In complexity theory, problems that lack polynomial-time solutions are considered to be intractable for more than the smallest inputs . In fact, the Cobham–Edmonds thesis states that only those problems that can be solved in polynomial time can be feasibly computed on some computational device. Problems that are known to be intractable in this sense include those that are EXPTIME-hard . If NP is not the same as P, then the NP-complete problems are also intractable in this sense. To see why exponential-time algorithms might be unusable in practice, consider a program that makes 2n operations before halting . For small n, say 100, and assuming for the sake of example that the computer does 1012 operations each second, the program would run for about 4 × 1010 years, which is the same order of magnitude as the age of the universe"," The Presburger arithmetic decision problem is an example of a problem to which effective algorithms have provided a solution, despite its intractability being associated with the breadth of sizes.",NP-complete knapsack problem,0.292,0.3558,1.0,0.708,ragas_high_deberta_low,,,
+6893,squad:45:6893,squad,hcpc_v2,What health issue did Tesla suffer?,"In 1873, Tesla returned to his birthtown, Smiljan. Shortly after he arrived, Tesla contracted cholera; he was bedridden for nine months and was near death multiple times. Tesla's father, in a moment of despair, promised to send him to the best engineering school if he recovered from the illness (his father had originally wanted him to enter the priesthood).
+
+---
+
+In the fall of 1937, after midnight one night, Tesla left the Hotel New Yorker to make his regular commute to the cathedral and the library to feed the pigeons. While crossing a street a couple of blocks from the hotel, Tesla was unable to dodge a moving taxicab and was thrown heavily to the ground. Tesla's back was severely wrenched and three of his ribs were broken in the accident (the full extent of his injuries will never be known; Tesla refused to consult a doctor—an almost lifelong custom). Tesla didn't raise any question as to who was at fault and refused medical aid, only asking to be taken to his hotel via cab. Tesla was bedridden for some months and was unable to continue feeding pigeons from his window; soon, they failed to come. In early 1938, Tesla was able to get up. He at once resumed the pigeon-feeding walks on a much more limited scale, but frequently had a messenger act for him.
+
+---
+
+While experimenting, Tesla inadvertently faulted a power station generator, causing a power outage . In August 1917, Tesla explained what had happened in The Electrical Experimenter: ""As an example of what has been done with several hundred kilowatts of high frequency energy liberated, it was found that the dynamos in a power house six miles away were power house six miles away were repeatedly burned out, due to the powerful high frequency currents set up in them, and which caused heavy sparks to jump through the windings and destroy the insulation!""", Cholera and a severe back injury with broken ribs.,nervous breakdown,0.2983,0.2887,1.0,0.7017,ragas_high_deberta_low,,,
+7097,squad:45:7097,squad,hcpc_v2,Why was Tesla returned to Gospic?,"On 24 March 1879, Tesla was returned to Gospić under police guard for not having a residence permit. On 17 April 1879, Milutin Tesla died at the age of 60 after contracting an unspecified illness (although some sources say that he died of a stroke). During that year, Tesla taught a large class of students in his old school, Higher Real Gymnasium, in Gospić.
+
+---
+
+On 7 January 1900, Tesla left Colorado Springs.[citation needed] His lab was torn down in 1904, and its contents were sold two years later to satisfy a debt.
+
+---
+
+Tesla's legacy has endured in books, films, radio, TV, music, live theater, comics and video games. The impact of the technologies invented or envisioned by Tesla is a recurring theme in several types of science fiction.", Tesla was returned to Gospić under police guard because he did not have a residence permit.,not having a residence permit,0.5009,0.2825,1.0,0.4991,ragas_high_deberta_low,,,
+6368,squad:45:6368,squad,hcpc_v2,What other health issues did Luther have?,"Luther had been suffering from ill health for years, including Ménière's disease, vertigo, fainting, tinnitus, and a cataract in one eye. From 1531 to 1546, his health deteriorated further. The years of struggle with Rome, the antagonisms with and among his fellow reformers, and the scandal which ensued from the bigamy of the Philip of Hesse incident, in which Luther had played a leading role, all may have contributed. In 1536, he began to suffer from kidney and bladder stones, and arthritis, and an ear infection ruptured an ear drum. In December 1544, he began to feel the effects of angina.
+
+---
+
+His poor physical health made him short-tempered and even harsher in his writings and comments. His wife Katharina was overheard saying, ""Dear husband, you are too rude,"" and he responded, ""They are teaching me to be rude."" In 1545 and 1546 Luther preached three times in the Market Church in Halle, staying with his friend Justus Jonas during Christmas.
+
+---
+
+. When his efforts at conversion failed, he grew increasingly bitter toward them. In his 2010 book Bonhoeffer: Pastor, Martyr, Prophet, Spy, Christian author Eric Metaxas claimed that Luther's attitude towards Jews ""unraveled along with his health."""," Luther had Ménière's disease, vertigo, fainting, tinnitus, a cataract in one eye, kidney and bladder stones, arthritis, an ear infection that ruptured an ear drum, and angina.","arthritis, and an ear infection",0.5015,0.3195,1.0,0.4985,ragas_high_deberta_low,,,
+6398,squad:45:6398,squad,hcpc_v2,Where in South Carolina did Huguenot nobility settle?,"In the early years, many Huguenots also settled in the area of present-day Charleston, South Carolina. In 1685, Rev. Elie Prioleau from the town of Pons in France, was among the first to settle there. He became pastor of the first Huguenot church in North America in that city. After the Revocation of the Edict of Nantes in 1685, several Huguenot families of Norman and Carolingian nobility and descent, including Edmund Bohun of Suffolk England from the Humphrey de Bohun line of French royalty descended from Charlemagne, Jean Postell of Dieppe France, Alexander Pepin, Antoine Poitevin of Orsement France, and Jacques de Bordeaux of Grenoble, immigrated to the Charleston Orange district. They were very successful at marriage and property speculation. After petitioning the British Crown in 1697 for the right to own land in the Baronies, they prospered as slave owners on the Cooper, Ashepoo, Ashley and Santee River plantations they purchased from the British Landgrave Edmund Bellinger
+
+---
+
+Paul Revere was descended from Huguenot refugees, as was Henry Laurens, who signed the Articles of Confederation for South Carolina; Jack Jouett, who made the ride from Cuckoo Tavern to warn Thomas Jefferson and others that Tarleton and his men were on their way to arrest him for crimes against the king; Francis Marion, and a number of other leaders of the American Revolution and later statesmen. The last active Huguenot congregation in North America worships in Charleston, South Carolina, at a church that dates to 1844. The Huguenot Society of America maintains Manakin Episcopal Church in Virginia as an historic shrine with occasional services. The Society has chapters in numerous states, with the one in Texas being the largest.
+
+---
+
+Individual Huguenots settled at the Cape of Good Hope from as early as 1671 with the arrival of François Villion (Viljoen). The first Huguenot to arrive at the Cape of Good Hope was however Maria de la Queillerie, wife of commander Jan van Riebeeck (and daughter of a Walloon church minister), who arrived on 6 April 1652 to establish a settlement at what is today Cape Town. The couple left for the Far East ten years later. On 31 December 1687 the first organised group of Huguenots set sail from the Netherlands to the Dutch East India Company post at the Cape of Good Hope. The largest portion of the Huguenots to settle in the Cape arrived between 1688 and 1689 in seven ships as part of the organised migration, but quite a few arrived as late as 1700; thereafter, the numbers declined and only small groups arrived at a time."," The Huguenot nobility settled in the area of present-day Charleston, Orange district, South Carolina.",the Charleston Orange district,0.5024,0.374,1.0,0.4976,ragas_high_deberta_low,,,
+3008,squad:43:3008,squad,hcpc_v2,"What individuals were responsible for authoring ""On the Computational Complexity of Algorithms""?","As Fortnow & Homer (2003) point out, the beginning of systematic studies in computational complexity is attributed to the seminal paper ""On the Computational Complexity of Algorithms"" by Juris Hartmanis and Richard Stearns (1965), which laid out the definitions of time and space complexity and proved the hierarchy theorems. Also, in 1965 Edmonds defined a ""good"" algorithm as one with running time bounded by a polynomial of the input size.
+
+---
+
+Before the actual research explicitly devoted to the complexity of algorithmic problems started off, numerous foundations were laid out by various researchers. Most influential among these was the definition of Turing machines by Alan Turing in 1936, which turned out to be a very robust and flexible simplification of a computer.
+
+---
+
+Computational complexity theory is a branch of the theory of computation in theoretical computer science that focuses on classifying computational problems according to their inherent difficulty, and relating those classes to each other . A computational problem is understood to be a task that is in principle amenable to being solved by a computer, which is equivalent to stating that the problem may be solved by mechanical application of mathematical steps, such as an algorithm.", Juris Hartmanis and Richard Stearns,Juris Hartmanis and Richard Stearns,0.5025,0.2721,1.0,0.4975,ragas_high_deberta_low,,,
+7424,squad:45:7424,squad,hcpc_v2,What fortification was built in the 19th century after the defeat of the November Uprising?,"There are also many places commemorating the heroic history of Warsaw. Pawiak, an infamous German Gestapo prison now occupied by a Mausoleum of Memory of Martyrdom and the museum, is only the beginning of a walk in the traces of Heroic City. The Warsaw Citadel, an impressive 19th-century fortification built after the defeat of the November Uprising, was a place of martyr for the Poles. Another important monument, the statue of Little Insurgent located at the ramparts of the Old Town, commemorates the children who served as messengers and frontline troops in the Warsaw Uprising, while the impressive Warsaw Uprising Monument by Wincenty Kućma was erected in memory of the largest insurrection of World War II.
+
+---
+
+Warsaw's mixture of architectural styles reflects the turbulent history of the city and country. During the Second World War, Warsaw was razed to the ground by bombing raids and planned destruction. After liberation, rebuilding began as in other cities of the communist-ruled PRL. Most of the historical buildings were thoroughly reconstructed. However, some of the buildings from the 19th century that had been preserved in reasonably reconstructible form were nonetheless eradicated in the 1950s and 1960s (e.g. Leopold Kronenberg Palace). Mass residential blocks were erected, with basic design typical of Eastern bloc countries.
+
+---
+
+Exceptional examples of the bourgeois architecture of the later periods were not restored by the communist authorities after the war (like mentioned Kronenberg Palace and Insurance Company Rosja building) or they were rebuilt in socialist realism style in socialist realism style (like Warsaw Philharmony edifice originally inspired by Palais Garnier in Paris) . Despite that the Warsaw University of Technology building (1899–1902) is the most interesting of the late 19th-century architecture . Some 19th-century buildings in the Praga district (the Vistula’s right bank) have been restored although many have been poorly maintained . Warsaw’s municipal government authorities have decided to rebuild the Saxon Palace and the Brühl Palace, the most distinctive buildings in prewar Warsaw.", The Warsaw Citadel is the fortification that was built in the 19th century after the defeat of the November Uprising.,The Warsaw Citadel,0.5025,0.4458,1.0,0.4975,ragas_high_deberta_low,,,

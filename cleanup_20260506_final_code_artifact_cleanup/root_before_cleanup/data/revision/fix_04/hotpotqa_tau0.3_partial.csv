@@ -1,0 +1,301 @@
+dataset,tau,condition,question,ground_truth,faithfulness_score,is_hallucination,gate_fired,ccs_pre
+hotpotqa,0.3,baseline,What bitcoin start up featured Erik Voorhees as Director of Marketing?,BitInstant,0.55,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,What bitcoin start up featured Erik Voorhees as Director of Marketing?,BitInstant,0.7572,False,False,-1.0
+hotpotqa,0.3,ccs_gate,What bitcoin start up featured Erik Voorhees as Director of Marketing?,BitInstant,0.7572,False,True,0.213
+hotpotqa,0.3,baseline,MacBook offers what brand-type of displays that are higher-resolution than other portable computers?,Retina,0.7329,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,MacBook offers what brand-type of displays that are higher-resolution than other portable computers?,Retina,0.6901,False,False,-1.0
+hotpotqa,0.3,ccs_gate,MacBook offers what brand-type of displays that are higher-resolution than other portable computers?,Retina,0.7329,False,False,0.7427
+hotpotqa,0.3,baseline,In what part of England is John Folwes' country house located?,"West Dorset, South West England.",0.6965,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,In what part of England is John Folwes' country house located?,"West Dorset, South West England.",0.5868,False,False,-1.0
+hotpotqa,0.3,ccs_gate,In what part of England is John Folwes' country house located?,"West Dorset, South West England.",0.7159,False,False,0.3373
+hotpotqa,0.3,baseline,Who was the boyfriend of Thelma Lou in the series with Jim Nabors?,Barney Fife,0.4408,True,False,-1.0
+hotpotqa,0.3,hcpc_v1,Who was the boyfriend of Thelma Lou in the series with Jim Nabors?,Barney Fife,0.2773,True,False,-1.0
+hotpotqa,0.3,ccs_gate,Who was the boyfriend of Thelma Lou in the series with Jim Nabors?,Barney Fife,0.2773,True,True,0.1489
+hotpotqa,0.3,baseline,Who did Neleus of Scepsis study under in addition to Theophrastus in the Peripatetic school?,Aristotle,0.5238,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,Who did Neleus of Scepsis study under in addition to Theophrastus in the Peripatetic school?,Aristotle,0.5002,False,False,-1.0
+hotpotqa,0.3,ccs_gate,Who did Neleus of Scepsis study under in addition to Theophrastus in the Peripatetic school?,Aristotle,0.5238,False,False,0.4826
+hotpotqa,0.3,baseline,"What group did Carlene LeFevre and Rich LeFevre form in Brooklyn, New York City?","the ""First Family of Competitive Eating""",0.7077,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,"What group did Carlene LeFevre and Rich LeFevre form in Brooklyn, New York City?","the ""First Family of Competitive Eating""",0.7077,False,False,-1.0
+hotpotqa,0.3,ccs_gate,"What group did Carlene LeFevre and Rich LeFevre form in Brooklyn, New York City?","the ""First Family of Competitive Eating""",0.7077,False,True,0.1566
+hotpotqa,0.3,baseline,"Were was the Mexican state after which there is Villa Unión, Sinaloa located? ",tip of the Baja California,0.6413,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,"Were was the Mexican state after which there is Villa Unión, Sinaloa located? ",tip of the Baja California,0.6669,False,False,-1.0
+hotpotqa,0.3,ccs_gate,"Were was the Mexican state after which there is Villa Unión, Sinaloa located? ",tip of the Baja California,0.6669,False,False,0.7236
+hotpotqa,0.3,baseline,Who sang lead vocals on the Oasis hit single which had an acoustic debut in drummer Tony McCarroll's last concert ? ,Noel Gallagher,0.6126,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,Who sang lead vocals on the Oasis hit single which had an acoustic debut in drummer Tony McCarroll's last concert ? ,Noel Gallagher,0.7237,False,False,-1.0
+hotpotqa,0.3,ccs_gate,Who sang lead vocals on the Oasis hit single which had an acoustic debut in drummer Tony McCarroll's last concert ? ,Noel Gallagher,0.6126,False,False,0.6505
+hotpotqa,0.3,baseline,Dr. Saleha Mahmood Abedin's daughter was born in what year ?,1976,0.5845,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,Dr. Saleha Mahmood Abedin's daughter was born in what year ?,1976,0.7055,False,False,-1.0
+hotpotqa,0.3,ccs_gate,Dr. Saleha Mahmood Abedin's daughter was born in what year ?,1976,0.7055,False,True,0.0726
+hotpotqa,0.3,baseline,What is the are of the university at which Dick Biddle served as head football coach?,575 acres (2.08 km²),0.8574,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,What is the are of the university at which Dick Biddle served as head football coach?,575 acres (2.08 km²),0.4955,True,False,-1.0
+hotpotqa,0.3,ccs_gate,What is the are of the university at which Dick Biddle served as head football coach?,575 acres (2.08 km²),0.8574,False,False,0.4021
+hotpotqa,0.3,baseline,Which gaming console was both Yakuza Kiwami and Yakuza 0 released on?,PlayStation 4,0.8344,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,Which gaming console was both Yakuza Kiwami and Yakuza 0 released on?,PlayStation 4,0.4017,True,False,-1.0
+hotpotqa,0.3,ccs_gate,Which gaming console was both Yakuza Kiwami and Yakuza 0 released on?,PlayStation 4,0.8344,False,False,0.7679
+hotpotqa,0.3,baseline,"which American actress, singer, and songwriter too the tour of  I Stand tour ",Idina Kim Menzel,0.5367,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,"which American actress, singer, and songwriter too the tour of  I Stand tour ",Idina Kim Menzel,0.5367,False,False,-1.0
+hotpotqa,0.3,ccs_gate,"which American actress, singer, and songwriter too the tour of  I Stand tour ",Idina Kim Menzel,0.5367,False,True,0.2729
+hotpotqa,0.3,baseline,What was Iqbal F. Qadir on when he participated in an attack on a radar station located on western shore of the Okhamandal Peninsula?,flotilla,0.7681,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,What was Iqbal F. Qadir on when he participated in an attack on a radar station located on western shore of the Okhamandal Peninsula?,flotilla,0.7477,False,False,-1.0
+hotpotqa,0.3,ccs_gate,What was Iqbal F. Qadir on when he participated in an attack on a radar station located on western shore of the Okhamandal Peninsula?,flotilla,0.7477,False,True,0.1812
+hotpotqa,0.3,baseline,Vincas Kudirka is the author of both the music and lyrics of a national anthem which has how many words?,fifty-word,0.5134,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,Vincas Kudirka is the author of both the music and lyrics of a national anthem which has how many words?,fifty-word,0.7071,False,False,-1.0
+hotpotqa,0.3,ccs_gate,Vincas Kudirka is the author of both the music and lyrics of a national anthem which has how many words?,fifty-word,0.5134,False,False,0.3859
+hotpotqa,0.3,baseline,What is the nationality of this company that services MS Moby Dada?,Danish,0.4974,True,False,-1.0
+hotpotqa,0.3,hcpc_v1,What is the nationality of this company that services MS Moby Dada?,Danish,0.6641,False,False,-1.0
+hotpotqa,0.3,ccs_gate,What is the nationality of this company that services MS Moby Dada?,Danish,0.474,True,False,0.6168
+hotpotqa,0.3,baseline,"Which canal, Miami Canal or Dundee Canal, also supplies hydro-power and water for manufacturing?",Dundee Canal,0.7063,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,"Which canal, Miami Canal or Dundee Canal, also supplies hydro-power and water for manufacturing?",Dundee Canal,0.6333,False,False,-1.0
+hotpotqa,0.3,ccs_gate,"Which canal, Miami Canal or Dundee Canal, also supplies hydro-power and water for manufacturing?",Dundee Canal,0.6959,False,False,0.4071
+hotpotqa,0.3,baseline,"When did Senator Ted Kennedy helped dedicate a new room at the location to his maternal grandfather, John F. Fitzgerald.",St. Patrick's Day in 1988,0.6314,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,"When did Senator Ted Kennedy helped dedicate a new room at the location to his maternal grandfather, John F. Fitzgerald.",St. Patrick's Day in 1988,0.5531,False,False,-1.0
+hotpotqa,0.3,ccs_gate,"When did Senator Ted Kennedy helped dedicate a new room at the location to his maternal grandfather, John F. Fitzgerald.",St. Patrick's Day in 1988,0.6314,False,False,0.4866
+hotpotqa,0.3,baseline,Private Music signed the drummer who was part of which English group?,Beatles,0.6253,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,Private Music signed the drummer who was part of which English group?,Beatles,0.7303,False,False,-1.0
+hotpotqa,0.3,ccs_gate,Private Music signed the drummer who was part of which English group?,Beatles,0.7303,False,True,0.0882
+hotpotqa,0.3,baseline,"American singer-songwriter, Taylor Swift, self-penned the song, Change, alongside Nathan Chapman, which was featured on her second studio album released by who?",Big Machine Records,0.5024,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,"American singer-songwriter, Taylor Swift, self-penned the song, Change, alongside Nathan Chapman, which was featured on her second studio album released by who?",Big Machine Records,0.6585,False,False,-1.0
+hotpotqa,0.3,ccs_gate,"American singer-songwriter, Taylor Swift, self-penned the song, Change, alongside Nathan Chapman, which was featured on her second studio album released by who?",Big Machine Records,0.5024,False,False,0.543
+hotpotqa,0.3,baseline,Who directed the 1940 film in which John Arledge appeared?,John Ford,0.5587,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,Who directed the 1940 film in which John Arledge appeared?,John Ford,0.5135,False,False,-1.0
+hotpotqa,0.3,ccs_gate,Who directed the 1940 film in which John Arledge appeared?,John Ford,0.5135,False,True,0.2567
+hotpotqa,0.3,baseline,What is the shared country of ancestry between Art Laboe and Scout Tufankjian?,Armenian,0.7654,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,What is the shared country of ancestry between Art Laboe and Scout Tufankjian?,Armenian,0.6839,False,False,-1.0
+hotpotqa,0.3,ccs_gate,What is the shared country of ancestry between Art Laboe and Scout Tufankjian?,Armenian,0.6073,False,True,0.1272
+hotpotqa,0.3,baseline,Kadeem Jack is a player in a league that started with how many teams?,eight,0.5865,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,Kadeem Jack is a player in a league that started with how many teams?,eight,0.4565,True,False,-1.0
+hotpotqa,0.3,ccs_gate,Kadeem Jack is a player in a league that started with how many teams?,eight,0.4467,True,True,0.2878
+hotpotqa,0.3,baseline,"The Livesey Hal War Memorial commemorates the fallen of which war, that had over 60 million casualties?",World War II,0.5786,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,"The Livesey Hal War Memorial commemorates the fallen of which war, that had over 60 million casualties?",World War II,0.6752,False,False,-1.0
+hotpotqa,0.3,ccs_gate,"The Livesey Hal War Memorial commemorates the fallen of which war, that had over 60 million casualties?",World War II,0.5786,False,False,0.4818
+hotpotqa,0.3,baseline,"Works by Hanna Leena Kristiina Varis are part of a collection in a museum that houses approximately 65,000 what?",drawings,1.0,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,"Works by Hanna Leena Kristiina Varis are part of a collection in a museum that houses approximately 65,000 what?",drawings,0.5799,False,False,-1.0
+hotpotqa,0.3,ccs_gate,"Works by Hanna Leena Kristiina Varis are part of a collection in a museum that houses approximately 65,000 what?",drawings,0.5799,False,True,0.1678
+hotpotqa,0.3,baseline,Are Toshi and Warrel Dane both in the band Sanctuary?,no,0.7658,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,Are Toshi and Warrel Dane both in the band Sanctuary?,no,0.6495,False,False,-1.0
+hotpotqa,0.3,ccs_gate,Are Toshi and Warrel Dane both in the band Sanctuary?,no,0.7658,False,False,0.5324
+hotpotqa,0.3,baseline,"Len Wiseman directed ""Live Free or Die Hard"" which is the 4 installment in the Die Hard film franchise base on what character?",John McClane,0.7121,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,"Len Wiseman directed ""Live Free or Die Hard"" which is the 4 installment in the Die Hard film franchise base on what character?",John McClane,0.7222,False,False,-1.0
+hotpotqa,0.3,ccs_gate,"Len Wiseman directed ""Live Free or Die Hard"" which is the 4 installment in the Die Hard film franchise base on what character?",John McClane,0.7121,False,False,0.4026
+hotpotqa,0.3,baseline,Which them park is host to both the Back to the Future Rid and The Simpsons Ride?,Universal Studios Florida,0.689,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,Which them park is host to both the Back to the Future Rid and The Simpsons Ride?,Universal Studios Florida,0.5809,False,False,-1.0
+hotpotqa,0.3,ccs_gate,Which them park is host to both the Back to the Future Rid and The Simpsons Ride?,Universal Studios Florida,0.5809,False,True,0.279
+hotpotqa,0.3,baseline,The school in which the Wilmslow Show is held is designated as what?,Centre of Excellence,0.6974,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,The school in which the Wilmslow Show is held is designated as what?,Centre of Excellence,0.4903,True,False,-1.0
+hotpotqa,0.3,ccs_gate,The school in which the Wilmslow Show is held is designated as what?,Centre of Excellence,0.4903,True,True,0.2678
+hotpotqa,0.3,baseline,"Michaël Llodra of France, called ""the best volleyer on tour"", defeated Juan Martín del Potro a professional of what nationality?",Argentinian,0.7002,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,"Michaël Llodra of France, called ""the best volleyer on tour"", defeated Juan Martín del Potro a professional of what nationality?",Argentinian,1.0,False,False,-1.0
+hotpotqa,0.3,ccs_gate,"Michaël Llodra of France, called ""the best volleyer on tour"", defeated Juan Martín del Potro a professional of what nationality?",Argentinian,0.7084,False,False,0.5349
+hotpotqa,0.3,baseline,Which South African anti-apartheid archbishop was part of the actions against the ruling National Party government?,Desmond Mpilo Tutu,0.7649,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,Which South African anti-apartheid archbishop was part of the actions against the ruling National Party government?,Desmond Mpilo Tutu,0.5305,False,False,-1.0
+hotpotqa,0.3,ccs_gate,Which South African anti-apartheid archbishop was part of the actions against the ruling National Party government?,Desmond Mpilo Tutu,0.7649,False,False,0.3689
+hotpotqa,0.3,baseline,"In what year did the actor who starred in the TV Land original series ""The Soul Man"" host the Black Movie Awards?",2005,0.7456,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,"In what year did the actor who starred in the TV Land original series ""The Soul Man"" host the Black Movie Awards?",2005,0.7574,False,False,-1.0
+hotpotqa,0.3,ccs_gate,"In what year did the actor who starred in the TV Land original series ""The Soul Man"" host the Black Movie Awards?",2005,0.7456,False,False,0.3862
+hotpotqa,0.3,baseline,How many Grammy awards were won by an album named after the Joni Mitchell song from Love Actually?,two Grammy awards,0.324,True,False,-1.0
+hotpotqa,0.3,hcpc_v1,How many Grammy awards were won by an album named after the Joni Mitchell song from Love Actually?,two Grammy awards,0.386,True,False,-1.0
+hotpotqa,0.3,ccs_gate,How many Grammy awards were won by an album named after the Joni Mitchell song from Love Actually?,two Grammy awards,0.386,True,True,0.2585
+hotpotqa,0.3,baseline,Are Tantrix and Personal Preference both types of games?,yes,0.5914,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,Are Tantrix and Personal Preference both types of games?,yes,0.6724,False,False,-1.0
+hotpotqa,0.3,ccs_gate,Are Tantrix and Personal Preference both types of games?,yes,0.6724,False,True,0.1747
+hotpotqa,0.3,baseline,Robert Earl Holding owned an oil company that was originally founded by who?,Harry F. Sinclair,0.6435,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,Robert Earl Holding owned an oil company that was originally founded by who?,Harry F. Sinclair,0.5275,False,False,-1.0
+hotpotqa,0.3,ccs_gate,Robert Earl Holding owned an oil company that was originally founded by who?,Harry F. Sinclair,0.4899,True,True,0.2914
+hotpotqa,0.3,baseline,Which film was released first: Sacred Planet or Oz the Great and Powerful?,Sacred Planet,0.8854,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,Which film was released first: Sacred Planet or Oz the Great and Powerful?,Sacred Planet,0.6396,False,False,-1.0
+hotpotqa,0.3,ccs_gate,Which film was released first: Sacred Planet or Oz the Great and Powerful?,Sacred Planet,0.6396,False,True,0.0395
+hotpotqa,0.3,baseline,Has Stefan Edberg won more events than  Édouard Roger-Vasselin?,yes,0.398,True,False,-1.0
+hotpotqa,0.3,hcpc_v1,Has Stefan Edberg won more events than  Édouard Roger-Vasselin?,yes,0.588,False,False,-1.0
+hotpotqa,0.3,ccs_gate,Has Stefan Edberg won more events than  Édouard Roger-Vasselin?,yes,0.398,True,False,0.726
+hotpotqa,0.3,baseline, Mount Stimson is the second highest peak in national park that encompasses how many acres?,over 1 million,0.725,False,False,-1.0
+hotpotqa,0.3,hcpc_v1, Mount Stimson is the second highest peak in national park that encompasses how many acres?,over 1 million,0.6234,False,False,-1.0
+hotpotqa,0.3,ccs_gate, Mount Stimson is the second highest peak in national park that encompasses how many acres?,over 1 million,0.725,False,False,0.4107
+hotpotqa,0.3,baseline,which Soviet Russian cellist.did Anton Ginsburg work best known as accompany ,Daniil Shafran,0.5193,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,which Soviet Russian cellist.did Anton Ginsburg work best known as accompany ,Daniil Shafran,0.7986,False,False,-1.0
+hotpotqa,0.3,ccs_gate,which Soviet Russian cellist.did Anton Ginsburg work best known as accompany ,Daniil Shafran,0.5193,False,False,0.3535
+hotpotqa,0.3,baseline,"Which genus of flowering plant is found in an environment further south, Crocosmia or Cimicifuga?",Crocosmia,0.5163,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,"Which genus of flowering plant is found in an environment further south, Crocosmia or Cimicifuga?",Crocosmia,0.5163,False,False,-1.0
+hotpotqa,0.3,ccs_gate,"Which genus of flowering plant is found in an environment further south, Crocosmia or Cimicifuga?",Crocosmia,0.5819,False,False,0.3675
+hotpotqa,0.3,baseline,What position did the winner of the MVP in Pool C of the 2017 WBC play?,third baseman,0.5174,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,What position did the winner of the MVP in Pool C of the 2017 WBC play?,third baseman,0.4779,True,False,-1.0
+hotpotqa,0.3,ccs_gate,What position did the winner of the MVP in Pool C of the 2017 WBC play?,third baseman,0.4812,True,True,0.1442
+hotpotqa,0.3,baseline,Where was the second World Junior Ice Hockey Championship in which Miroslav Přerost coached the men's national junior ice hockey team hosted?,"Ufa, Russia",0.4888,True,False,-1.0
+hotpotqa,0.3,hcpc_v1,Where was the second World Junior Ice Hockey Championship in which Miroslav Přerost coached the men's national junior ice hockey team hosted?,"Ufa, Russia",0.5542,False,False,-1.0
+hotpotqa,0.3,ccs_gate,Where was the second World Junior Ice Hockey Championship in which Miroslav Přerost coached the men's national junior ice hockey team hosted?,"Ufa, Russia",0.4888,True,False,0.4163
+hotpotqa,0.3,baseline,What year was the brother of this first round draft pick by the Washington Redskins drafted?,2003,0.6319,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,What year was the brother of this first round draft pick by the Washington Redskins drafted?,2003,0.5541,False,False,-1.0
+hotpotqa,0.3,ccs_gate,What year was the brother of this first round draft pick by the Washington Redskins drafted?,2003,0.6319,False,False,0.3447
+hotpotqa,0.3,baseline,The Robey-Peters Gun-Carrier was built at a commuter village with at population of what at the 2001 census?,"4,530",0.6155,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,The Robey-Peters Gun-Carrier was built at a commuter village with at population of what at the 2001 census?,"4,530",0.6556,False,False,-1.0
+hotpotqa,0.3,ccs_gate,The Robey-Peters Gun-Carrier was built at a commuter village with at population of what at the 2001 census?,"4,530",0.6556,False,True,-0.1156
+hotpotqa,0.3,baseline,What British made dance competition television series franchise did Claudia Albertario appear on?,"""Dancing on Ice"" around the world",0.6011,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,What British made dance competition television series franchise did Claudia Albertario appear on?,"""Dancing on Ice"" around the world",0.714,False,False,-1.0
+hotpotqa,0.3,ccs_gate,What British made dance competition television series franchise did Claudia Albertario appear on?,"""Dancing on Ice"" around the world",0.714,False,True,0.204
+hotpotqa,0.3,baseline,Where is the company that Sachin Warrier worked for as a software engineer headquartered? ,Mumbai,0.7198,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,Where is the company that Sachin Warrier worked for as a software engineer headquartered? ,Mumbai,0.5255,False,False,-1.0
+hotpotqa,0.3,ccs_gate,Where is the company that Sachin Warrier worked for as a software engineer headquartered? ,Mumbai,0.5255,False,True,0.1575
+hotpotqa,0.3,baseline,What was the largest passenger capacity of the plane type used for BOAC Flight 911 ?,219,0.5024,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,What was the largest passenger capacity of the plane type used for BOAC Flight 911 ?,219,0.4904,True,False,-1.0
+hotpotqa,0.3,ccs_gate,What was the largest passenger capacity of the plane type used for BOAC Flight 911 ?,219,0.6967,False,False,0.6779
+hotpotqa,0.3,baseline, The Soul of Buddha is a 1918 American silent romance film shot in a borough  that is the western terminus of what?,the George Washington Bridge,0.5728,False,False,-1.0
+hotpotqa,0.3,hcpc_v1, The Soul of Buddha is a 1918 American silent romance film shot in a borough  that is the western terminus of what?,the George Washington Bridge,0.5728,False,False,-1.0
+hotpotqa,0.3,ccs_gate, The Soul of Buddha is a 1918 American silent romance film shot in a borough  that is the western terminus of what?,the George Washington Bridge,0.5728,False,True,0.2703
+hotpotqa,0.3,baseline,"Jennifer Gordon received a bachelor of arts degree from which women's liberal arts college in Cambridge, Massachusetts, and functioned as a female coordinate institution for the all-male Harvard College?",Radcliffe College,0.7146,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,"Jennifer Gordon received a bachelor of arts degree from which women's liberal arts college in Cambridge, Massachusetts, and functioned as a female coordinate institution for the all-male Harvard College?",Radcliffe College,0.7146,False,False,-1.0
+hotpotqa,0.3,ccs_gate,"Jennifer Gordon received a bachelor of arts degree from which women's liberal arts college in Cambridge, Massachusetts, and functioned as a female coordinate institution for the all-male Harvard College?",Radcliffe College,0.7146,False,False,0.5566
+hotpotqa,0.3,baseline,"Who has more scope of profession, Bob Fosse or Angelina Jolie?",Robert Louis Fosse,0.4543,True,False,-1.0
+hotpotqa,0.3,hcpc_v1,"Who has more scope of profession, Bob Fosse or Angelina Jolie?",Robert Louis Fosse,0.4207,True,False,-1.0
+hotpotqa,0.3,ccs_gate,"Who has more scope of profession, Bob Fosse or Angelina Jolie?",Robert Louis Fosse,0.4061,True,True,0.0079
+hotpotqa,0.3,baseline,Orlando Brown is best known for his role as 3J Winslow in an American sitcom that was a spin-off of what?,Perfect Strangers,0.7049,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,Orlando Brown is best known for his role as 3J Winslow in an American sitcom that was a spin-off of what?,Perfect Strangers,0.7525,False,False,-1.0
+hotpotqa,0.3,ccs_gate,Orlando Brown is best known for his role as 3J Winslow in an American sitcom that was a spin-off of what?,Perfect Strangers,0.7525,False,True,0.1433
+hotpotqa,0.3,baseline,Mexican Indignados Movement is a response to a war also known as?,Mexican War on Drugs,0.8006,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,Mexican Indignados Movement is a response to a war also known as?,Mexican War on Drugs,0.9859,False,False,-1.0
+hotpotqa,0.3,ccs_gate,Mexican Indignados Movement is a response to a war also known as?,Mexican War on Drugs,0.8111,False,False,0.4711
+hotpotqa,0.3,baseline,Tommy Swerdlow co-wrote the screenplay of what film directed by Jon Turteltaub?,Cool Runnings,0.3098,True,False,-1.0
+hotpotqa,0.3,hcpc_v1,Tommy Swerdlow co-wrote the screenplay of what film directed by Jon Turteltaub?,Cool Runnings,0.6742,False,False,-1.0
+hotpotqa,0.3,ccs_gate,Tommy Swerdlow co-wrote the screenplay of what film directed by Jon Turteltaub?,Cool Runnings,0.5463,False,True,0.2409
+hotpotqa,0.3,baseline,"What is the birth name of the disc jockey that notably used Mark Wirtz's song ""A Touch of Velvet, A Sting of Brass"" on their Radio Caroline show?",David Patrick Griffin,0.7057,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,"What is the birth name of the disc jockey that notably used Mark Wirtz's song ""A Touch of Velvet, A Sting of Brass"" on their Radio Caroline show?",David Patrick Griffin,0.4964,True,False,-1.0
+hotpotqa,0.3,ccs_gate,"What is the birth name of the disc jockey that notably used Mark Wirtz's song ""A Touch of Velvet, A Sting of Brass"" on their Radio Caroline show?",David Patrick Griffin,0.4713,True,True,0.1122
+hotpotqa,0.3,baseline,Where Ken Kwapis and John Woo both working on films in the 1980's?,yes,0.5104,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,Where Ken Kwapis and John Woo both working on films in the 1980's?,yes,0.4952,True,False,-1.0
+hotpotqa,0.3,ccs_gate,Where Ken Kwapis and John Woo both working on films in the 1980's?,yes,0.4952,True,True,0.1987
+hotpotqa,0.3,baseline,Are Harry Everett Smith and Vladimir Danilevich both from Russia?,no,0.7708,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,Are Harry Everett Smith and Vladimir Danilevich both from Russia?,no,0.6254,False,False,-1.0
+hotpotqa,0.3,ccs_gate,Are Harry Everett Smith and Vladimir Danilevich both from Russia?,no,0.7708,False,False,0.3726
+hotpotqa,0.3,baseline,"Which American Director doubled as a choreographer also, Stanley Kubrick or Kenny Ortega?","Kenneth John ""Kenny"" Ortega (born April 18, 1950) is an American producer, director, and choreographer.",0.6896,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,"Which American Director doubled as a choreographer also, Stanley Kubrick or Kenny Ortega?","Kenneth John ""Kenny"" Ortega (born April 18, 1950) is an American producer, director, and choreographer.",0.6721,False,False,-1.0
+hotpotqa,0.3,ccs_gate,"Which American Director doubled as a choreographer also, Stanley Kubrick or Kenny Ortega?","Kenneth John ""Kenny"" Ortega (born April 18, 1950) is an American producer, director, and choreographer.",0.6896,False,False,0.3498
+hotpotqa,0.3,baseline,Who is known for composing  American Beauty: Original Motion Picture Score and many other film scores?,Thomas Montgomery Newman,0.5279,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,Who is known for composing  American Beauty: Original Motion Picture Score and many other film scores?,Thomas Montgomery Newman,0.5279,False,False,-1.0
+hotpotqa,0.3,ccs_gate,Who is known for composing  American Beauty: Original Motion Picture Score and many other film scores?,Thomas Montgomery Newman,0.5279,False,True,0.1861
+hotpotqa,0.3,baseline,What was the sequel of the game that e was published by U.S. Gold in 1992?,Fade to Black,0.6931,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,What was the sequel of the game that e was published by U.S. Gold in 1992?,Fade to Black,0.652,False,False,-1.0
+hotpotqa,0.3,ccs_gate,What was the sequel of the game that e was published by U.S. Gold in 1992?,Fade to Black,0.6931,False,False,0.3711
+hotpotqa,0.3,baseline,What film adaptation do both Jerome Bernard and Ira Lewis have in common?,Chinese Coffee,0.6405,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,What film adaptation do both Jerome Bernard and Ira Lewis have in common?,Chinese Coffee,0.6405,False,False,-1.0
+hotpotqa,0.3,ccs_gate,What film adaptation do both Jerome Bernard and Ira Lewis have in common?,Chinese Coffee,0.6405,False,True,0.1614
+hotpotqa,0.3,baseline,"Which ""Blackzilians"" fighter is currently competing in the Middleweight division of Ultimate Fighting Championship?",Vitor Belfort,0.4797,True,False,-1.0
+hotpotqa,0.3,hcpc_v1,"Which ""Blackzilians"" fighter is currently competing in the Middleweight division of Ultimate Fighting Championship?",Vitor Belfort,0.4683,True,False,-1.0
+hotpotqa,0.3,ccs_gate,"Which ""Blackzilians"" fighter is currently competing in the Middleweight division of Ultimate Fighting Championship?",Vitor Belfort,0.4683,True,True,0.2871
+hotpotqa,0.3,baseline,The Running Man Brothers is a South Korean pop duo. Kim Jong-kook is one member and he is from what country?,South Korea,0.6528,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,The Running Man Brothers is a South Korean pop duo. Kim Jong-kook is one member and he is from what country?,South Korea,0.6809,False,False,-1.0
+hotpotqa,0.3,ccs_gate,The Running Man Brothers is a South Korean pop duo. Kim Jong-kook is one member and he is from what country?,South Korea,0.6528,False,False,0.4917
+hotpotqa,0.3,baseline,What show other than Hello Ross did Chelsea Handler appear on in January of 2016,Chelsea Does,0.422,True,False,-1.0
+hotpotqa,0.3,hcpc_v1,What show other than Hello Ross did Chelsea Handler appear on in January of 2016,Chelsea Does,0.3894,True,False,-1.0
+hotpotqa,0.3,ccs_gate,What show other than Hello Ross did Chelsea Handler appear on in January of 2016,Chelsea Does,0.3894,True,True,0.2866
+hotpotqa,0.3,baseline,"Which music group has the most members, DC Talk, or Manchester Orchestra?",Manchester Orchestra,0.7544,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,"Which music group has the most members, DC Talk, or Manchester Orchestra?",Manchester Orchestra,0.6748,False,False,-1.0
+hotpotqa,0.3,ccs_gate,"Which music group has the most members, DC Talk, or Manchester Orchestra?",Manchester Orchestra,0.6748,False,True,0.0402
+hotpotqa,0.3,baseline,Who will Billy Howle be seen opposite in the upcoming British drama film directed by Dominic Cooke?,Saoirse Ronan,0.6323,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,Who will Billy Howle be seen opposite in the upcoming British drama film directed by Dominic Cooke?,Saoirse Ronan,0.643,False,False,-1.0
+hotpotqa,0.3,ccs_gate,Who will Billy Howle be seen opposite in the upcoming British drama film directed by Dominic Cooke?,Saoirse Ronan,0.6323,False,False,0.3493
+hotpotqa,0.3,baseline,Are Mirpur University of Science and Technology and University of Debrecen both Universities located outside of the United States?,yes,0.6713,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,Are Mirpur University of Science and Technology and University of Debrecen both Universities located outside of the United States?,yes,0.7069,False,False,-1.0
+hotpotqa,0.3,ccs_gate,Are Mirpur University of Science and Technology and University of Debrecen both Universities located outside of the United States?,yes,0.7756,False,True,0.2227
+hotpotqa,0.3,baseline,From where was the award which has Matt James as a winner in 2012 has its name derived? ,EN World web site,0.6584,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,From where was the award which has Matt James as a winner in 2012 has its name derived? ,EN World web site,0.6516,False,False,-1.0
+hotpotqa,0.3,ccs_gate,From where was the award which has Matt James as a winner in 2012 has its name derived? ,EN World web site,0.6516,False,True,0.1049
+hotpotqa,0.3,baseline,How many students were enrolled in American professional bowler Chris Barnes' high school in the 2010-2011 school year?,"1,840 students",0.6244,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,How many students were enrolled in American professional bowler Chris Barnes' high school in the 2010-2011 school year?,"1,840 students",0.4702,True,False,-1.0
+hotpotqa,0.3,ccs_gate,How many students were enrolled in American professional bowler Chris Barnes' high school in the 2010-2011 school year?,"1,840 students",0.6244,False,False,0.4053
+hotpotqa,0.3,baseline,Are David O. Russell and Tony Gatlif from the same country?,no,0.6116,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,Are David O. Russell and Tony Gatlif from the same country?,no,0.4878,True,False,-1.0
+hotpotqa,0.3,ccs_gate,Are David O. Russell and Tony Gatlif from the same country?,no,0.4878,True,True,0.2355
+hotpotqa,0.3,baseline,In which U.S. state are MedStar Georgetown University Hospital and Providence Hospital?,District of Columbia,0.6238,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,In which U.S. state are MedStar Georgetown University Hospital and Providence Hospital?,District of Columbia,0.6887,False,False,-1.0
+hotpotqa,0.3,ccs_gate,In which U.S. state are MedStar Georgetown University Hospital and Providence Hospital?,District of Columbia,0.6238,False,False,0.4664
+hotpotqa,0.3,baseline,Did the Sandy and Beaver Canal remain operational until a later date than the Los Angeles Aqueduct?,no,0.6374,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,Did the Sandy and Beaver Canal remain operational until a later date than the Los Angeles Aqueduct?,no,0.464,True,False,-1.0
+hotpotqa,0.3,ccs_gate,Did the Sandy and Beaver Canal remain operational until a later date than the Los Angeles Aqueduct?,no,0.464,True,True,0.2262
+hotpotqa,0.3,baseline,"Which writer of the song ""Money, Money, Money"" by pop group ABBA was born on 16 December 1946 ?",Benny Andersson,0.5398,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,"Which writer of the song ""Money, Money, Money"" by pop group ABBA was born on 16 December 1946 ?",Benny Andersson,0.6436,False,False,-1.0
+hotpotqa,0.3,ccs_gate,"Which writer of the song ""Money, Money, Money"" by pop group ABBA was born on 16 December 1946 ?",Benny Andersson,0.7094,False,False,0.6486
+hotpotqa,0.3,baseline,Richard Münch portrayed the German general who served in what capacity during WWII in the 1970 movie Patton?,Oberkommando der Wehrmacht,0.7571,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,Richard Münch portrayed the German general who served in what capacity during WWII in the 1970 movie Patton?,Oberkommando der Wehrmacht,0.5207,False,False,-1.0
+hotpotqa,0.3,ccs_gate,Richard Münch portrayed the German general who served in what capacity during WWII in the 1970 movie Patton?,Oberkommando der Wehrmacht,0.5207,False,True,0.2069
+hotpotqa,0.3,baseline,"St. John's College, Belize offers an education in a tradition in which what three subjects were the core?","Grammar, logic, and rhetoric",0.6912,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,"St. John's College, Belize offers an education in a tradition in which what three subjects were the core?","Grammar, logic, and rhetoric",0.697,False,False,-1.0
+hotpotqa,0.3,ccs_gate,"St. John's College, Belize offers an education in a tradition in which what three subjects were the core?","Grammar, logic, and rhetoric",0.6912,False,False,0.551
+hotpotqa,0.3,baseline,What was the name of a land where Maria Anna of Spain's husband was king?,Hungary,0.533,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,What was the name of a land where Maria Anna of Spain's husband was king?,Hungary,0.4898,True,False,-1.0
+hotpotqa,0.3,ccs_gate,What was the name of a land where Maria Anna of Spain's husband was king?,Hungary,0.4898,True,False,0.743
+hotpotqa,0.3,baseline,Phillip Pullman's book set in a parallel universe featuring a character named Lyra Belacqua was put into audio in what year?,2002,0.5569,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,Phillip Pullman's book set in a parallel universe featuring a character named Lyra Belacqua was put into audio in what year?,2002,0.6646,False,False,-1.0
+hotpotqa,0.3,ccs_gate,Phillip Pullman's book set in a parallel universe featuring a character named Lyra Belacqua was put into audio in what year?,2002,0.5569,False,False,0.6283
+hotpotqa,0.3,baseline,"""Tunak"", is a bhangra/pop love song by an artist born in which year ?",1967,0.5753,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,"""Tunak"", is a bhangra/pop love song by an artist born in which year ?",1967,0.7344,False,False,-1.0
+hotpotqa,0.3,ccs_gate,"""Tunak"", is a bhangra/pop love song by an artist born in which year ?",1967,0.6124,False,True,0.2906
+hotpotqa,0.3,baseline,Which American popular music and country music singer recorded J. D. Souther song ,Linda Maria Ronstadt,0.6943,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,Which American popular music and country music singer recorded J. D. Souther song ,Linda Maria Ronstadt,0.6977,False,False,-1.0
+hotpotqa,0.3,ccs_gate,Which American popular music and country music singer recorded J. D. Souther song ,Linda Maria Ronstadt,0.6977,False,False,0.3017
+hotpotqa,0.3,baseline,How many players are in the club in which Stephen Curry became part of in the 2015-2016 NBA season?,seven,0.6773,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,How many players are in the club in which Stephen Curry became part of in the 2015-2016 NBA season?,seven,0.6179,False,False,-1.0
+hotpotqa,0.3,ccs_gate,How many players are in the club in which Stephen Curry became part of in the 2015-2016 NBA season?,seven,0.6773,False,False,0.6374
+hotpotqa,0.3,baseline,Who played the female lead in a 2007 Indian Telugu film that was an unofficial copy of a remake of Lina Wertmuller's 1974 film?,Neha Sharma,0.6781,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,Who played the female lead in a 2007 Indian Telugu film that was an unofficial copy of a remake of Lina Wertmuller's 1974 film?,Neha Sharma,0.722,False,False,-1.0
+hotpotqa,0.3,ccs_gate,Who played the female lead in a 2007 Indian Telugu film that was an unofficial copy of a remake of Lina Wertmuller's 1974 film?,Neha Sharma,0.6781,False,False,0.5111
+hotpotqa,0.3,baseline,Sporobolus and Zea are in the same what?,family,0.7686,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,Sporobolus and Zea are in the same what?,family,0.7686,False,False,-1.0
+hotpotqa,0.3,ccs_gate,Sporobolus and Zea are in the same what?,family,0.7686,False,False,0.3476
+hotpotqa,0.3,baseline,Who is the fictional head of a British Secret Service division and for which a one-time missionary was the inspiration for?,Q,0.6872,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,Who is the fictional head of a British Secret Service division and for which a one-time missionary was the inspiration for?,Q,0.5155,False,False,-1.0
+hotpotqa,0.3,ccs_gate,Who is the fictional head of a British Secret Service division and for which a one-time missionary was the inspiration for?,Q,0.6872,False,False,0.3909
+hotpotqa,0.3,baseline,"When was the American singer, songwriter, actress and LGBT rights activist born who won Grammy and Emmy award?","June 22, 1953",0.9066,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,"When was the American singer, songwriter, actress and LGBT rights activist born who won Grammy and Emmy award?","June 22, 1953",0.6835,False,False,-1.0
+hotpotqa,0.3,ccs_gate,"When was the American singer, songwriter, actress and LGBT rights activist born who won Grammy and Emmy award?","June 22, 1953",0.6835,False,True,0.1774
+hotpotqa,0.3,baseline,Which battle took place first out of the Battle of the Ch'ongch'on River and the Battle of Tarawa?,The Battle of Tarawa,0.5839,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,Which battle took place first out of the Battle of the Ch'ongch'on River and the Battle of Tarawa?,The Battle of Tarawa,0.5218,False,False,-1.0
+hotpotqa,0.3,ccs_gate,Which battle took place first out of the Battle of the Ch'ongch'on River and the Battle of Tarawa?,The Battle of Tarawa,0.5218,False,True,0.2833
+hotpotqa,0.3,baseline,Who was the team president of the 2012 Cleveland Browns?,Mike Holmgren,0.542,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,Who was the team president of the 2012 Cleveland Browns?,Mike Holmgren,0.717,False,False,-1.0
+hotpotqa,0.3,ccs_gate,Who was the team president of the 2012 Cleveland Browns?,Mike Holmgren,0.542,False,False,0.8921
+hotpotqa,0.3,baseline,Suzanne Simone Baptiste Louverture is the wife of the leader of which revolution?,the Haitian Revolution,0.4974,True,False,-1.0
+hotpotqa,0.3,hcpc_v1,Suzanne Simone Baptiste Louverture is the wife of the leader of which revolution?,the Haitian Revolution,0.5229,False,False,-1.0
+hotpotqa,0.3,ccs_gate,Suzanne Simone Baptiste Louverture is the wife of the leader of which revolution?,the Haitian Revolution,0.5208,False,True,0.249
+hotpotqa,0.3,baseline,"which German philosopher wrote ""The opera ""Lulu""  ",Theodor W. Adorno,0.7679,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,"which German philosopher wrote ""The opera ""Lulu""  ",Theodor W. Adorno,0.646,False,False,-1.0
+hotpotqa,0.3,ccs_gate,"which German philosopher wrote ""The opera ""Lulu""  ",Theodor W. Adorno,0.646,False,True,0.1254
+hotpotqa,0.3,baseline,What year did the director of The Quiet American die?,1993,0.3962,True,False,-1.0
+hotpotqa,0.3,hcpc_v1,What year did the director of The Quiet American die?,1993,0.501,False,False,-1.0
+hotpotqa,0.3,ccs_gate,What year did the director of The Quiet American die?,1993,0.3962,True,False,0.4588
+hotpotqa,0.3,baseline,"Which was published more frequently, Popular Science or Girlfriends?",Girlfriends,0.5234,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,"Which was published more frequently, Popular Science or Girlfriends?",Girlfriends,0.4673,True,False,-1.0
+hotpotqa,0.3,ccs_gate,"Which was published more frequently, Popular Science or Girlfriends?",Girlfriends,0.4673,True,True,0.2483
+hotpotqa,0.3,baseline,The Chinese actress also known as Crystal Liu stars in Night Peacock with which three other actresses?,"Liu Ye, Yu Shaoqun and Leon Lai",0.6084,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,The Chinese actress also known as Crystal Liu stars in Night Peacock with which three other actresses?,"Liu Ye, Yu Shaoqun and Leon Lai",0.5329,False,False,-1.0
+hotpotqa,0.3,ccs_gate,The Chinese actress also known as Crystal Liu stars in Night Peacock with which three other actresses?,"Liu Ye, Yu Shaoqun and Leon Lai",0.6812,False,False,0.5435
+hotpotqa,0.3,baseline,Which style is the building located on the East Side of Midtown Manhattan that Robert Von Ancken appraised? ,Art Deco-style skyscraper,0.5918,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,Which style is the building located on the East Side of Midtown Manhattan that Robert Von Ancken appraised? ,Art Deco-style skyscraper,0.772,False,False,-1.0
+hotpotqa,0.3,ccs_gate,Which style is the building located on the East Side of Midtown Manhattan that Robert Von Ancken appraised? ,Art Deco-style skyscraper,0.772,False,True,0.1569
+hotpotqa,0.3,baseline,What occupation was shared by David Yates and Pietro Germi?,director,0.6461,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,What occupation was shared by David Yates and Pietro Germi?,director,0.6461,False,False,-1.0
+hotpotqa,0.3,ccs_gate,What occupation was shared by David Yates and Pietro Germi?,director,0.6461,False,True,0.1895
+hotpotqa,0.3,baseline,"When was the band who composited ""Discipline"" formed?",1968,0.55,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,"When was the band who composited ""Discipline"" formed?",1968,0.6008,False,False,-1.0
+hotpotqa,0.3,ccs_gate,"When was the band who composited ""Discipline"" formed?",1968,0.55,False,False,0.5131
+hotpotqa,0.3,baseline,"Brandy was handpicked by a producer that herself had been recognized by the ""Guinness World Records"" for what?",most awarded female act of all-time,0.6051,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,"Brandy was handpicked by a producer that herself had been recognized by the ""Guinness World Records"" for what?",most awarded female act of all-time,0.7341,False,False,-1.0
+hotpotqa,0.3,ccs_gate,"Brandy was handpicked by a producer that herself had been recognized by the ""Guinness World Records"" for what?",most awarded female act of all-time,0.5576,False,False,0.3318
+hotpotqa,0.3,baseline,"Which of the two came out first, The Wind in the Willows or The Bears and I?",The Wind in the Willows,0.8589,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,"Which of the two came out first, The Wind in the Willows or The Bears and I?",The Wind in the Willows,0.8589,False,False,-1.0
+hotpotqa,0.3,ccs_gate,"Which of the two came out first, The Wind in the Willows or The Bears and I?",The Wind in the Willows,0.8589,False,True,0.1165
+hotpotqa,0.3,baseline,How many consecutive years had the Serie A been comprised of 18 teams when Hernan Crespo got injured?,15th consecutive,0.6535,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,How many consecutive years had the Serie A been comprised of 18 teams when Hernan Crespo got injured?,15th consecutive,0.6447,False,False,-1.0
+hotpotqa,0.3,ccs_gate,How many consecutive years had the Serie A been comprised of 18 teams when Hernan Crespo got injured?,15th consecutive,0.642,False,True,0.195
+hotpotqa,0.3,baseline,What Was the name of Juan Manuel Márquez's  WBO champion holding younger brother?,Rafael Márquez,0.7526,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,What Was the name of Juan Manuel Márquez's  WBO champion holding younger brother?,Rafael Márquez,0.7223,False,False,-1.0
+hotpotqa,0.3,ccs_gate,What Was the name of Juan Manuel Márquez's  WBO champion holding younger brother?,Rafael Márquez,0.7526,False,False,0.7006
+hotpotqa,0.3,baseline,Of what county is the city 7 miles east of Trace State Park the seat?,"Lee County, Mississippi",0.7536,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,Of what county is the city 7 miles east of Trace State Park the seat?,"Lee County, Mississippi",0.7537,False,False,-1.0
+hotpotqa,0.3,ccs_gate,Of what county is the city 7 miles east of Trace State Park the seat?,"Lee County, Mississippi",0.7537,False,True,0.2121
+hotpotqa,0.3,baseline,Are both Jonathan Marray and Wayne Black British?,no,0.5531,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,Are both Jonathan Marray and Wayne Black British?,no,0.5531,False,False,-1.0
+hotpotqa,0.3,ccs_gate,Are both Jonathan Marray and Wayne Black British?,no,0.5531,False,True,0.1297
+hotpotqa,0.3,baseline,Lou Pai is a former executive of an energy company that went bankrupt in what year?,2001,0.7026,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,Lou Pai is a former executive of an energy company that went bankrupt in what year?,2001,0.5117,False,False,-1.0
+hotpotqa,0.3,ccs_gate,Lou Pai is a former executive of an energy company that went bankrupt in what year?,2001,0.47,True,True,0.2591
+hotpotqa,0.3,baseline,What religion is the composer for India's first science fiction film series?,Hindi,0.5596,False,False,-1.0
+hotpotqa,0.3,hcpc_v1,What religion is the composer for India's first science fiction film series?,Hindi,0.7243,False,False,-1.0
+hotpotqa,0.3,ccs_gate,What religion is the composer for India's first science fiction film series?,Hindi,0.7243,False,True,0.2427

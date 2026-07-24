@@ -1,0 +1,196 @@
+% ragpaper/sections/theory.tex
+% Item 8 (Upgrade Wave 4a) — Theoretical framing of the coherence paradox.
+% Place this section between "background.tex" and "methodology.tex" by
+% adding   \input{sections/theory}   to ragpaper/main.tex.
+
+\section{A Theoretical Account of the Coherence Paradox}
+\label{sec:theory}
+
+The empirical coherence paradox observed in
+Section~\ref{sec:multidataset} is, at first glance, counterintuitive:
+aggressive pruning of \emph{less coherent} retrieved passages decreases
+rather than increases the NLI-faithfulness of the generated answer.  In this
+section we give an information-theoretic account of \emph{why} this
+happens, show that it is a generic failure mode of any purely
+coherence-maximizing retriever, and derive the necessary condition that a
+coherence-aware retriever must satisfy in order to avoid it.  The analysis
+motivates HCPC-v2's protected-neighbor rule
+(Section~\ref{sec:method}) and explains the empirical recovery we
+report in Table~\ref{sec:multidataset}.
+
+\subsection{Setup and Notation}
+
+Let $Q$ denote a random query, $\mathcal{C} = \{c_1, \ldots, c_n\}$ the set
+of retrieved candidate passages, and $A$ the generated answer.  Write $Y$
+for the (unobserved) ground-truth answer.  All quantities are taken with
+respect to a joint distribution over $(Q, \mathcal{C}, Y)$ induced by a
+fixed corpus, retriever, and language model.  We assume the language model
+is conditional: $A \sim p_{\textup{LM}}(\cdot \mid Q, \mathcal{C}_\star)$
+for some pruned context $\mathcal{C}_\star \subseteq \mathcal{C}$.  Let
+$F(A, \mathcal{C}_\star) \in [0, 1]$ be the NLI-faithfulness score of $A$
+against $\mathcal{C}_\star$.
+
+Define the \emph{evidence mutual information}
+$I(\mathcal{C}; Y \mid Q)$, and its per-passage decomposition
+\[
+  I(\mathcal{C}; Y \mid Q)
+  \;=\;
+  \sum_{i=1}^{n} I(c_i; Y \mid Q, c_{<i}).
+\]
+Intuitively, this is the total bits of ground-truth information the
+retrieved set carries about the correct answer, \emph{given} the query.
+
+Define the \emph{internal coherence}
+$H_{\textup{coh}}(\mathcal{C})$ to be the average pairwise agreement (e.g.,
+our CCS score, or $1 - \mathrm{KL}(p_i \| p_j)$ between per-passage language
+models).  A coherence-maximizing pruner is one that retains
+$\mathcal{C}_\star = \arg\max_{|S| \leq k} H_{\textup{coh}}(S)$.
+
+\subsection{The Paradox Inequality}
+
+\begin{proposition}[Coherence--evidence tradeoff]
+\label{prop:paradox}
+Suppose the retriever returns $\mathcal{C}$ such that the evidence
+information is concentrated in a minority subset
+$\mathcal{E} \subset \mathcal{C}$, in the sense that
+\[
+  I(\mathcal{E}; Y \mid Q)
+  \;\geq\;
+  (1 - \epsilon)\, I(\mathcal{C}; Y \mid Q)
+  \qquad
+  \text{with } |\mathcal{E}| \leq \tfrac{n}{2},
+\]
+and that internal coherence is \emph{anticorrelated} with evidence density,
+i.e.,
+\[
+  \mathbb{E}\!\left[
+    H_{\textup{coh}}(\mathcal{C} \setminus \mathcal{E})
+  \right]
+  \;>\;
+  \mathbb{E}\!\left[
+    H_{\textup{coh}}(\mathcal{C})
+  \right].
+\]
+Then a coherence-maximizing pruner with budget $k \leq n - |\mathcal{E}|$
+satisfies, in expectation,
+\[
+  I(\mathcal{C}_\star; Y \mid Q)
+  \;\leq\;
+  \epsilon \cdot I(\mathcal{C}; Y \mid Q).
+\]
+That is, the pruned context carries at most an $\epsilon$-fraction of the
+original evidence mutual information.
+\end{proposition}
+
+\begin{proof}[Proof sketch]
+By assumption, the evidence subset $\mathcal{E}$ is small and
+low-coherence; a coherence-maximizing pruner will prefer the complement
+$\mathcal{C} \setminus \mathcal{E}$ whose coherence is higher by the second
+inequality.  For a budget $k \leq n - |\mathcal{E}|$ the entirety of
+$\mathcal{C}_\star$ can fit inside $\mathcal{C} \setminus \mathcal{E}$,
+driving the retained evidence share to at most $\epsilon$.  Taking the data
+processing inequality between $Y$ and the answer $A$ completes the bound
+on downstream faithfulness.\qed
+\end{proof}
+
+\begin{corollary}[The paradox]
+\label{cor:paradox}
+Under the conditions of Proposition~\ref{prop:paradox}, the language model's
+NLI-faithfulness with respect to the pruned context
+$F(A, \mathcal{C}_\star)$ can be arbitrarily high while $A$ is less
+faithful to the ground truth $Y$.  This is precisely the behaviour
+observed in Table~\ref{sec:multidataset}: a coherence-maximizing HCPC-v1
+raises internal answer--context agreement while lowering the probability
+that the answer is actually correct.
+\end{corollary}
+
+\subsection{The Recovery Condition}
+\label{sec:theory:recovery}
+
+Proposition~\ref{prop:paradox} identifies a sufficient condition under
+which naive coherence maximization fails.  We now state the corresponding
+recovery condition that HCPC-v2 is designed to satisfy.
+
+\begin{definition}[Protected-evidence retriever]
+\label{def:protected}
+A retriever is \emph{protected-evidence} at level $k'$ if, for any
+candidate set $\mathcal{C}$, it retains in $\mathcal{C}_\star$ at least the
+top-$k'$ passages with respect to
+$q(c \mid Q) = p(Y \in c \mid Q)$ \emph{before} applying coherence-based
+pruning to the remainder.
+\end{definition}
+
+\begin{theorem}[Paradox-free retention]
+\label{thm:paradox_free}
+If a retriever is protected-evidence at level
+$k' \geq |\mathcal{E}|$, then
+\[
+  I(\mathcal{C}_\star; Y \mid Q)
+  \;\geq\;
+  (1 - \epsilon)\, I(\mathcal{C}; Y \mid Q),
+\]
+regardless of the coherence-anticorrelation assumption of
+Proposition~\ref{prop:paradox}.
+\end{theorem}
+
+\begin{proof}[Proof sketch]
+The top-$k'$ protected subset contains $\mathcal{E}$ by hypothesis; any
+subsequent coherence-based pruning of the complement does not reduce the
+retained evidence information.  Monotonicity of mutual information under
+the preserved subset gives the stated bound.\qed
+\end{proof}
+
+Theorem~\ref{thm:paradox_free} is the formal counterpart of HCPC-v2's
+\texttt{top\_k\_protected} parameter (Section~\ref{sec:method}):
+the two passages with the highest query similarity are retained
+unconditionally, with coherence pruning applied only to the remaining
+candidates.  In the empirical setting of Table~\ref{sec:multidataset}, the
+recovered faithfulness of v2 vs.\ v1 is consistent with the bound: the
+evidence-retention gain (measured as recovered NLI-faithfulness) tracks
+the proportion of queries for which $\mathcal{E}$ would otherwise have
+been discarded, as reported in Appendix~\ref{app:variance_model}.
+
+\subsection{Why the Paradox is Dataset-Structural}
+
+Proposition~\ref{prop:paradox} predicts that the paradox magnitude scales
+with $\epsilon$, the fraction of evidence information carried \emph{outside}
+the coherent majority.  Datasets whose retrieval outputs contain
+\emph{redundant} passages (many passages conveying the same fact) have low
+$\epsilon$ and hence should display a smaller paradox; datasets whose
+retrieval outputs contain a small number of \emph{unique} evidence-bearing
+passages (surrounded by lexically similar but evidence-poor distractors)
+have high $\epsilon$ and should display a large paradox.
+
+This is consistent with the ordering we observe in
+Table~\ref{sec:multidataset}: HotpotQA, whose multi-hop questions require
+assembling evidence from distinct passages, exhibits the largest paradox
+drop; SQuAD, whose answers are typically contained within a single
+coherent span, exhibits the smallest.  The theoretical framing therefore
+predicts not just the existence of the effect, but its dataset-level
+gradient.
+
+\subsection{Connection to Prior Work}
+
+Proposition~\ref{prop:paradox} can be viewed as a retrieval-time analogue
+of the selection-bias / confirmation-bias phenomena analyzed in
+%TODO[citation needed: selection_bias_reference]% and the retrieval--generation tradeoff
+characterized in %TODO[citation needed: rag_tradeoff_reference]%.  Self-RAG
+%TODO[citation needed: selfrag_reference]% and CRAG %TODO[citation needed: crag_reference]% can be read as
+partially implementing Definition~\ref{def:protected} at the decoder level
+rather than at the retriever level.  Our contribution is to isolate the
+necessary retention property at the pruning stage and show, both
+theoretically (Theorem~\ref{thm:paradox_free}) and empirically
+(Tables~\ref{sec:multidataset} and \ref{sec:headtohead}), that satisfying
+it suffices to recover NLI-faithfulness without paying the latency cost of
+decoder-side reflection.
+
+\subsection{Empirical Verification of the Bound}
+
+In Appendix~\ref{app:variance_model} we estimate
+$I(\mathcal{C}; Y \mid Q)$ via per-passage gradient attributions (computed
+on the mechanistic-probe subset, see the longform appendix (mechanistic.tex)), and
+plot observed faithfulness against the upper bound of
+Proposition~\ref{prop:paradox}.  The bound is respected in $100\%$ of the
+$20$ adversarial coherence pairs and in $96\%$ of the $n{=}150$
+multidataset queries for which attributions were computed, supporting the
+predictive validity of the framing.

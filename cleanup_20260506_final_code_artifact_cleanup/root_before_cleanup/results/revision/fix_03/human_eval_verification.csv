@@ -1,0 +1,2 @@
+statistic,n_examples,raw_agreement,cohen_kappa,supported,partially_supported,unsupported,spearman_deberta,spearman_second_nli,spearman_ragas_style
+n99_human_eval,99,0.919192,0.773779,79,16,4,0.103023,0.393969,0.548699

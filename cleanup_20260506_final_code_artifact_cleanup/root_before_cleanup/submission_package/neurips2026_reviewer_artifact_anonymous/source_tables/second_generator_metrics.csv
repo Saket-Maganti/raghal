@@ -1,0 +1,4 @@
+generator_model,metric,n_baseline,n_hcpc_v1,n_hcpc_v2,faith_baseline,faith_hcpc_v1,faith_hcpc_v2,paradox_drop_baseline_minus_v1,v2_recovery_v2_minus_v1
+qwen2.5,faith_deberta,100,100,100,0.645209,0.630625,0.64426,0.014584,0.013635
+qwen2.5,faith_second_nli,100,100,100,0.361836,0.316289,0.367532,0.045547,0.051243
+qwen2.5,faith_ragas,100,100,100,0.806,0.672,0.814,0.134,0.142

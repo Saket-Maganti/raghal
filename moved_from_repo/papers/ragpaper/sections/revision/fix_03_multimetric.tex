@@ -1,0 +1,15 @@
+% Fix 3 - multi-metric faithfulness.
+% TRACKED-CHANGES: Adds two additional faithfulness columns and reports
+% correlations between metrics.
+
+\subsection{Multi-Metric Faithfulness}
+\label{sec:fix03_multimetric}
+
+To reduce dependence on one automated scorer, we rescore the upgraded
+headline cell with three faithfulness measures: the original DeBERTa-v3
+NLI scorer, a second NLI model, and a RAGAS-style LLM-as-judge
+faithfulness rubric. We report per-condition means for all three metrics
+and pairwise Pearson correlations across per-query judgments.
+
+% RESULTS-PENDING: insert results/revision/fix_03/table1_multimetric.csv
+% and results/revision/fix_03/metric_correlations.csv after execution.

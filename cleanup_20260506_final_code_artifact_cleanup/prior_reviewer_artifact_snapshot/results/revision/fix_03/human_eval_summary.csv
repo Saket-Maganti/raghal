@@ -1,0 +1,2 @@
+n_examples,n_raters,label_scheme,raw_agreement,cohen_kappa,final_label_source
+99,2,supported / partially_supported / unsupported,0.919192,0.773779,adjudicated_label

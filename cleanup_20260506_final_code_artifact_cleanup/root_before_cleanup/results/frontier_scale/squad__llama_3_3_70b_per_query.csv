@@ -1,0 +1,91 @@
+question,ground_truth,answer,condition,faithfulness_score,is_hallucination,mean_retrieval_similarity,refined,ccs,latency_s,dataset,model
+Which NFL team represented the AFC at Super Bowl 50?,Denver Broncos,The Denver Broncos represented the AFC at Super Bowl 50.,baseline,0.7354,False,0.6027,False,-1.0,0.29,squad,llama-3.3-70b
+Which NFL team represented the AFC at Super Bowl 50?,Denver Broncos,The Denver Broncos represented the AFC at Super Bowl 50.,hcpc_v1,0.7354,False,0.6602,False,-1.0,0.35,squad,llama-3.3-70b
+Which NFL team represented the AFC at Super Bowl 50?,Denver Broncos,The Denver Broncos represented the AFC at Super Bowl 50.,hcpc_v2,0.7354,False,0.6025,True,0.5463,0.35,squad,llama-3.3-70b
+Which NFL team represented the NFC at Super Bowl 50?,Carolina Panthers,The Carolina Panthers represented the NFC at Super Bowl 50.,baseline,0.813,False,0.6001,False,-1.0,0.98,squad,llama-3.3-70b
+Which NFL team represented the NFC at Super Bowl 50?,Carolina Panthers,I cannot find this information in the provided context.,hcpc_v1,0.5531,False,0.6188,False,-1.0,0.16,squad,llama-3.3-70b
+Which NFL team represented the NFC at Super Bowl 50?,Carolina Panthers,The Carolina Panthers represented the NFC at Super Bowl 50.,hcpc_v2,0.813,False,0.5991,True,0.5853,0.71,squad,llama-3.3-70b
+Where did Super Bowl 50 take place?,"Santa Clara, California","The game was played at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California.",baseline,0.8044,False,0.6432,False,-1.0,0.38,squad,llama-3.3-70b
+Where did Super Bowl 50 take place?,"Santa Clara, California",I cannot find this information in the provided context.,hcpc_v1,0.5531,False,0.6279,False,-1.0,0.26,squad,llama-3.3-70b
+Where did Super Bowl 50 take place?,"Santa Clara, California","The game was played at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California.",hcpc_v2,0.8044,False,0.6432,False,0.5722,0.4,squad,llama-3.3-70b
+Which NFL team won Super Bowl 50?,Denver Broncos,The Denver Broncos won Super Bowl 50.,baseline,0.9247,False,0.6554,False,-1.0,0.39,squad,llama-3.3-70b
+Which NFL team won Super Bowl 50?,Denver Broncos,The Broncos won Super Bowl 50.,hcpc_v1,0.8937,False,0.6259,False,-1.0,0.28,squad,llama-3.3-70b
+Which NFL team won Super Bowl 50?,Denver Broncos,The Denver Broncos won Super Bowl 50.,hcpc_v2,0.9247,False,0.6554,False,0.5701,0.77,squad,llama-3.3-70b
+What color was used to emphasize the 50th anniversary of the Super Bowl?,gold,Gold.,baseline,1.0,False,0.5495,False,-1.0,0.57,squad,llama-3.3-70b
+What color was used to emphasize the 50th anniversary of the Super Bowl?,gold,Gold.,hcpc_v1,1.0,False,0.6032,False,-1.0,0.26,squad,llama-3.3-70b
+What color was used to emphasize the 50th anniversary of the Super Bowl?,gold,Gold.,hcpc_v2,1.0,False,0.5495,True,0.43,0.36,squad,llama-3.3-70b
+What was the theme of Super Bowl 50?,"""golden anniversary""","The theme of Super Bowl 50 was the ""golden anniversary"", with various gold-themed initiatives.",baseline,0.8186,False,0.558,False,-1.0,0.48,squad,llama-3.3-70b
+What was the theme of Super Bowl 50?,"""golden anniversary""",I cannot find this information in the provided context.,hcpc_v1,0.5531,False,0.5742,False,-1.0,0.17,squad,llama-3.3-70b
+What was the theme of Super Bowl 50?,"""golden anniversary""","The theme of Super Bowl 50 was the ""golden anniversary"", with various gold-themed initiatives.",hcpc_v2,0.8186,False,0.558,False,0.4567,0.49,squad,llama-3.3-70b
+What day was the game played on?,"February 7, 2016","The game, Super Bowl 50, was played on February 7, 2016, at Levi's Stadium.",baseline,0.8451,False,0.3746,False,-1.0,0.25,squad,llama-3.3-70b
+What day was the game played on?,"February 7, 2016","The game was played on Sunday, February 7, 2016.",hcpc_v1,0.8833,False,0.4669,False,-1.0,0.38,squad,llama-3.3-70b
+What day was the game played on?,"February 7, 2016","The game, Super Bowl 50, was played on February 7, 2016, at Levi's Stadium.",hcpc_v2,0.8451,False,0.3746,True,0.5722,0.19,squad,llama-3.3-70b
+What is the AFC short for?,American Football Conference,American Football Conference.,baseline,0.4889,True,0.4121,False,-1.0,0.34,squad,llama-3.3-70b
+What is the AFC short for?,American Football Conference,American Football Conference,hcpc_v1,0.4889,True,0.4702,False,-1.0,0.16,squad,llama-3.3-70b
+What is the AFC short for?,American Football Conference,American Football Conference.,hcpc_v2,0.4889,True,0.4121,True,0.4753,0.36,squad,llama-3.3-70b
+What was the theme of Super Bowl 50?,"""golden anniversary""","The theme of Super Bowl 50 was the ""golden anniversary"", with various gold-themed initiatives.",baseline,0.8186,False,0.558,False,-1.0,0.14,squad,llama-3.3-70b
+What was the theme of Super Bowl 50?,"""golden anniversary""",I cannot find this information in the provided context.,hcpc_v1,0.5531,False,0.5742,False,-1.0,0.26,squad,llama-3.3-70b
+What was the theme of Super Bowl 50?,"""golden anniversary""","The theme of Super Bowl 50 was the ""golden anniversary"", with various gold-themed initiatives.",hcpc_v2,0.8186,False,0.558,False,0.4567,0.25,squad,llama-3.3-70b
+What does AFC stand for?,American Football Conference,American Football Conference.,baseline,0.4889,True,0.3787,False,-1.0,0.2,squad,llama-3.3-70b
+What does AFC stand for?,American Football Conference,American Football Conference.,hcpc_v1,0.4889,True,0.4448,False,-1.0,0.14,squad,llama-3.3-70b
+What does AFC stand for?,American Football Conference,American Football Conference.,hcpc_v2,0.4889,True,0.3787,True,0.4753,0.24,squad,llama-3.3-70b
+What day was the Super Bowl played on?,"February 7, 2016","The Super Bowl was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California, on a Sunday.",baseline,0.9091,False,0.6413,False,-1.0,2.44,squad,llama-3.3-70b
+What day was the Super Bowl played on?,"February 7, 2016","The game was played on February 7, 2016, which was a Sunday, but the context only mentions the date, not the day of the week. According to the context, the Super Bowl was played on February 7, 2016.",hcpc_v1,0.8761,False,0.6329,False,-1.0,2.45,squad,llama-3.3-70b
+What day was the Super Bowl played on?,"February 7, 2016","The Super Bowl was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California, which was a Sunday.",hcpc_v2,0.8389,False,0.6413,False,0.5722,2.34,squad,llama-3.3-70b
+Who won Super Bowl 50?,Denver Broncos,"The Denver Broncos won Super Bowl 50, defeating the Carolina Panthers 24-10.",baseline,0.9687,False,0.6268,False,-1.0,2.5,squad,llama-3.3-70b
+Who won Super Bowl 50?,Denver Broncos,The Broncos won Super Bowl 50.,hcpc_v1,0.8937,False,0.5921,False,-1.0,2.21,squad,llama-3.3-70b
+Who won Super Bowl 50?,Denver Broncos,"The Denver Broncos won Super Bowl 50, defeating the Carolina Panthers 24-10.",hcpc_v2,0.9687,False,0.6246,True,0.5701,2.31,squad,llama-3.3-70b
+What venue did Super Bowl 50 take place in?,Levi's Stadium,"Levi's Stadium in the San Francisco Bay Area at Santa Clara, California.",baseline,0.6918,False,0.6489,False,-1.0,2.45,squad,llama-3.3-70b
+What venue did Super Bowl 50 take place in?,Levi's Stadium,I cannot find this information in the provided context.,hcpc_v1,0.5531,False,0.6224,False,-1.0,2.28,squad,llama-3.3-70b
+What venue did Super Bowl 50 take place in?,Levi's Stadium,"Levi's Stadium in the San Francisco Bay Area at Santa Clara, California.",hcpc_v2,0.6918,False,0.653,True,0.6083,2.23,squad,llama-3.3-70b
+What city did Super Bowl 50 take place in?,Santa Clara,"The game was played at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. However, it does not explicitly state that the city where the game took place is Santa Clara, but rather that it is in the San Francisco Bay Area at Santa Clara.",baseline,0.7321,False,0.6392,False,-1.0,2.37,squad,llama-3.3-70b
+What city did Super Bowl 50 take place in?,Santa Clara,I cannot find this information in the provided context.,hcpc_v1,0.5531,False,0.6284,False,-1.0,2.37,squad,llama-3.3-70b
+What city did Super Bowl 50 take place in?,Santa Clara,"The game was played at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. However, it does not explicitly state that the city where the game took place is Santa Clara, but rather that the stadium is located in the San Francisco Bay Area at Santa Clara.",hcpc_v2,0.7493,False,0.6431,True,0.6083,2.69,squad,llama-3.3-70b
+"If Roman numerals were used, what would Super Bowl 50 have been called?",Super Bowl L,"If Roman numerals were used, Super Bowl 50 would have been called Super Bowl L.",baseline,0.502,False,0.5327,False,-1.0,2.37,squad,llama-3.3-70b
+"If Roman numerals were used, what would Super Bowl 50 have been called?",Super Bowl L,Super Bowl L.,hcpc_v1,0.4909,True,0.6741,False,-1.0,2.37,squad,llama-3.3-70b
+"If Roman numerals were used, what would Super Bowl 50 have been called?",Super Bowl L,"If Roman numerals were used, Super Bowl 50 would have been called Super Bowl L.",hcpc_v2,0.502,False,0.5327,True,0.5184,2.6,squad,llama-3.3-70b
+Super Bowl 50 decided the NFL champion for what season?,2015,Super Bowl 50 was to determine the champion of the National Football League (NFL) for the 2015 season.,baseline,0.5023,False,0.6341,False,-1.0,2.43,squad,llama-3.3-70b
+Super Bowl 50 decided the NFL champion for what season?,2015,Super Bowl 50 decided the NFL champion for the 2015 season.,hcpc_v1,0.7112,False,0.6279,False,-1.0,2.19,squad,llama-3.3-70b
+Super Bowl 50 decided the NFL champion for what season?,2015,Super Bowl 50 was to determine the champion of the National Football League (NFL) for the 2015 season.,hcpc_v2,0.5023,False,0.6341,False,0.4842,2.46,squad,llama-3.3-70b
+What year did the Denver Broncos secure a Super Bowl title for the third time?,2015,I cannot find this information in the provided context.,baseline,0.5531,False,0.6795,False,-1.0,2.35,squad,llama-3.3-70b
+What year did the Denver Broncos secure a Super Bowl title for the third time?,2015,I cannot find this information in the provided context.,hcpc_v1,0.5531,False,0.6972,False,-1.0,2.31,squad,llama-3.3-70b
+What year did the Denver Broncos secure a Super Bowl title for the third time?,2015,I cannot find this information in the provided context.,hcpc_v2,0.5531,False,0.6795,False,0.6115,2.41,squad,llama-3.3-70b
+What city did Super Bowl 50 take place in?,Santa Clara,"The game was played at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. However, it does not explicitly state that the city where the game took place is Santa Clara, but rather that it is in the San Francisco Bay Area at Santa Clara.",baseline,0.7321,False,0.6392,False,-1.0,2.44,squad,llama-3.3-70b
+What city did Super Bowl 50 take place in?,Santa Clara,I cannot find this information in the provided context.,hcpc_v1,0.5531,False,0.6284,False,-1.0,2.27,squad,llama-3.3-70b
+What city did Super Bowl 50 take place in?,Santa Clara,"The game was played at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. However, it does not explicitly state that the city where the game took place is Santa Clara, but rather that it is in the San Francisco Bay Area at Santa Clara.",hcpc_v2,0.7321,False,0.6431,True,0.6083,2.45,squad,llama-3.3-70b
+What stadium did Super Bowl 50 take place in?,Levi's Stadium,"The game was played at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California.",baseline,0.8044,False,0.6693,False,-1.0,2.3,squad,llama-3.3-70b
+What stadium did Super Bowl 50 take place in?,Levi's Stadium,I cannot find this information in the provided context.,hcpc_v1,0.5531,False,0.6331,False,-1.0,2.18,squad,llama-3.3-70b
+What stadium did Super Bowl 50 take place in?,Levi's Stadium,"The game was played at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California.",hcpc_v2,0.8044,False,0.6693,False,0.6083,2.34,squad,llama-3.3-70b
+What was the final score of Super Bowl 50? ,24–10,"The final score of Super Bowl 50 was 24-10, with the Denver Broncos defeating the Carolina Panthers.",baseline,0.9185,False,0.584,False,-1.0,2.28,squad,llama-3.3-70b
+What was the final score of Super Bowl 50? ,24–10,I cannot find this information in the provided context.,hcpc_v1,0.5531,False,0.562,False,-1.0,2.28,squad,llama-3.3-70b
+What was the final score of Super Bowl 50? ,24–10,"The final score of Super Bowl 50 was 24-10, with the Denver Broncos defeating the Carolina Panthers.",hcpc_v2,0.9185,False,0.584,True,0.5147,2.65,squad,llama-3.3-70b
+"What month, day and year did Super Bowl 50 take place? ","February 7, 2016","February 7, 2016.",baseline,0.6229,False,0.625,False,-1.0,2.31,squad,llama-3.3-70b
+"What month, day and year did Super Bowl 50 take place? ","February 7, 2016",I cannot find this information in the provided context.,hcpc_v1,0.5531,False,0.6258,False,-1.0,3.49,squad,llama-3.3-70b
+"What month, day and year did Super Bowl 50 take place? ","February 7, 2016","February 7, 2016.",hcpc_v2,0.6229,False,0.625,True,0.5722,2.34,squad,llama-3.3-70b
+What year was Super Bowl 50?,2015,"The game was played on February 7, 2016.",baseline,0.8967,False,0.6133,False,-1.0,2.45,squad,llama-3.3-70b
+What year was Super Bowl 50?,2015,"The year of Super Bowl 50 is not explicitly stated in the context, but it can be inferred from the phrase ""for the 2015 season"". Therefore, the answer is that Super Bowl 50 was for the 2015 season, implying it took place in 2016.",hcpc_v1,0.713,False,0.6094,False,-1.0,2.7,squad,llama-3.3-70b
+What year was Super Bowl 50?,2015,"The game was played on February 7, 2016.",hcpc_v2,0.8967,False,0.6133,False,0.5294,2.33,squad,llama-3.3-70b
+What team was the AFC champion?,Denver Broncos,The Denver Broncos were the AFC champion.,baseline,0.6101,False,0.5751,False,-1.0,2.32,squad,llama-3.3-70b
+What team was the AFC champion?,Denver Broncos,The Denver Broncos were the AFC champion.,hcpc_v1,0.6101,False,0.6233,False,-1.0,2.19,squad,llama-3.3-70b
+What team was the AFC champion?,Denver Broncos,The Denver Broncos were the AFC champion.,hcpc_v2,0.6101,False,0.5751,False,0.5132,2.32,squad,llama-3.3-70b
+What team was the NFC champion?,Carolina Panthers,The Carolina Panthers were the NFC champion.,baseline,0.6462,False,0.6039,False,-1.0,2.32,squad,llama-3.3-70b
+What team was the NFC champion?,Carolina Panthers,The Carolina Panthers were the NFC champion.,hcpc_v1,0.6462,False,0.6636,False,-1.0,2.18,squad,llama-3.3-70b
+What team was the NFC champion?,Carolina Panthers,The Carolina Panthers were the NFC champion.,hcpc_v2,0.6462,False,0.6039,False,0.552,2.36,squad,llama-3.3-70b
+Who won Super Bowl 50?,Denver Broncos,"The Denver Broncos won Super Bowl 50, defeating the Carolina Panthers 24-10.",baseline,0.9687,False,0.6268,False,-1.0,2.34,squad,llama-3.3-70b
+Who won Super Bowl 50?,Denver Broncos,The Broncos won Super Bowl 50.,hcpc_v1,0.8937,False,0.5921,False,-1.0,2.19,squad,llama-3.3-70b
+Who won Super Bowl 50?,Denver Broncos,"The Denver Broncos won Super Bowl 50, defeating the Carolina Panthers 24-10.",hcpc_v2,0.9687,False,0.6246,True,0.5701,2.31,squad,llama-3.3-70b
+Super Bowl 50 determined the NFL champion for what season?,2015,Super Bowl 50 determined the champion of the National Football League (NFL) for the 2015 season.,baseline,0.6838,False,0.6236,False,-1.0,2.27,squad,llama-3.3-70b
+Super Bowl 50 determined the NFL champion for what season?,2015,The 2015 season.,hcpc_v1,0.6329,False,0.6186,False,-1.0,2.18,squad,llama-3.3-70b
+Super Bowl 50 determined the NFL champion for what season?,2015,Super Bowl 50 determined the champion of the National Football League (NFL) for the 2015 season.,hcpc_v2,0.6838,False,0.6236,True,0.4842,2.25,squad,llama-3.3-70b
+Which team won Super Bowl 50.,Denver Broncos,"The Denver Broncos won Super Bowl 50, defeating the Carolina Panthers 24-10.",baseline,0.9687,False,0.6228,False,-1.0,2.33,squad,llama-3.3-70b
+Which team won Super Bowl 50.,Denver Broncos,The Broncos won Super Bowl 50.,hcpc_v1,0.8937,False,0.6155,False,-1.0,2.19,squad,llama-3.3-70b
+Which team won Super Bowl 50.,Denver Broncos,"The Denver Broncos won Super Bowl 50, defeating the Carolina Panthers 24-10.",hcpc_v2,0.9687,False,0.6228,False,0.5701,2.37,squad,llama-3.3-70b
+Where was Super Bowl 50 held?,"Santa Clara, California.","The game was played at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California.",baseline,0.8044,False,0.6592,False,-1.0,2.52,squad,llama-3.3-70b
+Where was Super Bowl 50 held?,"Santa Clara, California.",I cannot find this information in the provided context.,hcpc_v1,0.5531,False,0.6366,False,-1.0,2.27,squad,llama-3.3-70b
+Where was Super Bowl 50 held?,"Santa Clara, California.","The game was played at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California.",hcpc_v2,0.8044,False,0.6592,False,0.6083,2.44,squad,llama-3.3-70b
+The name of the NFL championship game is?,Super Bowl,The name of the NFL championship game is the Super Bowl.,baseline,0.7754,False,0.5081,False,-1.0,2.3,squad,llama-3.3-70b
+The name of the NFL championship game is?,Super Bowl,The name of the NFL championship game is the Super Bowl.,hcpc_v1,0.7754,False,0.5113,False,-1.0,2.35,squad,llama-3.3-70b
+The name of the NFL championship game is?,Super Bowl,The name of the NFL championship game is the Super Bowl.,hcpc_v2,0.7754,False,0.5081,True,0.5192,2.36,squad,llama-3.3-70b
+What 2015 NFL team one the AFC playoff?,Denver Broncos,"The Denver Broncos denied the New England Patriots a chance to defend their title from Super Bowl XLIX by defeating them 20–18 in the AFC Championship Game, thus winning the AFC playoff.",baseline,0.9744,False,0.5456,False,-1.0,2.59,squad,llama-3.3-70b
+What 2015 NFL team one the AFC playoff?,Denver Broncos,The Broncos earned home-field advantage throughout the AFC playoffs and denied the New England Patriots a chance to defend their title by defeating them 20–18 in the AFC Championship Game. This implies the Broncos won the AFC playoff.,hcpc_v1,0.7382,False,0.5624,False,-1.0,2.49,squad,llama-3.3-70b
+What 2015 NFL team one the AFC playoff?,Denver Broncos,The Denver Broncos denied the New England Patriots a chance to defend their title from Super Bowl XLIX by defeating them 20–18 in the AFC Championship Game.,hcpc_v2,0.769,False,0.5456,False,0.5132,2.6,squad,llama-3.3-70b

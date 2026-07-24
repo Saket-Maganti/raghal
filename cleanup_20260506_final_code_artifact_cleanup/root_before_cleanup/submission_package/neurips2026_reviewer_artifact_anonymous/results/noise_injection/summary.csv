@@ -1,0 +1,13 @@
+dataset,model,n_noise,noise_rate,n_queries,faith_mean,faith_std,halluc_mean
+hotpotqa,mistral,0,0.0,30,0.6043,0.112,0.2333
+hotpotqa,mistral,1,0.333,30,0.5898,0.0911,0.2
+hotpotqa,mistral,2,0.667,30,0.6402,0.1018,0.1
+hotpotqa,mistral,3,1.0,30,0.6321,0.0957,0.1
+pubmedqa,mistral,0,0.0,30,0.5931,0.1252,0.1667
+pubmedqa,mistral,1,0.333,30,0.5921,0.1171,0.2
+pubmedqa,mistral,2,0.667,30,0.566,0.1084,0.3333
+pubmedqa,mistral,3,1.0,30,0.6302,0.0782,0.0667
+squad,mistral,0,0.0,30,0.7902,0.1548,0.0
+squad,mistral,1,0.333,30,0.7731,0.1552,0.0333
+squad,mistral,2,0.667,30,0.723,0.1438,0.0333
+squad,mistral,3,1.0,30,0.6355,0.1092,0.1

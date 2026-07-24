@@ -1,0 +1,99 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Pre-Specification}{1}{section.1}\protected@file@percent }
+\newlabel{supp:prereg}{{1}{1}{Pre-Specification}{section.1}{}}
+\citation{lewis2020rag}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Scaled Audit: Per-Seed Detail}{2}{section.2}\protected@file@percent }
+\newlabel{supp:scaled}{{2}{2}{Scaled Audit: Per-Seed Detail}{section.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Per-seed paired contrasts on SQuAD/Mistral, $n=500$ pairs per seed. Significance is paired Wilcoxon at $\alpha =0.05$.}}{2}{table.1}\protected@file@percent }
+\newlabel{tab:supp:scaled_per_seed}{{1}{2}{Per-seed paired contrasts on SQuAD/Mistral, $n=500$ pairs per seed. Significance is paired Wilcoxon at $\alpha =0.05$}{table.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Answer-Span/Control Diagnostic Details}{2}{section.3}\protected@file@percent }
+\newlabel{supp:span}{{3}{2}{Answer-Span/Control Diagnostic Details}{section.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Matched-context span and outcome summary.}}{3}{table.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Full span/control model comparison. CIs are bootstrap $95\%$ intervals from the script output.}}{3}{table.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Matched HIGH/LOW CCS faithfulness distribution.}}{3}{table.4}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Matched HIGH/LOW CCS hallucination rates as the score threshold varies.}}{3}{table.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Stronger Retriever Sanity Check}{4}{section.4}\protected@file@percent }
+\newlabel{supp:retriever}{{4}{4}{Stronger Retriever Sanity Check}{section.4}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Fixed-context re-encoding of the matched HIGH/LOW CCS pairs. The HIGH$>$LOW CCS ordering is preserved across all three embedders.}}{4}{table.6}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Paradox magnitude by embedding model from the completed multi-retriever generation artifact ($n=30$ per cell, original pilot sampling protocol re-run under different embedders). The SQuAD column shows that the paradox direction depends on retriever; PubMedQA preserves a positive paradox across all four embedders. \textit  {These rows are not directly comparable to the $n=2{,}500$ scaled-audit number in main paper \S  6 (baseline$-$v$1$ $= 0.011$): that table uses the audit-construction sampling and a single MiniLM retriever, whereas this table uses the small-$n$ pilot sampling and varies the embedder. Cross-table comparison should be same-row across embedders within this table, not this table vs.\ the main-paper scaled-audit table.}}}{4}{table.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Second-Generator Metric-Fragility Replication}{4}{section.5}\protected@file@percent }
+\newlabel{supp:qwen}{{5}{4}{Second-Generator Metric-Fragility Replication}{section.5}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Qwen$2.5$ fixed-generation metric means and raw score contrasts.}}{5}{table.8}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces Metric correlations on the Qwen$2.5$ fixed-generation rows ($n=300$).}}{5}{table.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Scorer Implementation and Standardized Contrasts}{6}{section.6}\protected@file@percent }
+\newlabel{supp:scorer_standardized}{{6}{6}{Scorer Implementation and Standardized Contrasts}{section.6}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {10}{\ignorespaces Standardized fixed-generation scorer-fragility contrasts on Mistral rows. Positive values mean the left condition scores higher than HCPC-v$1$.}}{6}{table.10}\protected@file@percent }
+\newlabel{tab:supp:standardized}{{10}{6}{Standardized fixed-generation scorer-fragility contrasts on Mistral rows. Positive values mean the left condition scores higher than HCPC-v$1$}{table.10}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Context-Conditioned NLI Rescoring (Subset)}{6}{section.7}\protected@file@percent }
+\newlabel{supp:context_conditioned_nli}{{7}{6}{Context-Conditioned NLI Rescoring (Subset)}{section.7}{}}
+\@writefile{toc}{\contentsline {paragraph}{Subset.}{6}{section*.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {11}{\ignorespaces Baseline$-$HCPC-v$1$ paired contrasts on the same fixed generations under five scorer input formats. Bootstrap $95\%$ CIs are $10{,}000$-resample paired bootstraps over matched query keys. The two legacy zero-shot proxies (rows 1--2) and the two corresponding context-conditioned NLI rescorings (rows 3--4) use the same backbone NLI weights and the same fixed answers; only the calling convention changes.}}{7}{table.11}\protected@file@percent }
+\newlabel{tab:supp:context_conditioned_contrasts}{{11}{7}{Baseline$-$HCPC-v$1$ paired contrasts on the same fixed generations under five scorer input formats. Bootstrap $95\%$ CIs are $10{,}000$-resample paired bootstraps over matched query keys. The two legacy zero-shot proxies (rows 1--2) and the two corresponding context-conditioned NLI rescorings (rows 3--4) use the same backbone NLI weights and the same fixed answers; only the calling convention changes}{table.11}{}}
+\@writefile{toc}{\contentsline {paragraph}{Reading.}{7}{section*.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Alignment with the $n=99$ calibration.}{7}{section*.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Subset is not the full table.}{7}{section*.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Source files.}{7}{section*.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {8}Long-Form/Synthesis Stress Test}{7}{section.8}\protected@file@percent }
+\newlabel{supp:longform}{{8}{7}{Long-Form/Synthesis Stress Test}{section.8}{}}
+\citation{asai2024selfrag}
+\@writefile{lot}{\contentsline {table}{\numberline {12}{\ignorespaces Long-form stress-test condition means.}}{8}{table.12}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {9}Self-RAG: Harness-Mismatched Appendix Baseline}{8}{section.9}\protected@file@percent }
+\newlabel{supp:selfrag}{{9}{8}{Self-RAG: Harness-Mismatched Appendix Baseline}{section.9}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {10}Coherence vs.\ Generic Retrieval Noise}{8}{section.10}\protected@file@percent }
+\newlabel{supp:noise}{{10}{8}{Coherence vs.\ Generic Retrieval Noise}{section.10}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {13}{\ignorespaces Faithfulness and similarity slopes per noise rate.}}{8}{table.13}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {11}Threshold Transfer: Full Sweep}{9}{section.11}\protected@file@percent }
+\newlabel{supp:threshold}{{11}{9}{Threshold Transfer: Full Sweep}{section.11}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {14}{\ignorespaces Full $5 \times 5$ threshold-transfer matrix. Each row gives the normalized recovery ratio of the $\tau $ tuned on the row dataset, evaluated on each of the five column datasets. Positive values are not always ``better'' when the baseline$-$v$1$ denominator is negative. Rows can be byte-identical across the eval columns when two tune datasets pick the same $\tau ^\ast $: tune-SQuAD and tune-HotpotQA both pick $\tau ^\ast = 0.3$, and tune-PubMedQA and tune-TriviaQA both pick $\tau ^\ast = 0.4$, so the off-diagonal columns coincide. This is a faithful consequence of the experiment (off-diagonal recovery only depends on the eval dataset and the selected $\tau $, not on which tune dataset selected it), not a pipeline bug.}}{9}{table.14}\protected@file@percent }
+\newlabel{tab:supp:threshold_transfer_full}{{14}{9}{Full $5 \times 5$ threshold-transfer matrix. Each row gives the normalized recovery ratio of the $\tau $ tuned on the row dataset, evaluated on each of the five column datasets. Positive values are not always ``better'' when the baseline$-$v$1$ denominator is negative. Rows can be byte-identical across the eval columns when two tune datasets pick the same $\tau ^\ast $: tune-SQuAD and tune-HotpotQA both pick $\tau ^\ast = 0.3$, and tune-PubMedQA and tune-TriviaQA both pick $\tau ^\ast = 0.4$, so the off-diagonal columns coincide. This is a faithful consequence of the experiment (off-diagonal recovery only depends on the eval dataset and the selected $\tau $, not on which tune dataset selected it), not a pipeline bug}{table.14}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {12}Completed Annotation Calibration ($n=99$)}{9}{section.12}\protected@file@percent }
+\newlabel{supp:human_calibration}{{12}{9}{Completed Annotation Calibration ($n=99$)}{section.12}{}}
+\@writefile{toc}{\contentsline {paragraph}{Adjudicated label distribution.}{9}{section*.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Reading.}{9}{section*.8}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {15}{\ignorespaces Annotation calibration agreement and per-scorer alignment on $n=99$ adjudicated examples. Spearman, Pearson, and Kendall correlations are between the ordered adjudicated label (\texttt  {unsupported} $<$ \texttt  {partially\_supported} $<$ \texttt  {supported}) and each scorer's continuous output on the same items. Bootstrap $95\%$ CIs are paired bootstrap intervals; the three Spearman CIs overlap, so the per-scorer ranking is suggestive only.}}{10}{table.15}\protected@file@percent }
+\newlabel{tab:supp:human_calibration}{{15}{10}{Annotation calibration agreement and per-scorer alignment on $n=99$ adjudicated examples. Spearman, Pearson, and Kendall correlations are between the ordered adjudicated label (\texttt {unsupported} $<$ \texttt {partially\_supported} $<$ \texttt {supported}) and each scorer's continuous output on the same items. Bootstrap $95\%$ CIs are paired bootstrap intervals; the three Spearman CIs overlap, so the per-scorer ranking is suggestive only}{table.15}{}}
+\@writefile{toc}{\contentsline {paragraph}{Source files.}{10}{section*.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {13}Completed Targeted Scorer-Disagreement Evaluation ($n=100$)}{10}{section.13}\protected@file@percent }
+\newlabel{supp:human_disagreement}{{13}{10}{Completed Targeted Scorer-Disagreement Evaluation ($n=100$)}{section.13}{}}
+\@writefile{toc}{\contentsline {paragraph}{Batch construction.}{10}{section*.10}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Annotation protocol.}{11}{section*.11}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Agreement and label distribution.}{11}{section*.12}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Scorer alignment with adjudicated labels.}{11}{section*.13}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {16}{\ignorespaces Two-rater adjudicated $n=100$ targeted scorer-disagreement evaluation. The slice is constructed to be adversarial for any single scorer; the ranking here is \emph  {not} the typical-row ranking from the $n=99$ calibration. Raw inter-rater agreement is $0.88$; Cohen's $\kappa = 0.721$. The adjudicated distribution is $74$ \texttt  {faithful} / $26$ \texttt  {hallucinated} / $0$ \texttt  {unclear}.}}{11}{table.16}\protected@file@percent }
+\newlabel{tab:supp:disagreement_alignment}{{16}{11}{Two-rater adjudicated $n=100$ targeted scorer-disagreement evaluation. The slice is constructed to be adversarial for any single scorer; the ranking here is \emph {not} the typical-row ranking from the $n=99$ calibration. Raw inter-rater agreement is $0.88$; Cohen's $\kappa = 0.721$. The adjudicated distribution is $74$ \texttt {faithful} / $26$ \texttt {hallucinated} / $0$ \texttt {unclear}}{table.16}{}}
+\@writefile{toc}{\contentsline {paragraph}{Reading.}{11}{section*.14}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Caveat.}{11}{section*.15}\protected@file@percent }
+\citation{saadfalcon2024ares}
+\citation{ru2024ragchecker}
+\citation{niu2024ragtruth}
+\citation{park2025mirage}
+\citation{tamber2025faithjudge}
+\citation{es2024ragas,honovich2022true,laban2022summac}
+\bibstyle{plainnat}
+\bibdata{references}
+\@writefile{toc}{\contentsline {paragraph}{Source files.}{12}{section*.16}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {14}Source Trace and Artifact Manifest}{12}{section.14}\protected@file@percent }
+\newlabel{supp:trace}{{14}{12}{Source Trace and Artifact Manifest}{section.14}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {17}{\ignorespaces Audit trace from claim to source file.}}{12}{table.17}\protected@file@percent }
+\newlabel{tab:supp:trace}{{17}{12}{Audit trace from claim to source file}{table.17}{}}
+\@writefile{toc}{\contentsline {paragraph}{Reproducibility.}{12}{section*.17}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {15}Resume and Compute Notes}{12}{section.15}\protected@file@percent }
+\newlabel{supp:kaggle}{{15}{12}{Resume and Compute Notes}{section.15}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {16}Positioning Against Recent RAG Evaluation Work}{12}{section.16}\protected@file@percent }
+\newlabel{supp:related_positioning}{{16}{12}{Positioning Against Recent RAG Evaluation Work}{section.16}{}}
+\bibcite{asai2024selfrag}{{1}{2024}{{Asai et~al.}}{{Asai, Wu, Wang, Sil, and Hajishirzi}}}
+\bibcite{es2024ragas}{{2}{2024}{{Es et~al.}}{{Es, James, Espinosa-Anke, and Schockaert}}}
+\bibcite{honovich2022true}{{3}{2022}{{Honovich et~al.}}{{Honovich, Aharoni, Herzig, Taitelbaum, Kukliansy, Cohen, Scialom, Szpektor, Hassidim, and Matias}}}
+\bibcite{laban2022summac}{{4}{2022}{{Laban et~al.}}{{Laban, Schnabel, Bennett, and Hearst}}}
+\bibcite{lewis2020rag}{{5}{2020}{{Lewis et~al.}}{{Lewis, Perez, Piktus, Petroni, Karpukhin, Goyal, K{\"u}ttler, Lewis, Yih, Rockt{\"a}schel, Riedel, and Kiela}}}
+\bibcite{niu2024ragtruth}{{6}{2024}{{Niu et~al.}}{{Niu, Wu, Zhu, Xu, Shum, Zhong, Song, and Zhang}}}
+\bibcite{park2025mirage}{{7}{2025}{{Park et~al.}}{{Park, Moon, Park, and Lim}}}
+\@writefile{lot}{\contentsline {table}{\numberline {18}{\ignorespaces Positioning against recent RAG evaluation work.}}{13}{table.18}\protected@file@percent }
+\newlabel{tab:supp:related_positioning}{{18}{13}{Positioning against recent RAG evaluation work}{table.18}{}}
+\bibcite{ru2024ragchecker}{{8}{2024}{{Ru et~al.}}{{Ru, Qiu, Hu, Zhang, Shi, Chang, Cheng, Wang, Sun, Li, Zhang, Wang, Jiang, He, Wang, Liu, Zhang, and Zhang}}}
+\bibcite{saadfalcon2024ares}{{9}{2024}{{Saad-Falcon et~al.}}{{Saad-Falcon, Khattab, Potts, and Zaharia}}}
+\bibcite{tamber2025faithjudge}{{10}{2025}{{Tamber et~al.}}{{Tamber, Bao, Xu, Luo, Kazi, Bae, Li, Mendelevitch, Qu, and Lin}}}
+\gdef \@abspage@last{14}

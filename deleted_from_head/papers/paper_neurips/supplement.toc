@@ -1,0 +1,32 @@
+\contentsline {section}{\numberline {1}Pre-Specification}{1}{section.1}%
+\contentsline {section}{\numberline {2}Scaled Audit: Per-Seed Detail}{2}{section.2}%
+\contentsline {section}{\numberline {3}Answer-Span/Control Diagnostic Details}{2}{section.3}%
+\contentsline {section}{\numberline {4}Stronger Retriever Sanity Check}{4}{section.4}%
+\contentsline {section}{\numberline {5}Second-Generator Metric-Fragility Replication}{4}{section.5}%
+\contentsline {section}{\numberline {6}Scorer Implementation and Standardized Contrasts}{6}{section.6}%
+\contentsline {section}{\numberline {7}Context-Conditioned NLI Rescoring (Subset)}{6}{section.7}%
+\contentsline {paragraph}{Subset.}{6}{section*.2}%
+\contentsline {paragraph}{Reading.}{7}{section*.3}%
+\contentsline {paragraph}{Alignment with the $n=99$ calibration.}{7}{section*.4}%
+\contentsline {paragraph}{Subset is not the full table.}{7}{section*.5}%
+\contentsline {paragraph}{Source files.}{7}{section*.6}%
+\contentsline {section}{\numberline {8}Long-Form/Synthesis Stress Test}{7}{section.8}%
+\contentsline {section}{\numberline {9}Self-RAG: Harness-Mismatched Appendix Baseline}{8}{section.9}%
+\contentsline {section}{\numberline {10}Coherence vs.\ Generic Retrieval Noise}{8}{section.10}%
+\contentsline {section}{\numberline {11}Threshold Transfer: Full Sweep}{9}{section.11}%
+\contentsline {section}{\numberline {12}Completed Annotation Calibration ($n=99$)}{9}{section.12}%
+\contentsline {paragraph}{Adjudicated label distribution.}{9}{section*.7}%
+\contentsline {paragraph}{Reading.}{9}{section*.8}%
+\contentsline {paragraph}{Source files.}{10}{section*.9}%
+\contentsline {section}{\numberline {13}Completed Targeted Scorer-Disagreement Evaluation ($n=100$)}{10}{section.13}%
+\contentsline {paragraph}{Batch construction.}{10}{section*.10}%
+\contentsline {paragraph}{Annotation protocol.}{11}{section*.11}%
+\contentsline {paragraph}{Agreement and label distribution.}{11}{section*.12}%
+\contentsline {paragraph}{Scorer alignment with adjudicated labels.}{11}{section*.13}%
+\contentsline {paragraph}{Reading.}{11}{section*.14}%
+\contentsline {paragraph}{Caveat.}{11}{section*.15}%
+\contentsline {paragraph}{Source files.}{12}{section*.16}%
+\contentsline {section}{\numberline {14}Source Trace and Artifact Manifest}{12}{section.14}%
+\contentsline {paragraph}{Reproducibility.}{12}{section*.17}%
+\contentsline {section}{\numberline {15}Resume and Compute Notes}{12}{section.15}%
+\contentsline {section}{\numberline {16}Positioning Against Recent RAG Evaluation Work}{12}{section.16}%

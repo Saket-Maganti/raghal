@@ -1,0 +1,10 @@
+{
+  "dataset": "squad",
+  "model": "mistral",
+  "faith_base": "0.942",
+  "faith_v1": "0.478",
+  "faith_v2": "0.942",
+  "gap": "+0.464",
+  "question_raw": "What city did Super Bowl 50 take place in?",
+  "ground_truth_raw": "Santa Clara"
+}

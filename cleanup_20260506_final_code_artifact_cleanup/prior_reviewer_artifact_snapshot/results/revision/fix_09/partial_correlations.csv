@@ -1,0 +1,2 @@
+n,controls,partial_pearson_r,partial_pearson_p,partial_spearman_rho,partial_spearman_p,survives
+60,none,0.360029,0.004720263182275845,0.481454,9.844253483315605e-05,True

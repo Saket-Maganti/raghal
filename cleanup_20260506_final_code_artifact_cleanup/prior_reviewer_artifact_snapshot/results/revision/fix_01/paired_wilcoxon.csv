@@ -1,0 +1,2 @@
+dataset,n_pairs,mean_faith_high,mean_faith_low,mean_diff_high_minus_low,wilcoxon_stat,wilcoxon_p_greater,cohens_dz,boot_ci95_lo,boot_ci95_hi,hallucination_rate_high,hallucination_rate_low,matched_odds_ratio_low_vs_high,discordant_low_only,discordant_high_only,mean_similarity_delta_high_minus_low,max_abs_similarity_delta,similarity_wilcoxon_stat,similarity_wilcoxon_p_two_sided,h1_supported
+squad,200,0.636195,0.638587,-0.002392,8638.5,0.6282676119093188,-0.017086,-0.021651,0.016819,0.165,0.09,0.387755,9,24,0.00211,0.018512,7067.0,0.0002728841580247049,False

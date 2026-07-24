@@ -1,0 +1,482 @@
+[
+  {
+    "model": "mistral",
+    "dataset": "pubmedqa",
+    "chunk_size": 256,
+    "top_k": 3,
+    "prompt_strategy": "cot",
+    "nli_faithfulness": 0.6004,
+    "hallucination_rate": 0.2,
+    "n_samples": 50
+  },
+  {
+    "model": "mistral",
+    "dataset": "pubmedqa",
+    "chunk_size": 1024,
+    "top_k": 3,
+    "prompt_strategy": "strict",
+    "nli_faithfulness": 0.5998,
+    "hallucination_rate": 0.16,
+    "n_samples": 50
+  },
+  {
+    "model": "mistral",
+    "dataset": "pubmedqa",
+    "chunk_size": 1024,
+    "top_k": 3,
+    "prompt_strategy": "cot",
+    "nli_faithfulness": 0.5978,
+    "hallucination_rate": 0.24,
+    "n_samples": 50
+  },
+  {
+    "model": "mistral",
+    "dataset": "pubmedqa",
+    "chunk_size": 512,
+    "top_k": 5,
+    "prompt_strategy": "cot",
+    "nli_faithfulness": 0.5967,
+    "hallucination_rate": 0.22,
+    "n_samples": 50
+  },
+  {
+    "model": "mistral",
+    "dataset": "pubmedqa",
+    "chunk_size": 512,
+    "top_k": 3,
+    "prompt_strategy": "strict",
+    "nli_faithfulness": 0.589,
+    "hallucination_rate": 0.3,
+    "n_samples": 50
+  },
+  {
+    "model": "mistral",
+    "dataset": "pubmedqa",
+    "chunk_size": 256,
+    "top_k": 5,
+    "prompt_strategy": "strict",
+    "nli_faithfulness": 0.5852,
+    "hallucination_rate": 0.24,
+    "n_samples": 50
+  },
+  {
+    "model": "mistral",
+    "dataset": "pubmedqa",
+    "chunk_size": 256,
+    "top_k": 3,
+    "prompt_strategy": "strict",
+    "nli_faithfulness": 0.5716,
+    "hallucination_rate": 0.24,
+    "n_samples": 50
+  },
+  {
+    "model": "mistral",
+    "dataset": "pubmedqa",
+    "chunk_size": 512,
+    "top_k": 5,
+    "prompt_strategy": "strict",
+    "nli_faithfulness": 0.569,
+    "hallucination_rate": 0.3,
+    "n_samples": 50
+  },
+  {
+    "model": "mistral",
+    "dataset": "pubmedqa",
+    "chunk_size": 1024,
+    "top_k": 5,
+    "prompt_strategy": "strict",
+    "nli_faithfulness": 0.5649,
+    "hallucination_rate": 0.32,
+    "n_samples": 50
+  },
+  {
+    "model": "mistral",
+    "dataset": "pubmedqa",
+    "chunk_size": 1024,
+    "top_k": 5,
+    "prompt_strategy": "cot",
+    "nli_faithfulness": 0.5647,
+    "hallucination_rate": 0.3,
+    "n_samples": 50
+  },
+  {
+    "model": "mistral",
+    "dataset": "pubmedqa",
+    "chunk_size": 512,
+    "top_k": 3,
+    "prompt_strategy": "cot",
+    "nli_faithfulness": 0.5644,
+    "hallucination_rate": 0.32,
+    "n_samples": 50
+  },
+  {
+    "model": "mistral",
+    "dataset": "pubmedqa",
+    "chunk_size": 256,
+    "top_k": 5,
+    "prompt_strategy": "cot",
+    "nli_faithfulness": 0.5618,
+    "hallucination_rate": 0.38,
+    "n_samples": 50
+  },
+  {
+    "model": "mistral",
+    "dataset": "squad",
+    "chunk_size": 1024,
+    "top_k": 3,
+    "prompt_strategy": "strict",
+    "nli_faithfulness": 0.7775,
+    "hallucination_rate": 0.03,
+    "n_samples": 100
+  },
+  {
+    "model": "mistral",
+    "dataset": "squad",
+    "chunk_size": 512,
+    "top_k": 5,
+    "prompt_strategy": "strict",
+    "nli_faithfulness": 0.7718,
+    "hallucination_rate": 0.04,
+    "n_samples": 100
+  },
+  {
+    "model": "mistral",
+    "dataset": "squad",
+    "chunk_size": 1024,
+    "top_k": 5,
+    "prompt_strategy": "cot",
+    "nli_faithfulness": 0.7696,
+    "hallucination_rate": 0.04,
+    "n_samples": 100
+  },
+  {
+    "model": "mistral",
+    "dataset": "squad",
+    "chunk_size": 1024,
+    "top_k": 3,
+    "prompt_strategy": "cot",
+    "nli_faithfulness": 0.7628,
+    "hallucination_rate": 0.05,
+    "n_samples": 100
+  },
+  {
+    "model": "mistral",
+    "dataset": "squad",
+    "chunk_size": 1024,
+    "top_k": 5,
+    "prompt_strategy": "strict",
+    "nli_faithfulness": 0.7606,
+    "hallucination_rate": 0.03,
+    "n_samples": 100
+  },
+  {
+    "model": "mistral",
+    "dataset": "squad",
+    "chunk_size": 256,
+    "top_k": 5,
+    "prompt_strategy": "strict",
+    "nli_faithfulness": 0.757,
+    "hallucination_rate": 0.07,
+    "n_samples": 100
+  },
+  {
+    "model": "mistral",
+    "dataset": "squad",
+    "chunk_size": 512,
+    "top_k": 3,
+    "prompt_strategy": "strict",
+    "nli_faithfulness": 0.7565,
+    "hallucination_rate": 0.05,
+    "n_samples": 100
+  },
+  {
+    "model": "mistral",
+    "dataset": "squad",
+    "chunk_size": 512,
+    "top_k": 5,
+    "prompt_strategy": "cot",
+    "nli_faithfulness": 0.7518,
+    "hallucination_rate": 0.03,
+    "n_samples": 100
+  },
+  {
+    "model": "mistral",
+    "dataset": "squad",
+    "chunk_size": 512,
+    "top_k": 3,
+    "prompt_strategy": "cot",
+    "nli_faithfulness": 0.7391,
+    "hallucination_rate": 0.06,
+    "n_samples": 100
+  },
+  {
+    "model": "mistral",
+    "dataset": "squad",
+    "chunk_size": 256,
+    "top_k": 3,
+    "prompt_strategy": "strict",
+    "nli_faithfulness": 0.7184,
+    "hallucination_rate": 0.08,
+    "n_samples": 100
+  },
+  {
+    "model": "mistral",
+    "dataset": "squad",
+    "chunk_size": 256,
+    "top_k": 5,
+    "prompt_strategy": "cot",
+    "nli_faithfulness": 0.7165,
+    "hallucination_rate": 0.11,
+    "n_samples": 100
+  },
+  {
+    "model": "mistral",
+    "dataset": "squad",
+    "chunk_size": 256,
+    "top_k": 3,
+    "prompt_strategy": "cot",
+    "nli_faithfulness": 0.7074,
+    "hallucination_rate": 0.07,
+    "n_samples": 100
+  },
+  {
+    "model": "llama3",
+    "dataset": "squad",
+    "chunk_size": 256,
+    "top_k": 3,
+    "prompt_strategy": "strict",
+    "nli_faithfulness": 0.7105,
+    "hallucination_rate": 0.02,
+    "n_samples": 100
+  },
+  {
+    "model": "llama3",
+    "dataset": "squad",
+    "chunk_size": 256,
+    "top_k": 3,
+    "prompt_strategy": "cot",
+    "nli_faithfulness": 0.6843,
+    "hallucination_rate": 0.06,
+    "n_samples": 100
+  },
+  {
+    "model": "llama3",
+    "dataset": "squad",
+    "chunk_size": 256,
+    "top_k": 5,
+    "prompt_strategy": "strict",
+    "nli_faithfulness": 0.7474,
+    "hallucination_rate": 0.04,
+    "n_samples": 100
+  },
+  {
+    "model": "llama3",
+    "dataset": "squad",
+    "chunk_size": 256,
+    "top_k": 5,
+    "prompt_strategy": "cot",
+    "nli_faithfulness": 0.7315,
+    "hallucination_rate": 0.06,
+    "n_samples": 100
+  },
+  {
+    "model": "llama3",
+    "dataset": "squad",
+    "chunk_size": 512,
+    "top_k": 3,
+    "prompt_strategy": "strict",
+    "nli_faithfulness": 0.7518,
+    "hallucination_rate": 0.03,
+    "n_samples": 100
+  },
+  {
+    "model": "llama3",
+    "dataset": "squad",
+    "chunk_size": 512,
+    "top_k": 3,
+    "prompt_strategy": "cot",
+    "nli_faithfulness": 0.7403,
+    "hallucination_rate": 0.01,
+    "n_samples": 100
+  },
+  {
+    "model": "llama3",
+    "dataset": "squad",
+    "chunk_size": 512,
+    "top_k": 5,
+    "prompt_strategy": "strict",
+    "nli_faithfulness": 0.7663,
+    "hallucination_rate": 0.02,
+    "n_samples": 100
+  },
+  {
+    "model": "llama3",
+    "dataset": "squad",
+    "chunk_size": 512,
+    "top_k": 5,
+    "prompt_strategy": "cot",
+    "nli_faithfulness": 0.7536,
+    "hallucination_rate": 0.01,
+    "n_samples": 100
+  },
+  {
+    "model": "llama3",
+    "dataset": "squad",
+    "chunk_size": 1024,
+    "top_k": 3,
+    "prompt_strategy": "strict",
+    "nli_faithfulness": 0.769,
+    "hallucination_rate": 0.02,
+    "n_samples": 100
+  },
+  {
+    "model": "llama3",
+    "dataset": "squad",
+    "chunk_size": 1024,
+    "top_k": 3,
+    "prompt_strategy": "cot",
+    "nli_faithfulness": 0.7412,
+    "hallucination_rate": 0.01,
+    "n_samples": 100
+  },
+  {
+    "model": "llama3",
+    "dataset": "squad",
+    "chunk_size": 1024,
+    "top_k": 5,
+    "prompt_strategy": "strict",
+    "nli_faithfulness": 0.7752,
+    "hallucination_rate": 0.0,
+    "n_samples": 100
+  },
+  {
+    "model": "llama3",
+    "dataset": "squad",
+    "chunk_size": 1024,
+    "top_k": 5,
+    "prompt_strategy": "cot",
+    "nli_faithfulness": 0.751,
+    "hallucination_rate": 0.01,
+    "n_samples": 100
+  },
+  {
+    "model": "llama3",
+    "dataset": "pubmedqa",
+    "chunk_size": 256,
+    "top_k": 3,
+    "prompt_strategy": "strict",
+    "nli_faithfulness": 0.6015,
+    "hallucination_rate": 0.26,
+    "n_samples": 50
+  },
+  {
+    "model": "llama3",
+    "dataset": "pubmedqa",
+    "chunk_size": 256,
+    "top_k": 3,
+    "prompt_strategy": "cot",
+    "nli_faithfulness": 0.6199,
+    "hallucination_rate": 0.14,
+    "n_samples": 50
+  },
+  {
+    "model": "llama3",
+    "dataset": "pubmedqa",
+    "chunk_size": 256,
+    "top_k": 5,
+    "prompt_strategy": "strict",
+    "nli_faithfulness": 0.6233,
+    "hallucination_rate": 0.1,
+    "n_samples": 50
+  },
+  {
+    "model": "llama3",
+    "dataset": "pubmedqa",
+    "chunk_size": 256,
+    "top_k": 5,
+    "prompt_strategy": "cot",
+    "nli_faithfulness": 0.6158,
+    "hallucination_rate": 0.14,
+    "n_samples": 50
+  },
+  {
+    "model": "llama3",
+    "dataset": "pubmedqa",
+    "chunk_size": 512,
+    "top_k": 3,
+    "prompt_strategy": "strict",
+    "nli_faithfulness": 0.5958,
+    "hallucination_rate": 0.18,
+    "n_samples": 50
+  },
+  {
+    "model": "llama3",
+    "dataset": "pubmedqa",
+    "chunk_size": 512,
+    "top_k": 3,
+    "prompt_strategy": "cot",
+    "nli_faithfulness": 0.5858,
+    "hallucination_rate": 0.2,
+    "n_samples": 50
+  },
+  {
+    "model": "llama3",
+    "dataset": "pubmedqa",
+    "chunk_size": 512,
+    "top_k": 5,
+    "prompt_strategy": "strict",
+    "nli_faithfulness": 0.5694,
+    "hallucination_rate": 0.28,
+    "n_samples": 50
+  },
+  {
+    "model": "llama3",
+    "dataset": "pubmedqa",
+    "chunk_size": 512,
+    "top_k": 5,
+    "prompt_strategy": "cot",
+    "nli_faithfulness": 0.5894,
+    "hallucination_rate": 0.1,
+    "n_samples": 50
+  },
+  {
+    "model": "llama3",
+    "dataset": "pubmedqa",
+    "chunk_size": 1024,
+    "top_k": 3,
+    "prompt_strategy": "strict",
+    "nli_faithfulness": 0.5868,
+    "hallucination_rate": 0.16,
+    "n_samples": 50
+  },
+  {
+    "model": "llama3",
+    "dataset": "pubmedqa",
+    "chunk_size": 1024,
+    "top_k": 3,
+    "prompt_strategy": "cot",
+    "nli_faithfulness": 0.5886,
+    "hallucination_rate": 0.16,
+    "n_samples": 50
+  },
+  {
+    "model": "llama3",
+    "dataset": "pubmedqa",
+    "chunk_size": 1024,
+    "top_k": 5,
+    "prompt_strategy": "strict",
+    "nli_faithfulness": 0.5817,
+    "hallucination_rate": 0.26,
+    "n_samples": 50
+  },
+  {
+    "model": "llama3",
+    "dataset": "pubmedqa",
+    "chunk_size": 1024,
+    "top_k": 5,
+    "prompt_strategy": "cot",
+    "nli_faithfulness": 0.5899,
+    "hallucination_rate": 0.16,
+    "n_samples": 50
+  }
+]

@@ -1,0 +1,2 @@
+chunk_size,top_k,prompt_strategy,nli_faithfulness,hallucination_rate,n_samples
+256,5,strict,0.7254,0.1,30

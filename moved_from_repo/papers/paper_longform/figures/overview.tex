@@ -1,0 +1,43 @@
+\begin{figure}[H]
+\centering
+\resizebox{\linewidth}{!}{%
+\begin{tikzpicture}[
+  font=\small,
+  node distance=1.5cm and 1.3cm,
+  panel/.style={draw, rounded corners=3pt, thick, minimum width=3.0cm, minimum height=2.0cm, align=left, inner sep=8pt},
+  icon/.style={circle, draw, thick, minimum size=7mm, inner sep=0pt, font=\bfseries},
+  flow/.style={-{Stealth[length=3mm]}, very thick, draw=black!70}
+]
+\node[panel, fill=blue!7] (q1) {
+  \textbf{Question}\\
+  Does better retrieval always lead to more faithful generation?};
+\node[panel, fill=green!7, right=of q1] (q2) {
+  \textbf{Controlled study}\\
+  6,050+ queries\\
+  SQuAD and PubMedQA\\
+  Mistral-7B and Llama-3-8B};
+\node[panel, fill=orange!10, right=of q2] (q3) {
+  \textbf{Retrieval interventions}\\
+  Fixed chunking\\
+  HCPC-v1 / HCPC-v2\\
+  Cross-encoder re-ranking};
+\node[panel, fill=red!8, right=of q3] (q4) {
+  \textbf{Main finding}\\
+  Retrieval gains and faithfulness gains diverge when context coherence is weak};
+
+\node[icon, fill=blue!20, above left=2mm and -2mm of q1.north west] {1};
+\node[icon, fill=green!20, above left=2mm and -2mm of q2.north west] {2};
+\node[icon, fill=orange!25, above left=2mm and -2mm of q3.north west] {3};
+\node[icon, fill=red!20, above left=2mm and -2mm of q4.north west] {4};
+
+\draw[flow] (q1) -- (q2);
+\draw[flow] (q2) -- (q3);
+\draw[flow] (q3) -- (q4);
+
+\node[below=0.85cm of q2, align=center, text width=5.5cm] (takeaway1) {\textbf{SQuAD:} naive refinement fragments otherwise coherent evidence and reduces faithfulness.};
+\node[below=0.85cm of q3, align=center, text width=5.5cm] (takeaway2) {\textbf{PubMedQA:} low-coherence retrieval from a general-domain encoder can make RAG less reliable than zero-shot prompting.};
+\end{tikzpicture}%
+}
+\caption{Study overview. We test whether standard retrieval-side improvements transfer to answer faithfulness. Across both datasets, the answer depends less on raw similarity gains than on whether the retrieved set remains coherent enough for the generator to use safely.}
+\label{fig:overview}
+\end{figure}

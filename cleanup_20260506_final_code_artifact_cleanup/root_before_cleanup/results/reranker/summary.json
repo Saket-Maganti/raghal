@@ -1,0 +1,119 @@
+[
+  {
+    "model": "mistral",
+    "dataset": "pubmedqa",
+    "chunk_size": 1024,
+    "condition": "reranked",
+    "nli_faithfulness": 0.5884,
+    "hallucination_rate": 0.18,
+    "n_samples": 50
+  },
+  {
+    "model": "llama3",
+    "dataset": "squad",
+    "chunk_size": 256,
+    "condition": "baseline",
+    "nli_faithfulness": 0.7233,
+    "hallucination_rate": 0.05,
+    "n_samples": 100
+  },
+  {
+    "model": "llama3",
+    "dataset": "squad",
+    "chunk_size": 256,
+    "condition": "reranked",
+    "nli_faithfulness": 0.7265,
+    "hallucination_rate": 0.02,
+    "n_samples": 100
+  },
+  {
+    "model": "llama3",
+    "dataset": "squad",
+    "chunk_size": 512,
+    "condition": "baseline",
+    "nli_faithfulness": 0.7523,
+    "hallucination_rate": 0.05,
+    "n_samples": 100
+  },
+  {
+    "model": "llama3",
+    "dataset": "squad",
+    "chunk_size": 512,
+    "condition": "reranked",
+    "nli_faithfulness": 0.7544,
+    "hallucination_rate": 0.02,
+    "n_samples": 100
+  },
+  {
+    "model": "llama3",
+    "dataset": "squad",
+    "chunk_size": 1024,
+    "condition": "baseline",
+    "nli_faithfulness": 0.7739,
+    "hallucination_rate": 0.01,
+    "n_samples": 100
+  },
+  {
+    "model": "llama3",
+    "dataset": "squad",
+    "chunk_size": 1024,
+    "condition": "reranked",
+    "nli_faithfulness": 0.7619,
+    "hallucination_rate": 0.01,
+    "n_samples": 100
+  },
+  {
+    "model": "llama3",
+    "dataset": "pubmedqa",
+    "chunk_size": 256,
+    "condition": "baseline",
+    "nli_faithfulness": 0.6136,
+    "hallucination_rate": 0.18,
+    "n_samples": 50
+  },
+  {
+    "model": "llama3",
+    "dataset": "pubmedqa",
+    "chunk_size": 256,
+    "condition": "reranked",
+    "nli_faithfulness": 0.6455,
+    "hallucination_rate": 0.08,
+    "n_samples": 50
+  },
+  {
+    "model": "llama3",
+    "dataset": "pubmedqa",
+    "chunk_size": 512,
+    "condition": "baseline",
+    "nli_faithfulness": 0.5862,
+    "hallucination_rate": 0.2,
+    "n_samples": 50
+  },
+  {
+    "model": "llama3",
+    "dataset": "pubmedqa",
+    "chunk_size": 512,
+    "condition": "reranked",
+    "nli_faithfulness": 0.5957,
+    "hallucination_rate": 0.26,
+    "n_samples": 50
+  },
+  {
+    "model": "llama3",
+    "dataset": "pubmedqa",
+    "chunk_size": 1024,
+    "condition": "baseline",
+    "nli_faithfulness": 0.5853,
+    "hallucination_rate": 0.18,
+    "n_samples": 50
+  },
+  {
+    "model": "llama3",
+    "dataset": "pubmedqa",
+    "chunk_size": 1024,
+    "condition": "reranked",
+    "nli_faithfulness": 0.5806,
+    "hallucination_rate": 0.16,
+    "n_samples": 50
+  }
+]

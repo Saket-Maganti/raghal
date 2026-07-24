@@ -1,0 +1,7 @@
+test,factor,F,p,significant
+chunk_size_squad,chunk_size,19.7203,0.0,True
+chunk_size_pubmedqa,chunk_size,3.6636,0.026609,True
+prompt_strategy_squad,prompt_strategy,0.046,0.830261,False
+prompt_strategy_pubmedqa,prompt_strategy,1.1224,0.290119,False
+top_k_squad,top_k,2.9175,0.08849,False
+top_k_pubmedqa,top_k,2.3231,0.128352,False

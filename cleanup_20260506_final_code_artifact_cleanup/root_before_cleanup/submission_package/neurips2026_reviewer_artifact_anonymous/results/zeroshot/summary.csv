@@ -1,0 +1,5 @@
+model,dataset,nli_faithfulness,hallucination_rate,n_samples
+mistral,squad,0.6895,0.05,100
+mistral,pubmedqa,0.6118,0.08,50
+llama3,squad,0.6967,0.13,100
+llama3,pubmedqa,0.611,0.04,50

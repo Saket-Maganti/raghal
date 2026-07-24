@@ -1,0 +1,29 @@
+\begin{figure}[!htb]
+\centering
+\resizebox{0.88\linewidth}{!}{%
+\begin{tikzpicture}[
+  font=\small,
+  chunk/.style={draw, rounded corners=3pt, minimum width=4.2cm, minimum height=9mm, align=center, thick, inner sep=4pt},
+  flow/.style={-{Stealth[length=3mm]}, very thick}
+]
+\node[font=\bfseries] at (0,3.5) {Before refinement};
+\node[chunk, fill=green!12] (a1) at (0,2.5) {Chunk 1\\construction history};
+\node[chunk, fill=green!12] (a2) at (0,1.15) {Chunk 2\\architectural details};
+\node[chunk, fill=yellow!14] (a3) at (0,-0.2) {Chunk 3\\mixed evidence, sim $= 0.38$};
+
+\draw[flow] (2.7,1.15) -- (4.6,1.15);
+\node[align=center] at (3.65,2.0) {HCPC-v1\\replacement};
+
+\node[font=\bfseries] at (7.2,3.5) {After naive refinement};
+\node[chunk, fill=green!12] (b1) at (7.2,2.5) {Chunk 1\\unchanged};
+\node[chunk, fill=green!12] (b2) at (7.2,1.15) {Chunk 2\\unchanged};
+\node[chunk, fill=red!14] (b3) at (7.2,-0.2) {Sub-chunk only\\fire damage, sim $= 0.52$};
+
+\draw[red!70, thick, decorate, decoration={zigzag, amplitude=2pt, segment length=4pt}]
+  ([xshift=1mm]b2.south east) -- ([xshift=1mm]b3.north east);
+\node[red!70, align=left, anchor=west] at (9.5,0.45) {Lost bridge between\\architecture and fire evidence};
+\end{tikzpicture}%
+}
+\caption{Why naive refinement can fail. Replacing a broad but coherent passage with a narrow high-similarity fragment improves local matching while removing the connective evidence the generator needed for a grounded answer.}
+\label{fig:failure_case}
+\end{figure}

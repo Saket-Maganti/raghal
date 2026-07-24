@@ -1,0 +1,46 @@
+% Fix 6 - baseline head-to-head.
+
+\subsection{Head-to-Head Baselines}
+\label{sec:fix06_baselines}
+
+We compare HCPC-v2 with CRAG and a two-level RAPTOR implementation in the
+same generation/scoring harness on \textsc{SQuAD} and HotpotQA. The table
+reports faithfulness, hallucination rate, p99 latency, per-1k-query wall
+clock cost, and indexing cost. A faithfulness-vs-latency Pareto plot
+summarizes the deployment trade-off.
+
+The no-Self-RAG Kaggle T4$\times$2 run completed with 1,200 evaluations:
+200 queries per dataset for each of HCPC-v2, CRAG, and RAPTOR-2L. The
+downloaded package does not include Self-RAG smoke or full-run outputs, so
+Self-RAG remains an optional follow-up rather than a populated row.
+
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{llrrrrr}
+\toprule
+Dataset & Method & $n$ & Faith. & Halluc. & Mean lat. & p99 lat. \\
+ & & & & & (ms) & (ms) \\
+\midrule
+HotpotQA & CRAG & 200 & 0.643 & 0.105 & 1941 & 4255 \\
+HotpotQA & HCPC-v2 & 200 & 0.633 & 0.125 & 2289 & 5545 \\
+HotpotQA & RAPTOR-2L & 200 & 0.631 & 0.130 & 2414 & 5074 \\
+\textsc{SQuAD} & CRAG & 200 & 0.698 & 0.120 & 1440 & 5111 \\
+\textsc{SQuAD} & HCPC-v2 & 200 & 0.708 & 0.125 & 1720 & 5400 \\
+\textsc{SQuAD} & RAPTOR-2L & 200 & 0.710 & 0.125 & 1714 & 4442 \\
+\bottomrule
+\end{tabular}
+\caption{Fix 6 no-Self-RAG head-to-head comparison. HCPC-v2, CRAG, and
+RAPTOR-2L are evaluated under the same generator and scoring harness.}
+\label{tab:fix06_noselfrag}
+\end{table}
+
+The comparison does not support a blanket dominance claim for HCPC-v2. On
+\textsc{SQuAD}, HCPC-v2 and RAPTOR-2L are effectively tied in faithfulness
+and hallucination rate, with RAPTOR-2L ahead by only 0.0016 faithfulness
+points. On HotpotQA, CRAG is strongest among the no-Self-RAG methods, with
+higher faithfulness, lower hallucination rate, and lower mean latency than
+HCPC-v2 or RAPTOR-2L. RAPTOR also requires a substantial offline tree-build
+cost: 134--175 seconds in this run versus roughly 8 seconds for the dense base
+index. The paper should therefore frame HCPC-v2 as competitive in this
+head-to-head rather than uniformly superior.

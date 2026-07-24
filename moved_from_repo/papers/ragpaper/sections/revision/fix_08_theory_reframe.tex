@@ -1,0 +1,20 @@
+% Fix 8 - information-theory reframe.
+
+\section{Information-Theoretic Consistency Check}
+\label{sec:fix08_theory_reframe}
+
+% TRACKED-CHANGES: Rename old "Information-Theoretic Account" section.
+% Why: reviewer concern that Proposition 1/Theorem 1 overclaim causal
+% prevalence and effect magnitude.
+
+The formal analysis is a consistency check, not a proof that the paradox is
+prevalent or large in arbitrary RAG systems. Proposition 1 states a
+sufficient structural condition under which preserving set-level context can
+help faithfulness; it does not prove that the condition occurs frequently.
+Theorem 1 similarly shows that a coherence-sensitive generator can suffer
+when refinement fragments context at fixed relevance; it does not establish
+that all generators instantiate this mechanism.
+
+Predictive claims are therefore empirical and are evaluated in the matched
+intervention of Section~\ref{sec:causal_intervention}. If that intervention
+is null, the formal section should be read only as a possible mechanism.

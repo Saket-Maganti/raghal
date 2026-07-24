@@ -1,0 +1,19 @@
+% Fix 2 - scaled headline-cell replacement.
+% TRACKED-CHANGES: Replace the n=30 Table 1 values with the CSV-generated
+% values from results/revision/fix_02/headline_table.csv after execution.
+
+\subsection{Scaled Headline Cell}
+\label{sec:fix02_scaled_headline}
+
+% Why changed: reviewer objected that the original SQuAD/Mistral headline
+% table used only n=30. This subsection records the replacement protocol and
+% points to the new uncertainty estimates.
+
+We rerun the headline \textsc{SQuAD}/Mistral-7B cell at $n=500$ queries
+across five fixed seeds, preserving the original HCPC-v1 and HCPC-v2
+thresholds. Continuous metrics report 10{,}000-resample bootstrap 95\%
+confidence intervals; hallucination rates report Wilson score intervals.
+The old $n=30$ cell is treated as a pilot and is not used for the
+resubmission headline.
+
+% RESULTS-PENDING: insert table from results/revision/fix_02/headline_table.csv.

@@ -1,0 +1,301 @@
+dataset,tau,condition,question,ground_truth,faithfulness_score,is_hallucination,gate_fired,ccs_pre
+squad,0.4,baseline,How old was Newton during Super Bowl 50?,26,0.5676,False,False,-1.0
+squad,0.4,hcpc_v1,How old was Newton during Super Bowl 50?,26,0.5676,False,False,-1.0
+squad,0.4,ccs_gate,How old was Newton during Super Bowl 50?,26,0.5676,False,False,0.5484
+squad,0.4,baseline,Who won Super Bowl 50?,Denver Broncos,0.9247,False,False,-1.0
+squad,0.4,hcpc_v1,Who won Super Bowl 50?,Denver Broncos,0.6045,False,False,-1.0
+squad,0.4,ccs_gate,Who won Super Bowl 50?,Denver Broncos,0.9247,False,False,0.5701
+squad,0.4,baseline,Who exclusively broadcast the game in Spanish after reaching an agreement with the NFL and CBS?,ESPN Deportes,0.6985,False,False,-1.0
+squad,0.4,hcpc_v1,Who exclusively broadcast the game in Spanish after reaching an agreement with the NFL and CBS?,ESPN Deportes,0.6985,False,False,-1.0
+squad,0.4,ccs_gate,Who exclusively broadcast the game in Spanish after reaching an agreement with the NFL and CBS?,ESPN Deportes,0.6985,False,False,0.4766
+squad,0.4,baseline,Who had the best record in the NFC?,Carolina Panthers,0.7102,False,False,-1.0
+squad,0.4,hcpc_v1,Who had the best record in the NFC?,Carolina Panthers,0.4529,True,False,-1.0
+squad,0.4,ccs_gate,Who had the best record in the NFC?,Carolina Panthers,0.7102,False,False,0.6462
+squad,0.4,baseline,Who did the National Anthem at Super Bowl 50?,Lady Gaga,0.7627,False,False,-1.0
+squad,0.4,hcpc_v1,Who did the National Anthem at Super Bowl 50?,Lady Gaga,0.7642,False,False,-1.0
+squad,0.4,ccs_gate,Who did the National Anthem at Super Bowl 50?,Lady Gaga,0.7627,False,False,0.4214
+squad,0.4,baseline,What is the Royal Castle the most interesting example of?,mannerist architecture,0.7951,False,False,-1.0
+squad,0.4,hcpc_v1,What is the Royal Castle the most interesting example of?,mannerist architecture,0.4738,True,False,-1.0
+squad,0.4,ccs_gate,What is the Royal Castle the most interesting example of?,mannerist architecture,0.4738,True,True,0.3902
+squad,0.4,baseline,How old was Manning at the beginning of the 2015 season?,39,0.718,False,False,-1.0
+squad,0.4,hcpc_v1,How old was Manning at the beginning of the 2015 season?,39,0.6156,False,False,-1.0
+squad,0.4,ccs_gate,How old was Manning at the beginning of the 2015 season?,39,0.718,False,False,0.4792
+squad,0.4,baseline,What team had the best start ever in the NFL?,Carolina Panthers,0.4759,True,False,-1.0
+squad,0.4,hcpc_v1,What team had the best start ever in the NFL?,Carolina Panthers,0.4702,True,False,-1.0
+squad,0.4,ccs_gate,What team had the best start ever in the NFL?,Carolina Panthers,0.4759,True,False,0.5667
+squad,0.4,baseline,Who won the Ekstraklasa Championship in 2000?,Polonia Warsaw,0.7248,False,False,-1.0
+squad,0.4,hcpc_v1,Who won the Ekstraklasa Championship in 2000?,Polonia Warsaw,0.6727,False,False,-1.0
+squad,0.4,ccs_gate,Who won the Ekstraklasa Championship in 2000?,Polonia Warsaw,0.7505,False,True,-0.096
+squad,0.4,baseline,When did Hitler order the annihilation of the Warsaw Ghetto?,April 1943,0.4461,True,False,-1.0
+squad,0.4,hcpc_v1,When did Hitler order the annihilation of the Warsaw Ghetto?,April 1943,0.4457,True,False,-1.0
+squad,0.4,ccs_gate,When did Hitler order the annihilation of the Warsaw Ghetto?,April 1943,0.4461,True,False,0.5317
+squad,0.4,baseline,Who forced four fumbles for the Broncos in the 2015 season?,Von Miller,0.5697,False,False,-1.0
+squad,0.4,hcpc_v1,Who forced four fumbles for the Broncos in the 2015 season?,Von Miller,0.6107,False,False,-1.0
+squad,0.4,ccs_gate,Who forced four fumbles for the Broncos in the 2015 season?,Von Miller,0.5843,False,False,0.5609
+squad,0.4,baseline,Which linebacker led the Broncos in tackles?,Brandon Marshall,0.7904,False,False,-1.0
+squad,0.4,hcpc_v1,Which linebacker led the Broncos in tackles?,Brandon Marshall,0.7738,False,False,-1.0
+squad,0.4,ccs_gate,Which linebacker led the Broncos in tackles?,Brandon Marshall,0.7904,False,False,0.5641
+squad,0.4,baseline,What venue did Super Bowl 50 take place in?,Levi's Stadium,0.6918,False,False,-1.0
+squad,0.4,hcpc_v1,What venue did Super Bowl 50 take place in?,Levi's Stadium,0.5995,False,False,-1.0
+squad,0.4,ccs_gate,What venue did Super Bowl 50 take place in?,Levi's Stadium,0.6918,False,False,0.6083
+squad,0.4,baseline,What does the National Museum boast having from Adolf Hitler's private collection?,some paintings,0.7104,False,False,-1.0
+squad,0.4,hcpc_v1,What does the National Museum boast having from Adolf Hitler's private collection?,some paintings,0.5178,False,False,-1.0
+squad,0.4,ccs_gate,What does the National Museum boast having from Adolf Hitler's private collection?,some paintings,0.7104,False,False,0.5248
+squad,0.4,baseline,What formation has an asymmetrical pattern of different terraces?,Vistula Valley,0.6952,False,False,-1.0
+squad,0.4,hcpc_v1,What formation has an asymmetrical pattern of different terraces?,Vistula Valley,0.6952,False,False,-1.0
+squad,0.4,ccs_gate,What formation has an asymmetrical pattern of different terraces?,Vistula Valley,0.6952,False,True,0.1264
+squad,0.4,baseline,What team did Justin Tucker play for?,Baltimore Ravens,0.6466,False,False,-1.0
+squad,0.4,hcpc_v1,What team did Justin Tucker play for?,Baltimore Ravens,0.4669,True,False,-1.0
+squad,0.4,ccs_gate,What team did Justin Tucker play for?,Baltimore Ravens,0.4669,True,True,0.3144
+squad,0.4,baseline,What player won the MVP in Super Bowl V?,Chuck Howley,0.4551,True,False,-1.0
+squad,0.4,hcpc_v1,What player won the MVP in Super Bowl V?,Chuck Howley,0.6177,False,False,-1.0
+squad,0.4,ccs_gate,What player won the MVP in Super Bowl V?,Chuck Howley,0.4551,True,False,0.4785
+squad,0.4,baseline,Who was the Most Valuable Player of Super Bowl II?,Bart Starr,1.0,False,False,-1.0
+squad,0.4,hcpc_v1,Who was the Most Valuable Player of Super Bowl II?,Bart Starr,0.6522,False,False,-1.0
+squad,0.4,ccs_gate,Who was the Most Valuable Player of Super Bowl II?,Bart Starr,1.0,False,False,0.4328
+squad,0.4,baseline,How many companies were part of the Quickbooks contest?,ten,0.6634,False,False,-1.0
+squad,0.4,hcpc_v1,How many companies were part of the Quickbooks contest?,ten,0.6892,False,False,-1.0
+squad,0.4,ccs_gate,How many companies were part of the Quickbooks contest?,ten,0.6892,False,True,0.2982
+squad,0.4,baseline,What religion were the Normans,Catholic,0.4584,True,False,-1.0
+squad,0.4,hcpc_v1,What religion were the Normans,Catholic,0.7566,False,False,-1.0
+squad,0.4,ccs_gate,What religion were the Normans,Catholic,0.4584,True,False,0.527
+squad,0.4,baseline,Who was Margaret's husband?,King Malcolm III of Scotland,0.3883,True,False,-1.0
+squad,0.4,hcpc_v1,Who was Margaret's husband?,King Malcolm III of Scotland,0.6443,False,False,-1.0
+squad,0.4,ccs_gate,Who was Margaret's husband?,King Malcolm III of Scotland,0.6443,False,True,0.2847
+squad,0.4,baseline,What part of France were the Normans located?,north,0.9769,False,False,-1.0
+squad,0.4,hcpc_v1,What part of France were the Normans located?,north,0.9873,False,False,-1.0
+squad,0.4,ccs_gate,What part of France were the Normans located?,north,0.9769,False,False,0.53
+squad,0.4,baseline,How many yards was the pass on the first drive?,18,0.8811,False,False,-1.0
+squad,0.4,hcpc_v1,How many yards was the pass on the first drive?,18,0.6284,False,False,-1.0
+squad,0.4,ccs_gate,How many yards was the pass on the first drive?,18,0.8811,False,False,0.7787
+squad,0.4,baseline,When did the NFL start their 16 game seasons?,1978,0.6753,False,False,-1.0
+squad,0.4,hcpc_v1,When did the NFL start their 16 game seasons?,1978,0.4856,True,False,-1.0
+squad,0.4,ccs_gate,When did the NFL start their 16 game seasons?,1978,0.6753,False,False,0.5154
+squad,0.4,baseline,What river originally bounded the Duchy,Seine,0.6142,False,False,-1.0
+squad,0.4,hcpc_v1,What river originally bounded the Duchy,Seine,0.5072,False,False,-1.0
+squad,0.4,ccs_gate,What river originally bounded the Duchy,Seine,0.5072,False,True,0.2406
+squad,0.4,baseline,Who sacked Cam Newton at the end of the half?,DeMarcus Ware,0.3973,True,False,-1.0
+squad,0.4,hcpc_v1,Who sacked Cam Newton at the end of the half?,DeMarcus Ware,0.3973,True,False,-1.0
+squad,0.4,ccs_gate,Who sacked Cam Newton at the end of the half?,DeMarcus Ware,0.3973,True,False,0.7445
+squad,0.4,baseline,Where in Warsaw are patriotic and political objects connected with Poland's struggles for Independence found?,Museum of Independence,0.7174,False,False,-1.0
+squad,0.4,hcpc_v1,Where in Warsaw are patriotic and political objects connected with Poland's struggles for Independence found?,Museum of Independence,0.8542,False,False,-1.0
+squad,0.4,ccs_gate,Where in Warsaw are patriotic and political objects connected with Poland's struggles for Independence found?,Museum of Independence,0.8542,False,True,0.3676
+squad,0.4,baseline,Which hotel did the Broncos use for Super Bowl 50?,Santa Clara Marriott.,0.6345,False,False,-1.0
+squad,0.4,hcpc_v1,Which hotel did the Broncos use for Super Bowl 50?,Santa Clara Marriott.,0.7146,False,False,-1.0
+squad,0.4,ccs_gate,Which hotel did the Broncos use for Super Bowl 50?,Santa Clara Marriott.,0.7146,False,True,0.3396
+squad,0.4,baseline,What is the Saxon Garden in Polish?,Ogród Saski,0.4811,True,False,-1.0
+squad,0.4,hcpc_v1,What is the Saxon Garden in Polish?,Ogród Saski,0.7172,False,False,-1.0
+squad,0.4,ccs_gate,What is the Saxon Garden in Polish?,Ogród Saski,0.4811,True,False,0.5912
+squad,0.4,baseline,Who designed the Vince Lombardi Trophy?,Tiffany & Co.,0.7055,False,False,-1.0
+squad,0.4,hcpc_v1,Who designed the Vince Lombardi Trophy?,Tiffany & Co.,0.5193,False,False,-1.0
+squad,0.4,ccs_gate,Who designed the Vince Lombardi Trophy?,Tiffany & Co.,0.7055,False,False,0.4358
+squad,0.4,baseline,Which Louisiana venue was one of three considered for Super Bowl 50?,New Orleans' Mercedes-Benz Superdome,0.6888,False,False,-1.0
+squad,0.4,hcpc_v1,Which Louisiana venue was one of three considered for Super Bowl 50?,New Orleans' Mercedes-Benz Superdome,0.7173,False,False,-1.0
+squad,0.4,ccs_gate,Which Louisiana venue was one of three considered for Super Bowl 50?,New Orleans' Mercedes-Benz Superdome,0.6888,False,False,0.6083
+squad,0.4,baseline,What position does Von Miller play for the Denver Broncos?,linebacker,0.6797,False,False,-1.0
+squad,0.4,hcpc_v1,What position does Von Miller play for the Denver Broncos?,linebacker,0.9075,False,False,-1.0
+squad,0.4,ccs_gate,What position does Von Miller play for the Denver Broncos?,linebacker,0.6797,False,False,0.4972
+squad,0.4,baseline,What country was under the control of Norman barons?,Wales,0.694,False,False,-1.0
+squad,0.4,hcpc_v1,What country was under the control of Norman barons?,Wales,0.5951,False,False,-1.0
+squad,0.4,ccs_gate,What country was under the control of Norman barons?,Wales,0.694,False,False,0.5176
+squad,0.4,baseline,Who did Berengaria of Navarre marry?,Richard the Lion-Heart,0.397,True,False,-1.0
+squad,0.4,hcpc_v1,Who did Berengaria of Navarre marry?,Richard the Lion-Heart,0.397,True,False,-1.0
+squad,0.4,ccs_gate,Who did Berengaria of Navarre marry?,Richard the Lion-Heart,0.397,True,True,0.2594
+squad,0.4,baseline,What did the Warsaw Confederation formally establish in 1573?,religious freedom,0.7275,False,False,-1.0
+squad,0.4,hcpc_v1,What did the Warsaw Confederation formally establish in 1573?,religious freedom,0.7275,False,False,-1.0
+squad,0.4,ccs_gate,What did the Warsaw Confederation formally establish in 1573?,religious freedom,0.7275,False,False,0.6913
+squad,0.4,baseline,Who was the hostage?,Duncan,0.7884,False,False,-1.0
+squad,0.4,hcpc_v1,Who was the hostage?,Duncan,0.9458,False,False,-1.0
+squad,0.4,ccs_gate,Who was the hostage?,Duncan,0.7845,False,True,0.3768
+squad,0.4,baseline,What is the last name of the player who scored a 2-yard touchdown in the fourth quarter?,Anderson,1.0,False,False,-1.0
+squad,0.4,hcpc_v1,What is the last name of the player who scored a 2-yard touchdown in the fourth quarter?,Anderson,0.7608,False,False,-1.0
+squad,0.4,ccs_gate,What is the last name of the player who scored a 2-yard touchdown in the fourth quarter?,Anderson,1.0,False,False,0.7227
+squad,0.4,baseline,"On January 7, 2016, it was confirmed that which start would join Coldplay for the halftime show?",Beyoncé,1.0,False,False,-1.0
+squad,0.4,hcpc_v1,"On January 7, 2016, it was confirmed that which start would join Coldplay for the halftime show?",Beyoncé,0.4639,True,False,-1.0
+squad,0.4,ccs_gate,"On January 7, 2016, it was confirmed that which start would join Coldplay for the halftime show?",Beyoncé,0.4639,True,True,0.3663
+squad,0.4,baseline,What did Jim Gray cover?,pre-game and halftime coverage.,0.9135,False,False,-1.0
+squad,0.4,hcpc_v1,What did Jim Gray cover?,pre-game and halftime coverage.,0.5858,False,False,-1.0
+squad,0.4,ccs_gate,What did Jim Gray cover?,pre-game and halftime coverage.,0.5858,False,True,0.2702
+squad,0.4,baseline,What Super Bowl was the last where a fumble was returned for a touchdown?,Super Bowl XXVIII,0.7743,False,False,-1.0
+squad,0.4,hcpc_v1,What Super Bowl was the last where a fumble was returned for a touchdown?,Super Bowl XXVIII,0.522,False,False,-1.0
+squad,0.4,ccs_gate,What Super Bowl was the last where a fumble was returned for a touchdown?,Super Bowl XXVIII,0.7743,False,False,0.7234
+squad,0.4,baseline,How many fumbles did Von Miller force in Super Bowl 50?,2,0.6629,False,False,-1.0
+squad,0.4,hcpc_v1,How many fumbles did Von Miller force in Super Bowl 50?,2,0.5339,False,False,-1.0
+squad,0.4,ccs_gate,How many fumbles did Von Miller force in Super Bowl 50?,2,0.6629,False,False,0.5084
+squad,0.4,baseline,Who designed the garden for the University Library?,Irena Bajerska,0.8326,False,False,-1.0
+squad,0.4,hcpc_v1,Who designed the garden for the University Library?,Irena Bajerska,0.8326,False,False,-1.0
+squad,0.4,ccs_gate,Who designed the garden for the University Library?,Irena Bajerska,0.8326,False,True,0.3627
+squad,0.4,baseline,Why is Warsaw's flora very rich in species?,location of Warsaw,0.5975,False,False,-1.0
+squad,0.4,hcpc_v1,Why is Warsaw's flora very rich in species?,location of Warsaw,0.6335,False,False,-1.0
+squad,0.4,ccs_gate,Why is Warsaw's flora very rich in species?,location of Warsaw,0.5975,False,False,0.4439
+squad,0.4,baseline,What color was used to emphasize the 50th anniversary of the Super Bowl?,gold,1.0,False,False,-1.0
+squad,0.4,hcpc_v1,What color was used to emphasize the 50th anniversary of the Super Bowl?,gold,1.0,False,False,-1.0
+squad,0.4,ccs_gate,What color was used to emphasize the 50th anniversary of the Super Bowl?,gold,1.0,False,False,0.43
+squad,0.4,baseline,Where did the Broncos practice for the Super Bowl?,Stanford University,0.6568,False,False,-1.0
+squad,0.4,hcpc_v1,Where did the Broncos practice for the Super Bowl?,Stanford University,0.6556,False,False,-1.0
+squad,0.4,ccs_gate,Where did the Broncos practice for the Super Bowl?,Stanford University,0.6556,False,True,0.2087
+squad,0.4,baseline,What halftime performer previously headlined Super Bowl XLVII?,Beyoncé,1.0,False,False,-1.0
+squad,0.4,hcpc_v1,What halftime performer previously headlined Super Bowl XLVII?,Beyoncé,0.6871,False,False,-1.0
+squad,0.4,ccs_gate,What halftime performer previously headlined Super Bowl XLVII?,Beyoncé,0.6871,False,True,0.3022
+squad,0.4,baseline,When did Warsaw become the center of the Congress Poland?,1815,0.6264,False,False,-1.0
+squad,0.4,hcpc_v1,When did Warsaw become the center of the Congress Poland?,1815,0.5653,False,False,-1.0
+squad,0.4,ccs_gate,When did Warsaw become the center of the Congress Poland?,1815,0.6264,False,False,0.6913
+squad,0.4,baseline,When was the Battle of Hastings?,1066,0.643,False,False,-1.0
+squad,0.4,hcpc_v1,When was the Battle of Hastings?,1066,0.643,False,False,-1.0
+squad,0.4,ccs_gate,When was the Battle of Hastings?,1066,0.643,False,True,0.3705
+squad,0.4,baseline,Who slipped on the Levi's Stadium turf in week 6 of the 2015 NFL season?,Justin Tucker,0.6023,False,False,-1.0
+squad,0.4,hcpc_v1,Who slipped on the Levi's Stadium turf in week 6 of the 2015 NFL season?,Justin Tucker,0.7308,False,False,-1.0
+squad,0.4,ccs_gate,Who slipped on the Levi's Stadium turf in week 6 of the 2015 NFL season?,Justin Tucker,0.7308,False,True,0.2727
+squad,0.4,baseline,Whose pass to Jerricho Cotchery was ruled incomplete?,Cam Newton,0.5159,False,False,-1.0
+squad,0.4,hcpc_v1,Whose pass to Jerricho Cotchery was ruled incomplete?,Cam Newton,0.5483,False,False,-1.0
+squad,0.4,ccs_gate,Whose pass to Jerricho Cotchery was ruled incomplete?,Cam Newton,0.5483,False,True,-0.094
+squad,0.4,baseline,Who kicked Ethelred out?,Sweyn Forkbeard,0.5585,False,False,-1.0
+squad,0.4,hcpc_v1,Who kicked Ethelred out?,Sweyn Forkbeard,0.7569,False,False,-1.0
+squad,0.4,ccs_gate,Who kicked Ethelred out?,Sweyn Forkbeard,0.7569,False,True,0.0284
+squad,0.4,baseline,The Kronenberg Palace had been an exceptional example of what type of architecture?,bourgeois,0.7439,False,False,-1.0
+squad,0.4,hcpc_v1,The Kronenberg Palace had been an exceptional example of what type of architecture?,bourgeois,0.4928,True,False,-1.0
+squad,0.4,ccs_gate,The Kronenberg Palace had been an exceptional example of what type of architecture?,bourgeois,0.7439,False,False,0.4893
+squad,0.4,baseline,What was Nikola Tesla's ethnicity?,Serbian,1.0,False,False,-1.0
+squad,0.4,hcpc_v1,What was Nikola Tesla's ethnicity?,Serbian,1.0,False,False,-1.0
+squad,0.4,ccs_gate,What was Nikola Tesla's ethnicity?,Serbian,1.0,False,True,0.2842
+squad,0.4,baseline,Which retired ref disagreed with the outcome of the challenge of a incomplete pass?,Mike Carey,1.0,False,False,-1.0
+squad,0.4,hcpc_v1,Which retired ref disagreed with the outcome of the challenge of a incomplete pass?,Mike Carey,1.0,False,False,-1.0
+squad,0.4,ccs_gate,Which retired ref disagreed with the outcome of the challenge of a incomplete pass?,Mike Carey,1.0,False,False,0.7234
+squad,0.4,baseline,How many customaries does Norman customary law have?,two,0.565,False,False,-1.0
+squad,0.4,hcpc_v1,How many customaries does Norman customary law have?,two,0.6858,False,False,-1.0
+squad,0.4,ccs_gate,How many customaries does Norman customary law have?,two,0.565,False,False,0.4159
+squad,0.4,baseline,At what university is Bellomy Field located?,Santa Clara University,0.4952,True,False,-1.0
+squad,0.4,hcpc_v1,At what university is Bellomy Field located?,Santa Clara University,0.4952,True,False,-1.0
+squad,0.4,ccs_gate,At what university is Bellomy Field located?,Santa Clara University,0.4952,True,True,0.2883
+squad,0.4,baseline,When will Roman numerals be used again to denote the Super Bowl number?,Super Bowl LI.,0.8373,False,False,-1.0
+squad,0.4,hcpc_v1,When will Roman numerals be used again to denote the Super Bowl number?,Super Bowl LI.,0.6821,False,False,-1.0
+squad,0.4,ccs_gate,When will Roman numerals be used again to denote the Super Bowl number?,Super Bowl LI.,0.8373,False,False,0.5184
+squad,0.4,baseline,Who led the Broncos with 105 receptions?,Demaryius Thomas,0.7437,False,False,-1.0
+squad,0.4,hcpc_v1,Who led the Broncos with 105 receptions?,Demaryius Thomas,0.4857,True,False,-1.0
+squad,0.4,ccs_gate,Who led the Broncos with 105 receptions?,Demaryius Thomas,0.7437,False,False,0.578
+squad,0.4,baseline,What forest is by Warsaw's southern border?,Kabaty,0.6074,False,False,-1.0
+squad,0.4,hcpc_v1,What forest is by Warsaw's southern border?,Kabaty,0.7139,False,False,-1.0
+squad,0.4,ccs_gate,What forest is by Warsaw's southern border?,Kabaty,0.6074,False,False,0.5069
+squad,0.4,baseline,What was the age difference between Newton and Manning in Super Bowl 50?,13 years and 48 days,0.6449,False,False,-1.0
+squad,0.4,hcpc_v1,What was the age difference between Newton and Manning in Super Bowl 50?,13 years and 48 days,0.5811,False,False,-1.0
+squad,0.4,ccs_gate,What was the age difference between Newton and Manning in Super Bowl 50?,13 years and 48 days,0.6449,False,False,0.7451
+squad,0.4,baseline,When was the settlement which would become Warsaw established?,1300,0.7696,False,False,-1.0
+squad,0.4,hcpc_v1,When was the settlement which would become Warsaw established?,1300,0.5522,False,False,-1.0
+squad,0.4,ccs_gate,When was the settlement which would become Warsaw established?,1300,0.7696,False,False,0.4347
+squad,0.4,baseline,What was the average cost for a 30 second commercial during Super Bowl 50?,$5 million,0.6206,False,False,-1.0
+squad,0.4,hcpc_v1,What was the average cost for a 30 second commercial during Super Bowl 50?,$5 million,0.6206,False,False,-1.0
+squad,0.4,ccs_gate,What was the average cost for a 30 second commercial during Super Bowl 50?,$5 million,0.6206,False,False,0.5014
+squad,0.4,baseline,What commemorates Warsaw's heroic history?,many places,0.9044,False,False,-1.0
+squad,0.4,hcpc_v1,What commemorates Warsaw's heroic history?,many places,0.9384,False,False,-1.0
+squad,0.4,ccs_gate,What commemorates Warsaw's heroic history?,many places,0.9044,False,False,0.5246
+squad,0.4,baseline,What two radio stations in Denver carried Super Bowl 50?,KOA (850 AM) and KRFX (103.5 FM),0.3965,True,False,-1.0
+squad,0.4,hcpc_v1,What two radio stations in Denver carried Super Bowl 50?,KOA (850 AM) and KRFX (103.5 FM),0.5598,False,False,-1.0
+squad,0.4,ccs_gate,What two radio stations in Denver carried Super Bowl 50?,KOA (850 AM) and KRFX (103.5 FM),0.5598,False,True,0.2803
+squad,0.4,baseline,"Who, according to the text, caused Cam Newton to lose the ball during a tackle?",Von Miller,0.608,False,False,-1.0
+squad,0.4,hcpc_v1,"Who, according to the text, caused Cam Newton to lose the ball during a tackle?",Von Miller,0.8575,False,False,-1.0
+squad,0.4,ccs_gate,"Who, according to the text, caused Cam Newton to lose the ball during a tackle?",Von Miller,0.3353,True,False,0.7234
+squad,0.4,baseline,What does Warsaw host many of?,events and festivals,0.5852,False,False,-1.0
+squad,0.4,hcpc_v1,What does Warsaw host many of?,events and festivals,0.5996,False,False,-1.0
+squad,0.4,ccs_gate,What does Warsaw host many of?,events and festivals,0.5996,False,True,0.3717
+squad,0.4,baseline,What is the city centre of Warsaw called in Polish?,Śródmieście,0.6831,False,False,-1.0
+squad,0.4,hcpc_v1,What is the city centre of Warsaw called in Polish?,Śródmieście,0.6831,False,False,-1.0
+squad,0.4,ccs_gate,What is the city centre of Warsaw called in Polish?,Śródmieście,0.6831,False,False,0.4581
+squad,0.4,baseline,Who is the present quarterback of the Broncos?,Peyton Manning,0.4684,True,False,-1.0
+squad,0.4,hcpc_v1,Who is the present quarterback of the Broncos?,Peyton Manning,0.55,False,False,-1.0
+squad,0.4,ccs_gate,Who is the present quarterback of the Broncos?,Peyton Manning,0.4684,True,False,0.4506
+squad,0.4,baseline,What company had a contest to win a free Super Bowl commercial?,QuickBooks.,1.0,False,False,-1.0
+squad,0.4,hcpc_v1,What company had a contest to win a free Super Bowl commercial?,QuickBooks.,1.0,False,False,-1.0
+squad,0.4,ccs_gate,What company had a contest to win a free Super Bowl commercial?,QuickBooks.,1.0,False,False,0.4958
+squad,0.4,baseline,Who shared sideline duties with Evan Washburn?,Tracy Wolfson,0.8019,False,False,-1.0
+squad,0.4,hcpc_v1,Who shared sideline duties with Evan Washburn?,Tracy Wolfson,0.5787,False,False,-1.0
+squad,0.4,ccs_gate,Who shared sideline duties with Evan Washburn?,Tracy Wolfson,0.5787,False,True,0.233
+squad,0.4,baseline,How many lakes are there in Warsaw?,several,0.648,False,False,-1.0
+squad,0.4,hcpc_v1,How many lakes are there in Warsaw?,several,0.6669,False,False,-1.0
+squad,0.4,ccs_gate,How many lakes are there in Warsaw?,several,0.5797,False,False,0.5634
+squad,0.4,baseline,Who was the Broncos' leading rusher for the 2015 season?,C. J. Anderson,0.6821,False,False,-1.0
+squad,0.4,hcpc_v1,Who was the Broncos' leading rusher for the 2015 season?,C. J. Anderson,0.665,False,False,-1.0
+squad,0.4,ccs_gate,Who was the Broncos' leading rusher for the 2015 season?,C. J. Anderson,0.6821,False,False,0.4972
+squad,0.4,baseline,When was a zoological garden established in the Praga Park?,1927,0.704,False,False,-1.0
+squad,0.4,hcpc_v1,When was a zoological garden established in the Praga Park?,1927,0.6294,False,False,-1.0
+squad,0.4,ccs_gate,When was a zoological garden established in the Praga Park?,1927,0.704,False,False,0.4747
+squad,0.4,baseline,In what city did the last Super Bowl in California occur?,San Diego,0.6763,False,False,-1.0
+squad,0.4,hcpc_v1,In what city did the last Super Bowl in California occur?,San Diego,1.0,False,False,-1.0
+squad,0.4,ccs_gate,In what city did the last Super Bowl in California occur?,San Diego,0.6763,False,False,0.6083
+squad,0.4,baseline,Who is the General Manager for the Broncos?,John Elway,0.7989,False,False,-1.0
+squad,0.4,hcpc_v1,Who is the General Manager for the Broncos?,John Elway,0.7611,False,False,-1.0
+squad,0.4,ccs_gate,Who is the General Manager for the Broncos?,John Elway,0.7611,False,True,0.3994
+squad,0.4,baseline,What was Warsaw the most diverse of in Poland?,city,0.7909,False,False,-1.0
+squad,0.4,hcpc_v1,What was Warsaw the most diverse of in Poland?,city,0.734,False,False,-1.0
+squad,0.4,ccs_gate,What was Warsaw the most diverse of in Poland?,city,0.7909,False,False,0.557
+squad,0.4,baseline,"Prior to this consideration, when did San Francisco last host a Super Bowl?",1985,0.702,False,False,-1.0
+squad,0.4,hcpc_v1,"Prior to this consideration, when did San Francisco last host a Super Bowl?",1985,0.6218,False,False,-1.0
+squad,0.4,ccs_gate,"Prior to this consideration, when did San Francisco last host a Super Bowl?",1985,0.702,False,False,0.6336
+squad,0.4,baseline,Who was Margaret's brother?,Edgar,0.6191,False,False,-1.0
+squad,0.4,hcpc_v1,Who was Margaret's brother?,Edgar,0.566,False,False,-1.0
+squad,0.4,ccs_gate,Who was Margaret's brother?,Edgar,0.3355,True,True,0.2847
+squad,0.4,baseline,How many games did the Panthers lose in the regular season before Super Bowl 50?,one,0.3595,True,False,-1.0
+squad,0.4,hcpc_v1,How many games did the Panthers lose in the regular season before Super Bowl 50?,one,0.407,True,False,-1.0
+squad,0.4,ccs_gate,How many games did the Panthers lose in the regular season before Super Bowl 50?,one,0.3595,True,False,0.6014
+squad,0.4,baseline,What followed The Late Show with Stephen Colbert?,late local programming,0.7469,False,False,-1.0
+squad,0.4,hcpc_v1,What followed The Late Show with Stephen Colbert?,late local programming,0.5927,False,False,-1.0
+squad,0.4,ccs_gate,What followed The Late Show with Stephen Colbert?,late local programming,0.5257,False,True,0.3575
+squad,0.4,baseline,What pope as a native of Poland?,John Paul II,0.7446,False,False,-1.0
+squad,0.4,hcpc_v1,What pope as a native of Poland?,John Paul II,0.7278,False,False,-1.0
+squad,0.4,ccs_gate,What pope as a native of Poland?,John Paul II,0.7278,False,True,0.2959
+squad,0.4,baseline,What famous July Fourth holiday movie did Fox pay to advertise a sequel of during the Super Bowl?,Independence Day,0.5812,False,False,-1.0
+squad,0.4,hcpc_v1,What famous July Fourth holiday movie did Fox pay to advertise a sequel of during the Super Bowl?,Independence Day,0.7541,False,False,-1.0
+squad,0.4,ccs_gate,What famous July Fourth holiday movie did Fox pay to advertise a sequel of during the Super Bowl?,Independence Day,0.7541,False,True,0.352
+squad,0.4,baseline,"Where was a beer, wine and food festival held at prior to the Super Bowl?",Bellomy Field,0.6756,False,False,-1.0
+squad,0.4,hcpc_v1,"Where was a beer, wine and food festival held at prior to the Super Bowl?",Bellomy Field,0.4525,True,False,-1.0
+squad,0.4,ccs_gate,"Where was a beer, wine and food festival held at prior to the Super Bowl?",Bellomy Field,0.6756,False,False,0.6
+squad,0.4,baseline,What is the name of the program that provides contracting work to local companies?,Business Connect,0.6368,False,False,-1.0
+squad,0.4,hcpc_v1,What is the name of the program that provides contracting work to local companies?,Business Connect,0.5232,False,False,-1.0
+squad,0.4,ccs_gate,What is the name of the program that provides contracting work to local companies?,Business Connect,0.5232,False,True,-0.071
+squad,0.4,baseline,What type of venue is the Teatr Wielki?,musical,0.8788,False,False,-1.0
+squad,0.4,hcpc_v1,What type of venue is the Teatr Wielki?,musical,0.5734,False,False,-1.0
+squad,0.4,ccs_gate,What type of venue is the Teatr Wielki?,musical,0.5734,False,True,0.3591
+squad,0.4,baseline,Who loved Warsaw so much that he kept putting it in his novels?,Isaac Bashevis Singer,0.6503,False,False,-1.0
+squad,0.4,hcpc_v1,Who loved Warsaw so much that he kept putting it in his novels?,Isaac Bashevis Singer,0.3432,True,False,-1.0
+squad,0.4,ccs_gate,Who loved Warsaw so much that he kept putting it in his novels?,Isaac Bashevis Singer,0.3432,True,True,0.3043
+squad,0.4,baseline,When was the Masovian Duchy reincorporated into the Polish Crown?,1526,0.8432,False,False,-1.0
+squad,0.4,hcpc_v1,When was the Masovian Duchy reincorporated into the Polish Crown?,1526,0.8432,False,False,-1.0
+squad,0.4,ccs_gate,When was the Masovian Duchy reincorporated into the Polish Crown?,1526,0.8432,False,False,0.6038
+squad,0.4,baseline,Who is the play-by-play announcer for the game?,Kevin Harlan,0.8372,False,False,-1.0
+squad,0.4,hcpc_v1,Who is the play-by-play announcer for the game?,Kevin Harlan,0.5657,False,False,-1.0
+squad,0.4,ccs_gate,Who is the play-by-play announcer for the game?,Kevin Harlan,0.8372,False,False,0.4566
+squad,0.4,baseline,"What was a major success, especially in rebuilding Warsaw?",Three-Year Plan,0.687,False,False,-1.0
+squad,0.4,hcpc_v1,"What was a major success, especially in rebuilding Warsaw?",Three-Year Plan,0.5365,False,False,-1.0
+squad,0.4,ccs_gate,"What was a major success, especially in rebuilding Warsaw?",Three-Year Plan,0.687,False,False,0.5829
+squad,0.4,baseline,What position does Danny Trevathan play?,linebacker,1.0,False,False,-1.0
+squad,0.4,hcpc_v1,What position does Danny Trevathan play?,linebacker,0.9764,False,False,-1.0
+squad,0.4,ccs_gate,What position does Danny Trevathan play?,linebacker,0.9764,False,True,0.1801
+squad,0.4,baseline,Who is the trophy given to the Super Bowl champion named for?,Vince Lombardi,0.7561,False,False,-1.0
+squad,0.4,hcpc_v1,Who is the trophy given to the Super Bowl champion named for?,Vince Lombardi,0.7561,False,False,-1.0
+squad,0.4,ccs_gate,Who is the trophy given to the Super Bowl champion named for?,Vince Lombardi,0.7561,False,False,0.4643
+squad,0.4,baseline,How many interceptions are the Panthers defense credited with in 2015?,24,0.7177,False,False,-1.0
+squad,0.4,hcpc_v1,How many interceptions are the Panthers defense credited with in 2015?,24,0.6934,False,False,-1.0
+squad,0.4,ccs_gate,How many interceptions are the Panthers defense credited with in 2015?,24,0.7177,False,False,0.6019
+squad,0.4,baseline,What is most of Warsaw's modern growth based on?,migration and urbanisation,0.738,False,False,-1.0
+squad,0.4,hcpc_v1,What is most of Warsaw's modern growth based on?,migration and urbanisation,0.6133,False,False,-1.0
+squad,0.4,ccs_gate,What is most of Warsaw's modern growth based on?,migration and urbanisation,0.7485,False,False,0.6067
+squad,0.4,baseline,What yard line did the Broncos stop the Panthers on in their first offensive drive of Super Bowl 50?,26-yard line,0.7925,False,False,-1.0
+squad,0.4,hcpc_v1,What yard line did the Broncos stop the Panthers on in their first offensive drive of Super Bowl 50?,26-yard line,0.8593,False,False,-1.0
+squad,0.4,ccs_gate,What yard line did the Broncos stop the Panthers on in their first offensive drive of Super Bowl 50?,26-yard line,0.7925,False,False,0.7787
+squad,0.4,baseline,What Denver player caught the ball 76 times in the 2015 season?,Emmanuel Sanders,0.7652,False,False,-1.0
+squad,0.4,hcpc_v1,What Denver player caught the ball 76 times in the 2015 season?,Emmanuel Sanders,0.7642,False,False,-1.0
+squad,0.4,ccs_gate,What Denver player caught the ball 76 times in the 2015 season?,Emmanuel Sanders,0.6896,False,False,0.7074
+squad,0.4,baseline,What covered the new field at Levi's Stadium?,a hybrid Bermuda 419 turf.,0.5763,False,False,-1.0
+squad,0.4,hcpc_v1,What covered the new field at Levi's Stadium?,a hybrid Bermuda 419 turf.,0.4966,True,False,-1.0
+squad,0.4,ccs_gate,What covered the new field at Levi's Stadium?,a hybrid Bermuda 419 turf.,0.5763,False,False,0.4189
+squad,0.4,baseline,"If Roman numerals were used in the naming of the 50th Super Bowl, which one would have been used?",L,0.5777,False,False,-1.0
+squad,0.4,hcpc_v1,"If Roman numerals were used in the naming of the 50th Super Bowl, which one would have been used?",L,0.6389,False,False,-1.0
+squad,0.4,ccs_gate,"If Roman numerals were used in the naming of the 50th Super Bowl, which one would have been used?",L,0.5777,False,False,0.5184
+squad,0.4,baseline,When was Manning picked #1 in the NFL Draft?,1998,0.8568,False,False,-1.0
+squad,0.4,hcpc_v1,When was Manning picked #1 in the NFL Draft?,1998,0.7108,False,False,-1.0
+squad,0.4,ccs_gate,When was Manning picked #1 in the NFL Draft?,1998,0.8568,False,False,0.4981
+squad,0.4,baseline,What city did Super Bowl 50 take place in?,Santa Clara,0.9421,False,False,-1.0
+squad,0.4,hcpc_v1,What city did Super Bowl 50 take place in?,Santa Clara,0.4784,True,False,-1.0
+squad,0.4,ccs_gate,What city did Super Bowl 50 take place in?,Santa Clara,0.9421,False,False,0.6083
+squad,0.4,baseline,Which end of the Saxon Garden is the Tom of the Unknown Soldier located at?,east end,0.6943,False,False,-1.0
+squad,0.4,hcpc_v1,Which end of the Saxon Garden is the Tom of the Unknown Soldier located at?,east end,0.587,False,False,-1.0
+squad,0.4,ccs_gate,Which end of the Saxon Garden is the Tom of the Unknown Soldier located at?,east end,0.587,False,True,0.0313

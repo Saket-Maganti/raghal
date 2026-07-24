@@ -1,0 +1,44 @@
+# Fix 12 - answer-span/control diagnostic
+
+Source: `data/revision/fix_01/{matched_pairs.csv,per_query.csv}`.
+No model calls or paid APIs are used.
+
+## Span and outcome summary
+
+| group              |   n |   answer_span_present_rate |   faithfulness_mean |   hallucination_rate |   mean_query_similarity |   ccs_mean |
+|:-------------------|----:|---------------------------:|--------------------:|---------------------:|------------------------:|-----------:|
+| all                | 400 |                       0.22 |            0.637391 |             0.1275   |                0.422533 |   0.403743 |
+| high_ccs           | 200 |                       0.17 |            0.636195 |             0.165    |                0.423588 |   0.67006  |
+| low_ccs            | 200 |                       0.27 |            0.638587 |             0.09     |                0.421478 |   0.137426 |
+| span_present=False | 312 |                       0    |            0.628166 |             0.11859  |                0.411121 |   0.407592 |
+| span_present=True  |  88 |                       1    |            0.670099 |             0.159091 |                0.462991 |   0.390096 |
+
+## Model comparison
+
+| outcome             | model                                             | predictors                                 |   n | metric   |    value |   ci95_lo |   ci95_hi | secondary_metric   |   secondary_value |     aic | coefficients_json                                                                                                      |
+|:--------------------|:--------------------------------------------------|:-------------------------------------------|----:|:---------|---------:|----------:|----------:|:-------------------|------------------:|--------:|:-----------------------------------------------------------------------------------------------------------------------|
+| faithfulness_score  | answer_span_present                               | answer_span_present_int                    | 400 | r2       | 0.018964 |  0.000547 |  0.061644 | adjusted_r2        |          0.016499 |         | {"answer_span_present_int": 0.041933158508158444}                                                                      |
+| hallucination_label | answer_span_present                               | answer_span_present_int                    | 400 | auroc    | 0.531238 |  0.501665 |  0.598611 |                    |                   | 308.318 | {"answer_span_present_int": 0.14111474168555663}                                                                       |
+| faithfulness_score  | mean_query_similarity                             | mean_query_sim                             | 400 | r2       | 0.001941 |  6e-06    |  0.023258 | adjusted_r2        |         -0.000567 |         | {"mean_query_sim": -0.04503414503062966}                                                                               |
+| hallucination_label | mean_query_similarity                             | mean_query_sim                             | 400 | auroc    | 0.585819 |  0.495443 |  0.677003 |                    |                   | 306.549 | {"mean_query_sim": 0.2553505962475653}                                                                                 |
+| faithfulness_score  | ccs                                               | ccs                                        | 400 | r2       | 0.003003 |  9e-06    |  0.02196  | adjusted_r2        |          0.000498 |         | {"ccs": -0.023283965319274184}                                                                                         |
+| hallucination_label | ccs                                               | ccs                                        | 400 | auroc    | 0.639249 |  0.564385 |  0.711877 |                    |                   | 299.368 | {"ccs": 0.515647082214567}                                                                                             |
+| faithfulness_score  | answer_span_present + mean_query_similarity       | answer_span_present_int+mean_query_sim     | 400 | r2       | 0.023737 |  0.003818 |  0.070521 | adjusted_r2        |          0.018819 |         | {"answer_span_present_int": 0.045653299281574584, "mean_query_sim": -0.07172080267768231}                              |
+| hallucination_label | answer_span_present + mean_query_similarity       | answer_span_present_int+mean_query_sim     | 400 | auroc    | 0.589752 |  0.518336 |  0.687078 |                    |                   | 308.05  | {"answer_span_present_int": 0.10212717594283405, "mean_query_sim": 0.23665520183058658}                                |
+| faithfulness_score  | answer_span_present + ccs                         | answer_span_present_int+ccs                | 400 | r2       | 0.021611 |  0.00258  |  0.068483 | adjusted_r2        |          0.016682 |         | {"answer_span_present_int": 0.04155052866424988, "ccs": -0.021868681729780633}                                         |
+| hallucination_label | answer_span_present + ccs                         | answer_span_present_int+ccs                | 400 | auroc    | 0.630569 |  0.571646 |  0.715721 |                    |                   | 300.056 | {"answer_span_present_int": 0.16742123244189958, "ccs": 0.5296753175929091}                                            |
+| faithfulness_score  | answer_span_present + mean_query_similarity + ccs | answer_span_present_int+mean_query_sim+ccs | 400 | r2       | 0.024702 |  0.005709 |  0.075213 | adjusted_r2        |          0.017313 |         | {"answer_span_present_int": 0.04484739257562468, "ccs": -0.013926560853018974, "mean_query_sim": -0.06088138863622098} |
+| hallucination_label | answer_span_present + mean_query_similarity + ccs | answer_span_present_int+mean_query_sim+ccs | 400 | auroc    | 0.643126 |  0.589038 |  0.734221 |                    |                   | 301.505 | {"answer_span_present_int": 0.14887160670267285, "ccs": 0.5070135933692257, "mean_query_sim": 0.12091065259566498}     |
+
+## Compact interpretation
+
+The highest faithfulness R^2 model is `answer_span_present + mean_query_similarity + ccs` (R^2=0.024702).
+The highest hallucination AUROC model is `answer_span_present + mean_query_similarity + ccs` (AUROC=0.643126).
+This is a matched SQuAD/Mistral diagnostic only; it does not establish a universal mechanism.
+
+## Span-only reference
+
+| outcome             | model               | predictors              |   n | metric   |    value |   ci95_lo |   ci95_hi | secondary_metric   |   secondary_value |     aic | coefficients_json                                 |
+|:--------------------|:--------------------|:------------------------|----:|:---------|---------:|----------:|----------:|:-------------------|------------------:|--------:|:--------------------------------------------------|
+| faithfulness_score  | answer_span_present | answer_span_present_int | 400 | r2       | 0.018964 |  0.000547 |  0.061644 | adjusted_r2        |          0.016499 |         | {"answer_span_present_int": 0.041933158508158444} |
+| hallucination_label | answer_span_present | answer_span_present_int | 400 | auroc    | 0.531238 |  0.501665 |  0.598611 |                    |                   | 308.318 | {"answer_span_present_int": 0.14111474168555663}  |

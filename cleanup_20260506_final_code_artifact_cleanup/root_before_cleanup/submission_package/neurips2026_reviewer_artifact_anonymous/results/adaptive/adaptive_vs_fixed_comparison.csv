@@ -1,0 +1,13 @@
+dataset,chunking_strategy,strategy_type,description,chunk_size_param,top_k,n_chunks_indexed,mean_chunk_len_chars,n_queries,nli_faithfulness,hallucination_rate,mean_retrieval_similarity,n_hallucinated
+squad,fixed_256,fixed,Fixed 256-token chunks (baseline),256,3,115,1024,30,0.6444,0.1,0.6562,3
+squad,fixed_512,fixed,Fixed 512-token chunks (baseline),512,3,53,2048,30,0.7415,0.0667,0.6328,2
+squad,fixed_1024,fixed,Fixed 1024-token chunks (baseline),1024,3,35,4096,30,0.7886,0.0,0.6154,0
+squad,semantic_tight,semantic,"Semantic chunking (threshold=0.6, tight cohesion)",512,3,65,209,30,0.7647,0.1333,0.6464,4
+squad,semantic_loose,semantic,"Semantic chunking (threshold=0.4, loose cohesion)",512,3,37,209,30,0.7763,0.1,0.64,3
+squad,dynamic,dynamic,Dynamic paragraph-aware chunking,512,3,30,586,30,0.7902,0.0,0.6084,0
+pubmedqa,fixed_256,fixed,Fixed 256-token chunks (baseline),256,3,220,1024,30,0.5718,0.3,0.7183,9
+pubmedqa,fixed_512,fixed,Fixed 512-token chunks (baseline),512,3,101,2048,30,0.5892,0.2,0.6164,6
+pubmedqa,fixed_1024,fixed,Fixed 1024-token chunks (baseline),1024,3,54,4096,30,0.6053,0.1333,0.5167,4
+pubmedqa,semantic_tight,semantic,"Semantic chunking (threshold=0.6, tight cohesion)",512,3,121,433,30,0.6006,0.1333,0.6128,4
+pubmedqa,semantic_loose,semantic,"Semantic chunking (threshold=0.4, loose cohesion)",512,3,76,433,30,0.5657,0.2667,0.5571,8
+pubmedqa,dynamic,dynamic,Dynamic paragraph-aware chunking,512,3,30,1418,30,0.5903,0.1667,0.4216,5

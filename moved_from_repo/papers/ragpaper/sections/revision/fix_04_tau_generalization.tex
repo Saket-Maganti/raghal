@@ -1,0 +1,12 @@
+% Fix 4 - cross-dataset tau generalization.
+
+\subsection{Cross-Dataset Threshold Generalization}
+\label{sec:fix04_tau_generalization}
+
+We tune the CCS-gate threshold $\tau$ on one dataset and evaluate that
+frozen value on every other dataset, producing a tune-on/eval-on recovery
+matrix. If in-distribution recovery exceeds cross-dataset recovery by
+more than 0.03, we explicitly flag the deployment sensitivity rather than
+claiming universal threshold transfer.
+
+% RESULTS-PENDING: insert results/revision/fix_04/tau_transfer_matrix.csv.

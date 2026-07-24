@@ -1,0 +1,16 @@
+analysis,reference_label,scorer,metric,n,value,ci95_lo,ci95_hi
+scorer_alignment,adjudicated_label,DeBERTa,auroc,100,0.397609,0.280629,0.522352
+scorer_alignment,adjudicated_label,DeBERTa,auprc,100,0.761753,0.655777,0.850292
+scorer_alignment,adjudicated_label,DeBERTa,balanced_accuracy_at_0.5,100,0.4158,0.340979,0.506248
+scorer_alignment,adjudicated_label,DeBERTa,pearson,100,-0.187764,,
+scorer_alignment,adjudicated_label,DeBERTa,spearman,100,-0.156045,,
+scorer_alignment,adjudicated_label,second_NLI,auroc,100,0.793659,0.703515,0.874111
+scorer_alignment,adjudicated_label,second_NLI,auprc,100,0.928433,0.880576,0.963476
+scorer_alignment,adjudicated_label,second_NLI,balanced_accuracy_at_0.5,100,0.52027,0.5,0.546672
+scorer_alignment,adjudicated_label,second_NLI,pearson,100,0.380276,,
+scorer_alignment,adjudicated_label,second_NLI,spearman,100,0.446432,,
+scorer_alignment,adjudicated_label,RAGAS_style,auroc,100,0.717516,0.634608,0.789396
+scorer_alignment,adjudicated_label,RAGAS_style,auprc,100,0.88624,0.817596,0.945116
+scorer_alignment,adjudicated_label,RAGAS_style,balanced_accuracy_at_0.5,100,0.692308,0.598915,0.775239
+scorer_alignment,adjudicated_label,RAGAS_style,pearson,100,0.365992,,
+scorer_alignment,adjudicated_label,RAGAS_style,spearman,100,0.384277,,

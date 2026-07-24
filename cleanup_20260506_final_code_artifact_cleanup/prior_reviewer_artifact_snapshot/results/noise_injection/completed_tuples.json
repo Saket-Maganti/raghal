@@ -1,0 +1,5 @@
+{
+  "squad__mistral": true,
+  "pubmedqa__mistral": true,
+  "hotpotqa__mistral": true
+}

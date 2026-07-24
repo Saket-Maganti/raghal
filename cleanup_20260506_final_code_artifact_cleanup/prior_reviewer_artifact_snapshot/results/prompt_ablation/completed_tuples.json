@@ -1,0 +1,14 @@
+{
+  "squad__strict__mistral": true,
+  "squad__cot__mistral": true,
+  "squad__concise__mistral": true,
+  "squad__expert__mistral": true,
+  "pubmedqa__strict__mistral": true,
+  "pubmedqa__cot__mistral": true,
+  "pubmedqa__concise__mistral": true,
+  "pubmedqa__expert__mistral": true,
+  "hotpotqa__strict__mistral": true,
+  "hotpotqa__cot__mistral": true,
+  "hotpotqa__concise__mistral": true,
+  "hotpotqa__expert__mistral": true
+}

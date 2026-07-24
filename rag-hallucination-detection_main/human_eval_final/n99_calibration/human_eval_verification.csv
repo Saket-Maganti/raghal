@@ -1,0 +1,5 @@
+statistic,n_examples,n_raters,raw_agreement,cohen_kappa,unsupported,partially_supported,supported,metric,spearman_rho,pearson_r,kendall_tau_b
+summary,99,2,0.919192,0.773779,4,16,79,,,,
+metric_correlation,99,2,,,,,,auto_deberta,0.103023,0.110258,0.083292
+metric_correlation,99,2,,,,,,auto_second_nli,0.393969,0.403683,0.325170
+metric_correlation,99,2,,,,,,auto_ragas,0.548699,0.449566,0.527443

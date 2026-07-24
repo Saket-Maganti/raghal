@@ -1,0 +1,28 @@
+# Test and Smoke Commands
+
+Commands were run from the listed staged source folder with bytecode and matplotlib caches redirected to the local-only audit workspace.
+
+- `cleanup_20260506_final_code_artifact_cleanup` — **fail** — `/Library/Frameworks/Python.framework/Versions/3.11/bin/python3 -m compileall -q .` (0.092s)
+- `deleted_from_head` — **pass** — `/Library/Frameworks/Python.framework/Versions/3.11/bin/python3 -m compileall -q .` (0.026s)
+- `moved_from_repo` — **pass** — `/Library/Frameworks/Python.framework/Versions/3.11/bin/python3 -m compileall -q .` (0.033s)
+- `rag-hallucination-detection_main` — **fail** — `/Library/Frameworks/Python.framework/Versions/3.11/bin/python3 -m compileall -q .` (0.042s)
+- `moved_from_repo` — **pass** — `json.loads + notebook structural keys` (0.001s)
+- `all` — **pass** — `bash -n <each .sh>` (0.039s)
+- `all` — **pass** — `tomllib.loads <each .toml>` (0.000s)
+- `rag-hallucination-detection_main` — **pass** — `/Library/Frameworks/Python.framework/Versions/3.11/bin/python3 -m pytest --collect-only -q tests` (0.493s)
+- `rag-hallucination-detection_main` — **pass** — `/Library/Frameworks/Python.framework/Versions/3.11/bin/python3 -m pytest -q tests` (19.370s)
+- `cleanup_20260506_final_code_artifact_cleanup/prior_reviewer_artifact_snapshot` — **pass** — `/Library/Frameworks/Python.framework/Versions/3.11/bin/python3 -m pytest --collect-only -q tests` (0.496s)
+- `cleanup_20260506_final_code_artifact_cleanup/prior_reviewer_artifact_snapshot` — **pass** — `/Library/Frameworks/Python.framework/Versions/3.11/bin/python3 -m pytest -q tests` (16.945s)
+- `cleanup_20260506_final_code_artifact_cleanup/root_before_cleanup` — **pass** — `/Library/Frameworks/Python.framework/Versions/3.11/bin/python3 -m pytest --collect-only -q tests` (0.499s)
+- `cleanup_20260506_final_code_artifact_cleanup/root_before_cleanup` — **pass** — `/Library/Frameworks/Python.framework/Versions/3.11/bin/python3 -m pytest -q tests` (16.731s)
+- `cleanup_20260506_final_code_artifact_cleanup/root_before_cleanup/submission_package/neurips2026_reviewer_artifact_anonymous` — **pass** — `/Library/Frameworks/Python.framework/Versions/3.11/bin/python3 -m pytest --collect-only -q tests` (0.500s)
+- `cleanup_20260506_final_code_artifact_cleanup/root_before_cleanup/submission_package/neurips2026_reviewer_artifact_anonymous` — **pass** — `/Library/Frameworks/Python.framework/Versions/3.11/bin/python3 -m pytest -q tests` (17.721s)
+- `moved_from_repo` — **pass** — `/Library/Frameworks/Python.framework/Versions/3.11/bin/python3 -m pytest --collect-only -q tests` (0.732s)
+- `moved_from_repo` — **pass** — `/Library/Frameworks/Python.framework/Versions/3.11/bin/python3 -m pytest -q tests/test_lint_paper.py` (0.957s)
+- `moved_from_repo/pip-package` — **fail** — `/Library/Frameworks/Python.framework/Versions/3.11/bin/python3 -m pytest --collect-only -q tests` (0.555s)
+- `moved_from_repo/pip-package` — **fail** — `/Library/Frameworks/Python.framework/Versions/3.11/bin/python3 -m pytest -q tests` (0.553s)
+- `rag-hallucination-detection_main` — **pass** — `/Library/Frameworks/Python.framework/Versions/3.11/bin/python3 -c from src.ccs_gate_retriever import CCSGateRetriever; print(CCSGateRetriever.__name__)` (0.053s)
+- `moved_from_repo/pip-package` — **pass** — `/Library/Frameworks/Python.framework/Versions/3.11/bin/python3 -c from context_coherence import ccs; print(ccs.__name__)` (0.053s)
+- `moved_from_repo/pip-package` — **pass** — `/Library/Frameworks/Python.framework/Versions/3.11/bin/python3 -m pytest --collect-only -q tests` (0.496s)
+- `moved_from_repo/pip-package` — **pass** — `/Library/Frameworks/Python.framework/Versions/3.11/bin/python3 -m pytest -q tests` (0.513s)
+- `rag-hallucination-detection_main` — **pass** — `bash run_all_analysis.sh` (1.616s)

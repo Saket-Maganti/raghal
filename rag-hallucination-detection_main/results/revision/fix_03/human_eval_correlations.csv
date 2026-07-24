@@ -1,0 +1,4 @@
+metric,metric_name,spearman_rho,pearson_r,kendall_tau_b,n
+auto_deberta,DeBERTa-v3 NLI,0.103023,0.110258,0.083292,99
+auto_second_nli,Second NLI,0.393969,0.403683,0.325170,99
+auto_ragas,RAGAS-style judge,0.548699,0.449566,0.527443,99
