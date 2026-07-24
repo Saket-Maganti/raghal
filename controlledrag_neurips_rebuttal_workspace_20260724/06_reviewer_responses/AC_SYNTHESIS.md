@@ -7,53 +7,65 @@ described as the final meta-review.
 
 ## Paste-ready synthesis
 
-We appreciate the AC’s balanced assessment: evaluation instability,
-fixed-output scorer sensitivity, audit artifacts, and cost-aware reporting are
-valuable, while the current paper needs materially better accessibility,
-scope control, evidence grading, and practitioner guidance.
+We thank the AC for identifying clarity, empirical scope, and practitioner
+guidance as the central issues. We agree that the numerical findings should be
+presented as a bounded audit rather than an evaluation spanning modern RAG. The
+contribution we ask the committee to evaluate is precise: ControlledRAG
+demonstrates that reasonable evaluation choices can reverse or condition
+conclusions and provides an auditable procedure for exposing that dependence.
 
-No revised paper can be uploaded during rebuttal, so we clarify the claim
-boundary here and describe camera-ready changes if accepted. Our central
-clarification is to separate method from numerical generalization.
-ControlledRAG is a practical disclosure and audit procedure: authors report
-the generator, retrieval setup, context construction, measurement/scorer,
-human calibration, threshold transfer, and cost, then stress-test only
-reasonable alternatives that are critical to the claim. The seven categories
-are neither mathematically unique nor formally exhaustive. The numerical
-findings remain bounded primarily to
-short-answer QA and 7B-class local generators; the five-dataset threshold
-grid, two-dataset cost comparison, retriever diagnostics, one Qwen2.5-7B
-probe, and 40-question long-form panel provide diagnostic breadth, not broad
-validation of modern, agentic, or complex RAG.
+The contribution is the combination of: (i) a minimum reporting contract for
+claim-relevant evaluation choices, (ii) controlled evidence that reasonable
+scorer conventions can reverse conclusions while outputs remain fixed, and
+(iii) an operational protocol for reporting results as stable, conditional,
+or unresolved. This is an evaluation contribution: its primary output is an
+auditable protocol supported by controlled stress tests, human-calibration
+artifacts, per-cell provenance, and reusable reporting guidance.
 
-We grade support rather than imply equal validation: fixed-output
-scorer/input-format evidence is strongest; human and matched-context evidence
-is medium-strength; generator, retriever, cost, and long-form probes are
-bounded or exploratory. No modern-judge result exists. The repaired optional
-package remains `PROMPT_05_REPAIRED_PREPARED_NOT_EXECUTED`, with zero model
-loads, network calls, or real rows scored.
+We grade the evidence rather than imply equal validation. **Strong:**
+fixed-output scorer and scorer-input analyses. **Medium:** human calibration
+and the matched-context audit. **Diagnostic:** threshold, cost, retriever, and
+second-generator probes. **Exploratory:** the long-form panel. Axis inclusion
+indicates reporting importance, not equal empirical validation. Secondary
+cells provide bounded breadth across thresholds, cost, retrieval, a second
+generator, and a small long-form panel, but they are diagnostic rather than
+evidence of general coverage. No modern-judge experiment was executed or is
+claimed.
 
-If accepted, we will rewrite the camera-ready abstract, introduction, setup,
-and experiment organization around plain definitions and one evidence map.
-The legacy NLI scores are
-answer-only zero-shot label proxies; the custom third scorer is RAGAS-style,
-not official RAGAS. Figure 2 keeps answers, contexts, and backbones fixed and
-changes only scorer input: on 194 complete pairs, the mean contrast changes
-from `+0.017` to `-0.279` for DeBERTa and from `+0.044` to `-0.081` for the
-second backbone. This establishes input-format sensitivity, not universal
-correctness. We will also justify every axis using the stated
-reasonable-substitution criterion.
+The framework is proposed to be procedurally portable across RAG settings;
+the numerical effects observed here are not claimed to generalize beyond the
+tested cells. Its implementation has two tiers. **Disclosure tier:** report
+all seven categories, including “not varied” or “not measured.”
+**Stress-test tier:** evaluate only reasonable alternatives capable of
+changing a sign, ranking, threshold decision, or deployment choice. The
+categories are practical, non-unique, and non-exhaustive; ControlledRAG does
+not require a seven-dimensional factorial experiment.
 
-For practitioner guidance, our protocol requires a declared deployment
-endpoint and constraints, deployment-relevant human calibration,
-claim-critical stress tests, and a stable/conditional/unresolved
-classification. Multi-objective choices use a Pareto-first rule with explicit
-weights or constraints; when plausible choices disagree, the output is a
-conditional set, not a universal winner.
+**ControlledRAG in practice:** disclose all seven categories; identify
+alternatives capable of changing the claim; calibrate on a
+deployment-relevant human slice; stress-test only those claim-critical
+alternatives; and report the conclusion as stable, conditional, or
+unresolved. Disagreement is not averaged away as evaluation noise. It
+identifies the assumptions on which the conclusion depends and determines
+whether the claim is stable enough for publication or deployment.
 
-Finally, we add Cattan et al., “DRAGged into Conflicts” (arXiv:2506.08500,
-2025) and distinguish contradictory retrieved sources from scorer
-disagreement. We did not complete a contradictory-context experiment. If
-accepted, the camera-ready will also provide a canonical
-experiment/data/code map while accurately labeling recovered versus submitted
-rows and avoiding a universal artifact completeness claim.
+The reviews led us to sharpen the paper’s central distinction: the seven-axis
+framework is the methodological contribution, while the current experiments
+are bounded demonstrations of why that disclosure is necessary—not equal
+validation of every axis or broad numerical generalization. We have narrowed
+the empirical claim, strengthened the evidence grading, and converted the
+framework from a descriptive checklist into an explicit decision procedure.
+The experiment map distinguishes row-reconstructable from
+summary-verifiable results and does not imply universal per-query coverage.
+
+The camera-ready will lead with a motivating decision example, define the
+claim boundary and metrics before results, present one experiment map, and
+separate the strongest controlled audits from bounded secondary probes. It
+will also distinguish scorer disagreement from contradictory retrieved
+evidence and cite Cattan et al., “DRAGged into Conflicts: Detecting and
+Addressing Conflicting Sources in Search-Augmented LLMs,” arXiv:2506.08500,
+2025; no contradictory-context experiment was completed.
+
+With this narrowed claim and operational protocol, the paper provides a
+bounded empirical demonstration and a reusable evaluation contribution
+rather than a claim of comprehensive modern-RAG validation.

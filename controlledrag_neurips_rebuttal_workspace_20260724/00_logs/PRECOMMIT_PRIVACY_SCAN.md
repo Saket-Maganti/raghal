@@ -201,3 +201,33 @@ and this scan record.
 
 Receipt outcome:
 `PASS_FOR_PUBLIC_SAFE_PROMPT_06_RECEIPT_COMMIT_AND_PUSH`.
+
+## Final polish content rescan
+
+The final-polish scan covered the complete rebuttal workspace, every changed
+file, all six extracted paste fields, the confidential-source overlap surface,
+and the local review bundle. The latest authoritative instruction explicitly
+authorizes sanitized non-force integration and push to `main`.
+
+| Check | Result |
+| --- | --- |
+| Changed files outside rebuttal workspace | 0 |
+| Personal absolute paths in changed files | 0 |
+| Email-address patterns | 0 |
+| AWS/GitHub/OpenAI/Slack token formats | 0 |
+| Private-key or generic secret assignments | 0 |
+| Credential, `.env`, PEM, or key files | 0 |
+| Symlinks | 0 |
+| Files larger than 5 MB | 0 |
+| Cache, checkpoint, or model-weight artifacts | 0 |
+| Confidential exact-review source tracked | 0 |
+| Non-citation overlap at 10/12/15 words | 0 / 0 / 0 |
+| Public citation overlap | Cattan et al. citation only |
+| External-rater identity | 0 |
+| URLs or author identity in paste bodies | 0 |
+| Stale or quarantined values in paste bodies | 0 |
+| Local bundle files | 14 public-safe files outside Git |
+| Real model/API/GPU/Kaggle/Colab runs | 0 |
+
+Final-polish content outcome:
+`PASS_FOR_PUBLIC_SAFE_SANITIZED_MAIN_COMMIT_AND_PUSH`.

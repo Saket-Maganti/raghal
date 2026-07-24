@@ -2,33 +2,40 @@
 
 ## Paste-ready response
 
-Thank you for recognizing the importance of standardized RAG-faithfulness
-reporting and for identifying generalizability as the central limitation. We
-agree that the current experiments do not validate the observed numerical
-effects in complex or agentic RAG.
+Thank you for identifying the gap between a bounded short-answer audit and
+complex modern RAG. We agree: the framework’s broader applicability is a
+procedural proposal, while the observed numerical effects are not established
+to transfer beyond the tested cells.
 
-We distinguish the methodological and empirical claims. The methodological
-proposal is a disclosure procedure: report the generation setup, retrieval
-setup, context construction, measurement rule, calibration evidence,
-threshold portability, and deployment cost; identify claim-critical
-alternatives; and classify the result as stable, conditional, or unresolved.
-This procedure can be
-instantiated for multi-hop, long-form, or agentic systems, but that
-applicability claim is procedural. It does not imply that our measured effect
-sizes or rankings transfer to those settings.
+For an agentic RAG system, the same disclosure structure maps naturally:
+generator becomes the agent/model policy; retrieval includes search and tool
+selection; context includes memory and intermediate observations;
+measurement includes judge and task-success definitions; calibration uses
+deployment-relevant human judgments; threshold transfer covers intervention
+or abstention rules; and cost includes latency and tool calls. This is a
+procedural mapping, not a claim that our measured effect sizes transfer to
+agentic systems.
 
-The numerical evidence remains bounded primarily to short-answer QA and
-7B-class local generators. The available breadth is:
-a five-dataset threshold grid, a HotpotQA/SQuAD cost cell, bounded retriever
-diagnostics, one Qwen2.5-7B probe, and an exploratory 40-question
-MS-MARCO/QASPER long-form panel. The long-form panel is too small for a broad
-claim, and the HotpotQA cost cell is not a full multi-hop faithfulness
-validation.
+Operationally, define the task-level decision and endpoint, disclose all
+seven practical categories, calibrate on a deployment-relevant human slice,
+and stress-test reasonable choices capable of changing a sign, rank,
+threshold, or deployment decision. Then report the result as stable,
+conditional, or unresolved rather than compressing disagreement into a
+universal score.
 
-For complex applications, the concrete guidance is to define the task-level
-decision and endpoint first, disclose all seven categories, calibrate on a
-deployment-relevant human slice, and stress-test only choices capable of
-changing the sign, rank, threshold, or deployment decision. A result that
-depends on those choices should be reported conditionally rather than
-aggregated into a single universal score. Broader complex-task validation
-remains future work.
+In a complex application, the framework succeeds only if it reveals which
+conclusions remain unchanged under claim-relevant alternatives. If every
+reasonable configuration selects a different system, the outcome must remain
+unresolved rather than be presented as a general result. That rule makes the
+procedure falsifiable at the claim level: it can withhold the conclusion when
+the required stability is absent.
+
+Existing threshold, cost, retriever, second-generator, and small long-form
+cells show that the audit can be instantiated beyond one primary experiment,
+but they do not constitute complex-task validation. The 40-question
+long-form panel is exploratory, and the HotpotQA cost cell is not a full
+multi-hop faithfulness experiment.
+
+The evidence supports the need for the reporting procedure, while broader
+complex-task effect sizes remain an explicit validation target rather than a
+claim of this paper.
