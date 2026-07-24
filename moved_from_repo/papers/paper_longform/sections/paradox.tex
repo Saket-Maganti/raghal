@@ -1,0 +1,108 @@
+\section{The Refinement Paradox}
+\label{sec:paradox}
+
+\input{figures/headline_frontier}
+
+We open with the phenomenon. Table~\ref{tab:hcpc_main} reports the
+baseline / HCPC-v$1$ / HCPC-v$2$ comparison on SQuAD with Mistral-$7$B
+at the canonical operating point ($k{=}3$, chunk = $1024$ chars,
+$n{=}30$). Naive per-passage refinement (HCPC-v$1$) raises mean
+retrieval similarity from $0.587$ to $0.601$ --- the metric most RAG
+papers optimize --- yet drops faithfulness from $0.7995$ to $0.6407$
+and introduces $10.0\%$ hallucination where there was none.
+
+\begin{table}[!htb]
+\centering
+\caption{The refinement paradox at the canonical operating point.
+Mistral-$7$B, SQuAD, $k=3$, chunk $= 1024$, $n=30$ per condition.
+HCPC-v$1$ \emph{maintains or improves} retrieval similarity while
+\emph{degrading} faithfulness and introducing hallucination.
+HCPC-v$2$ recovers faithfulness while intervening on $16.7\%$ of queries.}
+\label{tab:hcpc_main}
+\footnotesize
+\begin{tabular}{lcccc}
+\toprule
+Condition & faithfulness & hallucination & retrieval~sim. & refine~rate \\
+\midrule
+Baseline       & $0.7995$ & $0.000$ & $0.587$ & $0.000$ \\
+HCPC-v$1$ (refine all) & $0.6407$ & $\mathbf{0.100}$ & $0.601$ & $1.000$ \\
+HCPC-v$2$ (gated)      & $\mathbf{0.7874}$ & $0.000$ & $0.589$ & $0.167$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The paradox is not specific to one (dataset, generator) cell. Across
+the multidataset evaluation it appears on $11/15$ (dataset, generator)
+pairs at $\Delta_{\textrm{paradox}} > 0.01$, with magnitude correlated
+with the structural properties of the dataset rather than with the
+generator family (Appendix~\ref{sec:multidataset}).
+
+\subsection{The mechanism: it is the \emph{set}, not the passages}
+\label{sec:paradox:mechanism}
+
+The standard explanation for hallucination in RAG --- ``the passages
+are wrong'' --- predicts that lower retrieval similarity should
+correlate with worse faithfulness. We find the opposite: the worst
+faithfulness drops happen when refinement \emph{raises} per-passage
+similarity. The signal that drops alongside faithfulness is set-level
+coherence: HCPC-v$1$'s mean CCS is $0.45$ vs the baseline's $0.59$
+(Appendix~\ref{app:hyperparams}). The refinement step is breaking
+the connective tissue between passages, not the per-passage relevance.
+
+\input{figures/qualitative_paradox}
+
+A representative example (Figure~\ref{fig:qualitative_paradox}) is
+illustrative. The query ``\emph{What city did Super Bowl 50 take place
+in?}'' has ground truth ``Santa Clara''. The baseline retrieval
+returns three coherent chunks, all about Super Bowl 50 in Santa
+Clara, and the generator answers correctly with faithfulness $0.94$.
+HCPC-v$1$ refines each chunk to its query-most-similar fragment;
+the refined set still has high per-chunk similarity to the query, but
+the connective phrasing tying ``Santa Clara'' to ``Super Bowl 50'' is
+gone. The generator falls back on the more familiar regional name and
+answers ``San Francisco Bay Area'' --- fluent, plausible, and wrong
+(faithfulness drops to $0.48$). HCPC-v$2$, which preserves the top
+two chunks unconditionally, returns the correct ``Santa Clara'' answer.
+
+\subsection{Disentangling coherence from relevance}
+\label{sec:paradox:disentangle}
+
+\input{figures/disentanglement}
+
+A natural objection: maybe coherence is just relevance under another
+name. Figure~\ref{fig:disentanglement} answers it directly. We bucket
+queries into similarity quartiles (lines) and, within each quartile,
+bin by CCS (x-axis). Faithfulness varies meaningfully along the
+coherence axis \emph{at fixed similarity quartiles}: the spread within
+a single similarity quartile is comparable to the spread across the
+full data. If coherence were a re-statement of relevance, the lines
+would be flat. They are not.
+
+\input{figures/coherence_heatmap}
+
+Figure~\ref{fig:coherence_heatmap} makes the structural intuition
+visual: for one coherent and one incoherent retrieval set, the
+pairwise cosine-similarity matrix shows a block of consistently high
+sims for the coherent case and split sub-clusters for the incoherent
+case. The mechanism --- refinement that breaks the block ---
+becomes visible.
+
+\subsection{What HCPC-v$2$ actually does}
+\label{sec:paradox:v2_intuition}
+
+HCPC-v$2$ is deliberately simple. After dense retrieval, it inspects
+the top-$k$ retrieved set, computes CCS, and applies a single decision
+rule: if CCS is below a threshold $\tau$ (a coherent set worth
+preserving), refinement is skipped. Otherwise, the lowest-similarity
+chunks are sub-divided and reranked, with the top two chunks
+\emph{always} preserved by rank. The full algorithm and the bare-CCS
+ablation that isolates the gate from the protected-rank rule are in
+\S\ref{sec:method}.
+
+The headline result: with this single decision rule, HCPC-v$2$
+recovers SQuAD faithfulness from $0.6407$ back to $0.7874$ --- $93\%$
+of the way back to the no-refinement baseline --- and brings
+hallucination from $10\%$ to $0\%$. It does so while intervening on
+only $16.7\%$ of queries: on the other $83.3\%$, it lets the standard
+pipeline run unmodified. \emph{Restraint, not algorithmic
+sophistication, is the active ingredient.}

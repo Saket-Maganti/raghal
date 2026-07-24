@@ -1,0 +1,8 @@
+{
+  "squad__sc128__mistral": true,
+  "squad__sc256__mistral": true,
+  "squad__sc512__mistral": true,
+  "pubmedqa__sc128__mistral": true,
+  "pubmedqa__sc256__mistral": true,
+  "pubmedqa__sc512__mistral": true
+}

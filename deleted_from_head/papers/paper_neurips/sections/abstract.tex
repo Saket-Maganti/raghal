@@ -1,0 +1,38 @@
+RAG fails not because retrieval is inaccurate, but because retrieved
+evidence does not form a usable narrative for the generator.
+We document a counter-intuitive failure mode in retrieval-augmented
+generation: standard post-retrieval refinement, the default in deployed
+rerank-and-compress stacks, raises per-passage similarity yet
+\emph{cuts} answer faithfulness on SQuAD from $0.80$ to $0.64$ and
+introduces $10\%$ hallucination where there was none. We name this the
+\textbf{refinement paradox} and trace it to a property of the retrieved
+\emph{set}, not of any individual passage: when refinement splinters a
+broad passage into a narrow high-similarity fragment, it strips the
+connective evidence the generator was relying on, and the generator
+silently fills the gap with parametric memory.
+
+We distill the explanation into the \textbf{Context Coherence Score}
+(CCS), a generator-free retrieval-time diagnostic computable from
+pairwise chunk embedding similarities, and a deployment policy
+(HCPC-v$2$) that gates refinement on CCS. The policy recovers SQuAD
+faithfulness to $0.79$ with $0\%$ hallucination while intervening on
+only $16.7\%$ of queries. Across $7{,}000+$ queries spanning SQuAD,
+PubMedQA, HotpotQA, NaturalQuestions, and TriviaQA, with five generator
+families ($7$B Mistral $\to$ $120$B GPT-OSS), the paradox and the
+recovery hold. Seven robustness checks confirm the result: the SQuAD
+paradox is $0.069 \pm 0.004$ across three random seeds (signal/$\sigma=
+17\times$); a one-way ANOVA over four prompt templates yields $p=0.83$;
+HCPC outperforms a hierarchical RAPTOR baseline on $2/3$ datasets; at
+frontier scale Llama-$3.3$-$70$B exactly reproduces the paradox
+magnitude ($0.100$ vs $0.100$ at $7$B); the paradox is reranker-agnostic
+across MiniLM-L-$6$/L-$12$/BAAI-bge; quantization-agnostic across
+Q$4$/Q$5$/Q$8$; and amplifies from $+0.065$ to $+0.115$ as sampling
+temperature rises from $0$ to $1.0$. As cross-validation, the model's
+own self-reported confidence is significantly correlated with CCS
+(Pearson $r{=}0.36$, $p{=}0.005$). The benchmark, code, a $\texttt{pip
+install}$-able CCS metric, and a HuggingFace-loadable dataset
+(\href{https://doi.org/10.5281/zenodo.19757291}{DOI~10.5281/zenodo.19757291})
+are released. The broader message: RAG evaluation has been optimizing
+the wrong quantity. We have been measuring how good each passage looks
+on its own, when what the generator actually needs is evidence that
+fits together.

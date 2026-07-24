@@ -1,0 +1,7 @@
+category,name,count
+condition,baseline,34
+condition,hcpc_v1,33
+condition,hcpc_v2,33
+disagreement_type,deberta_high_ragas_low,34
+disagreement_type,near_threshold_disagreement,33
+disagreement_type,ragas_high_deberta_low,33

@@ -1,0 +1,2468 @@
+[
+  {
+    "timestamp": "2026-04-09T14:20:25.049732+00:00",
+    "query": "Which NFL team represented the AFC at Super Bowl 50?",
+    "retrieved_context": ". The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title\n\n---\n\n. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title\n\n---\n\n. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title",
+    "generated_output": " The American Football Conference (AFC) champion, which is the Denver Broncos, represented the AFC at Super Bowl 50.",
+    "faithfulness_score": 0.7425,
+    "is_hallucination": false,
+    "sentence_scores": [
+      {
+        "sentence": "The American Football Conference (AFC) champion, which is the Denver Broncos, represented the AFC at Super Bowl 50",
+        "entailment": 0.7425,
+        "contradiction": 0.0771,
+        "neutral": 0.1804
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.6368,
+      "max_similarity": 0.6368,
+      "min_similarity": 0.6368,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_n_weak": 3,
+      "hcpc_n_refined": 3
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v1",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "Denver Broncos",
+      "hcpc_log": {
+        "n_strong": 0,
+        "n_weak": 3,
+        "n_refined": 3,
+        "strong_sims": [],
+        "weak_sims": [
+          0.3967,
+          0.3967,
+          0.3967
+        ],
+        "refinements": [
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.3967,
+            "parent_ce": 8.7047,
+            "n_sub_chunks": 5,
+            "best_sub_preview": ". The American Football Conference (AFC) champion Denver Broncos defeated the Na",
+            "best_sub_sim": 0.6368,
+            "best_sub_ce": 3.4854,
+            "sim_improvement": 0.2401,
+            "ce_improvement": -5.2193
+          },
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.3967,
+            "parent_ce": 8.7047,
+            "n_sub_chunks": 5,
+            "best_sub_preview": ". The American Football Conference (AFC) champion Denver Broncos defeated the Na",
+            "best_sub_sim": 0.6368,
+            "best_sub_ce": 3.4854,
+            "sim_improvement": 0.2401,
+            "ce_improvement": -5.2193
+          },
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.3967,
+            "parent_ce": 8.7047,
+            "n_sub_chunks": 5,
+            "best_sub_preview": ". The American Football Conference (AFC) champion Denver Broncos defeated the Na",
+            "best_sub_sim": 0.6368,
+            "best_sub_ce": 3.4854,
+            "sim_improvement": 0.2401,
+            "ce_improvement": -5.2193
+          }
+        ]
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:20:29.086126+00:00",
+    "query": "Which NFL team represented the NFC at Super Bowl 50?",
+    "retrieved_context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season",
+    "generated_output": " I cannot find this information in the provided context. The context only states that Super Bowl 50 determined the champion of the NFL, but it does not specify which teams were participating.",
+    "faithfulness_score": 0.5553,
+    "is_hallucination": false,
+    "sentence_scores": [
+      {
+        "sentence": "I cannot find this information in the provided context",
+        "entailment": 0.5531,
+        "contradiction": 0.2699,
+        "neutral": 0.177
+      },
+      {
+        "sentence": "The context only states that Super Bowl 50 determined the champion of the NFL, but it does not specify which teams were participating",
+        "entailment": 0.5576,
+        "contradiction": 0.1695,
+        "neutral": 0.2729
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.6227,
+      "max_similarity": 0.6227,
+      "min_similarity": 0.6227,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_n_weak": 3,
+      "hcpc_n_refined": 3
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v1",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "Carolina Panthers",
+      "hcpc_log": {
+        "n_strong": 0,
+        "n_weak": 3,
+        "n_refined": 3,
+        "strong_sims": [],
+        "weak_sims": [
+          0.4176,
+          0.4176,
+          0.4176
+        ],
+        "refinements": [
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.4176,
+            "parent_ce": 8.3569,
+            "n_sub_chunks": 5,
+            "best_sub_preview": "Super Bowl 50 was an American football game to determine the champion of the Nat",
+            "best_sub_sim": 0.6227,
+            "best_sub_ce": 4.1136,
+            "sim_improvement": 0.2051,
+            "ce_improvement": -4.2433
+          },
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.4176,
+            "parent_ce": 8.3569,
+            "n_sub_chunks": 5,
+            "best_sub_preview": "Super Bowl 50 was an American football game to determine the champion of the Nat",
+            "best_sub_sim": 0.6227,
+            "best_sub_ce": 4.1136,
+            "sim_improvement": 0.2051,
+            "ce_improvement": -4.2433
+          },
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.4176,
+            "parent_ce": 8.3569,
+            "n_sub_chunks": 5,
+            "best_sub_preview": "Super Bowl 50 was an American football game to determine the champion of the Nat",
+            "best_sub_sim": 0.6227,
+            "best_sub_ce": 4.1136,
+            "sim_improvement": 0.2051,
+            "ce_improvement": -4.2433
+          }
+        ]
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:20:34.928402+00:00",
+    "query": "Where did Super Bowl 50 take place?",
+    "retrieved_context": "which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.\n\n---\n\nwhich the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.\n\n---\n\nwhich the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.",
+    "generated_output": " I cannot find this information in the provided context. The context only mentions that the game would be known as \"Super Bowl L\" and that the logo would prominently feature Arabic numerals 50, but it does not specify where the Super Bowl took place.",
+    "faithfulness_score": 0.582,
+    "is_hallucination": false,
+    "sentence_scores": [
+      {
+        "sentence": "I cannot find this information in the provided context",
+        "entailment": 0.5531,
+        "contradiction": 0.2699,
+        "neutral": 0.177
+      },
+      {
+        "sentence": "The context only mentions that the game would be known as \"Super Bowl L\" and that the logo would prominently feature Arabic numerals 50, but it does not specify where the Super Bowl took place",
+        "entailment": 0.611,
+        "contradiction": 0.1601,
+        "neutral": 0.2289
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.5887,
+      "max_similarity": 0.5887,
+      "min_similarity": 0.5887,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_n_weak": 3,
+      "hcpc_n_refined": 3
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v1",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "Santa Clara, California",
+      "hcpc_log": {
+        "n_strong": 0,
+        "n_weak": 3,
+        "n_refined": 3,
+        "strong_sims": [],
+        "weak_sims": [
+          0.3872,
+          0.3872,
+          0.3872
+        ],
+        "refinements": [
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.3872,
+            "parent_ce": 8.4794,
+            "n_sub_chunks": 5,
+            "best_sub_preview": "which the game would have been known as \"Super Bowl L\"), so that the logo could ",
+            "best_sub_sim": 0.5887,
+            "best_sub_ce": -0.5422,
+            "sim_improvement": 0.2015,
+            "ce_improvement": -9.0216
+          },
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.3872,
+            "parent_ce": 8.4794,
+            "n_sub_chunks": 5,
+            "best_sub_preview": "which the game would have been known as \"Super Bowl L\"), so that the logo could ",
+            "best_sub_sim": 0.5887,
+            "best_sub_ce": -0.5422,
+            "sim_improvement": 0.2015,
+            "ce_improvement": -9.0216
+          },
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.3872,
+            "parent_ce": 8.4794,
+            "n_sub_chunks": 5,
+            "best_sub_preview": "which the game would have been known as \"Super Bowl L\"), so that the logo could ",
+            "best_sub_sim": 0.5887,
+            "best_sub_ce": -0.5422,
+            "sim_improvement": 0.2015,
+            "ce_improvement": -9.0216
+          }
+        ]
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:20:40.405199+00:00",
+    "query": "Which NFL team won Super Bowl 50?",
+    "retrieved_context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season",
+    "generated_output": " I cannot find this information in the provided context. The context only states that Super Bowl 50 was a game to determine the champion of the National Football League (NFL) for the 2015 season, but it does not specify which team won.",
+    "faithfulness_score": 0.7296,
+    "is_hallucination": false,
+    "sentence_scores": [
+      {
+        "sentence": "I cannot find this information in the provided context",
+        "entailment": 0.5531,
+        "contradiction": 0.2699,
+        "neutral": 0.177
+      },
+      {
+        "sentence": "The context only states that Super Bowl 50 was a game to determine the champion of the National Football League (NFL) for the 2015 season, but it does not specify which team won",
+        "entailment": 0.9061,
+        "contradiction": 0.03,
+        "neutral": 0.0639
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.6572,
+      "max_similarity": 0.6572,
+      "min_similarity": 0.6572,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_n_weak": 3,
+      "hcpc_n_refined": 3
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v1",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "Denver Broncos",
+      "hcpc_log": {
+        "n_strong": 0,
+        "n_weak": 3,
+        "n_refined": 3,
+        "strong_sims": [],
+        "weak_sims": [
+          0.4426,
+          0.4426,
+          0.4426
+        ],
+        "refinements": [
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.4426,
+            "parent_ce": 9.7919,
+            "n_sub_chunks": 5,
+            "best_sub_preview": "Super Bowl 50 was an American football game to determine the champion of the Nat",
+            "best_sub_sim": 0.6572,
+            "best_sub_ce": 7.4511,
+            "sim_improvement": 0.2146,
+            "ce_improvement": -2.3408
+          },
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.4426,
+            "parent_ce": 9.7919,
+            "n_sub_chunks": 5,
+            "best_sub_preview": "Super Bowl 50 was an American football game to determine the champion of the Nat",
+            "best_sub_sim": 0.6572,
+            "best_sub_ce": 7.4511,
+            "sim_improvement": 0.2146,
+            "ce_improvement": -2.3408
+          },
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.4426,
+            "parent_ce": 9.7919,
+            "n_sub_chunks": 5,
+            "best_sub_preview": "Super Bowl 50 was an American football game to determine the champion of the Nat",
+            "best_sub_sim": 0.6572,
+            "best_sub_ce": 7.4511,
+            "sim_improvement": 0.2146,
+            "ce_improvement": -2.3408
+          }
+        ]
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:20:45.080135+00:00",
+    "query": "What color was used to emphasize the 50th anniversary of the Super Bowl?",
+    "retrieved_context": ". As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been\n\n---\n\n. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been\n\n---\n\n. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been",
+    "generated_output": " The color used to emphasize the 50th anniversary of the Super Bowl, according to the provided context, is gold.",
+    "faithfulness_score": 0.8353,
+    "is_hallucination": false,
+    "sentence_scores": [
+      {
+        "sentence": "The color used to emphasize the 50th anniversary of the Super Bowl, according to the provided context, is gold",
+        "entailment": 0.8353,
+        "contradiction": 0.0741,
+        "neutral": 0.0907
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.6888,
+      "max_similarity": 0.6888,
+      "min_similarity": 0.6888,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_n_weak": 3,
+      "hcpc_n_refined": 3
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v1",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "gold",
+      "hcpc_log": {
+        "n_strong": 0,
+        "n_weak": 3,
+        "n_refined": 3,
+        "strong_sims": [],
+        "weak_sims": [
+          0.2475,
+          0.2475,
+          0.2475
+        ],
+        "refinements": [
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.2475,
+            "parent_ce": 3.2164,
+            "n_sub_chunks": 5,
+            "best_sub_preview": ". As this was the 50th Super Bowl, the league emphasized the \"golden anniversary",
+            "best_sub_sim": 0.6888,
+            "best_sub_ce": 4.8062,
+            "sim_improvement": 0.4413,
+            "ce_improvement": 1.5899
+          },
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.2475,
+            "parent_ce": 3.2164,
+            "n_sub_chunks": 5,
+            "best_sub_preview": ". As this was the 50th Super Bowl, the league emphasized the \"golden anniversary",
+            "best_sub_sim": 0.6888,
+            "best_sub_ce": 4.8062,
+            "sim_improvement": 0.4413,
+            "ce_improvement": 1.5899
+          },
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.2475,
+            "parent_ce": 3.2164,
+            "n_sub_chunks": 5,
+            "best_sub_preview": ". As this was the 50th Super Bowl, the league emphasized the \"golden anniversary",
+            "best_sub_sim": 0.6888,
+            "best_sub_ce": 4.8062,
+            "sim_improvement": 0.4413,
+            "ce_improvement": 1.5899
+          }
+        ]
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:20:53.611382+00:00",
+    "query": "What was the theme of Super Bowl 50?",
+    "retrieved_context": "which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.\n\n---\n\nwhich the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.\n\n---\n\nwhich the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.",
+    "generated_output": " I cannot find this information in the provided context. The context only mentions that the game would be known as \"Super Bowl L\" and that the logo would prominently feature Arabic numerals 50, but it does not provide any information about the theme of Super Bowl 50.",
+    "faithfulness_score": 0.6554,
+    "is_hallucination": false,
+    "sentence_scores": [
+      {
+        "sentence": "I cannot find this information in the provided context",
+        "entailment": 0.5531,
+        "contradiction": 0.2699,
+        "neutral": 0.177
+      },
+      {
+        "sentence": "The context only mentions that the game would be known as \"Super Bowl L\" and that the logo would prominently feature Arabic numerals 50, but it does not provide any information about the theme of Super Bowl 50",
+        "entailment": 0.7577,
+        "contradiction": 0.1931,
+        "neutral": 0.0492
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.6354,
+      "max_similarity": 0.6354,
+      "min_similarity": 0.6354,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_n_weak": 3,
+      "hcpc_n_refined": 3
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v1",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "\"golden anniversary\"",
+      "hcpc_log": {
+        "n_strong": 0,
+        "n_weak": 3,
+        "n_refined": 3,
+        "strong_sims": [],
+        "weak_sims": [
+          0.2742,
+          0.2742,
+          0.2742
+        ],
+        "refinements": [
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.2742,
+            "parent_ce": 5.7234,
+            "n_sub_chunks": 5,
+            "best_sub_preview": "which the game would have been known as \"Super Bowl L\"), so that the logo could ",
+            "best_sub_sim": 0.6354,
+            "best_sub_ce": 2.309,
+            "sim_improvement": 0.3612,
+            "ce_improvement": -3.4144
+          },
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.2742,
+            "parent_ce": 5.7234,
+            "n_sub_chunks": 5,
+            "best_sub_preview": "which the game would have been known as \"Super Bowl L\"), so that the logo could ",
+            "best_sub_sim": 0.6354,
+            "best_sub_ce": 2.309,
+            "sim_improvement": 0.3612,
+            "ce_improvement": -3.4144
+          },
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.2742,
+            "parent_ce": 5.7234,
+            "n_sub_chunks": 5,
+            "best_sub_preview": "which the game would have been known as \"Super Bowl L\"), so that the logo could ",
+            "best_sub_sim": 0.6354,
+            "best_sub_ce": 2.309,
+            "sim_improvement": 0.3612,
+            "ce_improvement": -3.4144
+          }
+        ]
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:20:59.293121+00:00",
+    "query": "What day was the game played on?",
+    "retrieved_context": "The game's media day, which was typically held on the Tuesday afternoon prior to the game, was moved to the Monday evening and re-branded as Super Bowl Opening Night. The event was held on February 1, 2016 at SAP Center in San Jose\n\n---\n\nThe game's media day, which was typically held on the Tuesday afternoon prior to the game, was moved to the Monday evening and re-branded as Super Bowl Opening Night. The event was held on February 1, 2016 at SAP Center in San Jose\n\n---\n\nThe game's media day, which was typically held on the Tuesday afternoon prior to the game, was moved to the Monday evening and re-branded as Super Bowl Opening Night. The event was held on February 1, 2016 at SAP Center in San Jose",
+    "generated_output": " I cannot find this information in the provided context. The context only mentions the date of the Super Bowl Opening Night, but not the date of the actual game.",
+    "faithfulness_score": 0.6427,
+    "is_hallucination": false,
+    "sentence_scores": [
+      {
+        "sentence": "I cannot find this information in the provided context",
+        "entailment": 0.5531,
+        "contradiction": 0.2699,
+        "neutral": 0.177
+      },
+      {
+        "sentence": "The context only mentions the date of the Super Bowl Opening Night, but not the date of the actual game",
+        "entailment": 0.7322,
+        "contradiction": 0.1013,
+        "neutral": 0.1665
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.5556,
+      "max_similarity": 0.5556,
+      "min_similarity": 0.5556,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_n_weak": 3,
+      "hcpc_n_refined": 3
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v1",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "February 7, 2016",
+      "hcpc_log": {
+        "n_strong": 0,
+        "n_weak": 3,
+        "n_refined": 3,
+        "strong_sims": [],
+        "weak_sims": [
+          0.0546,
+          0.0546,
+          0.0546
+        ],
+        "refinements": [
+          {
+            "parent_preview": "The game's media day, which was typically held on the Tuesday afternoon prior to the game, was moved to the Monday eveni",
+            "parent_sim": 0.0546,
+            "parent_ce": 4.9923,
+            "n_sub_chunks": 2,
+            "best_sub_preview": "The game's media day, which was typically held on the Tuesday afternoon prior to",
+            "best_sub_sim": 0.5556,
+            "best_sub_ce": 5.1865,
+            "sim_improvement": 0.501,
+            "ce_improvement": 0.1943
+          },
+          {
+            "parent_preview": "The game's media day, which was typically held on the Tuesday afternoon prior to the game, was moved to the Monday eveni",
+            "parent_sim": 0.0546,
+            "parent_ce": 4.9923,
+            "n_sub_chunks": 2,
+            "best_sub_preview": "The game's media day, which was typically held on the Tuesday afternoon prior to",
+            "best_sub_sim": 0.5556,
+            "best_sub_ce": 5.1865,
+            "sim_improvement": 0.501,
+            "ce_improvement": 0.1943
+          },
+          {
+            "parent_preview": "The game's media day, which was typically held on the Tuesday afternoon prior to the game, was moved to the Monday eveni",
+            "parent_sim": 0.0546,
+            "parent_ce": 4.9923,
+            "n_sub_chunks": 2,
+            "best_sub_preview": "The game's media day, which was typically held on the Tuesday afternoon prior to",
+            "best_sub_sim": 0.5556,
+            "best_sub_ce": 5.1865,
+            "sim_improvement": 0.501,
+            "ce_improvement": 0.1943
+          }
+        ]
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:21:03.072662+00:00",
+    "query": "What is the AFC short for?",
+    "retrieved_context": ". With the defense carrying the team despite the issues with the offense, the Broncos finished the regular season with a 12–4 record and earned home-field advantage throughout the AFC playoffs.\n\n---\n\n. With the defense carrying the team despite the issues with the offense, the Broncos finished the regular season with a 12–4 record and earned home-field advantage throughout the AFC playoffs.\n\n---\n\n. With the defense carrying the team despite the issues with the offense, the Broncos finished the regular season with a 12–4 record and earned home-field advantage throughout the AFC playoffs.",
+    "generated_output": " I cannot find this information in the provided context. The context does not specify what AFC stands for.",
+    "faithfulness_score": 0.6762,
+    "is_hallucination": false,
+    "sentence_scores": [
+      {
+        "sentence": "I cannot find this information in the provided context",
+        "entailment": 0.5531,
+        "contradiction": 0.2699,
+        "neutral": 0.177
+      },
+      {
+        "sentence": "The context does not specify what AFC stands for",
+        "entailment": 0.7994,
+        "contradiction": 0.0654,
+        "neutral": 0.1352
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.4992,
+      "max_similarity": 0.4992,
+      "min_similarity": 0.4992,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_n_weak": 3,
+      "hcpc_n_refined": 3
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v1",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "American Football Conference",
+      "hcpc_log": {
+        "n_strong": 0,
+        "n_weak": 3,
+        "n_refined": 3,
+        "strong_sims": [],
+        "weak_sims": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "refinements": [
+          {
+            "parent_preview": ". With the defense carrying the team despite the issues with the offense, the Broncos finished the regular season with a",
+            "parent_sim": 0.0,
+            "parent_ce": -7.8142,
+            "n_sub_chunks": 1,
+            "best_sub_preview": ". With the defense carrying the team despite the issues with the offense, the Br",
+            "best_sub_sim": 0.4992,
+            "best_sub_ce": -7.8142,
+            "sim_improvement": 0.4992,
+            "ce_improvement": -0.0
+          },
+          {
+            "parent_preview": ". With the defense carrying the team despite the issues with the offense, the Broncos finished the regular season with a",
+            "parent_sim": 0.0,
+            "parent_ce": -7.8142,
+            "n_sub_chunks": 1,
+            "best_sub_preview": ". With the defense carrying the team despite the issues with the offense, the Br",
+            "best_sub_sim": 0.4992,
+            "best_sub_ce": -7.8142,
+            "sim_improvement": 0.4992,
+            "ce_improvement": -0.0
+          },
+          {
+            "parent_preview": ". With the defense carrying the team despite the issues with the offense, the Broncos finished the regular season with a",
+            "parent_sim": 0.0,
+            "parent_ce": -7.8142,
+            "n_sub_chunks": 1,
+            "best_sub_preview": ". With the defense carrying the team despite the issues with the offense, the Br",
+            "best_sub_sim": 0.4992,
+            "best_sub_ce": -7.8142,
+            "sim_improvement": 0.4992,
+            "ce_improvement": -0.0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:21:11.661519+00:00",
+    "query": "What was the theme of Super Bowl 50?",
+    "retrieved_context": "which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.\n\n---\n\nwhich the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.\n\n---\n\nwhich the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.",
+    "generated_output": " I cannot find this information in the provided context. The context only mentions that the game would be known as \"Super Bowl L\" and that the logo would prominently feature Arabic numerals 50, but it does not provide any information about the theme of Super Bowl 50.",
+    "faithfulness_score": 0.6554,
+    "is_hallucination": false,
+    "sentence_scores": [
+      {
+        "sentence": "I cannot find this information in the provided context",
+        "entailment": 0.5531,
+        "contradiction": 0.2699,
+        "neutral": 0.177
+      },
+      {
+        "sentence": "The context only mentions that the game would be known as \"Super Bowl L\" and that the logo would prominently feature Arabic numerals 50, but it does not provide any information about the theme of Super Bowl 50",
+        "entailment": 0.7577,
+        "contradiction": 0.1931,
+        "neutral": 0.0492
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.6354,
+      "max_similarity": 0.6354,
+      "min_similarity": 0.6354,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_n_weak": 3,
+      "hcpc_n_refined": 3
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v1",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "\"golden anniversary\"",
+      "hcpc_log": {
+        "n_strong": 0,
+        "n_weak": 3,
+        "n_refined": 3,
+        "strong_sims": [],
+        "weak_sims": [
+          0.2742,
+          0.2742,
+          0.2742
+        ],
+        "refinements": [
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.2742,
+            "parent_ce": 5.7234,
+            "n_sub_chunks": 5,
+            "best_sub_preview": "which the game would have been known as \"Super Bowl L\"), so that the logo could ",
+            "best_sub_sim": 0.6354,
+            "best_sub_ce": 2.309,
+            "sim_improvement": 0.3612,
+            "ce_improvement": -3.4144
+          },
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.2742,
+            "parent_ce": 5.7234,
+            "n_sub_chunks": 5,
+            "best_sub_preview": "which the game would have been known as \"Super Bowl L\"), so that the logo could ",
+            "best_sub_sim": 0.6354,
+            "best_sub_ce": 2.309,
+            "sim_improvement": 0.3612,
+            "ce_improvement": -3.4144
+          },
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.2742,
+            "parent_ce": 5.7234,
+            "n_sub_chunks": 5,
+            "best_sub_preview": "which the game would have been known as \"Super Bowl L\"), so that the logo could ",
+            "best_sub_sim": 0.6354,
+            "best_sub_ce": 2.309,
+            "sim_improvement": 0.3612,
+            "ce_improvement": -3.4144
+          }
+        ]
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:21:16.365035+00:00",
+    "query": "What does AFC stand for?",
+    "retrieved_context": ". With the defense carrying the team despite the issues with the offense, the Broncos finished the regular season with a 12–4 record and earned home-field advantage throughout the AFC playoffs.\n\n---\n\n. With the defense carrying the team despite the issues with the offense, the Broncos finished the regular season with a 12–4 record and earned home-field advantage throughout the AFC playoffs.\n\n---\n\n. With the defense carrying the team despite the issues with the offense, the Broncos finished the regular season with a 12–4 record and earned home-field advantage throughout the AFC playoffs.",
+    "generated_output": " I cannot find the abbreviation \"AFC\" explicitly defined in the provided context. However, in American football, AFC typically stands for the American Football Conference.",
+    "faithfulness_score": 0.6233,
+    "is_hallucination": false,
+    "sentence_scores": [
+      {
+        "sentence": "I cannot find the abbreviation \"AFC\" explicitly defined in the provided context",
+        "entailment": 0.458,
+        "contradiction": 0.0758,
+        "neutral": 0.4662
+      },
+      {
+        "sentence": "However, in American football, AFC typically stands for the American Football Conference",
+        "entailment": 0.7886,
+        "contradiction": 0.1045,
+        "neutral": 0.1069
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.4753,
+      "max_similarity": 0.4753,
+      "min_similarity": 0.4753,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_n_weak": 3,
+      "hcpc_n_refined": 3
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v1",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "American Football Conference",
+      "hcpc_log": {
+        "n_strong": 0,
+        "n_weak": 3,
+        "n_refined": 3,
+        "strong_sims": [],
+        "weak_sims": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "refinements": [
+          {
+            "parent_preview": ". With the defense carrying the team despite the issues with the offense, the Broncos finished the regular season with a",
+            "parent_sim": 0.0,
+            "parent_ce": -5.3964,
+            "n_sub_chunks": 1,
+            "best_sub_preview": ". With the defense carrying the team despite the issues with the offense, the Br",
+            "best_sub_sim": 0.4753,
+            "best_sub_ce": -5.3964,
+            "sim_improvement": 0.4753,
+            "ce_improvement": -0.0
+          },
+          {
+            "parent_preview": ". With the defense carrying the team despite the issues with the offense, the Broncos finished the regular season with a",
+            "parent_sim": 0.0,
+            "parent_ce": -5.3964,
+            "n_sub_chunks": 1,
+            "best_sub_preview": ". With the defense carrying the team despite the issues with the offense, the Br",
+            "best_sub_sim": 0.4753,
+            "best_sub_ce": -5.3964,
+            "sim_improvement": 0.4753,
+            "ce_improvement": -0.0
+          },
+          {
+            "parent_preview": ". With the defense carrying the team despite the issues with the offense, the Broncos finished the regular season with a",
+            "parent_sim": 0.0,
+            "parent_ce": -5.3964,
+            "n_sub_chunks": 1,
+            "best_sub_preview": ". With the defense carrying the team despite the issues with the offense, the Br",
+            "best_sub_sim": 0.4753,
+            "best_sub_ce": -5.3964,
+            "sim_improvement": 0.4753,
+            "ce_improvement": -0.0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:21:21.604403+00:00",
+    "query": "What day was the Super Bowl played on?",
+    "retrieved_context": "The game's media day, which was typically held on the Tuesday afternoon prior to the game, was moved to the Monday evening and re-branded as Super Bowl Opening Night. The event was held on February 1, 2016 at SAP Center in San Jose\n\n---\n\nThe game's media day, which was typically held on the Tuesday afternoon prior to the game, was moved to the Monday evening and re-branded as Super Bowl Opening Night. The event was held on February 1, 2016 at SAP Center in San Jose\n\n---\n\nThe game's media day, which was typically held on the Tuesday afternoon prior to the game, was moved to the Monday evening and re-branded as Super Bowl Opening Night. The event was held on February 1, 2016 at SAP Center in San Jose",
+    "generated_output": " I cannot find this information in the provided context. The context only mentions the date of the Super Bowl Opening Night, not the actual game day.",
+    "faithfulness_score": 0.6271,
+    "is_hallucination": false,
+    "sentence_scores": [
+      {
+        "sentence": "I cannot find this information in the provided context",
+        "entailment": 0.5531,
+        "contradiction": 0.2699,
+        "neutral": 0.177
+      },
+      {
+        "sentence": "The context only mentions the date of the Super Bowl Opening Night, not the actual game day",
+        "entailment": 0.701,
+        "contradiction": 0.167,
+        "neutral": 0.132
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.7261,
+      "max_similarity": 0.7261,
+      "min_similarity": 0.7261,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_n_weak": 3,
+      "hcpc_n_refined": 3
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v1",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "February 7, 2016",
+      "hcpc_log": {
+        "n_strong": 0,
+        "n_weak": 3,
+        "n_refined": 3,
+        "strong_sims": [],
+        "weak_sims": [
+          0.4012,
+          0.4012,
+          0.4012
+        ],
+        "refinements": [
+          {
+            "parent_preview": "The game's media day, which was typically held on the Tuesday afternoon prior to the game, was moved to the Monday eveni",
+            "parent_sim": 0.4012,
+            "parent_ce": 8.0041,
+            "n_sub_chunks": 2,
+            "best_sub_preview": "The game's media day, which was typically held on the Tuesday afternoon prior to",
+            "best_sub_sim": 0.7261,
+            "best_sub_ce": 7.8981,
+            "sim_improvement": 0.3249,
+            "ce_improvement": -0.106
+          },
+          {
+            "parent_preview": "The game's media day, which was typically held on the Tuesday afternoon prior to the game, was moved to the Monday eveni",
+            "parent_sim": 0.4012,
+            "parent_ce": 8.0041,
+            "n_sub_chunks": 2,
+            "best_sub_preview": "The game's media day, which was typically held on the Tuesday afternoon prior to",
+            "best_sub_sim": 0.7261,
+            "best_sub_ce": 7.8981,
+            "sim_improvement": 0.3249,
+            "ce_improvement": -0.106
+          },
+          {
+            "parent_preview": "The game's media day, which was typically held on the Tuesday afternoon prior to the game, was moved to the Monday eveni",
+            "parent_sim": 0.4012,
+            "parent_ce": 8.0041,
+            "n_sub_chunks": 2,
+            "best_sub_preview": "The game's media day, which was typically held on the Tuesday afternoon prior to",
+            "best_sub_sim": 0.7261,
+            "best_sub_ce": 7.8981,
+            "sim_improvement": 0.3249,
+            "ce_improvement": -0.106
+          }
+        ]
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:21:24.215973+00:00",
+    "query": "Who won Super Bowl 50?",
+    "retrieved_context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season",
+    "generated_output": " I cannot find the winner of Super Bowl 50 in the provided context.",
+    "faithfulness_score": 0.6339,
+    "is_hallucination": false,
+    "sentence_scores": [
+      {
+        "sentence": "I cannot find the winner of Super Bowl 50 in the provided context",
+        "entailment": 0.6339,
+        "contradiction": 0.0878,
+        "neutral": 0.2783
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.6226,
+      "max_similarity": 0.6226,
+      "min_similarity": 0.6226,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_n_weak": 3,
+      "hcpc_n_refined": 3
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v1",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "Denver Broncos",
+      "hcpc_log": {
+        "n_strong": 0,
+        "n_weak": 3,
+        "n_refined": 3,
+        "strong_sims": [],
+        "weak_sims": [
+          0.396,
+          0.396,
+          0.396
+        ],
+        "refinements": [
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.396,
+            "parent_ce": 8.9704,
+            "n_sub_chunks": 5,
+            "best_sub_preview": "Super Bowl 50 was an American football game to determine the champion of the Nat",
+            "best_sub_sim": 0.6226,
+            "best_sub_ce": 6.7681,
+            "sim_improvement": 0.2266,
+            "ce_improvement": -2.2022
+          },
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.396,
+            "parent_ce": 8.9704,
+            "n_sub_chunks": 5,
+            "best_sub_preview": "Super Bowl 50 was an American football game to determine the champion of the Nat",
+            "best_sub_sim": 0.6226,
+            "best_sub_ce": 6.7681,
+            "sim_improvement": 0.2266,
+            "ce_improvement": -2.2022
+          },
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.396,
+            "parent_ce": 8.9704,
+            "n_sub_chunks": 5,
+            "best_sub_preview": "Super Bowl 50 was an American football game to determine the champion of the Nat",
+            "best_sub_sim": 0.6226,
+            "best_sub_ce": 6.7681,
+            "sim_improvement": 0.2266,
+            "ce_improvement": -2.2022
+          }
+        ]
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:21:32.733028+00:00",
+    "query": "What venue did Super Bowl 50 take place in?",
+    "retrieved_context": ". It is the first Super Bowl held in the San Francisco Bay Area since Super Bowl XIX in 1985, and the first in California since Super Bowl XXXVII took place in San Diego in 2003.\n\n---\n\n. It is the first Super Bowl held in the San Francisco Bay Area since Super Bowl XIX in 1985, and the first in California since Super Bowl XXXVII took place in San Diego in 2003.\n\n---\n\n. It is the first Super Bowl held in the San Francisco Bay Area since Super Bowl XIX in 1985, and the first in California since Super Bowl XXXVII took place in San Diego in 2003.",
+    "generated_output": " I cannot find this information in the provided context. The context only mentions that it is the first Super Bowl held in the San Francisco Bay Area since Super Bowl XIX in 1985, and the first in California since Super Bowl XXXVII took place in San Diego in 2003, but it does not specify the venue for any of these Super Bowls.",
+    "faithfulness_score": 0.6228,
+    "is_hallucination": false,
+    "sentence_scores": [
+      {
+        "sentence": "I cannot find this information in the provided context",
+        "entailment": 0.5531,
+        "contradiction": 0.2699,
+        "neutral": 0.177
+      },
+      {
+        "sentence": "The context only mentions that it is the first Super Bowl held in the San Francisco Bay Area since Super Bowl XIX in 1985, and the first in California since Super Bowl XXXVII took place in San Diego in 2003, but it does not specify the venue for any of these Super Bowls",
+        "entailment": 0.6926,
+        "contradiction": 0.1883,
+        "neutral": 0.1192
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.6508,
+      "max_similarity": 0.6508,
+      "min_similarity": 0.6508,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_n_weak": 3,
+      "hcpc_n_refined": 3
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v1",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "Levi's Stadium",
+      "hcpc_log": {
+        "n_strong": 0,
+        "n_weak": 3,
+        "n_refined": 3,
+        "strong_sims": [],
+        "weak_sims": [
+          0.3661,
+          0.3661,
+          0.3661
+        ],
+        "refinements": [
+          {
+            "parent_preview": "On May 21, 2013, NFL owners at their spring meetings in Boston voted and awarded the game to Levi's Stadium. The $1.2 bi",
+            "parent_sim": 0.3661,
+            "parent_ce": 2.7831,
+            "n_sub_chunks": 2,
+            "best_sub_preview": ". It is the first Super Bowl held in the San Francisco Bay Area since Super Bowl",
+            "best_sub_sim": 0.6508,
+            "best_sub_ce": 3.123,
+            "sim_improvement": 0.2847,
+            "ce_improvement": 0.3399
+          },
+          {
+            "parent_preview": "On May 21, 2013, NFL owners at their spring meetings in Boston voted and awarded the game to Levi's Stadium. The $1.2 bi",
+            "parent_sim": 0.3661,
+            "parent_ce": 2.7831,
+            "n_sub_chunks": 2,
+            "best_sub_preview": ". It is the first Super Bowl held in the San Francisco Bay Area since Super Bowl",
+            "best_sub_sim": 0.6508,
+            "best_sub_ce": 3.123,
+            "sim_improvement": 0.2847,
+            "ce_improvement": 0.3399
+          },
+          {
+            "parent_preview": "On May 21, 2013, NFL owners at their spring meetings in Boston voted and awarded the game to Levi's Stadium. The $1.2 bi",
+            "parent_sim": 0.3661,
+            "parent_ce": 2.7831,
+            "n_sub_chunks": 2,
+            "best_sub_preview": ". It is the first Super Bowl held in the San Francisco Bay Area since Super Bowl",
+            "best_sub_sim": 0.6508,
+            "best_sub_ce": 3.123,
+            "sim_improvement": 0.2847,
+            "ce_improvement": 0.3399
+          }
+        ]
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:21:39.142383+00:00",
+    "query": "What city did Super Bowl 50 take place in?",
+    "retrieved_context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season",
+    "generated_output": " I cannot find this information in the provided context. The context only mentions that Super Bowl 50 was a game to determine the champion of the NFL for the 2015 season, but it does not specify the location where the game took place.",
+    "faithfulness_score": 0.4797,
+    "is_hallucination": true,
+    "sentence_scores": [
+      {
+        "sentence": "I cannot find this information in the provided context",
+        "entailment": 0.5531,
+        "contradiction": 0.2699,
+        "neutral": 0.177
+      },
+      {
+        "sentence": "The context only mentions that Super Bowl 50 was a game to determine the champion of the NFL for the 2015 season, but it does not specify the location where the game took place",
+        "entailment": 0.4063,
+        "contradiction": 0.1984,
+        "neutral": 0.3952
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.5887,
+      "max_similarity": 0.5887,
+      "min_similarity": 0.5887,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_n_weak": 3,
+      "hcpc_n_refined": 3
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v1",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "Santa Clara",
+      "hcpc_log": {
+        "n_strong": 0,
+        "n_weak": 3,
+        "n_refined": 3,
+        "strong_sims": [],
+        "weak_sims": [
+          0.4005,
+          0.4005,
+          0.4005
+        ],
+        "refinements": [
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.4005,
+            "parent_ce": 7.8036,
+            "n_sub_chunks": 5,
+            "best_sub_preview": "Super Bowl 50 was an American football game to determine the champion of the Nat",
+            "best_sub_sim": 0.5887,
+            "best_sub_ce": 3.6163,
+            "sim_improvement": 0.1882,
+            "ce_improvement": -4.1873
+          },
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.4005,
+            "parent_ce": 7.8036,
+            "n_sub_chunks": 5,
+            "best_sub_preview": "Super Bowl 50 was an American football game to determine the champion of the Nat",
+            "best_sub_sim": 0.5887,
+            "best_sub_ce": 3.6163,
+            "sim_improvement": 0.1882,
+            "ce_improvement": -4.1873
+          },
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.4005,
+            "parent_ce": 7.8036,
+            "n_sub_chunks": 5,
+            "best_sub_preview": "Super Bowl 50 was an American football game to determine the champion of the Nat",
+            "best_sub_sim": 0.5887,
+            "best_sub_ce": 3.6163,
+            "sim_improvement": 0.1882,
+            "ce_improvement": -4.1873
+          }
+        ]
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:21:42.939720+00:00",
+    "query": "If Roman numerals were used, what would Super Bowl 50 have been called?",
+    "retrieved_context": "numerals as Super Bowl 50 as opposed to Super Bowl L\n\n---\n\nnumerals as Super Bowl 50 as opposed to Super Bowl L\n\n---\n\nnumerals as Super Bowl 50 as opposed to Super Bowl L",
+    "generated_output": " I cannot find this information in the provided context. The context only mentions the use of Arabic numerals for Super Bowl 50, not Roman numerals.",
+    "faithfulness_score": 0.7309,
+    "is_hallucination": false,
+    "sentence_scores": [
+      {
+        "sentence": "I cannot find this information in the provided context",
+        "entailment": 0.5531,
+        "contradiction": 0.2699,
+        "neutral": 0.177
+      },
+      {
+        "sentence": "The context only mentions the use of Arabic numerals for Super Bowl 50, not Roman numerals",
+        "entailment": 0.9087,
+        "contradiction": 0.0446,
+        "neutral": 0.0466
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.8134,
+      "max_similarity": 0.8134,
+      "min_similarity": 0.8134,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_n_weak": 3,
+      "hcpc_n_refined": 3
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v1",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "Super Bowl L",
+      "hcpc_log": {
+        "n_strong": 0,
+        "n_weak": 3,
+        "n_refined": 3,
+        "strong_sims": [],
+        "weak_sims": [
+          0.3753,
+          0.3753,
+          0.3753
+        ],
+        "refinements": [
+          {
+            "parent_preview": "On June 4, 2014, the NFL announced that the practice of branding Super Bowl games with Roman numerals, a practice establ",
+            "parent_sim": 0.3753,
+            "parent_ce": 7.6579,
+            "n_sub_chunks": 6,
+            "best_sub_preview": "numerals as Super Bowl 50 as opposed to Super Bowl L",
+            "best_sub_sim": 0.8134,
+            "best_sub_ce": 3.3071,
+            "sim_improvement": 0.4381,
+            "ce_improvement": -4.3508
+          },
+          {
+            "parent_preview": "On June 4, 2014, the NFL announced that the practice of branding Super Bowl games with Roman numerals, a practice establ",
+            "parent_sim": 0.3753,
+            "parent_ce": 7.6579,
+            "n_sub_chunks": 6,
+            "best_sub_preview": "numerals as Super Bowl 50 as opposed to Super Bowl L",
+            "best_sub_sim": 0.8134,
+            "best_sub_ce": 3.3071,
+            "sim_improvement": 0.4381,
+            "ce_improvement": -4.3508
+          },
+          {
+            "parent_preview": "On June 4, 2014, the NFL announced that the practice of branding Super Bowl games with Roman numerals, a practice establ",
+            "parent_sim": 0.3753,
+            "parent_ce": 7.6579,
+            "n_sub_chunks": 6,
+            "best_sub_preview": "numerals as Super Bowl 50 as opposed to Super Bowl L",
+            "best_sub_sim": 0.8134,
+            "best_sub_ce": 3.3071,
+            "sim_improvement": 0.4381,
+            "ce_improvement": -4.3508
+          }
+        ]
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:21:45.580588+00:00",
+    "query": "Super Bowl 50 decided the NFL champion for what season?",
+    "retrieved_context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season",
+    "generated_output": " The NFL champion for the 2015 season.",
+    "faithfulness_score": 0.7621,
+    "is_hallucination": false,
+    "sentence_scores": [
+      {
+        "sentence": "The NFL champion for the 2015 season",
+        "entailment": 0.7621,
+        "contradiction": 0.0974,
+        "neutral": 0.1405
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.6978,
+      "max_similarity": 0.6978,
+      "min_similarity": 0.6978,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_n_weak": 3,
+      "hcpc_n_refined": 3
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v1",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "2015",
+      "hcpc_log": {
+        "n_strong": 0,
+        "n_weak": 3,
+        "n_refined": 3,
+        "strong_sims": [],
+        "weak_sims": [
+          0.4222,
+          0.4222,
+          0.4222
+        ],
+        "refinements": [
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.4222,
+            "parent_ce": 9.5303,
+            "n_sub_chunks": 5,
+            "best_sub_preview": "Super Bowl 50 was an American football game to determine the champion of the Nat",
+            "best_sub_sim": 0.6978,
+            "best_sub_ce": 9.1312,
+            "sim_improvement": 0.2756,
+            "ce_improvement": -0.3991
+          },
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.4222,
+            "parent_ce": 9.5303,
+            "n_sub_chunks": 5,
+            "best_sub_preview": "Super Bowl 50 was an American football game to determine the champion of the Nat",
+            "best_sub_sim": 0.6978,
+            "best_sub_ce": 9.1312,
+            "sim_improvement": 0.2756,
+            "ce_improvement": -0.3991
+          },
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.4222,
+            "parent_ce": 9.5303,
+            "n_sub_chunks": 5,
+            "best_sub_preview": "Super Bowl 50 was an American football game to determine the champion of the Nat",
+            "best_sub_sim": 0.6978,
+            "best_sub_ce": 9.1312,
+            "sim_improvement": 0.2756,
+            "ce_improvement": -0.3991
+          }
+        ]
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:21:53.074780+00:00",
+    "query": "What year did the Denver Broncos secure a Super Bowl title for the third time?",
+    "retrieved_context": ". With the defense carrying the team despite the issues with the offense, the Broncos finished the regular season with a 12–4 record and earned home-field advantage throughout the AFC playoffs.\n\n---\n\n. With the defense carrying the team despite the issues with the offense, the Broncos finished the regular season with a 12–4 record and earned home-field advantage throughout the AFC playoffs.\n\n---\n\n. With the defense carrying the team despite the issues with the offense, the Broncos finished the regular season with a 12–4 record and earned home-field advantage throughout the AFC playoffs.",
+    "generated_output": " I cannot find this information in the provided context. The context only mentions that the Denver Broncos finished the regular season with a 12–4 record and earned home-field advantage throughout the AFC playoffs in a certain year, but it does not specify which year they won a Super Bowl title for the third time.",
+    "faithfulness_score": 0.523,
+    "is_hallucination": false,
+    "sentence_scores": [
+      {
+        "sentence": "I cannot find this information in the provided context",
+        "entailment": 0.5531,
+        "contradiction": 0.2699,
+        "neutral": 0.177
+      },
+      {
+        "sentence": "The context only mentions that the Denver Broncos finished the regular season with a 12–4 record and earned home-field advantage throughout the AFC playoffs in a certain year, but it does not specify which year they won a Super Bowl title for the third time",
+        "entailment": 0.493,
+        "contradiction": 0.1823,
+        "neutral": 0.3247
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.6986,
+      "max_similarity": 0.6986,
+      "min_similarity": 0.6986,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_n_weak": 3,
+      "hcpc_n_refined": 3
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v1",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "2015",
+      "hcpc_log": {
+        "n_strong": 0,
+        "n_weak": 3,
+        "n_refined": 3,
+        "strong_sims": [],
+        "weak_sims": [
+          0.3971,
+          0.3971,
+          0.3971
+        ],
+        "refinements": [
+          {
+            "parent_preview": ". With the defense carrying the team despite the issues with the offense, the Broncos finished the regular season with a",
+            "parent_sim": 0.3971,
+            "parent_ce": -6.1077,
+            "n_sub_chunks": 1,
+            "best_sub_preview": ". With the defense carrying the team despite the issues with the offense, the Br",
+            "best_sub_sim": 0.6986,
+            "best_sub_ce": -6.1077,
+            "sim_improvement": 0.3015,
+            "ce_improvement": 0.0
+          },
+          {
+            "parent_preview": ". With the defense carrying the team despite the issues with the offense, the Broncos finished the regular season with a",
+            "parent_sim": 0.3971,
+            "parent_ce": -6.1077,
+            "n_sub_chunks": 1,
+            "best_sub_preview": ". With the defense carrying the team despite the issues with the offense, the Br",
+            "best_sub_sim": 0.6986,
+            "best_sub_ce": -6.1077,
+            "sim_improvement": 0.3015,
+            "ce_improvement": 0.0
+          },
+          {
+            "parent_preview": ". With the defense carrying the team despite the issues with the offense, the Broncos finished the regular season with a",
+            "parent_sim": 0.3971,
+            "parent_ce": -6.1077,
+            "n_sub_chunks": 1,
+            "best_sub_preview": ". With the defense carrying the team despite the issues with the offense, the Br",
+            "best_sub_sim": 0.6986,
+            "best_sub_ce": -6.1077,
+            "sim_improvement": 0.3015,
+            "ce_improvement": 0.0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:21:59.982368+00:00",
+    "query": "What city did Super Bowl 50 take place in?",
+    "retrieved_context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season",
+    "generated_output": " I cannot find this information in the provided context. The context only states that Super Bowl 50 was a game to determine the champion of the NFL for the 2015 season, but it does not specify the location where the game took place.",
+    "faithfulness_score": 0.473,
+    "is_hallucination": true,
+    "sentence_scores": [
+      {
+        "sentence": "I cannot find this information in the provided context",
+        "entailment": 0.5531,
+        "contradiction": 0.2699,
+        "neutral": 0.177
+      },
+      {
+        "sentence": "The context only states that Super Bowl 50 was a game to determine the champion of the NFL for the 2015 season, but it does not specify the location where the game took place",
+        "entailment": 0.393,
+        "contradiction": 0.1802,
+        "neutral": 0.4268
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.5887,
+      "max_similarity": 0.5887,
+      "min_similarity": 0.5887,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_n_weak": 3,
+      "hcpc_n_refined": 3
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v1",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "Santa Clara",
+      "hcpc_log": {
+        "n_strong": 0,
+        "n_weak": 3,
+        "n_refined": 3,
+        "strong_sims": [],
+        "weak_sims": [
+          0.4005,
+          0.4005,
+          0.4005
+        ],
+        "refinements": [
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.4005,
+            "parent_ce": 7.8036,
+            "n_sub_chunks": 5,
+            "best_sub_preview": "Super Bowl 50 was an American football game to determine the champion of the Nat",
+            "best_sub_sim": 0.5887,
+            "best_sub_ce": 3.6163,
+            "sim_improvement": 0.1882,
+            "ce_improvement": -4.1873
+          },
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.4005,
+            "parent_ce": 7.8036,
+            "n_sub_chunks": 5,
+            "best_sub_preview": "Super Bowl 50 was an American football game to determine the champion of the Nat",
+            "best_sub_sim": 0.5887,
+            "best_sub_ce": 3.6163,
+            "sim_improvement": 0.1882,
+            "ce_improvement": -4.1873
+          },
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.4005,
+            "parent_ce": 7.8036,
+            "n_sub_chunks": 5,
+            "best_sub_preview": "Super Bowl 50 was an American football game to determine the champion of the Nat",
+            "best_sub_sim": 0.5887,
+            "best_sub_ce": 3.6163,
+            "sim_improvement": 0.1882,
+            "ce_improvement": -4.1873
+          }
+        ]
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:22:07.272607+00:00",
+    "query": "What stadium did Super Bowl 50 take place in?",
+    "retrieved_context": "which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.\n\n---\n\nwhich the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.\n\n---\n\nwhich the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.",
+    "generated_output": " I cannot find this information in the provided context. The context only mentions that the game would be known as \"Super Bowl L\" and that the logo would feature Arabic numerals 50, but it does not specify the stadium where the game took place.",
+    "faithfulness_score": 0.5835,
+    "is_hallucination": false,
+    "sentence_scores": [
+      {
+        "sentence": "I cannot find this information in the provided context",
+        "entailment": 0.5531,
+        "contradiction": 0.2699,
+        "neutral": 0.177
+      },
+      {
+        "sentence": "The context only mentions that the game would be known as \"Super Bowl L\" and that the logo would feature Arabic numerals 50, but it does not specify the stadium where the game took place",
+        "entailment": 0.6139,
+        "contradiction": 0.1679,
+        "neutral": 0.2182
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.5862,
+      "max_similarity": 0.5862,
+      "min_similarity": 0.5862,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_n_weak": 3,
+      "hcpc_n_refined": 3
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v1",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "Levi's Stadium",
+      "hcpc_log": {
+        "n_strong": 0,
+        "n_weak": 3,
+        "n_refined": 3,
+        "strong_sims": [],
+        "weak_sims": [
+          0.3989,
+          0.3989,
+          0.3989
+        ],
+        "refinements": [
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.3989,
+            "parent_ce": 8.8889,
+            "n_sub_chunks": 5,
+            "best_sub_preview": "which the game would have been known as \"Super Bowl L\"), so that the logo could ",
+            "best_sub_sim": 0.5862,
+            "best_sub_ce": -0.9141,
+            "sim_improvement": 0.1873,
+            "ce_improvement": -9.803
+          },
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.3989,
+            "parent_ce": 8.8889,
+            "n_sub_chunks": 5,
+            "best_sub_preview": "which the game would have been known as \"Super Bowl L\"), so that the logo could ",
+            "best_sub_sim": 0.5862,
+            "best_sub_ce": -0.9141,
+            "sim_improvement": 0.1873,
+            "ce_improvement": -9.803
+          },
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.3989,
+            "parent_ce": 8.8889,
+            "n_sub_chunks": 5,
+            "best_sub_preview": "which the game would have been known as \"Super Bowl L\"), so that the logo could ",
+            "best_sub_sim": 0.5862,
+            "best_sub_ce": -0.9141,
+            "sim_improvement": 0.1873,
+            "ce_improvement": -9.803
+          }
+        ]
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:22:11.765995+00:00",
+    "query": "What was the final score of Super Bowl 50? ",
+    "retrieved_context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season",
+    "generated_output": " I cannot find this information in the provided context. The context only states that Super Bowl 50 determined the champion of the NFL for the 2015 season, but it does not provide the final score.",
+    "faithfulness_score": 0.5701,
+    "is_hallucination": false,
+    "sentence_scores": [
+      {
+        "sentence": "I cannot find this information in the provided context",
+        "entailment": 0.5531,
+        "contradiction": 0.2699,
+        "neutral": 0.177
+      },
+      {
+        "sentence": "The context only states that Super Bowl 50 determined the champion of the NFL for the 2015 season, but it does not provide the final score",
+        "entailment": 0.5872,
+        "contradiction": 0.1877,
+        "neutral": 0.2251
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.5729,
+      "max_similarity": 0.5729,
+      "min_similarity": 0.5729,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_n_weak": 3,
+      "hcpc_n_refined": 3
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v1",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "24–10",
+      "hcpc_log": {
+        "n_strong": 0,
+        "n_weak": 3,
+        "n_refined": 3,
+        "strong_sims": [],
+        "weak_sims": [
+          0.3342,
+          0.3342,
+          0.3342
+        ],
+        "refinements": [
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.3342,
+            "parent_ce": 5.5438,
+            "n_sub_chunks": 5,
+            "best_sub_preview": "Super Bowl 50 was an American football game to determine the champion of the Nat",
+            "best_sub_sim": 0.5729,
+            "best_sub_ce": 3.6404,
+            "sim_improvement": 0.2387,
+            "ce_improvement": -1.9034
+          },
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.3342,
+            "parent_ce": 5.5438,
+            "n_sub_chunks": 5,
+            "best_sub_preview": "Super Bowl 50 was an American football game to determine the champion of the Nat",
+            "best_sub_sim": 0.5729,
+            "best_sub_ce": 3.6404,
+            "sim_improvement": 0.2387,
+            "ce_improvement": -1.9034
+          },
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.3342,
+            "parent_ce": 5.5438,
+            "n_sub_chunks": 5,
+            "best_sub_preview": "Super Bowl 50 was an American football game to determine the champion of the Nat",
+            "best_sub_sim": 0.5729,
+            "best_sub_ce": 3.6404,
+            "sim_improvement": 0.2387,
+            "ce_improvement": -1.9034
+          }
+        ]
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:22:16.287953+00:00",
+    "query": "What month, day and year did Super Bowl 50 take place? ",
+    "retrieved_context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season",
+    "generated_output": " I cannot find this specific information in the provided context. The context only states that Super Bowl 50 was the game to determine the champion of the NFL for the 2015 season, but it does not provide the exact date when it took place.",
+    "faithfulness_score": 0.5132,
+    "is_hallucination": false,
+    "sentence_scores": [
+      {
+        "sentence": "I cannot find this specific information in the provided context",
+        "entailment": 0.5792,
+        "contradiction": 0.1815,
+        "neutral": 0.2393
+      },
+      {
+        "sentence": "The context only states that Super Bowl 50 was the game to determine the champion of the NFL for the 2015 season, but it does not provide the exact date when it took place",
+        "entailment": 0.4472,
+        "contradiction": 0.1741,
+        "neutral": 0.3787
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.5842,
+      "max_similarity": 0.5842,
+      "min_similarity": 0.5842,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_n_weak": 3,
+      "hcpc_n_refined": 3
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v1",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "February 7, 2016",
+      "hcpc_log": {
+        "n_strong": 0,
+        "n_weak": 3,
+        "n_refined": 3,
+        "strong_sims": [],
+        "weak_sims": [
+          0.372,
+          0.372,
+          0.372
+        ],
+        "refinements": [
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.372,
+            "parent_ce": 6.6291,
+            "n_sub_chunks": 5,
+            "best_sub_preview": "Super Bowl 50 was an American football game to determine the champion of the Nat",
+            "best_sub_sim": 0.5842,
+            "best_sub_ce": 3.7768,
+            "sim_improvement": 0.2122,
+            "ce_improvement": -2.8524
+          },
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.372,
+            "parent_ce": 6.6291,
+            "n_sub_chunks": 5,
+            "best_sub_preview": "Super Bowl 50 was an American football game to determine the champion of the Nat",
+            "best_sub_sim": 0.5842,
+            "best_sub_ce": 3.7768,
+            "sim_improvement": 0.2122,
+            "ce_improvement": -2.8524
+          },
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.372,
+            "parent_ce": 6.6291,
+            "n_sub_chunks": 5,
+            "best_sub_preview": "Super Bowl 50 was an American football game to determine the champion of the Nat",
+            "best_sub_sim": 0.5842,
+            "best_sub_ce": 3.7768,
+            "sim_improvement": 0.2122,
+            "ce_improvement": -2.8524
+          }
+        ]
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:22:19.272958+00:00",
+    "query": "What year was Super Bowl 50?",
+    "retrieved_context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season",
+    "generated_output": " The provided context does not specify the year, but since Super Bowl 50 is mentioned, we can infer that it occurred in the year 2015.",
+    "faithfulness_score": 0.6083,
+    "is_hallucination": false,
+    "sentence_scores": [
+      {
+        "sentence": "The provided context does not specify the year, but since Super Bowl 50 is mentioned, we can infer that it occurred in the year 2015",
+        "entailment": 0.6083,
+        "contradiction": 0.1809,
+        "neutral": 0.2109
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.6352,
+      "max_similarity": 0.6352,
+      "min_similarity": 0.6352,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_n_weak": 3,
+      "hcpc_n_refined": 3
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v1",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "2015",
+      "hcpc_log": {
+        "n_strong": 0,
+        "n_weak": 3,
+        "n_refined": 3,
+        "strong_sims": [],
+        "weak_sims": [
+          0.4358,
+          0.4358,
+          0.4358
+        ],
+        "refinements": [
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.4358,
+            "parent_ce": 9.1714,
+            "n_sub_chunks": 5,
+            "best_sub_preview": "Super Bowl 50 was an American football game to determine the champion of the Nat",
+            "best_sub_sim": 0.6352,
+            "best_sub_ce": 8.189,
+            "sim_improvement": 0.1994,
+            "ce_improvement": -0.9825
+          },
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.4358,
+            "parent_ce": 9.1714,
+            "n_sub_chunks": 5,
+            "best_sub_preview": "Super Bowl 50 was an American football game to determine the champion of the Nat",
+            "best_sub_sim": 0.6352,
+            "best_sub_ce": 8.189,
+            "sim_improvement": 0.1994,
+            "ce_improvement": -0.9825
+          },
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.4358,
+            "parent_ce": 9.1714,
+            "n_sub_chunks": 5,
+            "best_sub_preview": "Super Bowl 50 was an American football game to determine the champion of the Nat",
+            "best_sub_sim": 0.6352,
+            "best_sub_ce": 8.189,
+            "sim_improvement": 0.1994,
+            "ce_improvement": -0.9825
+          }
+        ]
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:22:25.098503+00:00",
+    "query": "What team was the AFC champion?",
+    "retrieved_context": ". With the defense carrying the team despite the issues with the offense, the Broncos finished the regular season with a 12–4 record and earned home-field advantage throughout the AFC playoffs.\n\n---\n\n. With the defense carrying the team despite the issues with the offense, the Broncos finished the regular season with a 12–4 record and earned home-field advantage throughout the AFC playoffs.\n\n---\n\n. With the defense carrying the team despite the issues with the offense, the Broncos finished the regular season with a 12–4 record and earned home-field advantage throughout the AFC playoffs.",
+    "generated_output": " I cannot find this information in the provided context. The context only mentions that the Broncos finished the regular season with a 12–4 record and earned home-field advantage throughout the AFC playoffs, but it does not specify whether they became the AFC champion or not.",
+    "faithfulness_score": 0.6935,
+    "is_hallucination": false,
+    "sentence_scores": [
+      {
+        "sentence": "I cannot find this information in the provided context",
+        "entailment": 0.5531,
+        "contradiction": 0.2699,
+        "neutral": 0.177
+      },
+      {
+        "sentence": "The context only mentions that the Broncos finished the regular season with a 12–4 record and earned home-field advantage throughout the AFC playoffs, but it does not specify whether they became the AFC champion or not",
+        "entailment": 0.834,
+        "contradiction": 0.0781,
+        "neutral": 0.088
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.5895,
+      "max_similarity": 0.5895,
+      "min_similarity": 0.5895,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_n_weak": 3,
+      "hcpc_n_refined": 3
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v1",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "Denver Broncos",
+      "hcpc_log": {
+        "n_strong": 0,
+        "n_weak": 3,
+        "n_refined": 3,
+        "strong_sims": [],
+        "weak_sims": [
+          0.1789,
+          0.1789,
+          0.1789
+        ],
+        "refinements": [
+          {
+            "parent_preview": ". With the defense carrying the team despite the issues with the offense, the Broncos finished the regular season with a",
+            "parent_sim": 0.1789,
+            "parent_ce": -1.6881,
+            "n_sub_chunks": 1,
+            "best_sub_preview": ". With the defense carrying the team despite the issues with the offense, the Br",
+            "best_sub_sim": 0.5895,
+            "best_sub_ce": -1.6881,
+            "sim_improvement": 0.4106,
+            "ce_improvement": -0.0
+          },
+          {
+            "parent_preview": ". With the defense carrying the team despite the issues with the offense, the Broncos finished the regular season with a",
+            "parent_sim": 0.1789,
+            "parent_ce": -1.6881,
+            "n_sub_chunks": 1,
+            "best_sub_preview": ". With the defense carrying the team despite the issues with the offense, the Br",
+            "best_sub_sim": 0.5895,
+            "best_sub_ce": -1.6881,
+            "sim_improvement": 0.4106,
+            "ce_improvement": -0.0
+          },
+          {
+            "parent_preview": ". With the defense carrying the team despite the issues with the offense, the Broncos finished the regular season with a",
+            "parent_sim": 0.1789,
+            "parent_ce": -1.6881,
+            "n_sub_chunks": 1,
+            "best_sub_preview": ". With the defense carrying the team despite the issues with the offense, the Br",
+            "best_sub_sim": 0.5895,
+            "best_sub_ce": -1.6881,
+            "sim_improvement": 0.4106,
+            "ce_improvement": -0.0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:22:30.643314+00:00",
+    "query": "What team was the NFC champion?",
+    "retrieved_context": ". They defeated the Arizona Cardinals 49–15 in the NFC Championship Game and advanced to their second Super Bowl appearance since the franchise was founded in 1995\n\n---\n\n. They defeated the Arizona Cardinals 49–15 in the NFC Championship Game and advanced to their second Super Bowl appearance since the franchise was founded in 1995\n\n---\n\n. They defeated the Arizona Cardinals 49–15 in the NFC Championship Game and advanced to their second Super Bowl appearance since the franchise was founded in 1995",
+    "generated_output": " The team that was the NFC champion, according to the provided context, is not explicitly stated. However, it can be inferred that the team that defeated the Arizona Cardinals in the NFC Championship Game advanced to become the NFC champion.",
+    "faithfulness_score": 0.6561,
+    "is_hallucination": false,
+    "sentence_scores": [
+      {
+        "sentence": "The team that was the NFC champion, according to the provided context, is not explicitly stated",
+        "entailment": 0.4623,
+        "contradiction": 0.1907,
+        "neutral": 0.347
+      },
+      {
+        "sentence": "However, it can be inferred that the team that defeated the Arizona Cardinals in the NFC Championship Game advanced to become the NFC champion",
+        "entailment": 0.8499,
+        "contradiction": 0.0655,
+        "neutral": 0.0846
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.7069,
+      "max_similarity": 0.7069,
+      "min_similarity": 0.7069,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_n_weak": 3,
+      "hcpc_n_refined": 3
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v1",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "Carolina Panthers",
+      "hcpc_log": {
+        "n_strong": 0,
+        "n_weak": 3,
+        "n_refined": 3,
+        "strong_sims": [],
+        "weak_sims": [
+          0.2396,
+          0.2396,
+          0.2396
+        ],
+        "refinements": [
+          {
+            "parent_preview": "The Panthers finished the regular season with a 15–1 record, and quarterback Cam Newton was named the NFL Most Valuable ",
+            "parent_sim": 0.2396,
+            "parent_ce": 2.9751,
+            "n_sub_chunks": 4,
+            "best_sub_preview": ". They defeated the Arizona Cardinals 49–15 in the NFC Championship Game and adv",
+            "best_sub_sim": 0.7069,
+            "best_sub_ce": 4.5605,
+            "sim_improvement": 0.4673,
+            "ce_improvement": 1.5853
+          },
+          {
+            "parent_preview": "The Panthers finished the regular season with a 15–1 record, and quarterback Cam Newton was named the NFL Most Valuable ",
+            "parent_sim": 0.2396,
+            "parent_ce": 2.9751,
+            "n_sub_chunks": 4,
+            "best_sub_preview": ". They defeated the Arizona Cardinals 49–15 in the NFC Championship Game and adv",
+            "best_sub_sim": 0.7069,
+            "best_sub_ce": 4.5605,
+            "sim_improvement": 0.4673,
+            "ce_improvement": 1.5853
+          },
+          {
+            "parent_preview": "The Panthers finished the regular season with a 15–1 record, and quarterback Cam Newton was named the NFL Most Valuable ",
+            "parent_sim": 0.2396,
+            "parent_ce": 2.9751,
+            "n_sub_chunks": 4,
+            "best_sub_preview": ". They defeated the Arizona Cardinals 49–15 in the NFC Championship Game and adv",
+            "best_sub_sim": 0.7069,
+            "best_sub_ce": 4.5605,
+            "sim_improvement": 0.4673,
+            "ce_improvement": 1.5853
+          }
+        ]
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:22:33.311294+00:00",
+    "query": "Who won Super Bowl 50?",
+    "retrieved_context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season",
+    "generated_output": " I cannot find the winner of Super Bowl 50 in the provided context.",
+    "faithfulness_score": 0.6339,
+    "is_hallucination": false,
+    "sentence_scores": [
+      {
+        "sentence": "I cannot find the winner of Super Bowl 50 in the provided context",
+        "entailment": 0.6339,
+        "contradiction": 0.0878,
+        "neutral": 0.2783
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.6226,
+      "max_similarity": 0.6226,
+      "min_similarity": 0.6226,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_n_weak": 3,
+      "hcpc_n_refined": 3
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v1",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "Denver Broncos",
+      "hcpc_log": {
+        "n_strong": 0,
+        "n_weak": 3,
+        "n_refined": 3,
+        "strong_sims": [],
+        "weak_sims": [
+          0.396,
+          0.396,
+          0.396
+        ],
+        "refinements": [
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.396,
+            "parent_ce": 8.9704,
+            "n_sub_chunks": 5,
+            "best_sub_preview": "Super Bowl 50 was an American football game to determine the champion of the Nat",
+            "best_sub_sim": 0.6226,
+            "best_sub_ce": 6.7681,
+            "sim_improvement": 0.2266,
+            "ce_improvement": -2.2022
+          },
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.396,
+            "parent_ce": 8.9704,
+            "n_sub_chunks": 5,
+            "best_sub_preview": "Super Bowl 50 was an American football game to determine the champion of the Nat",
+            "best_sub_sim": 0.6226,
+            "best_sub_ce": 6.7681,
+            "sim_improvement": 0.2266,
+            "ce_improvement": -2.2022
+          },
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.396,
+            "parent_ce": 8.9704,
+            "n_sub_chunks": 5,
+            "best_sub_preview": "Super Bowl 50 was an American football game to determine the champion of the Nat",
+            "best_sub_sim": 0.6226,
+            "best_sub_ce": 6.7681,
+            "sim_improvement": 0.2266,
+            "ce_improvement": -2.2022
+          }
+        ]
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:22:34.539082+00:00",
+    "query": "Super Bowl 50 determined the NFL champion for what season?",
+    "retrieved_context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season",
+    "generated_output": " The NFL champion for the 2015 season.",
+    "faithfulness_score": 0.7621,
+    "is_hallucination": false,
+    "sentence_scores": [
+      {
+        "sentence": "The NFL champion for the 2015 season",
+        "entailment": 0.7621,
+        "contradiction": 0.0974,
+        "neutral": 0.1405
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.7057,
+      "max_similarity": 0.7057,
+      "min_similarity": 0.7057,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_n_weak": 3,
+      "hcpc_n_refined": 3
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v1",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "2015",
+      "hcpc_log": {
+        "n_strong": 0,
+        "n_weak": 3,
+        "n_refined": 3,
+        "strong_sims": [],
+        "weak_sims": [
+          0.4067,
+          0.4067,
+          0.4067
+        ],
+        "refinements": [
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.4067,
+            "parent_ce": 9.7538,
+            "n_sub_chunks": 5,
+            "best_sub_preview": "Super Bowl 50 was an American football game to determine the champion of the Nat",
+            "best_sub_sim": 0.7057,
+            "best_sub_ce": 9.5037,
+            "sim_improvement": 0.299,
+            "ce_improvement": -0.2501
+          },
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.4067,
+            "parent_ce": 9.7538,
+            "n_sub_chunks": 5,
+            "best_sub_preview": "Super Bowl 50 was an American football game to determine the champion of the Nat",
+            "best_sub_sim": 0.7057,
+            "best_sub_ce": 9.5037,
+            "sim_improvement": 0.299,
+            "ce_improvement": -0.2501
+          },
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.4067,
+            "parent_ce": 9.7538,
+            "n_sub_chunks": 5,
+            "best_sub_preview": "Super Bowl 50 was an American football game to determine the champion of the Nat",
+            "best_sub_sim": 0.7057,
+            "best_sub_ce": 9.5037,
+            "sim_improvement": 0.299,
+            "ce_improvement": -0.2501
+          }
+        ]
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:22:38.683791+00:00",
+    "query": "Which team won Super Bowl 50.",
+    "retrieved_context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season",
+    "generated_output": " I cannot find this information in the provided context. The context only states that Super Bowl 50 was a game to determine the champion of the NFL for the 2015 season, but it does not specify which team won.",
+    "faithfulness_score": 0.6693,
+    "is_hallucination": false,
+    "sentence_scores": [
+      {
+        "sentence": "I cannot find this information in the provided context",
+        "entailment": 0.5531,
+        "contradiction": 0.2699,
+        "neutral": 0.177
+      },
+      {
+        "sentence": "The context only states that Super Bowl 50 was a game to determine the champion of the NFL for the 2015 season, but it does not specify which team won",
+        "entailment": 0.7855,
+        "contradiction": 0.0798,
+        "neutral": 0.1347
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.6477,
+      "max_similarity": 0.6477,
+      "min_similarity": 0.6477,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_n_weak": 3,
+      "hcpc_n_refined": 3
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v1",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "Denver Broncos",
+      "hcpc_log": {
+        "n_strong": 0,
+        "n_weak": 3,
+        "n_refined": 3,
+        "strong_sims": [],
+        "weak_sims": [
+          0.4489,
+          0.4489,
+          0.4489
+        ],
+        "refinements": [
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.4489,
+            "parent_ce": 9.6867,
+            "n_sub_chunks": 5,
+            "best_sub_preview": "Super Bowl 50 was an American football game to determine the champion of the Nat",
+            "best_sub_sim": 0.6477,
+            "best_sub_ce": 7.3587,
+            "sim_improvement": 0.1988,
+            "ce_improvement": -2.3281
+          },
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.4489,
+            "parent_ce": 9.6867,
+            "n_sub_chunks": 5,
+            "best_sub_preview": "Super Bowl 50 was an American football game to determine the champion of the Nat",
+            "best_sub_sim": 0.6477,
+            "best_sub_ce": 7.3587,
+            "sim_improvement": 0.1988,
+            "ce_improvement": -2.3281
+          },
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.4489,
+            "parent_ce": 9.6867,
+            "n_sub_chunks": 5,
+            "best_sub_preview": "Super Bowl 50 was an American football game to determine the champion of the Nat",
+            "best_sub_sim": 0.6477,
+            "best_sub_ce": 7.3587,
+            "sim_improvement": 0.1988,
+            "ce_improvement": -2.3281
+          }
+        ]
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:22:42.848527+00:00",
+    "query": "Where was Super Bowl 50 held?",
+    "retrieved_context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season",
+    "generated_output": " I cannot find this information in the provided context. The context only states that Super Bowl 50 was a game to determine the champion of the NFL for the 2015 season, but it does not specify where it was held.",
+    "faithfulness_score": 0.4603,
+    "is_hallucination": true,
+    "sentence_scores": [
+      {
+        "sentence": "I cannot find this information in the provided context",
+        "entailment": 0.5531,
+        "contradiction": 0.2699,
+        "neutral": 0.177
+      },
+      {
+        "sentence": "The context only states that Super Bowl 50 was a game to determine the champion of the NFL for the 2015 season, but it does not specify where it was held",
+        "entailment": 0.3676,
+        "contradiction": 0.2363,
+        "neutral": 0.3961
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.5937,
+      "max_similarity": 0.5937,
+      "min_similarity": 0.5937,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_n_weak": 3,
+      "hcpc_n_refined": 3
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v1",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "Santa Clara, California.",
+      "hcpc_log": {
+        "n_strong": 0,
+        "n_weak": 3,
+        "n_refined": 3,
+        "strong_sims": [],
+        "weak_sims": [
+          0.4167,
+          0.4167,
+          0.4167
+        ],
+        "refinements": [
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.4167,
+            "parent_ce": 9.1582,
+            "n_sub_chunks": 5,
+            "best_sub_preview": "Super Bowl 50 was an American football game to determine the champion of the Nat",
+            "best_sub_sim": 0.5937,
+            "best_sub_ce": 5.3354,
+            "sim_improvement": 0.177,
+            "ce_improvement": -3.8228
+          },
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.4167,
+            "parent_ce": 9.1582,
+            "n_sub_chunks": 5,
+            "best_sub_preview": "Super Bowl 50 was an American football game to determine the champion of the Nat",
+            "best_sub_sim": 0.5937,
+            "best_sub_ce": 5.3354,
+            "sim_improvement": 0.177,
+            "ce_improvement": -3.8228
+          },
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.4167,
+            "parent_ce": 9.1582,
+            "n_sub_chunks": 5,
+            "best_sub_preview": "Super Bowl 50 was an American football game to determine the champion of the Nat",
+            "best_sub_sim": 0.5937,
+            "best_sub_ce": 5.3354,
+            "sim_improvement": 0.177,
+            "ce_improvement": -3.8228
+          }
+        ]
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:22:45.668516+00:00",
+    "query": "The name of the NFL championship game is?",
+    "retrieved_context": ". The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title\n\n---\n\n. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title\n\n---\n\n. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title",
+    "generated_output": " I cannot find the name of the NFL championship game in the provided context.",
+    "faithfulness_score": 0.7049,
+    "is_hallucination": false,
+    "sentence_scores": [
+      {
+        "sentence": "I cannot find the name of the NFL championship game in the provided context",
+        "entailment": 0.7049,
+        "contradiction": 0.1333,
+        "neutral": 0.1618
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.5498,
+      "max_similarity": 0.5498,
+      "min_similarity": 0.5498,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_n_weak": 3,
+      "hcpc_n_refined": 3
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v1",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "Super Bowl",
+      "hcpc_log": {
+        "n_strong": 0,
+        "n_weak": 3,
+        "n_refined": 3,
+        "strong_sims": [],
+        "weak_sims": [
+          0.1479,
+          0.1479,
+          0.1479
+        ],
+        "refinements": [
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.1479,
+            "parent_ce": 4.3633,
+            "n_sub_chunks": 5,
+            "best_sub_preview": ". The American Football Conference (AFC) champion Denver Broncos defeated the Na",
+            "best_sub_sim": 0.5498,
+            "best_sub_ce": -1.3664,
+            "sim_improvement": 0.4019,
+            "ce_improvement": -5.7298
+          },
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.1479,
+            "parent_ce": 4.3633,
+            "n_sub_chunks": 5,
+            "best_sub_preview": ". The American Football Conference (AFC) champion Denver Broncos defeated the Na",
+            "best_sub_sim": 0.5498,
+            "best_sub_ce": -1.3664,
+            "sim_improvement": 0.4019,
+            "ce_improvement": -5.7298
+          },
+          {
+            "parent_preview": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015",
+            "parent_sim": 0.1479,
+            "parent_ce": 4.3633,
+            "n_sub_chunks": 5,
+            "best_sub_preview": ". The American Football Conference (AFC) champion Denver Broncos defeated the Na",
+            "best_sub_sim": 0.5498,
+            "best_sub_ce": -1.3664,
+            "sim_improvement": 0.4019,
+            "ce_improvement": -5.7298
+          }
+        ]
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:22:48.902787+00:00",
+    "query": "What 2015 NFL team one the AFC playoff?",
+    "retrieved_context": ". The Broncos finished the regular season with a 12–4 record, and denied the New England Patriots a chance to defend their title from Super Bowl XLIX by defeating them 20–18 in the AFC Championship Game\n\n---\n\n. The Broncos finished the regular season with a 12–4 record, and denied the New England Patriots a chance to defend their title from Super Bowl XLIX by defeating them 20–18 in the AFC Championship Game\n\n---\n\n. The Broncos finished the regular season with a 12–4 record, and denied the New England Patriots a chance to defend their title from Super Bowl XLIX by defeating them 20–18 in the AFC Championship Game",
+    "generated_output": " The Broncos won the AFC Playoff in 2015.",
+    "faithfulness_score": 0.8169,
+    "is_hallucination": false,
+    "sentence_scores": [
+      {
+        "sentence": "The Broncos won the AFC Playoff in 2015",
+        "entailment": 0.8169,
+        "contradiction": 0.1292,
+        "neutral": 0.0539
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.5318,
+      "max_similarity": 0.5318,
+      "min_similarity": 0.5318,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_n_weak": 3,
+      "hcpc_n_refined": 3
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v1",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "Denver Broncos",
+      "hcpc_log": {
+        "n_strong": 0,
+        "n_weak": 3,
+        "n_refined": 3,
+        "strong_sims": [],
+        "weak_sims": [
+          0.1026,
+          0.1026,
+          0.1026
+        ],
+        "refinements": [
+          {
+            "parent_preview": "The Panthers finished the regular season with a 15–1 record, and quarterback Cam Newton was named the NFL Most Valuable ",
+            "parent_sim": 0.1026,
+            "parent_ce": -1.8825,
+            "n_sub_chunks": 4,
+            "best_sub_preview": ". The Broncos finished the regular season with a 12–4 record, and denied the New",
+            "best_sub_sim": 0.5318,
+            "best_sub_ce": -0.9859,
+            "sim_improvement": 0.4292,
+            "ce_improvement": 0.8967
+          },
+          {
+            "parent_preview": "The Panthers finished the regular season with a 15–1 record, and quarterback Cam Newton was named the NFL Most Valuable ",
+            "parent_sim": 0.1026,
+            "parent_ce": -1.8825,
+            "n_sub_chunks": 4,
+            "best_sub_preview": ". The Broncos finished the regular season with a 12–4 record, and denied the New",
+            "best_sub_sim": 0.5318,
+            "best_sub_ce": -0.9859,
+            "sim_improvement": 0.4292,
+            "ce_improvement": 0.8967
+          },
+          {
+            "parent_preview": "The Panthers finished the regular season with a 15–1 record, and quarterback Cam Newton was named the NFL Most Valuable ",
+            "parent_sim": 0.1026,
+            "parent_ce": -1.8825,
+            "n_sub_chunks": 4,
+            "best_sub_preview": ". The Broncos finished the regular season with a 12–4 record, and denied the New",
+            "best_sub_sim": 0.5318,
+            "best_sub_ce": -0.9859,
+            "sim_improvement": 0.4292,
+            "ce_improvement": 0.8967
+          }
+        ]
+      }
+    }
+  }
+]

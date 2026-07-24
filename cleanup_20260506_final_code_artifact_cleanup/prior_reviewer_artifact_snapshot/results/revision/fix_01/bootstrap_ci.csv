@@ -1,0 +1,2 @@
+dataset,n_pairs,n_resamples,statistic,estimate,ci95_lo,ci95_hi
+squad,200,10000,mean_diff_high_minus_low,-0.002392,-0.021651,0.016819

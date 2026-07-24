@@ -1,0 +1,60 @@
+{
+  "name": "ContextCoherenceBench",
+  "version": "v2",
+  "packaged_at": "2026-04-24T19:27:15Z",
+  "changelog_vs_v1": {
+    "adversarial_total": 42,
+    "adversarial_v1_total": 40,
+    "paradox_rows": 7
+  },
+  "subsets": [
+    {
+      "kind": "adversarial_coherence",
+      "files": [
+        {
+          "src": "data/adversarial/disjoint.jsonl",
+          "dst": "release/context_coherence_bench_v2/adversarial/disjoint.jsonl",
+          "bytes": 17668,
+          "sha256": "5d8b9260389040d757f873c92cb53e359fac8c9efedf6b5f24ab1bb6ff4c58bc",
+          "category": "disjoint",
+          "n_cases": 12
+        },
+        {
+          "src": "data/adversarial/contradict.jsonl",
+          "dst": "release/context_coherence_bench_v2/adversarial/contradict.jsonl",
+          "bytes": 16366,
+          "sha256": "a8119d9f27f96b952d8a01cd992f599d38c90c2669b93ee966bbf9b99e67f6df",
+          "category": "contradict",
+          "n_cases": 10
+        },
+        {
+          "src": "data/adversarial/drift.jsonl",
+          "dst": "release/context_coherence_bench_v2/adversarial/drift.jsonl",
+          "bytes": 13409,
+          "sha256": "e1c3e2f23723d2185e4da81f6c5fa10af1beeced157589115b8ebe02fd75059d",
+          "category": "drift",
+          "n_cases": 10
+        },
+        {
+          "src": "data/adversarial/control.jsonl",
+          "dst": "release/context_coherence_bench_v2/adversarial/control.jsonl",
+          "bytes": 13034,
+          "sha256": "00fd0e5747f2139e4283ecbe47491acffa40d84df4fede13840e40364d26ac61",
+          "category": "control",
+          "n_cases": 10
+        }
+      ]
+    },
+    {
+      "kind": "coherence_paradox",
+      "files": [
+        {
+          "src": "results/multidataset/coherence_paradox.csv",
+          "dst": "release/context_coherence_bench_v2/coherence_paradox/coherence_paradox.csv",
+          "bytes": 595,
+          "sha256": "f0649df1f1a875ea439d17ec6abb3399baa3fc00e0dedae31371f26fd3ea9590"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+\section{An Information-Theoretic Account}
+\label{sec:theory}
+
+We formalise why a coherence-maximising retriever can be paradox-prone.
+Consider a query $Q$, a candidate set $\mathcal{C} = \{c_1, \ldots,
+c_n\}$, and an unobserved ground-truth answer $Y$. Let
+$\textrm{coh}(\mathcal{C})$ denote any monotone-increasing function of
+the off-diagonal pairwise similarity of the candidate set --- CCS is
+one such function. Let $I(\mathcal{C}; Y \mid Q)$ denote the mutual
+information between the retrieved set and the answer, conditioned on
+the query.
+
+\begin{proposition}[Refinement Paradox]
+\label{prop:paradox}
+Let $\mathcal{C}_\star \subseteq \mathcal{C}$ be the subset that
+maximises $\textrm{coh}(\cdot)$ subject to $|\mathcal{C}_\star| = k'$
+($k' \leq |\mathcal{C}|$). If the per-passage relevance scores
+$\{r(c_i, Q)\}_i$ used by the refinement step are not perfectly aligned
+with each passage's marginal contribution to $I(\mathcal{C}; Y \mid Q)$,
+then there exist queries for which
+$I(\mathcal{C}_\star; Y \mid Q) < I(\mathcal{C}; Y \mid Q)$. In words:
+maximising coherence can strictly reduce the information content of
+the retained set.
+\end{proposition}
+
+The proof is a one-line application of the data-processing inequality:
+the refinement step is a stochastic map $\mathcal{C} \to
+\mathcal{C}_\star$ that depends only on per-passage relevance, so any
+information uniquely supplied by a passage that is removed for being
+incoherent (with the rest) is lost --- regardless of how relevant that
+passage was. The inequality is strict whenever such a passage exists.
+
+\begin{theorem}[Recovery Condition]
+\label{thm:paradox_free}
+A retriever $\mathcal{R}$ is paradox-free if it satisfies:
+$\forall \mathcal{C}, \, I(\mathcal{R}(\mathcal{C}); Y \mid Q) \geq
+I(\mathcal{C}; Y \mid Q)$. A sufficient condition is that
+$\mathcal{R}$ retain every passage whose marginal information
+contribution exceeds a fixed threshold, even when its per-passage
+similarity is low.
+\end{theorem}
+
+\paragraph{Operationalisation.}
+The HCPC-v$2$ rank-protection rule (\S\ref{sec:method}) is one
+implementation of the recovery condition: by always retaining the
+top-$k$ passages by raw query similarity, we preserve their
+information contribution even when refinement would otherwise discard
+them. The empirical recovery numbers in
+Table~\ref{tab:hcpc_main} are consistent with the bound: the gap
+$\textrm{faith}_{\textrm{base}} - \textrm{faith}_{\textrm{v1}}$ tracks
+the proportion of queries on which the protected passages would
+otherwise have been refined away.
+
+The full information-theoretic derivation, including the dataset-level
+prediction (HotpotQA's multi-hop questions exhibit the largest
+paradox; SQuAD's single-span answers exhibit the smallest), the
+empirical bound verification (respected on $96\%$ of $n=150$
+queries), and the connection to selection-bias literature, is in the
+longform appendix.

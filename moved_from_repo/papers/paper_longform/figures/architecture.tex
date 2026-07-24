@@ -1,0 +1,38 @@
+\begin{figure}[!htb]
+\centering
+\resizebox{0.55\linewidth}{!}{%
+\begin{tikzpicture}[
+  font=\small,
+  node distance=6mm and 14mm,
+  block/.style={draw, rounded corners=3pt, minimum width=3.1cm, minimum height=8mm, align=center, thick, inner sep=3pt},
+  decision/.style={draw, diamond, aspect=2.1, minimum width=2.8cm, minimum height=9mm, align=center, thick, inner sep=2pt},
+  flow/.style={-{Stealth[length=3mm]}, very thick},
+  keep/.style={draw, rounded corners=3pt, minimum width=2.4cm, minimum height=8mm, align=center, thick, fill=gray!12}
+]
+\node[block, fill=blue!10] (topk) {Top-$k$ retrieved chunks\\(1024 tokens)};
+\node[block, fill=green!10, below=of topk] (ce) {Cross-encoder scoring};
+\node[decision, fill=yellow!12, below=8mm of ce] (rank) {Rank $\leq 2$?};
+\node[keep, right=22mm of rank] (keep1) {Keep original};
+\node[decision, fill=orange!15, below=8mm of rank] (gate) {$\text{sim}<0.45$\\and\\$\text{ce}<{-}0.20$?};
+\node[keep, right=22mm of gate] (keep2) {Keep original};
+\node[block, fill=red!10, below=8mm of gate] (split) {Split into 256-token\\sub-chunks};
+\node[block, fill=red!8, below=of split] (rescore) {Re-score and select\\best span};
+\node[block, fill=purple!12, below=of rescore] (merge) {Merge contiguous spans\\when safe};
+\node[block, fill=blue!12, below=of merge] (out) {Context passed to LLM};
+
+\draw[flow] (topk) -- (ce);
+\draw[flow] (ce) -- (rank);
+\draw[flow] (rank) -- node[above, font=\footnotesize] {yes} (keep1);
+\draw[flow] (rank) -- node[left, font=\footnotesize] {no} (gate);
+\draw[flow] (gate) -- node[above, font=\footnotesize] {no} (keep2);
+\draw[flow] (gate) -- node[left, font=\footnotesize] {yes} (split);
+\draw[flow] (split) -- (rescore);
+\draw[flow] (rescore) -- (merge);
+\draw[flow] (merge) -- (out);
+\draw[flow, dashed] (keep1.south) |- ([xshift=10mm]merge.east) |- (out.east);
+\draw[flow, dashed] (keep2.south) |- ([xshift=10mm]merge.east) |- (out.east);
+\end{tikzpicture}%
+}
+\caption{HCPC-v2 architecture. The method is deliberately conservative: the top-ranked chunks are protected, and lower-ranked chunks are refined only when dense retrieval and cross-encoder signals agree that the passage is weak.}
+\label{fig:architecture}
+\end{figure}

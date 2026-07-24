@@ -1,0 +1,6 @@
+group,n,answer_span_present_rate,faithfulness_mean,hallucination_rate,mean_query_similarity,ccs_mean
+all,400,0.22,0.637391,0.1275,0.422533,0.403743
+high_ccs,200,0.17,0.636195,0.165,0.423588,0.67006
+low_ccs,200,0.27,0.638587,0.09,0.421478,0.137426
+span_present=False,312,0.0,0.628166,0.11859,0.411121,0.407592
+span_present=True,88,1.0,0.670099,0.159091,0.462991,0.390096

@@ -1,0 +1,863 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage[hidelinks]{hyperref}
+\usepackage{natbib}
+\usepackage[section]{placeins}
+
+\title{\Large\bfseries Supplementary Material:\\
+ControlledRAG: A Seven-Axis Reporting Standard\\
+for RAG Faithfulness Claims}
+\author{Anonymous Authors\\\textit{Submission under double-blind review}}
+\date{}
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+
+\section{Pre-Specification}
+\label{supp:prereg}
+
+The matched-context, scaled, metric-fragility, threshold-transfer,
+noise, cost-aware-baseline, and human-calibration audits were
+pre-specified on 2026-04-26 before any results were inspected. The
+human-calibration design specified two arms: (i) a stratified
+$n{\approx}99$ two-pass adjudicated calibration on the typical row
+distribution of the $7{,}500$ Mistral generations, scored as raw
+inter-pass agreement, Cohen's $\kappa$, and Spearman correlations of
+each scorer against the adjudicated label; (ii) a targeted $100$-row
+scorer-disagreement batch constructed from the same $7{,}500$ rows and
+designed to stress-test scorer conflict using two independent raters
+plus an adjudication step. Both arms are now completed:
+\S\ref{supp:human_calibration} reports arm (i) at $n=99$ adjudicated
+items, and \S\ref{supp:human_disagreement} reports arm (ii) at $n=100$
+two-rater adjudicated items. The pre-specification also fixed: the
+matched-pair construction (similarity gap $\leq 0.02$, CCS gap
+$\geq 0.20$); the paired Wilcoxon test direction (HIGH$>$LOW); the
+$10{,}000$-resample bootstrap for the CI on the mean paired
+difference; the Wilson $95\%$ CI on hallucination rates; the seed list
+$\{41, 42, 43, 44, 45\}$; the per-seed paired Wilcoxon as the primary
+significance test in the scaled audit; the three faithfulness scorers
+(DeBERTa proxy, \texttt{roberta-large-mnli} proxy, RAGAS-style) plus
+the fixed-context rescore protocol; the $\tau$-sweep range; and the
+$200$-query head-to-head sample size. The four follow-up arms were
+added after the pre-specified runs as post-hoc robustness checks:
+answer-span/control diagnostic, stronger-retriever sanity check,
+Qwen$2.5$ second-generator replication, and long-form stress test. We
+disclose which experiments are pre-specified
+(\texttt{audit\_log.md} sections under ``Pre-Specified'') versus
+follow-ups (\texttt{audit\_log.md} sections under ``Follow-Up'') in
+the file \texttt{audit\_log.md} shipped at the top level of the
+artifact.
+
+\section{Scaled Audit: Per-Seed Detail}
+\label{supp:scaled}
+
+The scaled audit on SQuAD/Mistral runs $n=2{,}500$ examples per
+condition for each of five seeds; pooled means appear in the main
+paper. Table~\ref{tab:supp:scaled_per_seed} reports per-seed paired
+Wilcoxon $p$-values, mean paired differences, and Cohen's $d_z$ for
+each contrast.
+
+\begin{table}[!htb]
+\centering
+\caption{Per-seed paired contrasts on SQuAD/Mistral, $n=500$ pairs per
+seed. Significance is paired Wilcoxon at $\alpha=0.05$.}
+\label{tab:supp:scaled_per_seed}
+\footnotesize
+\begin{tabular}{lcccc}
+\toprule
+Seed & Contrast & Mean diff & Wilcoxon $p$ & Cohen's $d_z$ \\
+\midrule
+41 & baseline$-$v$1$ & $+0.0107$ & $0.083$ & $+0.072$ \\
+42 & baseline$-$v$1$ & $+0.0063$ & $0.234$ & $+0.043$ \\
+43 & baseline$-$v$1$ & $+0.0078$ & $0.174$ & $+0.055$ \\
+44 & baseline$-$v$1$ & $+0.0204$ & $\mathbf{0.008}$ & $+0.134$ \\
+45 & baseline$-$v$1$ & $+0.0073$ & $0.203$ & $+0.048$ \\
+\midrule
+41 & v$2$$-$v$1$ & $+0.0132$ & $\mathbf{0.025}$ & $+0.088$ \\
+42 & v$2$$-$v$1$ & $+0.0030$ & $0.504$ & $+0.021$ \\
+43 & v$2$$-$v$1$ & $+0.0059$ & $0.215$ & $+0.042$ \\
+44 & v$2$$-$v$1$ & $+0.0191$ & $\mathbf{0.008}$ & $+0.126$ \\
+45 & v$2$$-$v$1$ & $+0.0125$ & $\mathbf{0.036}$ & $+0.081$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Bootstrap CIs on the pooled mean paired difference for
+baseline$-$v$1$ include zero, and only $1$ of $5$ seeds reaches
+significance for that contrast. The v$2$$-$v$1$ contrast reaches
+significance in $3$ of $5$ seeds, but the magnitude is small (per-seed
+mean diff $0.003$--$0.019$). Seed-level uncertainty is treated as a
+ControlledRAG reporting axis, not a result to average away.
+
+\section{Answer-Span/Control Diagnostic Details}
+\label{supp:span}
+
+The answer-span detector lowercases text, strips punctuation,
+normalises whitespace, and checks whether any normalised gold-answer
+alias appears in the retrieved context for the audited RAG
+setting~\citep{lewis2020rag}. It uses no external model. The resulting
+control rows and model summaries are written under the Fix 12 data and
+results directories.
+
+\begin{table}[!htb]
+\centering
+\caption{Matched-context span and outcome summary.}
+\footnotesize
+\begin{tabular}{lrrrrr}
+\toprule
+Group & $n$ & span present & faithfulness & hallucination & CCS \\
+\midrule
+all          & $400$ & $0.220$ & $0.637$ & $0.128$ & $0.404$ \\
+HIGH-CCS     & $200$ & $0.170$ & $0.636$ & $0.165$ & $0.670$ \\
+LOW-CCS      & $200$ & $0.270$ & $0.639$ & $0.090$ & $0.137$ \\
+span absent  & $312$ & $0.000$ & $0.628$ & $0.119$ & $0.408$ \\
+span present & $\phantom{1}88$ & $1.000$ & $0.670$ & $0.159$ & $0.390$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[!htb]
+\centering
+\caption{Full span/control model comparison. CIs are bootstrap $95\%$
+intervals from the script output.}
+\footnotesize
+\begin{tabular}{lrrrr}
+\toprule
+Predictors & $R^2$ & $R^2$ CI & AUROC & AUROC CI \\
+\midrule
+answer span                   & $0.019$ & $[0.001, 0.062]$ & $0.531$ & $[0.502, 0.599]$ \\
+mean similarity               & $0.002$ & $[0.000, 0.023]$ & $0.586$ & $[0.495, 0.677]$ \\
+CCS                           & $0.003$ & $[0.000, 0.022]$ & $0.639$ & $[0.564, 0.712]$ \\
+span $+$ similarity           & $0.024$ & $[0.004, 0.071]$ & $0.590$ & $[0.518, 0.687]$ \\
+span $+$ CCS                  & $0.022$ & $[0.003, 0.068]$ & $0.631$ & $[0.572, 0.716]$ \\
+span $+$ similarity $+$ CCS   & $0.025$ & $[0.006, 0.075]$ & $0.643$ & $[0.589, 0.734]$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The headline reading is reported in the main paper: span presence is
+the strongest single predictor of continuous faithfulness, CCS is the
+strongest single predictor of hallucination AUROC, and the joint
+feature set has the highest score on both. The $R^2$ values are uniformly small in
+absolute terms; the relative ranking is the load-bearing signal.
+Span presence is a weak lexical proxy, not a gold support variable:
+retrieved text can contain the answer string while still failing to
+support the generated answer. The mean-score and thresholded
+hallucination views also inspect different parts of the score
+distribution.
+
+\begin{table}[!htb]
+\centering
+\caption{Matched HIGH/LOW CCS faithfulness distribution.}
+\footnotesize
+\begin{tabular}{lrrrrrrr}
+\toprule
+Group & $n$ & mean & p10 & p25 & p50 & p75 & p90 \\
+\midrule
+HIGH-CCS & $200$ & $0.636$ & $0.476$ & $0.553$ & $0.638$ & $0.713$ & $0.795$ \\
+LOW-CCS  & $200$ & $0.639$ & $0.512$ & $0.569$ & $0.648$ & $0.715$ & $0.769$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[!htb]
+\centering
+\caption{Matched HIGH/LOW CCS hallucination rates as the score
+threshold varies.}
+\footnotesize
+\begin{tabular}{lrrrrr}
+\toprule
+Group & $\theta=0.3$ & $\theta=0.4$ & $\theta=0.5$ & $\theta=0.6$ & $\theta=0.7$ \\
+\midrule
+HIGH-CCS & $0.0\%$ & $3.0\%$ & $16.5\%$ & $38.5\%$ & $71.0\%$ \\
+LOW-CCS  & $1.0\%$ & $3.0\%$ & $\phantom{1}9.0\%$ & $38.5\%$ & $70.0\%$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+These tables explain why the matched mean contrast can be null while a
+specific thresholded hallucination contrast differs: the distributions
+are close in the middle, and the observed HIGH/LOW difference is
+threshold-sensitive rather than a clean directional CCS effect.
+
+\section{Stronger Retriever Sanity Check}
+\label{supp:retriever}
+
+The retriever sanity check has two parts. First, the matched contexts
+from the main-paper audit are re-encoded with MiniLM, BGE-large, and
+E5-large; this is a fixed-context diagnostic, not a fresh generation
+run. Second, the completed multi-retriever generation artifact is
+copied into \texttt{data/revision/fix\_13/} and summarised. The fixed
+generations are unchanged across embedders, so the matched
+HIGH$-$LOW faithfulness contrast inherits the matched-context null
+from the main paper and is not re-tested here.
+
+\begin{table}[!htb]
+\centering
+\caption{Fixed-context re-encoding of the matched HIGH/LOW CCS pairs.
+The HIGH$>$LOW CCS ordering is preserved across all three embedders.}
+\footnotesize
+\begin{tabular}{lrrrrr}
+\toprule
+Embedder & pairs & CCS high & CCS low & high$-$low & sim gap \\
+\midrule
+MiniLM    & $200$ & $0.670$ & $0.137$ & $0.533$ & $0.006$ \\
+BGE-large & $200$ & $0.739$ & $0.491$ & $0.249$ & $0.032$ \\
+E5-large  & $200$ & $0.830$ & $0.702$ & $0.127$ & $0.015$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[!htb]
+\centering
+\caption{Paradox magnitude by embedding model from the completed
+multi-retriever generation artifact ($n=30$ per cell, original pilot
+sampling protocol re-run under different embedders). The SQuAD column
+shows that the paradox direction depends on retriever; PubMedQA
+preserves a positive paradox across all four embedders.
+\textit{These rows are not directly comparable to the $n=2{,}500$
+scaled-audit number in main paper \S6 (baseline$-$v$1$ $= 0.011$):
+that table uses the audit-construction sampling and a single MiniLM
+retriever, whereas this table uses the small-$n$ pilot sampling and
+varies the embedder. Cross-table comparison should be same-row across
+embedders within this table, not this table vs.\ the main-paper
+scaled-audit table.}}
+\footnotesize
+\begin{tabular}{llrr}
+\toprule
+Dataset & embedder & baseline$-$v$1$ & v$2$$-$v$1$ \\
+\midrule
+SQuAD    & MiniLM    & $+0.075$ & $+0.099$ \\
+SQuAD    & BGE-large & $+0.032$ & $+0.025$ \\
+SQuAD    & E5-large  & $-0.011$ & $+0.008$ \\
+SQuAD    & GTE-large & $-0.001$ & $-0.006$ \\
+PubMedQA & MiniLM    & $+0.024$ & $+0.019$ \\
+PubMedQA & BGE-large & $+0.033$ & $+0.028$ \\
+PubMedQA & E5-large  & $+0.053$ & $+0.039$ \\
+PubMedQA & GTE-large & $+0.006$ & $+0.002$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The safe interpretation is retriever sensitivity, not universal
+robustness. Stronger embeddings change the retrieval surface, sometimes
+in a direction that flips the SQuAD paradox sign. ControlledRAG asks
+for retriever identity to be reported as a routine audit axis;
+the supplement here is the operational example.
+
+\section{Second-Generator Probe (Qwen2.5)}
+\label{supp:qwen}
+
+The second-generator audit samples $n=100$ fixed contexts per condition
+from the matched-context construction and generates answers with
+Qwen$2.5$ via local Ollama. Those fixed generations are scored with
+the DeBERTa proxy, the \texttt{roberta-large-mnli} proxy, and a local
+RAGAS-style judge (Mistral via Ollama).
+
+\begin{table}[!htb]
+\centering
+\caption{Qwen$2.5$ fixed-generation metric means and raw score
+contrasts.}
+\footnotesize
+\begin{tabular}{lrrrrr}
+\toprule
+Metric & baseline & HCPC-v$1$ & HCPC-v$2$ & baseline$-$v$1$ & v$2$$-$v$1$ \\
+\midrule
+DeBERTa             & $0.645$ & $0.631$ & $0.644$ & $+0.015$ & $+0.014$ \\
+roberta-large-MNLI  & $0.362$ & $0.316$ & $0.368$ & $+0.046$ & $+0.051$ \\
+RAGAS-style         & $0.806$ & $0.672$ & $0.814$ & $+0.134$ & $+0.142$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[!htb]
+\centering
+\caption{Metric correlations on the Qwen$2.5$ fixed-generation rows
+($n=300$).}
+\footnotesize
+\begin{tabular}{lrr}
+\toprule
+Metric pair & Pearson $r$ & Spearman $\rho$ \\
+\midrule
+DeBERTa vs.\ roberta-large-MNLI       & $0.380$ & $0.429$ \\
+DeBERTa vs.\ RAGAS-style              & $0.280$ & $0.318$ \\
+roberta-large-MNLI vs.\ RAGAS-style   & $0.721$ & $0.668$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The scorer-disagreement ordering is preserved under this compact
+second-generator replication. The claim is limited to this audited
+Qwen$2.5$ cell; ControlledRAG explicitly asks for a broader generator
+panel before any universal-generator claim is made.
+
+\section{Scorer Implementation and Standardized Contrasts}
+\label{supp:scorer_standardized}
+
+The frozen artifact uses two legacy NLI-style zero-shot label proxies
+and one context-conditioned RAGAS-style judge. The DeBERTa proxy
+(\nolinkurl{cross-encoder/nli-deberta-v3-base}) and RoBERTa proxy
+(\nolinkurl{roberta-large-mnli}) score each generated answer sentence
+as the sequence to be classified against the labels
+entailment/neutral/contradiction with
+\texttt{hypothesis\_template="\{\}"}. The retrieved context is retained
+in the per-row data and used by the RAGAS-style judge, but it is not
+consumed by those two legacy zero-shot proxy calls. This disclosure is
+part of the scorer audit: model identity, input formatting, and prompt
+format are not implementation trivia.
+
+Because the three scorers are on different native scales, the main
+paper reports raw contrasts as score-scale-dependent contrasts and
+adds a standardized Mistral analysis. Table~\ref{tab:supp:standardized}
+z-scores each scorer over the same $7{,}500$ fixed-generation rows and
+also reports percentile-rank-normalized contrasts. CIs are paired
+bootstrap intervals over matched query/seed keys; $2{,}499$ paired keys
+are available after one duplicated key is collapsed by the pivot.
+
+\begin{table}[!htb]
+\centering
+\caption{Standardized fixed-generation scorer-fragility contrasts on
+Mistral rows. Positive values mean the left condition scores higher
+than HCPC-v$1$.}
+\label{tab:supp:standardized}
+\scriptsize
+\begin{tabular}{llrrr}
+\toprule
+Scorer & Contrast & raw diff & z diff (CI) & rank diff (CI) \\
+\midrule
+DeBERTa proxy & baseline$-$v$1$ & $0.010$ & $0.071\,[0.032,0.110]$ & $0.022\,[0.010,0.033]$ \\
+DeBERTa proxy & v$2$$-$v$1$ & $0.011$ & $0.073\,[0.034,0.112]$ & $0.022\,[0.011,0.034]$ \\
+roberta-large-MNLI proxy & baseline$-$v$1$ & $0.032$ & $0.231\,[0.191,0.271]$ & $0.062\,[0.051,0.074]$ \\
+roberta-large-MNLI proxy & v$2$$-$v$1$ & $0.032$ & $0.236\,[0.199,0.275]$ & $0.063\,[0.052,0.075]$ \\
+RAGAS-style judge & baseline$-$v$1$ & $0.139$ & $0.337\,[0.298,0.375]$ & $0.085\,[0.075,0.095]$ \\
+RAGAS-style judge & v$2$$-$v$1$ & $0.138$ & $0.332\,[0.294,0.370]$ & $0.083\,[0.073,0.092]$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The standardized table preserves the scorer-fragility conclusion
+without treating raw scores on different scales as directly comparable
+causal effects.
+
+\section{Context-Conditioned NLI Rescoring (Subset)}
+\label{supp:context_conditioned_nli}
+
+The frozen artifact's DeBERTa-v$3$ and \texttt{roberta-large-mnli}
+faithfulness columns are legacy zero-shot label proxies: the answer
+sentence is the sequence classified against the labels
+entailment / neutral / contradiction with
+\texttt{hypothesis\_template="\{\}"}, and the retrieved context is
+not consumed by those calls. To make scorer input format an
+empirically observable audit axis (not just a disclosure axis), we
+rescore a balanced subset of the same fixed-generation rows under a
+proper context-conditioned NLI calling convention:
+\[
+\text{premise} = \text{retrieved context (truncated to 2048 chars)},
+\quad
+\text{hypothesis} = \text{generated answer sentence},
+\]
+followed by softmax over
+$\{\text{contradiction},\text{neutral},\text{entailment}\}$ and a
+mean-over-sentences aggregation matching the legacy proxy aggregation.
+The rescoring script is \texttt{scripts/run\_context\_conditioned\_nli\_scoring.py}.
+
+\paragraph{Subset.} $n=200$ paired queries per condition (baseline,
+HCPC-v$1$, HCPC-v$2$), so $n=600$ rows total. Subset selection is
+deterministic (first $200$ rows by appearance under the original
+fix\_03 ordering), so the subset is balanced across conditions but is
+not stratified by question domain. Rescoring is performed with both
+\texttt{cross-encoder/nli-deberta-v3-base} and
+\texttt{roberta-large-mnli} on Apple-silicon MPS without paid APIs.
+
+\begin{table}[!htb]
+\centering
+\caption{Baseline$-$HCPC-v$1$ paired contrasts on the same fixed
+generations under five scorer input formats. Bootstrap $95\%$ CIs are
+$10{,}000$-resample paired bootstraps over matched query keys. The
+two legacy zero-shot proxies (rows 1--2) and the two corresponding
+context-conditioned NLI rescorings (rows 3--4) use the same backbone
+NLI weights and the same fixed answers; only the calling convention
+changes.}
+\label{tab:supp:context_conditioned_contrasts}
+\footnotesize
+\begin{tabular}{lcc}
+\toprule
+Scorer & Baseline$-$HCPC-v$1$ contrast & $95\%$ CI \\
+\midrule
+Legacy DeBERTa-v$3$ proxy (no context)            & $+0.017$ & $[-0.003, +0.037]$ \\
+Legacy \texttt{roberta-large-mnli} proxy (no context) & $+0.044$ & $[+0.026, +0.063]$ \\
+\addlinespace
+Context-conditioned DeBERTa-v$3$ NLI              & $-0.279$ & $[-0.340, -0.219]$ \\
+Context-conditioned \texttt{roberta-large-mnli} NLI & $-0.081$ & $[-0.122, -0.043]$ \\
+\addlinespace
+Context-conditioned RAGAS-style judge             & $+0.130$ & $[+0.075, +0.186]$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Reading.} For both DeBERTa-v$3$ and
+\texttt{roberta-large-mnli}, switching from the legacy zero-shot label
+proxy to a context-conditioned NLI calling convention on the same
+backbone weights changes the sign of the reported baseline$-$HCPC-v$1$
+contrast on the same fixed generations. The legacy and
+context-conditioned bootstrap CIs are disjoint for both models. The
+RAGAS-style judge, which is context-conditioned by construction,
+agrees in sign with the legacy proxies but disagrees in magnitude. We
+do not claim a uniformly ``correct'' scorer; the table is the audit
+point: scorer input format is a real movable quantity in the headline
+number.
+
+\paragraph{Alignment with the $n=99$ calibration.} On the
+$n=99$ adjudicated calibration items, switching the same DeBERTa-v$3$
+and \texttt{roberta-large-mnli} backbones to the context-conditioned
+calling convention does \emph{not} improve Spearman alignment with the
+adjudicated labels: legacy DeBERTa proxy $\rho=+0.157$ vs.\
+context-conditioned DeBERTa $\rho=+0.120$; legacy
+\texttt{roberta-large-mnli} proxy $\rho=+0.393$ vs.\
+context-conditioned $\rho=+0.224$ (CIs in
+\texttt{n99\_alignment\_spearmans.csv}). The result is consistent with
+NLI models pre-trained on short premise/hypothesis pairs being
+sensitive to long-context input format. This is a calibration finding,
+not a recommendation; the contribution is that scorer input format
+must be reported and audited, not that any one input format is
+preferred.
+
+\paragraph{Subset is not the full table.} This is a $600$-row
+subset, not a full $7{,}500$-row rescoring. The scaled audit raw
+table in the main paper still uses the full $7{,}500$-row legacy
+proxy values; the standardised z-/rank-contrast table
+(\S\ref{supp:scorer_standardized}) also uses the legacy proxies. The
+context-conditioned subset is a focused empirical demonstration of
+the input-format axis, not a replacement for the legacy table.
+
+\paragraph{Source files.}
+\begin{sloppypar}
+\texttt{scripts/run\_context\_conditioned\_nli\_scoring.py},
+\texttt{results/revision/context\_conditioned\_nli/per\_query\_n600.csv},
+\texttt{results/revision/context\_conditioned\_nli/contrasts\_n600.csv},
+\texttt{results/revision/context\_conditioned\_nli/n99\_with\_ctx\_scores.csv},
+\texttt{results/revision/context\_conditioned\_nli/n99\_alignment\_spearmans.csv}.
+\end{sloppypar}
+
+\section{Long-Form/Synthesis Stress Test}
+\label{supp:longform}
+
+The long-form stress test packages an existing QASPER/MS-MARCO run
+with $40$ distinct long-form questions. It is included only as an
+exploratory scope probe, not as broad generalization evidence for the
+short-answer audit.
+
+\begin{table}[!htb]
+\centering
+\caption{Long-form stress-test condition means.}
+\footnotesize
+\begin{tabular}{llrrrr}
+\toprule
+Dataset & condition & span faith & claim faith & unsupported & long halluc.\ \\
+\midrule
+MS-MARCO & baseline   & $0.645$ & $0.646$ & $0.224$ & $0.400$ \\
+MS-MARCO & HCPC-v$1$  & $0.678$ & $0.679$ & $0.075$ & $0.050$ \\
+MS-MARCO & HCPC-v$2$  & $0.674$ & $0.674$ & $0.158$ & $0.250$ \\
+QASPER   & baseline   & $0.649$ & $0.649$ & $0.158$ & $0.300$ \\
+QASPER   & HCPC-v$1$  & $0.647$ & $0.647$ & $0.117$ & $0.200$ \\
+QASPER   & HCPC-v$2$  & $0.648$ & $0.651$ & $0.129$ & $0.250$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The short-answer paradox does not generalise cleanly here: MS-MARCO has
+a negative span-faithfulness paradox drop ($-0.033$), and QASPER is
+near zero ($+0.002$). The long-form result is reported as a scope
+limit rather than as broad long-form evidence for ControlledRAG.
+
+\section{Self-RAG: Harness-Mismatched Appendix Baseline}
+\label{supp:selfrag}
+
+We include Self-RAG~\citep{asai2024selfrag} only as an appendix
+baseline because the available Self-RAG harness mismatches the audit's
+fixed-context protocol along three dimensions: (i) Self-RAG's
+generator emits its own retrieval and reflection tokens, so the
+``fixed retrieved context'' assumption used by the matched-context and
+metric-fragility audits is not directly satisfied; (ii) Self-RAG's
+recommended generator is a fine-tuned Llama-$2$-$7$B variant that does
+not coincide with the audited Mistral-$7$B / Qwen$2.5$-$7$B family
+and that was OOM-killed on the available T$4$ instance for the
+PubMedQA cell, so the partial SQuAD numbers we have are not directly
+comparable to the cost-aware head-to-head; and (iii) the
+recommended Self-RAG threshold differs from the threshold-transfer
+sweep used elsewhere. We report this disclosure here so that future
+ControlledRAG-style audits can budget for a matched Self-RAG harness;
+we explicitly do not generalize from these mismatched runs to Self-RAG
+overall.
+
+\section{Coherence vs.\ Generic Retrieval Noise}
+\label{supp:noise}
+
+The noise audit uses the matched-context construction as a backbone
+and replaces $1/3$, $2/3$, or $3/3$ of the retrieved chunks with one
+of two noise types: random off-topic passages and coherence-preserving
+uninformative passages drawn from the same topic distribution that do
+not contain the answer.
+
+\begin{table}[!htb]
+\centering
+\caption{Faithfulness and similarity slopes per noise rate.}
+\footnotesize
+\begin{tabular}{lrr}
+\toprule
+Condition & faith slope (per noise rate) & sim slope (per noise rate) \\
+\midrule
+random noise                     & $-0.069$ & $-0.481$ \\
+coherent uninformative noise     & $-0.043$ & $-0.113$ \\
+HCPC-v$1$ refinement (reference) & ---      & ---      \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The two noise types produce distinguishable faithfulness slopes at
+matched substitution rate; we do not claim the gap is large in absolute
+terms. The right reading is that coherence and similarity are
+correlated but not identical.
+
+\section{Threshold Transfer: Full Sweep}
+\label{supp:threshold}
+
+\noindent\emph{Naming.} Tables in this section use the prior-work
+names HCPC-v$1$ ($=$ aggressive-refinement) and HCPC-v$2$
+($=$ gated-refinement); see main paper \S 3.
+
+The main paper reports a per-tune-dataset summary
+(diagonal recovery, off-diagonal mean, gap) at each tune dataset's
+selected $\tau^\ast$. The full $5 \times 5$ per-cell transfer matrix at
+each tune dataset's $\tau^\ast$ is reproduced below; the per-$\tau$
+sweep over $\{0.3, 0.4, 0.5, 0.6, 0.7\}$ for each dataset is in the
+artifact's \texttt{results/revision/fix\_04/} directory.
+Recovery is the dimensionless normalized contrast
+\[
+R_\tau(d)=
+\frac{\mathrm{faith}_{\mathrm{gate},\tau}(d) -
+      \mathrm{faith}_{\mathrm{HCPC}\text{-}v1}(d)}
+     {\mathrm{faith}_{\mathrm{baseline}}(d) -
+      \mathrm{faith}_{\mathrm{HCPC}\text{-}v1}(d)}.
+\]
+It is useful for asking whether a tuned threshold transports, but it is
+not a direct utility measure: when the denominator is small or negative,
+the sign can be counterintuitive and values can exceed $1$.
+
+\begin{table}[!htb]
+\centering
+\caption{Full $5 \times 5$ threshold-transfer matrix. Each row gives
+the normalized recovery ratio of the $\tau$ tuned on the row dataset,
+evaluated on each of the five column datasets. Positive values are not
+always ``better'' when the baseline$-$v$1$ denominator is negative.
+Rows can be byte-identical across the eval columns when two tune
+datasets pick the same $\tau^\ast$: tune-SQuAD and tune-HotpotQA both
+pick $\tau^\ast = 0.3$, and tune-PubMedQA and tune-TriviaQA both pick
+$\tau^\ast = 0.4$, so the off-diagonal columns coincide. This is a
+faithful consequence of the experiment (off-diagonal recovery only
+depends on the eval dataset and the selected $\tau$, not on which tune
+dataset selected it), not a pipeline bug.}
+\label{tab:supp:threshold_transfer_full}
+\footnotesize
+\begin{tabular}{lcrrrrr}
+\toprule
+$\tau$ tuned on & $\tau^\ast$ & SQuAD & PubMedQA & HotpotQA & NaturalQs & TriviaQA \\
+\midrule
+PubMedQA  & $0.4$ & $+0.489$ & $+1.452$ & $-0.291$ & $+1.140$ & $+0.464$ \\
+NaturalQs & $0.5$ & $+0.327$ & $+0.664$ & $-0.471$ & $+1.401$ & $+0.323$ \\
+SQuAD     & $0.3$ & $+0.823$ & $-1.714$ & $-0.112$ & $+0.865$ & $+0.398$ \\
+TriviaQA  & $0.4$ & $+0.489$ & $+1.452$ & $-0.291$ & $+1.140$ & $+0.464$ \\
+HotpotQA  & $0.3$ & $+0.823$ & $-1.714$ & $-0.112$ & $+0.865$ & $+0.398$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Per-$\tau$ recovery curves and confidence diagnostics for the
+$\tau$-tuning step are included as machine-readable CSVs in the same
+results directory. The transfer matrix itself does not include
+bootstrap CIs, so we use it as a descriptive transport diagnostic.
+
+\section{Completed Annotation Calibration ($n=99$)}
+\label{supp:human_calibration}
+
+The $n=99$ annotation calibration set is the typical-row arm of the
+human-calibration pre-specification. Items were sampled from the
+$7{,}500$ Mistral fixed-generation rows so that the baseline,
+HCPC-v$1$, and HCPC-v$2$ conditions are each represented and so that
+the score range of each scorer is covered. Two independent annotation
+passes were performed using the three-class label scheme
+\texttt{supported} / \texttt{partially\_supported} / \texttt{unsupported};
+disagreements were adjudicated and the adjudicated label set is the
+final reference for scorer-alignment computations.
+
+\paragraph{Adjudicated label distribution.}
+The adjudicated label distribution is $79$ \texttt{supported},
+$16$ \texttt{partially\_supported}, $4$ \texttt{unsupported} (totals
+$99$). Raw inter-pass agreement on the three-class label is
+$0.919$ ($91$ of $99$ items exact-match), and Cohen's
+$\kappa = 0.774$.
+
+\begin{table}[!htb]
+\centering
+\caption{Annotation calibration agreement and per-scorer alignment
+on $n=99$ adjudicated examples.
+Spearman, Pearson, and Kendall correlations are between the
+ordered adjudicated label
+(\texttt{unsupported} $<$ \texttt{partially\_supported} $<$
+\texttt{supported}) and each scorer's continuous output on the same
+items. Bootstrap $95\%$ CIs are paired bootstrap intervals; the three
+Spearman CIs overlap, so the per-scorer ranking is suggestive only.}
+\label{tab:supp:human_calibration}
+\footnotesize
+\begin{tabular}{lcccc}
+\toprule
+Scorer / quantity & Spearman $\rho$ & Pearson $r$ & Kendall $\tau_b$ & Spearman CI \\
+\midrule
+Legacy DeBERTa proxy             & $0.103$ & $0.110$ & $0.083$ & $[-0.080, +0.283]$ \\
+Legacy \texttt{roberta-large-mnli} proxy & $0.394$ & $0.404$ & $0.325$ & $[+0.222, +0.543]$ \\
+Context-conditioned RAGAS-style judge & $0.549$ & $0.450$ & $0.527$ & $[+0.380, +0.707]$ \\
+\midrule
+\multicolumn{5}{l}{Cohen's $\kappa$ between the two annotation passes: $0.774$} \\
+\multicolumn{5}{l}{Raw exact-match agreement: $0.919$ ($91$ of $99$)} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Reading.} The Spearman ordering matches the
+metric-fragility ordering in the main paper (RAGAS-style judge $>$
+\texttt{roberta-large-mnli} proxy $>$ DeBERTa proxy), but two facts
+keep this calibration short of a settled scorer endorsement: (i) the
+three Spearman bootstrap CIs overlap, and (ii) $n=99$ is calibration
+sample size, not population sample size. The legacy DeBERTa proxy's
+CI overlaps zero, while the other two CIs do not---this is the
+strongest single line that can be drawn under this calibration.
+
+\paragraph{Source files.}
+\begin{sloppypar}
+The verification script \texttt{scripts/verify\_human\_eval.py}
+recomputes the table values from the combined two-pass annotation
+file \texttt{human\_eval\_final/n99\_calibration/human\_eval\_adjudicated.csv}
+(carrying \texttt{rater\_a\_label}, \texttt{rater\_b\_label},
+\texttt{adjudicated\_label}, \texttt{adjudication\_notes}) and emits
+the bootstrap-CI summary above. The label distribution, agreement
+summary, correlation table, bootstrap intervals, verification trace,
+and per-row file with retrieved-context column appear in the same
+\texttt{human\_eval\_final/n99\_calibration/} directory under
+\texttt{human\_eval\_label\_distribution.csv},
+\texttt{human\_eval\_summary.csv},
+\texttt{human\_eval\_correlations.csv},
+\texttt{bootstrap\_correlation\_cis.csv},
+\texttt{human\_eval\_verification.csv}, and
+\texttt{human\_eval\_n99\_with\_context.csv}.
+\end{sloppypar}
+
+\section{Completed Targeted Scorer-Disagreement Evaluation ($n=100$)}
+\label{supp:human_disagreement}
+
+The targeted scorer-disagreement evaluation is the adversarial arm of
+the human-calibration pre-specification. It is \emph{separate} from the
+$n=99$ typical-row calibration in \S\ref{supp:human_calibration}: items
+are constructed to maximise scorer disagreement rather than to
+estimate population-level faithfulness. Both raters labelled all $100$
+items and adjudication resolved the $12$ rater-rater disagreements.
+
+\paragraph{Batch construction.}
+Rows are sampled from the $7{,}500$ Mistral generations in the scaled
+audit. We compute the absolute disagreement between the legacy DeBERTa
+proxy and the context-conditioned RAGAS-style score and stratify the
+batch across three disagreement types:
+\begin{enumerate}
+    \item \textbf{DeBERTa high / RAGAS-style low.}
+    \item \textbf{RAGAS-style high / DeBERTa low.}
+    \item \textbf{Near-threshold disagreement} around the $0.5$
+        decision boundary.
+\end{enumerate}
+The batch is also balanced across baseline / HCPC-v$1$ / HCPC-v$2$.
+Items already used in the $n=99$ calibration are excluded.
+
+\paragraph{Annotation protocol.} Two independent raters assigned one
+of \texttt{faithful}, \texttt{hallucinated}, or \texttt{unclear} using
+only the retrieved context, and an adjudication step resolved
+disagreements. The protocol artifacts shipped with the review package
+are:
+\begin{itemize}
+    \item \texttt{human\_eval\_final/n100\_disagreement/annotation\_batch\_disagreement\_100.csv}: the merged batch with scorer scores, rater $1$, rater $2$, and adjudicated labels.
+    \item \texttt{human\_eval\_final/n100\_disagreement/human\_eval\_rater1.csv} and \texttt{human\_eval\_rater2.csv}: independent rater files used during labelling.
+    \item \texttt{human\_eval\_final/n100\_disagreement/human\_eval\_adjudicated.csv}: per-row file with rater $1$ label, rater $2$ label, adjudicated label, adjudicated confidence, and adjudication notes; all $12$ rater-rater disagreements carry meaningful adjudication notes.
+    \item \texttt{human\_eval\_final/n100\_disagreement/human\_eval\_adjudication\_template.csv}: the reconciliation template used during adjudication.
+\end{itemize}
+
+\paragraph{Agreement and label distribution.}
+The two raters labelled all $100$ items
+($100/100$ for each rater); the adjudicated label set covers all
+$100$. Raw inter-rater agreement is $0.88$ ($88$ of $100$
+exact-match), Cohen's $\kappa=0.721$. The rater $1$ distribution is
+$74$ \texttt{faithful} / $26$ \texttt{hallucinated} / $0$
+\texttt{unclear}; the rater $2$ distribution is $70$ /
+$20$ / $10$ (rater $2$ used the \texttt{unclear} option, rater $1$
+did not). The adjudicated distribution is
+$74$ \texttt{faithful} / $26$ \texttt{hallucinated} / $0$
+\texttt{unclear}.
+
+\paragraph{Scorer alignment with adjudicated labels.}
+Table~\ref{tab:supp:disagreement_alignment} reports per-scorer
+correlation, AUROC, and AUPRC against the adjudicated faithful /
+hallucinated label, with $1{,}000$-resample bootstrap $95\%$ CIs from
+\texttt{scripts/analyze\_human\_disagreement\_labels.py}.
+
+\begin{table}[!htb]
+\centering
+\caption{Two-rater adjudicated $n=100$ targeted scorer-disagreement
+evaluation. The slice is constructed to be adversarial for any single
+scorer; the ranking here is \emph{not} the typical-row ranking from
+the $n=99$ calibration. Raw inter-rater agreement is $0.88$; Cohen's
+$\kappa = 0.721$. The adjudicated distribution is $74$ \texttt{faithful}
+/ $26$ \texttt{hallucinated} / $0$ \texttt{unclear}.}
+\label{tab:supp:disagreement_alignment}
+\footnotesize
+\begin{tabular}{lcccccc}
+\toprule
+Scorer & Spearman $\rho$ & Pearson $r$ & AUROC & AUROC CI & AUPRC & AUPRC CI \\
+\midrule
+Legacy DeBERTa proxy             & $-0.156$ & $-0.188$ & $0.398$ & $[0.273, 0.514]$ & $0.765$ & $[0.670, 0.852]$ \\
+Legacy \texttt{roberta-large-mnli} proxy & $+0.446$ & $+0.380$ & $0.794$ & $[0.699, 0.879]$ & $0.929$ & $[0.881, 0.963]$ \\
+Context-conditioned RAGAS-style judge & $+0.384$ & $+0.366$ & $0.718$ & $[0.637, 0.793]$ & $0.859$ & $[0.793, 0.914]$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Reading.} On this targeted disagreement-focused slice,
+\texttt{roberta-large-mnli} aligns best with adjudicated labels by all
+three measures (Spearman $\rho = 0.446$, AUROC $0.794$, AUPRC $0.929$);
+RAGAS-style is second; the legacy DeBERTa proxy is weakly negative on
+correlation and below chance on AUROC. This reverses the typical-row
+ordering from the $n=99$ calibration, where RAGAS-style ranked
+strongest. The combination supports the ControlledRAG claim that
+scorer ranking is evaluation-slice dependent, not a global ordering.
+
+\paragraph{Caveat.} The $n=100$ batch is constructed to be adversarial
+for any single scorer (rows where the legacy DeBERTa proxy and the
+RAGAS-style judge disagree most). It is therefore not a population-level
+faithfulness estimate and not a substitute for the $n=99$ random-sample
+calibration. The two slices answer two different audit questions, and
+ControlledRAG asks for both to be reported.
+
+\paragraph{Source files.}
+\begin{sloppypar}
+All under \texttt{human\_eval\_final/n100\_disagreement/}:
+\texttt{annotation\_batch\_disagreement\_100.csv},
+\texttt{human\_eval\_rater1.csv},
+\texttt{human\_eval\_rater2.csv},
+\texttt{human\_eval\_adjudicated.csv} (rater 1, rater 2, adjudicated, notes),
+\texttt{human\_disagreement\_summary.csv},
+\texttt{human\_disagreement\_label\_distribution.csv},
+\texttt{human\_disagreement\_agreement.csv},
+\texttt{human\_disagreement\_correlations.csv},
+\texttt{human\_disagreement\_auroc\_auprc.csv},
+\texttt{human\_disagreement\_bootstrap\_cis.csv}.
+\end{sloppypar}
+
+\section{Source Trace and Artifact Manifest}
+\label{supp:trace}
+
+Every numerical claim in the main paper traces to a result file under
+\texttt{results/revision/} with a corresponding pre-specified script
+under \texttt{experiments/}. Table~\ref{tab:supp:trace} summarises the
+trace; the full mapping is shipped as \texttt{SOURCE\_TRACE.md} in the
+artifact and reproduced here for the reviewer's convenience.
+
+\begin{table}[!htb]
+\centering
+\caption{Audit trace from claim to source file.}
+\label{tab:supp:trace}
+\footnotesize
+\begin{tabular}{ll}
+\toprule
+Audit & Source results files \\
+\midrule
+Matched-context (\S\ref{supp:span} backbone) &
+  \texttt{results/revision/fix\_01/} \\
+Scaled audit (\S\ref{supp:scaled}) &
+  \texttt{results/revision/fix\_02/} \\
+Metric fragility (Mistral) &
+  \texttt{results/revision/fix\_03/}, \texttt{standardized\_scorer\_fragility.csv} \\
+Threshold transfer (\S\ref{supp:threshold}) &
+  \texttt{results/revision/fix\_04/} \\
+Noise (\S\ref{supp:noise}) &
+  \texttt{results/revision/fix\_05/} \\
+Cost-aware head-to-head &
+  \texttt{results/revision/fix\_06/}, \texttt{h2h\_summary\_with\_ci.csv}, \texttt{fix\_11/} \\
+Span/control (\S\ref{supp:span}) &
+  \texttt{results/revision/fix\_12/} \\
+Stronger retrievers (\S\ref{supp:retriever}) &
+  \texttt{results/revision/fix\_13/}, \texttt{results/multi\_retriever/} \\
+Second generator (\S\ref{supp:qwen}) &
+  \texttt{results/revision/fix\_14/} \\
+Long-form stress (\S\ref{supp:longform}) &
+  \texttt{results/revision/fix\_15/} \\
+Human calibration $n=99$ (\S\ref{supp:human_calibration}) &
+  \texttt{human\_eval\_final/n99\_calibration/} \\
+Targeted disagreement evaluation $n=100$ (\S\ref{supp:human_disagreement}) &
+  \texttt{human\_eval\_final/n100\_disagreement/} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Reproducibility.} An anonymized artifact package containing
+code, per-query CSVs, matched context pairs, source tables, scripts, and
+documentation is provided for review. Public package, benchmark, and
+permanent archive links are omitted during double-blind review and will
+be released upon acceptance.
+
+\section{Resume and Compute Notes}
+\label{supp:kaggle}
+
+The local scripts are resumable through their CSV outputs. The only
+script likely to benefit from a free-tier GPU notebook is the
+second-generator replication if local Ollama is slow: run the same
+command on a free GPU-backed notebook after pulling Qwen$2.5$ and
+Mistral into Ollama, then download \texttt{data/revision/fix\_14/} and
+\texttt{results/revision/fix\_14/}. None of the audit experiments
+require paid APIs; all scorer rescoring is local DeBERTa,
+\texttt{roberta-large-mnli}, and a Mistral-via-Ollama RAGAS-style
+judge.
+
+\section{Positioning Against Recent RAG Evaluation Work}
+\label{supp:related_positioning}
+
+The main paper compresses the related-work positioning into a single
+paragraph in the ``Related Work, Continued'' section. The detailed
+mapping is reproduced here for reviewer convenience.
+
+\begin{table}[!htb]
+\centering
+\caption{Positioning against recent RAG evaluation work.}
+\label{tab:supp:related_positioning}
+\scriptsize
+\begin{tabular}{p{0.17\linewidth}p{0.36\linewidth}p{0.36\linewidth}}
+\toprule
+Work & Primary contribution & ControlledRAG relation \\
+\midrule
+ARES~\citep{saadfalcon2024ares} & trained judges for context relevance, answer faithfulness, and answer relevance with PPI calibration & complementary evaluator; ControlledRAG asks whether claims survive scorer/retriever/generator choices \\
+RAGChecker~\citep{ru2024ragchecker} & fine-grained retrieval and generation diagnostics for RAG systems & complementary metric framework; ControlledRAG is the disclosure layer around such diagnostics \\
+RAGTruth~\citep{niu2024ragtruth} & manually annotated hallucination corpus with word-level labels & complementary benchmark; ControlledRAG asks how benchmark conclusions transport across audit axes \\
+MIRAGE~\citep{park2025mirage} & RAG benchmark with component-specific metrics and adaptability probes & complementary benchmark; ControlledRAG emphasizes reporting hidden degrees of freedom \\
+FaithJudge~\citep{tamber2025faithjudge} & LLM-as-judge faithfulness benchmark and evolving leaderboard & complementary scorer/leaderboard; ControlledRAG requires scorer calibration and cross-scorer disclosure \\
+RAGAS / TRUE / SummaC~\citep{es2024ragas,honovich2022true,laban2022summac} & reference-free or NLI-style factual-consistency metrics & metrics used as audit inputs, not treated as reference standards \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+\end{document}

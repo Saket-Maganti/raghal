@@ -1,0 +1,10 @@
+scorer,human_source,human_mapping,metric,n,value
+deberta_score,adjudicated_label,faithful=1 unclear=0.5 hallucinated=0,pearson,100,-0.18776439112205345
+deberta_score,adjudicated_label,faithful=1 unclear=0.5 hallucinated=0,spearman,100,-0.1560446522953633
+deberta_score,adjudicated_label,faithful=1 unclear=0.5 hallucinated=0,kendall,100,-0.13057839313936578
+second_nli_score,adjudicated_label,faithful=1 unclear=0.5 hallucinated=0,pearson,100,0.38027604466890413
+second_nli_score,adjudicated_label,faithful=1 unclear=0.5 hallucinated=0,spearman,100,0.44643177388884586
+second_nli_score,adjudicated_label,faithful=1 unclear=0.5 hallucinated=0,kendall,100,0.36927102892378716
+ragas_style_score,adjudicated_label,faithful=1 unclear=0.5 hallucinated=0,pearson,100,0.3659919261827044
+ragas_style_score,adjudicated_label,faithful=1 unclear=0.5 hallucinated=0,spearman,100,0.38427665355062773
+ragas_style_score,adjudicated_label,faithful=1 unclear=0.5 hallucinated=0,kendall,100,0.3789954030473281

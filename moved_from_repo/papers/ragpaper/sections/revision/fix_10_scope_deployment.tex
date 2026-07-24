@@ -1,0 +1,21 @@
+% Fix 10 - scope deployment claim explicitly.
+
+\subsection{Scope of the Paradox}
+\label{sec:fix10_scope}
+
+% TRACKED-CHANGES: This text is intended to replace broad claims such as
+% "RAG evaluation has been optimizing the wrong quantity."
+
+The evidence in this paper supports a scoped claim: in short-answer,
+extractive QA settings, optimizing per-passage retrieval similarity can
+decrease answer faithfulness when the retrieved set loses coherence. We do
+not claim that this paradox governs all RAG deployments. In long-form
+scientific and web-answer generation, the effect is weaker or absent, and
+HCPC-v2 should be viewed as a short-answer deployment policy rather than a
+universal RAG controller.
+
+\paragraph{Broader impact update.}
+The deployment recommendation is therefore conservative: monitor set-level
+coherence alongside relevance, and avoid automatic refinement when the
+retrieved set is already coherent. Systems serving long-form synthesis,
+creative writing, or summarization should validate this policy separately.

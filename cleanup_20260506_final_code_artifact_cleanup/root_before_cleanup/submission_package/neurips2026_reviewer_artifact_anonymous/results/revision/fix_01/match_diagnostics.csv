@@ -1,0 +1,2 @@
+dataset,n_pairs_constructed,mean_sim_high,mean_sim_low,mean_abs_sim_gap,max_abs_sim_gap,mean_ccs_high,mean_ccs_low,mean_ccs_gap,min_ccs_gap,mean_overlap,max_overlap,mean_bucket_size
+squad,200,0.423588,0.421478,0.006351,0.018512,0.67006,0.137426,0.532634,0.264139,0.395,1,255.44

@@ -1,0 +1,31 @@
+question,answer,faithfulness_score,is_hallucination,latency_s,chunk_size,top_k,prompt_strategy
+Which NFL team represented the AFC at Super Bowl 50?, The NFL team that represented the AFC at Super Bowl 50 was the Denver Broncos.,0.8579,False,2.82,512,3,strict
+Which NFL team represented the NFC at Super Bowl 50?," The context does not specify which NFL team represented the NFC at Super Bowl 50, but it states that the Carolina Panthers were the NFC champion and lost to the Denver Broncos.",0.5175,False,4.46,512,3,strict
+Where did Super Bowl 50 take place?," Levi's Stadium in the San Francisco Bay Area at Santa Clara, California",0.6918,False,5.28,512,3,strict
+Which NFL team won Super Bowl 50?, The Denver Broncos won Super Bowl 50.,0.9247,False,4.35,512,3,strict
+What color was used to emphasize the 50th anniversary of the Super Bowl?, Gold,1.0,False,3.96,512,3,strict
+What was the theme of Super Bowl 50?," The provided context does not specify a specific theme for Super Bowl 50 other than the ""golden anniversary"" theme due to it being the 50th Super Bowl. However, it doesn't provide details about any other thematic elements related to the game itself.",0.8616,False,6.29,512,3,strict
+What day was the game played on?," I cannot find this information in the provided context. The context only mentions that the Super Bowl Opening Night was held on February 1, 2016, but it does not specify the date of the actual game.",0.7332,False,8.19,512,3,strict
+What is the AFC short for?, I cannot find this information in the provided context. The context does not mention what AFC stands for.,0.6632,False,4.09,512,3,strict
+What was the theme of Super Bowl 50?," The provided context does not mention a specific theme for Super Bowl 50 other than the ""golden anniversary"" theme due to it being the 50th Super Bowl. However, it doesn't specify a creative or artistic theme for the event itself.",0.8369,False,7.87,512,3,strict
+What does AFC stand for?, I cannot find this information in the provided context. The context does not specify what AFC stands for.,0.6762,False,4.59,512,3,strict
+What day was the Super Bowl played on?," The Super Bowl was played on February 7, 2016.",0.8567,False,5.13,512,3,strict
+Who won Super Bowl 50?, The Denver Broncos won Super Bowl 50.,0.9247,False,3.79,512,3,strict
+What venue did Super Bowl 50 take place in?, Levi's Stadium,0.5799,False,4.14,512,3,strict
+What city did Super Bowl 50 take place in?," The Super Bowl 50 took place in Santa Clara, which is part of the San Francisco Bay Area.",0.9421,False,4.84,512,3,strict
+"If Roman numerals were used, what would Super Bowl 50 have been called?"," I cannot find this information in the provided context. The context only mentions that Roman numerals were temporarily suspended for Super Bowl 50 and it was named using Arabic numerals as Super Bowl 50, but it does not specify what it would have been called if Roman numerals had been used.",0.639,False,7.98,512,3,strict
+Super Bowl 50 decided the NFL champion for what season?, The Super Bowl 50 decided the NFL champion for the 2015 season.,0.6644,False,4.5,512,3,strict
+What year did the Denver Broncos secure a Super Bowl title for the third time?," I cannot find this information in the provided context. The context only mentions that the Broncos made their second Super Bowl appearance in three years, but it does not specify the year they secured a Super Bowl title for the third time.",0.5408,False,6.88,512,3,strict
+What city did Super Bowl 50 take place in?," The Super Bowl 50 took place in Santa Clara, California.",0.9575,False,4.58,512,3,strict
+What stadium did Super Bowl 50 take place in?, Levi's Stadium,0.5799,False,4.19,512,3,strict
+What was the final score of Super Bowl 50? ," The final score of Super Bowl 50 was 24–10, with the Denver Broncos defeating the Carolina Panthers.",0.9142,False,5.57,512,3,strict
+"What month, day and year did Super Bowl 50 take place? "," The Super Bowl 50 took place on February 7, 2016.",0.945,False,4.25,512,3,strict
+What year was Super Bowl 50?, The Super Bowl 50 was played in the year 2016.,0.7056,False,3.43,512,3,strict
+What team was the AFC champion?, The AFC champion was the Denver Broncos.,0.7995,False,5.19,512,3,strict
+What team was the NFC champion?, The Panthers were the NFC champion.,0.665,False,4.98,512,3,strict
+Who won Super Bowl 50?, The Denver Broncos won Super Bowl 50.,0.9247,False,4.23,512,3,strict
+Super Bowl 50 determined the NFL champion for what season?, The Super Bowl 50 determined the NFL champion for the 2015 season.,0.6757,False,4.46,512,3,strict
+Which team won Super Bowl 50., The Denver Broncos won Super Bowl 50.,0.9247,False,3.78,512,3,strict
+Where was Super Bowl 50 held?," Super Bowl 50 was held at Levi's Stadium in Santa Clara, California.",0.9411,False,4.81,512,3,strict
+The name of the NFL championship game is?," The name of the NFL championship game, as mentioned in the provided context, is Super Bowl. Specifically, the game discussed in the context is Super Bowl 50.",0.6675,False,6.91,512,3,strict
+What 2015 NFL team one the AFC playoff?, The Denver Broncos won the AFC playoff in 2015.,0.8691,False,3.63,512,3,strict

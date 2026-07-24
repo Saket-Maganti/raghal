@@ -1,0 +1,10 @@
+source,label,count,proportion
+human_label_rater1,hallucinated,26,0.26
+human_label_rater1,unclear,0,0.0
+human_label_rater1,faithful,74,0.74
+human_label_rater2,hallucinated,20,0.2
+human_label_rater2,unclear,10,0.1
+human_label_rater2,faithful,70,0.7
+adjudicated_label,hallucinated,26,0.26
+adjudicated_label,unclear,0,0.0
+adjudicated_label,faithful,74,0.74

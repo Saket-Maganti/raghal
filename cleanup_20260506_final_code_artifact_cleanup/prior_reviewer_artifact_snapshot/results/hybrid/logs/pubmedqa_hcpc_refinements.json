@@ -1,0 +1,1189 @@
+[
+  {
+    "n_strong": 1,
+    "n_weak": 2,
+    "n_refined": 2,
+    "strong_sims": [
+      0.5382
+    ],
+    "weak_sims": [
+      0.305,
+      0.0
+    ],
+    "refinements": [
+      {
+        "parent_preview": ". Window stage leaves were stained with the mitochondrial dye MitoTracker Red CMXRos and examined. Mitochondrial dynamic",
+        "parent_sim": 0.305,
+        "parent_ce": -9.0398,
+        "n_sub_chunks": 4,
+        "best_sub_preview": ". This treatment resulted in lace plant leaves with a significantly lower number",
+        "best_sub_sim": 0.7331,
+        "best_sub_ce": 0.0348,
+        "sim_improvement": 0.4281,
+        "ce_improvement": 9.0746
+      },
+      {
+        "parent_preview": "Halofantrine is a newly developed antimalarial drug used for the treatment of Plasmodium falciparum malaria. The introdu",
+        "parent_sim": 0.0,
+        "parent_ce": -11.2952,
+        "n_sub_chunks": 5,
+        "best_sub_preview": ". In the halofantrine double therapeutic dose group, the inner and outer hair ce",
+        "best_sub_sim": 0.2558,
+        "best_sub_ce": -11.217,
+        "sim_improvement": 0.2558,
+        "ce_improvement": 0.0782
+      }
+    ]
+  },
+  {
+    "n_strong": 1,
+    "n_weak": 2,
+    "n_refined": 2,
+    "strong_sims": [
+      0.651
+    ],
+    "weak_sims": [
+      0.3281,
+      0.1287
+    ],
+    "refinements": [
+      {
+        "parent_preview": "Assessment of visual acuity depends on the optotypes used for measurement. The ability to recognize different optotypes ",
+        "parent_sim": 0.3281,
+        "parent_ce": 1.9961,
+        "n_sub_chunks": 5,
+        "best_sub_preview": ". 100 patients (age 8 - 90 years, median 60.5 years) with various eye disorders,",
+        "best_sub_sim": 0.6969,
+        "best_sub_ce": -3.8837,
+        "sim_improvement": 0.3688,
+        "ce_improvement": -5.8797
+      },
+      {
+        "parent_preview": "The records of 465 patients with an established diagnosis of age related macular degeneration who had attended a special",
+        "parent_sim": 0.1287,
+        "parent_ce": -10.9974,
+        "n_sub_chunks": 6,
+        "best_sub_preview": ". In each one of these cases the improvement in visual acuity could not be attri",
+        "best_sub_sim": 0.6645,
+        "best_sub_ce": -4.7412,
+        "sim_improvement": 0.5358,
+        "ce_improvement": 6.2562
+      }
+    ]
+  },
+  {
+    "n_strong": 0,
+    "n_weak": 3,
+    "n_refined": 3,
+    "strong_sims": [],
+    "weak_sims": [
+      0.4665,
+      0.2391,
+      0.0
+    ],
+    "refinements": [
+      {
+        "parent_preview": "Apparent life-threatening events in infants are a difficult and frequent problem in pediatric practice. The prognosis is",
+        "parent_sim": 0.4665,
+        "parent_ce": -2.2845,
+        "n_sub_chunks": 6,
+        "best_sub_preview": ". The hypothesis of an equivalent of aquagenic urticaria was then considered; as",
+        "best_sub_sim": 0.7363,
+        "best_sub_ce": -1.3453,
+        "sim_improvement": 0.2698,
+        "ce_improvement": 0.9391
+      },
+      {
+        "parent_preview": ". The evolution of these \"aquagenic maladies\" was favourable after a few weeks without baths. After a 2-7 year follow-up",
+        "parent_sim": 0.2391,
+        "parent_ce": -4.3522,
+        "n_sub_chunks": 1,
+        "best_sub_preview": ". The evolution of these \"aquagenic maladies\" was favourable after a few weeks w",
+        "best_sub_sim": 0.6195,
+        "best_sub_ce": -4.3522,
+        "sim_improvement": 0.3804,
+        "ce_improvement": 0.0
+      },
+      {
+        "parent_preview": "Social and cultural factors combined with little information may prevent the diffusion of epidural analgesia for pain re",
+        "parent_sim": 0.0,
+        "parent_ce": -11.238,
+        "n_sub_chunks": 6,
+        "best_sub_preview": ". The present study was launched contemporarily to the implementation of analges",
+        "best_sub_sim": 0.2433,
+        "best_sub_ce": -10.897,
+        "sim_improvement": 0.2433,
+        "ce_improvement": 0.341
+      }
+    ]
+  },
+  {
+    "n_strong": 0,
+    "n_weak": 3,
+    "n_refined": 3,
+    "strong_sims": [],
+    "weak_sims": [
+      0.1848,
+      0.0,
+      0.0
+    ],
+    "refinements": [
+      {
+        "parent_preview": "The transanal endorectal pull-through (TERPT) is becoming the most popular procedure in the treatment of Hirschsprung di",
+        "parent_sim": 0.1848,
+        "parent_ce": 5.7763,
+        "n_sub_chunks": 5,
+        "best_sub_preview": ". This study examined the long-term outcome of TERPT versus conventional transab",
+        "best_sub_sim": 0.6178,
+        "best_sub_ce": 5.2335,
+        "sim_improvement": 0.433,
+        "ce_improvement": -0.5428
+      },
+      {
+        "parent_preview": ". Actual graft survival rates were 76% and 81%, respectively. The incidence of primary nonfunction was 12% in the SLT gr",
+        "parent_sim": 0.0,
+        "parent_ce": -10.9904,
+        "n_sub_chunks": 3,
+        "best_sub_preview": ". Actual graft survival rates were 76% and 81%, respectively. The incidence of p",
+        "best_sub_sim": 0.3411,
+        "best_sub_ce": -10.6048,
+        "sim_improvement": 0.3411,
+        "ce_improvement": 0.3856
+      },
+      {
+        "parent_preview": ". There was statistical difference between groups A and B for peritoneal opening (p = 0.025), operative time (p = 0.0037",
+        "parent_sim": 0.0,
+        "parent_ce": -10.7925,
+        "n_sub_chunks": 2,
+        "best_sub_preview": ". There was statistical difference between groups A and B for peritoneal opening",
+        "best_sub_sim": 0.3814,
+        "best_sub_ce": -10.1202,
+        "sim_improvement": 0.3814,
+        "ce_improvement": 0.6723
+      }
+    ]
+  },
+  {
+    "n_strong": 0,
+    "n_weak": 3,
+    "n_refined": 3,
+    "strong_sims": [],
+    "weak_sims": [
+      0.3103,
+      0.2986,
+      0.0
+    ],
+    "refinements": [
+      {
+        "parent_preview": "Telephone counseling and tailored print communications have emerged as promising methods for promoting mammography scree",
+        "parent_sim": 0.3103,
+        "parent_ce": -0.6286,
+        "n_sub_chunks": 5,
+        "best_sub_preview": ". This study addressed the question: Compared to usual care, is tailored telepho",
+        "best_sub_sim": 0.6462,
+        "best_sub_ce": -0.7705,
+        "sim_improvement": 0.3359,
+        "ce_improvement": -0.1418
+      },
+      {
+        "parent_preview": ". Adherence to mammography screening based on self-reports obtained during 1995, 1996, and 1997. Compared to usual care ",
+        "parent_sim": 0.2986,
+        "parent_ce": 1.7808,
+        "n_sub_chunks": 3,
+        "best_sub_preview": ". Compared to usual care alone, telephone counseling promoted a significantly hi",
+        "best_sub_sim": 0.666,
+        "best_sub_ce": 2.5982,
+        "sim_improvement": 0.3674,
+        "ce_improvement": 0.8174
+      },
+      {
+        "parent_preview": "Recent years have seen a rapid proliferation of emergency ultrasound (EUS) programs in the United States. To date, there",
+        "parent_sim": 0.0,
+        "parent_ce": -9.8266,
+        "n_sub_chunks": 6,
+        "best_sub_preview": "Recent years have seen a rapid proliferation of emergency ultrasound (EUS) progr",
+        "best_sub_sim": 0.3219,
+        "best_sub_ce": -9.6736,
+        "sim_improvement": 0.3219,
+        "ce_improvement": 0.1529
+      }
+    ]
+  },
+  {
+    "n_strong": 0,
+    "n_weak": 3,
+    "n_refined": 3,
+    "strong_sims": [],
+    "weak_sims": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "refinements": [
+      {
+        "parent_preview": "From March 2007 to January 2011, 88 DBE procedures were performed on 66 patients. Indications included evaluation anemia",
+        "parent_sim": 0.0,
+        "parent_ce": -11.0251,
+        "n_sub_chunks": 5,
+        "best_sub_preview": ". Video-capsule endoscopy (VCE) was used prior to DBE in 43 of the 66 patients p",
+        "best_sub_sim": 0.4044,
+        "best_sub_ce": -10.6927,
+        "sim_improvement": 0.4044,
+        "ce_improvement": 0.3324
+      },
+      {
+        "parent_preview": "Recent years have seen a rapid proliferation of emergency ultrasound (EUS) programs in the United States. To date, there",
+        "parent_sim": 0.0,
+        "parent_ce": -11.2715,
+        "n_sub_chunks": 6,
+        "best_sub_preview": "Recent years have seen a rapid proliferation of emergency ultrasound (EUS) progr",
+        "best_sub_sim": 0.3282,
+        "best_sub_ce": -11.109,
+        "sim_improvement": 0.3282,
+        "ce_improvement": 0.1625
+      },
+      {
+        "parent_preview": ". Twenty-four patients (21%) had at least 1 anticoagulation complication. The most common complication was a sudden drop",
+        "parent_sim": 0.0,
+        "parent_ce": -11.2783,
+        "n_sub_chunks": 5,
+        "best_sub_preview": ". Twenty-four patients (21%) had at least 1 anticoagulation complication. The mo",
+        "best_sub_sim": 0.335,
+        "best_sub_ce": -11.2531,
+        "sim_improvement": 0.335,
+        "ce_improvement": 0.0252
+      }
+    ]
+  },
+  {
+    "n_strong": 1,
+    "n_weak": 2,
+    "n_refined": 2,
+    "strong_sims": [
+      0.665
+    ],
+    "weak_sims": [
+      0.0,
+      0.0
+    ],
+    "refinements": [
+      {
+        "parent_preview": "Although the retroperitoneal approach has been the preferred choice for open urological procedures, retroperitoneoscopy ",
+        "parent_sim": 0.0,
+        "parent_ce": -10.3868,
+        "n_sub_chunks": 5,
+        "best_sub_preview": ". We experienced five peritoneal openings; we had two surgical vascular complica",
+        "best_sub_sim": 0.4866,
+        "best_sub_ce": -6.8608,
+        "sim_improvement": 0.4866,
+        "ce_improvement": 3.5259
+      },
+      {
+        "parent_preview": ". There was statistical difference between groups A and B for peritoneal opening (p = 0.025), operative time (p = 0.0037",
+        "parent_sim": 0.0,
+        "parent_ce": -11.1318,
+        "n_sub_chunks": 2,
+        "best_sub_preview": ". There was statistical difference between groups A and B for peritoneal opening",
+        "best_sub_sim": 0.361,
+        "best_sub_ce": -10.3988,
+        "sim_improvement": 0.361,
+        "ce_improvement": 0.7331
+      }
+    ]
+  },
+  {
+    "n_strong": 0,
+    "n_weak": 3,
+    "n_refined": 3,
+    "strong_sims": [],
+    "weak_sims": [
+      0.363,
+      0.2237,
+      0.0
+    ],
+    "refinements": [
+      {
+        "parent_preview": ". The prevalence of self-reported problems with sleep and energy was 53 %. Without correction of cut-point shifts, age, ",
+        "parent_sim": 0.363,
+        "parent_ce": -4.1976,
+        "n_sub_chunks": 3,
+        "best_sub_preview": ". The prevalence of self-reported problems with sleep and energy was 53 %. Witho",
+        "best_sub_sim": 0.7031,
+        "best_sub_ce": -4.3163,
+        "sim_improvement": 0.3401,
+        "ce_improvement": -0.1187
+      },
+      {
+        "parent_preview": "Anchoring vignettes are brief texts describing a hypothetical character who illustrates a certain fixed level of a trait",
+        "parent_sim": 0.2237,
+        "parent_ce": 6.9419,
+        "n_sub_chunks": 6,
+        "best_sub_preview": ". This research uses vignettes to elucidate factors associated with sleep disord",
+        "best_sub_sim": 0.6869,
+        "best_sub_ce": 6.0516,
+        "sim_improvement": 0.4632,
+        "ce_improvement": -0.8903
+      },
+      {
+        "parent_preview": ". Of the remaining 695 visits, physician responses were reviewed family history (n = 372, 53.5%), discussed family histo",
+        "parent_sim": 0.0,
+        "parent_ce": -11.2911,
+        "n_sub_chunks": 2,
+        "best_sub_preview": ". There was no significant change in problem summary list documentation of risk ",
+        "best_sub_sim": 0.2981,
+        "best_sub_ce": -11.0503,
+        "sim_improvement": 0.2981,
+        "ce_improvement": 0.2408
+      }
+    ]
+  },
+  {
+    "n_strong": 0,
+    "n_weak": 3,
+    "n_refined": 3,
+    "strong_sims": [],
+    "weak_sims": [
+      0.3897,
+      0.0,
+      0.0
+    ],
+    "refinements": [
+      {
+        "parent_preview": "Although observational data support an inverse relationship between high-density lipoprotein (HDL) cholesterol and coron",
+        "parent_sim": 0.3897,
+        "parent_ce": 5.4754,
+        "n_sub_chunks": 4,
+        "best_sub_preview": ". Carotid intima-media thickness (cIMT) measurements were obtained in cases comp",
+        "best_sub_sim": 0.7835,
+        "best_sub_ce": 5.7755,
+        "sim_improvement": 0.3938,
+        "ce_improvement": 0.3001
+      },
+      {
+        "parent_preview": ". RHR was elevated (>90 bpm) in 19%. Overall, 79% of study participants were found to have at least one CVD risk factor.",
+        "parent_sim": 0.0,
+        "parent_ce": -11.1012,
+        "n_sub_chunks": 3,
+        "best_sub_preview": ". Individuals with an elevated RHR had a higher risk (OR 1.94, 95% CI 1.15-3.26%",
+        "best_sub_sim": 0.2962,
+        "best_sub_ce": -11.1531,
+        "sim_improvement": 0.2962,
+        "ce_improvement": -0.0518
+      },
+      {
+        "parent_preview": "Assessment of visual acuity depends on the optotypes used for measurement. The ability to recognize different optotypes ",
+        "parent_sim": 0.0,
+        "parent_ce": -11.1427,
+        "n_sub_chunks": 5,
+        "best_sub_preview": ". Since optotypes are evaluated on individuals with good visual acuity and witho",
+        "best_sub_sim": 0.2762,
+        "best_sub_ce": -10.9396,
+        "sim_improvement": 0.2762,
+        "ce_improvement": 0.2031
+      }
+    ]
+  },
+  {
+    "n_strong": 2,
+    "n_weak": 1,
+    "n_refined": 1,
+    "strong_sims": [
+      0.5472,
+      0.5223
+    ],
+    "weak_sims": [
+      0.3492
+    ],
+    "refinements": [
+      {
+        "parent_preview": ". There were no adverse events reported at either short stay ward, with parental satisfaction high. The short stay ward ",
+        "parent_sim": 0.3492,
+        "parent_ce": 1.6903,
+        "n_sub_chunks": 2,
+        "best_sub_preview": ". There were no adverse events reported at either short stay ward, with parental",
+        "best_sub_sim": 0.7475,
+        "best_sub_ce": 0.5415,
+        "sim_improvement": 0.3983,
+        "ce_improvement": -1.1489
+      }
+    ]
+  },
+  {
+    "n_strong": 0,
+    "n_weak": 3,
+    "n_refined": 3,
+    "strong_sims": [],
+    "weak_sims": [
+      0.4327,
+      0.0152,
+      0.0
+    ],
+    "refinements": [
+      {
+        "parent_preview": "The objective of the current study is to determine to what extent the reduction of Chile's traffic fatalities and injuri",
+        "parent_sim": 0.4327,
+        "parent_ce": 5.9884,
+        "n_sub_chunks": 6,
+        "best_sub_preview": "The objective of the current study is to determine to what extent the reduction ",
+        "best_sub_sim": 0.7398,
+        "best_sub_ce": 5.0136,
+        "sim_improvement": 0.3071,
+        "ce_improvement": -0.9748
+      },
+      {
+        "parent_preview": ". Empirical estimates from instrumental variables suggest that the enactment of the traffic law reform in interaction wi",
+        "parent_sim": 0.0152,
+        "parent_ce": 0.2571,
+        "n_sub_chunks": 3,
+        "best_sub_preview": ". Empirical estimates from instrumental variables suggest that the enactment of ",
+        "best_sub_sim": 0.5438,
+        "best_sub_ce": -0.767,
+        "sim_improvement": 0.5286,
+        "ce_improvement": -1.0241
+      },
+      {
+        "parent_preview": "The incidence of large-scale urban attacks on civilian populations has significantly increased across the globe over the",
+        "parent_sim": 0.0,
+        "parent_ce": -11.3895,
+        "n_sub_chunks": 4,
+        "best_sub_preview": "The incidence of large-scale urban attacks on civilian populations has significa",
+        "best_sub_sim": 0.2029,
+        "best_sub_ce": -11.3849,
+        "sim_improvement": 0.2029,
+        "ce_improvement": 0.0046
+      }
+    ]
+  },
+  {
+    "n_strong": 1,
+    "n_weak": 2,
+    "n_refined": 2,
+    "strong_sims": [
+      0.5409
+    ],
+    "weak_sims": [
+      0.1691,
+      0.0
+    ],
+    "refinements": [
+      {
+        "parent_preview": ". Twenty-four patients (21%) had at least 1 anticoagulation complication. The most common complication was a sudden drop",
+        "parent_sim": 0.1691,
+        "parent_ce": -2.8915,
+        "n_sub_chunks": 5,
+        "best_sub_preview": ". Five patients died (4%), 3 of whom had significant hemorrhage attributed to an",
+        "best_sub_sim": 0.6382,
+        "best_sub_ce": -2.3747,
+        "sim_improvement": 0.4691,
+        "ce_improvement": 0.5168
+      },
+      {
+        "parent_preview": "The incidence of large-scale urban attacks on civilian populations has significantly increased across the globe over the",
+        "parent_sim": 0.0,
+        "parent_ce": -11.2992,
+        "n_sub_chunks": 4,
+        "best_sub_preview": ". Half of those casualties are expected to require immediate medical treatment. ",
+        "best_sub_sim": 0.3318,
+        "best_sub_ce": -10.0327,
+        "sim_improvement": 0.3318,
+        "ce_improvement": 1.2665
+      }
+    ]
+  },
+  {
+    "n_strong": 0,
+    "n_weak": 3,
+    "n_refined": 3,
+    "strong_sims": [],
+    "weak_sims": [
+      0.4882,
+      0.0,
+      0.0
+    ],
+    "refinements": [
+      {
+        "parent_preview": "Specific markers for differentiation of nonalcoholic (NASH) from alcoholic steatohepatitis (ASH) are lacking. We investi",
+        "parent_sim": 0.4882,
+        "parent_ce": 7.3373,
+        "n_sub_chunks": 5,
+        "best_sub_preview": "Specific markers for differentiation of nonalcoholic (NASH) from alcoholic steat",
+        "best_sub_sim": 0.9058,
+        "best_sub_ce": 7.6122,
+        "sim_improvement": 0.4176,
+        "ce_improvement": 0.2749
+      },
+      {
+        "parent_preview": ". Actual graft survival rates were 76% and 81%, respectively. The incidence of primary nonfunction was 12% in the SLT gr",
+        "parent_sim": 0.0,
+        "parent_ce": -10.8559,
+        "n_sub_chunks": 3,
+        "best_sub_preview": ". Liver function parameters (prothrombin time, factor V, bilirubin clearance) an",
+        "best_sub_sim": 0.2818,
+        "best_sub_ce": -11.3068,
+        "sim_improvement": 0.2818,
+        "ce_improvement": -0.4509
+      },
+      {
+        "parent_preview": "To assess and compare the value of split-liver transplantation (SLT) and living-related liver transplantation (LRT). The",
+        "parent_sim": 0.0,
+        "parent_ce": -11.4241,
+        "n_sub_chunks": 5,
+        "best_sub_preview": "To assess and compare the value of split-liver transplantation (SLT) and living-",
+        "best_sub_sim": 0.277,
+        "best_sub_ce": -11.4405,
+        "sim_improvement": 0.277,
+        "ce_improvement": -0.0164
+      }
+    ]
+  },
+  {
+    "n_strong": 1,
+    "n_weak": 2,
+    "n_refined": 2,
+    "strong_sims": [
+      0.5132
+    ],
+    "weak_sims": [
+      0.3086,
+      0.0
+    ],
+    "refinements": [
+      {
+        "parent_preview": ". Of the remaining 695 visits, physician responses were reviewed family history (n = 372, 53.5%), discussed family histo",
+        "parent_sim": 0.3086,
+        "parent_ce": -5.1772,
+        "n_sub_chunks": 2,
+        "best_sub_preview": ". Of the remaining 695 visits, physician responses were reviewed family history ",
+        "best_sub_sim": 0.5762,
+        "best_sub_ce": -8.1927,
+        "sim_improvement": 0.2676,
+        "ce_improvement": -3.0155
+      },
+      {
+        "parent_preview": "Telephone counseling and tailored print communications have emerged as promising methods for promoting mammography scree",
+        "parent_sim": 0.0,
+        "parent_ce": -11.1838,
+        "n_sub_chunks": 5,
+        "best_sub_preview": ". However, there has been little research testing, within the same randomized fi",
+        "best_sub_sim": 0.4017,
+        "best_sub_ce": -10.6382,
+        "sim_improvement": 0.4017,
+        "ce_improvement": 0.5455
+      }
+    ]
+  },
+  {
+    "n_strong": 1,
+    "n_weak": 2,
+    "n_refined": 2,
+    "strong_sims": [
+      0.6096
+    ],
+    "weak_sims": [
+      0.0,
+      0.0
+    ],
+    "refinements": [
+      {
+        "parent_preview": ". Thirty percent (95% confidence interval, 24%-35%) reported they had performed more than 150 scans. Residents in progra",
+        "parent_sim": 0.0,
+        "parent_ce": -2.7346,
+        "n_sub_chunks": 3,
+        "best_sub_preview": ". Significant differences were noted in most applications of bedside US between ",
+        "best_sub_sim": 0.439,
+        "best_sub_ce": -7.772,
+        "sim_improvement": 0.439,
+        "ce_improvement": -5.0374
+      },
+      {
+        "parent_preview": "The incidence of large-scale urban attacks on civilian populations has significantly increased across the globe over the",
+        "parent_sim": 0.0,
+        "parent_ce": -10.7572,
+        "n_sub_chunks": 4,
+        "best_sub_preview": ". 15 years ago the Emergency and Disaster Medicine Division in the Israeli Minis",
+        "best_sub_sim": 0.3876,
+        "best_sub_ce": -9.0703,
+        "sim_improvement": 0.3876,
+        "ce_improvement": 1.6869
+      }
+    ]
+  },
+  {
+    "n_strong": 1,
+    "n_weak": 2,
+    "n_refined": 2,
+    "strong_sims": [
+      0.5013
+    ],
+    "weak_sims": [
+      0.4387,
+      0.0
+    ],
+    "refinements": [
+      {
+        "parent_preview": ". Breathlessness was measured on a self-reported numeric rating scale. Richmond Agitation Sedation Scale scores, Palliat",
+        "parent_sim": 0.4387,
+        "parent_ce": -4.463,
+        "n_sub_chunks": 7,
+        "best_sub_preview": ". Eighteen of 815 patients (advanced cancer; median age\u00a0=\u00a057.5\u00a0years [range 36-8",
+        "best_sub_sim": 0.5758,
+        "best_sub_ce": -1.1685,
+        "sim_improvement": 0.1371,
+        "ce_improvement": 3.2945
+      },
+      {
+        "parent_preview": "The purpose of this study was to delineate early respiratory predictors of mortality in children with hemato-oncology ma",
+        "parent_sim": 0.0,
+        "parent_ce": -10.3926,
+        "n_sub_chunks": 5,
+        "best_sub_preview": ". A significant relationship between respiratory data and outcome related to eff",
+        "best_sub_sim": 0.3812,
+        "best_sub_ce": -10.4095,
+        "sim_improvement": 0.3812,
+        "ce_improvement": -0.0169
+      }
+    ]
+  },
+  {
+    "n_strong": 0,
+    "n_weak": 3,
+    "n_refined": 3,
+    "strong_sims": [],
+    "weak_sims": [
+      0.1455,
+      0.0,
+      0.0
+    ],
+    "refinements": [
+      {
+        "parent_preview": "To assess and compare the value of split-liver transplantation (SLT) and living-related liver transplantation (LRT). The",
+        "parent_sim": 0.1455,
+        "parent_ce": -0.5773,
+        "n_sub_chunks": 5,
+        "best_sub_preview": ". The combination of SLT and LRT has abolished deaths on the waiting list, thus ",
+        "best_sub_sim": 0.6685,
+        "best_sub_ce": 3.541,
+        "sim_improvement": 0.523,
+        "ce_improvement": 4.1183
+      },
+      {
+        "parent_preview": ". Actual graft survival rates were 76% and 81%, respectively. The incidence of primary nonfunction was 12% in the SLT gr",
+        "parent_sim": 0.0,
+        "parent_ce": -10.6874,
+        "n_sub_chunks": 3,
+        "best_sub_preview": ". Liver function parameters (prothrombin time, factor V, bilirubin clearance) an",
+        "best_sub_sim": 0.2952,
+        "best_sub_ce": -11.181,
+        "sim_improvement": 0.2952,
+        "ce_improvement": -0.4936
+      },
+      {
+        "parent_preview": "Specific markers for differentiation of nonalcoholic (NASH) from alcoholic steatohepatitis (ASH) are lacking. We investi",
+        "parent_sim": 0.0,
+        "parent_ce": -11.0318,
+        "n_sub_chunks": 5,
+        "best_sub_preview": ". Liver biopsies performed at our hospital over a 10-year period were reviewed, ",
+        "best_sub_sim": 0.4482,
+        "best_sub_ce": -10.2418,
+        "sim_improvement": 0.4482,
+        "ce_improvement": 0.79
+      }
+    ]
+  },
+  {
+    "n_strong": 1,
+    "n_weak": 2,
+    "n_refined": 2,
+    "strong_sims": [
+      0.6059
+    ],
+    "weak_sims": [
+      0.0,
+      0.0
+    ],
+    "refinements": [
+      {
+        "parent_preview": "Telephone counseling and tailored print communications have emerged as promising methods for promoting mammography scree",
+        "parent_sim": 0.0,
+        "parent_ce": -11.2659,
+        "n_sub_chunks": 5,
+        "best_sub_preview": ". One thousand ninety-nine women aged 50 and older recruited from a health maint",
+        "best_sub_sim": 0.369,
+        "best_sub_ce": -11.2694,
+        "sim_improvement": 0.369,
+        "ce_improvement": -0.0035
+      },
+      {
+        "parent_preview": ". Of the remaining 695 visits, physician responses were reviewed family history (n = 372, 53.5%), discussed family histo",
+        "parent_sim": 0.0,
+        "parent_ce": -11.319,
+        "n_sub_chunks": 2,
+        "best_sub_preview": ". Of the remaining 695 visits, physician responses were reviewed family history ",
+        "best_sub_sim": 0.2718,
+        "best_sub_ce": -11.3246,
+        "sim_improvement": 0.2718,
+        "ce_improvement": -0.0056
+      }
+    ]
+  },
+  {
+    "n_strong": 0,
+    "n_weak": 3,
+    "n_refined": 3,
+    "strong_sims": [],
+    "weak_sims": [
+      0.3992,
+      0.0881,
+      0.0
+    ],
+    "refinements": [
+      {
+        "parent_preview": "Although the retroperitoneal approach has been the preferred choice for open urological procedures, retroperitoneoscopy ",
+        "parent_sim": 0.3992,
+        "parent_ce": 7.298,
+        "n_sub_chunks": 5,
+        "best_sub_preview": ". This study aims to develop a training model for retroperitoneoscopy and to est",
+        "best_sub_sim": 0.7939,
+        "best_sub_ce": 7.5698,
+        "sim_improvement": 0.3947,
+        "ce_improvement": 0.2718
+      },
+      {
+        "parent_preview": ". There was statistical difference between groups A and B for peritoneal opening (p = 0.025), operative time (p = 0.0037",
+        "parent_sim": 0.0881,
+        "parent_ce": -1.3928,
+        "n_sub_chunks": 2,
+        "best_sub_preview": ". RPN in a porcine model could simulate the whole procedure, from creating the s",
+        "best_sub_sim": 0.6076,
+        "best_sub_ce": 0.3981,
+        "sim_improvement": 0.5195,
+        "ce_improvement": 1.7909
+      },
+      {
+        "parent_preview": "The transanal endorectal pull-through (TERPT) is becoming the most popular procedure in the treatment of Hirschsprung di",
+        "parent_sim": 0.0,
+        "parent_ce": -11.0186,
+        "n_sub_chunks": 5,
+        "best_sub_preview": ". Patients were operated on between the years 1995 and 2003. During this time, o",
+        "best_sub_sim": 0.277,
+        "best_sub_ce": -10.9248,
+        "sim_improvement": 0.277,
+        "ce_improvement": 0.0938
+      }
+    ]
+  },
+  {
+    "n_strong": 1,
+    "n_weak": 2,
+    "n_refined": 2,
+    "strong_sims": [
+      0.5271
+    ],
+    "weak_sims": [
+      0.0,
+      0.0
+    ],
+    "refinements": [
+      {
+        "parent_preview": ". RHR was elevated (>90 bpm) in 19%. Overall, 79% of study participants were found to have at least one CVD risk factor.",
+        "parent_sim": 0.0,
+        "parent_ce": -8.7753,
+        "n_sub_chunks": 3,
+        "best_sub_preview": ". RHR was elevated (>90 bpm) in 19%. Overall, 79% of study participants were fou",
+        "best_sub_sim": 0.4743,
+        "best_sub_ce": -7.7123,
+        "sim_improvement": 0.4743,
+        "ce_improvement": 1.063
+      },
+      {
+        "parent_preview": ". The prevalence of self-reported problems with sleep and energy was 53 %. Without correction of cut-point shifts, age, ",
+        "parent_sim": 0.0,
+        "parent_ce": -11.3918,
+        "n_sub_chunks": 3,
+        "best_sub_preview": ". The prevalence of self-reported problems with sleep and energy was 53 %. Witho",
+        "best_sub_sim": 0.4126,
+        "best_sub_ce": -11.3068,
+        "sim_improvement": 0.4126,
+        "ce_improvement": 0.085
+      }
+    ]
+  },
+  {
+    "n_strong": 1,
+    "n_weak": 2,
+    "n_refined": 2,
+    "strong_sims": [
+      0.5431
+    ],
+    "weak_sims": [
+      0.1387,
+      0.0
+    ],
+    "refinements": [
+      {
+        "parent_preview": ". An HMCI is defined by the Emergency and Disaster Medicine Division in the Israeli Ministry of Health as>or=10 casualti",
+        "parent_sim": 0.1387,
+        "parent_ce": -2.7251,
+        "n_sub_chunks": 3,
+        "best_sub_preview": ". An HMCI is defined by the Emergency and Disaster Medicine Division in the Isra",
+        "best_sub_sim": 0.5023,
+        "best_sub_ce": -4.5787,
+        "sim_improvement": 0.3636,
+        "ce_improvement": -1.8537
+      },
+      {
+        "parent_preview": "We evaluated the usefulness of a short stay or 23-hour ward in a pediatric unit of a large teaching hospital, Westmead H",
+        "parent_sim": 0.0,
+        "parent_ce": -11.2484,
+        "n_sub_chunks": 6,
+        "best_sub_preview": ". The following outcome measures were used: length of stay, appropriateness of s",
+        "best_sub_sim": 0.4158,
+        "best_sub_ce": -10.7218,
+        "sim_improvement": 0.4158,
+        "ce_improvement": 0.5266
+      }
+    ]
+  },
+  {
+    "n_strong": 0,
+    "n_weak": 3,
+    "n_refined": 3,
+    "strong_sims": [],
+    "weak_sims": [
+      0.4817,
+      0.0,
+      0.0
+    ],
+    "refinements": [
+      {
+        "parent_preview": "The purpose of this study was to delineate early respiratory predictors of mortality in children with hemato-oncology ma",
+        "parent_sim": 0.4817,
+        "parent_ce": 6.8882,
+        "n_sub_chunks": 5,
+        "best_sub_preview": "The purpose of this study was to delineate early respiratory predictors of morta",
+        "best_sub_sim": 0.8643,
+        "best_sub_ce": 6.2982,
+        "sim_improvement": 0.3826,
+        "ce_improvement": -0.5901
+      },
+      {
+        "parent_preview": ". Breathlessness was measured on a self-reported numeric rating scale. Richmond Agitation Sedation Scale scores, Palliat",
+        "parent_sim": 0.0,
+        "parent_ce": -10.8551,
+        "n_sub_chunks": 7,
+        "best_sub_preview": ". On Day 3, 12/12 patients confirmed that this mode of application provided reli",
+        "best_sub_sim": 0.3628,
+        "best_sub_ce": -11.0273,
+        "sim_improvement": 0.3628,
+        "ce_improvement": -0.1722
+      },
+      {
+        "parent_preview": "Breathlessness is one of the most distressing symptoms experienced by patients with advanced cancer and noncancer diagno",
+        "parent_sim": 0.0,
+        "parent_ce": -10.2692,
+        "n_sub_chunks": 5,
+        "best_sub_preview": "Breathlessness is one of the most distressing symptoms experienced by patients w",
+        "best_sub_sim": 0.5396,
+        "best_sub_ce": -9.409,
+        "sim_improvement": 0.5396,
+        "ce_improvement": 0.8602
+      }
+    ]
+  },
+  {
+    "n_strong": 1,
+    "n_weak": 2,
+    "n_refined": 2,
+    "strong_sims": [
+      0.5112
+    ],
+    "weak_sims": [
+      0.0,
+      0.0
+    ],
+    "refinements": [
+      {
+        "parent_preview": ". 46.2% of families reported having a total smoking ban in place in both their homes and cars. Only 27.8% families earni",
+        "parent_sim": 0.0,
+        "parent_ce": -10.616,
+        "n_sub_chunks": 2,
+        "best_sub_preview": ". 46.2% of families reported having a total smoking ban in place in both their h",
+        "best_sub_sim": 0.4133,
+        "best_sub_ce": -10.272,
+        "sim_improvement": 0.4133,
+        "ce_improvement": 0.344
+      },
+      {
+        "parent_preview": "The purpose of this study was to delineate early respiratory predictors of mortality in children with hemato-oncology ma",
+        "parent_sim": 0.0,
+        "parent_ce": -10.3579,
+        "n_sub_chunks": 5,
+        "best_sub_preview": ". We conducted a retrospective chart review of children with malignant and ARDS ",
+        "best_sub_sim": 0.3673,
+        "best_sub_ce": -10.1185,
+        "sim_improvement": 0.3673,
+        "ce_improvement": 0.2395
+      }
+    ]
+  },
+  {
+    "n_strong": 2,
+    "n_weak": 1,
+    "n_refined": 1,
+    "strong_sims": [
+      0.6852,
+      0.5837
+    ],
+    "weak_sims": [
+      0.0
+    ],
+    "refinements": [
+      {
+        "parent_preview": ". Overall, nodal status was a strong and independent prognostic indicator for clinical outcome. The HER2 immunoreactivit",
+        "parent_sim": 0.0,
+        "parent_ce": -7.3825,
+        "n_sub_chunks": 3,
+        "best_sub_preview": ". Overall, nodal status was a strong and independent prognostic indicator for cl",
+        "best_sub_sim": 0.2861,
+        "best_sub_ce": -6.8568,
+        "sim_improvement": 0.2861,
+        "ce_improvement": 0.5257
+      }
+    ]
+  },
+  {
+    "n_strong": 1,
+    "n_weak": 2,
+    "n_refined": 2,
+    "strong_sims": [
+      0.5438
+    ],
+    "weak_sims": [
+      0.4571,
+      0.0
+    ],
+    "refinements": [
+      {
+        "parent_preview": ". An adjusted response rate of 72% was achieved. Only two mechanical factors: teeth grinding (odds ratio (OR) 2.0, 95% C",
+        "parent_sim": 0.4571,
+        "parent_ce": 3.6393,
+        "n_sub_chunks": 3,
+        "best_sub_preview": ". Only two mechanical factors: teeth grinding (odds ratio (OR) 2.0, 95% CI 1.3-3",
+        "best_sub_sim": 0.7622,
+        "best_sub_ce": 3.8287,
+        "sim_improvement": 0.3051,
+        "ce_improvement": 0.1894
+      },
+      {
+        "parent_preview": "Apparent life-threatening events in infants are a difficult and frequent problem in pediatric practice. The prognosis is",
+        "parent_sim": 0.0,
+        "parent_ce": -11.3548,
+        "n_sub_chunks": 6,
+        "best_sub_preview": ". Two diagnoses were initially considered: seizure or gastroesophageal reflux bu",
+        "best_sub_sim": 0.2901,
+        "best_sub_ce": -11.1329,
+        "sim_improvement": 0.2901,
+        "ce_improvement": 0.2219
+      }
+    ]
+  },
+  {
+    "n_strong": 0,
+    "n_weak": 3,
+    "n_refined": 3,
+    "strong_sims": [],
+    "weak_sims": [
+      0.2457,
+      0.1741,
+      0.1065
+    ],
+    "refinements": [
+      {
+        "parent_preview": "The records of 465 patients with an established diagnosis of age related macular degeneration who had attended a special",
+        "parent_sim": 0.2457,
+        "parent_ce": -11.2371,
+        "n_sub_chunks": 6,
+        "best_sub_preview": ". In each one of these cases the improvement in visual acuity could not be attri",
+        "best_sub_sim": 0.7351,
+        "best_sub_ce": 0.2286,
+        "sim_improvement": 0.4894,
+        "ce_improvement": 11.4657
+      },
+      {
+        "parent_preview": "Assessment of visual acuity depends on the optotypes used for measurement. The ability to recognize different optotypes ",
+        "parent_sim": 0.1741,
+        "parent_ce": -10.5329,
+        "n_sub_chunks": 5,
+        "best_sub_preview": ". 100 patients (age 8 - 90 years, median 60.5 years) with various eye disorders,",
+        "best_sub_sim": 0.5983,
+        "best_sub_ce": -3.2985,
+        "sim_improvement": 0.4242,
+        "ce_improvement": 7.2344
+      },
+      {
+        "parent_preview": ". Differences between Landolt C acuity (LR) and Snellen E acuity (SE) were small. The mean decimal values for LR and SE ",
+        "parent_sim": 0.1065,
+        "parent_ce": -6.9492,
+        "n_sub_chunks": 3,
+        "best_sub_preview": ". Differences between Landolt C acuity (LR) and Snellen E acuity (SE) were small",
+        "best_sub_sim": 0.5561,
+        "best_sub_ce": -6.4955,
+        "sim_improvement": 0.4496,
+        "ce_improvement": 0.4537
+      }
+    ]
+  },
+  {
+    "n_strong": 1,
+    "n_weak": 2,
+    "n_refined": 2,
+    "strong_sims": [
+      0.6609
+    ],
+    "weak_sims": [
+      0.0,
+      0.0
+    ],
+    "refinements": [
+      {
+        "parent_preview": ". Satisfaction levels reported by patients and care givers were good. A hierarchical clustering analysis identified two ",
+        "parent_sim": 0.0,
+        "parent_ce": -6.6141,
+        "n_sub_chunks": 4,
+        "best_sub_preview": ". A hierarchical clustering analysis identified two clusters based on VAS (Visua",
+        "best_sub_sim": 0.4412,
+        "best_sub_ce": -5.4795,
+        "sim_improvement": 0.4412,
+        "ce_improvement": 1.1346
+      },
+      {
+        "parent_preview": "(i) To examine the association between self-reported mechanical factors and chronic oro-facial pain. (ii) To test the hy",
+        "parent_sim": 0.0,
+        "parent_ce": -11.4285,
+        "n_sub_chunks": 5,
+        "best_sub_preview": "(i) To examine the association between self-reported mechanical factors and chro",
+        "best_sub_sim": 0.2547,
+        "best_sub_ce": -11.3032,
+        "sim_improvement": 0.2547,
+        "ce_improvement": 0.1254
+      }
+    ]
+  },
+  {
+    "n_strong": 2,
+    "n_weak": 1,
+    "n_refined": 1,
+    "strong_sims": [
+      0.7091,
+      0.6725
+    ],
+    "weak_sims": [
+      0.0
+    ],
+    "refinements": [
+      {
+        "parent_preview": "To examine the ability of various postoperative nomograms to predict prostate cancer-specific mortality (PCSM) and to va",
+        "parent_sim": 0.0,
+        "parent_ce": -10.5329,
+        "n_sub_chunks": 3,
+        "best_sub_preview": ". A previous study showed that several nomograms could predict aggressive BCR (p",
+        "best_sub_sim": 0.3701,
+        "best_sub_ce": -10.0612,
+        "sim_improvement": 0.3701,
+        "ce_improvement": 0.4716
+      }
+    ]
+  },
+  {
+    "n_strong": 0,
+    "n_weak": 3,
+    "n_refined": 3,
+    "strong_sims": [],
+    "weak_sims": [
+      0.2136,
+      0.0,
+      0.0
+    ],
+    "refinements": [
+      {
+        "parent_preview": "Halofantrine is a newly developed antimalarial drug used for the treatment of Plasmodium falciparum malaria. The introdu",
+        "parent_sim": 0.2136,
+        "parent_ce": 3.0537,
+        "n_sub_chunks": 5,
+        "best_sub_preview": "Halofantrine is a newly developed antimalarial drug used for the treatment of Pl",
+        "best_sub_sim": 0.6188,
+        "best_sub_ce": 3.5474,
+        "sim_improvement": 0.4052,
+        "ce_improvement": 0.4937
+      },
+      {
+        "parent_preview": "Apparent life-threatening events in infants are a difficult and frequent problem in pediatric practice. The prognosis is",
+        "parent_sim": 0.0,
+        "parent_ce": -11.3347,
+        "n_sub_chunks": 6,
+        "best_sub_preview": ". Two diagnoses were initially considered: seizure or gastroesophageal reflux bu",
+        "best_sub_sim": 0.2758,
+        "best_sub_ce": -11.3943,
+        "sim_improvement": 0.2758,
+        "ce_improvement": -0.0597
+      },
+      {
+        "parent_preview": "Breathlessness is one of the most distressing symptoms experienced by patients with advanced cancer and noncancer diagno",
+        "parent_sim": 0.0,
+        "parent_ce": -11.2248,
+        "n_sub_chunks": 5,
+        "best_sub_preview": ". Breathlessness was measured on a self-reported numeric rating scale",
+        "best_sub_sim": 0.2707,
+        "best_sub_ce": -11.4227,
+        "sim_improvement": 0.2707,
+        "ce_improvement": -0.1979
+      }
+    ]
+  },
+  {
+    "n_strong": 0,
+    "n_weak": 3,
+    "n_refined": 3,
+    "strong_sims": [],
+    "weak_sims": [
+      0.1748,
+      0.0,
+      0.0
+    ],
+    "refinements": [
+      {
+        "parent_preview": "Measurement of visceral adipose tissue (VAT) needs to be accurate and sensitive to change for risk monitoring. The purpo",
+        "parent_sim": 0.1748,
+        "parent_ce": 2.476,
+        "n_sub_chunks": 4,
+        "best_sub_preview": "Measurement of visceral adipose tissue (VAT) needs to be accurate and sensitive ",
+        "best_sub_sim": 0.6854,
+        "best_sub_ce": 3.4914,
+        "sim_improvement": 0.5106,
+        "ce_improvement": 1.0155
+      },
+      {
+        "parent_preview": "Specific markers for differentiation of nonalcoholic (NASH) from alcoholic steatohepatitis (ASH) are lacking. We investi",
+        "parent_sim": 0.0,
+        "parent_ce": -11.3745,
+        "n_sub_chunks": 5,
+        "best_sub_preview": "Specific markers for differentiation of nonalcoholic (NASH) from alcoholic steat",
+        "best_sub_sim": 0.2596,
+        "best_sub_ce": -11.2621,
+        "sim_improvement": 0.2596,
+        "ce_improvement": 0.1124
+      },
+      {
+        "parent_preview": ". There was statistical difference between groups A and B for peritoneal opening (p = 0.025), operative time (p = 0.0037",
+        "parent_sim": 0.0,
+        "parent_ce": -11.1263,
+        "n_sub_chunks": 2,
+        "best_sub_preview": ". There was statistical difference between groups A and B for peritoneal opening",
+        "best_sub_sim": 0.2721,
+        "best_sub_ce": -10.4645,
+        "sim_improvement": 0.2721,
+        "ce_improvement": 0.6617
+      }
+    ]
+  }
+]

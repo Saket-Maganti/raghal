@@ -1,0 +1,12 @@
+# Cross-encoder sensitivity (Phase 5 #8)
+
+## Paradox by reranker
+
+| dataset   | reranker                              |   faith_base |   faith_v1 |   faith_v2 |   paradox |   v2_recovery |
+|:----------|:--------------------------------------|-------------:|-----------:|-----------:|----------:|--------------:|
+| pubmedqa  | BAAI/bge-reranker-base                |       0.5963 |     0.5507 |     0.596  |    0.0456 |        0.0453 |
+| pubmedqa  | cross-encoder/ms-marco-MiniLM-L-12-v2 |       0.5935 |     0.5419 |     0.5884 |    0.0516 |        0.0465 |
+| pubmedqa  | cross-encoder/ms-marco-MiniLM-L-6-v2  |       0.6079 |     0.559  |     0.5938 |    0.0489 |        0.0348 |
+| squad     | BAAI/bge-reranker-base                |       0.7903 |     0.7134 |     0.7921 |    0.0769 |        0.0787 |
+| squad     | cross-encoder/ms-marco-MiniLM-L-12-v2 |       0.8086 |     0.6958 |     0.818  |    0.1128 |        0.1222 |
+| squad     | cross-encoder/ms-marco-MiniLM-L-6-v2  |       0.7798 |     0.7091 |     0.7952 |    0.0707 |        0.0861 |

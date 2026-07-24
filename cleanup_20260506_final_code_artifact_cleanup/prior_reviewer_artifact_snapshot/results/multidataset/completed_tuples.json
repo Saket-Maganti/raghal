@@ -1,0 +1,20 @@
+{
+  "squad__mistral": true,
+  "squad__llama3": true,
+  "squad__qwen2.5": true,
+  "pubmedqa__mistral": true,
+  "pubmedqa__llama3": true,
+  "pubmedqa__qwen2.5": true,
+  "hotpotqa__mistral": true,
+  "hotpotqa__llama3": true,
+  "hotpotqa__qwen2.5": true,
+  "triviaqa__mistral": true,
+  "triviaqa__llama3": true,
+  "triviaqa__qwen2.5": true,
+  "financebench__mistral": true,
+  "financebench__llama3": true,
+  "financebench__qwen2.5": true,
+  "naturalqs__mistral": true,
+  "naturalqs__llama3": true,
+  "naturalqs__qwen2.5": true
+}

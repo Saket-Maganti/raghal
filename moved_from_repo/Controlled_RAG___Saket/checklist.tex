@@ -1,0 +1,239 @@
+% =====================================================================
+% NeurIPS 2026 Paper Checklist
+%
+% Per the official NeurIPS 2026 instructions, the checklist must be
+% included in the submitted PDF immediately after the technical
+% appendix. It does NOT count toward the 9-page main-paper limit.
+%
+% Each item asks: did you do X? Answers must be one of [Yes] / [No] /
+% [N/A], followed by a short justification. Do not leave items blank.
+% =====================================================================
+
+\section*{NeurIPS Paper Checklist}
+\addcontentsline{toc}{section}{NeurIPS Paper Checklist}
+
+\begin{enumerate}
+
+\item {\bf Claims}\\
+Do the main claims made in the abstract and introduction accurately
+reflect the paper's contributions and scope?
+\\\textbf{Answer: \answerYes{}}
+\\\textbf{Justification:} The paper title and contributions frame
+the work as a pre-registered audit and minimum reporting standard for
+RAG faithfulness evaluation. The abstract and introduction explicitly
+disclose: the matched-context CCS null; the small and
+seed-sensitive scaled headline (no-refinement /
+aggressive-refinement / gated-refinement, prior names HCPC-v$1$ /
+HCPC-v$2$); the fixed-generation scorer fragility and
+context-conditioned NLI sign-flip; the slice-dependent
+scorer$-$human ranking between the typical-row calibration
+($n{=}99$) and the targeted disagreement slice ($n{=}100$); the
+threshold-transfer instabilities; and the cost-axis dominance of
+the head-to-head. The contribution is the standard, not a new
+method or leaderboard.
+
+\item {\bf Limitations}\\
+Does the paper discuss the limitations of the work performed by the
+authors?
+\\\textbf{Answer: \answerYes{}}
+\\\textbf{Justification:} \S\ref{sec:limits} is grouped into three
+categories: \emph{audited surface} (mostly short-answer SQuAD,
+SQuAD-only matched-context, supplement-only $40$-question long-form
+probe, mismatched Self-RAG harness); \emph{human evaluation}
+(typical-row calibration $n{=}99$ with overlapping bootstrap CIs,
+targeted disagreement slice $n{=}100$ adversarial-by-construction,
+two raters plus adjudication on each); \emph{scope of replication}
+(one local Qwen$2.5$ second-generator probe at $n{=}100$,
+context-conditioned NLI rescoring on the $n{=}600$ balanced subset
+not the full $7{,}500$). The section ends with the explicit
+statement that these limits do not threaten the methodological
+claim because the seven-axis decomposition is motivated by the
+disclosure principle in \S\ref{sec:controlledrag}.
+
+\item {\bf Theory Assumptions and Proofs}\\
+For each theoretical result, does the paper provide the full set of
+assumptions and a complete (and correct) proof?
+\\\textbf{Answer: \answerNA{}}
+\\\textbf{Justification:} The paper makes no formal theoretical
+claims requiring proofs. All claims are empirical or definitional.
+
+\item {\bf Experimental Result Reproducibility}\\
+Does the paper fully disclose all the information needed to reproduce
+the main experimental results of the paper to the extent that it
+affects the main claims and/or conclusions of the paper (regardless of
+whether the code and data are provided or not)?
+\\\textbf{Answer: \answerYes{}}
+\\\textbf{Justification:} \S\ref{sec:setup} specifies the pipeline,
+embedder, indexer, reranker, generator, decoding settings, sample
+sizes, seed list, and statistical protocol. The supplementary material
+provides pre-specification, per-seed scaled-detail, and scorer-implementation
+details. The artifact
+ships per-query CSVs and scripts. \emph{Reproducibility scope}:
+\texttt{run\_all\_analysis.sh} is end-to-end on a laptop in under
+two minutes for the verification path (it regenerates every
+analysis table in the main paper from the frozen per-query CSVs in
+\texttt{results/revision/} and \texttt{human\_eval\_final/}).
+Re-running the original \emph{generation} and \emph{scoring}
+pipelines (matched-context generation, scaled audit, second-generator
+probe, context-conditioned NLI rescoring) is a separate path that
+needs local Ollama plus a CPU/MPS or free-tier GPU notebook and
+takes hours; the supplementary compute notes document that path. The two-minute
+verification path covers all numerical claims in the main paper.
+
+\item {\bf Open access to data and code}\\
+Does the paper provide open access to the data and code, with
+sufficient instructions to faithfully reproduce the main experimental
+results, as described in supplemental material?
+\\\textbf{Answer: \answerYes{}}
+\\\textbf{Justification:} The reviewer-facing anonymized artifact
+(supplementary ZIP) contains all per-query CSVs, the human-evaluation
+final files, analysis scripts, the pre-specification log, the source
+trace, and a reproducibility README with verification commands.
+Public release links and DOIs will be added at acceptance.
+
+\item {\bf Experimental Setting/Details}\\
+Does the paper specify all the training and test details (e.g., data
+splits, hyperparameters, how they were chosen, type of optimizer,
+etc.)?
+\\\textbf{Answer: \answerYes{}}
+\\\textbf{Justification:} The audit holds the entire RAG pipeline
+fixed and varies only the audit axis under test. Embedder, indexer,
+reranker, refinement policy, generator, and decoding settings are
+listed in \S\ref{sec:setup}; sample sizes and seeds are listed for
+every audited cell; the matched-context construction (similarity gap
+$\leq 0.02$, CCS gap $\geq 0.20$) is given.
+
+\item {\bf Experiment Statistical Significance}\\
+Does the paper report error bars suitably and correctly defined or
+other appropriate information about the statistical significance of
+the experiments?
+\\\textbf{Answer: \answerYes{}}
+\\\textbf{Justification:} Every reported contrast is paired with a
+$10{,}000$-resample bootstrap CI, paired Wilcoxon $p$-value where
+applicable, Cohen's $d_z$ for paired contrasts, Wilson $95\%$ CIs for
+binary rates, and bootstrap CIs for the cross-scorer correlations.
+Multiple-comparison handling: only the matched-context test is
+treated as the pre-specified primary; other paired contrasts are
+descriptive across audit cells, as disclosed in \S\ref{sec:setup}.
+
+\item {\bf Experiments Compute Resources}\\
+For each experiment, does the paper provide sufficient information on
+the computer resources (type of compute workers, memory, time of
+execution) needed to reproduce the experiments?
+\\\textbf{Answer: \answerYes{}}
+\\\textbf{Justification:} The supplementary compute notes
+specifies the local Ollama / Apple-silicon MPS / free-tier Kaggle T4
+hardware, the per-fix runtime envelopes, and the analysis-only
+verification path (\texttt{run\_all\_analysis.sh}, \textless 2 min on
+any laptop). No paid APIs are required.
+
+\item {\bf Code Of Ethics}\\
+Does the research conform, in every respect, with the NeurIPS Code of
+Ethics?
+\\\textbf{Answer: \answerYes{}}
+\\\textbf{Justification:} The work uses only public datasets, free or
+local compute, no human-subjects data beyond two short-answer
+support-judgment annotation passes by adult raters on public-dataset
+content. No personally identifiable information, sensitive attributes,
+or facial / biometric content is involved. No deceptive practices.
+Annotator identities are not stored in the artifact.
+
+\item {\bf Broader Impacts}\\
+Does the paper discuss both potential positive societal impacts and
+negative societal impacts of the work performed?
+\\\textbf{Answer: \answerYes{}}
+\\\textbf{Justification:} ControlledRAG's intended impact is to make
+RAG faithfulness claims more honestly auditable, which reduces the
+risk that deployed RAG systems are fielded based on under-identified
+single-cell numbers (negative impact: false confidence in deployed
+medical / legal RAG; the standard is meant to mitigate that). The
+work is descriptive; it does not introduce a new generative model
+that could itself be misused.
+
+\item {\bf Safeguards}\\
+Does the paper describe safeguards that have been put in place for
+responsible release of data or models with a high risk for misuse?
+\\\textbf{Answer: \answerNA{}}
+\\\textbf{Justification:} The paper does not release a new generative
+model, dataset of personally identifiable content, or other artifact
+with high misuse risk. The released artifacts are evaluation tables,
+scripts, and short-answer adjudicated annotation labels on public
+data; these do not present such risks.
+
+\item {\bf Licenses for existing assets}\\
+Are the creators or original owners of assets (e.g., code, data,
+models), used in the paper, properly credited and are the license and
+terms of use explicitly mentioned and properly respected?
+\\\textbf{Answer: \answerYes{}}
+\\\textbf{Justification:} The paper cites SQuAD, PubMedQA, HotpotQA,
+NaturalQuestions, TriviaQA, QASPER, MS-MARCO, and the open
+embedder/cross-encoder/NLI models used. Each is used under its
+published research-use license. No proprietary asset is used.
+
+\item {\bf New Assets}\\
+Are new assets introduced in the paper well documented and is the
+documentation provided alongside the assets?
+\\\textbf{Answer: \answerYes{}}
+\\\textbf{Justification:} The new released assets are
+(i)~the ControlledRAG seven-axis reporting standard
+(\S\ref{sec:controlledrag}) plus a filled-in reporting-checklist
+template
+(\texttt{controlledrag\_reporting\_checklist.md},
+distinct from this mandatory NeurIPS checklist),
+(ii)~per-query CSVs for every audited cell,
+(iii)~the typical-row calibration set ($n{=}99$),
+(iv)~the targeted disagreement slice ($n{=}100$, two raters plus
+adjudication, $74/26/0$ adjudicated distribution),
+and (v)~the analysis scripts. Documentation:
+\texttt{README\_REPRODUCE.md},
+\texttt{SOURCE\_TRACE.md},
+\texttt{artifact\_manifest.md},
+\texttt{CLAIMS\_AUDIT.md},
+and the supplementary source-trace section.
+
+\item {\bf Crowdsourcing and Research with Human Subjects}\\
+For crowdsourcing experiments and research with human subjects, does
+the paper include the full text of instructions given to participants
+and screenshots, if applicable, as well as details about compensation
+(if any)?
+\\\textbf{Answer: \answerYes{}}
+\\\textbf{Justification:} The two adjudicated human-annotation arms
+(n=99 typical-row calibration; n=100 targeted scorer-disagreement
+evaluation) are documented with their exact label scheme, rater
+instructions, decision codebook, and adjudication template; these
+documents are shipped in the artifact under
+\texttt{human\_eval\_final/}. No crowdsourcing platform was used; no
+compensation was paid; the raters were not subject to risk.
+
+\item {\bf Institutional Review Board (IRB) Approvals or Equivalent for Research with Human Subjects}\\
+Does the paper describe potential risks incurred by study participants,
+whether such risks were disclosed to the subjects, and whether
+Institutional Review Board (IRB) approvals (or an equivalent approval/review
+based on the requirements of your country or institution) were obtained?
+\\\textbf{Answer: \answerNA{}}
+\\\textbf{Justification:} The annotation tasks are short
+support/faithfulness judgments on public-dataset content (no
+personally identifiable information, no sensitive attributes, no
+risk-of-harm content). Per common interpretations of the relevant
+human-subjects regulations, this evaluation does not constitute
+research with human subjects requiring IRB review. The annotators
+were informed of the purpose of the labelling.
+
+\item {\bf Declaration of LLM usage}\\
+Does the paper describe the usage of LLMs if it is an important,
+original, or non-standard component of the core methods in this
+research? Note that if the LLM is used only for writing, editing, or
+formatting purposes and does not impact the core methodology,
+scientific rigorousness, or originality of the research, declaration
+is not required.
+\\\textbf{Answer: \answerYes{}}
+\\\textbf{Justification:} A local Mistral-7B (via Ollama) is used as
+both the audited generator and as the RAGAS-style local judge in the
+metric-fragility audit. A local Qwen$2.5$-7B is used as the
+second-generator replication. Their use, decoding settings, and the
+fact that the RAGAS-style judge is itself an audit input (not a
+ground-truth oracle) are disclosed in \S\ref{sec:setup} and
+\S\ref{sec:metric_fragility}. LLMs are research artifacts in the
+audited pipeline, not ground-truth oracles or co-authors.
+
+\end{enumerate}

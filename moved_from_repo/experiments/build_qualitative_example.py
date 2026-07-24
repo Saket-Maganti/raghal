@@ -1,0 +1,334 @@
+"""
+experiments/build_qualitative_example.py — Phase 3 #8
+=====================================================
+
+Pick the strongest single SQuAD failure case showing the refinement
+paradox in action, and emit a LaTeX example box for inclusion in the
+paper. Reviewers love a concrete failure case --- this gives them one
+where the same question goes:
+
+    baseline   → faithful, correct answer
+    HCPC-v1    → hallucination (paradox: "better" retrieval breaks it)
+    HCPC-v2    → faithful, recovered
+
+The script searches per_query.csv for queries where the (baseline,
+hcpc_v1, hcpc_v2) triple matches that pattern and ranks them by the
+faithfulness gap (base − v1) so the most dramatic example wins.
+
+Inputs (in priority order):
+    results/headtohead/per_query.csv
+    results/multidataset/per_query.csv
+    results/frontier_scale/per_query.csv
+
+Outputs:
+    ragpaper/figures/qualitative_paradox.tex     (LaTeX example box)
+    results/qualitative/example_metadata.json    (selected query, scores)
+
+Usage:
+    python3 experiments/build_qualitative_example.py
+    python3 experiments/build_qualitative_example.py --dataset pubmedqa
+    python3 experiments/build_qualitative_example.py --top 5  # show top-5 candidates
+
+Then in the paper:
+    \input{figures/qualitative_paradox}
+"""
+
+from __future__ import annotations
+
+import argparse
+import json
+import os
+from pathlib import Path
+from string import Template
+from typing import Dict, List, Optional
+
+import pandas as pd
+
+ROOT = Path(__file__).resolve().parent.parent
+OUT_TEX = ROOT / "ragpaper" / "figures" / "qualitative_paradox.tex"
+OUT_META = ROOT / "results" / "qualitative" / "example_metadata.json"
+
+INPUTS = [
+    ROOT / "results" / "headtohead"     / "per_query.csv",
+    ROOT / "results" / "multidataset"   / "per_query.csv",
+    ROOT / "results" / "frontier_scale" / "per_query.csv",
+]
+
+
+def _load() -> pd.DataFrame:
+    frames: List[pd.DataFrame] = []
+    for path in INPUTS:
+        if not path.exists():
+            continue
+        df = pd.read_csv(path)
+        # Annotate origin so we can prefer headtohead (canonical) over others.
+        df["__source"] = path.parent.name
+        frames.append(df)
+    if not frames:
+        raise SystemExit("[qual] no per_query.csv inputs found")
+    out = pd.concat(frames, ignore_index=True)
+    out["is_hallucination"] = out["is_hallucination"].astype(bool)
+    return out
+
+
+def _find_paradox_triples(df: pd.DataFrame, dataset: Optional[str]) -> pd.DataFrame:
+    """Return one row per (dataset, model, question) with the three
+    condition outcomes pivoted side-by-side, plus a 'gap' column for
+    ranking."""
+    if dataset:
+        df = df[df["dataset"] == dataset]
+    keep = ["dataset", "model", "question", "ground_truth",
+            "condition", "answer", "faithfulness_score", "is_hallucination"]
+    df = df[keep].drop_duplicates()
+    pivot = df.pivot_table(
+        index=["dataset", "model", "question", "ground_truth"],
+        columns="condition",
+        values=["answer", "faithfulness_score", "is_hallucination"],
+        aggfunc="first",
+    )
+    # Flatten MultiIndex columns
+    pivot.columns = [f"{a}__{b}" for a, b in pivot.columns]
+    pivot = pivot.reset_index()
+    needed = [
+        "answer__baseline", "answer__hcpc_v1", "answer__hcpc_v2",
+        "faithfulness_score__baseline",
+        "faithfulness_score__hcpc_v1",
+        "faithfulness_score__hcpc_v2",
+        "is_hallucination__baseline",
+        "is_hallucination__hcpc_v1",
+        "is_hallucination__hcpc_v2",
+    ]
+    for c in needed:
+        if c not in pivot.columns:
+            return pd.DataFrame()
+    pivot = pivot.dropna(subset=needed)
+    # Match the paradox pattern
+    mask = (
+        (~pivot["is_hallucination__baseline"].astype(bool)) &
+        ( pivot["is_hallucination__hcpc_v1"].astype(bool)) &
+        (~pivot["is_hallucination__hcpc_v2"].astype(bool))
+    )
+    pivot = pivot[mask].copy()
+    pivot["gap"] = (pivot["faithfulness_score__baseline"]
+                    - pivot["faithfulness_score__hcpc_v1"])
+    return pivot.sort_values("gap", ascending=False)
+
+
+def _truncate(text: str, n: int = 320) -> str:
+    text = " ".join(str(text).split())
+    if len(text) <= n:
+        return text
+    return text[: n - 1].rstrip() + "\\dots"
+
+
+def _latex_escape(text: str) -> str:
+    """Escape the small set of LaTeX-active characters most likely to
+    appear in QA snippets."""
+    if not isinstance(text, str):
+        text = str(text)
+    repls = [
+        ("\\", "\\textbackslash{}"),
+        ("&",  "\\&"),
+        ("%",  "\\%"),
+        ("$",  "\\$"),
+        ("#",  "\\#"),
+        ("_",  "\\_"),
+        ("{",  "\\{"),
+        ("}",  "\\}"),
+        ("~",  "\\textasciitilde{}"),
+        ("^",  "\\textasciicircum{}"),
+    ]
+    for a, b in repls:
+        text = text.replace(a, b)
+    return text
+
+
+TEX_TEMPLATE = Template(r"""% Auto-generated by experiments/build_qualitative_example.py
+\begin{figure}[!htb]
+\centering
+\fbox{\begin{minipage}{0.96\linewidth}
+\small
+\textbf{Qualitative example of the refinement paradox} \\
+\textit{Dataset:} $dataset \quad \textit{Generator:} $model \\
+
+\textbf{Question.}~$question \\
+\textbf{Ground truth.}~\textit{$ground_truth}
+
+\medskip
+\textbf{Baseline (no refinement).} ~ faithfulness $$=$faith_base$$,
+\emph{not hallucinated}. \\
+\textsc{Answer:}~$answer_base
+
+\medskip
+\textbf{HCPC-v1 (refine all).} ~ faithfulness $$=$faith_v1$$,
+\emph{hallucinated}. \\
+\textsc{Answer:}~$answer_v1
+
+\medskip
+\textbf{HCPC-v2 (selective).} ~ faithfulness $$=$faith_v2$$,
+\emph{not hallucinated} (recovered). \\
+\textsc{Answer:}~$answer_v2
+
+\medskip
+\textbf{Reading.} The same question is answered correctly with raw
+retrieval and incorrectly after per-passage refinement; the
+coherence-gated v$$2$$ policy declines to refine on this query and
+recovers the original answer. The faithfulness gap baseline\,$$\to$$\,v$$1$$
+is $$$gap$$.
+\end{minipage}}
+\caption{Qualitative example of the refinement paradox on $dataset
+with $model. Per-passage refinement raises retrieval similarity but
+strips the connective evidence the generator was relying on; the
+generator silently fills the gap with a plausible but unsupported
+claim.}
+\label{fig:qualitative_paradox}
+\end{figure}
+""")
+
+
+def emit(row: pd.Series) -> None:
+    OUT_TEX.parent.mkdir(parents=True, exist_ok=True)
+    OUT_META.parent.mkdir(parents=True, exist_ok=True)
+
+    payload = {
+        "dataset":      row["dataset"],
+        "model":        row["model"],
+        "question":     _latex_escape(row["question"]),
+        "ground_truth": _latex_escape(_truncate(row["ground_truth"], 200)),
+        "answer_base":  _latex_escape(_truncate(row["answer__baseline"])),
+        "answer_v1":    _latex_escape(_truncate(row["answer__hcpc_v1"])),
+        "answer_v2":    _latex_escape(_truncate(row["answer__hcpc_v2"])),
+        "faith_base":   f"{float(row['faithfulness_score__baseline']):.3f}",
+        "faith_v1":     f"{float(row['faithfulness_score__hcpc_v1']):.3f}",
+        "faith_v2":     f"{float(row['faithfulness_score__hcpc_v2']):.3f}",
+        "gap":          f"{float(row['gap']):+.3f}",
+    }
+    # string.Template uses $key syntax — no clash with LaTeX `{}` or `%`.
+    # Literal `$` in the template is escaped as `$$`.
+    OUT_TEX.write_text(TEX_TEMPLATE.substitute(**payload))
+    OUT_META.write_text(json.dumps(
+        {k: v for k, v in payload.items()
+         if k not in ("answer_base", "answer_v1", "answer_v2", "ground_truth", "question")
+         } | {
+            "question_raw": row["question"],
+            "ground_truth_raw": row["ground_truth"],
+        },
+        indent=2,
+    ))
+
+
+def emit_multi(rows: pd.DataFrame, out_path: Path) -> None:
+    """Emit a multi-example case-study figure --- one minipage per row,
+    intended for a paper appendix or §"Real-world case studies"."""
+    blocks: List[str] = []
+    for i, row in enumerate(rows.itertuples(index=False), 1):
+        block = (
+            r"\medskip\noindent\fbox{\begin{minipage}{0.96\linewidth}\small "
+            f"\\textbf{{Case {i}.}} "
+            f"\\textit{{Dataset:}} {row.dataset} \\quad "
+            f"\\textit{{Model:}} {row.model} \\\\\n"
+            f"\\textbf{{Question.}}~"
+            + _latex_escape(row.question) + r" \\" + "\n"
+            f"\\textbf{{Ground truth.}}~\\textit{{"
+            + _latex_escape(_truncate(row.ground_truth, 160))
+            + "}\n\n"     # close \textit{...} only — fbox/minipage stay open
+            f"\\textbf{{Baseline}} ($f={row.faithfulness_score__baseline:.3f}$): "
+            + _latex_escape(_truncate(row.answer__baseline, 220))
+            + r" \\ " + "\n"
+            f"\\textbf{{HCPC-v1}} ($f={row.faithfulness_score__hcpc_v1:.3f}$): "
+            + _latex_escape(_truncate(row.answer__hcpc_v1, 220))
+            + r" \\ " + "\n"
+            f"\\textbf{{HCPC-v2}} ($f={row.faithfulness_score__hcpc_v2:.3f}$, "
+            f"recovered): "
+            + _latex_escape(_truncate(row.answer__hcpc_v2, 220))
+            + r"\end{minipage}}" + "\n"
+        )
+        blocks.append(block)
+    body = "\n\n".join(blocks)
+    text = (
+        "% Auto-generated by experiments/build_qualitative_example.py "
+        "(--top mode)\n"
+        r"\begin{figure*}[!htb]\centering" + "\n"
+        + body + "\n"
+        + r"\caption{\textbf{Real-world case studies of the refinement "
+          r"paradox.} Five queries where the same question is answered "
+          r"correctly with raw retrieval, incorrectly after per-passage "
+          r"refinement, and correctly again under coherence-gated "
+          r"refinement. Faithfulness $f$ is the NLI entailment score "
+          r"(higher is better; $\geq 0.5$ is the conventional faithful "
+          r"threshold). All cases satisfy "
+          r"$\textrm{baseline} = \textrm{faithful}$, "
+          r"$\textrm{HCPC-v1} = \textrm{hallucinated}$, "
+          r"$\textrm{HCPC-v2} = \textrm{faithful}$.}" + "\n"
+        + r"\label{fig:qualitative_cases}" + "\n"
+        + r"\end{figure*}" + "\n"
+    )
+    out_path.write_text(text)
+
+
+def main() -> None:
+    ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument("--dataset", default="squad",
+                    help="restrict search to a single dataset (default: squad)")
+    ap.add_argument("--top", type=int, default=1,
+                    help="how many candidates to emit. 1 = single-example "
+                         "minipage (figure:qualitative_paradox); "
+                         ">1 = multi-case figure*:qualitative_cases.")
+    ap.add_argument("--multi_out", default=None,
+                    help="path for multi-case TeX (default: alongside primary)")
+    args = ap.parse_args()
+
+    df = _load()
+    triples = _find_paradox_triples(df, args.dataset)
+    if triples.empty:
+        # Fallback to any dataset
+        print(f"[qual] no paradox triples on {args.dataset!r}; trying any dataset.")
+        triples = _find_paradox_triples(df, dataset=None)
+    if triples.empty:
+        raise SystemExit("[qual] no paradox triples found in any input.")
+
+    print(f"[qual] top {args.top} paradox triple(s):")
+    show = triples.head(args.top)[["dataset", "model", "question", "gap",
+                                    "faithfulness_score__baseline",
+                                    "faithfulness_score__hcpc_v1",
+                                    "faithfulness_score__hcpc_v2"]]
+    print(show.to_string(index=False, max_colwidth=60))
+
+    # Always write the single-example primary file (most-dramatic case).
+    emit(triples.iloc[0])
+    print(f"\n[qual] wrote {OUT_TEX.relative_to(ROOT)}")
+    print(f"[qual] wrote {OUT_META.relative_to(ROOT)}")
+
+    if args.top > 1:
+        # Pick top N spread across datasets to maximise coverage
+        spread: List = []
+        seen_datasets = set()
+        for _, row in triples.iterrows():
+            if len(spread) >= args.top:
+                break
+            if row["dataset"] in seen_datasets and len(spread) < args.top - 1:
+                continue
+            spread.append(row)
+            seen_datasets.add(row["dataset"])
+        # Backfill if dataset spread was too restrictive
+        for _, row in triples.iterrows():
+            if len(spread) >= args.top:
+                break
+            if id(row) in {id(r) for r in spread}:
+                continue
+            spread.append(row)
+        spread_df = pd.DataFrame(spread).head(args.top)
+        multi_path = (Path(args.multi_out)
+                      if args.multi_out
+                      else OUT_TEX.parent / "qualitative_cases.tex")
+        emit_multi(spread_df, multi_path)
+        print(f"[qual] wrote {multi_path.relative_to(ROOT)}  "
+              f"({len(spread_df)} cases)")
+
+    print("[qual] include in paper via:  "
+          r"\input{figures/qualitative_paradox}  "
+          r"or  \input{figures/qualitative_cases}")
+
+
+if __name__ == "__main__":
+    main()

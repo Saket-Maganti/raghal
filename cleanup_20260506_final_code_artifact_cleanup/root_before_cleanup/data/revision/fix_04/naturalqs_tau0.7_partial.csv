@@ -1,0 +1,301 @@
+dataset,tau,condition,question,ground_truth,faithfulness_score,is_hallucination,gate_fired,ccs_pre
+naturalqs,0.7,baseline,when was half life 2 episode 2 released,in 2007,0.7525,False,False,-1.0
+naturalqs,0.7,hcpc_v1,when was half life 2 episode 2 released,in 2007,0.561,False,False,-1.0
+naturalqs,0.7,ccs_gate,when was half life 2 episode 2 released,in 2007,0.561,False,True,0.2128
+naturalqs,0.7,baseline,who played ashley on the young and the restless,Eileen Davidson,0.7484,False,False,-1.0
+naturalqs,0.7,hcpc_v1,who played ashley on the young and the restless,Eileen Davidson,0.6929,False,False,-1.0
+naturalqs,0.7,ccs_gate,who played ashley on the young and the restless,Eileen Davidson,0.7484,False,False,0.7825
+naturalqs,0.7,baseline,factories that assemble parts made in other countries,special economic zones,0.8601,False,False,-1.0
+naturalqs,0.7,hcpc_v1,factories that assemble parts made in other countries,special economic zones,0.6901,False,False,-1.0
+naturalqs,0.7,ccs_gate,factories that assemble parts made in other countries,special economic zones,0.8601,False,False,0.7223
+naturalqs,0.7,baseline,where does kylo ren's name come from,"the character, ""came to the name Kylo Ren when he joined a group called the Knights of Ren.""",0.6958,False,False,-1.0
+naturalqs,0.7,hcpc_v1,where does kylo ren's name come from,"the character, ""came to the name Kylo Ren when he joined a group called the Knights of Ren.""",0.6768,False,False,-1.0
+naturalqs,0.7,ccs_gate,where does kylo ren's name come from,"the character, ""came to the name Kylo Ren when he joined a group called the Knights of Ren.""",0.6958,False,False,0.7226
+naturalqs,0.7,baseline,what is the source of electrons during photosynthesis,"suitable substances, such as water",0.5976,False,False,-1.0
+naturalqs,0.7,hcpc_v1,what is the source of electrons during photosynthesis,"suitable substances, such as water",0.6052,False,False,-1.0
+naturalqs,0.7,ccs_gate,what is the source of electrons during photosynthesis,"suitable substances, such as water",0.5976,False,False,0.7054
+naturalqs,0.7,baseline,when did i ain't mad at cha come out,"September 15, 1996",0.5597,False,False,-1.0
+naturalqs,0.7,hcpc_v1,when did i ain't mad at cha come out,"September 15, 1996",0.5201,False,False,-1.0
+naturalqs,0.7,ccs_gate,when did i ain't mad at cha come out,"September 15, 1996",0.5201,False,True,0.6131
+naturalqs,0.7,baseline,who wrote shes always a woman to me,Billy Joel,0.7998,False,False,-1.0
+naturalqs,0.7,hcpc_v1,who wrote shes always a woman to me,Billy Joel,0.5443,False,False,-1.0
+naturalqs,0.7,ccs_gate,who wrote shes always a woman to me,Billy Joel,0.5443,False,True,0.6337
+naturalqs,0.7,baseline,who were the major countries involved in the cold war,Soviet Union and its satellite states,0.733,False,False,-1.0
+naturalqs,0.7,hcpc_v1,who were the major countries involved in the cold war,Soviet Union and its satellite states,0.7598,False,False,-1.0
+naturalqs,0.7,ccs_gate,who were the major countries involved in the cold war,Soviet Union and its satellite states,0.7598,False,True,0.583
+naturalqs,0.7,baseline,song have i told you lately i love you,Have I Told You Lately,0.5558,False,False,-1.0
+naturalqs,0.7,hcpc_v1,song have i told you lately i love you,Have I Told You Lately,0.4542,True,False,-1.0
+naturalqs,0.7,ccs_gate,song have i told you lately i love you,Have I Told You Lately,0.4542,True,True,0.6505
+naturalqs,0.7,baseline,how many grams of alcohol in one beer,14 grams,0.6245,False,False,-1.0
+naturalqs,0.7,hcpc_v1,how many grams of alcohol in one beer,14 grams,0.5574,False,False,-1.0
+naturalqs,0.7,ccs_gate,how many grams of alcohol in one beer,14 grams,0.6463,False,True,0.6364
+naturalqs,0.7,baseline,why does cooling water run through the condenser,condense the steam,0.6948,False,False,-1.0
+naturalqs,0.7,hcpc_v1,why does cooling water run through the condenser,condense the steam,0.7503,False,False,-1.0
+naturalqs,0.7,ccs_gate,why does cooling water run through the condenser,condense the steam,0.7503,False,True,0.6364
+naturalqs,0.7,baseline,how tall is the actor who plays hagrid in harry potter,6ft 1in,0.643,False,False,-1.0
+naturalqs,0.7,hcpc_v1,how tall is the actor who plays hagrid in harry potter,6ft 1in,0.7702,False,False,-1.0
+naturalqs,0.7,ccs_gate,how tall is the actor who plays hagrid in harry potter,6ft 1in,0.579,False,True,0.5576
+naturalqs,0.7,baseline,when do the different phases of the moon occur,"when the Moon's ecliptic longitude and the Sun's ecliptic longitude differ by 0°, 90°, 180°, and 270°, respectively",0.658,False,False,-1.0
+naturalqs,0.7,hcpc_v1,when do the different phases of the moon occur,"when the Moon's ecliptic longitude and the Sun's ecliptic longitude differ by 0°, 90°, 180°, and 270°, respectively",0.7084,False,False,-1.0
+naturalqs,0.7,ccs_gate,when do the different phases of the moon occur,"when the Moon's ecliptic longitude and the Sun's ecliptic longitude differ by 0°, 90°, 180°, and 270°, respectively",0.7084,False,True,0.6876
+naturalqs,0.7,baseline,the vascular layer of the eye is the,The uvea,0.4171,True,False,-1.0
+naturalqs,0.7,hcpc_v1,the vascular layer of the eye is the,The uvea,0.8047,False,False,-1.0
+naturalqs,0.7,ccs_gate,the vascular layer of the eye is the,The uvea,0.7506,False,True,0.5205
+naturalqs,0.7,baseline,papayas were suffering from what pathogen on the big island of hawaii,Papaya ringspot virus (PRSV),0.8953,False,False,-1.0
+naturalqs,0.7,hcpc_v1,papayas were suffering from what pathogen on the big island of hawaii,Papaya ringspot virus (PRSV),0.8486,False,False,-1.0
+naturalqs,0.7,ccs_gate,papayas were suffering from what pathogen on the big island of hawaii,Papaya ringspot virus (PRSV),0.8953,False,False,0.7849
+naturalqs,0.7,baseline,when did the lion king start on broadway,"November 13, 1997",0.8711,False,False,-1.0
+naturalqs,0.7,hcpc_v1,when did the lion king start on broadway,"November 13, 1997",0.7246,False,False,-1.0
+naturalqs,0.7,ccs_gate,when did the lion king start on broadway,"November 13, 1997",0.7246,False,True,0.5966
+naturalqs,0.7,baseline,when did houston go to the american league,2013,0.6516,False,False,-1.0
+naturalqs,0.7,hcpc_v1,when did houston go to the american league,2013,0.6032,False,False,-1.0
+naturalqs,0.7,ccs_gate,when did houston go to the american league,2013,0.6032,False,True,0.5381
+naturalqs,0.7,baseline,who won the men's ice skating 2018,Yuzuru Hanyu,0.8812,False,False,-1.0
+naturalqs,0.7,hcpc_v1,who won the men's ice skating 2018,Yuzuru Hanyu,0.6073,False,False,-1.0
+naturalqs,0.7,ccs_gate,who won the men's ice skating 2018,Yuzuru Hanyu,0.6073,False,True,0.5326
+naturalqs,0.7,baseline,where do they film take me out fernando's,"The Maidstone Studios in Maidstone, Kent",0.6799,False,False,-1.0
+naturalqs,0.7,hcpc_v1,where do they film take me out fernando's,"The Maidstone Studios in Maidstone, Kent",0.7246,False,False,-1.0
+naturalqs,0.7,ccs_gate,where do they film take me out fernando's,"The Maidstone Studios in Maidstone, Kent",0.5531,False,True,0.3739
+naturalqs,0.7,baseline,where does dividends go on cash flow statement,the financing activities section,0.8432,False,False,-1.0
+naturalqs,0.7,hcpc_v1,where does dividends go on cash flow statement,the financing activities section,0.7492,False,False,-1.0
+naturalqs,0.7,ccs_gate,where does dividends go on cash flow statement,the financing activities section,0.8432,False,False,0.7952
+naturalqs,0.7,baseline,where did the idea of democracy come from,in ancient Athens circa 508 B.C.,0.6079,False,False,-1.0
+naturalqs,0.7,hcpc_v1,where did the idea of democracy come from,in ancient Athens circa 508 B.C.,0.6396,False,False,-1.0
+naturalqs,0.7,ccs_gate,where did the idea of democracy come from,in ancient Athens circa 508 B.C.,0.6396,False,True,0.6107
+naturalqs,0.7,baseline,what observation led to the theory of seafloor spreading,"magnetic stripe ""anomalies"" on the ocean floor",0.7348,False,False,-1.0
+naturalqs,0.7,hcpc_v1,what observation led to the theory of seafloor spreading,"magnetic stripe ""anomalies"" on the ocean floor",0.6972,False,False,-1.0
+naturalqs,0.7,ccs_gate,what observation led to the theory of seafloor spreading,"magnetic stripe ""anomalies"" on the ocean floor",0.7348,False,False,0.7988
+naturalqs,0.7,baseline,when does synapsis of homologous chromosomes occur in mitosis,prophase I of meiosis,0.2552,True,False,-1.0
+naturalqs,0.7,hcpc_v1,when does synapsis of homologous chromosomes occur in mitosis,prophase I of meiosis,0.4186,True,False,-1.0
+naturalqs,0.7,ccs_gate,when does synapsis of homologous chromosomes occur in mitosis,prophase I of meiosis,0.4186,True,True,0.6564
+naturalqs,0.7,baseline,when does levi first appear in attack on titan,"""Whereabouts of His Left Arm: The Struggle for Trost, Part 5""",0.5463,False,False,-1.0
+naturalqs,0.7,hcpc_v1,when does levi first appear in attack on titan,"""Whereabouts of His Left Arm: The Struggle for Trost, Part 5""",0.5848,False,False,-1.0
+naturalqs,0.7,ccs_gate,when does levi first appear in attack on titan,"""Whereabouts of His Left Arm: The Struggle for Trost, Part 5""",0.5848,False,True,0.2015
+naturalqs,0.7,baseline,how do you spell padawan from star wars,Padawan,0.4437,True,False,-1.0
+naturalqs,0.7,hcpc_v1,how do you spell padawan from star wars,Padawan,0.9469,False,False,-1.0
+naturalqs,0.7,ccs_gate,how do you spell padawan from star wars,Padawan,0.9469,False,True,0.3379
+naturalqs,0.7,baseline,who played young clark kent in 1978 superman,Jeff East,0.7147,False,False,-1.0
+naturalqs,0.7,hcpc_v1,who played young clark kent in 1978 superman,Jeff East,0.7068,False,False,-1.0
+naturalqs,0.7,ccs_gate,who played young clark kent in 1978 superman,Jeff East,0.7068,False,True,0.5434
+naturalqs,0.7,baseline,who sang if you had a beautiful body would you hold it against me,American country music duo The Bellamy Brothers,0.4358,True,False,-1.0
+naturalqs,0.7,hcpc_v1,who sang if you had a beautiful body would you hold it against me,American country music duo The Bellamy Brothers,0.4257,True,False,-1.0
+naturalqs,0.7,ccs_gate,who sang if you had a beautiful body would you hold it against me,American country music duo The Bellamy Brothers,0.4257,True,True,0.6763
+naturalqs,0.7,baseline,why dry ether is used in woods reaction,to form a higher alkane,0.504,False,False,-1.0
+naturalqs,0.7,hcpc_v1,why dry ether is used in woods reaction,to form a higher alkane,0.6345,False,False,-1.0
+naturalqs,0.7,ccs_gate,why dry ether is used in woods reaction,to form a higher alkane,0.6345,False,True,0.0519
+naturalqs,0.7,baseline,when did seat belts become law in ontario,"January 1, 1976",0.8852,False,False,-1.0
+naturalqs,0.7,hcpc_v1,when did seat belts become law in ontario,"January 1, 1976",0.8729,False,False,-1.0
+naturalqs,0.7,ccs_gate,when did seat belts become law in ontario,"January 1, 1976",0.8852,False,False,0.7365
+naturalqs,0.7,baseline,• when is a spearman correlation meant to be used instead of a pearson correlation,assesses monotonic relationships (whether linear or not),0.6428,False,False,-1.0
+naturalqs,0.7,hcpc_v1,• when is a spearman correlation meant to be used instead of a pearson correlation,assesses monotonic relationships (whether linear or not),0.5891,False,False,-1.0
+naturalqs,0.7,ccs_gate,• when is a spearman correlation meant to be used instead of a pearson correlation,assesses monotonic relationships (whether linear or not),0.6428,False,False,0.7576
+naturalqs,0.7,baseline,various artists the secret of my success songs,"""The Secret of My Success"" (performed by Night Ranger)",0.6447,False,False,-1.0
+naturalqs,0.7,hcpc_v1,various artists the secret of my success songs,"""The Secret of My Success"" (performed by Night Ranger)",0.696,False,False,-1.0
+naturalqs,0.7,ccs_gate,various artists the secret of my success songs,"""The Secret of My Success"" (performed by Night Ranger)",0.713,False,True,0.3024
+naturalqs,0.7,baseline,when was coffee first made into a drink,the 15th century,0.478,True,False,-1.0
+naturalqs,0.7,hcpc_v1,when was coffee first made into a drink,the 15th century,0.7096,False,False,-1.0
+naturalqs,0.7,ccs_gate,when was coffee first made into a drink,the 15th century,0.478,True,False,0.7628
+naturalqs,0.7,baseline,who took the first steps on the moon in 1969,Neil Armstrong,0.7461,False,False,-1.0
+naturalqs,0.7,hcpc_v1,who took the first steps on the moon in 1969,Neil Armstrong,1.0,False,False,-1.0
+naturalqs,0.7,ccs_gate,who took the first steps on the moon in 1969,Neil Armstrong,1.0,False,True,0.6376
+naturalqs,0.7,baseline,who won the 2017 sports personality of the year,Mo Farah,1.0,False,False,-1.0
+naturalqs,0.7,hcpc_v1,who won the 2017 sports personality of the year,Mo Farah,0.6642,False,False,-1.0
+naturalqs,0.7,ccs_gate,who won the 2017 sports personality of the year,Mo Farah,0.6642,False,True,0.6069
+naturalqs,0.7,baseline,when did the east india company take control of india,in 1757,0.7662,False,False,-1.0
+naturalqs,0.7,hcpc_v1,when did the east india company take control of india,in 1757,0.5924,False,False,-1.0
+naturalqs,0.7,ccs_gate,when did the east india company take control of india,in 1757,0.5924,False,True,0.6083
+naturalqs,0.7,baseline,what hangs from the trees in the bayou,Spanish moss,0.6697,False,False,-1.0
+naturalqs,0.7,hcpc_v1,what hangs from the trees in the bayou,Spanish moss,0.6629,False,False,-1.0
+naturalqs,0.7,ccs_gate,what hangs from the trees in the bayou,Spanish moss,0.6629,False,True,0.0056
+naturalqs,0.7,baseline,when did the movie karate kid come out,2010,0.7736,False,False,-1.0
+naturalqs,0.7,hcpc_v1,when did the movie karate kid come out,2010,0.7722,False,False,-1.0
+naturalqs,0.7,ccs_gate,when did the movie karate kid come out,2010,0.5756,False,True,0.2958
+naturalqs,0.7,baseline,how many episodes in season 2 of fargo,10,0.7466,False,False,-1.0
+naturalqs,0.7,hcpc_v1,how many episodes in season 2 of fargo,10,0.9545,False,False,-1.0
+naturalqs,0.7,ccs_gate,how many episodes in season 2 of fargo,10,0.9545,False,True,0.6171
+naturalqs,0.7,baseline,what does the keys to the city mean,"symbolises the freedom of the recipient to enter and leave the city at will, as a trusted friend of city residents",0.4698,True,False,-1.0
+naturalqs,0.7,hcpc_v1,what does the keys to the city mean,"symbolises the freedom of the recipient to enter and leave the city at will, as a trusted friend of city residents",0.6406,False,False,-1.0
+naturalqs,0.7,ccs_gate,what does the keys to the city mean,"symbolises the freedom of the recipient to enter and leave the city at will, as a trusted friend of city residents",0.6406,False,True,0.5117
+naturalqs,0.7,baseline,what is the definition of ph in water,"neutral, at pH 7 (25 °C), being neither an acid nor a base",0.4605,True,False,-1.0
+naturalqs,0.7,hcpc_v1,what is the definition of ph in water,"neutral, at pH 7 (25 °C), being neither an acid nor a base",0.7252,False,False,-1.0
+naturalqs,0.7,ccs_gate,what is the definition of ph in water,"neutral, at pH 7 (25 °C), being neither an acid nor a base",0.7252,False,True,0.6347
+naturalqs,0.7,baseline,who discovered the atom and in what year,John Dalton,0.6045,False,False,-1.0
+naturalqs,0.7,hcpc_v1,who discovered the atom and in what year,John Dalton,0.6152,False,False,-1.0
+naturalqs,0.7,ccs_gate,who discovered the atom and in what year,John Dalton,0.6152,False,True,0.4912
+naturalqs,0.7,baseline,kings and queens of england in the 1900s,Edward VII,0.61,False,False,-1.0
+naturalqs,0.7,hcpc_v1,kings and queens of england in the 1900s,Edward VII,0.5335,False,False,-1.0
+naturalqs,0.7,ccs_gate,kings and queens of england in the 1900s,Edward VII,0.5335,False,True,0.5229
+naturalqs,0.7,baseline,a drug that might be used in surgery for its amnesic properties is,Benzodiazepines,0.8863,False,False,-1.0
+naturalqs,0.7,hcpc_v1,a drug that might be used in surgery for its amnesic properties is,Benzodiazepines,0.5528,False,False,-1.0
+naturalqs,0.7,ccs_gate,a drug that might be used in surgery for its amnesic properties is,Benzodiazepines,0.6132,False,True,0.5927
+naturalqs,0.7,baseline,who scored the most points in a single game in the nba,Wilt Chamberlain,0.5537,False,False,-1.0
+naturalqs,0.7,hcpc_v1,who scored the most points in a single game in the nba,Wilt Chamberlain,0.7376,False,False,-1.0
+naturalqs,0.7,ccs_gate,who scored the most points in a single game in the nba,Wilt Chamberlain,0.7376,False,True,0.5443
+naturalqs,0.7,baseline,how does the us government form a more perfect union,"the creation of a federal government with enough power to act directly upon citizens, rather than a government with narrowly limited power that could act on citizens (e.g., by imposing taxes) only indirectly through the states",0.7658,False,False,-1.0
+naturalqs,0.7,hcpc_v1,how does the us government form a more perfect union,"the creation of a federal government with enough power to act directly upon citizens, rather than a government with narrowly limited power that could act on citizens (e.g., by imposing taxes) only indirectly through the states",0.6168,False,False,-1.0
+naturalqs,0.7,ccs_gate,how does the us government form a more perfect union,"the creation of a federal government with enough power to act directly upon citizens, rather than a government with narrowly limited power that could act on citizens (e.g., by imposing taxes) only indirectly through the states",0.6221,False,True,0.2071
+naturalqs,0.7,baseline,who sings i wanna rock'n'roll all night,Kiss,0.4459,True,False,-1.0
+naturalqs,0.7,hcpc_v1,who sings i wanna rock'n'roll all night,Kiss,0.615,False,False,-1.0
+naturalqs,0.7,ccs_gate,who sings i wanna rock'n'roll all night,Kiss,0.615,False,True,0.3868
+naturalqs,0.7,baseline,how many paintings of sunflowers did van gogh paint,two,0.8006,False,False,-1.0
+naturalqs,0.7,hcpc_v1,how many paintings of sunflowers did van gogh paint,two,0.6041,False,False,-1.0
+naturalqs,0.7,ccs_gate,how many paintings of sunflowers did van gogh paint,two,0.5888,False,False,0.7157
+naturalqs,0.7,baseline,what is the purpose of a continuing resolution,continues the pre-existing appropriations at the same levels as the previous fiscal year (or with minor modifications) for a set amount of time,0.6792,False,False,-1.0
+naturalqs,0.7,hcpc_v1,what is the purpose of a continuing resolution,continues the pre-existing appropriations at the same levels as the previous fiscal year (or with minor modifications) for a set amount of time,0.5029,False,False,-1.0
+naturalqs,0.7,ccs_gate,what is the purpose of a continuing resolution,continues the pre-existing appropriations at the same levels as the previous fiscal year (or with minor modifications) for a set amount of time,0.5029,False,True,0.6102
+naturalqs,0.7,baseline,when did little house on the praire air,"September 11, 1974 (1974-09-11) – March 21, 1983",0.6806,False,False,-1.0
+naturalqs,0.7,hcpc_v1,when did little house on the praire air,"September 11, 1974 (1974-09-11) – March 21, 1983",0.6806,False,False,-1.0
+naturalqs,0.7,ccs_gate,when did little house on the praire air,"September 11, 1974 (1974-09-11) – March 21, 1983",0.6806,False,True,0.6636
+naturalqs,0.7,baseline,when is season 4 of flash coming out,"on October 10, 2017",0.7917,False,False,-1.0
+naturalqs,0.7,hcpc_v1,when is season 4 of flash coming out,"on October 10, 2017",0.6781,False,False,-1.0
+naturalqs,0.7,ccs_gate,when is season 4 of flash coming out,"on October 10, 2017",0.6781,False,True,0.5728
+naturalqs,0.7,baseline,where is the slide placed on the microscope,on the microscope's stage,0.8564,False,False,-1.0
+naturalqs,0.7,hcpc_v1,where is the slide placed on the microscope,on the microscope's stage,0.7425,False,False,-1.0
+naturalqs,0.7,ccs_gate,where is the slide placed on the microscope,on the microscope's stage,0.8564,False,False,0.7151
+naturalqs,0.7,baseline,who sings the songs in crazy ex girlfriend,Rachel Bloom,0.7395,False,False,-1.0
+naturalqs,0.7,hcpc_v1,who sings the songs in crazy ex girlfriend,Rachel Bloom,0.5711,False,False,-1.0
+naturalqs,0.7,ccs_gate,who sings the songs in crazy ex girlfriend,Rachel Bloom,0.5711,False,True,0.5784
+naturalqs,0.7,baseline,when do you stop being a junior doctor,"it culminates in a post as a Consultant, a General Practitioner (GP), or some other non-training post, such as a Staff grade or Associate Specialist post",0.5975,False,False,-1.0
+naturalqs,0.7,hcpc_v1,when do you stop being a junior doctor,"it culminates in a post as a Consultant, a General Practitioner (GP), or some other non-training post, such as a Staff grade or Associate Specialist post",0.5971,False,False,-1.0
+naturalqs,0.7,ccs_gate,when do you stop being a junior doctor,"it culminates in a post as a Consultant, a General Practitioner (GP), or some other non-training post, such as a Staff grade or Associate Specialist post",0.5971,False,True,0.6054
+naturalqs,0.7,baseline,the first line of http request message is called ____,status line,0.5558,False,False,-1.0
+naturalqs,0.7,hcpc_v1,the first line of http request message is called ____,status line,0.6097,False,False,-1.0
+naturalqs,0.7,ccs_gate,the first line of http request message is called ____,status line,0.7397,False,False,0.7028
+naturalqs,0.7,baseline,the removal of temperature in fire fighting method is known as,cooling,0.4653,True,False,-1.0
+naturalqs,0.7,hcpc_v1,the removal of temperature in fire fighting method is known as,cooling,0.5149,False,False,-1.0
+naturalqs,0.7,ccs_gate,the removal of temperature in fire fighting method is known as,cooling,0.5149,False,True,0.5597
+naturalqs,0.7,baseline,how many vowels are in the thai alphabet,"phayanchana), 15 vowel symbols (Thai: สระ, sara) that combine into at least",0.7172,False,False,-1.0
+naturalqs,0.7,hcpc_v1,how many vowels are in the thai alphabet,"phayanchana), 15 vowel symbols (Thai: สระ, sara) that combine into at least",0.9438,False,False,-1.0
+naturalqs,0.7,ccs_gate,how many vowels are in the thai alphabet,"phayanchana), 15 vowel symbols (Thai: สระ, sara) that combine into at least",0.9438,False,True,0.6685
+naturalqs,0.7,baseline,who plays nathan's mother on general hospital,Donna Mills,0.7337,False,False,-1.0
+naturalqs,0.7,hcpc_v1,who plays nathan's mother on general hospital,Donna Mills,0.6058,False,False,-1.0
+naturalqs,0.7,ccs_gate,who plays nathan's mother on general hospital,Donna Mills,0.6058,False,True,0.4443
+naturalqs,0.7,baseline,what type of rock dominates the earth's surface,sedimentary rock,0.5393,False,False,-1.0
+naturalqs,0.7,hcpc_v1,what type of rock dominates the earth's surface,sedimentary rock,0.6772,False,False,-1.0
+naturalqs,0.7,ccs_gate,what type of rock dominates the earth's surface,sedimentary rock,0.6772,False,True,0.3553
+naturalqs,0.7,baseline,when did the name of bombay change to mumbai,1995,0.6538,False,False,-1.0
+naturalqs,0.7,hcpc_v1,when did the name of bombay change to mumbai,1995,0.5774,False,False,-1.0
+naturalqs,0.7,ccs_gate,when did the name of bombay change to mumbai,1995,0.6538,False,False,0.7056
+naturalqs,0.7,baseline,what is the third book in the lunar chronicles,Cress,0.6955,False,False,-1.0
+naturalqs,0.7,hcpc_v1,what is the third book in the lunar chronicles,Cress,0.5866,False,False,-1.0
+naturalqs,0.7,ccs_gate,what is the third book in the lunar chronicles,Cress,0.5866,False,True,0.2956
+naturalqs,0.7,baseline,where did maria work in west side story,the dress shop,0.7204,False,False,-1.0
+naturalqs,0.7,hcpc_v1,where did maria work in west side story,the dress shop,0.5267,False,False,-1.0
+naturalqs,0.7,ccs_gate,where did maria work in west side story,the dress shop,0.5267,False,True,0.5312
+naturalqs,0.7,baseline,when did the great plague of london start and end,1665 to 1666,0.6331,False,False,-1.0
+naturalqs,0.7,hcpc_v1,when did the great plague of london start and end,1665 to 1666,0.6331,False,False,-1.0
+naturalqs,0.7,ccs_gate,when did the great plague of london start and end,1665 to 1666,0.6331,False,True,0.6622
+naturalqs,0.7,baseline,how many hoops are used in a game of croquet,eight,0.8094,False,False,-1.0
+naturalqs,0.7,hcpc_v1,how many hoops are used in a game of croquet,eight,0.5231,False,False,-1.0
+naturalqs,0.7,ccs_gate,how many hoops are used in a game of croquet,eight,0.5231,False,True,0.6608
+naturalqs,0.7,baseline,where in the bible is the book of revelation,in the New Testament,0.7197,False,False,-1.0
+naturalqs,0.7,hcpc_v1,where in the bible is the book of revelation,in the New Testament,0.7716,False,False,-1.0
+naturalqs,0.7,ccs_gate,where in the bible is the book of revelation,in the New Testament,0.7716,False,True,0.693
+naturalqs,0.7,baseline,who owns the biggest house in beverly hills,Anthony Pritzker,0.4173,True,False,-1.0
+naturalqs,0.7,hcpc_v1,who owns the biggest house in beverly hills,Anthony Pritzker,0.855,False,False,-1.0
+naturalqs,0.7,ccs_gate,who owns the biggest house in beverly hills,Anthony Pritzker,0.855,False,True,0.4878
+naturalqs,0.7,baseline,what is the term for circular movement around a central point,Coriolis effect,0.5018,False,False,-1.0
+naturalqs,0.7,hcpc_v1,what is the term for circular movement around a central point,Coriolis effect,0.97,False,False,-1.0
+naturalqs,0.7,ccs_gate,what is the term for circular movement around a central point,Coriolis effect,0.97,False,True,0.6863
+naturalqs,0.7,baseline,who does tyler end up with in you get me,Ali,0.4285,True,False,-1.0
+naturalqs,0.7,hcpc_v1,who does tyler end up with in you get me,Ali,0.7435,False,False,-1.0
+naturalqs,0.7,ccs_gate,who does tyler end up with in you get me,Ali,0.7435,False,True,0.2036
+naturalqs,0.7,baseline,who dies in season 6 of once upon a time,"Edmond Dantes, The Count of Monte Cristo",0.5708,False,False,-1.0
+naturalqs,0.7,hcpc_v1,who dies in season 6 of once upon a time,"Edmond Dantes, The Count of Monte Cristo",0.5894,False,False,-1.0
+naturalqs,0.7,ccs_gate,who dies in season 6 of once upon a time,"Edmond Dantes, The Count of Monte Cristo",0.5894,False,True,0.4498
+naturalqs,0.7,baseline,who has the highest corporate taxes in the world,Zambia,0.7341,False,False,-1.0
+naturalqs,0.7,hcpc_v1,who has the highest corporate taxes in the world,Zambia,0.6804,False,False,-1.0
+naturalqs,0.7,ccs_gate,who has the highest corporate taxes in the world,Zambia,0.6804,False,True,0.6684
+naturalqs,0.7,baseline,who is playing halftime at the pro bowl,Jordan Fisher,0.6469,False,False,-1.0
+naturalqs,0.7,hcpc_v1,who is playing halftime at the pro bowl,Jordan Fisher,0.5587,False,False,-1.0
+naturalqs,0.7,ccs_gate,who is playing halftime at the pro bowl,Jordan Fisher,0.5587,False,True,0.3579
+naturalqs,0.7,baseline,which way does the earth orbit the sun,counterclockwise,0.5451,False,False,-1.0
+naturalqs,0.7,hcpc_v1,which way does the earth orbit the sun,counterclockwise,0.7967,False,False,-1.0
+naturalqs,0.7,ccs_gate,which way does the earth orbit the sun,counterclockwise,0.7967,False,True,0.4867
+naturalqs,0.7,baseline,make it or break it who goes to the olympics,Payson,0.7601,False,False,-1.0
+naturalqs,0.7,hcpc_v1,make it or break it who goes to the olympics,Payson,0.5195,False,False,-1.0
+naturalqs,0.7,ccs_gate,make it or break it who goes to the olympics,Payson,0.5195,False,True,0.114
+naturalqs,0.7,baseline,who plays jack in battle of the sexes,Bill Pullman,0.7064,False,False,-1.0
+naturalqs,0.7,hcpc_v1,who plays jack in battle of the sexes,Bill Pullman,0.7064,False,False,-1.0
+naturalqs,0.7,ccs_gate,who plays jack in battle of the sexes,Bill Pullman,0.7064,False,True,0.4357
+naturalqs,0.7,baseline,the function of the excretory system is to help maintain homeostasis by,"removes excess, unnecessary materials from the body fluids of an organism",0.4403,True,False,-1.0
+naturalqs,0.7,hcpc_v1,the function of the excretory system is to help maintain homeostasis by,"removes excess, unnecessary materials from the body fluids of an organism",0.4555,True,False,-1.0
+naturalqs,0.7,ccs_gate,the function of the excretory system is to help maintain homeostasis by,"removes excess, unnecessary materials from the body fluids of an organism",0.4555,True,True,0.6188
+naturalqs,0.7,baseline,where was the rise of the planet of the apes filmed,"Vancouver, British Columbia",0.8098,False,False,-1.0
+naturalqs,0.7,hcpc_v1,where was the rise of the planet of the apes filmed,"Vancouver, British Columbia",0.5368,False,False,-1.0
+naturalqs,0.7,ccs_gate,where was the rise of the planet of the apes filmed,"Vancouver, British Columbia",0.5368,False,True,0.5052
+naturalqs,0.7,baseline,a 58-story skyscraper in san francisco is tilting and sinking,Millennium Tower,0.5625,False,False,-1.0
+naturalqs,0.7,hcpc_v1,a 58-story skyscraper in san francisco is tilting and sinking,Millennium Tower,0.4901,True,False,-1.0
+naturalqs,0.7,ccs_gate,a 58-story skyscraper in san francisco is tilting and sinking,Millennium Tower,0.5518,False,True,0.4677
+naturalqs,0.7,baseline,the area enclosed by hysteresis loop is a measure of,energy loss,0.5609,False,False,-1.0
+naturalqs,0.7,hcpc_v1,the area enclosed by hysteresis loop is a measure of,energy loss,0.4962,True,False,-1.0
+naturalqs,0.7,ccs_gate,the area enclosed by hysteresis loop is a measure of,energy loss,0.4962,True,True,0.6601
+naturalqs,0.7,baseline,who played joey's agent estelle on friends,June Gable,0.8685,False,False,-1.0
+naturalqs,0.7,hcpc_v1,who played joey's agent estelle on friends,June Gable,0.8685,False,False,-1.0
+naturalqs,0.7,ccs_gate,who played joey's agent estelle on friends,June Gable,0.8685,False,True,0.3189
+naturalqs,0.7,baseline,when was the suite life of zack and cody made,"March 18, 2005",0.7473,False,False,-1.0
+naturalqs,0.7,hcpc_v1,when was the suite life of zack and cody made,"March 18, 2005",0.5113,False,False,-1.0
+naturalqs,0.7,ccs_gate,when was the suite life of zack and cody made,"March 18, 2005",0.7473,False,False,0.7124
+naturalqs,0.7,baseline,when does the next apollo book come out,"May 1, 2018",0.8284,False,False,-1.0
+naturalqs,0.7,hcpc_v1,when does the next apollo book come out,"May 1, 2018",0.5714,False,False,-1.0
+naturalqs,0.7,ccs_gate,when does the next apollo book come out,"May 1, 2018",0.747,False,True,0.5364
+naturalqs,0.7,baseline,actor who plays eric on boy meets world,"William Alan ""Will"" Friedle",0.6257,False,False,-1.0
+naturalqs,0.7,hcpc_v1,actor who plays eric on boy meets world,"William Alan ""Will"" Friedle",0.7018,False,False,-1.0
+naturalqs,0.7,ccs_gate,actor who plays eric on boy meets world,"William Alan ""Will"" Friedle",0.76,False,True,0.5317
+naturalqs,0.7,baseline,which battle ended britain's support for the south,the Battle of Antietam,0.4676,True,False,-1.0
+naturalqs,0.7,hcpc_v1,which battle ended britain's support for the south,the Battle of Antietam,0.5888,False,False,-1.0
+naturalqs,0.7,ccs_gate,which battle ended britain's support for the south,the Battle of Antietam,0.5888,False,True,0.3163
+naturalqs,0.7,baseline,what college does everyone in gossip girl go to,New York University,0.8239,False,False,-1.0
+naturalqs,0.7,hcpc_v1,what college does everyone in gossip girl go to,New York University,0.6476,False,False,-1.0
+naturalqs,0.7,ccs_gate,what college does everyone in gossip girl go to,New York University,0.6476,False,True,0.3858
+naturalqs,0.7,baseline,when was the debating club established in almora,1871,0.6896,False,False,-1.0
+naturalqs,0.7,hcpc_v1,when was the debating club established in almora,1871,0.6839,False,False,-1.0
+naturalqs,0.7,ccs_gate,when was the debating club established in almora,1871,0.6839,False,True,0.4133
+naturalqs,0.7,baseline,where is the inscription on the statue of liberty,on the inner wall of the pedestal,0.7873,False,False,-1.0
+naturalqs,0.7,hcpc_v1,where is the inscription on the statue of liberty,on the inner wall of the pedestal,0.756,False,False,-1.0
+naturalqs,0.7,ccs_gate,where is the inscription on the statue of liberty,on the inner wall of the pedestal,0.6636,False,True,0.5869
+naturalqs,0.7,baseline,what was the name of the horse in steptoe and son,Hercules,1.0,False,False,-1.0
+naturalqs,0.7,hcpc_v1,what was the name of the horse in steptoe and son,Hercules,0.5343,False,False,-1.0
+naturalqs,0.7,ccs_gate,what was the name of the horse in steptoe and son,Hercules,0.5343,False,True,0.6231
+naturalqs,0.7,baseline,what color flame test indicates the presence of strontium,"Crimson to Scarlet, yellowish through green glass and violet through blue cobalt glass",0.6645,False,False,-1.0
+naturalqs,0.7,hcpc_v1,what color flame test indicates the presence of strontium,"Crimson to Scarlet, yellowish through green glass and violet through blue cobalt glass",0.7772,False,False,-1.0
+naturalqs,0.7,ccs_gate,what color flame test indicates the presence of strontium,"Crimson to Scarlet, yellowish through green glass and violet through blue cobalt glass",0.6645,False,False,0.7831
+naturalqs,0.7,baseline,the boiling point of water is 100 degrees celsius express this in si units,100 °C,0.5798,False,False,-1.0
+naturalqs,0.7,hcpc_v1,the boiling point of water is 100 degrees celsius express this in si units,100 °C,0.6357,False,False,-1.0
+naturalqs,0.7,ccs_gate,the boiling point of water is 100 degrees celsius express this in si units,100 °C,0.6357,False,True,0.6238
+naturalqs,0.7,baseline,so you think you can dance season 2 judges,"Nigel Lythgoe, Mary Murphy, Mia Michaels, Shane Sparks, Dan Karaty, Brian Friedman",0.8095,False,False,-1.0
+naturalqs,0.7,hcpc_v1,so you think you can dance season 2 judges,"Nigel Lythgoe, Mary Murphy, Mia Michaels, Shane Sparks, Dan Karaty, Brian Friedman",0.7359,False,False,-1.0
+naturalqs,0.7,ccs_gate,so you think you can dance season 2 judges,"Nigel Lythgoe, Mary Murphy, Mia Michaels, Shane Sparks, Dan Karaty, Brian Friedman",0.7359,False,True,0.4573
+naturalqs,0.7,baseline,when did krakow become the capital of poland,1038,0.6744,False,False,-1.0
+naturalqs,0.7,hcpc_v1,when did krakow become the capital of poland,1038,0.6744,False,False,-1.0
+naturalqs,0.7,ccs_gate,when did krakow become the capital of poland,1038,0.6744,False,True,0.5998
+naturalqs,0.7,baseline,who is the main player in developing us foreign policy,the President of the United States,0.7152,False,False,-1.0
+naturalqs,0.7,hcpc_v1,who is the main player in developing us foreign policy,the President of the United States,0.5805,False,False,-1.0
+naturalqs,0.7,ccs_gate,who is the main player in developing us foreign policy,the President of the United States,0.7428,False,True,0.4569
+naturalqs,0.7,baseline,civil war what did the north fight for,loyalty to the U.S. Constitution,0.8104,False,False,-1.0
+naturalqs,0.7,hcpc_v1,civil war what did the north fight for,loyalty to the U.S. Constitution,0.6285,False,False,-1.0
+naturalqs,0.7,ccs_gate,civil war what did the north fight for,loyalty to the U.S. Constitution,0.4927,True,True,0.6784
+naturalqs,0.7,baseline,where did the rulers of the qing dynasty originate,Manchuria,0.6665,False,False,-1.0
+naturalqs,0.7,hcpc_v1,where did the rulers of the qing dynasty originate,Manchuria,0.7083,False,False,-1.0
+naturalqs,0.7,ccs_gate,where did the rulers of the qing dynasty originate,Manchuria,0.7083,False,True,0.6396
+naturalqs,0.7,baseline,when is the end of the football season,"February 4, 2018, with Super Bowl LII",0.7283,False,False,-1.0
+naturalqs,0.7,hcpc_v1,when is the end of the football season,"February 4, 2018, with Super Bowl LII",0.7283,False,False,-1.0
+naturalqs,0.7,ccs_gate,when is the end of the football season,"February 4, 2018, with Super Bowl LII",0.7283,False,True,0.5432
+naturalqs,0.7,baseline,who cracked the enigma code in world war 2,Turing,0.8032,False,False,-1.0
+naturalqs,0.7,hcpc_v1,who cracked the enigma code in world war 2,Turing,0.5063,False,False,-1.0
+naturalqs,0.7,ccs_gate,who cracked the enigma code in world war 2,Turing,0.5063,False,True,0.5468
+naturalqs,0.7,baseline,when did athens emerges as wealthiest greek city state,around the late 6th century BCE,0.4942,True,False,-1.0
+naturalqs,0.7,hcpc_v1,when did athens emerges as wealthiest greek city state,around the late 6th century BCE,0.5274,False,False,-1.0
+naturalqs,0.7,ccs_gate,when did athens emerges as wealthiest greek city state,around the late 6th century BCE,0.5274,False,True,0.6756
+naturalqs,0.7,baseline,who hosted and won the inagural world cup,Uruguay,0.8039,False,False,-1.0
+naturalqs,0.7,hcpc_v1,who hosted and won the inagural world cup,Uruguay,0.5532,False,False,-1.0
+naturalqs,0.7,ccs_gate,who hosted and won the inagural world cup,Uruguay,0.5532,False,True,0.6742
+naturalqs,0.7,baseline,who was the movie citizen kane based on,"based in part upon the American newspaper magnate William Randolph Hearst, Chicago tycoons Samuel Insull and Harold McCormick, and aspects of Welles's own life",0.7898,False,False,-1.0
+naturalqs,0.7,hcpc_v1,who was the movie citizen kane based on,"based in part upon the American newspaper magnate William Randolph Hearst, Chicago tycoons Samuel Insull and Harold McCormick, and aspects of Welles's own life",0.5449,False,False,-1.0
+naturalqs,0.7,ccs_gate,who was the movie citizen kane based on,"based in part upon the American newspaper magnate William Randolph Hearst, Chicago tycoons Samuel Insull and Harold McCormick, and aspects of Welles's own life",0.5449,False,True,0.601
+naturalqs,0.7,baseline,what is the highest base on the ph scale,greater than 14,0.5028,False,False,-1.0
+naturalqs,0.7,hcpc_v1,what is the highest base on the ph scale,greater than 14,0.4695,True,False,-1.0
+naturalqs,0.7,ccs_gate,what is the highest base on the ph scale,greater than 14,0.4695,True,True,0.6908
+naturalqs,0.7,baseline,who become ceo of wipro company in 2016,Abid Ali Neemuchwala,0.5534,False,False,-1.0
+naturalqs,0.7,hcpc_v1,who become ceo of wipro company in 2016,Abid Ali Neemuchwala,0.7165,False,False,-1.0
+naturalqs,0.7,ccs_gate,who become ceo of wipro company in 2016,Abid Ali Neemuchwala,0.7165,False,True,0.6429

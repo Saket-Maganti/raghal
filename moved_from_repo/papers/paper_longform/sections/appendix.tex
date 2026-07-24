@@ -1,0 +1,490 @@
+% appendix.tex
+\clearpage
+\appendix
+
+\section{Hyperparameters}
+\label{app:hyperparams}
+
+Table~\ref{tab:hyperparams} lists all hyperparameters used across
+experimental configurations.
+
+\begin{table}[!htb]
+\centering
+\caption{Complete hyperparameter specification.}
+\label{tab:hyperparams}
+\footnotesize
+\begin{tabular}{llll}
+\toprule
+Component & Parameter & Value & Notes \\
+\midrule
+\multicolumn{4}{l}{\emph{Embedding}} \\
+& Model & all-MiniLM-L6-v2 & 82M params, 384-dim \\
+& Normalization & L2 & cosine similarity \\
+\midrule
+\multicolumn{4}{l}{\emph{Chunking (fixed)}} \\
+& Chunk sizes & \{256, 512, 1024\} & tokens \\
+& Overlap & 10\% & 26, 51, 102 tokens \\
+& Separators & \texttt{["\textbackslash n\textbackslash n", "\textbackslash n", ". ", " ", ""]} & recursive \\
+\midrule
+\multicolumn{4}{l}{\emph{Retrieval}} \\
+& Top-$k$ & \{3, 5\} & cosine similarity \\
+& Vector store & ChromaDB v0.4 & persistent \\
+\midrule
+\multicolumn{4}{l}{\emph{Generation}} \\
+& Models & Mistral-7B, Llama-3-8B & via Ollama v0.1.29 \\
+& Temperature & 0.1 & low stochasticity \\
+\midrule
+\multicolumn{4}{l}{\emph{Cross-encoder}} \\
+& Model & ms-marco-MiniLM-L-6-v2 & 66M params \\
+& Output & raw logits & not probabilities \\
+\midrule
+\multicolumn{4}{l}{\emph{NLI scorer}} \\
+& Model & nli-deberta-v3-base & 435M params \\
+& Threshold & 0.50 & hallucination cutoff \\
+\midrule
+\multicolumn{4}{l}{\emph{HCPC-v2}} \\
+& $\tau_\text{sim}$ & 0.45 & cosine threshold \\
+& $\tau_\text{ce}$ & $-$0.20 & CE logit threshold \\
+& $N_\text{prot}$ & 2 & rank protection \\
+& $N_\text{max}$ & 2 & max refine per query \\
+& Sub-chunk size & 256 tokens & for splitting \\
+& Sub-overlap & 32 tokens & \\
+& Merge max & 4096 chars & $\approx$1024 tokens \\
+\midrule
+\multicolumn{4}{l}{\emph{Reranker}} \\
+& Fetch-$k$ & 7 & over-fetch depth \\
+& Return-$k$ & 3 & final context size \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\FloatBarrier
+\section{Chunk size ablation and variance analysis}
+\label{app:ablation}
+
+Tables~\ref{tab:ablation_squad} and~\ref{tab:ablation_pubmedqa} report
+the full 12-configuration ablation over chunk size, top-$k$, and prompt
+strategy. All experiments use Mistral-7B with $n = 30$ queries per
+configuration.
+
+\begin{table}[!htb]
+\centering
+\caption{Full chunk size ablation on SQuAD (Mistral-7B, $n = 30$).}
+\label{tab:ablation_squad}
+\small
+\begin{tabular}{cclcc}
+\toprule
+Chunk & $k$ & Prompt & Faithfulness & Halluc. \\
+\midrule
+256  & 3 & strict & 0.6732 & 10.0\% \\
+256  & 3 & cot    & 0.6835 & 6.7\% \\
+256  & 5 & strict & 0.7254 & 10.0\% \\
+256  & 5 & cot    & 0.7253 & 10.0\% \\
+\midrule
+512  & 3 & strict & 0.7827 & 0.0\% \\
+512  & 3 & cot    & 0.7781 & 0.0\% \\
+512  & 5 & strict & 0.7861 & 3.3\% \\
+512  & 5 & cot    & 0.7737 & 6.7\% \\
+\midrule
+1024 & 3 & strict & 0.8001 & 3.3\% \\
+1024 & 3 & cot    & 0.7891 & 0.0\% \\
+1024 & 5 & strict & 0.8274 & 3.3\% \\
+1024 & 5 & cot    & 0.8254 & 3.3\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[!htb]
+\centering
+\caption{Full chunk size ablation on PubMedQA (Mistral-7B, $n = 30$).}
+\label{tab:ablation_pubmedqa}
+\small
+\begin{tabular}{cclcc}
+\toprule
+Chunk & $k$ & Prompt & Faithfulness & Halluc. \\
+\midrule
+256  & 3 & strict & 0.5591 & 30.0\% \\
+256  & 3 & cot    & 0.5802 & 20.0\% \\
+256  & 5 & strict & 0.5585 & 30.0\% \\
+256  & 5 & cot    & 0.5636 & 26.7\% \\
+\midrule
+512  & 3 & strict & 0.6028 & 16.7\% \\
+512  & 3 & cot    & 0.6196 & 13.3\% \\
+512  & 5 & strict & 0.5844 & 20.0\% \\
+512  & 5 & cot    & 0.5906 & 13.3\% \\
+\midrule
+1024 & 3 & strict & 0.5963 & 20.0\% \\
+1024 & 3 & cot    & 0.6167 & 10.0\% \\
+1024 & 5 & strict & 0.5849 & 16.7\% \\
+1024 & 5 & cot    & 0.5881 & 13.3\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Chunk-size summary.} Mean faithfulness by chunk size on
+SQuAD: $256 = 0.7018$, $512 = 0.7801$, $1024 = 0.8105$. Mean
+hallucination: $256 = 9.17\%$, $512 = 2.5\%$, $1024 = 2.5\%$. On
+PubMedQA: faithfulness $256 = 0.5654$, $512 = 0.5994$, $1024 = 0.5965$;
+hallucination $256 = 26.67\%$, $512 = 15.83\%$, $1024 = 15.0\%$. The
+$256 \to 1024$ improvement is large on SQuAD (10.87~pp faithfulness,
+6.67~pp hallucination reduction) and moderate on PubMedQA (3.11~pp
+faithfulness, 11.67~pp hallucination reduction).
+
+\FloatBarrier
+\subsection{ANOVA results}
+\label{app:anova}
+
+Table~\ref{tab:anova} reports one-way ANOVA results for each factor.
+
+\begin{table}[!htb]
+\centering
+\caption{One-way ANOVA for faithfulness by factor.}
+\label{tab:anova}
+\small
+\begin{tabular}{llcccc}
+\toprule
+Dataset & Factor & $F$ & $p$ & $\eta^2$ & Sig. \\
+\midrule
+SQuAD    & Chunk size      & 19.720 & $<$0.001 & 0.100 & Yes \\
+SQuAD    & Prompt strategy & 0.046  & 0.830    & $<$0.001 & No \\
+SQuAD    & Top-$k$         & 2.918  & 0.089    & 0.012 & No \\
+\midrule
+PubMedQA & Chunk size      & 3.664  & 0.027    & 0.020 & Yes \\
+PubMedQA & Prompt strategy & 1.122  & 0.290    & 0.005 & No \\
+PubMedQA & Top-$k$         & 2.323  & 0.128    & 0.010 & No \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Chunk size is the only factor reaching significance on both datasets.
+On SQuAD, $F = 19.72$ with $p < 0.001$; on PubMedQA, $F = 3.66$ with
+$p = 0.027$. Prompt strategy is non-significant on both datasets
+($p = 0.830$ on SQuAD, $p = 0.290$ on PubMedQA), and the effect size
+is negligible ($\eta^2 < 0.005$).
+
+\FloatBarrier
+\subsection{Cohen's \texorpdfstring{$d$}{d} effect sizes}
+\label{app:cohend}
+
+Table~\ref{tab:cohend} reports pairwise Cohen's $d$ between factor levels.
+
+\begin{table}[!htb]
+\centering
+\caption{Cohen's $d$ effect sizes for faithfulness.}
+\label{tab:cohend}
+\small
+\begin{tabular}{lcc}
+\toprule
+Comparison & SQuAD & PubMedQA \\
+\midrule
+\multicolumn{3}{l}{\emph{Chunk size}} \\
+256 vs 512  & 0.82 & 0.31 \\
+256 vs 1024 & 1.41 & 0.29 \\
+512 vs 1024 & 0.55 & 0.03 \\
+\midrule
+\multicolumn{3}{l}{\emph{Prompt strategy}} \\
+strict vs CoT & 0.02 & 0.11 \\
+\midrule
+\multicolumn{3}{l}{\emph{Top-$k$}} \\
+$k = 3$ vs $k = 5$ & 0.18 & 0.16 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The 256-to-1024 chunk size effect on SQuAD ($d = 1.41$) is large by
+conventional standards ($d > 0.8$). The 512-to-1024 effect ($d = 0.55$)
+is medium. On PubMedQA, all chunk size effects are small ($d < 0.35$),
+reflecting the domain mismatch that limits the benefit of larger chunks.
+Prompt strategy effects are negligible on both datasets ($d \leq 0.11$).
+
+\FloatBarrier
+\subsection{Variance decomposition by model}
+\label{app:variance_model}
+
+Table~\ref{tab:variance_model} partitions the variance in faithfulness
+among the three configuration factors, computed separately for each
+model-dataset combination. This uses the multi-model data from the
+extended experiments (Llama-3-8B and Mistral-7B, $n = 100$ per condition).
+
+\begin{table}[!htb]
+\centering
+\caption{Variance decomposition: proportion of faithfulness variance
+explained by each factor, by model and dataset.}
+\label{tab:variance_model}
+\small
+\begin{tabular}{llccc}
+\toprule
+Model & Dataset & Chunk size & Top-$k$ & Prompt \\
+\midrule
+\multicolumn{2}{l}{\emph{Overall}} \\
+--- & SQuAD    & 90.1\% & 9.8\%  & 0.2\% \\
+--- & PubMedQA & 61.2\% & 26.1\% & 12.7\% \\
+\midrule
+\multicolumn{2}{l}{\emph{By model}} \\
+Mistral-7B  & SQuAD    & 72.4\% & 9.0\%  & 18.6\% \\
+Llama-3-8B  & SQuAD    & 53.3\% & 25.2\% & 21.5\% \\
+Mistral-7B  & PubMedQA & 1.5\%  & 97.9\% & 0.6\% \\
+Llama-3-8B  & PubMedQA & 95.2\% & 0.4\%  & 4.4\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The model-level breakdown reveals substantial heterogeneity. On SQuAD,
+chunk size dominates for both models (72.4\% for Mistral, 53.3\% for
+Llama-3), consistent with the overall 90.1\% figure. On PubMedQA, the
+models diverge sharply: Mistral's faithfulness is governed by top-$k$
+(97.9\%), while Llama-3's is governed by chunk size (95.2\%). This
+suggests that optimal RAG configurations are model-specific and should
+not be assumed to transfer between architectures.
+
+\paragraph{Why chunk size matters.} Chunk size affects faithfulness
+through three reinforcing mechanisms. First, larger chunks contain
+complete sentences and paragraphs; a 256-token chunk may truncate
+mid-thought, producing lower NLI entailment scores even for qualitatively
+correct answers. Second, with $k = 3$ and chunk = 1024, the generator
+receives approximately 3,000 tokens of context versus 750 at chunk = 256;
+more context provides redundant evidence that reduces hallucination
+risk. Third, larger chunks preserve the logical flow of source
+documents---topic sentences, supporting details, and transitions appear
+together, maintaining the coherence that smaller chunks fragment.
+
+The 256-to-1024 effect on SQuAD ($d = 1.41$) reflects all three
+mechanisms acting together. The 512-to-1024 effect ($d = 0.55$) is
+smaller because 512-token chunks already capture most complete sentences
+and moderate redundancy.
+
+\paragraph{Why prompt strategy does not matter.} The maximum
+faithfulness difference between strict and chain-of-thought prompts on
+SQuAD, holding chunk size and top-$k$ constant, is $0.0121$
+(at chunk~$=1024$, $k=3$: strict~$=0.8001$, CoT~$=0.7891$). Both prompts
+instruct the model to answer from the context. When the context is
+coherent and contains the answer, both produce faithful responses; when
+the context is fragmented or the answer is absent, neither can prevent
+hallucination. For RAG faithfulness, prompt engineering yields returns
+roughly $450\times$ smaller than chunk-size selection
+($\eta^2_{\text{chunk}} / \eta^2_{\text{prompt}} = 0.901 / 0.002$).
+
+\FloatBarrier
+\section{Re-ranking by chunk size}
+\label{app:reranking}
+
+Table~\ref{tab:reranker_chunk} reports re-ranking results across chunk
+sizes (Llama-3-8B, $n = 100$ on SQuAD, $n = 50$ on PubMedQA).
+
+\begin{table}[!htb]
+\centering
+\caption{Re-ranking effect by chunk size. $\Delta$ columns show
+reranked minus baseline.}
+\label{tab:reranker_chunk}
+\small
+\begin{tabular}{llcccc}
+\toprule
+Dataset & Chunk & Base Faith. & Rerank Faith. & $\Delta$ Faith. & $\Delta$ Halluc. \\
+\midrule
+SQuAD    & 256  & 0.7233 & 0.7265 & +0.003 & $-$3.0 pp \\
+SQuAD    & 512  & 0.7523 & 0.7544 & +0.002 & $-$3.0 pp \\
+SQuAD    & 1024 & 0.7739 & 0.7619 & $-$0.012 & 0.0 pp \\
+\midrule
+PubMedQA & 256  & 0.6136 & 0.6455 & +0.032 & $-$10.0 pp \\
+PubMedQA & 512  & 0.5862 & 0.5957 & +0.010 & +6.0 pp \\
+PubMedQA & 1024 & 0.5853 & 0.5806 & $-$0.005 & $-$2.0 pp \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Re-ranking interacts with chunk size in a non-obvious way. At small chunk
+sizes (256), re-ranking consistently helps: it improves faithfulness and
+reduces hallucination on both datasets, with the largest effect on
+PubMedQA ($-$10 pp hallucination). At large chunk sizes (1024),
+re-ranking slightly \emph{hurts} faithfulness on both datasets. At
+intermediate sizes (512 on PubMedQA), re-ranking improves faithfulness
+but \emph{increases} hallucination by 6 pp.
+
+The pattern suggests that re-ranking is most useful when the initial
+retrieval is noisy (small chunks produce more candidates of variable
+quality) and least useful when chunks are already large enough to be
+self-contained. At chunk = 1024, the cross-encoder's preference for
+keyword-matching relevance can override the embedding model's broader
+semantic ranking, replacing a contextually appropriate passage with one
+that matches query terms more precisely but contributes less to overall
+coherence.
+
+\FloatBarrier
+\section{Multi-model chunk size comparison}
+\label{app:multimodel}
+
+Table~\ref{tab:multimodel} reports faithfulness and hallucination rates
+for both models across chunk sizes (extended experiments, $n = 100$ per
+condition on SQuAD).
+
+\begin{table}[!htb]
+\centering
+\caption{Multi-model comparison by chunk size.}
+\label{tab:multimodel}
+\small
+\begin{tabular}{llccc}
+\toprule
+Model & Dataset & Chunk 256 & Chunk 512 & Chunk 1024 \\
+\midrule
+\multicolumn{5}{l}{\emph{Faithfulness}} \\
+Llama-3  & SQuAD    & 0.7184 & 0.7530 & 0.7591 \\
+Mistral  & SQuAD    & 0.7248 & 0.7548 & 0.7676 \\
+Llama-3  & PubMedQA & 0.6151 & 0.5851 & 0.5868 \\
+Mistral  & PubMedQA & 0.5798 & 0.5797 & 0.5818 \\
+\midrule
+\multicolumn{5}{l}{\emph{Hallucination rate}} \\
+Llama-3  & SQuAD    & 4.5\%  & 1.75\% & 1.0\% \\
+Mistral  & SQuAD    & 8.25\% & 4.5\%  & 3.75\% \\
+Llama-3  & PubMedQA & 16.0\% & 19.0\% & 18.5\% \\
+Mistral  & PubMedQA & 26.5\% & 28.5\% & 25.5\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Both models show the same chunk-size trend on SQuAD: larger chunks
+produce higher faithfulness and lower hallucination. On PubMedQA, the
+trend is weaker and non-monotonic for Llama-3 (faithfulness peaks at
+chunk = 256), consistent with the domain mismatch limiting the benefit
+of more context when that context is poorly matched.
+
+\FloatBarrier
+\section{Threshold sweep details}
+\label{app:sweep}
+
+The threshold sweep tested 168 fixed configurations
+(7 $\tau_\text{sim}$ values $\times$ 6 $\tau_\text{ce}$ values
+$\times$ 4 $N_\text{prot}$ values) plus 4 adaptive configurations
+per dataset. Evaluation used the proxy score:
+
+\begin{equation}
+  \text{proxy} = 0.4 \cdot \text{CCS} - 0.3 \cdot \text{var}(S)
+               - 0.2 \cdot H(S) + 0.1 \cdot \bar{q}
+\end{equation}
+
+\noindent where $\text{var}(S)$ is the embedding variance,
+$H(S)$ is the retrieval entropy, and $\bar{q}$ is the mean
+query-chunk similarity.
+
+On SQuAD, the top-10 fixed configurations all achieve CCS = 1.0
+with proxy score = 0.2587, compared to the default configuration's
+0.2425. The optimal region is broad: configurations with
+$\tau_\text{sim} \geq 0.35$ and $N_\text{prot} = 0$ produce
+identical proxy scores because the AND gate rarely fires when
+the embedding model matches the corpus.
+
+On PubMedQA, the top-10 configurations achieve proxy score = 0.2820
+(default: 0.2496, $\Delta$ = +13\%). These concentrate at
+$\tau_\text{sim} \in [0.50, 0.60]$ with $N_\text{prot} = 0$, where
+more chunks are eligible for refinement and the proxy rewards higher
+coherence after refinement.
+
+Adaptive (percentile-based) thresholds underperform fixed thresholds on
+both datasets. The best adaptive configuration matches the default fixed
+configuration (proxy $= 0.2425$ on SQuAD, $0.2496$ on PubMedQA). Fixed
+thresholds, once tuned to the dataset, are sufficient; adaptive
+adjustment adds complexity without benefit.
+
+\FloatBarrier
+\section{Per-query failure analysis}
+\label{app:failure}
+
+We manually examined hallucinated responses from HCPC-v1 on SQuAD
+($n = 10$). Three failure patterns emerged:
+
+\begin{enumerate}
+  \item \textbf{Evidence truncation} (6/10): The refined sub-chunk did
+        not contain the sentence needed to answer the question. The
+        model generated a plausible but unsupported answer using its
+        parametric memory.
+
+  \item \textbf{Context gap bridging} (3/10): The model inferred a
+        connection between two non-adjacent sub-chunks that was not
+        supported by either. The gap left by refinement was filled
+        with fabricated reasoning.
+
+  \item \textbf{Over-completion} (1/10): The model extended its answer
+        beyond what the context supported, appending details from
+        parametric memory after correctly answering the initial question.
+\end{enumerate}
+
+Under HCPC-v2, the only failure mode observed (3/3 hallucinated responses
+in extended experiments) was evidence truncation, and all three cases
+occurred on queries where the rank protection gate was active. This
+suggests that selective refinement occasionally prevents refinement of
+a passage that genuinely needs it, when the weak chunk happens to rank in
+the top 2.
+
+\FloatBarrier
+\section{Latency measurements}
+\label{app:latency}
+
+\begin{table}[!htb]
+\centering
+\caption{Mean generation latency (seconds, $\pm$ std dev).}
+\label{tab:latency}
+\small
+\begin{tabular}{llccc}
+\toprule
+Model & Dataset & Chunk = 256 & Chunk = 512 & Chunk = 1024 \\
+\midrule
+Llama-3  & SQuAD    & 2.20 $\pm$ 1.16 & 3.23 $\pm$ 1.01 & 4.19 $\pm$ 1.59 \\
+Llama-3  & PubMedQA & 6.77 $\pm$ 43.3 & 5.87 $\pm$ 1.70 & 8.71 $\pm$ 2.78 \\
+Mistral  & SQuAD    & 3.41 $\pm$ 1.78 & 4.56 $\pm$ 1.68 & 9.04 $\pm$ 91.3 \\
+Mistral  & PubMedQA & 6.37 $\pm$ 2.15 & 10.3 $\pm$ 3.28 & 13.0 $\pm$ 3.80 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Latency scales roughly linearly with chunk size (more context tokens
+to process). The high standard deviations on some cells (e.g., Llama-3
+PubMedQA chunk = 256: $\pm$43.3s) reflect occasional outlier queries
+where the model produced unusually long responses.
+
+The HCPC-v2 refinement step adds 2--3 seconds per query (cross-encoder
+scoring + sub-splitting). On SQuAD, where refinement triggers for 16.7\%
+of queries, the amortized overhead is approximately 0.4 seconds per query.
+On PubMedQA, where 73.3\% of queries trigger refinement, the overhead is
+approximately 1.8 seconds per query.
+
+\FloatBarrier
+\section{Implementation details}
+\label{app:implementation}
+
+The pipeline is implemented in Python 3.11. Key dependencies:
+
+\begin{itemize}
+  \item \texttt{langchain} and \texttt{langchain-community} for
+        text splitting and Ollama integration
+  \item \texttt{sentence-transformers} for embedding and cross-encoder
+        inference
+  \item \texttt{chromadb} v0.4 for vector storage with cosine distance
+  \item \texttt{torch} with MPS backend for Apple Silicon acceleration
+  \item \texttt{scipy} for ANOVA and correlation tests
+  \item \texttt{pandas} for result aggregation
+\end{itemize}
+
+The HCPC-v2 retriever (\texttt{src/hcpc\_v2\_retriever.py}, 550 lines)
+is the most complex component. It maintains per-query diagnostic logs
+that record: whether refinement was triggered, the number of chunks
+before and after refinement, the best cosine and cross-encoder scores
+before and after, the CCS, approximate token count, threshold mode,
+and effective threshold values.
+
+All experiments use the same 30 (or 100, depending on phase) queries per
+condition, sampled randomly from the validation split at the start of
+each experiment and held fixed across all conditions within that
+experiment. This ensures that condition comparisons are not confounded
+by query difficulty variation.
+
+\section{Real-world case studies}
+\label{app:case_studies}
+
+To make the refinement paradox concrete beyond the aggregate metrics,
+we present a small case-study set: queries on which the same generator
+gives a faithful answer with raw retrieval, hallucinates after
+per-passage refinement, and recovers under the coherence-gated policy.
+The cases are auto-selected from the per-query logs by the script
+\texttt{experiments/build\_qualitative\_example.py} as the queries
+with the largest baseline$\to$HCPC-v$1$ faithfulness gap.
+
+\input{figures/qualitative_cases}

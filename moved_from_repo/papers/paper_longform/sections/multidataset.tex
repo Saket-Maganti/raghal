@@ -1,0 +1,95 @@
+\section{Multi-dataset Validation}
+\label{sec:multidataset}
+
+The original two-dataset evaluation (SQuAD + PubMedQA) was deliberately
+designed to contrast a domain-matched setting against a
+domain-mismatched one, but is inadequate for testing whether the
+coherence paradox generalizes across question styles, document genres,
+and reasoning structures. This section reports an extension to six
+datasets covering open-domain factoid QA, multi-hop reasoning, and a
+specialized financial domain.
+
+\subsection{Datasets}
+
+\begin{description}
+  \item[\textsc{SQuAD}~\citep{rajpurkar2016squad}] reading comprehension
+        on Wikipedia paragraphs. Domain-matched single-document QA.
+  \item[\textsc{PubMedQA}~\citep{jin2019pubmedqa}] biomedical research
+        QA over abstracts. Domain-mismatched single-document QA.
+  \item[\textsc{NaturalQuestions}~\citep{kwiatkowski2019nq}] real Google
+        queries paired with Wikipedia long-answer paragraphs. Tests
+        open-domain factoid retrieval.
+  \item[\textsc{TriviaQA}~\citep{joshi2017triviaqa}] trivia questions
+        paired with Wikipedia/web evidence. Tests retrieval over
+        heterogeneous evidence formats.
+  \item[\textsc{HotpotQA}~\citep{yang2018hotpotqa}] multi-hop questions
+        requiring reasoning over $\geq$2 paragraphs (distractor split).
+        Tests whether the paradox manifests under multi-hop pressure.
+  \item[\textsc{FinanceBench}~\citep{islam2023financebench}] open-book
+        questions over corporate 10-K filings. Tests a specialized,
+        long-document, professional domain.
+\end{description}
+
+The complete loader inventory is in \texttt{src/dataset\_loaders.py}.
+All loaders share a common \texttt{(documents, qa\_pairs)} interface so
+the multi-dataset harness can iterate without per-dataset branching, and
+all use a fixed seed (42) for sample selection.
+
+\subsection{Preregistered reporting plan}
+\label{sec:multidataset_plan}
+
+For each of the six datasets we will report four quantities, each
+averaged over the matched query sample: (i) baseline faithfulness
+Faith\textsubscript{base}, (ii) HCPC-v1 faithfulness
+Faith\textsubscript{v1}, (iii) HCPC-v2 faithfulness
+Faith\textsubscript{v2}, and two derived deltas —
+\texttt{paradox\_drop} =
+Faith\textsubscript{base} $-$ Faith\textsubscript{v1} (the failure mode)
+and \texttt{v2\_recovery} =
+Faith\textsubscript{v2} $-$ Faith\textsubscript{v1} (the effectiveness
+of selective gating). Per-query NLI scores are written to
+\texttt{results/multidataset/summary.csv}; the aggregate table is
+generated deterministically from that file.
+
+The paradox is considered to replicate at six-dataset scale if
+\texttt{paradox\_drop} is positive on at least four of the six datasets,
+with the direction preserved on both the domain-matched (SQuAD,
+NaturalQs, TriviaQA) and domain-mismatched (PubMedQA, FinanceBench)
+subsets. HCPC-v2's selective gating is considered to help if
+\texttt{v2\_recovery} is positive on every dataset where
+\texttt{paradox\_drop} is positive. We will report the outcome as
+written regardless of direction; a flat or inverted pattern on specific
+datasets is informative because it tells us where the coherence account
+stops generalizing.
+
+\subsection{Generator stratification (Item~A3)}
+
+The same multi-dataset query set is rerun across three generators
+(\texttt{src/generators.py} registry):
+
+\begin{itemize}
+  \item \textbf{Mistral-7B-Instruct-v0.2} (Mistral AI). Primary generator.
+  \item \textbf{Llama-3-8B-Instruct} (Meta). Cross-architecture replication.
+  \item \textbf{Qwen2.5-7B-Instruct} (Alibaba). Tests whether the paradox
+        is specific to Western-pretrained model families.
+\end{itemize}
+
+The generator-stratified table
+(\texttt{results/multidataset/by\_generator.csv}) reports the same three
+faithfulness conditions on the multidataset query set, separately for
+each generator. The paradox is called \emph{generator-invariant} if the
+sign of \texttt{paradox\_drop} is preserved across all three generators
+on at least four of the six datasets; a sign flip on any row localizes
+the paradox to a specific (dataset, generator) cell rather than to the
+method as such. We will report the full cell-level table with confidence
+intervals regardless of outcome, and call out any cell where the three
+generators disagree on sign.
+
+\subsection{Reproducibility checkpoints}
+
+The multi-dataset harness (\texttt{experiments/run\_multidataset\_validation.py})
+is checkpointed at the (dataset, generator, condition) tuple level: each
+completed tuple is appended to \texttt{completed\_tuples.json} with its
+per-query CSV, and the runner re-enters by skipping completed tuples.
+This makes it safe to re-run after partial failure (e.g., Self-RAG
+unavailable on M4) without recomputing finished tuples.

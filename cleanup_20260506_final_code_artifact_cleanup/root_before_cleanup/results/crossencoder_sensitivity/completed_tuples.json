@@ -1,0 +1,8 @@
+{
+  "squad__cross-encoder_ms-marco-MiniLM-L-6-v2": true,
+  "squad__cross-encoder_ms-marco-MiniLM-L-12-v2": true,
+  "squad__BAAI_bge-reranker-base": true,
+  "pubmedqa__cross-encoder_ms-marco-MiniLM-L-6-v2": true,
+  "pubmedqa__cross-encoder_ms-marco-MiniLM-L-12-v2": true,
+  "pubmedqa__BAAI_bge-reranker-base": true
+}

@@ -1,0 +1,4 @@
+metric_a,metric_b,n,pearson_r,pearson_p,spearman_rho,spearman_p
+faith_deberta,faith_second_nli,7500,0.258666,6.275598688846602e-115,0.265295,5.180179104715234e-121
+faith_deberta,faith_ragas,7500,0.181871,8.647583009972414e-57,0.212055,5.3134997534575324e-77
+faith_second_nli,faith_ragas,7500,0.674177,0.0,0.651497,0.0

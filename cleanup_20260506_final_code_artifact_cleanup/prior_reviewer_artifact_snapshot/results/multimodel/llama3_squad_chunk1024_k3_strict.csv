@@ -1,0 +1,115 @@
+model,dataset,chunk_size,top_k,prompt_strategy,question,answer,ground_truth,faithfulness_score,is_hallucination,nli_label,latency_s
+llama3,squad,1024,3,strict,Which NFL team represented the AFC at Super Bowl 50?,The Denver Broncos.,Denver Broncos,0.6985,False,faithful,2.85
+llama3,squad,1024,3,strict,Which NFL team represented the NFC at Super Bowl 50?,The Carolina Panthers represented the National Football Conference (NFC) at Super Bowl 50.,Carolina Panthers,0.6795,False,faithful,1.88
+llama3,squad,1024,3,strict,Where did Super Bowl 50 take place?,"According to the provided context, Super Bowl 50 took place at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California.","Santa Clara, California",0.986,False,faithful,2.53
+llama3,squad,1024,3,strict,Which NFL team won Super Bowl 50?,The Denver Broncos won Super Bowl 50.,Denver Broncos,0.9247,False,faithful,2.54
+llama3,squad,1024,3,strict,What color was used to emphasize the 50th anniversary of the Super Bowl?,Gold.,gold,1.0,False,faithful,1.45
+llama3,squad,1024,3,strict,What was the theme of Super Bowl 50?,"The theme of Super Bowl 50 was emphasized as ""golden anniversary"" with various gold-themed initiatives.","""golden anniversary""",0.8574,False,faithful,2.04
+llama3,squad,1024,3,strict,What day was the game played on?,I cannot find this information in the provided context.,"February 7, 2016",0.5531,False,faithful,3.89
+llama3,squad,1024,3,strict,What is the AFC short for?,The American Football Conference (AFC) champion Denver Broncos...,American Football Conference,0.8487,False,faithful,3.0
+llama3,squad,1024,3,strict,What was the theme of Super Bowl 50?,"The theme of Super Bowl 50 was emphasized as ""golden anniversary"" with various gold-themed initiatives.","""golden anniversary""",0.8574,False,faithful,3.2
+llama3,squad,1024,3,strict,What does AFC stand for?,The answer is: American Football Conference.,American Football Conference,0.754,False,faithful,3.0
+llama3,squad,1024,3,strict,What day was the Super Bowl played on?,"According to the provided context, the Super Bowl was played on February 7, 2016.","February 7, 2016",0.6946,False,faithful,3.57
+llama3,squad,1024,3,strict,Who won Super Bowl 50?,The Denver Broncos won Super Bowl 50.,Denver Broncos,0.9247,False,faithful,3.49
+llama3,squad,1024,3,strict,What venue did Super Bowl 50 take place in?,"According to the provided context, Super Bowl 50 took place at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California.",Levi's Stadium,0.986,False,faithful,4.42
+llama3,squad,1024,3,strict,What city did Super Bowl 50 take place in?,"According to the provided context, Super Bowl 50 took place in Santa Clara, California.",Santa Clara,0.9154,False,faithful,4.23
+llama3,squad,1024,3,strict,"If Roman numerals were used, what would Super Bowl 50 have been called?","According to the context, if Roman numerals were used, Super Bowl 50 would have been called ""Super Bowl L"".",Super Bowl L,0.5988,False,faithful,4.37
+llama3,squad,1024,3,strict,Super Bowl 50 decided the NFL champion for what season?,The answer is: the 2015 season.,2015,0.7723,False,faithful,3.43
+llama3,squad,1024,3,strict,What year did the Denver Broncos secure a Super Bowl title for the third time?,"I cannot find this information in the provided context. The context only mentions Super Bowl 50, but it does not specify whether it was the team's first, second, or third Super Bowl title.",2015,0.6032,False,faithful,3.89
+llama3,squad,1024,3,strict,What city did Super Bowl 50 take place in?,"According to the provided context, Super Bowl 50 took place in Santa Clara, California.",Santa Clara,0.9154,False,faithful,4.39
+llama3,squad,1024,3,strict,What stadium did Super Bowl 50 take place in?,"According to the provided context, Super Bowl 50 took place at Levi's Stadium.",Levi's Stadium,0.8599,False,faithful,1.08
+llama3,squad,1024,3,strict,What was the final score of Super Bowl 50? ,The Broncos defeated the Carolina Panthers 24–10 to earn their third Super Bowl title.,24–10,0.8929,False,faithful,2.85
+llama3,squad,1024,3,strict,"What month, day and year did Super Bowl 50 take place? ","According to the provided context, Super Bowl 50 took place on February 7, 2016.","February 7, 2016",0.867,False,faithful,2.72
+llama3,squad,1024,3,strict,What year was Super Bowl 50?,"According to the provided context, Super Bowl 50 was played on February 7, 2016.",2015,0.7844,False,faithful,2.25
+llama3,squad,1024,3,strict,What team was the AFC champion?,The answer is: Denver Broncos.,Denver Broncos,0.8254,False,faithful,3.25
+llama3,squad,1024,3,strict,What team was the NFC champion?,The Carolina Panthers were the National Football Conference (NFC) champion.,Carolina Panthers,0.7569,False,faithful,3.49
+llama3,squad,1024,3,strict,Who won Super Bowl 50?,The Denver Broncos won Super Bowl 50.,Denver Broncos,0.9247,False,faithful,3.46
+llama3,squad,1024,3,strict,Super Bowl 50 determined the NFL champion for what season?,The answer is: the 2015 season.,2015,0.7723,False,faithful,2.06
+llama3,squad,1024,3,strict,Which team won Super Bowl 50.,The Denver Broncos won Super Bowl 50.,Denver Broncos,0.9247,False,faithful,1.3
+llama3,squad,1024,3,strict,Where was Super Bowl 50 held?,"According to the provided context, Super Bowl 50 was held at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California.","Santa Clara, California.",0.9858,False,faithful,3.29
+llama3,squad,1024,3,strict,The name of the NFL championship game is?,"According to the provided context, the name of the NFL championship game is ""Super Bowl"".",Super Bowl,0.8353,False,faithful,2.74
+llama3,squad,1024,3,strict,What 2015 NFL team one the AFC playoff?,"According to the provided context, the Broncos finished the regular season with a 12–4 record and earned home-field advantage throughout the AFC playoffs. Therefore, the answer is:
+
+The Denver Broncos won the AFC playoff in 2015.",Denver Broncos,0.7535,False,faithful,5.0
+llama3,squad,1024,3,strict,Which Carolina Panthers player was named Most Valuable Player?,I cannot find this information in the provided context.,Cam Newton,0.5531,False,faithful,4.53
+llama3,squad,1024,3,strict,How many appearances have the Denver Broncos made in the Super Bowl?,"According to the provided context, the answer is: ""eight""",8,0.8288,False,faithful,3.0
+llama3,squad,1024,3,strict,What year was the Carolina Panthers franchise founded?,I cannot find this information in the provided context.,1995,0.5531,False,faithful,3.78
+llama3,squad,1024,3,strict,What team did the Panthers defeat?,The Panthers defeated the Seattle Seahawks in the divisional round and the Arizona Cardinals in the NFC Championship Game.,Arizona Cardinals,0.9021,False,faithful,4.49
+llama3,squad,1024,3,strict,Who did the Broncos prevent from going to the Super Bowl?,"Based on the provided context, I can answer that the Broncos prevented the New England Patriots from going to the Super Bowl.",New England Patriots,0.4846,True,hallucinated,3.0
+llama3,squad,1024,3,strict,Who did the Panthers beat in the NFC Championship Game?,"The Panthers beat the Arizona Cardinals in the NFC Championship Game, 49–15.",Arizona Cardinals,0.9561,False,faithful,4.15
+llama3,squad,1024,3,strict,Who lost to the Broncos in the AFC Championship?,The New England Patriots lost to the Broncos in the AFC Championship Game.,New England Patriots,0.8419,False,faithful,2.57
+llama3,squad,1024,3,strict,Who were the defending Super Bowl champions?,I cannot find this information in the provided context.,New England Patriots,0.5531,False,faithful,3.42
+llama3,squad,1024,3,strict,How many teams have been in the Super Bowl eight times?,"According to the provided context, four teams have made eight appearances in the Super Bowl: the Denver Broncos, New England Patriots, Dallas Cowboys, and Pittsburgh Steelers.",four,0.8604,False,faithful,4.91
+llama3,squad,1024,3,strict,Who was this season's NFL MVP?,"According to the provided context, Cam Newton, the Panthers' quarterback, was named the NFL Most Valuable Player (MVP) after finishing the regular season with a 15–1 record.",Cam Newton,0.7435,False,faithful,5.97
+llama3,squad,1024,3,strict,What was the win/loss ratio in 2015 for the Carolina Panthers during their regular season?,The answer is 15-1.,15–1,0.5037,False,faithful,3.88
+llama3,squad,1024,3,strict,Which Carolina Panthers team member was picked as the team's MVP in 2015? ,I cannot find this information in the provided context.,Cam Newton,0.5531,False,faithful,3.57
+llama3,squad,1024,3,strict,What were the win/loss game stats for the Denver Bronco's regular season in 2015?,"According to the provided context, the Broncos finished the regular season with a record of 12-4.",12–4,0.7284,False,faithful,3.74
+llama3,squad,1024,3,strict,How many teams have played in the Super Bowl eight times?,"According to the provided context, four teams have made eight appearances in the Super Bowl:
+
+1. Denver Broncos
+2. New England Patriots
+3. Dallas Cowboys
+4. Pittsburgh Steelers",4,0.6346,False,faithful,5.23
+llama3,squad,1024,3,strict,Which team did not get a chance to defend their Super Bowl XLIX win in Super Bowl 50?,The New England Patriots did not get a chance to defend their Super Bowl XLIX win in Super Bowl 50.,New England Patriots,0.5369,False,faithful,4.31
+llama3,squad,1024,3,strict,Who is the quarterback for the Panthers?,Pro Bowl quarterback Cam Newton.,Cam Newton,0.661,False,faithful,3.7
+llama3,squad,1024,3,strict,Who did Carolina beat in the NFC championship game?,"The Carolina Panthers beat the Arizona Cardinals in the NFC Championship Game, 49–15.",Arizona Cardinals,0.9604,False,faithful,4.34
+llama3,squad,1024,3,strict,How many times have the Panthers been in the Super Bowl?,"According to the provided context, the Carolina Panthers have been in the Super Bowl twice. Their first appearance was in Super Bowl XXXVIII and their second appearance was in Super Bowl 50.",2,0.4804,True,hallucinated,5.33
+llama3,squad,1024,3,strict,Who did Denver beat in the AFC championship?,"According to the provided context, Denver beat the New England Patriots in the AFC Championship Game, 20–18.",New England Patriots,0.986,False,faithful,3.71
+llama3,squad,1024,3,strict,Who was the Most Valuable Player for the 2015 NFL season?,Cam Newton was named the NFL Most Valuable Player (MVP) for the 2015 NFL season.,Cam Newton,0.8025,False,faithful,5.41
+llama3,squad,1024,3,strict,Who did Denver beat in the 2015 AFC Championship game?,"According to the provided context, Denver beat the New England Patriots in the 2015 AFC Championship game.",New England Patriots,0.9783,False,faithful,3.42
+llama3,squad,1024,3,strict,Who did the Carolina Panthers beat in the 2015 NFC Championship game?,The Carolina Panthers beat the Arizona Cardinals in the 2015 NFC Championship game.,Arizona Cardinals,0.97,False,faithful,4.02
+llama3,squad,1024,3,strict,Who was the 2015 NFL MVP?,"According to the provided context, Cam Newton, the quarterback of the Panthers, was named the NFL Most Valuable Player (MVP) in 2015.",Cam Newton,0.793,False,faithful,5.08
+llama3,squad,1024,3,strict,Who did the Panthers beat to become the NFC champs?,The Panthers beat the Arizona Cardinals 49–15 in the NFC Championship Game.,Arizona Cardinals,0.9747,False,faithful,4.14
+llama3,squad,1024,3,strict,What year did the Carolina Panthers form?,I cannot find this information in the provided context.,1995.,0.5531,False,faithful,3.61
+llama3,squad,1024,3,strict,Who was the Super Bowl 50 MVP?,"According to the provided context, Von Miller, a Denver linebacker, was named Super Bowl MVP.",Von Miller,0.7779,False,faithful,3.28
+llama3,squad,1024,3,strict,How many fumbles did Von Miller force in Super Bowl 50?,"According to the provided context, Von Miller forced two forced fumbles in Super Bowl 50.",2,0.7724,False,faithful,4.29
+llama3,squad,1024,3,strict,Which team held the scoring lead throughout the entire game?,"Based on the provided context, I can answer that:
+
+The Broncos held the scoring lead throughout the entire game. The score marked the first time in the entire postseason that Carolina was facing a deficit, and the Panthers never managed to take the lead back.",Broncos,0.547,False,faithful,5.69
+llama3,squad,1024,3,strict,Which Denver linebacker was named Super Bowl MVP?,Von Miller was named Super Bowl MVP.,linebacker Von Miller,0.7053,False,faithful,3.69
+llama3,squad,1024,3,strict,How many solo tackles did Von Miller make at Super Bowl 50?,"According to the provided context, Von Miller was named Super Bowl MVP, recording five solo tackles, 2½ sacks, and two forced fumbles. Therefore, the answer is: 5.",five solo tackles,0.6321,False,faithful,2.44
+llama3,squad,1024,3,strict,Who was limited by Denver's defense?,I cannot find this information in the provided context.,Newton was limited by Denver's defense,0.5531,False,faithful,3.48
+llama3,squad,1024,3,strict,How many times was Cam Newton sacked?,"According to the provided context, Cam Newton was sacked twice:
+
+1. Von Miller knocked the ball out of Newton's hands while sacking him, and Malik Jackson recovered it in the end zone for a Broncos touchdown.
+2. DeMarcus Ware sacked Newton as time expired in the half.
+
+I cannot find any other instances of Cam Newton being sacked in the provided context.",seven,0.7044,False,faithful,7.0
+llama3,squad,1024,3,strict,Who won the Super Bowl MVP?,"According to the provided context, Von Miller, a Denver linebacker, was named Super Bowl MVP.",Von Miller,0.7779,False,faithful,3.72
+llama3,squad,1024,3,strict,How many turnovers did Cam Newton have?,I cannot find this information in the provided context.,three,0.5531,False,faithful,4.61
+llama3,squad,1024,3,strict,How many fumbles did Von Miller force?,"According to the provided context, Von Miller forced 2 forced fumbles.",two,0.8457,False,faithful,1.77
+llama3,squad,1024,3,strict,Who was given the esteemed status of MVP for Super Bowl 50?,"According to the provided context, Von Miller, a Denver linebacker, was named Super Bowl MVP.",Von Miller,0.7779,False,faithful,3.62
+llama3,squad,1024,3,strict,What position does Von Miller play for the Denver Broncos?,Pro Bowl linebacker.,linebacker,0.6262,False,faithful,4.39
+llama3,squad,1024,3,strict,What was the number of solo tackles that Von Miller had in Super Bowl 50?,"According to the provided context, Von Miller recorded ""five solo tackles"" in Super Bowl 50.",5,0.8571,False,faithful,3.6
+llama3,squad,1024,3,strict,How many forced fumbles did Von Miller have during the Super Bowl 50 game?,"According to the provided context, Von Miller had 2 forced fumbles during the Super Bowl 50 game.",2,0.6802,False,faithful,3.57
+llama3,squad,1024,3,strict,Who won the MVP for the Super Bowl?,"According to the provided context, Von Miller, a Denver linebacker, was named Super Bowl MVP.",Von Miller,0.7779,False,faithful,3.36
+llama3,squad,1024,3,strict,How many tackles did Von Miller get during the game?,I cannot find this information in the provided context.,5,0.5531,False,faithful,4.14
+llama3,squad,1024,3,strict,How many times was Cam Newton sacked in Super Bowl 50?,"According to the provided context, Cam Newton was sacked seven times by Denver's defense.",seven,0.9309,False,faithful,3.98
+llama3,squad,1024,3,strict,How many times did the Denver defense force Newton into turnovers?,"According to the provided context, the Denver defense forced Newton into three turnovers, including a fumble which they recovered for a touchdown.",three,0.8076,False,faithful,4.67
+llama3,squad,1024,3,strict,Which Newton turnover resulted in seven points for Denver?,I cannot find this information in the provided context.,a fumble,0.5531,False,faithful,4.04
+llama3,squad,1024,3,strict,Who was the Most Valuable Player of Super Bowl 50?,"According to the provided context, Cam Newton, the quarterback of the Panthers, was named the NFL Most Valuable Player (MVP) at the end of the regular season. However, it does not specify who won MVP honors for Super Bowl 50 specifically. Therefore, I cannot find this information in the provided context.",Von Miller,0.761,False,faithful,5.52
+llama3,squad,1024,3,strict,What position does Von Miller play?,I cannot find this information in the provided context.,linebacker,0.5531,False,faithful,3.07
+llama3,squad,1024,3,strict,How many times was the Panthers' quarterback sacked?,"According to the provided context, Cam Newton was sacked once by DeMarcus Ware as time expired in the first half.",seven,0.8026,False,faithful,4.76
+llama3,squad,1024,3,strict,How many times did the Broncos cause turnovers in the game?,"According to the provided context, the Broncos caused three turnovers in the game, including a fumble which they recovered for a touchdown.",three,0.6131,False,faithful,3.16
+llama3,squad,1024,3,strict,What Denver player caused two fumbles for the Panthers?,"According to the provided context, Von Miller and Darian Stewart are the Denver players who caused fumbles for the Panthers.",Von Miller,0.8313,False,faithful,5.33
+llama3,squad,1024,3,strict,How many tackles did Von Miller accomlish by himself in the game?,I cannot find this information in the provided context.,five,0.5531,False,faithful,4.73
+llama3,squad,1024,3,strict,Which network broadcasted Super Bowl 50 in the U.S.?,"According to the provided context, CBS broadcasted Super Bowl 50 in the U.S.",CBS,0.8184,False,faithful,4.23
+llama3,squad,1024,3,strict,What was the average cost for a 30 second commercial during Super Bowl 50?,"According to the provided context, the average cost for a 30-second commercial during Super Bowl 50 was $5 million.",$5 million,0.5781,False,faithful,4.35
+llama3,squad,1024,3,strict,Which group headlined the Super Bowl 50 halftime show?,"According to the provided context, the British rock group Coldplay headlined the Super Bowl 50 halftime show.",Coldplay,0.9357,False,faithful,3.37
+llama3,squad,1024,3,strict,Which performers joined the headliner during the Super Bowl 50 halftime show?,"According to the provided context, Beyoncé and Bruno Mars joined the headliner, Coldplay, during the Super Bowl 50 halftime show.",Beyoncé and Bruno Mars,0.9176,False,faithful,2.47
+llama3,squad,1024,3,strict,At which Super Bowl did Beyonce headline the halftime show?,"According to the provided context, Beyoncé headlined the Super Bowl XLVII halftime show.",Super Bowl XLVII,0.8934,False,faithful,3.31
+llama3,squad,1024,3,strict,Who was the broadcaster for Super Bowl 50 in the United States?,"The broadcaster for Super Bowl 50 in the United States was CBS. The network's lead broadcast team of Jim Nantz and Phil Simms called the contest, with Tracy Wolfson and Evan Washburn on the sidelines.",CBS,0.7345,False,faithful,4.73
+llama3,squad,1024,3,strict,What was the average cost of a 30-second commercial?,"According to the provided context, the average cost of a 30-second commercial during Super Bowl 50 was $5 million.",$5 million,0.5964,False,faithful,4.07
+llama3,squad,1024,3,strict,What halftime performer previously headlined Super Bowl XLVII?,"According to the provided context, Beyoncé previously headlined the Super Bowl XLVII halftime show.",Beyoncé,0.7794,False,faithful,3.47
+llama3,squad,1024,3,strict,What halftime performer previously headlined Super Bowl XLVIII?,"According to the context, Bruno Mars, who headlined the Super Bowl XLVIII halftime show, performed during the Super Bowl 50 halftime show.",Bruno Mars,0.8951,False,faithful,1.67
+llama3,squad,1024,3,strict,Who was the main performer at this year's halftime show?,The main performer at this year's halftime show was Coldplay.,Coldplay,0.6971,False,faithful,0.96
+llama3,squad,1024,3,strict,Which network broadcasted the 50th Super Bowl game? ,"According to the provided context, the network that broadcasted the 50th Super Bowl game was CBS.",CBS,0.7954,False,faithful,4.06
+llama3,squad,1024,3,strict,What was the average cost for a TV ad lasting 30 seconds during Super Bowl 50?,"According to the provided context, CBS set the base rate for a 30-second advertisement at $5 million.",$5 million,0.6664,False,faithful,4.33
+llama3,squad,1024,3,strict,Who was the male singer who performed as a special guest during Super Bowl 50?,"According to the provided context, the male singers who performed as special guests during Super Bowl 50 were Bruno Mars and Mark Ronson.",Bruno Mars,0.922,False,faithful,3.96
+llama3,squad,1024,3,strict,What ranking does the Super Bowl 50 halftime show have on the list of most watched TV broadcasts?,"According to the provided context, the Super Bowl 50 halftime show was the ""third-most watched U.S. broadcast ever.""",third,0.7957,False,faithful,4.43
+llama3,squad,1024,3,strict,What station aired the Super Bowl?,"According to the provided context, CBS aired the Super Bowl.",CBS,0.8379,False,faithful,2.76
+llama3,squad,1024,3,strict,How much money did a 1/2 minute commercial cost?,"I cannot find this information in the provided context. The context only mentions the price of a 30-second commercial, which was $5 million. It does not provide information about the cost of a 1/2 minute (or any other length) commercial.",$5 million,0.6152,False,faithful,6.86
+llama3,squad,1024,3,strict,What band headlined half-time during Super Bowl 50?,"According to the provided context, the British rock group Coldplay headlined the Super Bowl 50 halftime show.",Coldplay,0.9357,False,faithful,5.25
+llama3,squad,1024,3,strict,What two artists came out with Coldplay during the half-time show?,"According to the context, Beyoncé and Bruno Mars were the special guest performers who came out with Coldplay during the halftime show.",Beyoncé and Bruno Mars,0.9637,False,faithful,4.1
+llama3,squad,1024,3,strict,Who broadcast the Super Bowl on TV?,"According to the provided context, CBS broadcast the Super Bowl on TV.",CBS,0.9332,False,faithful,4.27
+llama3,squad,1024,3,strict,Who headlined the halftime show for Super Bowl 50?,"According to the provided context, the British rock group Coldplay headlined the halftime show for Super Bowl 50.",Coldplay,0.8954,False,faithful,4.7

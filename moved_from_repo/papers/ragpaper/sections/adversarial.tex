@@ -1,0 +1,126 @@
+\section{Adversarial Coherence Failures}
+\label{sec:adversarial}
+
+The naturalistic experiments in §\ref{sec:paradox} demonstrate the
+coherence paradox \emph{in distribution}, but leave open the question of
+whether our coherence signals can isolate \emph{specific} fragmentation
+patterns. This section reports an adversarial probe with hand-authored
+cases that target three failure modes individually.
+
+\subsection{Case design}
+
+We construct 40 cases organized into four subsets of 10 (data files in
+\texttt{data/adversarial/}; loader at \texttt{src/adversarial\_cases.py}).
+Each case is a tuple \texttt{(case\_id, category, question, passages,
+expected\_failure\_mode, notes)}. The categories are:
+
+\begin{description}
+  \item[\textsc{Disjoint}] passages that are individually relevant to the
+        question but drawn from disjoint topical neighborhoods. Example:
+        ``\emph{What is the primary cause of myocardial infarction?}''
+        with passages alternating between cardiology, ICU triage, and
+        sports-medicine recovery — every passage matches a query keyword
+        but none cohere.
+  \item[\textsc{Contradict}] relevant passages containing contradictory
+        claims about the queried entity (e.g., one passage says aspirin
+        reduces stroke risk, another says it raises bleeding risk in the
+        same cohort). Faithfulness here cannot be measured against a
+        single ground-truth answer; the targeted signal is the
+        contradiction itself.
+  \item[\textsc{Drift}] passages where the topic gradually drifts from a
+        near-miss neighbor to the true target (``capital of Australia''
+        passages drifting Sydney → Canberra → ACT museums). The model
+        must locate the answer in only one of the passages.
+  \item[\textsc{Control}] matched coherent controls: passages that share
+        the same surface topic and length distribution but do not exhibit
+        any of the three pathologies. These calibrate signal magnitudes
+        against a non-adversarial baseline.
+\end{description}
+
+The cases are released as part of ContextCoherenceBench
+(§\ref{sec:benchmark}) so other researchers can probe their own
+retrievers.
+
+\subsection{Detection task}
+
+For each case we compute eight retrieval-time signals:
+
+\begin{enumerate}
+  \item \texttt{mean\_query\_chunk\_sim} (negated)
+  \item \texttt{ccs} (negated)
+  \item \texttt{mean\_jaccard} (negated)
+  \item \texttt{embedding\_variance}
+  \item \texttt{retrieval\_entropy}
+  \item \texttt{sim\_spread}
+  \item \texttt{nli\_pairwise\_mean}
+  \item \texttt{nli\_pairwise\_max}
+  \item \texttt{nli\_pairwise\_frac\_hi}
+\end{enumerate}
+
+Signals (1)--(3) are negated so that, for every signal, ``higher = more
+adversarial'' under the predicted direction. We then report binary
+detection AUC (sklearn \texttt{roc\_auc\_score}) for each (signal,
+adversarial-category-vs-control) pair.
+
+The \texttt{nli\_pairwise\_*} family is new in this paper:
+\texttt{compute\_nli\_pairwise} (in \texttt{src/coherence\_metrics.py})
+runs the same NLI cross-encoder used for faithfulness scoring on every
+pair of retrieved passages and reports the mean / max contradiction
+score and the fraction of pairs above a contradiction threshold. This
+gives the \textsc{Contradict} category a signal that pure embedding-space
+metrics cannot capture by construction.
+
+\subsection{Preregistered analysis plan}
+\label{sec:adv_plan}
+
+As with the mechanistic probe, we publish the analysis plan before the
+numbers so that the scoring cannot drift to fit the signal panel. The
+final reporting unit is a single table of detection AUCs: three rows
+(one per adversarial category: \textsc{disjoint}, \textsc{contradict},
+\textsc{drift}) and eight columns (one per coherence signal listed
+above). Each cell is the AUC for separating the row's adversarial subset
+from the matched \textsc{control} subset using that column's signal;
+cells at AUC $\geq 0.80$ are marked in bold. We also report 95\%
+bootstrap confidence intervals over the 10 paired items per row so a
+reader can tell high-but-noisy cells apart from high-and-stable ones.
+
+We commit in advance to two success conditions: (i) at least one
+coherence signal achieves AUC $\geq 0.80$ on each of the three
+adversarial categories, and (ii) the best signal for \textsc{contradict}
+comes from the \texttt{nli\_pairwise\_*} family rather than from any
+embedding-space signal, which is the dissociation the category was
+designed to produce. A uniform AUC table — whether uniformly high,
+uniformly low, or uniformly middling — counts as a failed dissociation
+and will be reported as written.
+
+\subsection{What we expect to learn}
+
+The categories were designed to dissociate signals:
+
+\begin{itemize}
+  \item \textsc{Disjoint} should be detected best by
+        \texttt{ccs}, \texttt{mean\_jaccard}, and \texttt{embedding\_variance}
+        — embedding-space coherence is exactly what fragments under
+        topical disjointness.
+  \item \textsc{Contradict} should be detected by
+        \texttt{nli\_pairwise\_*} and only weakly by embedding signals,
+        because contradictory passages can be \emph{embedded} close
+        together (similar topic, opposite claim).
+  \item \textsc{Drift} should be detected by \texttt{sim\_spread} and
+        \texttt{retrieval\_entropy} — drift produces a long tail of
+        decreasing similarity rather than a homogeneous low-similarity
+        set.
+\end{itemize}
+
+If this dissociation holds empirically, the practical implication is that
+no single coherence signal is sufficient: a deployment monitor wanting to
+catch all three failure modes needs at least one embedding-space signal
+\emph{and} an NLI-pair signal. We therefore recommend treating the
+signals as a panel rather than a scalar.
+
+\paragraph{Honest negative case.} If the AUC table shows uniformly high
+or uniformly low values across categories and signals, the probe has
+failed to distinguish failure modes — either the cases are too easy / too
+hard, or our signal panel is collinear in practice. We will report this
+outcome as written if it occurs; the probe is informative under both
+results.

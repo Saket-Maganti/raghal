@@ -1,0 +1,137 @@
+% =====================================================================
+%  papers/paper_neurips/main.tex
+%  NeurIPS 2026 main paper.
+%
+%  NeurIPS 2026 page limit: 9 content pages (figures and tables count).
+%  References, optional technical appendix, and the paper checklist do
+%  NOT count toward the 9-page limit.
+%
+%  This single file produces the official submitted PDF, which contains
+%  in order: (1) the main paper, (2) the optional technical appendix
+%  (we keep the appendix in supplement.tex and concatenate at submission
+%  build time), and (3) the NeurIPS paper checklist (checklist.tex,
+%  required: missing checklist = desk reject).
+%
+%  STYLE NOTE FOR SUBMITTING AUTHORS
+%  ---------------------------------
+%  The official `neurips_2026.sty` was not yet published on the NeurIPS
+%  submission portal at build time. This source therefore uses a
+%  10pt single-column academic layout that approximates the official
+%  NeurIPS style (5.5in x 9in text area at 10pt/11pt). Before final
+%  submission the submitting author MUST:
+%    1. download the official neurips_2026.sty from the NeurIPS portal
+%    2. drop it into this directory
+%    3. replace the geometry/fontenc/lmodern preamble lines below with
+%         \usepackage[main]{neurips_2026}
+%    4. recompile and re-verify the 9-page content limit (this body
+%       was tightened to fit within 9 pages under the official spec)
+%
+%  Build:
+%      cd papers/paper_neurips
+%      pdflatex main && bibtex main && pdflatex main && pdflatex main
+% =====================================================================
+
+\documentclass[10pt]{article}                  % NeurIPS submission body size
+
+% NeurIPS-style geometry: 5.5 x 9 in text area approximates neurips_2026
+\usepackage[letterpaper, margin=1.0in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+\theoremstyle{plain}
+\newtheorem{proposition}{Proposition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}
+\newtheorem{lemma}{Lemma}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\usepackage{graphicx}
+\graphicspath{{figures/}}
+\usepackage{tikz}
+\usepackage{subcaption}
+\usepackage{xcolor}
+\usepackage{natbib}
+\setlength{\bibsep}{1pt plus 1pt minus 0pt}    % tight bib for 10-page limit
+% Render refs in smaller font to fit unlimited-refs zone
+\renewcommand{\bibfont}{\footnotesize}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\usepackage{placeins}
+\usepackage{float}
+
+\usetikzlibrary{arrows.meta, positioning, shapes.geometric, calc, fit, decorations.pathmorphing}
+\emergencystretch=2em
+\tolerance=400
+
+\renewcommand{\descriptionlabel}[1]{%
+  \hspace\labelsep\normalfont #1}
+
+% --- Tight float spacing for 10-page body ---
+\setcounter{topnumber}{3}
+\setcounter{bottomnumber}{2}
+\setcounter{totalnumber}{4}
+\renewcommand{\topfraction}{0.92}
+\renewcommand{\bottomfraction}{0.85}
+\renewcommand{\textfraction}{0.05}
+\renewcommand{\floatpagefraction}{0.7}
+\renewcommand{\dbltopfraction}{0.92}
+\renewcommand{\dblfloatpagefraction}{0.7}
+\setlength{\textfloatsep}{6pt plus 1pt minus 1pt}
+\setlength{\floatsep}{6pt plus 1pt minus 1pt}
+\setlength{\intextsep}{6pt plus 1pt minus 1pt}
+\raggedbottom
+
+% --- NeurIPS submission watermark in the top-right corner ---
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\small\textit{NeurIPS 2026 submission}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+\title{\Large\bfseries ControlledRAG: A Seven-Axis Reporting Standard\\[0.2em]
+for RAG Faithfulness Claims}
+
+% Default to anonymous for double-blind review.
+\newif\ifanonymous
+\anonymoustrue        % set false only after acceptance
+
+\ifanonymous
+  \author{Anonymous Authors\\\textit{Submission under double-blind review}}
+\else
+  \author{Author information omitted for review.}
+\fi
+
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\input{sections/controlledrag_abstract}
+\end{abstract}
+
+% ---------------------------------------------------------------------
+% 9-page main body (NeurIPS limit). NO appendix in this file.
+% ---------------------------------------------------------------------
+\input{sections/controlledrag_main}
+
+{\footnotesize
+\bibliographystyle{plainnat}
+\bibliography{references}
+}
+
+% NeurIPS 2026 paper checklist (mandatory; must follow references and
+% any technical appendix in the same submitted PDF). Does not count
+% toward the 9-page main-paper limit.
+\input{checklist}
+
+\end{document}

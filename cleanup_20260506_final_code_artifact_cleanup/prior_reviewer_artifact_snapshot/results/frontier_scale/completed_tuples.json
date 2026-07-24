@@ -1,0 +1,6 @@
+{
+  "squad__llama-3.3-70b": true,
+  "squad__gpt-oss-120b": true,
+  "pubmedqa__llama-3.3-70b": true,
+  "pubmedqa__gpt-oss-120b": true
+}

@@ -1,0 +1,101 @@
+dataset,query_index,question,ground_truth,faithfulness_score,is_hallucination,retrieval_latency_ms,generation_latency_ms,total_latency_ms,n_leaves_returned,n_summaries_returned
+hotpotqa,0,What was Iqbal F. Qadir on when he participated in an attack on a radar station located on western shore of the Okhamandal Peninsula?,flotilla,0.719,False,20.165,2842.777,2862.942,2,1
+hotpotqa,1,When did the park at which Tivolis Koncertsal is located open?,15 August 1843,0.3631,True,15.323,1703.738,1719.061,2,1
+hotpotqa,2,What is the shared country of ancestry between Art Laboe and Scout Tufankjian?,Armenian,0.5856,False,18.359,1682.481,1700.84,2,1
+hotpotqa,3,The school in which the Wilmslow Show is held is designated as what?,Centre of Excellence,0.7354,False,15.011,1467.448,1482.459,2,1
+hotpotqa,4,Who will Billy Howle be seen opposite in the upcoming British drama film directed by Dominic Cooke?,Saoirse Ronan,0.519,False,15.098,927.627,942.725,2,1
+hotpotqa,5,"What animated movie, starring Danny Devito, featured music written and produced by Kool Kojak?",The Lorax,0.6684,False,11.071,2016.226,2027.297,2,1
+hotpotqa,6,"Out of the actors who have played the role of Luc Deveraux in the Universal Soldier franchise, which actor has also starred in the movies Holby City, Doctor Strange, the Bourne Ultimatum and Zero Dark Thirty?",Scott Adkins,0.495,True,11.652,3044.993,3056.645,2,1
+hotpotqa,7,Tommy's Honour was a drama film that included the actor who found success with what 2016 BBC miniseries?,War & Peace,0.5229,False,11.142,2021.656,2032.798,2,1
+hotpotqa,8,"Which rock band chose its name by drawing it out of a hat, Switchfoot or Midnight Oil?",Midnight Oil,0.4497,True,16.415,804.214,820.629,2,1
+hotpotqa,9,"""Tunak"", is a bhangra/pop love song by an artist born in which year ?",1967,0.9136,False,14.05,1489.387,1503.438,2,1
+hotpotqa,10,Which Captain launched the attack which led to more casualties than any other incident in the war fought between the settlers of the nascent colony of New Netherland and the native Lenape population?,Captain John Underhill,0.6458,False,12.708,3258.734,3271.442,2,1
+hotpotqa,11,In which film did Emilio Estevez star in in the same year as Nightmares,The Outsiders,0.3976,True,11.082,1960.144,1971.226,2,1
+hotpotqa,12,What was the concept of the business Eric S .Pistorius worked for after being an attorney?,to ensure wide visibility and understanding of cases in a region,0.582,False,12.3,2764.051,2776.351,2,1
+hotpotqa,13,Which port city lies approximately 25 km north of the Lingnan Fine Arts Museum?,Keelung,0.7128,False,11.48,1843.512,1854.992,2,1
+hotpotqa,14,Has Stefan Edberg won more events than  Édouard Roger-Vasselin?,yes,0.4625,True,15.97,2430.405,2446.375,2,1
+hotpotqa,15," Jason Regler, stated that he had the idea for the flashing wristbands during a song built around which instrument ?",an organ,0.4125,True,12.113,2388.422,2400.535,2,1
+hotpotqa,16, The Soul of Buddha is a 1918 American silent romance film shot in a borough  that is the western terminus of what?,the George Washington Bridge,0.4631,True,11.671,2638.08,2649.751,2,1
+hotpotqa,17,"Which ""Blackzilians"" fighter is currently competing in the Middleweight division of Ultimate Fighting Championship?",Vitor Belfort,0.7272,False,11.428,1780.428,1791.856,2,1
+hotpotqa,18,"Were was the Mexican state after which there is Villa Unión, Sinaloa located? ",tip of the Baja California,0.632,False,12.022,1407.862,1419.884,2,1
+hotpotqa,19,"What language, traditionally written with the ancient Libyco-Berber script, is closely related to the Tumzabt and Teggargrent languages?",The Tugurt language,0.775,False,13.525,3097.315,3110.84,2,1
+hotpotqa,20,Who is the fictional head of a British Secret Service division and for which a one-time missionary was the inspiration for?,Q,0.7123,False,11.862,2194.109,2205.971,2,1
+hotpotqa,21,Phillip Pullman's book set in a parallel universe featuring a character named Lyra Belacqua was put into audio in what year?,2002,0.5359,False,15.347,1892.313,1907.66,2,1
+hotpotqa,22,Who directed the second film in a British series of action comedy film parodying the James Bond secret agent genre with comedy similar to Rowan Atkinson's Mr. Bean character?,Oliver Parker,0.5826,False,14.86,2541.935,2556.795,2,1
+hotpotqa,23,George Gershwin is an American Composer and Judith Weir is a composer from which country?,a British composer,0.5829,False,11.348,1373.836,1385.184,2,1
+hotpotqa,24,What Was the name of Juan Manuel Márquez's  WBO champion holding younger brother?,Rafael Márquez,0.7223,False,11.671,2114.028,2125.698,2,1
+hotpotqa,25,The Running Man Brothers is a South Korean pop duo. Kim Jong-kook is one member and he is from what country?,South Korea,0.5936,False,12.426,913.262,925.689,2,1
+hotpotqa,26,Ruddles Brewery is owned by a pub retailer and brewer based in what city?,Bury St Edmunds,0.7475,False,12.566,1955.477,1968.043,2,1
+hotpotqa,27,The creator of the Lisa Simpson character was born in what year?,1954,0.8237,False,11.542,1608.659,1620.201,2,1
+hotpotqa,28,Where is the international airport which Eagle Aviation wet lease operations were based in located ,France.,0.7657,False,11.768,1868.965,1880.733,2,1
+hotpotqa,29,What occupation was shared by David Yates and Pietro Germi?,director,0.4896,True,12.414,2218.613,2231.027,2,1
+hotpotqa,30,Who sang lead vocals on the Oasis hit single which had an acoustic debut in drummer Tony McCarroll's last concert ? ,Noel Gallagher,0.5968,False,16.909,3069.839,3086.748,2,1
+hotpotqa,31,"St. John's College, Belize offers an education in a tradition in which what three subjects were the core?","Grammar, logic, and rhetoric",0.5934,False,14.158,3513.865,3528.024,2,1
+hotpotqa,32,Robert Earl Holding owned an oil company that was originally founded by who?,Harry F. Sinclair,0.47,True,11.628,2410.567,2422.195,2,1
+hotpotqa,33,"What instrument does Duff McKagan play on Macy Gray's single, Kissed It?",bass,0.9388,False,14.278,1691.349,1705.627,2,1
+hotpotqa,34,Which American popular music and country music singer recorded J. D. Souther song ,Linda Maria Ronstadt,0.6977,False,12.828,2008.052,2020.88,2,1
+hotpotqa,35,In which six Western European territories have Celtic languages or cultural traits survived?,"Brittany, Cornwall, Ireland, Isle of Man, Scotland and Wales.",0.6724,False,10.999,1608.169,1619.168,2,1
+hotpotqa,36,Who is known for composing  American Beauty: Original Motion Picture Score and many other film scores?,Thomas Montgomery Newman,0.5279,False,11.567,705.638,717.206,2,1
+hotpotqa,37,What film was written and directed by Joby Harold with music written by Samuel Sim?,Awake,0.6146,False,11.907,2015.899,2027.807,2,1
+hotpotqa,38,"What group did Carlene LeFevre and Rich LeFevre form in Brooklyn, New York City?","the ""First Family of Competitive Eating""",0.7077,False,11.436,2360.522,2371.958,2,1
+hotpotqa,39,"Michaël Llodra of France, called ""the best volleyer on tour"", defeated Juan Martín del Potro a professional of what nationality?",Argentinian,1.0,False,19.981,1065.379,1085.36,2,1
+hotpotqa,40,What company produced the 1978 movie based on a book written by a radio playwright and children's book author born in 1900?,Walt Disney Productions,0.69,False,15.094,2413.433,2428.526,2,1
+hotpotqa,41,How many students were enrolled in American professional bowler Chris Barnes' high school in the 2010-2011 school year?,"1,840 students",0.5531,False,11.06,1330.257,1341.316,2,1
+hotpotqa,42,"Which canal, Miami Canal or Dundee Canal, also supplies hydro-power and water for manufacturing?",Dundee Canal,0.6977,False,15.65,1776.752,1792.401,2,1
+hotpotqa,43,What is the middle name of the singer who recorded Would You Like to Take a Walk? with Louis Armstrong in 1951,Jane,0.5897,False,11.915,2379.337,2391.252,2,1
+hotpotqa,44,What was Richard Connell's best known work The Hounds of Zaroff also published as?,The Most Dangerous Game,0.7559,False,14.084,1083.003,1097.087,2,1
+hotpotqa,45,The Stone Book series is set in what country? ,North West England,0.6551,False,12.393,1563.964,1576.356,2,1
+hotpotqa,46,Are both Jonathan Marray and Wayne Black British?,no,0.5531,False,11.47,937.223,948.693,2,1
+hotpotqa,47,Sporobolus and Zea are in the same what?,family,0.7163,False,12.041,1391.029,1403.07,2,1
+hotpotqa,48,Are Mick Jagger and Brett Scallions both musicians?,yes,0.531,False,11.523,1612.927,1624.449,2,1
+hotpotqa,49,"When did Senator Ted Kennedy helped dedicate a new room at the location to his maternal grandfather, John F. Fitzgerald.",St. Patrick's Day in 1988,0.7106,False,18.941,2163.182,2182.123,2,1
+hotpotqa,50,Which 8-year old star of an epistolary novel turned musical by Alice Walker also voiced Frankie Greene in a Disney series?,Diamond White,0.6276,False,12.574,2190.32,2202.894,2,1
+hotpotqa,51,"Which music group has the most members, DC Talk, or Manchester Orchestra?",Manchester Orchestra,0.5825,False,14.682,4254.387,4269.069,2,1
+hotpotqa,52,Orlando Brown is best known for his role as 3J Winslow in an American sitcom that was a spin-off of what?,Perfect Strangers,0.6462,False,12.629,1851.529,1864.157,2,1
+hotpotqa,53,"The Livesey Hal War Memorial commemorates the fallen of which war, that had over 60 million casualties?",World War II,0.5657,False,13.034,1993.777,2006.81,2,1
+hotpotqa,54,"Where was the air-cooled version of a weapon system used on the HMAS ""Narani"" found?",World War I fighter aircraft.,0.6935,False,15.728,2312.327,2328.056,2,1
+hotpotqa,55,"BMW X5 is a mid-size version that was produced alongside which newer model, produced in 2009?",BMW X6,0.5118,False,11.968,2651.603,2663.57,2,1
+hotpotqa,56,Did Minersville School District v. Gobitis and Gravel v. United States occur in the same decade?,no,0.5608,False,14.176,2504.703,2518.879,2,1
+hotpotqa,57,Yakuza Kiwami is a remake of the first video game in what video game series that is an open world action-adventure beat 'em up video game franchise?,Yakuza,0.7258,False,13.185,2670.518,2683.702,2,1
+hotpotqa,58, The 1919 Mississippi gubernatorial election Incumbent Democrat was a master of what?,filibuster,0.7347,False,11.35,1912.388,1923.738,2,1
+hotpotqa,59,"Are both genera Silphium and Heliotropium, genera of flowering plants ?",yes,0.7664,False,17.926,1314.566,1332.492,2,1
+hotpotqa,60,Mexican Indignados Movement is a response to a war also known as?,Mexican War on Drugs,0.5071,False,13.117,1766.87,1779.987,2,1
+hotpotqa,61,Are Harry Everett Smith and Vladimir Danilevich both from Russia?,no,0.5531,False,14.354,1057.418,1071.772,2,1
+hotpotqa,62,"Robert Allen ""Bob"" Case is best known for inspiring the naming of which initial area of low pressure developed off Atlantic Canada on October 29? ",1991 Perfect Storm,0.394,True,13.644,2175.753,2189.397,2,1
+hotpotqa,63,What film adaptation do both Jerome Bernard and Ira Lewis have in common?,Chinese Coffee,0.4791,True,13.851,1541.457,1555.309,2,1
+hotpotqa,64,"Who has more scope of profession, Bob Fosse or Angelina Jolie?",Robert Louis Fosse,0.5042,False,14.766,3790.531,3805.297,2,1
+hotpotqa,65,What bitcoin start up featured Erik Voorhees as Director of Marketing?,BitInstant,0.55,False,13.746,1047.004,1060.75,2,1
+hotpotqa,66,"What is the birth name of the disc jockey that notably used Mark Wirtz's song ""A Touch of Velvet, A Sting of Brass"" on their Radio Caroline show?",David Patrick Griffin,0.4665,True,10.139,3145.27,3155.409,2,1
+hotpotqa,67,Who did Neleus of Scepsis study under in addition to Theophrastus in the Peripatetic school?,Aristotle,0.6296,False,14.457,1959.408,1973.865,2,1
+hotpotqa,68,In what basketball position does the brother of Saulius Kuzminskas play?,small forward,0.698,False,9.665,1466.985,1476.65,2,1
+hotpotqa,69,Which gaming console was both Yakuza Kiwami and Yakuza 0 released on?,PlayStation 4,0.4017,True,17.018,1119.463,1136.481,2,1
+hotpotqa,70,Which film was released first out of The Hunchback of Notre Dame and Miracle of the White Stallions?,Miracle of the White Stallions,0.4879,True,12.759,3947.725,3960.484,2,1
+hotpotqa,71,"What was built near the residential neighborhood of Ramsay, Calgary in 1983?",Scotiabank Saddledome,0.6801,False,12.582,1851.209,1863.791,2,1
+hotpotqa,72,Tommy Swerdlow co-wrote the screenplay of what film directed by Jon Turteltaub?,Cool Runnings,0.3952,True,11.785,1993.394,2005.179,2,1
+hotpotqa,73,Of what county is the city 7 miles east of Trace State Park the seat?,"Lee County, Mississippi",0.7537,False,11.334,1865.688,1877.022,2,1
+hotpotqa,74,"Works by Hanna Leena Kristiina Varis are part of a collection in a museum that houses approximately 65,000 what?",drawings,0.864,False,18.34,1332.62,1350.96,2,1
+hotpotqa,75,"Jennifer Gordon received a bachelor of arts degree from which women's liberal arts college in Cambridge, Massachusetts, and functioned as a female coordinate institution for the all-male Harvard College?",Radcliffe College,0.729,False,13.196,1096.572,1109.767,2,1
+hotpotqa,76,In which U.S. state are MedStar Georgetown University Hospital and Providence Hospital?,District of Columbia,0.4685,True,14.206,2215.236,2229.442,2,1
+hotpotqa,77,"The subject of McGinniss' 1983 book ""Fatal Vision"" was convicted of murder in what year?",1979,0.6031,False,11.637,2163.152,2174.789,2,1
+hotpotqa,78,"Which American Director doubled as a choreographer also, Stanley Kubrick or Kenny Ortega?","Kenneth John ""Kenny"" Ortega (born April 18, 1950) is an American producer, director, and choreographer.",0.7259,False,11.516,2009.05,2020.567,2,1
+hotpotqa,79,Lou Pai is a former executive of an energy company that went bankrupt in what year?,2001,0.6188,False,12.904,1851.926,1864.83,2,1
+hotpotqa,80,What religion is the composer for India's first science fiction film series?,Hindi,0.6951,False,12.756,1881.516,1894.272,2,1
+hotpotqa,81,Which battle took place first out of the Battle of the Ch'ongch'on River and the Battle of Tarawa?,The Battle of Tarawa,0.5897,False,11.46,4796.827,4808.287,2,1
+hotpotqa,82,What year was the brother of this first round draft pick by the Washington Redskins drafted?,2003,0.6071,False,12.857,1918.078,1930.935,2,1
+hotpotqa,83,Which them park is host to both the Back to the Future Rid and The Simpsons Ride?,Universal Studios Florida,0.4992,True,13.768,2263.168,2276.937,2,1
+hotpotqa,84,"When was the band who composited ""Discipline"" formed?",1968,0.4757,True,14.369,2068.377,2082.746,2,1
+hotpotqa,85,Did the Sandy and Beaver Canal remain operational until a later date than the Los Angeles Aqueduct?,no,0.612,False,11.781,2065.477,2077.258,2,1
+hotpotqa,86,Who directed the 1940 film in which John Arledge appeared?,John Ford,0.7314,False,13.397,2064.21,2077.607,2,1
+hotpotqa,87,Are Mirpur University of Science and Technology and University of Debrecen both Universities located outside of the United States?,yes,0.9271,False,13.282,1808.341,1821.623,2,1
+hotpotqa,88,"which American actress, singer, and songwriter too the tour of  I Stand tour ",Idina Kim Menzel,0.5367,False,22.195,722.459,744.654,2,1
+hotpotqa,89,Grounded Vindaloop is an episode from an animated television series that had this many episodes in its eighteenth season?,ten episodes,0.5851,False,11.772,2839.299,2851.071,2,1
+hotpotqa,90,How many consecutive years had the Serie A been comprised of 18 teams when Hernan Crespo got injured?,15th consecutive,0.3472,True,12.11,2577.248,2589.358,2,1
+hotpotqa,91,What British made dance competition television series franchise did Claudia Albertario appear on?,"""Dancing on Ice"" around the world",0.6338,False,15.125,1827.97,1843.095,2,1
+hotpotqa,92,How many Grammy awards were won by an album named after the Joni Mitchell song from Love Actually?,two Grammy awards,0.5771,False,17.016,1787.205,1804.221,2,1
+hotpotqa,93,"What award does Crystal Palace F.C. present, first won by John McCormick and most recently by Wilfried Zaha?",Player of the Year,0.7761,False,13.719,1759.815,1773.534,2,1
+hotpotqa,94,"Which was published more frequently, Popular Science or Girlfriends?",Girlfriends,0.4661,True,13.334,2177.87,2191.205,2,1
+hotpotqa,95,"In what year did the actor who starred in the TV Land original series ""The Soul Man"" host the Black Movie Awards?",2005,0.7411,False,11.333,2035.947,2047.279,2,1
+hotpotqa,96,The Robey-Peters Gun-Carrier was built at a commuter village with at population of what at the 2001 census?,"4,530",0.7004,False,11.695,2680.98,2692.675,2,1
+hotpotqa,97,"This American is best known for his work on such Disney animated films as ""Beauty and the Beast"" and a 1996 American animated musical drama film whose plot centers on who?",Quasimodo,0.6943,False,11.639,1732.582,1744.221,2,1
+hotpotqa,98,In what part of England is John Folwes' country house located?,"West Dorset, South West England.",0.6004,False,14.821,1569.248,1584.069,2,1
+hotpotqa,99,Richard Münch portrayed the German general who served in what capacity during WWII in the 1970 movie Patton?,Oberkommando der Wehrmacht,0.3406,True,10.639,2491.705,2502.344,2,1

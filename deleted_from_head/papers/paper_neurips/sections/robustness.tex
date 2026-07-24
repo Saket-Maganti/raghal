@@ -1,0 +1,100 @@
+\section{Robustness}
+\label{sec:robustness}
+
+The paradox could plausibly be an artifact of any of seven design
+choices we held fixed. We test all seven. The full per-experiment
+tables are in the longform-paper appendix; this section presents the
+distilled summary.
+
+\begin{table}[!htb]
+\centering
+\caption{Seven robustness checks. Each row reports the headline
+$\Delta_{\textrm{paradox}} = \textrm{faith}_{\textrm{base}} -
+\textrm{faith}_{\textrm{v1}}$ and the HCPC-v$2$ recovery
+$\Delta_{\textrm{recovery}} = \textrm{faith}_{\textrm{v2}} -
+\textrm{faith}_{\textrm{v1}}$. The check is whether the result holds
+in the direction the coherence account predicts.}
+\label{tab:robustness_summary}
+\footnotesize
+\begin{tabular}{lllc}
+\toprule
+Axis & Variation tested & Headline finding & Verdict \\
+\midrule
+Multi-seed              & $3$ random seeds                    & SQuAD: $0.069 \pm 0.004$ ($17\times$ signal/$\sigma$)               & $\checkmark$ stable \\
+Hierarchical (RAPTOR)   & RAPTOR-$2$L vs HCPC-v$2$            & HCPC wins $2/3$ datasets, ties on hallucination                    & $\checkmark$ competitive \\
+Prompt template         & strict / cot / concise / expert     & ANOVA $p=0.83$ (SQuAD); $p=0.29$ (PubMedQA)                          & $\checkmark$ no main effect \\
+Sub-chunk size          & $\{128, 256, 512\}$ tokens          & paradox visible in $3/3$ cells per dataset                          & $\checkmark$ stable \\
+Frontier scale          & $7$B $\to$ $70$B $\to$ $120$B      & SQuAD/$70$B exactly reproduces $7$B magnitude ($+0.100$)            & $\checkmark$ persists \\
+Top-$k$                 & $k \in \{2, 3, 5, 10\}$             & paradox \emph{grows} with $k$ on SQuAD ($0.063 \to 0.124$)          & $\checkmark$ predicted direction \\
+Reranker family         & MiniLM-L$6$/L$12$/BAAI-bge          & paradox in all $6$ cells; recovery in all $6$                       & $\checkmark$ reranker-agnostic \\
+Quantization            & Q$4$/Q$5$/Q$8$                      & SQuAD paradox $\in [0.088, 0.095]$; PubMedQA $\approx 0$ at all     & $\checkmark$ quant-agnostic \\
+Temperature             & $T \in \{0, 0.3, 0.7, 1.0\}$        & paradox \emph{amplifies} with $T$ on SQuAD ($0.065 \to 0.115$)      & $\checkmark$ predicted direction \\
+Long-form generation    & QASPER + MS-MARCO                   & paradox does not generalise; HCPC still cuts unsupported-rate $-67\%$ & \dag{} scope-qualified \\
+Generic retrieval noise & inject $0$/$1$/$K$ off-topic        & SQuAD noise slope $> $ paradox magnitude                            & \dag{} qualitatively distinct only \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+We highlight the four non-obvious entries.
+
+\paragraph{Top-$k$ amplification.}
+\input{figures/topk_table}
+The coherence account predicts that increasing $k$ adds relevance
+breadth (more matches) but spreads the retrieved set across more
+disparate sources, so coherence should fall and the paradox should
+grow. The full top-$k$ table confirms exactly this on SQuAD: the
+paradox more than doubles from $k{=}2$ ($+0.063$) to $k{=}5$
+($+0.124$). The bare CCS gate's recovery (\texttt{gate rec.}) tracks
+HCPC-v$2$'s recovery within $\pm 0.05$ at every $k$, supporting the
+claim that the gate decision is the active ingredient.
+
+\paragraph{Frontier-scale persistence.}
+The reviewer concern that the paradox is a small-model artifact is
+addressed by holding the retrieval stack fixed and swapping only the
+generator (Llama-$3.3$-$70$B and GPT-OSS-$120$B via Groq). On SQuAD,
+Llama-$3.3$-$70$B exactly reproduces the $7$B-Mistral paradox magnitude
+($0.100$ vs $0.100$), and GPT-OSS-$120$B still shows a positive
+$+0.030$ paradox. PubMedQA paradox magnitudes shrink at scale
+($0.005$/$0.013$ at $70$B/$120$B vs $0.025$ at $7$B), which the
+coherence account predicts: stronger parametric priors are a more
+plausible substitute for fragmented biomedical evidence than for
+short-span SQuAD answers. The full table is in
+the longform-paper appendix.
+
+\paragraph{Temperature amplification.}
+A novel finding from the temperature sweep:
+$\textrm{faith}_{\textrm{base}} - \textrm{faith}_{\textrm{v1}}$ on
+SQuAD grows monotonically with $T$, from $+0.065$ at $T=0$ to
+$+0.115$ at $T=1.0$. The coherence interpretation is that higher $T$
+samples more aggressively from the parametric prior, and a fragmented
+context (HCPC-v$1$) gives the prior more room to operate. PubMedQA
+paradox magnitudes stay flat across $T$ (consistent with the
+domain-mismatch ceiling story). HCPC-v$2$ recovery is robust across
+all $T$ and is largest at $T=0.7$ on SQuAD ($+0.130$).
+
+\paragraph{Cross-validation: model self-confidence tracks CCS.}
+We ask the same generator to rate its confidence ($0$--$100$) in the
+answer it just produced, given the retrieved context. Pooling SQuAD +
+PubMedQA ($n=60$), self-confidence is significantly correlated with
+CCS: Pearson $r=0.36$ ($p=0.005$), Spearman $\rho=0.48$ ($p=0.0001$).
+The model's internal coherence-tracking signal aligns with the
+external diagnostic. Per-dataset correlations are weaker ($n=30$
+each), so the result is to be read as a pooled cross-validation rather
+than a strong per-dataset claim. Details in
+the longform-paper appendix.
+
+clusters are tight under baseline, scatter under HCPC-v$1$, and
+recover under HCPC-v$2$.
+
+\paragraph{Honest qualifications.}
+Two robustness checks do \emph{not} land where the strongest version of
+our claim would predict, and we report both transparently. First, the
+paradox does not generalise to long-form generation on QASPER or
+MS-MARCO; HCPC-v$2$ instead reduces the unsupported-claim rate
+($-67\%$ on MS-MARCO). Second, on SQuAD the noise-injection slope
+exceeds the paradox magnitude, so we cannot claim the paradox is
+\emph{magnitudinally larger} than generic retrieval noise --- only
+that it is sign-distinct from noise on the multi-hop and biomedical
+regimes. Both qualifications are discussed in
+\S\ref{sec:discussion} and elaborated in
+the longform-paper appendix.

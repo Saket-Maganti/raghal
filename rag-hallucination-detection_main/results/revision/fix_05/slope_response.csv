@@ -1,0 +1,4 @@
+condition,faith_slope_per_noise_rate,sim_slope_per_noise_rate,drop_at_full_noise
+random_noise,-0.068592,-0.481011,0.051845
+coherent_uninformative_noise,-0.043224,-0.112631,0.041729
+hcpc_v1_refinement,,,0.001206

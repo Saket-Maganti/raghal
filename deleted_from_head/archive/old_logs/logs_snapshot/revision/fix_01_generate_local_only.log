@@ -1,0 +1,114 @@
+[NLI] Loading hallucination detector: cross-encoder/nli-deberta-v3-base
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|██████████| 202/202 [00:00<00:00, 9222.16it/s]
+[1mDebertaV2ForSequenceClassification LOAD REPORT[0m from: cross-encoder/nli-deberta-v3-base
+Key                             | Status     |  | 
+--------------------------------+------------+--+-
+deberta.embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+[NLI] Running on: mps
+[Fix01/generate] saved 280 rows after 2/200 pairs
+[Fix01/generate] saved 280 rows after 4/200 pairs
+[Fix01/generate] saved 280 rows after 6/200 pairs
+[Fix01/generate] saved 280 rows after 8/200 pairs
+[Fix01/generate] saved 280 rows after 10/200 pairs
+[Fix01/generate] saved 280 rows after 12/200 pairs
+[Fix01/generate] saved 280 rows after 14/200 pairs
+[Fix01/generate] saved 280 rows after 16/200 pairs
+[Fix01/generate] saved 280 rows after 18/200 pairs
+[Fix01/generate] saved 280 rows after 20/200 pairs
+[Fix01/generate] saved 280 rows after 22/200 pairs
+[Fix01/generate] saved 280 rows after 24/200 pairs
+[Fix01/generate] saved 280 rows after 26/200 pairs
+[Fix01/generate] saved 280 rows after 28/200 pairs
+[Fix01/generate] saved 280 rows after 30/200 pairs
+[Fix01/generate] saved 280 rows after 32/200 pairs
+[Fix01/generate] saved 280 rows after 34/200 pairs
+[Fix01/generate] saved 280 rows after 36/200 pairs
+[Fix01/generate] saved 280 rows after 38/200 pairs
+[Fix01/generate] saved 280 rows after 40/200 pairs
+[Fix01/generate] saved 280 rows after 42/200 pairs
+[Fix01/generate] saved 280 rows after 44/200 pairs
+[Fix01/generate] saved 280 rows after 46/200 pairs
+[Fix01/generate] saved 280 rows after 48/200 pairs
+[Fix01/generate] saved 280 rows after 50/200 pairs
+[Fix01/generate] saved 280 rows after 52/200 pairs
+[Fix01/generate] saved 280 rows after 54/200 pairs
+[Fix01/generate] saved 280 rows after 56/200 pairs
+[Fix01/generate] saved 280 rows after 58/200 pairs
+[Fix01/generate] saved 280 rows after 60/200 pairs
+[Fix01/generate] saved 280 rows after 62/200 pairs
+[Fix01/generate] saved 280 rows after 64/200 pairs
+[Fix01/generate] saved 280 rows after 66/200 pairs
+[Fix01/generate] saved 280 rows after 68/200 pairs
+[Fix01/generate] saved 280 rows after 70/200 pairs
+[Fix01/generate] saved 280 rows after 72/200 pairs
+[Fix01/generate] saved 280 rows after 74/200 pairs
+[Fix01/generate] saved 280 rows after 76/200 pairs
+[Fix01/generate] saved 280 rows after 78/200 pairs
+[Fix01/generate] saved 280 rows after 80/200 pairs
+[Fix01/generate] saved 280 rows after 82/200 pairs
+[Fix01/generate] saved 280 rows after 84/200 pairs
+[Fix01/generate] saved 280 rows after 86/200 pairs
+[Fix01/generate] saved 280 rows after 88/200 pairs
+[Fix01/generate] saved 280 rows after 90/200 pairs
+[Fix01/generate] saved 280 rows after 92/200 pairs
+[Fix01/generate] saved 280 rows after 94/200 pairs
+[Fix01/generate] saved 280 rows after 96/200 pairs
+[Fix01/generate] saved 280 rows after 98/200 pairs
+[Fix01/generate] saved 280 rows after 100/200 pairs
+[Fix01/generate] saved 280 rows after 102/200 pairs
+[Fix01/generate] saved 280 rows after 104/200 pairs
+[Fix01/generate] saved 280 rows after 106/200 pairs
+[Fix01/generate] saved 280 rows after 108/200 pairs
+[Fix01/generate] saved 280 rows after 110/200 pairs
+[Fix01/generate] saved 280 rows after 112/200 pairs
+[Fix01/generate] saved 280 rows after 114/200 pairs
+[Fix01/generate] saved 280 rows after 116/200 pairs
+[Fix01/generate] saved 280 rows after 118/200 pairs
+[Fix01/generate] saved 280 rows after 120/200 pairs
+[Fix01/generate] saved 280 rows after 122/200 pairs
+[Fix01/generate] saved 280 rows after 124/200 pairs
+[Fix01/generate] saved 280 rows after 126/200 pairs
+[Fix01/generate] saved 280 rows after 128/200 pairs
+[Fix01/generate] saved 280 rows after 130/200 pairs
+[Fix01/generate] saved 280 rows after 132/200 pairs
+[Fix01/generate] saved 280 rows after 134/200 pairs
+[Fix01/generate] saved 280 rows after 136/200 pairs
+[Fix01/generate] saved 280 rows after 138/200 pairs
+[Fix01/generate] saved 280 rows after 140/200 pairs
+[Fix01/generate] saved 284 rows after 142/200 pairs
+[Fix01/generate] saved 288 rows after 144/200 pairs
+[Fix01/generate] saved 292 rows after 146/200 pairs
+[Fix01/generate] saved 296 rows after 148/200 pairs
+[Fix01/generate] saved 300 rows after 150/200 pairs
+[Fix01/generate] saved 304 rows after 152/200 pairs
+[Fix01/generate] saved 308 rows after 154/200 pairs
+[Fix01/generate] saved 312 rows after 156/200 pairs
+[Fix01/generate] saved 316 rows after 158/200 pairs
+[Fix01/generate] saved 320 rows after 160/200 pairs
+[Fix01/generate] saved 324 rows after 162/200 pairs
+[Fix01/generate] saved 328 rows after 164/200 pairs
+[Fix01/generate] saved 332 rows after 166/200 pairs
+[Fix01/generate] saved 336 rows after 168/200 pairs
+[Fix01/generate] saved 340 rows after 170/200 pairs
+[Fix01/generate] saved 344 rows after 172/200 pairs
+[Fix01/generate] saved 348 rows after 174/200 pairs
+[Fix01/generate] saved 352 rows after 176/200 pairs
+[Fix01/generate] saved 356 rows after 178/200 pairs
+[Fix01/generate] saved 360 rows after 180/200 pairs
+[Fix01/generate] saved 364 rows after 182/200 pairs
+[Fix01/generate] saved 368 rows after 184/200 pairs
+[Fix01/generate] saved 372 rows after 186/200 pairs
+[Fix01/generate] saved 376 rows after 188/200 pairs
+[Fix01/generate] saved 380 rows after 190/200 pairs
+[Fix01/generate] saved 384 rows after 192/200 pairs
+[Fix01/generate] saved 388 rows after 194/200 pairs
+[Fix01/generate] saved 392 rows after 196/200 pairs
+[Fix01/generate] saved 396 rows after 198/200 pairs
+[Fix01/generate] saved 400 rows after 200/200 pairs
+[Fix01/generate] wrote 400 rows in 871.3s
+[Fix01] generated rows: 400
+dataset  n_pairs  mean_faith_high  mean_faith_low  mean_diff_high_minus_low  wilcoxon_stat  wilcoxon_p_greater  cohens_dz  boot_ci95_lo  boot_ci95_hi  hallucination_rate_high  hallucination_rate_low  matched_odds_ratio_low_vs_high  discordant_low_only  discordant_high_only  mean_similarity_delta_high_minus_low  max_abs_similarity_delta  similarity_wilcoxon_stat  similarity_wilcoxon_p_two_sided  h1_supported
+  squad      200         0.636195        0.638587                 -0.002392         8638.5            0.628268  -0.017086     -0.021651      0.016819                    0.165                    0.09                        0.387755                    9                    24                               0.00211                  0.018512                    7067.0                         0.000273         False

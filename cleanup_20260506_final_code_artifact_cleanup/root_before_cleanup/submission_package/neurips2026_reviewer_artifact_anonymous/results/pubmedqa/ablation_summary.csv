@@ -1,0 +1,13 @@
+dataset,chunk_size,top_k,prompt_strategy,nli_faithfulness,hallucination_rate,n_samples
+pubmedqa,512,3,cot,0.6196,0.1333,30
+pubmedqa,1024,3,cot,0.6167,0.1,30
+pubmedqa,512,3,strict,0.6028,0.1667,30
+pubmedqa,1024,3,strict,0.5963,0.2,30
+pubmedqa,512,5,cot,0.5906,0.1333,30
+pubmedqa,1024,5,cot,0.5881,0.1333,30
+pubmedqa,1024,5,strict,0.5849,0.1667,30
+pubmedqa,512,5,strict,0.5844,0.2,30
+pubmedqa,256,3,cot,0.5802,0.2,30
+pubmedqa,256,5,cot,0.5636,0.2667,30
+pubmedqa,256,3,strict,0.5591,0.3,30
+pubmedqa,256,5,strict,0.5585,0.3,30

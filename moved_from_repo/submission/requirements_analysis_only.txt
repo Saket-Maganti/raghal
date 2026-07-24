@@ -1,0 +1,5 @@
+# Minimum dependencies to verify the human-eval and audit numbers from
+# frozen CSVs. No paid APIs, no Ollama, no GPU required.
+numpy>=1.26.0
+pandas>=2.2.0
+scipy>=1.12.0

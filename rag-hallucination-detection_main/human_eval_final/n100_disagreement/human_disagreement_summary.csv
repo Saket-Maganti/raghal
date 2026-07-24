@@ -1,0 +1,10 @@
+metric,value
+total_rows,100
+rater1_labeled,100
+rater2_labeled,100
+adjudicated_labeled,100
+rater_disagreements,12
+binary_eval_rows,100
+adjudicated_hallucinated_count,26
+adjudicated_unclear_count,0
+adjudicated_faithful_count,74

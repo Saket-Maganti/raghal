@@ -1,0 +1,4 @@
+dataset,n,pearson_r,pearson_p,spearman_rho,spearman_p
+__all__,60,0.36,0.0047,0.4815,0.0001
+pubmedqa,30,0.0664,0.7273,0.0323,0.8654
+squad,30,0.2563,0.1716,0.1295,0.4953

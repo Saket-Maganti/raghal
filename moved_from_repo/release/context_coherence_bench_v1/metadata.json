@@ -1,0 +1,106 @@
+{
+  "name": "ContextCoherenceBench",
+  "version": "v1",
+  "packaged_at": "2026-04-24T11:03:55.388465Z",
+  "subsets": [
+    {
+      "kind": "adversarial_coherence",
+      "files": [
+        {
+          "src": "data/adversarial/disjoint.jsonl",
+          "dst": "release/context_coherence_bench_v1/adversarial/disjoint.jsonl",
+          "bytes": 15676,
+          "sha256": "da073bb03061c9b0bdc4a41314f1a17c00a883d9b7750824d14b8e75294aa373",
+          "category": "disjoint",
+          "n_cases": 10
+        },
+        {
+          "src": "data/adversarial/contradict.jsonl",
+          "dst": "release/context_coherence_bench_v1/adversarial/contradict.jsonl",
+          "bytes": 16366,
+          "sha256": "a8119d9f27f96b952d8a01cd992f599d38c90c2669b93ee966bbf9b99e67f6df",
+          "category": "contradict",
+          "n_cases": 10
+        },
+        {
+          "src": "data/adversarial/drift.jsonl",
+          "dst": "release/context_coherence_bench_v1/adversarial/drift.jsonl",
+          "bytes": 13409,
+          "sha256": "e1c3e2f23723d2185e4da81f6c5fa10af1beeced157589115b8ebe02fd75059d",
+          "category": "drift",
+          "n_cases": 10
+        },
+        {
+          "src": "data/adversarial/control.jsonl",
+          "dst": "release/context_coherence_bench_v1/adversarial/control.jsonl",
+          "bytes": 13034,
+          "sha256": "00fd0e5747f2139e4283ecbe47491acffa40d84df4fede13840e40364d26ac61",
+          "category": "control",
+          "n_cases": 10
+        },
+        {
+          "src": "data/adversarial/README.md",
+          "dst": "release/context_coherence_bench_v1/adversarial/README.md",
+          "bytes": 2564,
+          "sha256": "30d041d1f70d2b3a43d7b00fcced2a1a2717ffcb58609072327ffcaec1e158af"
+        }
+      ],
+      "counts": {
+        "disjoint": 10,
+        "contradict": 10,
+        "drift": 10,
+        "control": 10
+      }
+    },
+    {
+      "kind": "coherence_paradox",
+      "files": [
+        {
+          "src": "results/multidataset/per_query.csv",
+          "dst": "release/context_coherence_bench_v1/coherence_paradox/per_query.csv",
+          "bytes": 250398,
+          "sha256": "39131522707d64ddea96522a519a6d7fe40da9b4d5eb684db82c93ccaf11a64f",
+          "n_rows": 630
+        },
+        {
+          "src": "results/multidataset/summary.csv",
+          "dst": "release/context_coherence_bench_v1/coherence_paradox/summary.csv",
+          "bytes": 1243,
+          "sha256": "a950afb48feef5ca881f406cb63569938944c7fc092a2d22b8164e7abbe3d09b"
+        }
+      ],
+      "n_queries": 630
+    },
+    {
+      "kind": "human_faithfulness",
+      "files": []
+    }
+  ],
+  "upstream_datasets": {
+    "squad": {
+      "license": "CC-BY-SA-4.0",
+      "url": "https://rajpurkar.github.io/SQuAD-explorer/"
+    },
+    "pubmedqa": {
+      "license": "MIT",
+      "url": "https://pubmedqa.github.io/"
+    },
+    "naturalqs": {
+      "license": "CC-BY-SA-3.0",
+      "url": "https://ai.google.com/research/NaturalQuestions"
+    },
+    "triviaqa": {
+      "license": "Apache-2.0",
+      "url": "http://nlp.cs.washington.edu/triviaqa/"
+    },
+    "hotpotqa": {
+      "license": "CC-BY-SA-4.0",
+      "url": "https://hotpotqa.github.io/"
+    },
+    "financebench": {
+      "license": "CC-BY-NC-4.0",
+      "url": "https://github.com/patronus-ai/financebench"
+    }
+  },
+  "paper_citation": "@inproceedings{maganti2026coherence,\n  title     = {When Retrieval Improvements Hurt: Context Coherence and\n               Faithfulness in Retrieval-Augmented Generation},\n  author    = {Maganti, Saket},\n  booktitle = {Proceedings of EMNLP / ACL 2026 (under review)},\n  year      = {2026},\n}"
+}

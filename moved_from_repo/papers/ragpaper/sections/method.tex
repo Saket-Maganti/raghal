@@ -1,0 +1,111 @@
+\section{Context Coherence Score and HCPC-v$2$}
+\label{sec:method}
+
+This section formalises the diagnostic and the deployment policy.
+Both are deliberately small.
+
+\subsection{Context Coherence Score (CCS)}
+\label{sec:method:ccs}
+
+Let $\mathcal{C} = \{c_1, \ldots, c_k\}$ denote the top-$k$ retrieved
+chunks for a query, and let $\mathbf{e}_i \in \mathbb{R}^d$ denote
+their L$2$-normalised embeddings. The Context Coherence Score is:
+
+\begin{equation}
+\textrm{CCS}(\mathcal{C}) \;=\;
+  \mu_{i<j}\!\bigl[\mathbf{e}_i \cdot \mathbf{e}_j\bigr]
+  \;-\;
+  \sigma_{i<j}\!\bigl[\mathbf{e}_i \cdot \mathbf{e}_j\bigr],
+\end{equation}
+
+where the mean and standard deviation are taken over the $\binom{k}{2}$
+off-diagonal pairwise cosine similarities. The subtraction term is
+load-bearing: a set with high mean similarity but high variance --- two
+tight sub-clusters joined by no bridge --- has the same mean as a set
+that is uniformly mid-similarity, and the latter is what the generator
+needs. CCS rewards the latter.
+
+CCS is well-defined for any $k \geq 2$, requires only the embeddings
+already produced by the retrieval step, runs in $O(k^2 d)$ time,
+and is generator-free. For $k = 3$ (our default) it is $3 d$
+floating-point operations per query --- negligible relative to the
+generator forward pass.
+
+\paragraph{Decision policy.}
+We treat CCS as a deployment-time gate. Given a similarity threshold
+$\tau \in [-1, 1]$, the bare CCS gate is:
+
+\begin{quote}\small\ttfamily
+docs, sims = retriever.retrieve(query)\\
+ccs = compute\_ccs(docs, embedder)\\
+if ccs $\geq$ tau:\\
+\hspace*{2em}return docs                       \# coherent — pass to generator\\
+else:\\
+\hspace*{2em}return refine(docs)               \# incoherent — apply HCPC-v1
+\end{quote}
+
+The bare CCS gate already recovers most of HCPC-v$2$'s gain
+(\S\ref{sec:robustness}, Table~\ref{tab:robustness_summary}). We deploy it as the
+\emph{decision policy}, and use HCPC-v$2$ as the implementation that
+adds two additional safeguards described next.
+
+\subsection{HCPC-v$2$: protected ranks $+$ sub-chunk merge-back}
+\label{sec:method:hcpc_v2}
+
+HCPC-v$2$ extends the bare gate with two additional rules tuned on
+small held-out sets:
+
+\paragraph{Rank-protected top-$k$.}
+Even when the gate decides to refine, the top-$2$ retrieved chunks
+(by raw query similarity) are \emph{never} touched. These are the
+chunks most likely to carry the answer span; refining them risks the
+exact failure mode the gate is meant to prevent.
+
+\paragraph{Sub-chunk merge-back.}
+Chunks that pass the gate-and-rank filter are subdivided into
+$256$-token sub-chunks, each rescored by the cross-encoder, and only
+the top sub-chunk per parent is retained. The result is that
+refinement, when it happens, replaces a passage with its most
+discriminating fragment rather than a fragment from elsewhere in the
+corpus. We sweep the sub-chunk size in $\{128, 256, 512\}$ and report
+sensitivity in \S\ref{sec:robustness}.
+
+\paragraph{Hyperparameters.}
+The coherence threshold $\tau = 0.50$ and the similarity / cross-encoder
+thresholds for the dual-AND gate ($\sigma_{\textrm{sim}} = 0.45$,
+$\sigma_{\textrm{ce}} = -0.20$) are tuned on a single held-out
+set of $50$ SQuAD queries and held fixed across every experiment in the
+paper. We sweep $\tau \in \{0.4, 0.5, 0.6\}$ in
+Appendix~\ref{app:hyperparams} and confirm the policy is stable
+across a $\pm 0.1$ window around the operating point.
+
+\paragraph{Cost.}
+Per query, HCPC-v$2$ adds: one CCS computation
+($O(k^2 d) = $ a few thousand FLOPs); when the gate fires, $O(k)$
+cross-encoder calls ($\sim 5$ ms each on CPU); the optional
+sub-chunk pass adds $O(k \cdot \textrm{n\_subs})$ further cross-encoder
+calls. Total marginal latency over the baseline pipeline: typically
+$<50$~ms, dominated by the cross-encoder. For comparison, Self-RAG's
+reflection-token mechanism roughly doubles end-to-end latency.
+
+\subsection{Why we ship the bare gate as the deployment policy}
+\label{sec:method:why_bare}
+
+A reasonable reviewer concern: HCPC-v$2$ has three moving parts
+(coherence gate, rank protection, sub-chunk merge-back), and the
+ablation should isolate which part is doing the work. We construct
+the bare CCS gate (CCSGate, no rank protection, no sub-chunks) and
+report its performance in the top-$k$ ablation
+(Table~\ref{tab:robustness_summary}, ``gate~rec.'' column). On SQuAD the bare gate
+recovers $0.067$ of HCPC-v$2$'s $0.062$ recovery at $k=2$ --- nearly
+identical. The protected-rank rule contributes the bulk of the
+remaining gain only at larger $k$ (where there are more low-rank
+chunks at risk), and the sub-chunk merge-back is a refinement-quality
+improvement rather than a safety mechanism.
+
+The implication: \textbf{the gate decision is the active ingredient.}
+We ship it as the recommended deployment policy under the name
+\texttt{CCSGate}; HCPC-v$2$ is the production implementation with the
+two extra safeguards for $k > 3$ deployments. Both are released as a
+$\texttt{pip install context-coherence}$ package and as a drop-in
+LangChain \texttt{CoherenceGatedRetriever}.

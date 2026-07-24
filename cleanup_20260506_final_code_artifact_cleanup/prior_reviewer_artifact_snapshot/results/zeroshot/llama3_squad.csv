@@ -1,0 +1,256 @@
+model,dataset,question,answer,ground_truth,faithfulness_score,is_hallucination,latency_s
+llama3,squad,Which NFL team represented the AFC at Super Bowl 50?,The Denver Broncos represented the American Football Conference (AFC) at Super Bowl 50! They defeated the Carolina Panthers 24-10 in the big game.,Denver Broncos,0.6231,False,7.77
+llama3,squad,Which NFL team represented the NFC at Super Bowl 50?,"The answer is: The Carolina Panthers! They represented the NFC in Super Bowl 50, which was played on February 7, 2016, and lost to the Denver Broncos.",Carolina Panthers,0.4211,True,1.95
+llama3,squad,Where did Super Bowl 50 take place?,"Super Bowl 50 took place at Levi's Stadium in Santa Clara, California. The game was played on February 7, 2016, and the Denver Broncos defeated the Carolina Panthers by a score of 24-10.","Santa Clara, California",0.8153,False,2.35
+llama3,squad,Which NFL team won Super Bowl 50?,"The Denver Broncos won Super Bowl 50! They defeated the Carolina Panthers by a score of 24-10 on February 7, 2016, at Levi's Stadium in Santa Clara, California.",Denver Broncos,0.8777,False,2.32
+llama3,squad,What color was used to emphasize the 50th anniversary of the Super Bowl?,"The color used to emphasize the 50th anniversary of the Super Bowl (Super Bowl 50) was gold. The NFL and CBS, the broadcast network for the game, incorporated a gold theme throughout the event's branding, including the official logo, merchandise, and on-field designs. This was done to commemorate the milestone anniversary of the Super Bowl, which has become an iconic part of American sports culture.",gold,0.8083,False,4.63
+llama3,squad,What was the theme of Super Bowl 50?,"Super Bowl 50, also known as Super Bowl L, was played on February 7, 2016, at Levi's Stadium in Santa Clara, California. The theme of Super Bowl 50 was ""Honoring Our Heroes."" This theme was chosen to recognize and honor the sacrifices made by military personnel, first responders, and other heroes who serve their communities.","""golden anniversary""",0.8977,False,3.78
+llama3,squad,What day was the game played on?,"I'm happy to help! However, I need more information from you. Which game are you referring to? Could you please provide me with more context or details about the game you're asking about? That way, I can give you a more accurate answer.","February 7, 2016",0.6832,False,2.84
+llama3,squad,What is the AFC short for?,"The AFC stands for American Football Conference. It's one of the two conferences in the National Football League (NFL), along with the NFC (National Football Conference).",American Football Conference,0.9575,False,1.86
+llama3,squad,What was the theme of Super Bowl 50?,"Super Bowl 50, also known as Super Bowl L, was played on February 7, 2016, at Levi's Stadium in Santa Clara, California. The theme of Super Bowl 50 was ""Honoring Our Heroes."" This theme was chosen to recognize and honor the sacrifices made by military personnel, first responders, and other heroes who serve their communities.","""golden anniversary""",0.8977,False,4.34
+llama3,squad,What does AFC stand for?,"AFC can stand for several things, depending on the context:
+
+1. American Football Conference: This is one of the two conferences in the National Football League (NFL) in the United States.
+2. Air Force Command: AFC is also an abbreviation used by some air forces to refer to their command or headquarters.
+3. Association of Flight Controllers: This is a professional organization for flight controllers and dispatchers.
+
+Without more context, it's difficult to determine which definition is most relevant. If you have any additional information or clarification about what you mean by AFC, I'd be happy to try and provide a more specific answer!",American Football Conference,0.6827,False,6.77
+llama3,squad,What day was the Super Bowl played on?,"I'd be happy to help!
+
+The date of the Super Bowl can vary depending on the year and the teams playing in it. However, I can provide you with some general information about the Super Bowl schedule.
+
+Typically, the Super Bowl is played on the first Sunday in February. This has been the case since 2002, when the NFL moved the game to a fixed date. Prior to that, the Super Bowl was played on the third Sunday in January.
+
+If you're looking for the specific date of a particular Super Bowl, I can try to help you with that as well!","February 7, 2016",0.6676,False,6.17
+llama3,squad,Who won Super Bowl 50?,"Super Bowl 50 was played on February 7, 2016, at Levi's Stadium in Santa Clara, California. The Denver Broncos defeated the Carolina Panthers by a score of 24-10. The MVP of the game was Von Miller, a linebacker for the Denver Broncos.",Denver Broncos,0.8682,False,3.02
+llama3,squad,What venue did Super Bowl 50 take place in?,"Super Bowl 50 took place at Levi's Stadium in Santa Clara, California. The game was played on February 7, 2016, and the Denver Broncos defeated the Carolina Panthers by a score of 24-10.",Levi's Stadium,0.8153,False,2.55
+llama3,squad,What city did Super Bowl 50 take place in?,"Super Bowl 50 took place in Santa Clara, California at Levi's Stadium on February 7, 2016. The Denver Broncos defeated the Carolina Panthers by a score of 24-10.",Santa Clara,0.9227,False,2.24
+llama3,squad,"If Roman numerals were used, what would Super Bowl 50 have been called?","If Roman numerals were used to label Super Bowls, Super Bowl 50 would be referred to as Super Bowl L.",Super Bowl L,0.4538,True,1.75
+llama3,squad,Super Bowl 50 decided the NFL champion for what season?,"Super Bowl 50 was played on February 7, 2016, and it decided the NFL champion for the 2015 season.",2015,0.5026,False,1.65
+llama3,squad,What year did the Denver Broncos secure a Super Bowl title for the third time?,"The Denver Broncos have secured three Super Bowl titles:
+
+1. Super Bowl XXXIII (33) in 1999
+2. Super Bowl 50 in 2016
+3. No, they haven't won a third one yet!",2015,0.5799,False,2.6
+llama3,squad,What city did Super Bowl 50 take place in?,"Super Bowl 50 took place in Santa Clara, California at Levi's Stadium on February 7, 2016. The Denver Broncos defeated the Carolina Panthers by a score of 24-10.",Santa Clara,0.9227,False,2.23
+llama3,squad,What stadium did Super Bowl 50 take place in?,"Super Bowl 50 took place at Levi's Stadium in Santa Clara, California. The game was played on February 7, 2016, and the Denver Broncos defeated the Carolina Panthers by a score of 24-10.",Levi's Stadium,0.8153,False,2.51
+llama3,squad,What was the final score of Super Bowl 50? ,"Super Bowl 50! That was a thrilling game!
+
+The final score of Super Bowl 50, which was played on February 7, 2016, at Levi's Stadium in Santa Clara, California, was:
+
+Denver Broncos - 24
+Carolina Panthers - 10
+
+The Denver Broncos won the game by a margin of 14 points.",24–10,0.5399,False,3.72
+llama3,squad,"What month, day and year did Super Bowl 50 take place? ","Super Bowl 50 took place on February 7, 2016.","February 7, 2016",0.9482,False,1.07
+llama3,squad,What year was Super Bowl 50?,"Super Bowl 50 was played on February 7, 2016. The Denver Broncos defeated the Carolina Panthers by a score of 24-10.",2015,0.9071,False,1.78
+llama3,squad,What team was the AFC champion?,"I'd be happy to help! However, I need more information to provide an accurate answer. There have been many seasons in the NFL and multiple teams that have won the AFC championship. Could you please specify which season or year you're referring to? That way, I can give you a more precise answer.",Denver Broncos,0.6167,False,3.27
+llama3,squad,What team was the NFC champion?,"I'd be happy to help! However, I need more information to provide an accurate answer. There have been many NFL seasons and playoff games, so could you please specify which season or year you're referring to? For example, ""What team was the NFC champion in Super Bowl XXXVI?"" or ""Who was the NFC champion in the 2019-2020 season?""",Carolina Panthers,0.7091,False,4.01
+llama3,squad,Who won Super Bowl 50?,"Super Bowl 50 was played on February 7, 2016, at Levi's Stadium in Santa Clara, California. The Denver Broncos defeated the Carolina Panthers by a score of 24-10. The MVP of the game was Von Miller, a linebacker for the Denver Broncos.",Denver Broncos,0.8682,False,3.01
+llama3,squad,Super Bowl 50 determined the NFL champion for what season?,"Super Bowl 50 was played on February 7, 2016, and it determined the NFL champion for the 2015 NFL season.",2015,0.5457,False,1.72
+llama3,squad,Which team won Super Bowl 50.,"Super Bowl 50 was played on February 7, 2016, at Levi's Stadium in Santa Clara, California. The Denver Broncos defeated the Carolina Panthers by a score of 24-10.",Denver Broncos,0.9221,False,2.27
+llama3,squad,Where was Super Bowl 50 held?,"Super Bowl 50 was held at Levi's Stadium in Santa Clara, California on February 7, 2016. The Denver Broncos defeated the Carolina Panthers by a score of 24-10.","Santa Clara, California.",0.9219,False,2.22
+llama3,squad,The name of the NFL championship game is?,The name of the NFL championship game is the Super Bowl!,Super Bowl,0.8352,False,0.93
+llama3,squad,What 2015 NFL team one the AFC playoff?,"The 2015 New England Patriots won the AFC Championship game, defeating the Indianapolis Colts 45-7 on January 18, 2015.",Denver Broncos,0.928,False,1.73
+llama3,squad,Which Carolina Panthers player was named Most Valuable Player?,The answer is Cam Newton! He was named the NFL MVP in 2015 while playing for the Carolina Panthers.,Cam Newton,0.6833,False,1.42
+llama3,squad,How many appearances have the Denver Broncos made in the Super Bowl?,"The Denver Broncos have appeared in eight Super Bowls:
+
+1. Super Bowl XII (1978): Lost to the Dallas Cowboys
+2. Super Bowl XXI (1987): Lost to the New York Giants
+3. Super Bowl XXII (1988): Won against the Washington Redskins
+4. Super Bowl XXIV (1990): Won against the San Francisco 49ers
+5. Super Bowl XXXIII (1999): Won against the Atlanta Falcons
+6. Super Bowl XLVIII (2014): Lost to the Seattle Seahawks
+7. Super Bowl 50 (2016): Won against the Carolina Panthers
+8. Super Bowl LIV (2020): Lost to the Kansas City Chiefs",8,0.7062,False,7.15
+llama3,squad,What year was the Carolina Panthers franchise founded?,"The Carolina Panthers franchise was founded in 1993. The team was established by Jerry Richardson, who was awarded an expansion franchise by the National Football League (NFL) on October 26, 1993. The Panthers began play in the 1995 NFL season.",1995,0.7259,False,2.89
+llama3,squad,What team did the Panthers defeat?,"I'm happy to help! However, I need more information to provide an accurate answer. There are several teams called the Panthers in different sports and leagues. Could you please specify which league or sport you're referring to? For example, are you talking about the NFL's Carolina Panthers, the Florida Panthers (NHL), or another team altogether?",Arizona Cardinals,0.7628,False,3.61
+llama3,squad,Who did the Broncos prevent from going to the Super Bowl?,"The Denver Broncos prevented the Atlanta Falcons from going to the Super Bowl by winning Super Bowl 50 (2016) with a score of 24-10. The Falcons were leading 28-3 in the third quarter, but the Broncos came back to win the game and prevent the Falcons from appearing in their first-ever Super Bowl.",New England Patriots,0.5908,False,3.51
+llama3,squad,Who did the Panthers beat in the NFC Championship Game?,"The San Francisco 49ers! The Carolina Panthers defeated them 34-31 in the 2000 NFC Championship Game, en route to their first Super Bowl appearance.",Arizona Cardinals,0.3079,True,1.95
+llama3,squad,Who lost to the Broncos in the AFC Championship?,"I can help you with that!
+
+The Denver Broncos have appeared in eight AFC Championship Games, and their opponents were:
+
+1. Pittsburgh Steelers (1986) - Lost
+2. Cleveland Browns (1987) - Won
+3. Buffalo Bills (1989) - Won
+4. Kansas City Chiefs (1997) - Won
+5. New York Jets (1998) - Won
+6. Oakland Raiders (2000) - Won
+7. New England Patriots (2005) - Lost
+8. New England Patriots (2013) - Won
+
+So, the answer to your question is: The New England Patriots (twice).",New England Patriots,0.6345,False,6.84
+llama3,squad,Who were the defending Super Bowl champions?,"As of my last update, the defending Super Bowl champions were the Kansas City Chiefs, who won Super Bowl LIV (54) in 2020 by defeating the San Francisco 49ers.",New England Patriots,0.6963,False,2.19
+llama3,squad,How many teams have been in the Super Bowl eight times?,"According to my knowledge, three teams have appeared in the Super Bowl eight times:
+
+1. New England Patriots (9 appearances, including 6 wins)
+2. Denver Broncos (8 appearances, including 3 wins)
+3. Dallas Cowboys (8 appearances, including 5 wins)
+
+Please note that these numbers are accurate as of Super Bowl LIV (2020) and may change over time.",four,0.5965,False,4.09
+llama3,squad,Who was this season's NFL MVP?,"According to my knowledge, the NFL MVP for the 2021-2022 season is Aaron Rodgers, quarterback of the Green Bay Packers. He won the award for the second time in his career, with a record-breaking performance that included 37 touchdown passes and only 4 interceptions.",Cam Newton,0.6799,False,3.05
+llama3,squad,What was the win/loss ratio in 2015 for the Carolina Panthers during their regular season?,"According to my knowledge, the Carolina Panthers had a regular season record of 15-1 in 2015. Therefore, their win-loss ratio for that year would be:
+
+Win/Loss Ratio = Wins / Losses
+= 15 / 1
+= 15:1",15–1,0.5437,False,3.0
+llama3,squad,Which Carolina Panthers team member was picked as the team's MVP in 2015? ,"According to my knowledge, Cam Newton was named the Carolina Panthers' MVP in 2015. He had an outstanding season that year, leading the team to a Super Bowl appearance and earning numerous accolades, including the NFL MVP award.",Cam Newton,0.6455,False,2.57
+llama3,squad,What were the win/loss game stats for the Denver Bronco's regular season in 2015?,"According to my knowledge, the Denver Broncos' regular season record in 2015 was:
+
+**Wins:** 12
+**Losses:** 4
+
+The Broncos finished first in the AFC West division and went on to win Super Bowl 50 that year.",12–4,0.4541,True,2.79
+llama3,squad,How many teams have played in the Super Bowl eight times?,"According to my knowledge, the New England Patriots and the Denver Broncos have each appeared in the Super Bowl eight times. The Patriots have won six of those appearances, while the Broncos have won three.",4,0.5192,False,2.16
+llama3,squad,Which team did not get a chance to defend their Super Bowl XLIX win in Super Bowl 50?,"The New England Patriots won Super Bowl XLIX (49) by defeating the Seattle Seahawks 28-24. Therefore, they got a chance to defend their title in Super Bowl 50.
+
+Super Bowl 50 was played on February 7, 2016, at Levi's Stadium in Santa Clara, California. The Denver Broncos defeated the Carolina Panthers 24-10.",New England Patriots,0.8593,False,3.87
+llama3,squad,Who is the quarterback for the Panthers?,"As of my knowledge cutoff, the starting quarterback for the Carolina Panthers in the National Football League (NFL) is Sam Darnold. However, please note that NFL rosters and positions can change frequently due to trades, injuries, or other factors, so this information may not be accurate at the time you're reading it.",Cam Newton,0.5854,False,3.41
+llama3,squad,Who did Carolina beat in the NFC championship game?,"According to my knowledge, the Carolina Panthers have appeared in three NFC Championship Games:
+
+1. 1996: Lost to the Green Bay Packers
+2. 2003: Defeated the Philadelphia Eagles (29-7)
+3. 2015: Defeated the Arizona Cardinals (49-15)
+
+So, if you're asking about one of those specific years, I can give you a more accurate answer!",Arizona Cardinals,0.5745,False,4.26
+llama3,squad,How many times have the Panthers been in the Super Bowl?,"The Carolina Panthers have appeared in two Super Bowls:
+
+1. Super Bowl XXXVIII (38) in 2003, where they lost to the New England Patriots.
+2. Super Bowl 50 in 2016, where they lost to the Denver Broncos.
+
+So, the answer is: 2 times!",2,0.6965,False,3.36
+llama3,squad,Who did Denver beat in the AFC championship?,"The Denver Broncos have appeared in several AFC Championship Games throughout their history. Here are some of the notable ones:
+
+* 1977: The Broncos defeated the Pittsburgh Steelers 34-21.
+* 1986: The Broncos defeated the Cleveland Browns 23-20.
+* 1987: The Broncos defeated the Cleveland Browns 38-31.
+* 1989: The Broncos defeated the Cleveland Browns 37-21.
+* 1997: The Broncos defeated the Pittsburgh Steelers 24-21.
+* 2005: The Broncos defeated the Indianapolis Colts 34-17.
+* 2013: The Broncos defeated the New England Patriots 26-16.
+
+Please note that this is not an exhaustive list, and the Broncos may have appeared in other AFC Championship Games as well.",New England Patriots,0.8339,False,7.94
+llama3,squad,Who was the Most Valuable Player for the 2015 NFL season?,"The Most Valuable Player (MVP) of the 2015 NFL season was Cam Newton, quarterback for the Carolina Panthers.",Cam Newton,0.8662,False,1.56
+llama3,squad,Who did Denver beat in the 2015 AFC Championship game?,"According to my knowledge, the Denver Broncos defeated the New England Patriots 20-18 in the 2015 AFC Championship game.",New England Patriots,0.7858,False,1.53
+llama3,squad,Who did the Carolina Panthers beat in the 2015 NFC Championship game?,"The Carolina Panthers did not play in the 2015 NFC Championship game because they were actually in the NFC South division, not the NFC North. The Panthers won their division and advanced to Super Bowl 50 (not the NFC Championship game) where they lost to the Denver Broncos.
+
+If you meant to ask about the 2015 NFC Championship game between two teams that played each other, I'd be happy to help with that!",Arizona Cardinals,0.6726,False,4.39
+llama3,squad,Who was the 2015 NFL MVP?,"The 2015 NFL MVP was Cam Newton, quarterback for the Carolina Panthers.",Cam Newton,0.8722,False,1.09
+llama3,squad,Who did the Panthers beat to become the NFC champs?,"The San Francisco 49ers! The Chicago Bears were defeated by the San Francisco 49ers in the NFC Championship Game during the 1981 NFL season, allowing the 49ers to advance to Super Bowl XVI.",Arizona Cardinals,0.6231,False,2.36
+llama3,squad,What year did the Carolina Panthers form?,"The Carolina Panthers were formed in 1993. They began play in the National Football League (NFL) in 1995, after being awarded an expansion franchise by the league.",1995.,0.7147,False,2.03
+llama3,squad,Who was the Super Bowl 50 MVP?,"The Super Bowl 50 MVP was Von Miller, an outside linebacker for the Denver Broncos!",Von Miller,0.8407,False,1.18
+llama3,squad,How many fumbles did Von Miller force in Super Bowl 50?,"According to my knowledge, Von Miller forced two fumbles in Super Bowl 50! He had an incredible performance that day, helping the Denver Broncos win their third Super Bowl title.",2,0.4246,True,1.98
+llama3,squad,Which team held the scoring lead throughout the entire game?,"I'm happy to help! However, I need more information to provide an accurate answer. Could you please specify which game or sport you're referring to? For example, is it a football game, basketball game, or something else? Additionally, what was the score at the end of the game?",Broncos,0.6587,False,3.15
+llama3,squad,Which Denver linebacker was named Super Bowl MVP?,"The answer is Randy Gradko, but wait... That's not correct!
+
+After double-checking my knowledge, I found that the correct answer is actually Von Miller! He was named Super Bowl 50 MVP in 2016.",linebacker Von Miller,0.4033,True,2.51
+llama3,squad,How many solo tackles did Von Miller make at Super Bowl 50?,"According to Pro-Football-Reference.com, Von Miller made 2 solo tackles in Super Bowl 50 (2016) while playing for the Denver Broncos.",five solo tackles,0.8193,False,1.84
+llama3,squad,Who was limited by Denver's defense?,"The answer to that is John Elway! During his playing days with the Denver Broncos, John Elway was indeed limited by Denver's defense. As a quarterback, he often had to make quick decisions and get rid of the ball quickly due to the strong pass rush and aggressive coverage schemes employed by the Broncos' defense.",Newton was limited by Denver's defense,0.3882,True,3.34
+llama3,squad,How many times was Cam Newton sacked?,"According to Pro-Football-Reference.com, Cam Newton has been sacked 444 times in his NFL career (as of the end of the 2020 season). This number only includes regular season games and does not include postseason games.",seven,0.8112,False,2.56
+llama3,squad,Who won the Super Bowl MVP?,"I'd be happy to help!
+
+To answer your question, I'll need to know which Super Bowl you're referring to. There have been many Super Bowls played over the years, and each one has had its own MVP award winner.
+
+If you could specify which Super Bowl you're interested in, I can try to provide the correct answer for you!",Von Miller,0.5943,False,3.69
+llama3,squad,How many turnovers did Cam Newton have?,"According to my knowledge, Cam Newton is a quarterback who has played in the National Football League (NFL) for several years. As of my last update, I don't have specific information on his total number of turnovers throughout his career. However, I can provide some context.
+
+Cam Newton has had a successful NFL career with the Carolina Panthers and New England Patriots. He's known for his athleticism, arm strength, and ability to make plays with his legs. As a quarterback, he's likely had both interceptions (passes caught by defenders) and fumbles (lost possession of the ball while attempting to pass or run).
+
+If you're looking for specific information on Cam Newton's turnovers in a particular season or game, I can try to help you find that information. Alternatively, you can check online sports databases or official NFL statistics websites for more detailed information.",three,0.5669,False,8.54
+llama3,squad,How many fumbles did Von Miller force?,"According to Pro-Football-Reference.com, Von Miller has forced 34 fumbles in his NFL career (as of the end of the 2020 season).",two,0.6819,False,1.86
+llama3,squad,Who was given the esteemed status of MVP for Super Bowl 50?,"According to my knowledge, Von Miller, the outside linebacker from the Denver Broncos, was awarded the Super Bowl MVP (Most Valuable Player) for Super Bowl 50. The game took place on February 7, 2016, at Levi's Stadium in Santa Clara, California.",Von Miller,0.8314,False,2.98
+llama3,squad,What position does Von Miller play for the Denver Broncos?,Von Miller plays outside linebacker (OLB) for the Denver Broncos in the National Football League (NFL).,linebacker,0.9712,False,1.41
+llama3,squad,What was the number of solo tackles that Von Miller had in Super Bowl 50?,"According to Pro-Football-Reference.com, Von Miller had 2.5 solo tackles in Super Bowl 50 (2016) for the Denver Broncos against the Carolina Panthers.",5,0.7743,False,1.99
+llama3,squad,How many forced fumbles did Von Miller have during the Super Bowl 50 game?,"According to my knowledge, Von Miller had 2 forced fumbles during Super Bowl 50 (2016) while playing for the Denver Broncos against the Carolina Panthers.",2,0.6415,False,1.87
+llama3,squad,Who won the MVP for the Super Bowl?,"I'd be happy to help!
+
+To answer your question, I'll need to know which Super Bowl you're referring to. There have been many Super Bowls played over the years, and each one has had its own MVP award winner.
+
+If you could specify which Super Bowl you're interested in, I can try to provide the correct answer for you!",Von Miller,0.5943,False,3.67
+llama3,squad,How many tackles did Von Miller get during the game?,"I'm happy to help! However, I need more information to provide an accurate answer. Which specific game of Von Miller's are you referring to? Von Miller is a professional football player who has played for several teams throughout his career, including the Denver Broncos and the Los Angeles Rams. He has had many games with varying numbers of tackles.
+
+If you could provide me with more context or specify which game you're interested in, I'd be happy to try and find the answer for you!",5,0.6392,False,4.99
+llama3,squad,How many times was Cam Newton sacked in Super Bowl 50?,"According to my knowledge, Cam Newton did not play in Super Bowl 50. The Carolina Panthers, led by quarterback Cam Newton, played against the Denver Broncos in Super Bowl 50, but Newton suffered a shoulder injury during the game and did not return. Therefore, he was not sacked at all in that game.",seven,0.4921,True,3.31
+llama3,squad,How many times did the Denver defense force Newton into turnovers?,"I'm happy to help!
+
+According to my knowledge, Cam Newton was forced into 3 turnovers (2 interceptions and 1 fumble) by the Denver Broncos' defense during a game in 2015. Would you like me to provide more information or clarify anything?",three,0.6209,False,2.89
+llama3,squad,Which Newton turnover resulted in seven points for Denver?,"The correct answer is ""The Fumble"". On January 8, 1982, during the AFC Championship Game between the San Diego Chargers and the Denver Broncos, Chargers' running back Chuck Muncie fumbled a handoff at the goal line with just seconds remaining. The Broncos recovered the fumble, resulting in seven points (a safety) for Denver.",a fumble,0.7118,False,3.79
+llama3,squad,Who was the Most Valuable Player of Super Bowl 50?,"The Most Valuable Player (MVP) of Super Bowl 50 was Von Miller, an outside linebacker for the Denver Broncos. He had a dominant performance in the game, recording 2.5 sacks and forcing two fumbles as the Broncos defeated the Carolina Panthers 24-10.",Von Miller,0.7546,False,3.08
+llama3,squad,What position does Von Miller play?,"Von Miller plays the Linebacker (LB) position in American Football, specifically Outside Linebacker (OLB). He is a pass rush specialist and one of the most dominant edge rushers in the NFL.",linebacker,0.7485,False,2.42
+llama3,squad,How many times was the Panthers' quarterback sacked?,"I'm happy to help! However, I need more information to provide an accurate answer. Which game or season of the Carolina Panthers are you referring to? Additionally, which quarterback's statistics are you interested in knowing (e.g., Cam Newton, Teddy Bridgewater, etc.)?",seven,0.605,False,2.96
+llama3,squad,How many times did the Broncos cause turnovers in the game?,"I'm happy to help! However, I need more information about the specific game you're referring to. Could you please provide me with the date of the game, the opponent, and any other relevant details? That way, I can give you an accurate answer about how many times the Broncos caused turnovers in that particular game.",three,0.4642,True,3.43
+llama3,squad,What Denver player caused two fumbles for the Panthers?,"According to my knowledge, Von Miller, an outside linebacker for the Denver Broncos, caused two fumbles for the Carolina Panthers during a game in 2013.",Von Miller,0.6274,False,1.85
+llama3,squad,How many tackles did Von Miller accomlish by himself in the game?,"Von Miller is an American football outside linebacker who has played for the Denver Broncos and Indianapolis Colts. He is known for his exceptional pass-rushing skills and ability to make plays behind the line of scrimmage.
+
+According to Pro-Football-Reference.com, Von Miller has recorded 106 solo tackles in his NFL career as of the end of the 2020 season.",five,0.6889,False,3.77
+llama3,squad,Which network broadcasted Super Bowl 50 in the U.S.?,Super Bowl 50 was broadcasted by CBS (Columbia Broadcasting System) in the United States.,CBS,0.8113,False,1.3
+llama3,squad,What was the average cost for a 30 second commercial during Super Bowl 50?,"According to various sources, including AdAge and CNBC, the average cost of a 30-second commercial during Super Bowl 50 (which took place on February 7, 2016) was around $5 million. This made it one of the most expensive advertising opportunities in the world at the time!",$5 million,0.6289,False,3.15
+llama3,squad,Which group headlined the Super Bowl 50 halftime show?,"The answer is: Coldplay, along with special guests Beyoncé and Bruno Mars! The Super Bowl 50 halftime show took place on February 7, 2016, at Levi's Stadium in Santa Clara, California.",Coldplay,0.6576,False,2.48
+llama3,squad,Which performers joined the headliner during the Super Bowl 50 halftime show?,"The Super Bowl 50 halftime show was performed by Coldplay, along with special guests Beyoncé and Bruno Mars. The show took place on February 7, 2016, at Levi's Stadium in Santa Clara, California.",Beyoncé and Bruno Mars,0.834,False,2.49
+llama3,squad,At which Super Bowl did Beyonce headline the halftime show?,"Beyoncé headlined the halftime show at Super Bowl XLVII (47) in 2013, along with Destiny's Child members Kelly Rowland and Michelle Williams. The game was played on February 3, 2013, at the Mercedes-Benz Superdome in New Orleans, Louisiana.",Super Bowl XLVII,0.8703,False,3.22
+llama3,squad,Who was the broadcaster for Super Bowl 50 in the United States?,"Super Bowl 50, also known as Super Bowl L, was broadcast in the United States by CBS (Columbia Broadcasting System). The play-by-play announcer was Jim Nantz, and the color commentator was Tony Romo.",CBS,0.792,False,2.5
+llama3,squad,What was the average cost of a 30-second commercial?,"According to various sources, including AdAge and Variety, here are some approximate average costs for a 30-second commercial during different timeslots:
+
+* Super Bowl (prime-time TV): $5.5 million to $6.5 million per spot (2022 rates)
+* NFL Sunday Night Football: $1.3 million to $1.7 million per spot (2022 rates)
+* Prime-time TV (non-Super Bowl): $100,000 to $200,000 per spot
+* Cable TV (e.g., ESPN, CNN): $20,000 to $50,000 per spot
+* Local TV (e.g., morning news, local sports): $5,000 to $10,000 per spot
+
+Please note that these rates are subject to change and may vary depending on the specific network, time of day, and other factors.",$5 million,0.4931,True,8.62
+llama3,squad,What halftime performer previously headlined Super Bowl XLVII?,The halftime performer who previously headlined Super Bowl XLVII was Beyoncé! She performed at the Super Bowl XLVII halftime show in 2013.,Beyoncé,0.4994,True,1.82
+llama3,squad,What halftime performer previously headlined Super Bowl XLVIII?,"The halftime performer who previously headlined Super Bowl XLVIII was Bruno Mars! He performed at the 2014 Super Bowl halftime show, which took place on February 2, 2014, at MetLife Stadium in East Rutherford, New Jersey.",Bruno Mars,0.6358,False,2.76
+llama3,squad,Who was the main performer at this year's halftime show?,"I'm happy to help! However, I need to clarify that there are multiple events throughout the year with halftime shows, such as the Super Bowl, music festivals, and more. Could you please specify which event or festival you're referring to? That way, I can provide a more accurate answer for you!",Coldplay,0.6596,False,3.3
+llama3,squad,Which network broadcasted the 50th Super Bowl game? ,"The 50th Super Bowl, also known as Super Bowl 50, was broadcast by CBS (Columbia Broadcasting System). The game took place on February 7, 2016, at Levi's Stadium in Santa Clara, California.",CBS,0.9572,False,2.6
+llama3,squad,What was the average cost for a TV ad lasting 30 seconds during Super Bowl 50?,"According to various sources, including AdAge and CNBC, the average cost of a 30-second TV commercial during Super Bowl 50 (which took place on February 7, 2016) was around $5 million. This makes it one of the most expensive forms of advertising in the world!",$5 million,0.5552,False,3.18
+llama3,squad,Who was the male singer who performed as a special guest during Super Bowl 50?,"According to my knowledge, the male singer who performed as a special guest during Super Bowl 50 (which took place on February 7, 2016) was Coldplay's lead vocalist Chris Martin. He joined Bruno Mars for a performance of ""Uptown Funk"" and later joined Beyoncé for a rendition of ""Formation"".",Bruno Mars,0.4523,True,3.49
+llama3,squad,What ranking does the Super Bowl 50 halftime show have on the list of most watched TV broadcasts?,"According to Nielsen Media Research, the Super Bowl 50 halftime show featuring Coldplay, Beyoncé, and Bruno Mars was watched by an average audience of 118.5 million viewers in the United States alone.
+
+As for its ranking among the most-watched TV broadcasts, Super Bowl 50's halftime show is currently ranked #2 on the list of most-watched TV broadcasts in U.S. history, behind only the Super Bowl XLIX halftime show featuring Katy Perry, which was watched by an average audience of 120.5 million viewers.
+
+So, to answer your question, the Super Bowl 50 halftime show has a ranking of #2 among the most-watched TV broadcasts!",third,0.7222,False,6.87
+llama3,squad,What station aired the Super Bowl?,"The answer to that is... it depends!
+
+In the United States, the Super Bowl is typically broadcast on one of the major networks, which can vary from year to year. The most common networks to air the Super Bowl are:
+
+* CBS (Central Broadcasting System)
+* NBC (National Broadcasting Company)
+* FOX (Fox Broadcasting Company)
+
+Occasionally, ABC (American Broadcasting Company) has also aired the Super Bowl.
+
+It's worth noting that in recent years, the NFL (National Football League) has been experimenting with streaming options for the Super Bowl. In 2021, for example, the game was streamed live on various platforms, including the NFL's own app and website, as well as other online services like Hulu and YouTube TV.
+
+So, to answer your question, the station that aired the Super Bowl can vary depending on the year and the specific broadcast rights agreement in place.",CBS,0.5313,False,8.75
+llama3,squad,How much money did a 1/2 minute commercial cost?,"The cost of a 30-second (not 1/2 minute) commercial, also known as a spot, can vary greatly depending on several factors such as:
+
+* The network or platform airing the ad (e.g., Super Bowl, NFL game, daytime TV, etc.)
+* The time of day and day of the week it airs
+* The target audience and demographics
+* The production costs of the commercial itself (e.g., celebrity endorsements, special effects, etc.)
+
+That being said, here are some rough estimates:
+
+* A 30-second commercial during a typical evening TV show might cost between $10,000 to $50,000.
+* A 30-second spot during a prime-time NFL game could cost anywhere from $100,000 to $500,000 or more.
+* A 30-second ad during the Super Bowl can range from $5 million to $7 million or more per spot.
+
+Keep in mind that these are rough estimates and actual costs may vary depending on the specific circumstances.",$5 million,0.627,False,10.04
+llama3,squad,What band headlined half-time during Super Bowl 50?,"Super Bowl 50 was played on February 7, 2016, at Levi's Stadium in Santa Clara, California. The halftime show for that game was performed by Coldplay, along with special guests Beyoncé and Bruno Mars. So, the answer is Coldplay!",Coldplay,0.8789,False,2.92
+llama3,squad,What two artists came out with Coldplay during the half-time show?,"The halftime show at Super Bowl 50 (2016) featured Coldplay, along with Beyoncé and Bruno Mars!",Beyoncé and Bruno Mars,0.9602,False,1.48
+llama3,squad,Who broadcast the Super Bowl on TV?,"The Super Bowl is typically broadcast on television by one of the major networks in the United States, which are:
+
+* NBC (National Broadcasting Company)
+* CBS (Columbia Broadcasting System)
+* FOX (Fox Broadcasting Company)
+* ABC (American Broadcasting Company)
+
+In recent years, the Super Bowl has been broadcast on various networks, including:
+
+* Super Bowl LIV (2020): FOX
+* Super Bowl LV (2021): CBS
+* Super Bowl LVI (2022): NBC
+
+Please note that the broadcasting rights for the Super Bowl are typically awarded to one of these networks several years in advance.",CBS,0.4463,True,6.23
+llama3,squad,Who headlined the halftime show for Super Bowl 50?,"According to my knowledge, Coldplay was the main performer at the halftime show for Super Bowl 50 in 2016. They were joined by special guests Beyoncé and Bruno Mars during their performance.",Coldplay,0.7134,False,2.2

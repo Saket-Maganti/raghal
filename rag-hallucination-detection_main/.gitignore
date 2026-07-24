@@ -1,0 +1,47 @@
+# Operating-system noise
+.DS_Store
+._*
+__MACOSX/
+Thumbs.db
+
+# Python caches and environments
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# Local/generated stores
+chroma_db/
+chroma_db_*/
+logs/
+results/*/logs/
+
+# Removed private or non-review material
+papers/
+Controlled_RAG___*/
+docs/rev*/
+space/
+notebooks/
+release/
+pip-package/
+leaderboard/
+integrations/
+submission/
+submission_packages/
+archive/
+artifacts/

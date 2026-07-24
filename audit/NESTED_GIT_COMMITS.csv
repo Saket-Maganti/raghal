@@ -1,0 +1,4 @@
+source_folder,commit_sha,author_name,author_email,author_date,commit_date,subject
+rag-hallucination-detection_main,59e94a5418a296acda1892e9165fd43096292f58,Saket Maganti,<redacted-email>,2026-05-06T15:11:10+05:30,2026-05-06T15:11:10+05:30,Restore reviewer artifact submission package
+rag-hallucination-detection_main,25057a74f2b55cfc5687c95a773cb4b7a1461a44,Saket-Maganti,114757725+Saket-Maganti@users.noreply.github.com,2026-05-06T13:59:42+05:30,2026-05-06T13:59:42+05:30,Delete submission_package directory
+rag-hallucination-detection_main,a58d9674f1e107a068a58d5e414a20299baad788,Saket Maganti,<redacted-email>,2026-05-06T13:35:40+05:30,2026-05-06T13:35:40+05:30,Initial clean reproducibility artifact

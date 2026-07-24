@@ -1,0 +1,103 @@
+\begin{thebibliography}{10}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Asai et~al.(2024)Asai, Wu, Wang, Sil, and Hajishirzi]{asai2024selfrag}
+Akari Asai, Zeqiu Wu, Yizhong Wang, Avirup Sil, and Hannaneh Hajishirzi.
+\newblock Self-{RAG}: Learning to retrieve, generate, and critique through
+  self-reflection.
+\newblock In \emph{International Conference on Learning Representations}, 2024.
+
+\bibitem[Es et~al.(2024)Es, James, Espinosa-Anke, and Schockaert]{es2024ragas}
+Shahul Es, Jithin James, Luis Espinosa-Anke, and Steven Schockaert.
+\newblock {RAGAS}: Automated evaluation of retrieval augmented generation.
+\newblock In \emph{Proceedings of the 18th Conference of the European Chapter
+  of the Association for Computational Linguistics: System Demonstrations},
+  pages 150--163, 2024.
+
+\bibitem[Honovich et~al.(2022)Honovich, Aharoni, Herzig, Taitelbaum, Kukliansy,
+  Cohen, Scialom, Szpektor, Hassidim, and Matias]{honovich2022true}
+Or~Honovich, Roee Aharoni, Jonathan Herzig, Hagai Taitelbaum, Doron Kukliansy,
+  Vered Cohen, Thomas Scialom, Idan Szpektor, Avinatan Hassidim, and Yossi
+  Matias.
+\newblock {TRUE}: Re-evaluating factual consistency evaluation.
+\newblock \emph{NAACL}, 2022.
+
+\bibitem[Laban et~al.(2022)Laban, Schnabel, Bennett, and
+  Hearst]{laban2022summac}
+Philippe Laban, Tobias Schnabel, Paul~N. Bennett, and Marti~A. Hearst.
+\newblock {SummaC}: Re-visiting {NLI}-based models for inconsistency detection
+  in summarization.
+\newblock In \emph{Transactions of the Association for Computational
+  Linguistics (TACL)}, 2022.
+
+\bibitem[Lewis et~al.(2020)Lewis, Perez, Piktus, Petroni, Karpukhin, Goyal,
+  K{\"u}ttler, Lewis, Yih, Rockt{\"a}schel, Riedel, and Kiela]{lewis2020rag}
+Patrick Lewis, Ethan Perez, Aleksandra Piktus, Fabio Petroni, Vladimir
+  Karpukhin, Naman Goyal, Heinrich K{\"u}ttler, Mike Lewis, Wen-tau Yih, Tim
+  Rockt{\"a}schel, Sebastian Riedel, and Douwe Kiela.
+\newblock Retrieval-augmented generation for knowledge-intensive {NLP} tasks.
+\newblock In \emph{Advances in Neural Information Processing Systems},
+  volume~33, pages 9459--9474, 2020.
+
+\bibitem[Niu et~al.(2024)Niu, Wu, Zhu, Xu, Shum, Zhong, Song, and
+  Zhang]{niu2024ragtruth}
+Cheng Niu, Yuanhao Wu, Juno Zhu, Siliang Xu, KaShun Shum, Randy Zhong, Juntong
+  Song, and Tong Zhang.
+\newblock {RAGT}ruth: A hallucination corpus for developing trustworthy
+  retrieval-augmented language models.
+\newblock In \emph{Proceedings of the 62nd Annual Meeting of the Association
+  for Computational Linguistics (Volume 1: Long Papers)}, pages 10862--10878,
+  Bangkok, Thailand, 2024. Association for Computational Linguistics.
+\newblock \doi{10.18653/v1/2024.acl-long.585}.
+\newblock URL \url{https://aclanthology.org/2024.acl-long.585/}.
+
+\bibitem[Park et~al.(2025)Park, Moon, Park, and Lim]{park2025mirage}
+Chanhee Park, Hyeonseok Moon, Chanjun Park, and Heuiseok Lim.
+\newblock {MIRAGE}: A metric-intensive benchmark for retrieval-augmented
+  generation evaluation.
+\newblock In \emph{Findings of the Association for Computational Linguistics:
+  NAACL 2025}, pages 2883--2900, Albuquerque, New Mexico, 2025. Association for
+  Computational Linguistics.
+\newblock \doi{10.18653/v1/2025.findings-naacl.157}.
+\newblock URL \url{https://aclanthology.org/2025.findings-naacl.157/}.
+
+\bibitem[Ru et~al.(2024)Ru, Qiu, Hu, Zhang, Shi, Chang, Cheng, Wang, Sun, Li,
+  Zhang, Wang, Jiang, He, Wang, Liu, Zhang, and Zhang]{ru2024ragchecker}
+Dongyu Ru, Lin Qiu, Xiangkun Hu, Tianhang Zhang, Peng Shi, Shuaichen Chang,
+  Jiayang Cheng, Cunxiang Wang, Shichao Sun, Huanyu Li, Zizhao Zhang, Binjie
+  Wang, Jiarong Jiang, Tong He, Zhiguo Wang, Pengfei Liu, Yue Zhang, and Zheng
+  Zhang.
+\newblock {RAGChecker}: A fine-grained framework for diagnosing
+  retrieval-augmented generation.
+\newblock \emph{arXiv preprint arXiv:2408.08067}, 2024.
+\newblock \doi{10.48550/arXiv.2408.08067}.
+\newblock URL \url{https://arxiv.org/abs/2408.08067}.
+
+\bibitem[Saad-Falcon et~al.(2024)Saad-Falcon, Khattab, Potts, and
+  Zaharia]{saadfalcon2024ares}
+Jon Saad-Falcon, Omar Khattab, Christopher Potts, and Matei Zaharia.
+\newblock {ARES}: An automated evaluation framework for retrieval-augmented
+  generation systems.
+\newblock In \emph{Proceedings of the 2024 Conference of the North American
+  Chapter of the Association for Computational Linguistics: Human Language
+  Technologies (Volume 1: Long Papers)}, pages 338--354, Mexico City, Mexico,
+  2024. Association for Computational Linguistics.
+\newblock \doi{10.18653/v1/2024.naacl-long.20}.
+\newblock URL \url{https://aclanthology.org/2024.naacl-long.20/}.
+
+\bibitem[Tamber et~al.(2025)Tamber, Bao, Xu, Luo, Kazi, Bae, Li, Mendelevitch,
+  Qu, and Lin]{tamber2025faithjudge}
+Manveer~Singh Tamber, Forrest~Sheng Bao, Chenyu Xu, Ge~Luo, Suleman Kazi,
+  Minseok Bae, Miaoran Li, Ofer Mendelevitch, Renyi Qu, and Jimmy Lin.
+\newblock Benchmarking {LLM} faithfulness in {RAG} with evolving leaderboards.
+\newblock In \emph{Proceedings of the 2025 Conference on Empirical Methods in
+  Natural Language Processing: Industry Track}, pages 799--811, Suzhou, China,
+  2025. Association for Computational Linguistics.
+\newblock \doi{10.18653/v1/2025.emnlp-industry.54}.
+\newblock URL \url{https://aclanthology.org/2025.emnlp-industry.54/}.
+
+\end{thebibliography}

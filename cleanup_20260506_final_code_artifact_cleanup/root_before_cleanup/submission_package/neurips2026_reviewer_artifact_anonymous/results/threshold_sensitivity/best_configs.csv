@@ -1,0 +1,11 @@
+dataset,config_id,threshold_mode,sim_threshold,ce_threshold,top_k_protected,sim_percentile,ce_percentile,n_queries,faithfulness,hallucination_rate,mean_ccs,ccs_variance,ccs_min,ccs_max,proxy_score,proxy_min,proxy_max,mean_ret_sim,mean_embedding_var,mean_entropy,pct_refined,mean_n_refined,is_default,retrieval_only,wall_s
+pubmedqa,s055_cem015_t0,fixed,0.55,-0.15,0,-1,-1,10,-1.0,-1.0,1.0,0.0,1.0,1.0,0.282,0.2395,0.3341,0.6789,0.0,0.9364,40.0,0.8,False,True,4.0
+pubmedqa,s060_cem020_t0,fixed,0.6,-0.2,0,-1,-1,10,-1.0,-1.0,1.0,0.0,1.0,1.0,0.282,0.2395,0.3341,0.6789,0.0,0.9364,40.0,0.8,False,True,4.0
+pubmedqa,s055_cem020_t0,fixed,0.55,-0.2,0,-1,-1,10,-1.0,-1.0,1.0,0.0,1.0,1.0,0.282,0.2395,0.3341,0.6789,0.0,0.9364,40.0,0.8,False,True,4.3
+pubmedqa,s060_cem015_t0,fixed,0.6,-0.15,0,-1,-1,10,-1.0,-1.0,1.0,0.0,1.0,1.0,0.282,0.2395,0.3341,0.6789,0.0,0.9364,40.0,0.8,False,True,4.1
+pubmedqa,s055_cem030_t0,fixed,0.55,-0.3,0,-1,-1,10,-1.0,-1.0,1.0,0.0,1.0,1.0,0.282,0.2395,0.3341,0.6789,0.0,0.9364,40.0,0.8,False,True,4.0
+squad,s030_cem030_t0,fixed,0.3,-0.3,0,-1,-1,10,-1.0,-1.0,1.0,0.0,1.0,1.0,0.2587,0.233,0.3113,0.5844,0.0,1.0175,20.0,0.4,False,True,8.4
+squad,s060_cem020_t0,fixed,0.6,-0.2,0,-1,-1,10,-1.0,-1.0,1.0,0.0,1.0,1.0,0.2587,0.233,0.3113,0.5844,0.0,1.0175,20.0,0.4,False,True,5.0
+squad,s045_cem020_t0,fixed,0.45,-0.2,0,-1,-1,10,-1.0,-1.0,1.0,0.0,1.0,1.0,0.2587,0.233,0.3113,0.5844,0.0,1.0175,20.0,0.4,False,True,4.8
+squad,s060_cem025_t0,fixed,0.6,-0.25,0,-1,-1,10,-1.0,-1.0,1.0,0.0,1.0,1.0,0.2587,0.233,0.3113,0.5844,0.0,1.0175,20.0,0.4,False,True,4.9
+squad,s035_cem020_t0,fixed,0.35,-0.2,0,-1,-1,10,-1.0,-1.0,1.0,0.0,1.0,1.0,0.2587,0.233,0.3113,0.5844,0.0,1.0175,20.0,0.4,False,True,4.8

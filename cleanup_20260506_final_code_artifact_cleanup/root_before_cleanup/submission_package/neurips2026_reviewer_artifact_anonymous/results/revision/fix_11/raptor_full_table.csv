@@ -1,0 +1,4 @@
+dataset,n,faithfulness,hallucination_rate,p50_latency_ms,p99_latency_ms,dense_index_s,raptor_index_s,index_size_mb,raptor_clusters
+hotpotqa,100,0.616708,0.21,1972.5455,4274.46118,7.14,99.74,16.594,6
+pubmedqa,100,0.560011,0.29,3900.965,6811.89892,1.177,108.264,3.102,6
+squad,100,0.789326,0.05,1190.4635,4942.79824,8.333,161.203,1.832,6

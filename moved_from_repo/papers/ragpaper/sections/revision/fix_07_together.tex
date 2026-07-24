@@ -1,0 +1,11 @@
+% Fix 7 - independent Together.ai 70B reproduction.
+
+\subsection{Independent 70B Reproduction}
+\label{sec:fix07_together}
+
+We rerun the \textsc{SQuAD}/70B cell using Together.ai's Llama-3.3-70B
+endpoint rather than Groq. If the paradox magnitude agrees within
+$\pm 0.02$, the Groq-served result is retained; otherwise the paper reports
+the Together result and discloses the discrepancy.
+
+% RESULTS-PENDING: insert results/revision/fix_07/groq_together_comparison.csv.

@@ -1,0 +1,1628 @@
+[
+  {
+    "timestamp": "2026-04-09T14:23:00.561948+00:00",
+    "query": "Which NFL team represented the AFC at Super Bowl 50?",
+    "retrieved_context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this ",
+    "generated_output": " The American Football Conference (AFC) champion Denver Broncos represented the AFC at Super Bowl 50.",
+    "faithfulness_score": 0.8049,
+    "is_hallucination": false,
+    "sentence_scores": [
+      {
+        "sentence": "The American Football Conference (AFC) champion Denver Broncos represented the AFC at Super Bowl 50",
+        "entailment": 0.8049,
+        "contradiction": 0.0565,
+        "neutral": 0.1387
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.6748,
+      "max_similarity": 0.6748,
+      "min_similarity": 0.6748,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_v2_n_refined": 0,
+      "hcpc_v2_n_merged": 0,
+      "hcpc_v2_context_coherence": 1.0
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v2",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "Denver Broncos",
+      "hcpc_v2_log": {
+        "refined": false,
+        "n_chunks_before": 3,
+        "n_chunks_after": 3,
+        "n_refined_chunks": 0,
+        "n_merged_chunks": 0,
+        "best_sim_before": 0.3967,
+        "best_sim_after": 0.3967,
+        "best_ce_before": 8.7047,
+        "best_ce_after": 8.7047,
+        "context_coherence": 1.0,
+        "context_token_count": 581,
+        "mean_retrieval_similarity": 0.3967,
+        "threshold_mode": "fixed",
+        "eff_sim_threshold": 0.4,
+        "eff_ce_threshold": -0.2,
+        "sim_percentile": -1,
+        "ce_percentile": -1
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:23:02.941870+00:00",
+    "query": "Which NFL team represented the NFC at Super Bowl 50?",
+    "retrieved_context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this ",
+    "generated_output": " The National Football Conference (NFC) champion represented by Carolina Panthers at Super Bowl 50.",
+    "faithfulness_score": 0.7465,
+    "is_hallucination": false,
+    "sentence_scores": [
+      {
+        "sentence": "The National Football Conference (NFC) champion represented by Carolina Panthers at Super Bowl 50",
+        "entailment": 0.7465,
+        "contradiction": 0.0672,
+        "neutral": 0.1863
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.6841,
+      "max_similarity": 0.6841,
+      "min_similarity": 0.6841,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_v2_n_refined": 0,
+      "hcpc_v2_n_merged": 0,
+      "hcpc_v2_context_coherence": 1.0
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v2",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "Carolina Panthers",
+      "hcpc_v2_log": {
+        "refined": false,
+        "n_chunks_before": 3,
+        "n_chunks_after": 3,
+        "n_refined_chunks": 0,
+        "n_merged_chunks": 0,
+        "best_sim_before": 0.4176,
+        "best_sim_after": 0.4176,
+        "best_ce_before": 8.3569,
+        "best_ce_after": 8.3569,
+        "context_coherence": 1.0,
+        "context_token_count": 581,
+        "mean_retrieval_similarity": 0.4176,
+        "threshold_mode": "fixed",
+        "eff_sim_threshold": 0.4,
+        "eff_ce_threshold": -0.2,
+        "sim_percentile": -1,
+        "ce_percentile": -1
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:23:05.530982+00:00",
+    "query": "Where did Super Bowl 50 take place?",
+    "retrieved_context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this ",
+    "generated_output": " The Super Bowl 50 took place at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California.",
+    "faithfulness_score": 0.9459,
+    "is_hallucination": false,
+    "sentence_scores": [
+      {
+        "sentence": "The Super Bowl 50 took place at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California",
+        "entailment": 0.9459,
+        "contradiction": 0.0197,
+        "neutral": 0.0344
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.6562,
+      "max_similarity": 0.6562,
+      "min_similarity": 0.6562,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_v2_n_refined": 0,
+      "hcpc_v2_n_merged": 0,
+      "hcpc_v2_context_coherence": 1.0
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v2",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "Santa Clara, California",
+      "hcpc_v2_log": {
+        "refined": false,
+        "n_chunks_before": 3,
+        "n_chunks_after": 3,
+        "n_refined_chunks": 0,
+        "n_merged_chunks": 0,
+        "best_sim_before": 0.3872,
+        "best_sim_after": 0.3872,
+        "best_ce_before": 8.4794,
+        "best_ce_after": 8.4794,
+        "context_coherence": 1.0,
+        "context_token_count": 581,
+        "mean_retrieval_similarity": 0.3872,
+        "threshold_mode": "fixed",
+        "eff_sim_threshold": 0.4,
+        "eff_ce_threshold": -0.2,
+        "sim_percentile": -1,
+        "ce_percentile": -1
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:23:07.037939+00:00",
+    "query": "Which NFL team won Super Bowl 50?",
+    "retrieved_context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this ",
+    "generated_output": " The Denver Broncos won Super Bowl 50.",
+    "faithfulness_score": 0.9247,
+    "is_hallucination": false,
+    "sentence_scores": [
+      {
+        "sentence": "The Denver Broncos won Super Bowl 50",
+        "entailment": 0.9247,
+        "contradiction": 0.0533,
+        "neutral": 0.022
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.717,
+      "max_similarity": 0.717,
+      "min_similarity": 0.717,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_v2_n_refined": 0,
+      "hcpc_v2_n_merged": 0,
+      "hcpc_v2_context_coherence": 1.0
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v2",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "Denver Broncos",
+      "hcpc_v2_log": {
+        "refined": false,
+        "n_chunks_before": 3,
+        "n_chunks_after": 3,
+        "n_refined_chunks": 0,
+        "n_merged_chunks": 0,
+        "best_sim_before": 0.4426,
+        "best_sim_after": 0.4426,
+        "best_ce_before": 9.7919,
+        "best_ce_after": 9.7919,
+        "context_coherence": 1.0,
+        "context_token_count": 581,
+        "mean_retrieval_similarity": 0.4426,
+        "threshold_mode": "fixed",
+        "eff_sim_threshold": 0.4,
+        "eff_ce_threshold": -0.2,
+        "sim_percentile": -1,
+        "ce_percentile": -1
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:23:09.754333+00:00",
+    "query": "What color was used to emphasize the 50th anniversary of the Super Bowl?",
+    "retrieved_context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this ",
+    "generated_output": " The context mentions that gold-themed initiatives were used to emphasize the 50th anniversary of the Super Bowl.",
+    "faithfulness_score": 0.7191,
+    "is_hallucination": false,
+    "sentence_scores": [
+      {
+        "sentence": "The context mentions that gold-themed initiatives were used to emphasize the 50th anniversary of the Super Bowl",
+        "entailment": 0.7191,
+        "contradiction": 0.1199,
+        "neutral": 0.161
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.5074,
+      "max_similarity": 0.5074,
+      "min_similarity": 0.5074,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_v2_n_refined": 0,
+      "hcpc_v2_n_merged": 0,
+      "hcpc_v2_context_coherence": 1.0
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v2",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "gold",
+      "hcpc_v2_log": {
+        "refined": false,
+        "n_chunks_before": 3,
+        "n_chunks_after": 3,
+        "n_refined_chunks": 0,
+        "n_merged_chunks": 0,
+        "best_sim_before": 0.2475,
+        "best_sim_after": 0.2475,
+        "best_ce_before": 3.2164,
+        "best_ce_after": 3.2164,
+        "context_coherence": 1.0,
+        "context_token_count": 581,
+        "mean_retrieval_similarity": 0.2475,
+        "threshold_mode": "fixed",
+        "eff_sim_threshold": 0.4,
+        "eff_ce_threshold": -0.2,
+        "sim_percentile": -1,
+        "ce_percentile": -1
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:23:11.615652+00:00",
+    "query": "What was the theme of Super Bowl 50?",
+    "retrieved_context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this ",
+    "generated_output": " The theme of Super Bowl 50 was the \"golden anniversary.\"",
+    "faithfulness_score": 0.7533,
+    "is_hallucination": false,
+    "sentence_scores": [
+      {
+        "sentence": "The theme of Super Bowl 50 was the \"golden anniversary",
+        "entailment": 0.7533,
+        "contradiction": 0.0443,
+        "neutral": 0.2024
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.5514,
+      "max_similarity": 0.5514,
+      "min_similarity": 0.5514,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_v2_n_refined": 0,
+      "hcpc_v2_n_merged": 0,
+      "hcpc_v2_context_coherence": 1.0
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v2",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "\"golden anniversary\"",
+      "hcpc_v2_log": {
+        "refined": false,
+        "n_chunks_before": 3,
+        "n_chunks_after": 3,
+        "n_refined_chunks": 0,
+        "n_merged_chunks": 0,
+        "best_sim_before": 0.2742,
+        "best_sim_after": 0.2742,
+        "best_ce_before": 5.7234,
+        "best_ce_after": 5.7234,
+        "context_coherence": 1.0,
+        "context_token_count": 581,
+        "mean_retrieval_similarity": 0.2742,
+        "threshold_mode": "fixed",
+        "eff_sim_threshold": 0.4,
+        "eff_ce_threshold": -0.2,
+        "sim_percentile": -1,
+        "ce_percentile": -1
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:23:20.341043+00:00",
+    "query": "What day was the game played on?",
+    "retrieved_context": "The game's media day, which was typically held on the Tuesday afternoon prior to the game, was moved to the Monday evening and re-branded as Super Bowl Opening Night. The event was held on February 1, 2016 at SAP Center in San Jose. Alongside the traditional media availabilities, the event featured an opening ceremony with player introductions on a replica of the Golden Gate Bridge.\n\n---\n\nThe game's media day, which was typically held on the Tuesday afternoon prior to the game, was moved to the Monday evening and re-branded as Super Bowl Opening Night. The event was held on February 1, 2016 at SAP Center in San Jose. Alongside the traditional media availabilities, the event featured an opening ceremony with player introductions on a replica of the Golden Gate Bridge.\n\n---\n\nThe game's media day, which was typically held on the Tuesday afternoon prior to the game, was moved to the Monday evening and re-branded as Super Bowl Opening Night. The event was held on February 1, 2016 at SAP Center in San Jose. Alongside the traditional media availabilities, the event featured an opening ceremony with player introductions on a replica of the Golden Gate Bridge.",
+    "generated_output": " The provided context does not mention the day when the game was played. It only states that the Super Bowl Opening Night, which featured media availabilities and an opening ceremony, was held on February 1, 2016.",
+    "faithfulness_score": 0.7706,
+    "is_hallucination": false,
+    "sentence_scores": [
+      {
+        "sentence": "The provided context does not mention the day when the game was played",
+        "entailment": 0.8601,
+        "contradiction": 0.0662,
+        "neutral": 0.0737
+      },
+      {
+        "sentence": "It only states that the Super Bowl Opening Night, which featured media availabilities and an opening ceremony, was held on February 1, 2016",
+        "entailment": 0.6811,
+        "contradiction": 0.0968,
+        "neutral": 0.2222
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.5273,
+      "max_similarity": 0.5273,
+      "min_similarity": 0.5273,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_v2_n_refined": 0,
+      "hcpc_v2_n_merged": 0,
+      "hcpc_v2_context_coherence": 1.0
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v2",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "February 7, 2016",
+      "hcpc_v2_log": {
+        "refined": false,
+        "n_chunks_before": 3,
+        "n_chunks_after": 3,
+        "n_refined_chunks": 0,
+        "n_merged_chunks": 0,
+        "best_sim_before": 0.0546,
+        "best_sim_after": 0.0546,
+        "best_ce_before": 4.9923,
+        "best_ce_after": 4.9923,
+        "context_coherence": 1.0,
+        "context_token_count": 288,
+        "mean_retrieval_similarity": 0.0546,
+        "threshold_mode": "fixed",
+        "eff_sim_threshold": 0.4,
+        "eff_ce_threshold": -0.2,
+        "sim_percentile": -1,
+        "ce_percentile": -1
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:23:24.390224+00:00",
+    "query": "What is the AFC short for?",
+    "retrieved_context": ". With the defense carrying the team despite the issues with the offense, the Broncos finished the regular season with a 12–4 record and earned home-field advantage throughout the AFC playoffs.\n\n---\n\n. With the defense carrying the team despite the issues with the offense, the Broncos finished the regular season with a 12–4 record and earned home-field advantage throughout the AFC playoffs.\n\n---\n\n. With the defense carrying the team despite the issues with the offense, the Broncos finished the regular season with a 12–4 record and earned home-field advantage throughout the AFC playoffs.",
+    "generated_output": " I cannot find this information in the provided context. The context does not specify what AFC stands for.",
+    "faithfulness_score": 0.6762,
+    "is_hallucination": false,
+    "sentence_scores": [
+      {
+        "sentence": "I cannot find this information in the provided context",
+        "entailment": 0.5531,
+        "contradiction": 0.2699,
+        "neutral": 0.177
+      },
+      {
+        "sentence": "The context does not specify what AFC stands for",
+        "entailment": 0.7994,
+        "contradiction": 0.0654,
+        "neutral": 0.1352
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.4992,
+      "max_similarity": 0.4992,
+      "min_similarity": 0.4992,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_v2_n_refined": 1,
+      "hcpc_v2_n_merged": 0,
+      "hcpc_v2_context_coherence": 1.0
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v2",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "American Football Conference",
+      "hcpc_v2_log": {
+        "refined": true,
+        "n_chunks_before": 3,
+        "n_chunks_after": 3,
+        "n_refined_chunks": 1,
+        "n_merged_chunks": 0,
+        "best_sim_before": 0.0,
+        "best_sim_after": 0.4992,
+        "best_ce_before": -7.8142,
+        "best_ce_after": -7.8142,
+        "context_coherence": 1.0,
+        "context_token_count": 144,
+        "mean_retrieval_similarity": 0.1664,
+        "threshold_mode": "fixed",
+        "eff_sim_threshold": 0.4,
+        "eff_ce_threshold": -0.2,
+        "sim_percentile": -1,
+        "ce_percentile": -1
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:23:32.360968+00:00",
+    "query": "What was the theme of Super Bowl 50?",
+    "retrieved_context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this ",
+    "generated_output": " The theme of Super Bowl 50 was the \"golden anniversary.\"",
+    "faithfulness_score": 0.7533,
+    "is_hallucination": false,
+    "sentence_scores": [
+      {
+        "sentence": "The theme of Super Bowl 50 was the \"golden anniversary",
+        "entailment": 0.7533,
+        "contradiction": 0.0443,
+        "neutral": 0.2024
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.5514,
+      "max_similarity": 0.5514,
+      "min_similarity": 0.5514,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_v2_n_refined": 0,
+      "hcpc_v2_n_merged": 0,
+      "hcpc_v2_context_coherence": 1.0
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v2",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "\"golden anniversary\"",
+      "hcpc_v2_log": {
+        "refined": false,
+        "n_chunks_before": 3,
+        "n_chunks_after": 3,
+        "n_refined_chunks": 0,
+        "n_merged_chunks": 0,
+        "best_sim_before": 0.2742,
+        "best_sim_after": 0.2742,
+        "best_ce_before": 5.7234,
+        "best_ce_after": 5.7234,
+        "context_coherence": 1.0,
+        "context_token_count": 581,
+        "mean_retrieval_similarity": 0.2742,
+        "threshold_mode": "fixed",
+        "eff_sim_threshold": 0.4,
+        "eff_ce_threshold": -0.2,
+        "sim_percentile": -1,
+        "ce_percentile": -1
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:23:36.835033+00:00",
+    "query": "What does AFC stand for?",
+    "retrieved_context": ". With the defense carrying the team despite the issues with the offense, the Broncos finished the regular season with a 12–4 record and earned home-field advantage throughout the AFC playoffs.\n\n---\n\n. With the defense carrying the team despite the issues with the offense, the Broncos finished the regular season with a 12–4 record and earned home-field advantage throughout the AFC playoffs.\n\n---\n\n. With the defense carrying the team despite the issues with the offense, the Broncos finished the regular season with a 12–4 record and earned home-field advantage throughout the AFC playoffs.",
+    "generated_output": " I cannot find the abbreviation \"AFC\" explicitly defined in the provided context. However, in American football, AFC typically stands for the American Football Conference.",
+    "faithfulness_score": 0.6233,
+    "is_hallucination": false,
+    "sentence_scores": [
+      {
+        "sentence": "I cannot find the abbreviation \"AFC\" explicitly defined in the provided context",
+        "entailment": 0.458,
+        "contradiction": 0.0758,
+        "neutral": 0.4662
+      },
+      {
+        "sentence": "However, in American football, AFC typically stands for the American Football Conference",
+        "entailment": 0.7886,
+        "contradiction": 0.1045,
+        "neutral": 0.1069
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.4753,
+      "max_similarity": 0.4753,
+      "min_similarity": 0.4753,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_v2_n_refined": 1,
+      "hcpc_v2_n_merged": 0,
+      "hcpc_v2_context_coherence": 1.0
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v2",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "American Football Conference",
+      "hcpc_v2_log": {
+        "refined": true,
+        "n_chunks_before": 3,
+        "n_chunks_after": 3,
+        "n_refined_chunks": 1,
+        "n_merged_chunks": 0,
+        "best_sim_before": 0.0,
+        "best_sim_after": 0.4753,
+        "best_ce_before": -5.3964,
+        "best_ce_after": -5.3964,
+        "context_coherence": 1.0,
+        "context_token_count": 144,
+        "mean_retrieval_similarity": 0.1584,
+        "threshold_mode": "fixed",
+        "eff_sim_threshold": 0.4,
+        "eff_ce_threshold": -0.2,
+        "sim_percentile": -1,
+        "ce_percentile": -1
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:23:42.593216+00:00",
+    "query": "What day was the Super Bowl played on?",
+    "retrieved_context": "The game's media day, which was typically held on the Tuesday afternoon prior to the game, was moved to the Monday evening and re-branded as Super Bowl Opening Night. The event was held on February 1, 2016 at SAP Center in San Jose. Alongside the traditional media availabilities, the event featured an opening ceremony with player introductions on a replica of the Golden Gate Bridge.\n\n---\n\nThe game's media day, which was typically held on the Tuesday afternoon prior to the game, was moved to the Monday evening and re-branded as Super Bowl Opening Night. The event was held on February 1, 2016 at SAP Center in San Jose. Alongside the traditional media availabilities, the event featured an opening ceremony with player introductions on a replica of the Golden Gate Bridge.\n\n---\n\nThe game's media day, which was typically held on the Tuesday afternoon prior to the game, was moved to the Monday evening and re-branded as Super Bowl Opening Night. The event was held on February 1, 2016 at SAP Center in San Jose. Alongside the traditional media availabilities, the event featured an opening ceremony with player introductions on a replica of the Golden Gate Bridge.",
+    "generated_output": " I cannot find this information in the provided context. The context only mentions the date when the Super Bowl Opening Night was held, but it does not specify the date of the actual Super Bowl game.",
+    "faithfulness_score": 0.7694,
+    "is_hallucination": false,
+    "sentence_scores": [
+      {
+        "sentence": "I cannot find this information in the provided context",
+        "entailment": 0.5531,
+        "contradiction": 0.2699,
+        "neutral": 0.177
+      },
+      {
+        "sentence": "The context only mentions the date when the Super Bowl Opening Night was held, but it does not specify the date of the actual Super Bowl game",
+        "entailment": 0.9857,
+        "contradiction": 0.0036,
+        "neutral": 0.0108
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.7006,
+      "max_similarity": 0.7006,
+      "min_similarity": 0.7006,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_v2_n_refined": 0,
+      "hcpc_v2_n_merged": 0,
+      "hcpc_v2_context_coherence": 1.0
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v2",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "February 7, 2016",
+      "hcpc_v2_log": {
+        "refined": false,
+        "n_chunks_before": 3,
+        "n_chunks_after": 3,
+        "n_refined_chunks": 0,
+        "n_merged_chunks": 0,
+        "best_sim_before": 0.4012,
+        "best_sim_after": 0.4012,
+        "best_ce_before": 8.0041,
+        "best_ce_after": 8.0041,
+        "context_coherence": 1.0,
+        "context_token_count": 288,
+        "mean_retrieval_similarity": 0.4012,
+        "threshold_mode": "fixed",
+        "eff_sim_threshold": 0.4,
+        "eff_ce_threshold": -0.2,
+        "sim_percentile": -1,
+        "ce_percentile": -1
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:23:49.451608+00:00",
+    "query": "Who won Super Bowl 50?",
+    "retrieved_context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this ",
+    "generated_output": " The Denver Broncos won Super Bowl 50.",
+    "faithfulness_score": 0.9247,
+    "is_hallucination": false,
+    "sentence_scores": [
+      {
+        "sentence": "The Denver Broncos won Super Bowl 50",
+        "entailment": 0.9247,
+        "contradiction": 0.0533,
+        "neutral": 0.022
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.681,
+      "max_similarity": 0.681,
+      "min_similarity": 0.681,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_v2_n_refined": 0,
+      "hcpc_v2_n_merged": 0,
+      "hcpc_v2_context_coherence": 1.0
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v2",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "Denver Broncos",
+      "hcpc_v2_log": {
+        "refined": false,
+        "n_chunks_before": 3,
+        "n_chunks_after": 3,
+        "n_refined_chunks": 0,
+        "n_merged_chunks": 0,
+        "best_sim_before": 0.396,
+        "best_sim_after": 0.396,
+        "best_ce_before": 8.9704,
+        "best_ce_after": 8.9704,
+        "context_coherence": 1.0,
+        "context_token_count": 581,
+        "mean_retrieval_similarity": 0.396,
+        "threshold_mode": "fixed",
+        "eff_sim_threshold": 0.4,
+        "eff_ce_threshold": -0.2,
+        "sim_percentile": -1,
+        "ce_percentile": -1
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:24:01.541685+00:00",
+    "query": "What venue did Super Bowl 50 take place in?",
+    "retrieved_context": "On May 21, 2013, NFL owners at their spring meetings in Boston voted and awarded the game to Levi's Stadium. The $1.2 billion stadium opened in 2014. It is the first Super Bowl held in the San Francisco Bay Area since Super Bowl XIX in 1985, and the first in California since Super Bowl XXXVII took place in San Diego in 2003.\n\n---\n\nOn May 21, 2013, NFL owners at their spring meetings in Boston voted and awarded the game to Levi's Stadium. The $1.2 billion stadium opened in 2014. It is the first Super Bowl held in the San Francisco Bay Area since Super Bowl XIX in 1985, and the first in California since Super Bowl XXXVII took place in San Diego in 2003.\n\n---\n\nOn May 21, 2013, NFL owners at their spring meetings in Boston voted and awarded the game to Levi's Stadium. The $1.2 billion stadium opened in 2014. It is the first Super Bowl held in the San Francisco Bay Area since Super Bowl XIX in 1985, and the first in California since Super Bowl XXXVII took place in San Diego in 2003.",
+    "generated_output": " The provided context does not specify the venue for Super Bowl 50. However, it mentions that the first Super Bowl held in the San Francisco Bay Area since Super Bowl XIX in 1985 was awarded to Levi's Stadium, which opened in 2014. Since Super Bowl 50 took place in 2016 and Levi's Stadium is located in the San Francisco Bay Area, it is a possibility that Super Bowl 50 could have been held at Levi's Stadium. However, without additional context or information, I cannot confirm this definitively.",
+    "faithfulness_score": 0.5906,
+    "is_hallucination": false,
+    "sentence_scores": [
+      {
+        "sentence": "The provided context does not specify the venue for Super Bowl 50",
+        "entailment": 0.7784,
+        "contradiction": 0.0667,
+        "neutral": 0.1549
+      },
+      {
+        "sentence": "However, it mentions that the first Super Bowl held in the San Francisco Bay Area since Super Bowl XIX in 1985 was awarded to Levi's Stadium, which opened in 2014",
+        "entailment": 0.6175,
+        "contradiction": 0.239,
+        "neutral": 0.1435
+      },
+      {
+        "sentence": "Since Super Bowl 50 took place in 2016 and Levi's Stadium is located in the San Francisco Bay Area, it is a possibility that Super Bowl 50 could have been held at Levi's Stadium",
+        "entailment": 0.4743,
+        "contradiction": 0.3369,
+        "neutral": 0.1888
+      },
+      {
+        "sentence": "However, without additional context or information, I cannot confirm this definitively",
+        "entailment": 0.4921,
+        "contradiction": 0.2078,
+        "neutral": 0.3001
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.6831,
+      "max_similarity": 0.6831,
+      "min_similarity": 0.6831,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_v2_n_refined": 0,
+      "hcpc_v2_n_merged": 0,
+      "hcpc_v2_context_coherence": 1.0
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v2",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "Levi's Stadium",
+      "hcpc_v2_log": {
+        "refined": false,
+        "n_chunks_before": 3,
+        "n_chunks_after": 3,
+        "n_refined_chunks": 0,
+        "n_merged_chunks": 0,
+        "best_sim_before": 0.3661,
+        "best_sim_after": 0.3661,
+        "best_ce_before": 2.7831,
+        "best_ce_after": 2.7831,
+        "context_coherence": 1.0,
+        "context_token_count": 244,
+        "mean_retrieval_similarity": 0.3661,
+        "threshold_mode": "fixed",
+        "eff_sim_threshold": 0.4,
+        "eff_ce_threshold": -0.2,
+        "sim_percentile": -1,
+        "ce_percentile": -1
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:24:08.897835+00:00",
+    "query": "What city did Super Bowl 50 take place in?",
+    "retrieved_context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this ",
+    "generated_output": " The Super Bowl 50 took place in Santa Clara, California (specifically at Levi's Stadium in the San Francisco Bay Area).",
+    "faithfulness_score": 0.9733,
+    "is_hallucination": false,
+    "sentence_scores": [
+      {
+        "sentence": "The Super Bowl 50 took place in Santa Clara, California (specifically at Levi's Stadium in the San Francisco Bay Area)",
+        "entailment": 0.9733,
+        "contradiction": 0.0106,
+        "neutral": 0.016
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.6635,
+      "max_similarity": 0.6635,
+      "min_similarity": 0.6635,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_v2_n_refined": 0,
+      "hcpc_v2_n_merged": 0,
+      "hcpc_v2_context_coherence": 1.0
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v2",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "Santa Clara",
+      "hcpc_v2_log": {
+        "refined": false,
+        "n_chunks_before": 3,
+        "n_chunks_after": 3,
+        "n_refined_chunks": 0,
+        "n_merged_chunks": 0,
+        "best_sim_before": 0.4005,
+        "best_sim_after": 0.4005,
+        "best_ce_before": 7.8036,
+        "best_ce_after": 7.8036,
+        "context_coherence": 1.0,
+        "context_token_count": 581,
+        "mean_retrieval_similarity": 0.4005,
+        "threshold_mode": "fixed",
+        "eff_sim_threshold": 0.4,
+        "eff_ce_threshold": -0.2,
+        "sim_percentile": -1,
+        "ce_percentile": -1
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:24:18.030984+00:00",
+    "query": "If Roman numerals were used, what would Super Bowl 50 have been called?",
+    "retrieved_context": "On June 4, 2014, the NFL announced that the practice of branding Super Bowl games with Roman numerals, a practice established at Super Bowl V, would be temporarily suspended, and that the game would be named using Arabic numerals as Super Bowl 50 as opposed to Super Bowl L. The use of Roman numerals will be reinstated for Super Bowl LI. Jaime Weston, the league's vice president of brand and creative, explained that a primary reason for the change was the difficulty of designing an aesthetically pleasing logo with the letter \"L\" using the standardized logo template introduced at Super Bowl XLV. The logo also deviates from the template by featuring large numerals, colored in gold, behind the Vince Lombardi Trophy, instead of underneath and in silver as in the standard logo.\n\n---\n\nOn June 4, 2014, the NFL announced that the practice of branding Super Bowl games with Roman numerals, a practice established at Super Bowl V, would be temporarily suspended, and that the game would be named using Arabic numerals as Super Bowl 50 as opposed to Super Bowl L. The use of Roman numerals will be reinstated for Super Bowl LI. Jaime Weston, the league's vice president of brand and creative, explained that a primary reason for the change was the difficulty of designing an aesthetically pleasing logo with the letter \"L\" using the standardized logo template introduced at Super Bowl XLV. The logo also deviates from the template by featuring large numerals, colored in gold, behind the Vince Lombardi Trophy, instead of underneath and in silver as in the standard logo.\n\n---\n\nOn June 4, 2014, the NFL announced that the practice of branding Super Bowl games with Roman numerals, a practice established at Super Bowl V, would be temporarily suspended, and that the game would be named using Arabic numerals as Super Bowl 50 as opposed to Super Bowl L. The use of Roman numerals will be reinstated for Super Bowl LI. Jaime Weston, the league's vice president of brand and creative, explained that a p",
+    "generated_output": " Super Bowl L (which stands for 50 in Roman numerals) was temporarily not used for Super Bowl 50. Instead, it was named Super Bowl 50 using Arabic numerals.",
+    "faithfulness_score": 0.6544,
+    "is_hallucination": false,
+    "sentence_scores": [
+      {
+        "sentence": "Super Bowl L (which stands for 50 in Roman numerals) was temporarily not used for Super Bowl 50",
+        "entailment": 0.5741,
+        "contradiction": 0.1892,
+        "neutral": 0.2368
+      },
+      {
+        "sentence": "Instead, it was named Super Bowl 50 using Arabic numerals",
+        "entailment": 0.7348,
+        "contradiction": 0.1932,
+        "neutral": 0.072
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.7265,
+      "max_similarity": 0.7265,
+      "min_similarity": 0.7265,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_v2_n_refined": 0,
+      "hcpc_v2_n_merged": 0,
+      "hcpc_v2_context_coherence": 1.0
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v2",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "Super Bowl L",
+      "hcpc_v2_log": {
+        "refined": false,
+        "n_chunks_before": 3,
+        "n_chunks_after": 3,
+        "n_refined_chunks": 0,
+        "n_merged_chunks": 0,
+        "best_sim_before": 0.3753,
+        "best_sim_after": 0.3753,
+        "best_ce_before": 7.6579,
+        "best_ce_after": 7.6579,
+        "context_coherence": 1.0,
+        "context_token_count": 586,
+        "mean_retrieval_similarity": 0.3753,
+        "threshold_mode": "fixed",
+        "eff_sim_threshold": 0.4,
+        "eff_ce_threshold": -0.2,
+        "sim_percentile": -1,
+        "ce_percentile": -1
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:24:27.071535+00:00",
+    "query": "Super Bowl 50 decided the NFL champion for what season?",
+    "retrieved_context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this ",
+    "generated_output": " The National Football League (NFL) champion for the 2015 season was decided in Super Bowl 50.",
+    "faithfulness_score": 0.6932,
+    "is_hallucination": false,
+    "sentence_scores": [
+      {
+        "sentence": "The National Football League (NFL) champion for the 2015 season was decided in Super Bowl 50",
+        "entailment": 0.6932,
+        "contradiction": 0.0932,
+        "neutral": 0.2136
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.6996,
+      "max_similarity": 0.6996,
+      "min_similarity": 0.6996,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_v2_n_refined": 0,
+      "hcpc_v2_n_merged": 0,
+      "hcpc_v2_context_coherence": 1.0
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v2",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "2015",
+      "hcpc_v2_log": {
+        "refined": false,
+        "n_chunks_before": 3,
+        "n_chunks_after": 3,
+        "n_refined_chunks": 0,
+        "n_merged_chunks": 0,
+        "best_sim_before": 0.4222,
+        "best_sim_after": 0.4222,
+        "best_ce_before": 9.5303,
+        "best_ce_after": 9.5303,
+        "context_coherence": 1.0,
+        "context_token_count": 581,
+        "mean_retrieval_similarity": 0.4222,
+        "threshold_mode": "fixed",
+        "eff_sim_threshold": 0.4,
+        "eff_ce_threshold": -0.2,
+        "sim_percentile": -1,
+        "ce_percentile": -1
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:24:36.722134+00:00",
+    "query": "What year did the Denver Broncos secure a Super Bowl title for the third time?",
+    "retrieved_context": ". With the defense carrying the team despite the issues with the offense, the Broncos finished the regular season with a 12–4 record and earned home-field advantage throughout the AFC playoffs.\n\n---\n\n. With the defense carrying the team despite the issues with the offense, the Broncos finished the regular season with a 12–4 record and earned home-field advantage throughout the AFC playoffs.\n\n---\n\n. With the defense carrying the team despite the issues with the offense, the Broncos finished the regular season with a 12–4 record and earned home-field advantage throughout the AFC playoffs.",
+    "generated_output": " I cannot find this information in the provided context. The context only mentions that the Denver Broncos finished the regular season with a 12–4 record and earned home-field advantage throughout the AFC playoffs in a year that is not specified, but it does not state that they won a Super Bowl title.",
+    "faithfulness_score": 0.5621,
+    "is_hallucination": false,
+    "sentence_scores": [
+      {
+        "sentence": "I cannot find this information in the provided context",
+        "entailment": 0.5531,
+        "contradiction": 0.2699,
+        "neutral": 0.177
+      },
+      {
+        "sentence": "The context only mentions that the Denver Broncos finished the regular season with a 12–4 record and earned home-field advantage throughout the AFC playoffs in a year that is not specified, but it does not state that they won a Super Bowl title",
+        "entailment": 0.5712,
+        "contradiction": 0.062,
+        "neutral": 0.3668
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.6986,
+      "max_similarity": 0.6986,
+      "min_similarity": 0.6986,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_v2_n_refined": 1,
+      "hcpc_v2_n_merged": 0,
+      "hcpc_v2_context_coherence": 1.0
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v2",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "2015",
+      "hcpc_v2_log": {
+        "refined": true,
+        "n_chunks_before": 3,
+        "n_chunks_after": 3,
+        "n_refined_chunks": 1,
+        "n_merged_chunks": 0,
+        "best_sim_before": 0.3971,
+        "best_sim_after": 0.6986,
+        "best_ce_before": -6.1077,
+        "best_ce_after": -6.1077,
+        "context_coherence": 1.0,
+        "context_token_count": 144,
+        "mean_retrieval_similarity": 0.4976,
+        "threshold_mode": "fixed",
+        "eff_sim_threshold": 0.4,
+        "eff_ce_threshold": -0.2,
+        "sim_percentile": -1,
+        "ce_percentile": -1
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:24:46.548393+00:00",
+    "query": "What city did Super Bowl 50 take place in?",
+    "retrieved_context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this ",
+    "generated_output": " The Super Bowl 50 took place in Santa Clara, California (specifically at Levi's Stadium in the San Francisco Bay Area).",
+    "faithfulness_score": 0.9733,
+    "is_hallucination": false,
+    "sentence_scores": [
+      {
+        "sentence": "The Super Bowl 50 took place in Santa Clara, California (specifically at Levi's Stadium in the San Francisco Bay Area)",
+        "entailment": 0.9733,
+        "contradiction": 0.0106,
+        "neutral": 0.016
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.6635,
+      "max_similarity": 0.6635,
+      "min_similarity": 0.6635,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_v2_n_refined": 0,
+      "hcpc_v2_n_merged": 0,
+      "hcpc_v2_context_coherence": 1.0
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v2",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "Santa Clara",
+      "hcpc_v2_log": {
+        "refined": false,
+        "n_chunks_before": 3,
+        "n_chunks_after": 3,
+        "n_refined_chunks": 0,
+        "n_merged_chunks": 0,
+        "best_sim_before": 0.4005,
+        "best_sim_after": 0.4005,
+        "best_ce_before": 7.8036,
+        "best_ce_after": 7.8036,
+        "context_coherence": 1.0,
+        "context_token_count": 581,
+        "mean_retrieval_similarity": 0.4005,
+        "threshold_mode": "fixed",
+        "eff_sim_threshold": 0.4,
+        "eff_ce_threshold": -0.2,
+        "sim_percentile": -1,
+        "ce_percentile": -1
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:24:50.063421+00:00",
+    "query": "What stadium did Super Bowl 50 take place in?",
+    "retrieved_context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this ",
+    "generated_output": " The Super Bowl 50 took place at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California.",
+    "faithfulness_score": 0.9459,
+    "is_hallucination": false,
+    "sentence_scores": [
+      {
+        "sentence": "The Super Bowl 50 took place at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California",
+        "entailment": 0.9459,
+        "contradiction": 0.0197,
+        "neutral": 0.0344
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.6576,
+      "max_similarity": 0.6576,
+      "min_similarity": 0.6576,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_v2_n_refined": 0,
+      "hcpc_v2_n_merged": 0,
+      "hcpc_v2_context_coherence": 1.0
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v2",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "Levi's Stadium",
+      "hcpc_v2_log": {
+        "refined": false,
+        "n_chunks_before": 3,
+        "n_chunks_after": 3,
+        "n_refined_chunks": 0,
+        "n_merged_chunks": 0,
+        "best_sim_before": 0.3989,
+        "best_sim_after": 0.3989,
+        "best_ce_before": 8.8889,
+        "best_ce_after": 8.8889,
+        "context_coherence": 1.0,
+        "context_token_count": 581,
+        "mean_retrieval_similarity": 0.3989,
+        "threshold_mode": "fixed",
+        "eff_sim_threshold": 0.4,
+        "eff_ce_threshold": -0.2,
+        "sim_percentile": -1,
+        "ce_percentile": -1
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:24:52.991583+00:00",
+    "query": "What was the final score of Super Bowl 50? ",
+    "retrieved_context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this ",
+    "generated_output": " The final score of Super Bowl 50 was 24–10.",
+    "faithfulness_score": 0.7851,
+    "is_hallucination": false,
+    "sentence_scores": [
+      {
+        "sentence": "The final score of Super Bowl 50 was 24–10",
+        "entailment": 0.7851,
+        "contradiction": 0.124,
+        "neutral": 0.0909
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.6261,
+      "max_similarity": 0.6261,
+      "min_similarity": 0.6261,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_v2_n_refined": 0,
+      "hcpc_v2_n_merged": 0,
+      "hcpc_v2_context_coherence": 1.0
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v2",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "24–10",
+      "hcpc_v2_log": {
+        "refined": false,
+        "n_chunks_before": 3,
+        "n_chunks_after": 3,
+        "n_refined_chunks": 0,
+        "n_merged_chunks": 0,
+        "best_sim_before": 0.3342,
+        "best_sim_after": 0.3342,
+        "best_ce_before": 5.5438,
+        "best_ce_after": 5.5438,
+        "context_coherence": 1.0,
+        "context_token_count": 581,
+        "mean_retrieval_similarity": 0.3342,
+        "threshold_mode": "fixed",
+        "eff_sim_threshold": 0.4,
+        "eff_ce_threshold": -0.2,
+        "sim_percentile": -1,
+        "ce_percentile": -1
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:24:55.288992+00:00",
+    "query": "What month, day and year did Super Bowl 50 take place? ",
+    "retrieved_context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this ",
+    "generated_output": " The Super Bowl 50 took place on February 7, 2016.",
+    "faithfulness_score": 0.945,
+    "is_hallucination": false,
+    "sentence_scores": [
+      {
+        "sentence": "The Super Bowl 50 took place on February 7, 2016",
+        "entailment": 0.945,
+        "contradiction": 0.0186,
+        "neutral": 0.0364
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.6393,
+      "max_similarity": 0.6393,
+      "min_similarity": 0.6393,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_v2_n_refined": 0,
+      "hcpc_v2_n_merged": 0,
+      "hcpc_v2_context_coherence": 1.0
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v2",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "February 7, 2016",
+      "hcpc_v2_log": {
+        "refined": false,
+        "n_chunks_before": 3,
+        "n_chunks_after": 3,
+        "n_refined_chunks": 0,
+        "n_merged_chunks": 0,
+        "best_sim_before": 0.372,
+        "best_sim_after": 0.372,
+        "best_ce_before": 6.6291,
+        "best_ce_after": 6.6291,
+        "context_coherence": 1.0,
+        "context_token_count": 581,
+        "mean_retrieval_similarity": 0.372,
+        "threshold_mode": "fixed",
+        "eff_sim_threshold": 0.4,
+        "eff_ce_threshold": -0.2,
+        "sim_percentile": -1,
+        "ce_percentile": -1
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:24:57.253126+00:00",
+    "query": "What year was Super Bowl 50?",
+    "retrieved_context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this ",
+    "generated_output": " The Super Bowl 50 was played in the year 2016.",
+    "faithfulness_score": 0.7056,
+    "is_hallucination": false,
+    "sentence_scores": [
+      {
+        "sentence": "The Super Bowl 50 was played in the year 2016",
+        "entailment": 0.7056,
+        "contradiction": 0.1903,
+        "neutral": 0.1041
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.6696,
+      "max_similarity": 0.6696,
+      "min_similarity": 0.6696,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_v2_n_refined": 0,
+      "hcpc_v2_n_merged": 0,
+      "hcpc_v2_context_coherence": 1.0
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v2",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "2015",
+      "hcpc_v2_log": {
+        "refined": false,
+        "n_chunks_before": 3,
+        "n_chunks_after": 3,
+        "n_refined_chunks": 0,
+        "n_merged_chunks": 0,
+        "best_sim_before": 0.4358,
+        "best_sim_after": 0.4358,
+        "best_ce_before": 9.1714,
+        "best_ce_after": 9.1714,
+        "context_coherence": 1.0,
+        "context_token_count": 581,
+        "mean_retrieval_similarity": 0.4358,
+        "threshold_mode": "fixed",
+        "eff_sim_threshold": 0.4,
+        "eff_ce_threshold": -0.2,
+        "sim_percentile": -1,
+        "ce_percentile": -1
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:25:03.712176+00:00",
+    "query": "What team was the AFC champion?",
+    "retrieved_context": ". With the defense carrying the team despite the issues with the offense, the Broncos finished the regular season with a 12–4 record and earned home-field advantage throughout the AFC playoffs.\n\n---\n\n. With the defense carrying the team despite the issues with the offense, the Broncos finished the regular season with a 12–4 record and earned home-field advantage throughout the AFC playoffs.\n\n---\n\n. With the defense carrying the team despite the issues with the offense, the Broncos finished the regular season with a 12–4 record and earned home-field advantage throughout the AFC playoffs.",
+    "generated_output": " I cannot find this information in the provided context. The context only mentions that the Broncos finished the regular season with a 12–4 record and earned home-field advantage throughout the AFC playoffs, but it does not specify whether they won the AFC championship or not.",
+    "faithfulness_score": 0.6994,
+    "is_hallucination": false,
+    "sentence_scores": [
+      {
+        "sentence": "I cannot find this information in the provided context",
+        "entailment": 0.5531,
+        "contradiction": 0.2699,
+        "neutral": 0.177
+      },
+      {
+        "sentence": "The context only mentions that the Broncos finished the regular season with a 12–4 record and earned home-field advantage throughout the AFC playoffs, but it does not specify whether they won the AFC championship or not",
+        "entailment": 0.8458,
+        "contradiction": 0.0642,
+        "neutral": 0.09
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.5895,
+      "max_similarity": 0.5895,
+      "min_similarity": 0.5895,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_v2_n_refined": 1,
+      "hcpc_v2_n_merged": 0,
+      "hcpc_v2_context_coherence": 1.0
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v2",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "Denver Broncos",
+      "hcpc_v2_log": {
+        "refined": true,
+        "n_chunks_before": 3,
+        "n_chunks_after": 3,
+        "n_refined_chunks": 1,
+        "n_merged_chunks": 0,
+        "best_sim_before": 0.1789,
+        "best_sim_after": 0.5895,
+        "best_ce_before": -1.6881,
+        "best_ce_after": -1.6881,
+        "context_coherence": 1.0,
+        "context_token_count": 144,
+        "mean_retrieval_similarity": 0.3158,
+        "threshold_mode": "fixed",
+        "eff_sim_threshold": 0.4,
+        "eff_ce_threshold": -0.2,
+        "sim_percentile": -1,
+        "ce_percentile": -1
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:25:11.050756+00:00",
+    "query": "What team was the NFC champion?",
+    "retrieved_context": "The Panthers finished the regular season with a 15–1 record, and quarterback Cam Newton was named the NFL Most Valuable Player (MVP). They defeated the Arizona Cardinals 49–15 in the NFC Championship Game and advanced to their second Super Bowl appearance since the franchise was founded in 1995. The Broncos finished the regular season with a 12–4 record, and denied the New England Patriots a chance to defend their title from Super Bowl XLIX by defeating them 20–18 in the AFC Championship Game. They joined the Patriots, Dallas Cowboys, and Pittsburgh Steelers as one of four teams that have made eight appearances in the Super Bowl.\n\n---\n\nThe Panthers finished the regular season with a 15–1 record, and quarterback Cam Newton was named the NFL Most Valuable Player (MVP). They defeated the Arizona Cardinals 49–15 in the NFC Championship Game and advanced to their second Super Bowl appearance since the franchise was founded in 1995. The Broncos finished the regular season with a 12–4 record, and denied the New England Patriots a chance to defend their title from Super Bowl XLIX by defeating them 20–18 in the AFC Championship Game. They joined the Patriots, Dallas Cowboys, and Pittsburgh Steelers as one of four teams that have made eight appearances in the Super Bowl.\n\n---\n\nThe Panthers finished the regular season with a 15–1 record, and quarterback Cam Newton was named the NFL Most Valuable Player (MVP). They defeated the Arizona Cardinals 49–15 in the NFC Championship Game and advanced to their second Super Bowl appearance since the franchise was founded in 1995. The Broncos finished the regular season with a 12–4 record, and denied the New England Patriots a chance to defend their title from Super Bowl XLIX by defeating them 20–18 in the AFC Championship Game. They joined the Patriots, Dallas Cowboys, and Pittsburgh Steelers as one of four teams that have made eight appearances in the Super Bowl.",
+    "generated_output": " The Panthers were the NFC champion.",
+    "faithfulness_score": 0.665,
+    "is_hallucination": false,
+    "sentence_scores": [
+      {
+        "sentence": "The Panthers were the NFC champion",
+        "entailment": 0.665,
+        "contradiction": 0.0983,
+        "neutral": 0.2368
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.6302,
+      "max_similarity": 0.6302,
+      "min_similarity": 0.6302,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_v2_n_refined": 0,
+      "hcpc_v2_n_merged": 0,
+      "hcpc_v2_context_coherence": 1.0
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v2",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "Carolina Panthers",
+      "hcpc_v2_log": {
+        "refined": false,
+        "n_chunks_before": 3,
+        "n_chunks_after": 3,
+        "n_refined_chunks": 0,
+        "n_merged_chunks": 0,
+        "best_sim_before": 0.2396,
+        "best_sim_after": 0.2396,
+        "best_ce_before": 2.9751,
+        "best_ce_after": 2.9751,
+        "context_coherence": 1.0,
+        "context_token_count": 477,
+        "mean_retrieval_similarity": 0.2396,
+        "threshold_mode": "fixed",
+        "eff_sim_threshold": 0.4,
+        "eff_ce_threshold": -0.2,
+        "sim_percentile": -1,
+        "ce_percentile": -1
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:25:19.642276+00:00",
+    "query": "Who won Super Bowl 50?",
+    "retrieved_context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this ",
+    "generated_output": " The Denver Broncos won Super Bowl 50.",
+    "faithfulness_score": 0.9247,
+    "is_hallucination": false,
+    "sentence_scores": [
+      {
+        "sentence": "The Denver Broncos won Super Bowl 50",
+        "entailment": 0.9247,
+        "contradiction": 0.0533,
+        "neutral": 0.022
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.681,
+      "max_similarity": 0.681,
+      "min_similarity": 0.681,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_v2_n_refined": 0,
+      "hcpc_v2_n_merged": 0,
+      "hcpc_v2_context_coherence": 1.0
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v2",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "Denver Broncos",
+      "hcpc_v2_log": {
+        "refined": false,
+        "n_chunks_before": 3,
+        "n_chunks_after": 3,
+        "n_refined_chunks": 0,
+        "n_merged_chunks": 0,
+        "best_sim_before": 0.396,
+        "best_sim_after": 0.396,
+        "best_ce_before": 8.9704,
+        "best_ce_after": 8.9704,
+        "context_coherence": 1.0,
+        "context_token_count": 581,
+        "mean_retrieval_similarity": 0.396,
+        "threshold_mode": "fixed",
+        "eff_sim_threshold": 0.4,
+        "eff_ce_threshold": -0.2,
+        "sim_percentile": -1,
+        "ce_percentile": -1
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:25:23.140076+00:00",
+    "query": "Super Bowl 50 determined the NFL champion for what season?",
+    "retrieved_context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this ",
+    "generated_output": " The National Football League (NFL) champion for the 2015 season was determined in Super Bowl 50.",
+    "faithfulness_score": 0.713,
+    "is_hallucination": false,
+    "sentence_scores": [
+      {
+        "sentence": "The National Football League (NFL) champion for the 2015 season was determined in Super Bowl 50",
+        "entailment": 0.713,
+        "contradiction": 0.0741,
+        "neutral": 0.213
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.6929,
+      "max_similarity": 0.6929,
+      "min_similarity": 0.6929,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_v2_n_refined": 0,
+      "hcpc_v2_n_merged": 0,
+      "hcpc_v2_context_coherence": 1.0
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v2",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "2015",
+      "hcpc_v2_log": {
+        "refined": false,
+        "n_chunks_before": 3,
+        "n_chunks_after": 3,
+        "n_refined_chunks": 0,
+        "n_merged_chunks": 0,
+        "best_sim_before": 0.4067,
+        "best_sim_after": 0.4067,
+        "best_ce_before": 9.7538,
+        "best_ce_after": 9.7538,
+        "context_coherence": 1.0,
+        "context_token_count": 581,
+        "mean_retrieval_similarity": 0.4067,
+        "threshold_mode": "fixed",
+        "eff_sim_threshold": 0.4,
+        "eff_ce_threshold": -0.2,
+        "sim_percentile": -1,
+        "ce_percentile": -1
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:25:24.486502+00:00",
+    "query": "Which team won Super Bowl 50.",
+    "retrieved_context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this ",
+    "generated_output": " The Denver Broncos won Super Bowl 50.",
+    "faithfulness_score": 0.9247,
+    "is_hallucination": false,
+    "sentence_scores": [
+      {
+        "sentence": "The Denver Broncos won Super Bowl 50",
+        "entailment": 0.9247,
+        "contradiction": 0.0533,
+        "neutral": 0.022
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.7186,
+      "max_similarity": 0.7186,
+      "min_similarity": 0.7186,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_v2_n_refined": 0,
+      "hcpc_v2_n_merged": 0,
+      "hcpc_v2_context_coherence": 1.0
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v2",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "Denver Broncos",
+      "hcpc_v2_log": {
+        "refined": false,
+        "n_chunks_before": 3,
+        "n_chunks_after": 3,
+        "n_refined_chunks": 0,
+        "n_merged_chunks": 0,
+        "best_sim_before": 0.4489,
+        "best_sim_after": 0.4489,
+        "best_ce_before": 9.6867,
+        "best_ce_after": 9.6867,
+        "context_coherence": 1.0,
+        "context_token_count": 581,
+        "mean_retrieval_similarity": 0.4489,
+        "threshold_mode": "fixed",
+        "eff_sim_threshold": 0.4,
+        "eff_ce_threshold": -0.2,
+        "sim_percentile": -1,
+        "ce_percentile": -1
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:25:27.005011+00:00",
+    "query": "Where was Super Bowl 50 held?",
+    "retrieved_context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this ",
+    "generated_output": " The Super Bowl 50 was held at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California.",
+    "faithfulness_score": 0.9393,
+    "is_hallucination": false,
+    "sentence_scores": [
+      {
+        "sentence": "The Super Bowl 50 was held at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California",
+        "entailment": 0.9393,
+        "contradiction": 0.0286,
+        "neutral": 0.032
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.6858,
+      "max_similarity": 0.6858,
+      "min_similarity": 0.6858,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_v2_n_refined": 0,
+      "hcpc_v2_n_merged": 0,
+      "hcpc_v2_context_coherence": 1.0
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v2",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "Santa Clara, California.",
+      "hcpc_v2_log": {
+        "refined": false,
+        "n_chunks_before": 3,
+        "n_chunks_after": 3,
+        "n_refined_chunks": 0,
+        "n_merged_chunks": 0,
+        "best_sim_before": 0.4167,
+        "best_sim_after": 0.4167,
+        "best_ce_before": 9.1582,
+        "best_ce_after": 9.1582,
+        "context_coherence": 1.0,
+        "context_token_count": 581,
+        "mean_retrieval_similarity": 0.4167,
+        "threshold_mode": "fixed",
+        "eff_sim_threshold": 0.4,
+        "eff_ce_threshold": -0.2,
+        "sim_percentile": -1,
+        "ce_percentile": -1
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:25:30.855277+00:00",
+    "query": "The name of the NFL championship game is?",
+    "retrieved_context": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this was the 50th Super Bowl, the league emphasized the \"golden anniversary\" with various gold-themed initiatives, as well as temporarily suspending the tradition of naming each Super Bowl game with Roman numerals (under which the game would have been known as \"Super Bowl L\"), so that the logo could prominently feature the Arabic numerals 50.\n\n---\n\nSuper Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24–10 to earn their third Super Bowl title. The game was played on February 7, 2016, at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California. As this ",
+    "generated_output": " The name of the NFL championship game, according to the provided context, is not explicitly stated. However, it can be inferred that the game in question is Super Bowl 50.",
+    "faithfulness_score": 0.638,
+    "is_hallucination": false,
+    "sentence_scores": [
+      {
+        "sentence": "The name of the NFL championship game, according to the provided context, is not explicitly stated",
+        "entailment": 0.53,
+        "contradiction": 0.068,
+        "neutral": 0.4019
+      },
+      {
+        "sentence": "However, it can be inferred that the game in question is Super Bowl 50",
+        "entailment": 0.7461,
+        "contradiction": 0.0983,
+        "neutral": 0.1557
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.5245,
+      "max_similarity": 0.5245,
+      "min_similarity": 0.5245,
+      "relevance_spread": 0.0,
+      "n_docs": 3,
+      "hcpc_v2_n_refined": 0,
+      "hcpc_v2_n_merged": 0,
+      "hcpc_v2_context_coherence": 1.0
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v2",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "Super Bowl",
+      "hcpc_v2_log": {
+        "refined": false,
+        "n_chunks_before": 3,
+        "n_chunks_after": 3,
+        "n_refined_chunks": 0,
+        "n_merged_chunks": 0,
+        "best_sim_before": 0.1479,
+        "best_sim_after": 0.1479,
+        "best_ce_before": 4.3633,
+        "best_ce_after": 4.3633,
+        "context_coherence": 1.0,
+        "context_token_count": 581,
+        "mean_retrieval_similarity": 0.1479,
+        "threshold_mode": "fixed",
+        "eff_sim_threshold": 0.4,
+        "eff_ce_threshold": -0.2,
+        "sim_percentile": -1,
+        "ce_percentile": -1
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-09T14:25:38.875086+00:00",
+    "query": "What 2015 NFL team one the AFC playoff?",
+    "retrieved_context": "The Panthers finished the regular season with a 15–1 record, and quarterback Cam Newton was named the NFL Most Valuable Player (MVP). They defeated the Arizona Cardinals 49–15 in the NFC Championship Game and advanced to their second Super Bowl appearance since the franchise was founded in 1995. The Broncos finished the regular season with a 12–4 record, and denied the New England Patriots a chance to defend their title from Super Bowl XLIX by defeating them 20–18 in the AFC Championship Game. They joined the Patriots, Dallas Cowboys, and Pittsburgh Steelers as one of four teams that have made eight appearances in the Super Bowl.\n\n---\n\nThe Panthers finished the regular season with a 15–1 record, and quarterback Cam Newton was named the NFL Most Valuable Player (MVP). They defeated the Arizona Cardinals 49–15 in the NFC Championship Game and advanced to their second Super Bowl appearance since the franchise was founded in 1995. The Broncos finished the regular season with a 12–4 record, and denied the New England Patriots a chance to defend their title from Super Bowl XLIX by defeating them 20–18 in the AFC Championship Game. They joined the Patriots, Dallas Cowboys, and Pittsburgh Steelers as one of four teams that have made eight appearances in the Super Bowl.\n\n---\n\nThe Panthers finished the regular season with a 15–1 record, and quarterback Cam Newton was named the NFL Most Valuable Player (MVP) . They defeated the Arizona Cardinals 49–15 in the NFC Championship Game and advanced to their second Super Bowl appearance since the franchise was founded in 1995 . The Broncos finished the regular season with a 12–4 record, and denied the New England Patriots a chance to defend their title from Super Bowl XLIX by defeating them 20–18 in the AFC Championship Game . They joined the Patriots, Dallas Cowboys, and Pittsburgh Steelers as one of four teams that have made eight appearances in the Super Bowl.",
+    "generated_output": " The Broncos won the AFC Championship Game in the 2015 NFL season.",
+    "faithfulness_score": 0.8781,
+    "is_hallucination": false,
+    "sentence_scores": [
+      {
+        "sentence": "The Broncos won the AFC Championship Game in the 2015 NFL season",
+        "entailment": 0.8781,
+        "contradiction": 0.0729,
+        "neutral": 0.049
+      }
+    ],
+    "retrieval_metrics": {
+      "mean_similarity": 0.5494,
+      "max_similarity": 0.5523,
+      "min_similarity": 0.5437,
+      "relevance_spread": 0.0086,
+      "n_docs": 3,
+      "hcpc_v2_n_refined": 1,
+      "hcpc_v2_n_merged": 3,
+      "hcpc_v2_context_coherence": 1.0
+    },
+    "metadata": {
+      "dataset": "squad",
+      "condition": "hcpc_v2",
+      "chunk_size": 1024,
+      "top_k": 3,
+      "ground_truth": "Denver Broncos",
+      "hcpc_v2_log": {
+        "refined": true,
+        "n_chunks_before": 3,
+        "n_chunks_after": 3,
+        "n_refined_chunks": 1,
+        "n_merged_chunks": 3,
+        "best_sim_before": 0.1026,
+        "best_sim_after": 0.5513,
+        "best_ce_before": -1.8825,
+        "best_ce_after": -1.7196,
+        "context_coherence": 1.0,
+        "context_token_count": 478,
+        "mean_retrieval_similarity": 0.2522,
+        "threshold_mode": "fixed",
+        "eff_sim_threshold": 0.4,
+        "eff_ce_threshold": -0.2,
+        "sim_percentile": -1,
+        "ce_percentile": -1
+      }
+    }
+  }
+]

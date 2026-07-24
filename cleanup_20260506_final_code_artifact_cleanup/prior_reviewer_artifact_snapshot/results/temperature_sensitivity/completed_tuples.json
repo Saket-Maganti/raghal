@@ -1,0 +1,11 @@
+{
+  "squad__T0.0__groq__llama-3.3-70b": true,
+  "squad__T0.0__ollama__mistral": true,
+  "squad__T0.3__ollama__mistral": true,
+  "squad__T0.7__ollama__mistral": true,
+  "squad__T1.0__ollama__mistral": true,
+  "pubmedqa__T0.0__ollama__mistral": true,
+  "pubmedqa__T0.3__ollama__mistral": true,
+  "pubmedqa__T0.7__ollama__mistral": true,
+  "pubmedqa__T1.0__ollama__mistral": true
+}

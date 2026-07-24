@@ -1,0 +1,51 @@
+question,answer,ground_truth,faithfulness_score,is_hallucination,label,latency_s
+Which NFL team represented the AFC at Super Bowl 50?, The American Football Conference (AFC) champion was Denver Broncos.,Denver Broncos,0.7165,False,faithful,3.65
+Which NFL team represented the NFC at Super Bowl 50?, The National Football Conference (NFC) champion represented by Carolina Panthers at Super Bowl 50.,Carolina Panthers,0.7465,False,faithful,1.19
+Where did Super Bowl 50 take place?," At Levi's Stadium in the San Francisco Bay Area at Santa Clara, California.","Santa Clara, California",0.6784,False,faithful,3.7
+Which NFL team won Super Bowl 50?, The Denver Broncos won Super Bowl 50.,Denver Broncos,0.9247,False,faithful,3.12
+What color was used to emphasize the 50th anniversary of the Super Bowl?, Gold-themed initiatives were used to emphasize the 50th anniversary of the Super Bowl.,gold,0.8013,False,faithful,3.35
+What was the theme of Super Bowl 50?," The theme of Super Bowl 50, according to the provided context, was a ""golden anniversary"" with various gold-themed initiatives.","""golden anniversary""",0.7804,False,faithful,1.71
+What day was the game played on?," The game was played on February 1, 2016.","February 7, 2016",0.884,False,faithful,3.65
+What is the AFC short for?," I cannot find this information in the provided context. The context only discusses NFL teams that have made eight Super Bowl appearances, but it does not mention or imply what AFC stands for.",American Football Conference,0.5309,False,faithful,3.16
+What was the theme of Super Bowl 50?," The theme of Super Bowl 50, according to the provided context, was a ""golden anniversary"" with various gold-themed initiatives.","""golden anniversary""",0.7804,False,faithful,3.67
+What does AFC stand for?," I cannot find this information in the provided context. The context only mentions NFL teams that have made eight Super Bowl appearances, but it doesn't provide any details about the AFC.",American Football Conference,0.5926,False,faithful,2.92
+What day was the Super Bowl played on?," I cannot find this information in the provided context. The context only mentions that the Super Bowl Opening Night (which is not the actual game) was held on February 1, 2016. It does not specify the day the Super Bowl itself was played.","February 7, 2016",0.5821,False,faithful,5.32
+Who won Super Bowl 50?, The Denver Broncos won Super Bowl 50.,Denver Broncos,0.9247,False,faithful,3.5
+What venue did Super Bowl 50 take place in?, Levi's Stadium,Levi's Stadium,0.5799,False,faithful,2.82
+What city did Super Bowl 50 take place in?," The Super Bowl 50 took place in Santa Clara, California.",Santa Clara,0.9575,False,faithful,3.11
+"If Roman numerals were used, what would Super Bowl 50 have been called?", Super Bowl L,Super Bowl L,0.4909,True,hallucinated,2.39
+Super Bowl 50 decided the NFL champion for what season?, The National Football League (NFL) champion for the 2015 season was determined in Super Bowl 50.,2015,0.713,False,faithful,3.73
+What year did the Denver Broncos secure a Super Bowl title for the third time?," I cannot find this information in the provided context. The context only mentions that the Denver Broncos made their second Super Bowl appearance in three years, but it does not specify when they won their third Super Bowl title.",2015,0.5604,False,faithful,4.79
+What city did Super Bowl 50 take place in?," The Super Bowl 50 took place in Santa Clara, California.",Santa Clara,0.9575,False,faithful,3.88
+What stadium did Super Bowl 50 take place in?, Levi's Stadium,Levi's Stadium,0.5799,False,faithful,2.91
+What was the final score of Super Bowl 50? , The final score of Super Bowl 50 was 24–10.,24–10,0.7851,False,faithful,3.49
+"What month, day and year did Super Bowl 50 take place? "," The Super Bowl 50 took place on February 7, 2016.","February 7, 2016",0.945,False,faithful,1.29
+What year was Super Bowl 50?, The year Super Bowl 50 was held was 2016.,2015,0.7558,False,faithful,1.27
+What team was the AFC champion?," I cannot find this information in the provided context. The context only mentions that a certain team has made eight appearances in the Super Bowl, but it does not specify whether they are from the AFC or NFC.",Denver Broncos,0.5467,False,faithful,3.65
+What team was the NFC champion?, The Panthers were the NFC champion.,Carolina Panthers,0.665,False,faithful,4.18
+Who won Super Bowl 50?, The Denver Broncos won Super Bowl 50.,Denver Broncos,0.9247,False,faithful,3.29
+Super Bowl 50 determined the NFL champion for what season?, The National Football League (NFL) champion for the 2015 season was determined in Super Bowl 50.,2015,0.713,False,faithful,1.55
+Which team won Super Bowl 50., The Denver Broncos won Super Bowl 50.,Denver Broncos,0.9247,False,faithful,1.12
+Where was Super Bowl 50 held?," The Super Bowl 50 was held at Levi's Stadium in the San Francisco Bay Area at Santa Clara, California.","Santa Clara, California.",0.9393,False,faithful,1.91
+The name of the NFL championship game is?, The name of the NFL championship game is Super Bowl 50.,Super Bowl,0.782,False,faithful,1.23
+What 2015 NFL team one the AFC playoff?, The American Football Conference (AFC) champion from the 2015 NFL season was the Denver Broncos.,Denver Broncos,0.6478,False,faithful,1.72
+Which Carolina Panthers player was named Most Valuable Player?, I cannot find this information in the provided context. The context does not mention any MVP award for the Carolina Panthers.,Cam Newton,0.7306,False,faithful,4.17
+How many appearances have the Denver Broncos made in the Super Bowl?," I cannot find this information in the provided context. The context only mentions four teams (Patriots, Dallas Cowboys, Pittsburgh Steelers) that have made eight appearances in the Super Bowl, but it does not specify the number of appearances for any other team.",8,0.6194,False,faithful,4.8
+What year was the Carolina Panthers franchise founded?, I cannot find this information in the provided context. The context does not mention the year when the Carolina Panthers franchise was founded.,1995,0.6925,False,faithful,4.76
+What team did the Panthers defeat?, The Panthers defeated the Seattle Seahawks and the Arizona Cardinals.,Arizona Cardinals,0.8018,False,faithful,4.05
+Who did the Broncos prevent from going to the Super Bowl?," I cannot find this information in the provided context. The text only discusses the events of Super Bowl 50 between the Broncos and Carolina Panthers, but it does not specify who the Panthers had to defeat to reach the Super Bowl.",New England Patriots,0.5062,False,faithful,5.9
+Who did the Panthers beat in the NFC Championship Game?, The Panthers beat the Arizona Cardinals in the NFC Championship Game.,Arizona Cardinals,0.9736,False,faithful,4.65
+Who lost to the Broncos in the AFC Championship?, The New England Patriots lost to the Broncos in the AFC Championship.,New England Patriots,0.7878,False,faithful,4.07
+Who were the defending Super Bowl champions?," I cannot find this information in the provided context. The context only mentions that four teams have made eight appearances in the Super Bowl, but it does not specify which of those appearances resulted in a championship win or when these appearances occurred.",New England Patriots,0.552,False,faithful,3.98
+How many teams have been in the Super Bowl eight times?, Four teams have been in the Super Bowl eight times.,four,0.6485,False,faithful,1.02
+Who was this season's NFL MVP?, Cam Newton,Cam Newton,1.0,False,faithful,3.87
+What was the win/loss ratio in 2015 for the Carolina Panthers during their regular season?, The Carolina Panthers had a win/loss ratio of 15-1 during their regular season in 2015.,15–1,0.5198,False,faithful,3.75
+Which Carolina Panthers team member was picked as the team's MVP in 2015? , I cannot find this information in the provided context. The context does not mention any award such as MVP for the Carolina Panthers in 2015.,Cam Newton,0.6585,False,faithful,4.71
+What were the win/loss game stats for the Denver Bronco's regular season in 2015?," The provided context does not specify the exact win-loss record for the Denver Broncos' regular season in 2015. However, it is stated that they finished with a 12–4 record.",12–4,0.624,False,faithful,5.74
+How many teams have played in the Super Bowl eight times?, Four teams have played in the Super Bowl eight times.,4,0.6695,False,faithful,2.17
+Which team did not get a chance to defend their Super Bowl XLIX win in Super Bowl 50?," I cannot find this information in the provided context. The context only states that four teams have made eight appearances in the Super Bowl, but it does not provide any information about which team won Super Bowl XLIX or if they were able to defend their title in Super Bowl 50.",New England Patriots,0.4824,True,hallucinated,4.17
+Who is the quarterback for the Panthers?, I cannot find this information in the provided context. The context does not mention the quarterback for the Panthers.,Cam Newton,0.6469,False,faithful,4.27
+Who did Carolina beat in the NFC championship game?, The Carolina team beat the Arizona Cardinals in the NFC Championship Game.,Arizona Cardinals,0.9715,False,faithful,3.86
+How many times have the Panthers been in the Super Bowl?," I cannot find this information in the provided context. The context only states that the Denver Broncos became one of four teams to have made eight appearances in the Super Bowl, but it does not specify how many times each team has appeared.",2,0.769,False,faithful,4.71
+Who did Denver beat in the AFC championship?, The Denver Broncos beat the New England Patriots in the AFC Championship Game.,New England Patriots,0.9658,False,faithful,4.49
+Who was the Most Valuable Player for the 2015 NFL season?, Cam Newton,Cam Newton,1.0,False,faithful,4.23

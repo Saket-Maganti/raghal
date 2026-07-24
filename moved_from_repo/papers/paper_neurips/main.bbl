@@ -1,0 +1,208 @@
+\begin{thebibliography}{24}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Asai et~al.(2024)Asai, Wu, Wang, Sil, and Hajishirzi]{asai2024selfrag}
+Akari Asai, Zeqiu Wu, Yizhong Wang, Avirup Sil, and Hannaneh Hajishirzi.
+\newblock Self-{RAG}: Learning to retrieve, generate, and critique through
+  self-reflection.
+\newblock In \emph{International Conference on Learning Representations}, 2024.
+
+\bibitem[Es et~al.(2024)Es, James, Espinosa-Anke, and Schockaert]{es2024ragas}
+Shahul Es, Jithin James, Luis Espinosa-Anke, and Steven Schockaert.
+\newblock {RAGAS}: Automated evaluation of retrieval augmented generation.
+\newblock In \emph{Proceedings of the 18th Conference of the European Chapter
+  of the Association for Computational Linguistics: System Demonstrations},
+  pages 150--163, 2024.
+
+\bibitem[Gao et~al.(2024)Gao, Xiong, Gao, Jia, Pan, Bi, Dai, Sun, and
+  Wang]{gao2024ragsurvey}
+Yunfan Gao, Yun Xiong, Xinyu Gao, Kangxiang Jia, Jinliu Pan, Yuxi Bi, Yi~Dai,
+  Jiawei Sun, and Haofen Wang.
+\newblock Retrieval-augmented generation for large language models: A survey.
+\newblock \emph{arXiv preprint arXiv:2312.10997}, 2024.
+
+\bibitem[Honovich et~al.(2022)Honovich, Aharoni, Herzig, Taitelbaum, Kukliansy,
+  Cohen, Scialom, Szpektor, Hassidim, and Matias]{honovich2022true}
+Or~Honovich, Roee Aharoni, Jonathan Herzig, Hagai Taitelbaum, Doron Kukliansy,
+  Vered Cohen, Thomas Scialom, Idan Szpektor, Avinatan Hassidim, and Yossi
+  Matias.
+\newblock {TRUE}: Re-evaluating factual consistency evaluation.
+\newblock \emph{NAACL}, 2022.
+
+\bibitem[Jin et~al.(2019)Jin, Dhingra, Liu, Cohen, and Lu]{jin2019pubmedqa}
+Qiao Jin, Bhuwan Dhingra, Zhengping Liu, William Cohen, and Xinghua Lu.
+\newblock {PubMedQA}: A dataset for biomedical research question answering.
+\newblock In \emph{Proceedings of the 2019 Conference on Empirical Methods in
+  Natural Language Processing}, pages 2567--2577, 2019.
+
+\bibitem[Karpukhin et~al.(2020)Karpukhin, O{\u{g}}uz, Min, Lewis, Wu, Edunov,
+  Chen, and Yih]{karpukhin2020dpr}
+Vladimir Karpukhin, Barlas O{\u{g}}uz, Sewon Min, Patrick Lewis, Ledell Wu,
+  Sergei Edunov, Danqi Chen, and Wen-tau Yih.
+\newblock Dense passage retrieval for open-domain question answering.
+\newblock In \emph{Proceedings of the 2020 Conference on Empirical Methods in
+  Natural Language Processing}, pages 6769--6781, 2020.
+
+\bibitem[Kwiatkowski et~al.(2019)Kwiatkowski, Palomaki, Redfield, Collins,
+  Parikh, Alberti, Epstein, Polosukhin, Devlin, Lee, Toutanova, Jones, Kelcey,
+  Chang, Dai, Uszkoreit, Le, and Petrov]{kwiatkowski2019nq}
+Tom Kwiatkowski, Jennimaria Palomaki, Olivia Redfield, Michael Collins, Ankur
+  Parikh, Chris Alberti, Danielle Epstein, Illia Polosukhin, Jacob Devlin,
+  Kenton Lee, Kristina Toutanova, Llion Jones, Matthew Kelcey, Ming-Wei Chang,
+  Andrew~M. Dai, Jakob Uszkoreit, Quoc Le, and Slav Petrov.
+\newblock Natural questions: A benchmark for question answering research.
+\newblock \emph{Transactions of the Association for Computational Linguistics},
+  7:\penalty0 453--466, 2019.
+
+\bibitem[Laban et~al.(2022)Laban, Schnabel, Bennett, and
+  Hearst]{laban2022summac}
+Philippe Laban, Tobias Schnabel, Paul~N. Bennett, and Marti~A. Hearst.
+\newblock {SummaC}: Re-visiting {NLI}-based models for inconsistency detection
+  in summarization.
+\newblock In \emph{Transactions of the Association for Computational
+  Linguistics (TACL)}, 2022.
+
+\bibitem[Lewis et~al.(2020)Lewis, Perez, Piktus, Petroni, Karpukhin, Goyal,
+  K{\"u}ttler, Lewis, Yih, Rockt{\"a}schel, Riedel, and Kiela]{lewis2020rag}
+Patrick Lewis, Ethan Perez, Aleksandra Piktus, Fabio Petroni, Vladimir
+  Karpukhin, Naman Goyal, Heinrich K{\"u}ttler, Mike Lewis, Wen-tau Yih, Tim
+  Rockt{\"a}schel, Sebastian Riedel, and Douwe Kiela.
+\newblock Retrieval-augmented generation for knowledge-intensive {NLP} tasks.
+\newblock In \emph{Advances in Neural Information Processing Systems},
+  volume~33, pages 9459--9474, 2020.
+
+\bibitem[Li and Hovy(2014)]{li2014coherence}
+Jiwei Li and Eduard Hovy.
+\newblock A model of coherence based on distributed sentence representation.
+\newblock \emph{Proceedings of EMNLP}, 2014.
+
+\bibitem[Liu et~al.(2024)Liu, Lin, Hewitt, Paranjape, Bevilacqua, Petroni, and
+  Liang]{liu2024lostmiddle}
+Nelson~F. Liu, Kevin Lin, John Hewitt, Ashwin Paranjape, Michele Bevilacqua,
+  Fabio Petroni, and Percy Liang.
+\newblock Lost in the middle: How language models use long contexts.
+\newblock \emph{Transactions of the Association for Computational Linguistics
+  (TACL)}, 2024.
+
+\bibitem[Niu et~al.(2024)Niu, Wu, Zhu, Xu, Shum, Zhong, Song, and
+  Zhang]{niu2024ragtruth}
+Cheng Niu, Yuanhao Wu, Juno Zhu, Siliang Xu, KaShun Shum, Randy Zhong, Juntong
+  Song, and Tong Zhang.
+\newblock {RAGT}ruth: A hallucination corpus for developing trustworthy
+  retrieval-augmented language models.
+\newblock In \emph{Proceedings of the 62nd Annual Meeting of the Association
+  for Computational Linguistics (Volume 1: Long Papers)}, pages 10862--10878,
+  Bangkok, Thailand, 2024. Association for Computational Linguistics.
+\newblock \doi{10.18653/v1/2024.acl-long.585}.
+\newblock URL \url{https://aclanthology.org/2024.acl-long.585/}.
+
+\bibitem[Nogueira and Cho(2019)]{nogueira2019passage}
+Rodrigo Nogueira and Kyunghyun Cho.
+\newblock Passage re-ranking with {BERT}.
+\newblock \emph{arXiv preprint arXiv:1901.04085}, 2019.
+
+\bibitem[Park et~al.(2025)Park, Moon, Park, and Lim]{park2025mirage}
+Chanhee Park, Hyeonseok Moon, Chanjun Park, and Heuiseok Lim.
+\newblock {MIRAGE}: A metric-intensive benchmark for retrieval-augmented
+  generation evaluation.
+\newblock In \emph{Findings of the Association for Computational Linguistics:
+  NAACL 2025}, pages 2883--2900, Albuquerque, New Mexico, 2025. Association for
+  Computational Linguistics.
+\newblock \doi{10.18653/v1/2025.findings-naacl.157}.
+\newblock URL \url{https://aclanthology.org/2025.findings-naacl.157/}.
+
+\bibitem[Rajpurkar et~al.(2016)Rajpurkar, Zhang, Lopyrev, and
+  Liang]{rajpurkar2016squad}
+Pranav Rajpurkar, Jian Zhang, Konstantin Lopyrev, and Percy Liang.
+\newblock {SQuAD}: 100,000+ questions for machine comprehension of text.
+\newblock In \emph{Proceedings of the 2016 Conference on Empirical Methods in
+  Natural Language Processing}, pages 2383--2392, 2016.
+
+\bibitem[Ru et~al.(2024)Ru, Qiu, Hu, Zhang, Shi, Chang, Cheng, Wang, Sun, Li,
+  Zhang, Wang, Jiang, He, Wang, Liu, Zhang, and Zhang]{ru2024ragchecker}
+Dongyu Ru, Lin Qiu, Xiangkun Hu, Tianhang Zhang, Peng Shi, Shuaichen Chang,
+  Jiayang Cheng, Cunxiang Wang, Shichao Sun, Huanyu Li, Zizhao Zhang, Binjie
+  Wang, Jiarong Jiang, Tong He, Zhiguo Wang, Pengfei Liu, Yue Zhang, and Zheng
+  Zhang.
+\newblock {RAGChecker}: A fine-grained framework for diagnosing
+  retrieval-augmented generation.
+\newblock \emph{arXiv preprint arXiv:2408.08067}, 2024.
+\newblock \doi{10.48550/arXiv.2408.08067}.
+\newblock URL \url{https://arxiv.org/abs/2408.08067}.
+
+\bibitem[Saad-Falcon et~al.(2024)Saad-Falcon, Khattab, Potts, and
+  Zaharia]{saadfalcon2024ares}
+Jon Saad-Falcon, Omar Khattab, Christopher Potts, and Matei Zaharia.
+\newblock {ARES}: An automated evaluation framework for retrieval-augmented
+  generation systems.
+\newblock In \emph{Proceedings of the 2024 Conference of the North American
+  Chapter of the Association for Computational Linguistics: Human Language
+  Technologies (Volume 1: Long Papers)}, pages 338--354, Mexico City, Mexico,
+  2024. Association for Computational Linguistics.
+\newblock \doi{10.18653/v1/2024.naacl-long.20}.
+\newblock URL \url{https://aclanthology.org/2024.naacl-long.20/}.
+
+\bibitem[Sarthi et~al.(2024)Sarthi, Abdullah, Tuli, Khanna, Goldie, and
+  Manning]{raptor2024}
+Parth Sarthi, Salman Abdullah, Aditi Tuli, Shubh Khanna, Anna Goldie, and
+  Christopher~D. Manning.
+\newblock {RAPTOR}: Recursive abstractive processing for tree-organized
+  retrieval.
+\newblock In \emph{Proceedings of the International Conference on Learning
+  Representations (ICLR)}, 2024.
+\newblock URL \url{https://arxiv.org/abs/2401.18059}.
+
+\bibitem[Shi et~al.(2023)Shi, Chen, Misra, Scales, Dohan, Chi, Sch{\"a}rli, and
+  Zhou]{shi2023large}
+Freda Shi, Xinyun Chen, Kanishka Misra, Nathan Scales, David Dohan, Ed~Chi,
+  Nathanael Sch{\"a}rli, and Denny Zhou.
+\newblock Large language models can be easily distracted by irrelevant context.
+\newblock In \emph{Proceedings of the International Conference on Machine
+  Learning (ICML)}, 2023.
+
+\bibitem[Tamber et~al.(2025)Tamber, Bao, Xu, Luo, Kazi, Bae, Li, Mendelevitch,
+  Qu, and Lin]{tamber2025faithjudge}
+Manveer~Singh Tamber, Forrest~Sheng Bao, Chenyu Xu, Ge~Luo, Suleman Kazi,
+  Minseok Bae, Miaoran Li, Ofer Mendelevitch, Renyi Qu, and Jimmy Lin.
+\newblock Benchmarking {LLM} faithfulness in {RAG} with evolving leaderboards.
+\newblock In \emph{Proceedings of the 2025 Conference on Empirical Methods in
+  Natural Language Processing: Industry Track}, pages 799--811, Suzhou, China,
+  2025. Association for Computational Linguistics.
+\newblock \doi{10.18653/v1/2025.emnlp-industry.54}.
+\newblock URL \url{https://aclanthology.org/2025.emnlp-industry.54/}.
+
+\bibitem[Wang et~al.(2024)Wang, Yang, Huang, Yang, Majumder, and
+  Wei]{xiong2024embedder}
+Liang Wang, Nan Yang, Xiaolong Huang, Linjun Yang, Rangan Majumder, and Furu
+  Wei.
+\newblock Improving text embeddings with large language models.
+\newblock \emph{arXiv preprint arXiv:2401.00368}, 2024.
+
+\bibitem[Xu et~al.(2024)Xu, Shi, and Choi]{xu2024recomp}
+Fangyuan Xu, Weijia Shi, and Eunsol Choi.
+\newblock {RECOMP}: Improving retrieval-augmented {LMs} with compression and
+  selective augmentation.
+\newblock In \emph{Proceedings of the International Conference on Learning
+  Representations (ICLR)}, 2024.
+\newblock URL \url{https://arxiv.org/abs/2310.04408}.
+
+\bibitem[Yan et~al.(2024)Yan, Gu, Zhu, and Ling]{yan2024crag}
+Shi-Qi Yan, Jia-Chen Gu, Yun Zhu, and Zhen-Hua Ling.
+\newblock Corrective retrieval augmented generation.
+\newblock In \emph{Proceedings of the 2024 Conference on Empirical Methods in
+  Natural Language Processing}, pages 2564--2579, 2024.
+
+\bibitem[Yang et~al.(2018)Yang, Qi, Zhang, Bengio, Cohen, Salakhutdinov, and
+  Manning]{yang2018hotpotqa}
+Zhilin Yang, Peng Qi, Saizheng Zhang, Yoshua Bengio, William~W. Cohen, Ruslan
+  Salakhutdinov, and Christopher~D. Manning.
+\newblock {HotpotQA}: A dataset for diverse, explainable multi-hop question
+  answering.
+\newblock In \emph{Proceedings of the 2018 Conference on Empirical Methods in
+  Natural Language Processing}, pages 2369--2380, 2018.
+
+\end{thebibliography}

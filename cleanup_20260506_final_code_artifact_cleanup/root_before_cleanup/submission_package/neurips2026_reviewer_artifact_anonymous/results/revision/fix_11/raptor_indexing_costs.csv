@@ -1,0 +1,4 @@
+dataset,dense_index_s,raptor_index_s,index_size_mb,raptor_clusters
+squad,8.333,161.203,1.832,6
+pubmedqa,1.177,108.264,3.102,6
+hotpotqa,7.14,99.74,16.594,6

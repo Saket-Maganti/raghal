@@ -1,0 +1,13 @@
+model,dataset,chunk_size,mean_latency,std_latency,n_queries
+llama3,pubmedqa,256,6.767,43.315,300
+llama3,pubmedqa,512,5.872,1.696,300
+llama3,pubmedqa,1024,8.707,2.776,300
+llama3,squad,256,2.196,1.161,600
+llama3,squad,512,3.23,1.005,600
+llama3,squad,1024,4.187,1.585,600
+mistral,pubmedqa,256,6.373,2.154,420
+mistral,pubmedqa,512,10.27,3.276,420
+mistral,pubmedqa,1024,12.976,3.799,420
+mistral,squad,256,3.407,1.776,720
+mistral,squad,512,4.557,1.677,720
+mistral,squad,1024,9.042,91.295,720

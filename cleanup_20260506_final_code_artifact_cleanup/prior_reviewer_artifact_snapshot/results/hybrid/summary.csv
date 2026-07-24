@@ -1,0 +1,5 @@
+dataset,condition,chunk_size,top_k,n_queries,n_hallucinated,nli_faithfulness,hallucination_rate,mean_retrieval_similarity,n_chunks_indexed,hcpc_pct_queries_refined,hcpc_mean_ce_improvement,hcpc_mean_sim_improvement,hcpc_mean_n_weak
+squad,baseline,1024,3,30,0,0.8122,0.0,0.5877,35,,,,
+squad,hcpc,1024,3,30,4,0.7289,0.1333,0.6008,35,1.0,-0.62,0.3773,3.0
+pubmedqa,baseline,1024,3,30,3,0.6031,0.1,0.5167,54,,,,
+pubmedqa,hcpc,1024,3,30,11,0.5544,0.3667,0.5471,54,1.0,0.6117,0.3663,2.367

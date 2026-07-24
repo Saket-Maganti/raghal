@@ -1,0 +1,4 @@
+dataset,condition,n_rows,faithfulness,faith_ci95_lo,faith_ci95_hi,hallucination_rate,halluc_wilson95_lo,halluc_wilson95_hi,retrieval_similarity,sim_ci95_lo,sim_ci95_hi,refine_rate,refine_ci95_lo,refine_ci95_hi
+squad,baseline,1000,0.66351,0.654368,0.672537,0.14,0.119868,0.162887,0.526792,0.519772,0.534003,0.0,0.0,0.0
+squad,hcpc_v1,1000,0.649645,0.640975,0.658423,0.142,0.121734,0.165006,0.564735,0.558509,0.571137,0.0,0.0,0.0
+squad,hcpc_v2,1000,0.665415,0.656107,0.674629,0.135,0.115211,0.157583,0.526787,0.51974,0.53402,0.713,0.685,0.74

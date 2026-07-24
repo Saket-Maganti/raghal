@@ -1,0 +1,7 @@
+dataset,condition,chunk_size,top_k,n_queries,n_hallucinated,nli_faithfulness,hallucination_rate,mean_retrieval_similarity,n_chunks_indexed,v1_pct_queries_refined,v1_mean_ce_improvement,v1_mean_sim_improvement,v1_mean_n_weak,v2_pct_queries_refined,v2_mean_n_refined,v2_mean_n_merged,v2_mean_context_coherence,v2_mean_sim_improvement,v2_mean_ce_improvement
+squad,baseline,1024,3,30,0,0.7995,0.0,0.6343,35,,,,,,,,,,
+squad,hcpc_v1,1024,3,30,3,0.6407,0.1,0.6236,35,1.0,-2.2785,0.3059,3.0,,,,,,
+squad,hcpc_v2,1024,3,30,0,0.7874,0.0,0.6342,35,,,,,16.67,0.167,0.1,1.0,0.4271,0.0326
+pubmedqa,baseline,1024,3,30,6,0.5783,0.2,0.6531,54,,,,,,,,,,
+pubmedqa,hcpc_v1,1024,3,30,8,0.5808,0.2667,0.6783,54,0.9,0.8073,0.3873,1.833,,,,,,
+pubmedqa,hcpc_v2,1024,3,30,6,0.5893,0.2,0.6526,54,,,,,73.33,0.733,2.167,0.57,0.0919,0.0002
