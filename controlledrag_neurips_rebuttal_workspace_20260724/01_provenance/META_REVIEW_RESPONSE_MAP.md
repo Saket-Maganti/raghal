@@ -1,36 +1,58 @@
 # Meta-Review Response Map
 
-## Provenance warning
+## Provenance and disposition
 
-No exact AC/meta-review artifact was found. The rows below map the 14 sanitized
-concern clusters recovered from the pre-existing audit. They are preparation
-material, not claims about what the AC wrote.
+The exact AC/meta-review was ingested locally and is represented here only by
+precise paraphrase. AC ID: `Ji7w`. The AC gives no numerical score or
+confidence value. The disposition is mixed and slightly negative: the
+research direction and several audit features are valued, but the paper is
+viewed as not publication-ready because clarity, accessibility, empirical
+breadth, evidence balance, and practitioner guidance remain insufficient.
 
-| ID | Faithfully paraphrased concern cluster | Category | Strongest current evidence | Clarification suffices? | Existing-output analysis helps? | Optional judge helps? | Overclaiming risk |
+Realistic movement target: reduce the “not ready” assessment to a
+borderline-accept or revision-remediable judgment. A stronger target is not
+realistic without broader experiments.
+
+## Positive signals to preserve
+
+- The underlying problem—instability and under-specification in RAG
+  evaluation—is considered important by most reviewers.
+- The fixed-output demonstrations that scorer choice or input formatting can
+  alter or reverse conclusions are viewed as valuable.
+- Explicit deployment cost and reusable audit artifacts are considered
+  practically relevant.
+- Positive reviewer reactions include readability, transparent structure,
+  and competent execution, although the AC also credits the opposing clarity
+  assessments.
+
+## Exact AC concern map
+
+| AC item | Faithful paraphrase | Reviewer linkage | Factual misunderstanding or missing context | Valid limitation | Verified evidence available | Required response; claim ceiling | Priority |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| M01 | Empirical evidence is narrow relative to broad RAG implications. | Scope/generalization | Explicit main-paper limitations plus bounded Qwen/retriever/long-form probes. | Partly; scope must be narrowed. | Yes, via coverage/uncertainty map. | Marginally; one judge does not broaden generator/dataset coverage. | High if probes are described as broad replication. |
-| M02 | Short-answer evidence may not cover multi-hop or synthesis tasks. | Dataset coverage | 40-question QASPER/MS-MARCO stress summary and HotpotQA cost cells. | Yes for limitation, not empirical expansion. | Yes after per-query provenance. | No, not without broader task data. | High if cost cells are called multi-hop validation. |
-| M03 | Evaluation lacks a modern or task-specific judge. | Scorer coverage | Three executed scorers, fixed-row input-format analysis, human slices. | Partly. | Yes, to clarify what current scorers do. | Potentially, but rebuttal completeness cannot depend on it. | High if discussed frameworks are implied to have been run. |
-| M04 | Evidence strength is uneven across the seven axes. | Evidence design | Discussion strength tags and filled checklist. | Yes if evidence grades and sample sizes are explicit. | Strongly; build a cell-level matrix. | Only for the scorer axis. | High if all axes are called equally established. |
-| M05 | Practitioner action when scorers disagree is unclear. | Guidance | Slice-dependent human alignment and cost-aware table. | Partly. | Yes; conservative conditional decision table. | Potentially, but cannot validate a universal rule. | High if one scorer is recommended universally. |
-| M06 | Metric implementation/input definitions are dense or ambiguous. | Metric clarity/integrity | Main/supplement definitions plus submitted AUPRC script/output. | Mostly. | Essential; recompute from submitted implementation. | No. | Critical if cleanup and submitted AUPRC values are mixed. |
-| M07 | The choice of exactly seven axes is insufficiently justified. | Conceptual framework | Reasonable-substitution criterion and axis-to-overclaim mapping. | Mostly. | Yes; connect axes to observed sensitivities. | No. | High if seven is called unique or exhaustive. |
-| M08 | Dataset and experiment cells are hard to reconstruct. | Reproducibility | Claims audit, source trace, manifest, reporting checklist. | Partly. | Essential; claim-to-cell provenance ledger. | No. | Critical if re-encoding/imported summaries are called fresh runs. |
-| M09 | The codebase is chaotic or hard to execute. | Artifact quality | Clean submitted artifact, lightweight entry point, prior smoke audit. | Mostly for reviewer navigation. | No new scientific analysis. | No. | High if historical trees are presented as canonical. |
-| M10 | Conflicting evidence in retrieved context is not evaluated. | Missing experiment | Contradiction seeds/scripts, but no completed output. | Yes to acknowledge absence. | Seed validation only. | Not by itself. | Critical if scorer disagreement is conflated with contradictory context. |
-| M11 | Scorer input format and human calibration need clearer interpretation. | Scorer/human calibration | Same-backbone fixed-row sign flips; separate `n=99` and `n=100` slices. | Mostly. | Essential for uncertainty and trace validation. | Could extend the axis, but is optional. | Critical if context-conditioned NLI is called correct or slices are pooled. |
-| M12 | Annotation provenance and wording appear inconsistent. | Human-evaluation provenance | Independent rater files, adjudication files, author-confirmed protocol. | Mostly. | Essential; verify IDs and transforms separately by slice. | No. | Critical if agreement uses adjudicated labels or slice schemas are silently merged. |
-| M13 | Privacy, prompt injection, or release safety may be at risk. | Integrity/privacy | Existing safety audit and current public-repository block. | Yes. | Repeat scans only. | No. | Critical if confidential text or identities enter the public repo. |
-| M14 | Missing full per-query files weaken the source trace. | Provenance/reproducibility | Submitted frozen summaries plus 127 recovered candidate per-query paths. | No; clarification must accompany actual tracing. | Highest-value Prompt 02 work. | No. | Critical if remnant existence is treated as proof of provenance. |
+| AC-01 | The abstract and introduction need a substantial accessibility rewrite suitable for a proposed standard. | `wh9X`; mixed readability reactions across reviews | No factual error to correct; this is a presentation failure. | A rebuttal cannot itself replace a full revision. | `05_clarity_material/REBUTTAL_READY_CLARITY_BLOCKS.md`; `SCOPE_AND_GENERALIZATION_STATEMENT.md` | State concrete rewrite actions: lead with problem/decision, separate method from evidence, define scope, and remove compressed shorthand. Do not claim the revision is already complete. | Critical |
+| AC-02 | Metrics and experimental conventions must be defined carefully rather than assumed. | `wh9X` | The historical NLI columns may be mistaken for context-conditioned entailment unless inputs are explicit. | Exact historical package/model revisions are not locked. | `METRIC_DICTIONARY.md`; `HUMAN_EVAL_SAFE_NUMBERS.csv`; Ledger CR-003–CR-005 and CR-031–CR-040 | Define input, output, range/direction, aggregation, threshold, slice, and sklearn average-precision convention. Preserve required naming and revision caveats. | Critical |
+| AC-03 | The short-answer, mostly single-hop, local-model scope leaves complex, newer, judge-based, and agentic RAG generalization uncertain. | `d61o`, `uqxN`, `wXNA` | The numerical findings were not intended to prove universal RAG behavior; the method/evidence boundary was under-explained. | No completed agentic, broad long-form, or modern-judge validation; the long-form panel is only 40 questions. | `EXPERIMENT_EVIDENCE_MATRIX.md`; `SCOPE_AND_GENERALIZATION_STATEMENT.md`; Ledger CR-002 and CR-053–CR-057 | Concede empirical scope, enumerate bounded probes, and frame broader applicability as a methodological proposal requiring future validation. Do not use HotpotQA cost cells as multi-hop faithfulness validation. | Critical |
+| AC-04 | Empirical support is uneven: scorer format and human calibration are stronger than generator, retriever, and cost evidence. | `wXNA` | “Covered by the checklist” is not equivalent to “equally validated.” | Generator/retriever probes are small; cost is two-dataset, local, hardware-specific, and point-estimate based. | Evidence-strength column in `EXPERIMENT_EVIDENCE_MATRIX.md`; Ledger CR-045–CR-054 | Publish an explicit strong/medium/diagnostic/exploratory grading and scope claims to each cell. | Critical |
+| AC-05 | The framework exposes conflicts but does not sufficiently tell practitioners how to interpret or aggregate them. | `uqxN`, `wXNA` | A universal scorer or scalar aggregation rule is neither established nor the safe remedy. | The decision protocol is derived from current evidence and is not prospectively validated across domains. | `CONTROLLEDRAG_DECISION_PROTOCOL.md`; `NEW_REBUTTAL_SAFE_NUMBERS.csv` | Give the stable/conditional/unresolved workflow, deployment-relevant human calibration, claim-critical stress tests, and Pareto-first cost rule. Do not declare a universal winner. | Critical |
+| AC-06 | Explain the metrics, justify each Section 4 checklist entry using its inclusion rule, and add relevant work on contradictory retrieved sources. | `wh9X` | Scorer disagreement and contradictory evidence inside retrieved context are different phenomena. | The contradictory-context experiment has seeds/scripts but no completed result. | `METRIC_DICTIONARY.md`; `SEVEN_AXIS_RATIONALE.md`; local audit inventory of incomplete contradiction assets | Provide metric definitions and the seven axis-to-overclaim mappings; add the reviewer-nominated citation as related work; explicitly say no contradictory-context result is claimed. | Critical |
+| AC-07 | Explain why the bounded example offers useful guidance despite limited generalizability. | `d61o` | The protocol can be instantiated outside the tested cells even though the observed numerical effects cannot be exported. | Complex-task empirical validation remains missing. | `SCOPE_AND_GENERALIZATION_STATEMENT.md`; `CONTROLLEDRAG_DECISION_PROTOCOL.md`; `EXPERIMENT_EVIDENCE_MATRIX.md` | Separate methodological portability from numerical generalization and give an operational instantiation procedure. | Critical |
+| AC-08 | Clarify the empirical contribution, codebase, datasets, and experiment descriptions. | `diyB` | “Position paper only” omits the empirical audit inventory; however, navigation and provenance shortcomings are real. | Some full rows are recovered, the submitted artifact is not universally complete, and exact historical environments are unlocked. | `EXPERIMENT_EVIDENCE_MATRIX.md`; `FULL_PER_QUERY_PROVENANCE_REPORT.md`; Ledger (56 verified of 62, with exclusions); `P0_INTEGRITY_GATE.md` | Provide one canonical experiment/artifact map and accurate output-origin labels. Never call recovered material submitted or claim complete per-query coverage. | Critical |
 
-## Recommended response order if the actual meta-review confirms these themes
+## Response order
 
-1. Metric and annotation integrity: M06, M11, M12.
-2. Claim-to-source provenance: M08, M14.
-3. Scope and evidence grading: M01, M02, M04.
-4. Framework/guidance clarity: M05, M07.
-5. Artifact navigation and safety: M09, M13.
-6. Explicitly missing experiments: M03, M10.
+1. Lead with claim narrowing and the method-versus-evidence boundary
+   (AC-03, AC-04, AC-07).
+2. Repair accessibility and experimental definitions (AC-01, AC-02, AC-06).
+3. Provide the practitioner decision protocol (AC-05).
+4. Give the empirical/code/data inventory and provenance caveats (AC-08).
+5. Close with concrete revision commitments and unresolved future validation,
+   without promising new results.
 
-This ordering is evidence-risk based, not reviewer-score based. Reviewer-score
-prioritization remains impossible until the exact reviews are supplied.
+## AC-safe synthesis boundary
+
+The strongest defensible synthesis is that the package empirically
+demonstrates measurement sensitivity and conditional decisions in bounded
+cells, while the seven-axis framework is a practical disclosure proposal.
+It is unsafe to claim broad empirical validation, equal support for all axes,
+a universally correct scorer, a completed modern-judge experiment, or
+complete submitted per-query coverage.
