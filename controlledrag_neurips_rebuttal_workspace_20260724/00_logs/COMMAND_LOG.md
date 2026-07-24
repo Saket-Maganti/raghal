@@ -92,6 +92,11 @@ remote owner are omitted.
 36. The first staged privacy-scan invocation passed the newline-separated
     filename list as one path and returned a filename error. Reran the same
     scan with null-delimited paths before commit.
+37. Inspected the staged diff, confirmed all staged paths were inside the
+    rebuttal workspace, committed the Prompt 04 package as `a10cf81`, and
+    pushed without force.
+38. Verified the content commit through the remote branch ref, a fetched
+    tracking ref, and the GitHub commit API before writing the receipt.
 
 No command executed a model, external API, model inference, dataset download,
 or scientific regeneration.
