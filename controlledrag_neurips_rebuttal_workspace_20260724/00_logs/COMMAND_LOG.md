@@ -170,6 +170,10 @@ or scientific regeneration.
     candidate-manifest changes, no staged path outside scope, clean staged
     whitespace, false real-run defaults, empty notebook outputs, no oversized
     files/symlinks/caches/results, and zero secret/identity/personal-path hits.
+61. Committed the repair as
+    `1205339ba8d856f48c7f1bfa6e256d47ac192a1c`, pushed without force, and
+    verified it through the remote ref, fetched tracking ref, and GitHub
+    commit API before writing the receipt.
 
 No repair command executed an external model API, network judge, model load or
 download, Kaggle/Colab job, GPU inference, or real-row scoring.
