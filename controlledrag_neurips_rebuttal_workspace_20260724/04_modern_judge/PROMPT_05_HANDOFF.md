@@ -61,6 +61,9 @@ license/access, and current cost/rate limits remain deliberately unset.
 
 ## Git receipt
 
-- Content commit: `PENDING`
+- Content commit: `92dea85d736cdfdc994a96abb9a6ae7094f9efd3`
 - Remote branch: `origin/neurips-rebuttal-validation-20260724`
-- Push result: `PENDING`
+- Push result: `SUCCESS_REMOTE_VERIFIED`
+
+The remote ref, fetched tracking ref, and GitHub commit API all resolved to
+the content commit after the non-force push.
