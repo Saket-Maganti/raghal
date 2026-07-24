@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0",
+  "selection_salt": "controlledrag-modern-judge-v1",
+  "source_sha256": "78348a4a786434fbf5aa42e1179f7c81aae7695eaee4e876d145aa3cb1a575f4",
+  "source_rows": 600,
+  "candidates_are_nested": true,
+  "candidate_records": [
+    {
+      "size": 300,
+      "file": "candidate_n300.csv",
+      "sha256": "a09e22ca746dd5c73efdfa50a9e24e2107952a26a60df3d869ce8044be4c6f04",
+      "condition_counts": {
+        "baseline": 100,
+        "hcpc_v1": 100,
+        "hcpc_v2": 100
+      },
+      "complete_three_condition_pairs": 100,
+      "complete_baseline_hcpc_v1_pairs": 100,
+      "unique_row_ids": 300,
+      "contains_raw_text": false
+    },
+    {
+      "size": 400,
+      "file": "candidate_n400.csv",
+      "sha256": "4b397bff1fc1ea26918444d4857a71d5e823eb43ba4c5517b5e8781ea5a18a3e",
+      "condition_counts": {
+        "baseline": 134,
+        "hcpc_v1": 133,
+        "hcpc_v2": 133
+      },
+      "complete_three_condition_pairs": 133,
+      "complete_baseline_hcpc_v1_pairs": 133,
+      "unique_row_ids": 400,
+      "contains_raw_text": false
+    },
+    {
+      "size": 500,
+      "file": "candidate_n500.csv",
+      "sha256": "6c3a2e63137507c3c9673658584ced60f70d4e672985d69b10ec0d8561ffee67",
+      "condition_counts": {
+        "baseline": 167,
+        "hcpc_v1": 167,
+        "hcpc_v2": 166
+      },
+      "complete_three_condition_pairs": 166,
+      "complete_baseline_hcpc_v1_pairs": 167,
+      "unique_row_ids": 500,
+      "contains_raw_text": false
+    },
+    {
+      "size": 600,
+      "file": "candidate_n600.csv",
+      "sha256": "60081570d1801d7e9ab242d98128898e89fc0135b509b83d61561f5aa039e3e1",
+      "condition_counts": {
+        "baseline": 200,
+        "hcpc_v1": 200,
+        "hcpc_v2": 200
+      },
+      "complete_three_condition_pairs": 200,
+      "complete_baseline_hcpc_v1_pairs": 200,
+      "unique_row_ids": 600,
+      "contains_raw_text": false
+    }
+  ]
+}

@@ -122,3 +122,28 @@ Figure 2 holds fixed answers and contexts and varies the NLI input
 convention. The sign reversal demonstrates that calling convention matters.
 It is not fresh retrieval/generation and does not establish a universally
 correct context-conditioned scorer.
+
+## D20 — Preserve a paired, nested candidate design
+
+Candidate selection ranks query groups rather than independent condition
+rows. This maximizes complete paired comparisons, keeps 300/400/500/600
+candidates nested, and reaches non-multiples of three with at most two
+deterministic extras.
+
+## D21 — Keep manifests text-free
+
+Committed manifests contain only join indices, stable IDs, grouping metadata,
+and hashes. Raw question/context/answer text remains in the locked fixed
+source and is joined only in an authorized execution environment.
+
+## D22 — Fail closed on model routing
+
+Reported runs must hard-pin provider/model and reject unexpected returned
+models, routes, missing routing headers, or fallback attempts. Provider fusion
+and `model="auto"` are prohibited.
+
+## D23 — Stop Prompt 05 at build-only validation
+
+Only synthetic/mock tests are permitted. No model load, network call, real
+row scoring, Kaggle/Colab launch, or result interpretation is part of Prompt
+05, and the rebuttal remains complete without the optional run.
