@@ -42,6 +42,10 @@ Before any real run, freeze:
 
 ## Git receipt
 
-- Repair content commit: `PENDING`
+- Repair content commit: `1205339ba8d856f48c7f1bfa6e256d47ac192a1c`
+- Repair receipt commit: `THIS_COMMIT` (verified remote HEAD)
 - Remote branch: `origin/neurips-rebuttal-validation-20260724`
-- Push result: `PENDING`
+- Push result: `SUCCESS_REMOTE_CONTENT_VERIFIED`
+
+The content SHA was resolved through the remote branch ref, fetched tracking
+ref, and GitHub commit API before this receipt was written.
