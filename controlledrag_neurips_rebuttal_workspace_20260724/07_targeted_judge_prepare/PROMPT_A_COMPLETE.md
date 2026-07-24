@@ -8,7 +8,17 @@ Scientific support class:
 
 Real execution status: `PREPARED_NOT_EXECUTED`.
 
-Content commit: `PENDING_GIT_CONTENT_COMMIT`
-Main integration commit: `PENDING_GIT_INTEGRATION_COMMIT`
-Receipt commit: `PENDING_GIT_RECEIPT_COMMIT`
-Final remote main: `PENDING_REMOTE_VERIFICATION`
+Content commit: `cd1ac9083a081374f4e063a89c7bb382f8123f6c`
+
+Main integration commit:
+`95853923005e42e43038fd0dc1258b0f46b64a63`
+
+Receipt commit: `THIS_COMMIT`
+
+Remote integration verification:
+`SUCCESS_LOCAL_TRACKING_LSREMOTE_GITHUB_API_MATCH`
+
+Force push: not used.
+
+Preparation branch preserved:
+`targeted-modern-judge-prepare-20260724`.

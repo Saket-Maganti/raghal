@@ -11,6 +11,7 @@
 | Pre-06 — Exact-review ingestion | Complete; sanitized 5/5 reviews and current/initial AC | `06_reviewer_responses/REVIEW_INGESTION_COMPLETE.md` | `06_reviewer_responses/REVIEW_INGESTION_HANDOFF.md` | `2617863d6af05335cf3c72e16c4e63e68ecb535e` | `origin/neurips-rebuttal-validation-20260724`: success; remotely verified |
 | 06 — Rebuttal red-team/final handoff | `READY_FOR_PROFESSOR_REVIEW` | `07_final_package/PROMPT_06_COMPLETE.md` | `07_final_package/PROMPT_06_HANDOFF.md` | `2d7699a0a3cf89375f10be8723b6d68d22a6f260` | `origin/neurips-rebuttal-validation-20260724`: content success; remotely verified |
 | Final polish — reviewer/AC package and main integration | `FINAL_POLISH_COMPLETE`; `MAIN_REMOTE_VERIFIED`; `LOCAL_REVIEW_BUNDLE_READY` | `07_final_package/FINAL_POLISH_COMPLETE.md` | `07_final_package/FINAL_POLISH_HANDOFF.md` | `4ed74fd9f4a889a21724b004b2761f829334ac3a` | Integration `688be080b06c8cf02e61c9730934c28866a6a7b6` pushed and verified; receipt `THIS_COMMIT` |
+| Prompt A — Targeted modern-judge preparation | `READY_FOR_TARGETED_KAGGLE_EXECUTION`; `MAIN_PANEL_WITH_ONE_VALID_HUMAN_SLICE`; `PREPARED_NOT_EXECUTED` | `07_targeted_judge_prepare/PROMPT_A_COMPLETE.md` | `07_targeted_judge_prepare/PROMPT_A_HANDOFF.md` | `cd1ac9083a081374f4e063a89c7bb382f8123f6c` | Main integration `95853923005e42e43038fd0dc1258b0f46b64a63` pushed and verified; receipt `THIS_COMMIT` |
 
 The Prompt 01 content commit is recorded without rewriting it. See
 `01_provenance/COMMIT_RECEIPT.md`.
@@ -76,3 +77,21 @@ GitHub commit API before this receipt update.
 - Repository visibility: `PUBLIC`
 - Full merge files outside rebuttal workspace: 0
 - Confidential exact-review source on `main`: 0
+
+## Prompt A targeted modern-judge preparation
+
+- Preparation content commit:
+  `cd1ac9083a081374f4e063a89c7bb382f8123f6c`
+- Main integration commit:
+  `95853923005e42e43038fd0dc1258b0f46b64a63`
+- Main receipt commit: `THIS_COMMIT`
+- Remote integration verification:
+  `SUCCESS_LOCAL_TRACKING_LSREMOTE_GITHUB_API_MATCH`
+- Force push: not used
+- Preparation branch preserved:
+  `targeted-modern-judge-prepare-20260724`
+- Private input directory and ZIP: outside Git
+- Real inference, API judge calls, model-weight downloads, and real rows
+  scored: zero
+- Scientific support class:
+  `MAIN_PANEL_WITH_ONE_VALID_HUMAN_SLICE`
