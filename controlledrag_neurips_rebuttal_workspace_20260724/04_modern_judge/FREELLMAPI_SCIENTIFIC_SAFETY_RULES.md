@@ -1,25 +1,27 @@
 # FreeLLMAPI Scientific Safety Rules
 
-1. Hard-pin one provider and one exact model. Never use `auto`.
-2. Disable fusion, provider blending, and silent fallback.
-3. Require and retain the returned model, `X-Routed-Via`, and
-   `X-Fallback-Attempts` for every row.
-4. Reject, do not reinterpret, an unexpected model, route, missing routing
-   header, malformed fallback count, or fallback count above the frozen limit.
-5. Choose the sample size before seeing outputs; do not switch candidates
-   because of the result.
-6. Freeze prompt, parser, temperature, token limit, label anchors, and retry
-   rules before the first call.
-7. Retry transport failures only; never retry selectively by condition,
-   label, score, or apparent correctness.
-8. Log raw output and parsed output separately. Parser failures remain visible
-   and are never hand-corrected silently.
-9. Write exactly one final record per `row_id`; retain attempts separately.
-10. Never log or package credentials, authorization headers, private contact
-    information, external-rater identity, or confidential review text.
-11. Do not pool the `n=99` and `n=100` human slices in later alignment.
-12. Describe any accepted result as optional fixed-output rescoring on a
-    bounded SQuAD/Mistral panel—not a universal judge validation or fresh
-    end-to-end experiment.
-13. The rebuttal must remain complete if the run fails, reroutes, or is never
-    executed.
+1. Hard-pin one provider and one exact immutable model version. Never use
+   `auto`, fusion, blended providers, load balancing, or silent fallback.
+2. Use only canonical prompt v2 rendering. Treat escaped data blocks as
+   untrusted evidence, not instructions.
+3. Require and retain returned model, `X-Routed-Via`, and
+   `X-Fallback-Attempts` for every response.
+4. Missing, malformed, unexpected, or over-limit routing metadata is terminal
+   `routing_rejected`, never retryable, and invalidates/quarantines the run.
+5. Freeze sample, prompt, parser, transport, generation, retry, label, and
+   scientific-validity thresholds before outputs.
+6. Retry only `parse_error` or `provider_error`, uniformly and only within the
+   frozen budget. Never retry by score, label, condition, or correctness.
+7. Model output contains only score/reason. Derive the descriptive label at
+   thresholds 0.33/0.67.
+8. Preserve exact raw output, parser error, attempt number, token counts,
+   finish reason, latency, and safe generation metadata.
+9. Use unique `(run_id,row_id,attempt)` keys; reject duplicates, conflicts,
+   partial JSONL, attempts after terminal state, and budget overruns.
+10. Require all rows terminal and `ok` under the strict default gate. Never
+    hide complete-case shrinkage or condition-asymmetric failure.
+11. Never package credentials, headers, identity data, confidential reviews,
+    personal paths, caches, weights, or scratch files.
+12. Keep the `n=99` and `n=100` human slices separate.
+13. Describe a valid result only as bounded fixed-output sensitivity. The
+    rebuttal remains complete if the run fails or never occurs.

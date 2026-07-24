@@ -2,56 +2,64 @@
 
 ## Quarantine first
 
-Treat a downloaded result ZIP as untrusted and optional. Do not place it in
-the submitted artifact or cite it until every gate below passes. Record its
-SHA-256 before extraction and extract into a temporary directory.
+Treat any result ZIP as optional and untrusted. Hash it before extraction and
+extract to a temporary directory. Do not cite or commit raw outputs
+automatically.
 
-## Acceptance gates
+## Required files and provenance
 
-1. ZIP contains only the `BUILD_RESULT_ZIP.py` allow-list.
-2. Run config uses the frozen candidate, source SHA, prompt/parser versions,
-   provider, exact model/revision, temperature, and fallback limit.
-3. Candidate manifest hash matches the committed candidate index.
-4. Final JSONL has exactly one record per candidate `row_id`, no unknown IDs,
-   and no duplicates.
-5. Every `input_digest` matches the source join.
-6. Every returned model, `X-Routed-Via`, and `X-Fallback-Attempts` satisfies
-   the frozen routing policy.
-7. Raw and parsed outputs are both present; parse/refusal/error rates are
-   reported without manual repair.
-8. Runtime metadata confirms the declared quantization, dtype, GPU topology,
-   and strategy.
-9. `POST_RUN_ANALYSIS.py` reports `scientifically_valid=true`.
-10. A privacy/secret scan finds no credentials, authorization headers,
-    identity data, private review text, or personal paths.
+The deterministic ZIP must contain exactly the allow-listed run config,
+candidate manifest, attempt log, terminal final JSONL, checkpoint, runtime
+metadata, and post-run analysis. It must contain no scratch/cache directories,
+secrets, credentials, symlinks, model files, or unknown top-level files.
 
-Pass the frozen route allow-list through one
-`--allowed-routed-via VALUE` argument per allowed value and retain the default
-zero fallback limit unless the pre-registration explicitly states otherwise.
+Verify:
 
-Any failed routing, duplication, source, or privacy gate blocks scientific
-use. A partially complete run may be diagnosed but must not supply a headline
-effect.
+1. source and manifest hashes match config and committed candidate index;
+2. prompt v2/parser v2, canonical prompt digests, transport, label thresholds,
+   generation settings, retry budget, and strict gates match the frozen config;
+3. provider, exact model/revision, returned model, route, and fallback
+   metadata match for every applicable attempt;
+4. actual dtype, quantization, device/GPU topology, model-source mode, library
+   versions, context policy, token counts, and finish reasons are recorded;
+5. attempt keys are unique, contiguous, within budget, and append-only;
+6. no attempt follows terminal state, successful rows never rerun, and only
+   eligible parse/provider failures retry;
+7. each final row equals the last terminal attempt for that row;
+8. final JSONL has exactly one terminal row per manifest ID, no missing,
+   extra, duplicate, or unknown row;
+9. raw output remains exact and score/derived-label/reason satisfy schema;
+10. partial JSONL, corrupt checkpoint, prompt changes, and conflicts are
+    absent.
 
-## Analysis and wording
+## Strict scientific gates
 
-Use the preregistered primary paired contrast first. Report sample size,
-complete-pair count, estimate, 95% paired bootstrap CI, provider/model pin,
-prompt version, parse/error rates, and output origin. Secondary contrasts and
-correlations must be labeled secondary.
+Run `POST_RUN_ANALYSIS.py` with `--manifest`, `--source`, `--results`,
+`--attempts`, `--config`, `--template`, and `--output`. The saved summary must
+report:
 
-Do not:
+- all manifest rows terminal and `ok`;
+- zero parse/provider/routing/integrity/configuration failures under default
+  thresholds;
+- zero condition error-rate difference;
+- consistent source, manifest, prompt, model, provider, routing, and attempt
+  history;
+- candidate/successful/excluded pairs and causes for every contrast; and
+- the primary complete-pair minimum passed.
 
-- replace locked submitted average-precision values;
-- pool the `n=99` and `n=100` human slices;
-- call the modern judge ground truth or universally correct;
-- call fixed-output rescoring fresh retrieval/generation;
-- claim broader generator/dataset coverage; or
-- make the rebuttal depend on the optional result.
+Any strict gate failure sets `scientifically_valid=false` and
+`NOT_REBUTTAL_SAFE_STRICT_GATE_FAILURE`. Diagnostic complete-case estimates
+must not become rebuttal claims.
 
-## Git decision
+## Privacy and interpretation
 
-Prompt 6 should decide whether any aggregate, sanitized result belongs on the
-branch. Raw model outputs may contain unsafe text and should not be committed
-automatically. Never commit caches, weights, checkpoints, credentials, or the
-unredacted runtime secret environment.
+Scan for credentials, authorization headers, identity data, confidential
+review text, personal paths, prompt-injected secrets, and unsafe raw content.
+Raw output may be unsuitable for a public repository even when numerical
+gates pass.
+
+Any accepted aggregate must state candidate size, complete pairs, estimate,
+paired CI, prompt/parser versions, provider/model pin, retry/error counts,
+output origin, and fixed-output boundary. Never replace locked submitted
+metrics, pool the `n=99`/`n=100` slices, call the judge ground truth, call
+rescoring fresh retrieval/generation, or claim broad generalization.

@@ -1,80 +1,124 @@
 # Optional Modern-Judge Pre-Registration
 
-## Status and timing
+## Status and boundary
 
-This is a prospective plan for an optional post-submission analysis. It is
-not evidence that the original study was preregistered, and it creates no
-result. Prompt 05 prepared and synthetically tested code only.
+This is a prospective plan for optional post-submission fixed-output
+rescoring. It is not evidence that the original study was preregistered and
+does not create a result. Prompt 05 and its repair performed synthetic/mock
+validation only. Status remains `PREPARED_NOT_EXECUTED`.
 
-## Research question
+## Research question and sample
 
 On the fixed 600-row SQuAD/Mistral panel, does a hard-pinned modern
 question+context+answer judge reproduce, attenuate, or reverse the
-baseline-minus-aggressive-refinement score contrast? This is rescoring of
-fixed outputs, not fresh retrieval or generation.
+baseline-minus-aggressive-refinement score contrast? Four deterministic,
+nested candidates contain 300, 400, 500, and 600 rows. Choose one candidate
+before any modern-judge output is seen; smaller candidates are resource
+fallbacks, not sequential outcome-based looks.
 
-## Candidate sample sizes
+`SAMPLE_SELECTION.py` verifies the source SHA, ranks complete query groups
+with frozen salt `controlledrag-modern-judge-v1`, maximizes paired coverage,
+and adds at most two deterministic extras for 400/500. Manifests contain no
+raw question, context, answer, prior score, or human label.
 
-Four deterministic, condition-balanced candidates are frozen: 300, 400, 500,
-and 600 rows. The primary candidate is 600 if resources permit. Smaller
-candidates are operational fallbacks, not sequential looks selected by
-outcome. The final size must be chosen before any real output is inspected and
-recorded in the run config.
+## Frozen prompt and output
 
-## Sampling
+- Prompt: `controlledrag-modern-judge-prompt-v2`.
+- Parser: `strict-score-json-v2`.
+- The canonical renderer is `prompt_rendering.py`; notebook and adapters may
+  not maintain an ad hoc renderer.
+- Question, context, and answer are escaped and placed inside structured
+  untrusted-data blocks. Embedded instructions are evidence, never commands.
+- The model returns exactly `score` and `reason`. Score is the primary
+  continuous endpoint.
+- Labels are derived after parsing: unsupported `<0.33`, partially supported
+  `0.33–<0.67`, supported `>=0.67`. These are operational descriptive
+  thresholds, not universal semantic truth.
+- Reasons are limited to 60 whitespace tokens.
 
-`SAMPLE_SELECTION.py` verifies the source SHA-256, builds a stable row ID from
-the fixed input fields, ranks complete query groups using SHA-256 with salt
-`controlledrag-modern-judge-v1`, and takes groups in that order. At most two
-deterministic condition-ordered extra rows are added to reach 400 or 500
-exactly. The candidates are nested, condition counts differ by at most one,
-and complete paired comparisons are maximized. Manifests omit raw text and
-prior score values.
+## Provider, model, and transport
 
-## Judge and prompt
+Before execution freeze provider, exact model ID, immutable revision, one
+allowed returned model, route allow-list, zero fallback attempts, quantization,
+dtype, generation settings, and `plain_text` or `chat_template` transport.
+`auto`, fusion, silent fallback, mutable `main`/`latest`, and mixed models are
+prohibited.
 
-The provider, model ID/revision, quantization, prompt version, parser version,
-and decoding settings must be hard-pinned before execution. `model="auto"`,
-provider fusion, silent fallback, and unexpected rerouting are prohibited.
-The prompt asks for one support label, a score in `[0,1]`, and a short reason
-using the question, retrieved context, and fixed answer.
+For Kaggle, choose exactly one:
 
-## Primary endpoint
+1. `offline_snapshot`: uploaded immutable snapshot, non-empty snapshot path,
+   `local_files_only=true`; or
+2. `huggingface_download`: explicitly authorized internet access,
+   `local_files_only=false`, exact model ID and immutable revision.
 
-Mean paired `baseline - hcpc_v1` judge-score contrast over query pairs that
-are complete in both conditions, with a 10,000-resample paired percentile
-bootstrap 95% CI. Positive means baseline receives the higher support score.
+T4 runs reject BF16 under the frozen compatibility policy; FP16 is preferred.
+Quantized runs use an explicit bitsandbytes configuration. Actual parameter
+dtype and quantization are recorded and may not silently differ.
 
-## Secondary endpoints
+## Context and generation
 
-- `hcpc_v2 - hcpc_v1` and `baseline - hcpc_v2` paired contrasts;
-- per-condition score means and label distributions;
-- parse, refusal, error, and routing-rejection rates;
-- Spearman correlations with the three existing fixed-output scorers;
-- scorer-to-human alignment only when joined separately to the `n=99` or
-  `n=100` adjudicated slice, never by pooling those slices.
+The context policy is `reject_if_too_long`. Before generation, count prompt
+tokens and require `prompt_tokens + max_new_tokens` not to exceed the minimum
+of the frozen and runtime model limits. Silent truncation is prohibited.
+Generation is deterministic: sampling off, temperature zero, top-p one,
+top-k zero, frozen seed, fixed maximum new tokens, and recorded EOS/pad IDs,
+library versions, CUDA version, token counts, finish reason, and transport.
 
-Secondary endpoints are descriptive and must be labeled post-primary.
+## Retry and resume policy
 
-## Exclusions
+The default maximum is two attempts per row.
 
-Exclude only rows with a recorded provider error, rejected routing, or output
-that fails the frozen parser. Do not retry selectively by condition or based
-on score. Report every exclusion and retry count. Duplicate `row_id` values
-are a hard failure.
+| Status | Retry | Terminal |
+| --- | --- | --- |
+| `ok` | No | Yes |
+| `parse_error` | Until frozen budget is exhausted | At exhaustion |
+| `provider_error` | Until frozen budget is exhausted | At exhaustion |
+| `routing_rejected` | Never | Yes; whole run quarantined |
+| `integrity_error` | Never | Yes; whole run invalid |
+| configuration error | Never | Pre-run fatal |
 
-## Routing and reproducibility gates
+Retries are never selected by condition, score, or apparent correctness.
+Every attempt has the unique key `(run_id,row_id,attempt)` and is append-only.
+Resume never reruns successful or other terminal rows. It retries only
+eligible parse/provider failures, rejects changed retry budgets or prompt
+hashes, and rejects duplicate/conflicting attempts.
 
-A run is scientifically invalid if the returned provider/model differs from
-the requested pin, if `X-Routed-Via` is unexpected, if
-`X-Fallback-Attempts` is nonzero without explicit prior authorization, or if
-the provider omits required routing metadata. Raw and parsed outputs,
-request/response metadata, hashes, checkpoints, and run config must be
-retained.
+## Primary and secondary endpoints
 
-## Interpretation limits
+Primary: mean paired `baseline - hcpc_v1` score over complete successful query
+pairs, with a 10,000-resample paired percentile bootstrap 95% CI. Secondary:
+`hcpc_v2 - hcpc_v1`, `baseline - hcpc_v2`, condition means, derived-label
+distributions, retry/error diagnostics, and later bounded scorer correlations.
+Human alignment must keep the distinct `n=99` and `n=100` slices separate.
 
-The analysis can add one bounded scorer sensitivity to a fixed SQuAD/Mistral
-panel. It cannot establish a universally best judge, broad RAG
-generalization, or fresh end-to-end replication. The rebuttal does not depend
-on this optional result.
+For every contrast report candidate pairs, complete successful pairs,
+excluded pairs, exclusion causes, condition asymmetry, and whether the frozen
+minimum pair count passes.
+
+## Strict default scientific-validity gates
+
+The default rebuttal-grade configuration freezes:
+
+- maximum parse-error rate `0`;
+- maximum provider-error rate `0`;
+- maximum condition error-rate difference `0`;
+- all manifest rows required terminal;
+- all manifest rows required `ok`;
+- no routing, integrity, configuration, source, prompt, model, provider,
+  manifest, duplicate, extra, missing, or attempt-history inconsistency; and
+- the primary complete-pair minimum chosen before outputs.
+
+A later author may relax an error or pair threshold only before seeing
+outputs and must retain that changed config. Complete-case estimates may be
+diagnostic, but no invalid run receives rebuttal-safe interpretation.
+
+## Persistence and interpretation
+
+Shard attempts are append-only. Checkpoints, consolidated attempt logs, final
+terminal JSONL, runtime metadata, and analysis summaries use atomic
+temp-file-plus-rename writes. Raw outputs are never rewritten.
+
+Any accepted finding is a bounded scorer sensitivity on fixed
+SQuAD/Mistral outputs—not fresh retrieval/generation, broad generalization,
+ground truth, or proof of a universally correct judge. The rebuttal remains
+complete if this optional run is never executed.

@@ -119,3 +119,30 @@ judge package and text-free candidate manifests.
 | Files staged outside the rebuttal workspace | 0 |
 
 Prompt 05 outcome: `PASS_FOR_PUBLIC_SAFE_COMMIT_AND_PUSH`.
+
+## Prompt 05 repair rescan
+
+The repair scan covered every staged added/modified file after the final
+58-test, Ruff, mypy, schema, notebook, and red-team passes.
+
+| Check | Result |
+| --- | --- |
+| Staged files outside rebuttal workspace | 0 |
+| Candidate manifest changes | 0 |
+| Personal absolute path or local username | 0 matches |
+| Email-address pattern | 0 matches |
+| API/GitHub/AWS/Slack/private-key formats | 0 matches |
+| Credential, `.env`, token, PEM, or key files | 0 |
+| Files larger than 5 MB | 0 |
+| Symlinks | 0 |
+| Cache, model-weight, scratch, checkpoint, or result artifacts | 0 |
+| External-rater identity or confidential review text | 0 |
+| Notebook stored outputs | 0 |
+| Notebook real-run default | `False` |
+| Run-config real-inference default | `false` |
+| Real model/API/Kaggle/Colab execution | 0 |
+| Model loads/downloads | 0 |
+| Real rows scored | 0 |
+
+Prompt 05 repair outcome:
+`PASS_FOR_PUBLIC_SAFE_REPAIR_COMMIT_AND_PUSH`.

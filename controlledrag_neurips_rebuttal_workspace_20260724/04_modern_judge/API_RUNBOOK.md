@@ -2,58 +2,49 @@
 
 ## Scope
 
-This is an alternative later execution route for the same frozen candidate
-and prompt. It was not executed in Prompt 05. Do not combine API and local
-judge scores into a fused result.
+This is an unexecuted alternative transport for the same frozen candidate and
+prompt. Never combine API and local judge scores into a fused result.
 
-## Required pins
+## Immutable contract
 
-Before any call, record:
+Freeze candidate/SHA, source SHA, provider, exact provider model version,
+allowed returned model, allowed route, zero fallbacks, endpoint version,
+prompt v2, parser v2, transport, retry budget, generation settings, label
+thresholds, and strict validity gates before the first call. `auto`, fusion,
+load balancing across models, mutable aliases, and silent fallback are
+prohibited.
 
-- exact provider;
-- exact requested model/version;
-- allowed returned model values;
-- allowed `X-Routed-Via` value;
-- maximum `X-Fallback-Attempts` (default and recommended: zero);
-- endpoint version;
-- prompt/parser versions; and
-- candidate manifest SHA-256.
+Use only `prompt_rendering.render_prompt`. Construct `JudgeRequest` from its
+`RenderedPrompt`; `FreeLLMAPIAdapter` sends explicit system/user messages for
+`chat_template` or its deterministic flattened form for `plain_text`. Do not
+copy prompt text into an API-specific renderer.
 
-`provider="auto"`, `model="auto"`, provider fusion, load balancing across
-models, and silent fallback are prohibited for a reported experiment.
+## Credentials and dry run
 
-## Credential handling
+Provide credentials only through the authorized runtime secret manager or
+process environment. Never store them in config, notebook, logs, checkpoints,
+ZIPs, `.env`, or Git. Disable HTTP debug output and redact authorization
+headers from errors.
 
-Supply the API credential only through the runtime secret manager or a
-process environment variable. Do not place it in a notebook, command
-history, config, `.env`, result JSONL, checkpoint, ZIP, or repository.
-Disable HTTP debug logging and redact authorization headers from exceptions.
+Run `CPU_SYNTHETIC_SMOKE_TEST.py` first. Its mock transport checks canonical
+messages, fusion false, routing headers, returned model, raw output, token
+metadata, strict parsing, exception typing, retries, and rejection behavior
+without sending a request.
 
-## Dry run
+## Later authorized execution
 
-Use the mock transport in `CPU_SYNTHETIC_SMOKE_TEST.py`. Confirm:
+1. Use `execute_row_with_retries`; do not write a provider-specific loop.
+2. Append every attempt with unique `(run_id,row_id,attempt)`.
+3. Retry only parse/provider failures within the frozen budget. Never retry
+   based on condition, score, or apparent correctness.
+4. Treat unexpected/missing route, model, or fallback metadata as terminal
+   `routing_rejected`; retain available response metadata and quarantine the
+   entire run.
+5. Resume only eligible rows with unchanged prompt hash, run ID, and retry
+   budget. Reject duplicate/conflicting attempts and partial JSONL.
+6. Atomically derive exactly one terminal final record per row.
+7. Apply the same strict post-run gates and allow-listed ZIP builder as the
+   local route.
 
-- the request names the pinned provider/model and sets fusion false;
-- the returned model is recorded;
-- `X-Routed-Via` and `X-Fallback-Attempts` are recorded;
-- unexpected model/provider/fallback values are rejected; and
-- raw plus strictly parsed outputs are logged.
-
-This dry run sends no request.
-
-## Later real execution
-
-1. Freeze the candidate and config.
-2. Instantiate `FreeLLMAPIAdapter` with `allow_network=True` only in the
-   authorized runtime.
-3. Rate-limit globally and use deterministic retry rules for transport errors
-   only. Never retry based on a score or condition.
-4. Write every attempt to `attempt_log.jsonl`; write exactly one final record
-   per `row_id` to `raw_and_parsed_outputs.jsonl`.
-5. On any unexpected returned model, route, or fallback count, mark
-   `routing_rejected` and stop the run rather than accepting a substitute.
-6. Resume only by the frozen `row_id` set and reject duplicates.
-7. Run post-run validation and build the allow-listed result ZIP.
-
-The API result remains an optional fixed-output sensitivity and cannot be
-described as a new retrieval/generation experiment.
+An API result remains optional fixed-output scorer sensitivity, never fresh
+retrieval/generation or universal ground truth.

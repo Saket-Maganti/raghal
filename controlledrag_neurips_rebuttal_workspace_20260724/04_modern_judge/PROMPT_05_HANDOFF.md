@@ -1,5 +1,9 @@
 # Prompt 05 Handoff
 
+Superseded for execution-readiness purposes by
+`PROMPT_05_REPAIR_HANDOFF.md`. The original candidate manifests and scientific
+boundary remain unchanged.
+
 ## Outcome
 
 The optional modern-judge package is complete at build-only status

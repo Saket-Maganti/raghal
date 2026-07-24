@@ -147,3 +147,32 @@ and `model="auto"` are prohibited.
 Only synthetic/mock tests are permitted. No model load, network call, real
 row scoring, Kaggle/Colab launch, or result interpretation is part of Prompt
 05, and the rebuttal remains complete without the optional run.
+
+## D24 — Repair Prompt 05 with shared fail-closed contracts
+
+The notebook is an orchestrator, not an independent implementation. Prompt
+rendering, config validation, error typing, retry execution, state recovery,
+record schema, and scientific validity now live in shared modules used by the
+local/API paths and adversarial tests.
+
+## D25 — Derive labels from the primary continuous score
+
+The model returns only score/reason. Descriptive labels are deterministically
+derived at frozen 0.33/0.67 thresholds, avoiding model-generated
+label/score inconsistency. The thresholds are operational, not universal
+semantic truth.
+
+## D26 — Make strict all-row success the rebuttal-grade default
+
+Parse/provider failure, routing rejection, missing/extra/duplicate rows,
+condition-asymmetric error, insufficient primary pairs, or any
+source/prompt/model/attempt inconsistency invalidates the default run.
+Complete-case summaries remain diagnostic and cannot silently become
+rebuttal-safe.
+
+## D27 — Distinguish fatal configuration from row integrity
+
+Invalid immutable configuration fails before row execution. Row-specific
+prompt/input/context-length violations are terminal `integrity_error`.
+Only parse/provider failures are retryable; routing rejection is terminal and
+quarantines the entire run.

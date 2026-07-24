@@ -7,7 +7,8 @@
 | 03 — Human eval and existing analyses | Complete with bounded conditional findings | `03_existing_analyses/PROMPT_03_COMPLETE.md` | `03_existing_analyses/PROMPT_03_HANDOFF.md` | `1b230659c51baf4ad893f029eaaae718e0eff3e5` | Pushed and remotely verified by Prompt 04 |
 | 04 — Clarity framework and guidance | Complete | `05_clarity_material/PROMPT_04_COMPLETE.md` | `05_clarity_material/PROMPT_04_HANDOFF.md` | `a10cf8160e569fe73ec68470bbe5295dea4c33aa` | `origin/neurips-rebuttal-validation-20260724`: success; remotely verified |
 | 05 — Build-only judge/Kaggle package | Complete; prepared, not executed | `04_modern_judge/PROMPT_05_COMPLETE.md` | `04_modern_judge/PROMPT_05_HANDOFF.md` | `92dea85d736cdfdc994a96abb9a6ae7094f9efd3` | `origin/neurips-rebuttal-validation-20260724`: success; remotely verified |
-| 06 — Rebuttal red-team/final handoff | Not started | — | — | — | Blocked while public |
+| 05 repair — Judge hardening and validity gates | `PROMPT_05_REPAIRED_PREPARED_NOT_EXECUTED` | `04_modern_judge/PROMPT_05_REPAIR_COMPLETE.md` | `04_modern_judge/PROMPT_05_REPAIR_HANDOFF.md` | `PENDING` | `PENDING` |
+| 06 — Rebuttal red-team/final handoff | Code/package readiness: ready; reviewer-specific drafting blocked until exact reviews are supplied | — | — | — | Not blocked by repository visibility |
 
 The Prompt 01 content commit is recorded without rewriting it. See
 `01_provenance/COMMIT_RECEIPT.md`.
@@ -19,3 +20,10 @@ and GitHub commit API before this receipt update.
 Prompt 05 likewise carried an explicit public-safe push override. Its content
 SHA was verified by remote ref, fetched tracking ref, and GitHub commit API
 before this receipt update.
+
+## Prompt 05 repair receipt
+
+- Repair content commit: `PENDING`
+- Repair verification receipt commit: `PENDING`
+- Remote branch: `origin/neurips-rebuttal-validation-20260724`
+- Push result: `PENDING`

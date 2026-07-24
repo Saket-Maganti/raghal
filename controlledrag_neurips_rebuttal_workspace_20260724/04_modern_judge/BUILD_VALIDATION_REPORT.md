@@ -1,5 +1,10 @@
 # Build Validation Report
 
+Historical note: this records the original Prompt 05 build validation. The
+subsequent hardening is governed by `REPAIR_VALIDATION_REPORT.md` and
+`REPAIR_RED_TEAM_REPORT.md`; do not use this older report alone to assess
+later-run safety.
+
 ## Executed checks
 
 | Check | Result |

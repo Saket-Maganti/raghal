@@ -140,3 +140,36 @@ remote owner are omitted.
 
 No command executed a model, external API, model inference, dataset download,
 or scientific regeneration.
+
+## Prompt 05 repair
+
+51. Verified the clean synchronized dedicated branch, original Prompt 05
+    content/receipt commits, authenticated GitHub session, and remote state.
+52. Read the full repair prompt and existing modern-judge code, notebook,
+    schema, config, tests, runbooks, status, handoff, logs, and index.
+53. Recorded confirmed retry, resume, typing, validity, prompt, label,
+    source-mode, dtype, quantization, context, persistence, schema, test, and
+    bookkeeping defects in `REPAIR_AUDIT_BEFORE.md`.
+54. Added shared prompt-v2, configuration, typed execution, retry/resume,
+    atomic state, record-schema, adapter, and strict post-analysis contracts.
+55. Rebuilt the Kaggle notebook as a false-gated orchestrator over the shared
+    modules and repaired API/Hugging Face transport behavior.
+56. Added and ran 58 CPU-only synthetic/adversarial tests covering retry,
+    resume, failure typing, strict validity, injection, label derivation,
+    configuration, crash recovery, atomic writes, API metadata, notebook
+    defaults, and ZIP safety.
+57. Updated preregistration, runbooks, package status, repair audit/changelog,
+    validation/red-team reports, completion/handoff, and Prompt 6 readiness.
+58. Ran the final static contract audit, Draft 2020-12 schema check, notebook
+    cell compilation/default execution, Ruff, mypy on the repaired runtime
+    modules, and the full 58-test suite.
+59. Explicit Python compilation created a local `__pycache__` despite the
+    bytecode environment guard; moved that cache outside the rebuttal
+    workspace before staging.
+60. Staged only the rebuttal workspace and confirmed 35 intended paths, zero
+    candidate-manifest changes, no staged path outside scope, clean staged
+    whitespace, false real-run defaults, empty notebook outputs, no oversized
+    files/symlinks/caches/results, and zero secret/identity/personal-path hits.
+
+No repair command executed an external model API, network judge, model load or
+download, Kaggle/Colab job, GPU inference, or real-row scoring.
