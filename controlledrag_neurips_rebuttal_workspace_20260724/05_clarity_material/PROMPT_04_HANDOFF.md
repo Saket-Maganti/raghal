@@ -55,9 +55,9 @@ judge package must remain build-only and use mock/synthetic validation only.
 
 ## Git receipt
 
-- Content commit: `PENDING`
+- Content commit: `a10cf8160e569fe73ec68470bbe5295dea4c33aa`
 - Remote branch: `origin/neurips-rebuttal-validation-20260724`
-- Push result: `PENDING`
+- Push result: `SUCCESS_REMOTE_VERIFIED`
 
-These fields will be finalized in the receipt commit after remote
-verification.
+The remote ref, fetched tracking ref, and GitHub commit API all resolved to
+the content commit after the non-force push.
