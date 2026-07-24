@@ -2,24 +2,25 @@
 
 `PREPARED_NOT_EXECUTED`
 
-- Candidate manifests: ready for 300, 400, 500, and 600 rows.
-- Prompt/parser/output schema: frozen build version ready.
-- FreeLLMAPI-style adapter: mock-tested with strict routing rejection.
-- Hugging Face adapter: load guard and configuration paths mock-tested.
-- Kaggle T4×2 notebook: JSON-valid and code cells compile; real flag defaults
-  to false.
-- Checkpoint/resume, duplicate rejection, raw/parsed logs, post-run analysis,
-  and deterministic result ZIP: implemented.
-- Real inference, network/API calls, model downloads, Kaggle/Colab launches,
-  and GPU runs: not performed.
-- Scientific dependency: optional; the rebuttal remains complete without a
-  modern-judge result.
+Repair status: `PROMPT_05_REPAIRED_PREPARED_NOT_EXECUTED`.
 
-Unresolved before any later execution:
+- Candidate manifests: unchanged and ready at 300/400/500/600 rows.
+- Prompt/parser: hardened v2 with canonical escaping and derived labels.
+- Retry/resume/error typing: implemented and adversarially tested.
+- Strict scientific gates: zero-error defaults and complete-pair reporting.
+- Model source: explicit offline snapshot or authorized pinned download.
+- T4×2: FP16-preferred, BF16 rejected, explicit quantization configuration.
+- Prompt transport: plain text or tokenizer chat template, frozen in config.
+- Context: token-counted and rejected if too long; no silent truncation.
+- Persistence: append-only logical attempts and atomic state/final writes.
+- Schema: closed v2 provenance contract for attempts and finals.
+- Notebook: both real-run gates false; default path runs synthetic tests only.
+- Synthetic tests: 58 passed, 0 failed.
+- Network calls: 0.
+- Model loads/downloads: 0.
+- Real rows scored: 0.
 
-1. final candidate size;
-2. local Hugging Face versus hard-pinned API route;
-3. exact provider and exact model/revision;
-4. allowed returned-model and route metadata;
-5. quantization, dtype, and GPU strategy;
-6. model license/access and current API pricing/rate limits.
+Before any later run, the author must separately choose and authorize the
+candidate, exact model/provider/revision, source mode, transport,
+quantization/dtype/strategy, primary pair minimum, licensing, access, and
+cost/rate limits.

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Hard-pinned FreeLLMAPI-style adapter with strict routing rejection."""
+"""Hard-pinned API adapter with disabled-by-default network access."""
 
 from __future__ import annotations
 
@@ -8,8 +8,8 @@ import urllib.request
 from collections.abc import Callable
 from typing import Any
 
+from errors import AdapterError, RoutingRejected
 from provider_adapter import (
-    AdapterError,
     JudgeRequest,
     ProviderAdapter,
     ProviderResponse,
@@ -29,6 +29,8 @@ class FreeLLMAPIAdapter(ProviderAdapter):
         allow_network: bool = False,
         transport: Transport | None = None,
         timeout_seconds: int = 120,
+        max_new_tokens: int = 160,
+        generation_seed: int = 20260724,
     ) -> None:
         super().__init__(policy)
         if not endpoint.startswith("https://") and transport is None:
@@ -38,6 +40,8 @@ class FreeLLMAPIAdapter(ProviderAdapter):
         self.allow_network = allow_network
         self.transport = transport
         self.timeout_seconds = timeout_seconds
+        self.max_new_tokens = max_new_tokens
+        self.generation_seed = generation_seed
 
     def _network_transport(
         self, payload: dict[str, Any]
@@ -56,49 +60,86 @@ class FreeLLMAPIAdapter(ProviderAdapter):
             },
             method="POST",
         )
-        with urllib.request.urlopen(
-            request, timeout=self.timeout_seconds
-        ) as response:
+        with urllib.request.urlopen(request, timeout=self.timeout_seconds) as response:
             parsed = json.loads(response.read().decode("utf-8"))
             headers = {key.lower(): value for key, value in response.headers.items()}
         return parsed, headers
 
     def execute(self, request: JudgeRequest) -> ProviderResponse:
+        if request.prompt_transport == "chat_template":
+            messages = request.rendered_prompt.messages
+        else:
+            messages = [{"role": "user", "content": request.rendered_prompt.plain_text}]
         payload = {
             "provider": self.policy.requested_provider,
             "model": self.policy.requested_model,
-            "messages": [
-                {"role": "user", "content": request.prompt},
-            ],
+            "messages": messages,
             "temperature": 0.0,
-            "max_tokens": 160,
+            "top_p": 1.0,
+            "max_tokens": self.max_new_tokens,
+            "seed": self.generation_seed,
             "fusion": False,
         }
         transport = self.transport or self._network_transport
         body, raw_headers = transport(payload)
         headers = {key.lower(): str(value) for key, value in raw_headers.items()}
-        required = ("x-routed-via", "x-fallback-attempts")
-        missing = [name for name in required if name not in headers]
-        if missing:
-            raise AdapterError(f"missing required routing headers: {missing}")
-        try:
-            fallback_attempts = int(headers["x-fallback-attempts"])
-        except ValueError as exc:
-            raise AdapterError("X-Fallback-Attempts must be an integer") from exc
-        returned_model = str(body.get("model", ""))
         choices = body.get("choices")
         if not isinstance(choices, list) or not choices:
             raise AdapterError("response has no choices")
-        raw_output = str(choices[0].get("message", {}).get("content", ""))
+        choice = choices[0]
+        raw_output = str(choice.get("message", {}).get("content", ""))
+        returned_model = str(body.get("model", ""))
+        route = headers.get("x-routed-via", "")
+        fallback_text = headers.get("x-fallback-attempts", "")
+        try:
+            fallback_attempts = int(fallback_text)
+            if fallback_attempts < 0:
+                raise ValueError
+        except ValueError:
+            response = ProviderResponse(
+                raw_output=raw_output,
+                returned_model=returned_model,
+                x_routed_via=route,
+                x_fallback_attempts=0,
+                finish_reason=str(choice.get("finish_reason", "")),
+                response_metadata={
+                    "raw_x_fallback_attempts": fallback_text,
+                    "routing_metadata_valid": False,
+                },
+            )
+            raise RoutingRejected(
+                "X-Fallback-Attempts is missing, negative, or non-integer",
+                response=response,
+            )
+        usage = body.get("usage", {})
         response = ProviderResponse(
             raw_output=raw_output,
             returned_model=returned_model,
-            x_routed_via=headers["x-routed-via"],
+            x_routed_via=route,
             x_fallback_attempts=fallback_attempts,
+            prompt_tokens=_optional_int(usage.get("prompt_tokens")),
+            output_tokens=_optional_int(usage.get("completion_tokens")),
+            finish_reason=str(choice.get("finish_reason", "")),
             response_metadata={
                 "request_id": headers.get("x-request-id", ""),
-                "usage": body.get("usage", {}),
+                "generation_seed": self.generation_seed,
+                "do_sample": False,
+                "temperature": 0.0,
+                "top_p": 1.0,
+                "max_new_tokens": self.max_new_tokens,
             },
         )
+        if not route:
+            raise RoutingRejected("missing X-Routed-Via", response=response)
         self.validate_routing(response)
         return response
+
+
+def _optional_int(value: Any) -> int | None:
+    if value is None:
+        return None
+    try:
+        parsed = int(value)
+    except (TypeError, ValueError):
+        return None
+    return parsed if parsed >= 0 else None
