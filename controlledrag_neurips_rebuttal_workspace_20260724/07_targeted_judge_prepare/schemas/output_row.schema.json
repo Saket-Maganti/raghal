@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "context_truncated": {
+      "type": "boolean"
+    },
+    "error_type": {
+      "type": "string"
+    },
+    "experiment_row_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "final_input_tokens": {
+      "maximum": 4096,
+      "minimum": 0,
+      "type": "integer"
+    },
+    "interface": {
+      "enum": [
+        "answer_only",
+        "context_conditioned"
+      ]
+    },
+    "model_id": {
+      "const": "Qwen/Qwen2.5-7B-Instruct"
+    },
+    "model_revision": {
+      "const": "a09a35458c702b33eeacc393d103063234e8bc28"
+    },
+    "original_input_tokens": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "parsed_output": {
+      "anyOf": [
+        {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "faithful": {
+              "type": "boolean"
+            },
+            "faithfulness_score": {
+              "maximum": 100,
+              "minimum": 0,
+              "type": "integer"
+            },
+            "insufficient_information": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "faithfulness_score",
+            "faithful",
+            "insufficient_information"
+          ],
+          "type": "object"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "rank": {
+      "maximum": 1,
+      "minimum": 0,
+      "type": "integer"
+    },
+    "raw_output": {
+      "type": "string"
+    },
+    "valid": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "experiment_row_id",
+    "interface",
+    "model_id",
+    "model_revision",
+    "raw_output",
+    "parsed_output",
+    "valid",
+    "error_type",
+    "rank",
+    "original_input_tokens",
+    "final_input_tokens",
+    "context_truncated"
+  ],
+  "type": "object"
+}
