@@ -2,30 +2,28 @@
 
 ## Active blockers
 
-1. `PUSH_BLOCKED_REPOSITORY_PUBLIC`: the authenticated target repository is
-   public, so no rebuttal branch may be pushed.
-2. `SOURCE_MISSING_REVIEWS`: the exact five review texts and the AC/meta-review
+1. `SOURCE_MISSING_REVIEWS`: the exact five review texts and the AC/meta-review
    were not found in the available source trees, local prompt pack, or audit
    materials.
-3. `SOURCE_MISSING_REVIEW_METADATA`: reviewer IDs, scores, confidence values,
+2. `SOURCE_MISSING_REVIEW_METADATA`: reviewer IDs, scores, confidence values,
    direct questions, and exact per-review concern attribution cannot be
    reconstructed without fabricating.
-4. `MISSING_FULL_PER_QUERY_SUBMITTED`: the submitted artifact does not ship
+3. `MISSING_FULL_PER_QUERY_SUBMITTED`: the submitted artifact does not ship
    full per-query inputs for every audited cell. Prompt 02 validated selected
    recovered inputs by hash, but they must remain labeled recovered.
-5. `MATCHED_MCNEMAR_P_MISMATCH`: the claimed `p=0.011` is not reproduced;
+4. `MATCHED_MCNEMAR_P_MISMATCH`: the claimed `p=0.011` is not reproduced;
    exact two-sided `p=0.013531` is the safe replacement if the convention is
    declared.
-6. `OPTIONAL_SCRIPTS_SYNTAX_BROKEN`: four submitted experiment entry points
+5. `OPTIONAL_SCRIPTS_SYNTAX_BROKEN`: four submitted experiment entry points
    place a future import after executable content:
    `run_adaptive_chunking_ablation.py`, `run_coherence_analysis.py`,
    `run_hcpc_ablation.py`, and `run_reranker_experiment.py`.
-7. `MISSING_ADVERSARIAL_RESULTS`: contradiction seeds/scripts exist, but no
+6. `MISSING_ADVERSARIAL_RESULTS`: contradiction seeds/scripts exist, but no
    completed conflicting-evidence experiment output was located.
-8. `SOURCE_TRACE_OVERSTATEMENT`: the supplement says every numerical claim
+7. `SOURCE_TRACE_OVERSTATEMENT`: the supplement says every numerical claim
    has per-query/source support, but most full per-query inputs are absent from
    the submitted artifact.
-9. `PRESPEC_TIMESTAMP_NOT_IMMUTABLE`: a historical internal log states
+8. `PRESPEC_TIMESTAMP_NOT_IMMUTABLE`: a historical internal log states
    `2026-04-26`, but no pre-result submitted Git commit was found.
 
 ## Resolved in Prompt 02
@@ -35,6 +33,12 @@
   superseded.
 - Full recovered inputs for the headline numerical panels were mapped,
   hashed, and independently recomputed without altering source folders.
+
+## Resolved in Prompt 04
+
+- `PUSH_BLOCKED_REPOSITORY_PUBLIC`: superseded by the explicit Prompt 04
+  public-safe push override. Prompt 1–3 history was pushed and remotely
+  verified before Prompt 4 generation.
 
 ## Non-blocking validation-tool failure
 
