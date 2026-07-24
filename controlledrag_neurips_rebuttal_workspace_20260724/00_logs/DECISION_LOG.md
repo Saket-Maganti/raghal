@@ -51,3 +51,26 @@ matters, not a universally correct scorer.
 
 Prompt 01 performs extraction and prioritization only. Every numerical claim
 is `TO_VERIFY` or, where only an aggregate is available, `SUMMARY_ONLY`.
+
+## D09 — Lock submitted sklearn average precision
+
+The submitted `n=100` script and independent recomputation agree on AUPRC
+`0.764813 / 0.928793 / 0.859367`. Historical
+`0.761753 / 0.928433 / 0.886240` values are superseded and quarantined.
+
+## D10 — Quarantine the matched `p=0.011`
+
+The 9-versus-24 discordance reproduces the reported rates but not `p=0.011`.
+The exact two-sided value is `0.013531`; the uncorrected asymptotic value is
+`0.009023`. The rates remain safe, while the claimed p-value is excluded.
+
+## D11 — Pass P0 through explicit exclusions
+
+P0 passes only because all mismatched, pending, and not-safe items are barred
+from proposed rebuttal text. No unresolved number is silently promoted.
+
+## D12 — Preserve output origins
+
+Fixed-context re-encoding, fixed-generation rescoring, imported pilot
+summaries, original generated rows, aggregated statistics, and manually
+curated provenance decisions are labeled separately in the ledger.

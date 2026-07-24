@@ -31,5 +31,24 @@ remote owner are omitted.
 15. Performed privacy/secret/path scans, CSV shape checks, scoped staging,
     staged-diff inspection, and a local commit.
 
+## Prompt 02
+
+16. Confirmed Prompt 01 completion, the dedicated branch, clean starting
+    state, current HEAD, and public-repository push block.
+17. Traced submitted summaries to recovered full per-query evidence,
+    generating scripts, analysis scripts, configurations, and SHA-256 hashes.
+18. Independently recomputed matched-context, scaled, scorer-fragility,
+    context-conditioned, threshold-transfer, noise, cost, span/control,
+    retriever, Qwen, long-form, and human-evaluation results from fixed data.
+19. Locked the submitted `sklearn.metrics.average_precision_score` convention
+    and quarantined historical AUPRC values.
+20. Upgraded all 62 claim-ledger rows with Prompt 02 provenance and safety
+    fields.
+21. Attempted artifact-tool CSV inspection; macOS rejected a bundled native
+    module because of a code-signing mismatch. Used independent CSV/schema
+    checks as the fallback.
+22. Created the Prompt 02 integrity gate, unsafe-evidence register,
+    provenance report, completion marker, and handoff.
+
 No command executed a model, external API, model inference, dataset download,
 or scientific regeneration.

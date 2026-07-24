@@ -33,3 +33,22 @@ recorded without the owner identity.
 Outcome: `PASS_FOR_LOCAL_COMMIT`
 
 Push remains prohibited: `PUSH_BLOCKED_REPOSITORY_PUBLIC`.
+
+## Prompt 02 rescan
+
+Prompt 02 repeated the scan after generating the upgraded ledger, independent
+result JSON, verifier, integrity reports, completion marker, and handoff.
+
+| Check | Result |
+| --- | --- |
+| Personal absolute path or local username | 0 matches |
+| Email-address pattern in new/modified non-prompt files | 0 matches |
+| Common API-key/token/private-key patterns | 0 matches |
+| Credential, `.env`, token, PEM, or key filenames | 0 files |
+| Files larger than 5 MB | 0 files |
+| Symlinks | 0 |
+| Cache directories | 0 |
+| External rater identity | 0; roles remain generic |
+| Files staged outside the rebuttal workspace | 0 |
+
+Prompt 02 outcome: `PASS_FOR_LOCAL_COMMIT`.
