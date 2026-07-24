@@ -1,0 +1,53 @@
+# Decision Log
+
+## D01 — Resolve the nested worktree conservatively
+
+The prompt diagram places Git at `raghal_ingest_workspace_20260724/`, but that
+directory has no `.git`. Its nested `raghal/` directory is the valid Git root.
+All outputs were therefore placed under
+`raghal/controlledrag_neurips_rebuttal_workspace_20260724/`.
+
+## D02 — Block all pushing
+
+Authenticated metadata confirms the target repository is public. The required
+status is `PUSH_BLOCKED_REPOSITORY_PUBLIC`. Prompt 01 is committed locally
+only.
+
+## D03 — Do not store exact review text
+
+Because the repository is public, only sanitized concern paraphrases are
+allowed. Moreover, no exact five-review or AC/meta-review export was located.
+Reviewer IDs, scores, confidence values, and per-review attribution remain
+`SOURCE_MISSING`; no mapping was invented.
+
+## D04 — Prefer the submitted artifact for submitted-value provenance
+
+The standalone submitted tree is clean at
+`59e94a5418a296acda1892e9165fd43096292f58`. Cleanup material is a candidate
+evidence source, not an automatic replacement.
+
+## D05 — Preserve the AUPRC conflict
+
+Cleanup snapshots use a manual AUPRC calculation, while the submitted
+implementation uses `sklearn.metrics.average_precision_score`. The submitted
+results are `0.765 / 0.929 / 0.859` after paper rounding; historical cleanup
+values must not be mixed in. Prompt 01 records the conflict but does not verify
+either implementation numerically.
+
+## D06 — Keep human-evaluation arms separate
+
+The `n=99` typical-row calibration and `n=100` targeted disagreement slice use
+different sampling and label schemas. They remain separate ledger entries and
+must never be pooled.
+
+## D07 — Bound re-encoding and generalization language
+
+BGE/E5 matched-context evidence is fixed-context re-encoding, not a fresh
+end-to-end retrieval/generation experiment. Qwen2.5 and long-form findings are
+bounded probes. Context-conditioned NLI is evidence that calling convention
+matters, not a universally correct scorer.
+
+## D08 — Do not mark numerical claims verified
+
+Prompt 01 performs extraction and prioritization only. Every numerical claim
+is `TO_VERIFY` or, where only an aggregate is available, `SUMMARY_ONLY`.

@@ -1,0 +1,35 @@
+# Pre-Commit Privacy and Secret Scan
+
+Scope:
+
+`controlledrag_neurips_rebuttal_workspace_20260724/`
+
+## Checks
+
+| Check | Result |
+| --- | --- |
+| Personal absolute-path prefix | 0 matches |
+| Local username / author-name marker used by source path | 0 matches |
+| Email-address pattern | 0 matches |
+| AWS access-key formats | 0 matches |
+| GitHub token formats | 0 matches |
+| OpenAI-style secret-key format | 0 matches |
+| Slack token formats | 0 matches |
+| PEM private-key headers | 0 matches |
+| `.env`, credential, token, PEM, or key filenames | 0 files |
+| Files larger than 5 MB | 0 files |
+| Symlinks | 0 |
+| External rater name or identity | 0; only author-confirmed generic role wording in copied prompts |
+| Verbatim review text | 0; exact reviews were not available |
+
+The original paper-source directory includes an identifying name. Inventory
+paths for that directory were replaced with the sanitized label
+`SUBMITTED_LOCAL_PAPER`.
+
+The remote owner and personal filesystem prefix are redacted from committed
+logs. The public/private visibility result and repository basename remain
+recorded without the owner identity.
+
+Outcome: `PASS_FOR_LOCAL_COMMIT`
+
+Push remains prohibited: `PUSH_BLOCKED_REPOSITORY_PUBLIC`.
