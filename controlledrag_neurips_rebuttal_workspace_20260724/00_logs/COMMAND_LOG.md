@@ -75,5 +75,23 @@ remote owner are omitted.
 31. Created the human reports, safe-number tables, analysis summary,
     limitations, stability classification, completion marker, and handoff.
 
+## Prompt 04
+
+32. Confirmed the dedicated branch, clean worktree, Prompt 1–3 local history,
+    authenticated GitHub session, and public repository visibility.
+33. Applied the Prompt 04 public-safe push override, scanned the committed
+    rebuttal workspace, pushed Prompt 1–3 history, fetched the remote branch,
+    and verified remote HEAD matched local `d9aaa10`.
+34. Read the required concern matrix, response map, P0 gate, and Prompt 03
+    handoff, plus the locked AP convention, human verification, metric audit,
+    safe-number tables, analysis summary, limitations, provenance report, and
+    submitted Figure 2 source/caption.
+35. Created the evidence matrix, metric dictionary, seven-axis rationale,
+    Figure 2 explanations, scope statement, decision protocol, clarity blocks,
+    completion marker, and handoff.
+36. The first staged privacy-scan invocation passed the newline-separated
+    filename list as one path and returned a filename error. Reran the same
+    scan with null-delimited paths before commit.
+
 No command executed a model, external API, model inference, dataset download,
 or scientific regeneration.

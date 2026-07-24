@@ -101,3 +101,24 @@ Context-conditioned results are fixed-context re-encoding sensitivities.
 Threshold transfer is mixed across the fixed five-dataset grid. Pareto and
 cost-weight findings are point-estimate, two-dataset sensitivities. None is
 promoted to universal generalization.
+
+## D17 — Apply the Prompt 04 public-safe push override
+
+Prompt 04 explicitly authorizes pushing the dedicated branch even though the
+repository remains public. The earlier visibility-only block is superseded,
+while scoped staging, sanitization, secret scanning, and remote verification
+remain mandatory.
+
+## D18 — Frame seven axes as a practical disclosure minimum
+
+The seven axes are practical non-redundant disclosure categories for this
+audit, not a mathematically unique or formally exhaustive taxonomy. All seven
+are disclosed; only claim-critical reasonable alternatives require stress
+testing.
+
+## D19 — Interpret Figure 2 as measurement sensitivity
+
+Figure 2 holds fixed answers and contexts and varies the NLI input
+convention. The sign reversal demonstrates that calling convention matters.
+It is not fresh retrieval/generation and does not establish a universally
+correct context-conditioned scorer.
