@@ -8,7 +8,8 @@
 | 04 — Clarity framework and guidance | Complete | `05_clarity_material/PROMPT_04_COMPLETE.md` | `05_clarity_material/PROMPT_04_HANDOFF.md` | `a10cf8160e569fe73ec68470bbe5295dea4c33aa` | `origin/neurips-rebuttal-validation-20260724`: success; remotely verified |
 | 05 — Build-only judge/Kaggle package | Complete; prepared, not executed | `04_modern_judge/PROMPT_05_COMPLETE.md` | `04_modern_judge/PROMPT_05_HANDOFF.md` | `92dea85d736cdfdc994a96abb9a6ae7094f9efd3` | `origin/neurips-rebuttal-validation-20260724`: success; remotely verified |
 | 05 repair — Judge hardening and validity gates | `PROMPT_05_REPAIRED_PREPARED_NOT_EXECUTED` | `04_modern_judge/PROMPT_05_REPAIR_COMPLETE.md` | `04_modern_judge/PROMPT_05_REPAIR_HANDOFF.md` | `1205339ba8d856f48c7f1bfa6e256d47ac192a1c` | `origin/neurips-rebuttal-validation-20260724`: content success; remotely verified |
-| 06 — Rebuttal red-team/final handoff | Code/package readiness: ready; reviewer-specific drafting blocked until exact reviews are supplied | — | — | — | Not blocked by repository visibility |
+| Pre-06 — Exact-review ingestion | Complete; sanitized 5/5 reviews and current/initial AC | `06_reviewer_responses/REVIEW_INGESTION_COMPLETE.md` | `06_reviewer_responses/REVIEW_INGESTION_HANDOFF.md` | `2617863d6af05335cf3c72e16c4e63e68ecb535e` | `origin/neurips-rebuttal-validation-20260724`: success; remotely verified |
+| 06 — Rebuttal red-team/final handoff | `READY_FOR_PROFESSOR_REVIEW`; content prepared | `07_final_package/PROMPT_06_COMPLETE.md` | `07_final_package/PROMPT_06_HANDOFF.md` | `PENDING_CONTENT_COMMIT` | Public-safe push explicitly authorized; pending commit |
 
 The Prompt 01 content commit is recorded without rewriting it. See
 `01_provenance/COMMIT_RECEIPT.md`.
@@ -30,3 +31,17 @@ before this receipt update.
 
 The repair content SHA was verified by remote ref, fetched tracking ref, and
 GitHub commit API before this receipt update.
+
+## Prompt 06 handoff
+
+- Repository visibility: `PUBLIC`
+- Public-safe dedicated-branch push: explicitly authorized by the latest
+  Prompt 6 override
+- Branch: `neurips-rebuttal-validation-20260724`
+- P0: `PASS_WITH_QUARANTINED_EXCLUSIONS`
+- Final rebuttal status: `READY_FOR_PROFESSOR_REVIEW`
+- Content commit: `PENDING_CONTENT_COMMIT`
+- Receipt commit: `PENDING_RECEIPT_COMMIT`
+- Push: `PENDING`
+- Pull request: not created while public
+- Merge to `main`: not performed

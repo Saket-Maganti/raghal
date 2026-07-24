@@ -146,3 +146,38 @@ The repair scan covered every staged added/modified file after the final
 
 Prompt 05 repair outcome:
 `PASS_FOR_PUBLIC_SAFE_REPAIR_COMMIT_AND_PUSH`.
+
+## Prompt 06 final-content scan
+
+The scan covered the complete generated workspace, all staged Prompt 6 files,
+and the full candidate branch diff against `main`. The public remote push is
+explicitly authorized by the latest Prompt 6 override; sanitization remains
+mandatory.
+
+| Check | Result |
+| --- | --- |
+| Staged files outside rebuttal workspace | 0 |
+| Candidate branch files outside rebuttal workspace | 0 |
+| Personal absolute paths | 0 matches |
+| Email-address patterns | 0 matches |
+| AWS/GitHub/OpenAI/Slack token formats | 0 matches |
+| PEM private-key headers or generic secret assignments | 0 matches |
+| Credential, `.env`, PEM, or key files | 0 |
+| Symlinks | 0 |
+| Files larger than 5 MB | 0 |
+| Model weights or checkpoint files | 0 |
+| Confidential exact-review source tracked | 0 |
+| Non-citation overlap with confidential source at 10/12/15 words | 0 |
+| Verbatim overlap exception | Verified public Cattan et al. citation only |
+| External-rater identity | 0 |
+| URLs in paste-ready response bodies | 0 |
+| Stale average-precision values in paste-ready text | 0 |
+| Unreproduced `p=0.011` in paste-ready text | 0 |
+| Direct response items answered and fact-checked | 21/21 |
+| Recommended response fields above 10,000 characters | 0 |
+| CSV structural errors | 0 |
+| Markdown table-width errors | 0 |
+| Real model/API/GPU/Kaggle/Colab runs | 0 |
+
+Prompt 06 outcome:
+`PASS_FOR_PUBLIC_SAFE_SANITIZED_CONTENT_COMMIT_AND_PUSH`.
