@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "answer": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "dataset": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "experiment_row_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "human_label": {
+      "maximum": 1,
+      "minimum": 0,
+      "type": "integer"
+    },
+    "human_label_available": {
+      "type": "boolean"
+    },
+    "human_slice": {
+      "enum": [
+        "typical",
+        "disagreement_targeted",
+        "none"
+      ]
+    },
+    "output_origin": {
+      "enum": [
+        "generated",
+        "rescored",
+        "reencoded",
+        "imported",
+        "aggregated"
+      ]
+    },
+    "pair_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "panel": {
+      "enum": [
+        "main_600",
+        "human_typical",
+        "human_disagreement"
+      ]
+    },
+    "provenance_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "provenance_source": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "question": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "retrieved_context": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "source_row_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "split": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "system": {
+      "enum": [
+        "baseline",
+        "hcpc_v1",
+        "other"
+      ]
+    }
+  },
+  "required": [
+    "experiment_row_id",
+    "source_row_id",
+    "panel",
+    "system",
+    "dataset",
+    "split",
+    "question",
+    "retrieved_context",
+    "answer",
+    "human_label",
+    "human_label_available",
+    "human_slice",
+    "pair_id",
+    "output_origin",
+    "provenance_source",
+    "provenance_sha256"
+  ],
+  "type": "object"
+}

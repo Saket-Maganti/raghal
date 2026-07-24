@@ -1,0 +1,34 @@
+{
+  "boolean_string": "{\"faithfulness_score\": 95, \"faithful\": \"true\", \"insufficient_information\": false}",
+  "bootstrap_determinism": 20260724,
+  "checksum_mismatch": "deliberately invalid checksum fixture",
+  "differential_missingness_simulation": {
+    "answer_only": 1.0,
+    "context_conditioned": 0.97
+  },
+  "disagreement_targeted_human_row": "synthetic_unfaithful",
+  "duplicate_row": "synthetic duplicate-key fixture",
+  "duplicate_semantic_row": "same normalized q/c/a/system",
+  "extra_keys": "{\"faithfulness_score\": 95, \"faithful\": true, \"insufficient_information\": false, \"why\": \"x\"}",
+  "malformed_json": "{\"faithfulness_score\":",
+  "markdown_fences": "```json\\n{\"faithfulness_score\": 95, \"faithful\": true, \"insufficient_information\": false}\\n```",
+  "mismatched_row_id": "synthetic_wrong_id",
+  "missing_key": "{\"faithfulness_score\": 95, \"faithful\": true}",
+  "missing_output": "synthetic missing-key fixture",
+  "output_zip_manifest_validation": "required",
+  "paired_system_rows": [
+    "synthetic_faithful",
+    "synthetic_unfaithful"
+  ],
+  "score_above": "{\"faithfulness_score\": 101, \"faithful\": true, \"insufficient_information\": false}",
+  "score_below": "{\"faithfulness_score\": -1, \"faithful\": false, \"insufficient_information\": false}",
+  "shard_determinism": "sha256(experiment_row_id + interface) mod 2",
+  "truncation_boundary": 4096,
+  "typical_human_row": "synthetic_faithful",
+  "unpaired_system_row": "synthetic_unpaired",
+  "valid_faithful": "{\"faithfulness_score\": 95, \"faithful\": true, \"insufficient_information\": false}",
+  "valid_insufficient": "{\"faithfulness_score\": 20, \"faithful\": false, \"insufficient_information\": true}",
+  "valid_unfaithful": "{\"faithfulness_score\": 5, \"faithful\": false, \"insufficient_information\": false}",
+  "wrong_interface": "unsupported_interface",
+  "wrong_model_revision": "0000000000000000000000000000000000000000"
+}
