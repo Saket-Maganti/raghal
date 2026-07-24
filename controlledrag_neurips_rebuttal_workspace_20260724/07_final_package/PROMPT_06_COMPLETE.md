@@ -14,10 +14,14 @@
 - Privacy/secret scan:
   `PASS_FOR_PUBLIC_SAFE_SANITIZED_CONTENT_COMMIT_AND_PUSH`
 - Branch: `neurips-rebuttal-validation-20260724`
-- Content commit: `PENDING_CONTENT_COMMIT`
-- Receipt commit: `PENDING_RECEIPT_COMMIT`
-- Push: `PENDING`
-- Remote verification: `PENDING`
+- Content commit: `2d7699a0a3cf89375f10be8723b6d68d22a6f260`
+- Receipt commit: `THIS_COMMIT`
+- Push: `SUCCESS_REMOTE_CONTENT_VERIFIED`
+- Remote verification: content SHA matched local HEAD, remote ref, fetched
+  tracking ref, and GitHub commit API before this receipt update
+- Repository visibility: `PUBLIC`
+- Pull request: not created
+- Merge to `main`: not performed
 
 The final package is complete without a modern-judge result. Human approval is
 still required before OpenReview submission.

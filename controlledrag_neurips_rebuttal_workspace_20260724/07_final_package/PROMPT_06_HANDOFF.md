@@ -33,7 +33,10 @@
 
 ## Git receipt
 
-- Content commit: `PENDING_CONTENT_COMMIT`
-- Receipt commit: `PENDING_RECEIPT_COMMIT`
-- Push: `PENDING`
-- Remote verification: `PENDING`
+- Content commit: `2d7699a0a3cf89375f10be8723b6d68d22a6f260`
+- Receipt commit: `THIS_COMMIT`
+- Push: `SUCCESS_REMOTE_CONTENT_VERIFIED`
+- Remote verification: content SHA matched local HEAD, remote ref, fetched
+  tracking ref, and GitHub commit API before this receipt update
+- Pull request: not created while the repository is public
+- Merge to `main`: not performed

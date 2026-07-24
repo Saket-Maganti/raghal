@@ -181,3 +181,23 @@ mandatory.
 
 Prompt 06 outcome:
 `PASS_FOR_PUBLIC_SAFE_SANITIZED_CONTENT_COMMIT_AND_PUSH`.
+
+## Prompt 06 receipt rescan
+
+After the content commit was pushed and remotely verified, the receipt rescan
+covered only the completion marker, handoff, remote handoff, handoff index,
+and this scan record.
+
+| Check | Result |
+| --- | --- |
+| Receipt files outside rebuttal workspace | 0 |
+| Personal absolute paths or email addresses | 0 |
+| Credential/token/private-key patterns | 0 |
+| Confidential-source 10/12/15-word overlap | 0 |
+| Content SHA recorded | `2d7699a0a3cf89375f10be8723b6d68d22a6f260` |
+| Content remote ref/API verification | PASS |
+| Force push | Not used |
+| Merge to `main` | Not performed |
+
+Receipt outcome:
+`PASS_FOR_PUBLIC_SAFE_PROMPT_06_RECEIPT_COMMIT_AND_PUSH`.
