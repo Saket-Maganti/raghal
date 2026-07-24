@@ -2,39 +2,37 @@
 
 ## Result
 
-All six recommended paste fields are below the official NeurIPS 2026
-10,000-character per-review limit. The fields are pasted separately: one
-response to the current/initial AC note and one response for each of the five
-reviewers.
+All six paste fields are below the official NeurIPS 2026 limit of 10,000
+characters per review. Each field is pasted separately.
 
-| Field | Characters | Words | Remaining under 10,000 |
-| --- | ---: | ---: | ---: |
-| Current/initial AC | 3,144 | 425 | 6,856 |
-| `uqxN` | 1,795 | 253 | 8,205 |
-| `wXNA` | 1,899 | 265 | 8,101 |
-| `diyB` | 2,047 | 278 | 7,953 |
-| `d61o` | 1,732 | 235 | 8,268 |
-| `wh9X` | 2,602 | 346 | 7,398 |
+| Field | Characters | Words | Remaining | Editorial target | Result |
+| --- | ---: | ---: | ---: | ---: | --- |
+| Current/initial AC | 3,932 | 515 | 6,068 | 2,700–3,300 | Official pass; target exceeded to retain required acceptance case, evidence hierarchy, two-tier protocol, provenance boundary, citation, and revision commitments |
+| `uqxN` | 1,819 | 237 | 8,181 | 1,500–1,900 | Pass |
+| `wXNA` | 2,292 | 309 | 7,708 | 2,100–2,500 | Pass |
+| `diyB` | 2,276 | 292 | 7,724 | 1,900–2,300 | Pass |
+| `d61o` | 2,086 | 289 | 7,914 | 1,700–2,100 | Pass |
+| `wh9X` | 2,082 | 267 | 7,918 | 1,800–2,200 | Pass |
 
-The six field bodies total 13,219 characters, but they are not one response
-field. The internal AC synthesis is 3,047 characters. The optional
-modern-judge Version B insertion is 345 characters and is marked unusable
-because no real run exists.
+The six field bodies total 14,487 characters and 1,909 words. The internal AC
+synthesis exactly matches the AC paste body and is also 3,932 characters.
+The AC target is an editorial preference, not a scientific or platform gate;
+removing the required claim boundaries to meet it would make the response less
+complete.
 
-## Counting convention
+## Counting and synchronization convention
 
-Counts use Unicode code points after removing leading and trailing whitespace;
-internal line breaks count as characters. Markdown body text is counted, but
-file headings and package control markers are excluded. The bodies in
-`FINAL_OPENREVIEW_PASTE_PACKAGE.md` were checked text-for-text against the
-corresponding response-file bodies.
+Counts use Unicode code points after trimming leading and trailing whitespace;
+internal line breaks count as characters. File headings and package markers
+are excluded. Each standalone response body was compared programmatically
+with the text between its matching package markers.
 
-## Official rule
+## Response mechanics
 
-The NeurIPS 2026 Main Track Handbook states a 10,000-character limit for each
-per-review rebuttal, permits OpenReview Markdown, prohibits links in response
-text, and does not permit a revised paper or supplement during rebuttal. The
-E&D track follows the main-track response process. The current package uses
-no links and frames manuscript changes as camera-ready updates if accepted.
+- Official per-review limit: 10,000 characters.
+- OpenReview paste text contains no links.
+- No marker text is included in a paste field.
+- Manuscript changes are camera-ready commitments, not claims that a revised
+  paper or supplement was uploaded during rebuttal.
 
 Status: `PASS_OFFICIAL_2026_LIMIT`.

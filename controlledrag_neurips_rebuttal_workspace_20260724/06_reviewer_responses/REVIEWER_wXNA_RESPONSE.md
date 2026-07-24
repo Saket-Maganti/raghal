@@ -2,34 +2,42 @@
 
 ## Paste-ready response
 
-Thank you for the careful distinction between measurement sensitivity and
-measurement correctness. We agree with that distinction and with your
-assessment that the seven axes have uneven empirical support.
+We agree with the distinction between measurement sensitivity and
+measurement correctness. We also agree that the seven categories have uneven
+empirical support and should not be presented as equally validated.
 
-We grade the evidence explicitly. The fixed-output scorer comparison and
-input-format reversal are the strongest audited cells; the two separate human
-slices and matched-context audit are medium-strength diagnostics; the
-retriever, second-generator, cost, and long-form cells are bounded or
-exploratory. “Included as an axis” is not “equally validated.”
+The evidence hierarchy is explicit. **Strong:** fixed-output scorer and
+scorer-input analyses. **Medium:** human calibration and the matched-context
+audit. **Diagnostic:** threshold, cost, retriever, and second-generator
+probes. **Exploratory:** the long-form panel. Axis inclusion indicates
+reporting importance, not equal empirical validation. The framework is
+proposed to be procedurally portable across RAG settings; the numerical
+effects observed here are not claimed to generalize beyond the tested cells.
 
-We therefore narrow the empirical claim. The main evidence is concentrated in
-short-answer QA and 7B-class local models. The five-dataset threshold grid,
-two-dataset cost audit, bounded retriever checks, one Qwen2.5-7B probe, and
-40-question MS-MARCO/QASPER panel add diagnostic breadth, but none establishes
-broad generalization.
+Holding outputs and NLI backbones fixed, changing the scorer input reverses
+the system comparison. On the 600-row panel, with 194 complete
+baseline/HCPC-v1 pairs for each context-conditioned backbone, baseline minus
+HCPC-v1 changes from `+0.017` to `-0.279` for DeBERTa and from `+0.044` to
+`-0.081` for the second NLI backbone. This is fixed-output scorer-input
+sensitivity, not fresh retrieval or generation.
 
-Figure 2 holds the 600 answers and contexts fixed and changes only the scorer
-call. For 194 complete baseline/HCPC-v1 pairs, the mean contrast changes from
-`+0.017` to `-0.279` for DeBERTa and from `+0.044` to `-0.081` for the second
-NLI backbone when moving from answer-only label prediction to
-context-as-premise NLI. This supports the narrower conclusion that scorer
-input format can reverse a system comparison. It does not establish that
-context-conditioned NLI is universally correct.
+The available human evidence gives calibration context without resolving the
+requested interface comparison. On the separate `n=99` typical slice,
+Spearman correlation for DeBERTa / the second NLI proxy / the RAGAS-style
+judge is `0.103 / 0.394 / 0.549`; on the `n=100`
+disagreement-targeted slice it is `-0.156 / 0.446 / 0.384`. On the `n=100`
+binary task, average precision is `0.765 / 0.929 / 0.859`. These slices
+answer different questions and are not pooled. These rows do not provide a
+verified same-row human comparison between answer-only and
+context-conditioned NLI.
 
-Our human evidence is also narrower than the comparison you request. The
-separate `n=99` typical and `n=100` disagreement-targeted slices compare the
-two legacy answer-only proxies and a custom RAGAS-style judge with adjudicated
-labels; they do not provide a verified same-row human comparison of
-answer-only versus context-conditioned NLI. We do not imply otherwise. When
-scorers or human slices disagree, our guidance classifies the
-conclusion as conditional or unresolved rather than select a universal scorer.
+We therefore revise the interpretation from “the context-conditioned call is
+better” to “reasonable scorer interfaces can select different conclusions
+and must be separately calibrated.” When baseline outperforms refinement
+under an answer-only proxy but refinement outperforms baseline under
+context-conditioned scoring, the correct report is not that either system
+universally wins; the comparison is conditional on the scorer-input
+convention.
+
+The corrected conclusion is scorer sensitivity with slice-dependent
+calibration—not universal correctness of any scorer interface.

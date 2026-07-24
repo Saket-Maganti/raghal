@@ -50,3 +50,9 @@ This file is the final Prompt 6 claim-denial list.
 25. Do not include confidential review transcripts, external-rater identity,
     private contacts, credentials, personal absolute paths, or deanonymizing
     links in the public branch or paste text.
+26. Do not present the agentic-RAG mapping as empirical validation or imply
+    that measured effect sizes transfer to agentic systems.
+27. Do not imply that evaluation-contribution framing determines acceptance
+    or replaces the need for bounded evidence.
+28. Do not treat the disclosure tier as a requirement to run a full
+    seven-dimensional factorial experiment.

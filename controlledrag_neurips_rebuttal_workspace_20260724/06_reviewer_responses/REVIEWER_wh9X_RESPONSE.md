@@ -2,45 +2,38 @@
 
 ## Paste-ready response
 
-Thank you for identifying where compression made the paper inaccessible. We
-agree that a proposed reporting standard must explain its metrics, figure,
-and checklist criterion more directly. A revised paper cannot be uploaded
-during rebuttal, so we clarify the issues here; if accepted, we will
-substantially reorganize the abstract, introduction, setup, and experiment
-map in the camera-ready.
+**Metrics.** The two historical NLI metrics score the answer without
+retrieved context. The third scorer evaluates question, context, and answer
+jointly and is a custom RAGAS-style judge, not the official `ragas` package.
+Human alignment uses average precision with faithful answers as the positive
+class.
 
-**Metrics.** The historical DeBERTa score is an answer-sentence-only
-zero-shot probability for the label “entailment”; the second historical NLI
-score is a whole-answer-only zero-shot label probability. Neither consumes
-retrieved context in its legacy call. The third score is a custom
-question+context+answer RAGAS-style judge, not the official `ragas` package.
-For binary human comparison we use sklearn average precision with
-`faithful=1`, higher scores indicating faithfulness. If accepted, the
-camera-ready will state each metric’s input, output, direction, aggregation,
-threshold, and human slice beside the result.
+**Figure 2.** The answers do not change; only the information given to the
+scorer changes, and the reported system comparison reverses. For DeBERTa,
+baseline minus HCPC-v1 changes from `+0.017` to `-0.279`; the second NLI
+backbone shows the same directional reversal. The figure demonstrates
+fixed-output scorer-input sensitivity, not fresh generation or universal
+correctness.
 
-**Figure 2.** The answers, contexts, and two NLI backbones are fixed; only the
-scorer input changes. For 194 complete baseline/HCPC-v1 pairs, the mean
-baseline-minus-HCPC-v1 contrast changes from `+0.017` to `-0.279` for
-DeBERTa and from `+0.044` to `-0.081` for the second backbone when moving
-from answer-only label prediction to context-as-premise NLI. The figure shows
-input-format sensitivity, not fresh retrieval/generation and not that
-context-conditioned NLI is universally correct.
+**Why seven categories.** Each category is included because leaving it
+unspecified permits a reasonable alternative choice to change the conclusion
+or deployment decision. Generator means the answer process. Retrieval means
+the evidence surface. Context means the evidence shown. Scorer means the
+measurement. Human calibration means the interpretation. Threshold transfer
+means the operational classification. Cost means the deployment choice.
+These are practical, non-unique, and non-exhaustive categories. Authors
+disclose all seven but stress-test only alternatives that can change the
+claim; a seven-dimensional factorial experiment is not required.
 
-**Why these seven entries.** The inclusion rule is operational: include a
-category when leaving it implicit lets a reader substitute another reasonable
-choice and change the claim or deployment decision. Generator changes the
-answer process; retriever changes the evidence surface; context structure
-changes the presented evidence; scorer changes measurement; human
-calibration anchors interpretation; threshold transfer governs operational
-classification; and cost governs deployment choice. These are practical,
-non-redundant disclosure categories for this audit, not a unique or exhaustive
-taxonomy.
+**Conflicting sources.** Cattan et al., “DRAGged into Conflicts: Detecting
+and Addressing Conflicting Sources in Search-Augmented LLMs,”
+arXiv:2506.08500, 2025, studies contradiction among retrieved sources. Our
+fixed-output result concerns scorer disagreement. These are different
+phenomena, and no contradictory-context experiment was completed.
 
-**Conflicting sources.** We add Arie Cattan et al., “DRAGged into
-Conflicts: Detecting and Addressing Conflicting Sources in Search-Augmented
-LLMs,” arXiv:2506.08500 (2025). That work concerns contradictory information
-among retrieved sources; our result concerns disagreement among scorers on
-fixed outputs. We distinguish them explicitly and do not claim that we
-completed a contradictory-context experiment. If accepted, this distinction
-and citation will be added to the camera-ready.
+The camera-ready will use this order: motivating decision example, claim
+boundary, seven-category reporting contract, plain metric definitions,
+experiment map, strongest controlled audits, bounded probes, practitioner
+protocol, and limitations. These changes make the inclusion criterion,
+metrics, Figure 2, and relation to contradictory-source work explicit before
+the experimental details.

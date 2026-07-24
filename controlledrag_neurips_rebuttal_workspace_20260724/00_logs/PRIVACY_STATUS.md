@@ -1,27 +1,29 @@
 # Privacy Status
 
-Status: `PUBLIC_SAFE_PUSH_EXPLICITLY_AUTHORIZED`
+Status: `PUBLIC_SAFE_MAIN_PUSH_EXPLICITLY_AUTHORIZED`
 
 Authenticated GitHub metadata reports the target repository visibility as
-`PUBLIC`. The latest authoritative Prompt 6 override explicitly authorizes a
-non-force push of sanitized rebuttal material to the dedicated branch despite
-public visibility. This supersedes earlier visibility-only push blocks.
+`PUBLIC`. The latest authoritative final-polish instruction explicitly
+requires a non-force integration and push of the sanitized rebuttal package to
+`main`. This supersedes earlier validation-branch-only and no-main
+instructions.
 
 The authorization does not relax content safety:
 
 - exact confidential review prose and screenshots remain excluded;
-- only sanitized concern paraphrases and public-safe response text may be
-  committed;
-- the external rater’s identity, private contacts, credentials, tokens,
-  environment files, personal absolute paths, local usernames, model weights,
-  caches, checkpoints, and transient outputs remain prohibited;
-- staged and full-workspace privacy/secret scans are required before every
-  commit and push;
-- only `neurips-rebuttal-validation-20260724` may be pushed;
-- force-push and merge to `main` remain prohibited; and
-- no pull request is created while the repository is public.
+- only sanitized concern mappings, public-safe responses, validation reports,
+  and handoff metadata may be committed;
+- external-rater identity, private contacts, credentials, tokens, environment
+  files, personal absolute paths, local usernames, model weights, caches,
+  checkpoints, and transient outputs remain prohibited;
+- full-workspace, staged-diff, and confidential-source-overlap scans are
+  required before commits and pushes;
+- the validation branch must remain intact;
+- force push and history rewriting remain prohibited; and
+- unrelated files and the immutable submitted artifact must not change.
 
-Prompt 6 scan and push results are recorded in
-`07_final_package/PROMPT_06_COMPLETE.md`,
-`07_final_package/GITHUB_REMOTE_HANDOFF.md`, and
-`GITHUB_HANDOFF_INDEX.md`.
+The local review directory and ZIP live outside the Git repository and are
+not tracked.
+
+Final-polish privacy result:
+`PASS_FOR_PUBLIC_SAFE_SANITIZED_MAIN_COMMIT_AND_PUSH`.
