@@ -1,0 +1,7 @@
+panel,metric,estimate,ci_lower,ci_upper,n,valid_bootstrap_samples,n_bootstrap,seed,label_timing
+n99_typical,raw_agreement,0.919191919,0.858585859,0.969696970,99,10000.000000000,10000.000000000,20260824.000000000,pre_adjudication
+n99_typical,unweighted_cohen_kappa,0.773778920,0.612524462,0.905956109,99,10000.000000000,10000.000000000,20260825.000000000,pre_adjudication
+n99_typical,disagreement_count,8.000000000,,,99,,,,pre_adjudication
+n100_disagreement_targeted,raw_agreement,0.880000000,0.819750000,0.940000000,100,10000.000000000,10000.000000000,20260825.000000000,pre_adjudication
+n100_disagreement_targeted,unweighted_cohen_kappa,0.720930233,0.595959596,0.845239394,100,10000.000000000,10000.000000000,20260826.000000000,pre_adjudication
+n100_disagreement_targeted,disagreement_count,12.000000000,,,100,,,,pre_adjudication

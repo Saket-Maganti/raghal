@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "seed": 20260724,
+  "n_bootstrap": 10000,
+  "no_model_inference": true,
+  "no_network_access": true,
+  "python": "3.11.9",
+  "platform": "macOS-26.5.2-arm64-arm-64bit",
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "2.3.3",
+    "scipy": "1.17.1",
+    "scikit_learn": "1.8.0"
+  },
+  "outputs": [
+    "03_existing_analyses/results/input_manifest.csv",
+    "03_existing_analyses/results/human_slice_diagnostics.csv",
+    "03_existing_analyses/results/human_label_distributions.csv",
+    "03_existing_analyses/results/human_agreement_bootstrap.csv",
+    "03_existing_analyses/results/human_metric_verification.csv",
+    "03_existing_analyses/results/scorer_ranking_bootstrap.csv",
+    "03_existing_analyses/results/context_conditioned_comparison.csv",
+    "03_existing_analyses/results/threshold_sensitivity.csv",
+    "03_existing_analyses/results/pareto_frontier.csv",
+    "03_existing_analyses/results/cost_weight_sensitivity.csv",
+    "03_existing_analyses/results/sample_size_coverage.csv",
+    "02_human_eval/HUMAN_EVAL_SAFE_NUMBERS.csv",
+    "03_existing_analyses/NEW_REBUTTAL_SAFE_NUMBERS.csv"
+  ]
+}

@@ -1,0 +1,233 @@
+# Pre-Commit Privacy and Secret Scan
+
+Scope:
+
+`controlledrag_neurips_rebuttal_workspace_20260724/`
+
+## Checks
+
+| Check | Result |
+| --- | --- |
+| Personal absolute-path prefix | 0 matches |
+| Local username / author-name marker used by source path | 0 matches |
+| Email-address pattern | 0 matches |
+| AWS access-key formats | 0 matches |
+| GitHub token formats | 0 matches |
+| OpenAI-style secret-key format | 0 matches |
+| Slack token formats | 0 matches |
+| PEM private-key headers | 0 matches |
+| `.env`, credential, token, PEM, or key filenames | 0 files |
+| Files larger than 5 MB | 0 files |
+| Symlinks | 0 |
+| External rater name or identity | 0; only author-confirmed generic role wording in copied prompts |
+| Verbatim review text | 0; exact reviews were not available |
+
+The original paper-source directory includes an identifying name. Inventory
+paths for that directory were replaced with the sanitized label
+`SUBMITTED_LOCAL_PAPER`.
+
+The remote owner and personal filesystem prefix are redacted from committed
+logs. The public/private visibility result and repository basename remain
+recorded without the owner identity.
+
+Outcome: `PASS_FOR_LOCAL_COMMIT`
+
+Push remains prohibited: `PUSH_BLOCKED_REPOSITORY_PUBLIC`.
+
+## Prompt 02 rescan
+
+Prompt 02 repeated the scan after generating the upgraded ledger, independent
+result JSON, verifier, integrity reports, completion marker, and handoff.
+
+| Check | Result |
+| --- | --- |
+| Personal absolute path or local username | 0 matches |
+| Email-address pattern in new/modified non-prompt files | 0 matches |
+| Common API-key/token/private-key patterns | 0 matches |
+| Credential, `.env`, token, PEM, or key filenames | 0 files |
+| Files larger than 5 MB | 0 files |
+| Symlinks | 0 |
+| Cache directories | 0 |
+| External rater identity | 0; roles remain generic |
+| Files staged outside the rebuttal workspace | 0 |
+
+Prompt 02 outcome: `PASS_FOR_LOCAL_COMMIT`.
+
+## Prompt 03 rescan
+
+Prompt 03 repeated the scan after generating the human-evaluation reports,
+analysis script, fixed-output results, safe-number tables, metric audit,
+completion marker, and handoff.
+
+| Check | Result |
+| --- | --- |
+| Personal absolute path or local username | 0 matches |
+| Email-address pattern in new/modified files | 0 matches |
+| Common API-key/token/private-key patterns | 0 matches |
+| Credential, `.env`, token, PEM, or key filenames | 0 files |
+| Files larger than 5 MB | 0 files |
+| Symlinks | 0 |
+| Cache directories | 0 |
+| External rater identity | 0; only generic confirmed roles are recorded |
+| CSV structure | 14 tables parsed; all rows match header width |
+| Required Prompt 03 files | 14 of 14 present |
+| Files staged outside the rebuttal workspace | 0 |
+
+Prompt 03 outcome: `PASS_FOR_LOCAL_COMMIT`.
+
+## Prompt 04 rescan
+
+Prompt 04 repeated the public-safe scan after generating the clarity package,
+decision protocol, pre-existing branch-push record, completion marker, and
+handoff.
+
+| Check | Result |
+| --- | --- |
+| Personal absolute path or local username | 0 matches |
+| Email-address pattern in new/modified files | 0 matches |
+| Common API-key/token/private-key patterns | 0 matches |
+| Credential, `.env`, token, PEM, or key filenames | 0 files |
+| Files larger than 5 MB | 0 files |
+| Symlinks | 0 |
+| Cache directories | 0 |
+| External rater identity | 0; only the generic confirmed role is recorded |
+| Verbatim confidential review text | 0; exact reviews remain unavailable |
+| Required Prompt 04 files | 9 of 9 present and non-empty |
+| Files staged outside the rebuttal workspace | 0 |
+
+Prompt 04 outcome: `PASS_FOR_PUBLIC_SAFE_COMMIT_AND_PUSH`.
+
+## Prompt 05 rescan
+
+Prompt 05 repeated the public-safe scan after building the optional modern
+judge package and text-free candidate manifests.
+
+| Check | Result |
+| --- | --- |
+| Personal absolute path or local username in generated files | 0 matches |
+| Email-address pattern in generated files | 0 matches |
+| Common API-key/token/private-key patterns | 0 matches |
+| Credential, `.env`, token, PEM, or key files | 0 files |
+| Files larger than 5 MB | 0 files |
+| Symlinks | 0 |
+| Cache, checkpoint, or generated result directories | 0 |
+| External rater identity or private review text | 0 |
+| Raw question/context/answer or human labels in candidate manifests | 0 |
+| Notebook stored outputs | 0 |
+| Named Prompt 05 artifacts and four candidate sizes | All present |
+| Real model/API/Kaggle/Colab execution | 0 |
+| Files staged outside the rebuttal workspace | 0 |
+
+Prompt 05 outcome: `PASS_FOR_PUBLIC_SAFE_COMMIT_AND_PUSH`.
+
+## Prompt 05 repair rescan
+
+The repair scan covered every staged added/modified file after the final
+58-test, Ruff, mypy, schema, notebook, and red-team passes.
+
+| Check | Result |
+| --- | --- |
+| Staged files outside rebuttal workspace | 0 |
+| Candidate manifest changes | 0 |
+| Personal absolute path or local username | 0 matches |
+| Email-address pattern | 0 matches |
+| API/GitHub/AWS/Slack/private-key formats | 0 matches |
+| Credential, `.env`, token, PEM, or key files | 0 |
+| Files larger than 5 MB | 0 |
+| Symlinks | 0 |
+| Cache, model-weight, scratch, checkpoint, or result artifacts | 0 |
+| External-rater identity or confidential review text | 0 |
+| Notebook stored outputs | 0 |
+| Notebook real-run default | `False` |
+| Run-config real-inference default | `false` |
+| Real model/API/Kaggle/Colab execution | 0 |
+| Model loads/downloads | 0 |
+| Real rows scored | 0 |
+
+Prompt 05 repair outcome:
+`PASS_FOR_PUBLIC_SAFE_REPAIR_COMMIT_AND_PUSH`.
+
+## Prompt 06 final-content scan
+
+The scan covered the complete generated workspace, all staged Prompt 6 files,
+and the full candidate branch diff against `main`. The public remote push is
+explicitly authorized by the latest Prompt 6 override; sanitization remains
+mandatory.
+
+| Check | Result |
+| --- | --- |
+| Staged files outside rebuttal workspace | 0 |
+| Candidate branch files outside rebuttal workspace | 0 |
+| Personal absolute paths | 0 matches |
+| Email-address patterns | 0 matches |
+| AWS/GitHub/OpenAI/Slack token formats | 0 matches |
+| PEM private-key headers or generic secret assignments | 0 matches |
+| Credential, `.env`, PEM, or key files | 0 |
+| Symlinks | 0 |
+| Files larger than 5 MB | 0 |
+| Model weights or checkpoint files | 0 |
+| Confidential exact-review source tracked | 0 |
+| Non-citation overlap with confidential source at 10/12/15 words | 0 |
+| Verbatim overlap exception | Verified public Cattan et al. citation only |
+| External-rater identity | 0 |
+| URLs in paste-ready response bodies | 0 |
+| Stale average-precision values in paste-ready text | 0 |
+| Unreproduced `p=0.011` in paste-ready text | 0 |
+| Direct response items answered and fact-checked | 21/21 |
+| Recommended response fields above 10,000 characters | 0 |
+| CSV structural errors | 0 |
+| Markdown table-width errors | 0 |
+| Real model/API/GPU/Kaggle/Colab runs | 0 |
+
+Prompt 06 outcome:
+`PASS_FOR_PUBLIC_SAFE_SANITIZED_CONTENT_COMMIT_AND_PUSH`.
+
+## Prompt 06 receipt rescan
+
+After the content commit was pushed and remotely verified, the receipt rescan
+covered only the completion marker, handoff, remote handoff, handoff index,
+and this scan record.
+
+| Check | Result |
+| --- | --- |
+| Receipt files outside rebuttal workspace | 0 |
+| Personal absolute paths or email addresses | 0 |
+| Credential/token/private-key patterns | 0 |
+| Confidential-source 10/12/15-word overlap | 0 |
+| Content SHA recorded | `2d7699a0a3cf89375f10be8723b6d68d22a6f260` |
+| Content remote ref/API verification | PASS |
+| Force push | Not used |
+| Merge to `main` | Not performed |
+
+Receipt outcome:
+`PASS_FOR_PUBLIC_SAFE_PROMPT_06_RECEIPT_COMMIT_AND_PUSH`.
+
+## Final polish content rescan
+
+The final-polish scan covered the complete rebuttal workspace, every changed
+file, all six extracted paste fields, the confidential-source overlap surface,
+and the local review bundle. The latest authoritative instruction explicitly
+authorizes sanitized non-force integration and push to `main`.
+
+| Check | Result |
+| --- | --- |
+| Changed files outside rebuttal workspace | 0 |
+| Personal absolute paths in changed files | 0 |
+| Email-address patterns | 0 |
+| AWS/GitHub/OpenAI/Slack token formats | 0 |
+| Private-key or generic secret assignments | 0 |
+| Credential, `.env`, PEM, or key files | 0 |
+| Symlinks | 0 |
+| Files larger than 5 MB | 0 |
+| Cache, checkpoint, or model-weight artifacts | 0 |
+| Confidential exact-review source tracked | 0 |
+| Non-citation overlap at 10/12/15 words | 0 / 0 / 0 |
+| Public citation overlap | Cattan et al. citation only |
+| External-rater identity | 0 |
+| URLs or author identity in paste bodies | 0 |
+| Stale or quarantined values in paste bodies | 0 |
+| Local bundle files | 14 public-safe files outside Git |
+| Real model/API/GPU/Kaggle/Colab runs | 0 |
+
+Final-polish content outcome:
+`PASS_FOR_PUBLIC_SAFE_SANITIZED_MAIN_COMMIT_AND_PUSH`.
