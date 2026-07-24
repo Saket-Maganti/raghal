@@ -1,0 +1,11 @@
+analysis,selector,tau,target,estimate,minimum,maximum,range,positive_cells,total_cells
+selected_tau_transfer,pubmedqa,0.400000000,five_target_summary,0.650943800,-0.290908000,1.452374000,1.743282000,4,5
+selected_tau_transfer,naturalqs,0.500000000,five_target_summary,0.448890200,-0.470518000,1.401456000,1.871974000,4,5
+selected_tau_transfer,squad,0.300000000,five_target_summary,0.051920600,-1.714244000,0.864512000,2.578756000,3,5
+selected_tau_transfer,triviaqa,0.400000000,five_target_summary,0.650943800,-0.290908000,1.452374000,1.743282000,4,5
+selected_tau_transfer,hotpotqa,0.300000000,five_target_summary,0.051920600,-1.714244000,0.864512000,2.578756000,3,5
+within_dataset_tau_sensitivity,hotpotqa,,hotpotqa,-0.309566600,-0.470518000,-0.111786000,0.358732000,0,5
+within_dataset_tau_sensitivity,naturalqs,,naturalqs,0.826994200,0.272435000,1.401456000,1.129021000,5,5
+within_dataset_tau_sensitivity,pubmedqa,,pubmedqa,0.072910400,-1.714244000,1.452374000,3.166618000,3,5
+within_dataset_tau_sensitivity,squad,,squad,0.346682400,-0.030361000,0.822675000,0.853036000,4,5
+within_dataset_tau_sensitivity,triviaqa,,triviaqa,0.259363400,-0.026514000,0.463880000,0.490394000,4,5

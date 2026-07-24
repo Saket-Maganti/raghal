@@ -1,0 +1,3 @@
+panel,n_rows,id_column,unique_ids,duplicate_ids,missing_essential_cells,conditions,status
+n99_typical,99,id,99,0,0,baseline:33;hcpc_v1:33;hcpc_v2:33,verified_complete
+n100_disagreement_targeted,100,example_id,100,0,0,baseline:34;hcpc_v1:33;hcpc_v2:33,verified_complete

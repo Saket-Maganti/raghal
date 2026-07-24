@@ -1,0 +1,17 @@
+panel,label_source,label,count,proportion
+n99_typical,rater_a_label,partially_supported,20,0.202020202
+n99_typical,rater_a_label,supported,75,0.757575758
+n99_typical,rater_a_label,unsupported,4,0.040404040
+n99_typical,rater_b_label,partially_supported,14,0.141414141
+n99_typical,rater_b_label,supported,80,0.808080808
+n99_typical,rater_b_label,unsupported,5,0.050505051
+n99_typical,adjudicated_label,partially_supported,16,0.161616162
+n99_typical,adjudicated_label,supported,79,0.797979798
+n99_typical,adjudicated_label,unsupported,4,0.040404040
+n100_disagreement_targeted,human_label_rater1,faithful,74,0.740000000
+n100_disagreement_targeted,human_label_rater1,hallucinated,26,0.260000000
+n100_disagreement_targeted,human_label_rater2,faithful,70,0.700000000
+n100_disagreement_targeted,human_label_rater2,hallucinated,20,0.200000000
+n100_disagreement_targeted,human_label_rater2,unclear,10,0.100000000
+n100_disagreement_targeted,adjudicated_label,faithful,74,0.740000000
+n100_disagreement_targeted,adjudicated_label,hallucinated,26,0.260000000

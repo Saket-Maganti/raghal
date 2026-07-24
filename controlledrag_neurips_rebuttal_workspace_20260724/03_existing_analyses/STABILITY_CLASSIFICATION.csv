@@ -1,0 +1,19 @@
+claim_id,domain,classification,evidence,boundary,rebuttal_use
+human_protocol_two_raters,human_eval,stable,author-confirmed protocol,No unconfirmed qualifications compensation IRB or adjudicator identity,Use bounded protocol wording
+human_n99_agreement,human_eval,stable,"agreement 0.919; kappa 0.774; n=99",Typical slice only,Safe
+human_n100_agreement,human_eval,stable,"agreement 0.880; kappa 0.721; n=100",Disagreement-targeted slice only,Safe
+submitted_n100_average_precision,human_eval,stable,"0.765 / 0.929 / 0.859 under locked sklearn convention",Targeted slice and faithful-positive convention required,Safe
+n99_binary_sensitivity,human_eval,conditional,"83 determinate rows; 16 partial rows excluded; only 4 negatives",Not a primary endpoint or headline,Secondary only
+legacy_deberta_weak_alignment,human_eval,stable,Weak or negative slice-specific correlations on both panels,Do not generalize beyond panels,Safe with slice qualifier
+ragas_vs_second_ordering,human_eval,conditional,"RAGAS higher on n=99; direct order unresolved on n=100",Sampling design changes ranking,Do not claim universal best scorer
+legacy_nli_answer_only,metric_audit,stable,Submitted code does not consume context in default zero-shot calls,Historical values remain valid but name must change,Correct wording
+context_calling_convention_effect,existing_analysis,conditional,"paired contrast differences -0.293 and -0.127",Fixed 600-row re-encoding subset; not fresh generation,Safe as sensitivity
+threshold_transfer,existing_analysis,conditional,Mixed positive/negative target cells across selected taus,Five datasets and fixed grid only,Do not claim universal transfer
+hotpot_pareto,existing_analysis,conditional,CRAG point-estimate dominance over two alternatives,One dataset and no dominance test,Bounded deployment finding
+squad_pareto,existing_analysis,conditional,All three systems on three-objective point-estimate frontier,One dataset and selected objectives,Bounded deployment finding
+cost_weight_winner,existing_analysis,conditional,SQuAD winner changes across lambda and query volume,Illustrative utility weights,Report sensitivity only
+matched_binary_p_0011,statistics,unresolved,Claimed value not reproduced,Exact two-sided 0.013531 requires convention,Exclude 0.011
+immutable_prespec_date,provenance,unresolved,No pre-result immutable commit located,Historical internal log is insufficient,Do not claim
+universal_artifact_completeness,provenance,unresolved,Submitted artifact lacks many full per-query inputs,Recovered inputs must be labeled,Do not claim
+exact_review_mapping,reviews,unresolved,Exact reviews and meta-review unavailable,No reviewer attribution can be reconstructed,Requires confidential source
+compensation_irb_qualifications,human_eval,unresolved,No confirming evidence,Do not infer,Exclude

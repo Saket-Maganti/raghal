@@ -50,5 +50,30 @@ remote owner are omitted.
 22. Created the Prompt 02 integrity gate, unsafe-evidence register,
     provenance report, completion marker, and handoff.
 
+## Prompt 03
+
+23. Confirmed the Prompt 02 P0 gate, handoff, AUPRC lock, dedicated branch,
+    clean starting state, and continuing public-repository push block.
+24. Verified row counts, ID uniqueness, load-bearing missingness, independent
+    rater labels, adjudicated labels, disagreements, agreement, kappa, and
+    label distributions separately for the `n=99` and `n=100` panels.
+25. Joined the provenance-approved recovered `n=99` scorer template to the
+    submitted adjudication table by exact unique ID and reproduced submitted
+    ordinal scorer correlations.
+26. Reproduced submitted `n=100` correlations, AUROC, and sklearn average
+    precision from its authoritative 100-row table.
+27. Generated 10,000-resample agreement, secondary determinate-binary,
+    scorer-ranking, mean-contrast, and contrast-difference intervals with
+    recorded seeds.
+28. Audited the legacy DeBERTa proxy, second NLI proxy, custom RAGAS-style
+    judge, context-conditioned scorers, agreement, kappa, correlations,
+    binary metrics, thresholds, Pareto rule, and utility formula.
+29. Computed fixed-output context-calling, threshold-transfer, Pareto,
+    cost-weight, and sample-size/coverage summaries.
+30. Hashed all Prompt 03 inputs and recorded runtime/package versions without
+    storing personal absolute paths.
+31. Created the human reports, safe-number tables, analysis summary,
+    limitations, stability classification, completion marker, and handoff.
+
 No command executed a model, external API, model inference, dataset download,
 or scientific regeneration.

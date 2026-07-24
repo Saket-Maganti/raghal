@@ -1,0 +1,8 @@
+panel,rows,coverage,role,limitation
+human_typical,99,33 rows per condition,typical-slice human calibration,small ordinal panel; only 4 unsupported adjudicated labels
+human_disagreement_targeted,100,34 baseline; 33 HCPC-v1; 33 HCPC-v2,stress-test scorer disagreement,selection is disagreement-targeted and not prevalence-representative
+fixed_multimetric_main,7500,fixed existing outputs,main scorer and condition summaries,historical answer-only NLI proxies
+matched_control,2500,fixed matched query control,paired condition comparison,do not use stale matched-binary p=0.011
+context_conditioned_nli,600,200 per condition; 194 complete baseline/HCPC-v1 pairs,fixed-context re-encoding sensitivity,not fresh retrieval or generation; subset only
+threshold_transfer,25,5 datasets x 5 tau values; 5 selected transfer rules,threshold sensitivity and transfer,descriptive fixed-output grid
+faith_latency_indexing,1200,2 datasets x 3 systems x 200 rows,deployment trade-off sensitivity,two datasets; utility weights are illustrative
