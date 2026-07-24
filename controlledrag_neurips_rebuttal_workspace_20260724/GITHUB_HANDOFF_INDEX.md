@@ -10,7 +10,7 @@
 | 05 repair — Judge hardening and validity gates | `PROMPT_05_REPAIRED_PREPARED_NOT_EXECUTED` | `04_modern_judge/PROMPT_05_REPAIR_COMPLETE.md` | `04_modern_judge/PROMPT_05_REPAIR_HANDOFF.md` | `1205339ba8d856f48c7f1bfa6e256d47ac192a1c` | `origin/neurips-rebuttal-validation-20260724`: content success; remotely verified |
 | Pre-06 — Exact-review ingestion | Complete; sanitized 5/5 reviews and current/initial AC | `06_reviewer_responses/REVIEW_INGESTION_COMPLETE.md` | `06_reviewer_responses/REVIEW_INGESTION_HANDOFF.md` | `2617863d6af05335cf3c72e16c4e63e68ecb535e` | `origin/neurips-rebuttal-validation-20260724`: success; remotely verified |
 | 06 — Rebuttal red-team/final handoff | `READY_FOR_PROFESSOR_REVIEW` | `07_final_package/PROMPT_06_COMPLETE.md` | `07_final_package/PROMPT_06_HANDOFF.md` | `2d7699a0a3cf89375f10be8723b6d68d22a6f260` | `origin/neurips-rebuttal-validation-20260724`: content success; remotely verified |
-| Final polish — reviewer/AC package and main integration | `FINAL_POLISH_COMPLETE` | `07_final_package/FINAL_POLISH_COMPLETE.md` | `07_final_package/FINAL_POLISH_HANDOFF.md` | `PENDING_CONTENT_COMMIT` | Authorized target: `origin/main`; pending integration receipt |
+| Final polish — reviewer/AC package and main integration | `FINAL_POLISH_COMPLETE`; `MAIN_REMOTE_VERIFIED`; `LOCAL_REVIEW_BUNDLE_READY` | `07_final_package/FINAL_POLISH_COMPLETE.md` | `07_final_package/FINAL_POLISH_HANDOFF.md` | `4ed74fd9f4a889a21724b004b2761f829334ac3a` | Integration `688be080b06c8cf02e61c9730934c28866a6a7b6` pushed and verified; receipt `THIS_COMMIT` |
 
 The Prompt 01 content commit is recorded without rewriting it. See
 `01_provenance/COMMIT_RECEIPT.md`.
@@ -60,12 +60,19 @@ GitHub commit API before this receipt update.
 - Backup refs:
   `backup/main-before-final-rebuttal-polish-20260724` and
   `backup/validation-before-final-rebuttal-polish-20260724`
-- Polish content commit: `PENDING_CONTENT_COMMIT`
-- Main integration commit: `PENDING_MAIN_INTEGRATION`
+- Polish content commit:
+  `4ed74fd9f4a889a21724b004b2761f829334ac3a`
+- Main integration commit:
+  `688be080b06c8cf02e61c9730934c28866a6a7b6`
 - Main receipt commit: `THIS_COMMIT`
-- Force push: prohibited
-- Validation branch: must remain intact at
+- Remote integration verification:
+  `SUCCESS_LOCAL_TRACKING_LSREMOTE_GITHUB_API_MATCH`
+- Force push: not used
+- Validation branch preserved at
   `1c13ccbec74cf596832b11db1eed72a927e17268`
 - Local review bundle:
   `CONTROLLEDRAG_FINAL_REBUTTAL_LOCAL/` and
   `CONTROLLEDRAG_FINAL_REBUTTAL_LOCAL.zip` outside Git
+- Repository visibility: `PUBLIC`
+- Full merge files outside rebuttal workspace: 0
+- Confidential exact-review source on `main`: 0
