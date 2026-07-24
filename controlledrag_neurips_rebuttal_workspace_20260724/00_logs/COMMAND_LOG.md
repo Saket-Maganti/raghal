@@ -98,5 +98,40 @@ remote owner are omitted.
 38. Verified the content commit through the remote branch ref, a fetched
     tracking ref, and the GitHub commit API before writing the receipt.
 
+## Prompt 05
+
+39. Confirmed the clean synchronized dedicated branch, GitHub authentication,
+    public repository visibility, and Prompt 05 public-safe push override.
+40. Read the P0 gate and Prompt 03/04 handoffs; retained all quarantined
+    exclusions and the optional-judge independence rule.
+41. Verified the fixed 600-row source hash and structure, then generated
+    nested, text-free 300/400/500/600 candidate manifests.
+42. Built the frozen plan, prompt, schema, config, provider adapters, guarded
+    Kaggle notebook, synthetic test, post-run analysis, ZIP builder, and
+    execution/ingestion runbooks.
+43. Compiled all Python scripts, validated notebook JSON/code cells and JSON
+    Schema, regenerated manifests byte-for-byte, and ran mock adapter,
+    routing-rejection, post-analysis, and ZIP tests.
+44. A first combined test command was rejected before execution because its
+    cleanup used a prohibited recursive removal form. The tests were rerun in
+    an automatically managed temporary directory; generated Python cache was
+    moved out of the workspace.
+45. Executed every notebook code cell in its default false-gated state; only
+    the synthetic mock suite ran, and the real-inference flag remained false.
+46. A required-file validation loop treated a space-separated filename
+    scalar as one path under zsh and returned a false missing-file result.
+    Reran it with an explicit zsh array.
+47. The first staged diff check flagged CSV CRLF terminators as trailing
+    whitespace. Updated the manifest writer to canonical LF, regenerated all
+    four candidates, and repeated hash/determinism checks.
+48. The final staged review found that the notebook loaded but did not render
+    the committed prompt template. Replaced the ad hoc prompt with exact
+    placeholder substitution, added source/config and candidate-hash gates,
+    and reran the false-gated notebook plus synthetic suite successfully.
+49. A final manifest audit initially expected descriptive header aliases
+    rather than the committed `candidate_position` and `seed` fields. Corrected
+    the checker assumption; all staged hashes, counts, headers, uniqueness,
+    and strict nestedness checks then passed.
+
 No command executed a model, external API, model inference, dataset download,
 or scientific regeneration.

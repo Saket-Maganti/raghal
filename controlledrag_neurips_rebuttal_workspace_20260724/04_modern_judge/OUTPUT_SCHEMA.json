@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "controlledrag-modern-judge-output-v1",
+  "title": "ControlledRAG modern-judge row result",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "run_id",
+    "row_id",
+    "input_digest",
+    "prompt_digest",
+    "status",
+    "requested_provider",
+    "requested_model",
+    "returned_model",
+    "x_routed_via",
+    "x_fallback_attempts",
+    "attempt",
+    "raw_output",
+    "parsed_output",
+    "error",
+    "started_at_utc",
+    "finished_at_utc"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "run_id": {"type": "string", "minLength": 1},
+    "row_id": {"type": "string", "pattern": "^crj_[0-9a-f]{24}$"},
+    "input_digest": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "prompt_digest": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "status": {
+      "enum": ["ok", "parse_error", "provider_error", "routing_rejected"]
+    },
+    "requested_provider": {"type": "string", "minLength": 1},
+    "requested_model": {"type": "string", "minLength": 1, "not": {"const": "auto"}},
+    "returned_model": {"type": "string"},
+    "x_routed_via": {"type": "string"},
+    "x_fallback_attempts": {"type": "integer", "minimum": 0},
+    "attempt": {"type": "integer", "minimum": 1},
+    "raw_output": {"type": "string"},
+    "parsed_output": {
+      "oneOf": [
+        {"type": "null"},
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["label", "score", "reason"],
+          "properties": {
+            "label": {
+              "enum": ["supported", "partially_supported", "unsupported"]
+            },
+            "score": {"type": "number", "minimum": 0.0, "maximum": 1.0},
+            "reason": {"type": "string", "minLength": 1}
+          }
+        }
+      ]
+    },
+    "error": {"type": "string"},
+    "started_at_utc": {"type": "string", "format": "date-time"},
+    "finished_at_utc": {"type": "string", "format": "date-time"}
+  }
+}
