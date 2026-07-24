@@ -9,7 +9,7 @@
   `rebuttal-final-polish-main-handoff-20260724`
 - Force push: prohibited
 - Pull request: not requested unless direct push is blocked by protection
-- Validation branch preservation: required
+- Validation branch preservation: confirmed
 
 ## Final polish status
 
@@ -18,11 +18,19 @@
 - Modern judge: `PROMPT_05_REPAIRED_PREPARED_NOT_EXECUTED`
 - Privacy:
   `PASS_FOR_PUBLIC_SAFE_SANITIZED_MAIN_COMMIT_AND_PUSH`
-- Polish content commit: `PENDING_CONTENT_COMMIT`
-- Main integration commit: `PENDING_MAIN_INTEGRATION`
+- Polish content commit:
+  `4ed74fd9f4a889a21724b004b2761f829334ac3a`
+- Main integration commit:
+  `688be080b06c8cf02e61c9730934c28866a6a7b6`
 - Main receipt commit: `THIS_COMMIT`
-- Remote `main` verification: `PENDING_FIRST_MAIN_PUSH`
+- Remote integration verification:
+  `SUCCESS_LOCAL_TRACKING_LSREMOTE_GITHUB_API_MATCH`
+- Remote `main` after this receipt: `THIS_COMMIT`
+- Validation branch:
+  `1c13ccbec74cf596832b11db1eed72a927e17268`
 - Force push used: no
+- Main files outside rebuttal workspace: zero
+- Confidential exact-review source on `main`: absent
 
 ## Major final paths
 
@@ -50,6 +58,8 @@ Base: `controlledrag_neurips_rebuttal_workspace_20260724/`
 - Location: outside this Git repository, inside the open project folder
 - Tracking: prohibited
 - Confidential review source: excluded
+- Copied files: 13 plus this local README
+- SHA-256 manifest: verified
 
 ## Public-safety boundary
 

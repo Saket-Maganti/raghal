@@ -23,8 +23,8 @@
 | Response mechanics | No links; no revised paper upload; camera-ready changes conditional on acceptance |
 | Scientific red team | Pass with human checks |
 | Privacy/secret scan | Pass for public-safe sanitized commit and push |
-| Local review bundle | Prepared outside Git; final manifest refresh required after receipt |
-| Main integration | Authorized; pending final Git receipt |
+| Local review bundle | `LOCAL_REVIEW_BUNDLE_READY`; 14 files outside Git; SHA-256 manifest verified |
+| Main integration | `MAIN_REMOTE_VERIFIED`; receipt commit is `THIS_COMMIT` |
 
 ## Submission boundary
 
@@ -40,3 +40,22 @@ modern-judge result.
 
 Final recommendation:
 `SAFE_TO_SUBMIT_AFTER_PROFESSOR_AND_AUTHOR_APPROVAL`.
+
+## Final Git receipt
+
+- Polish content commit:
+  `4ed74fd9f4a889a21724b004b2761f829334ac3a`
+- Main integration commit:
+  `688be080b06c8cf02e61c9730934c28866a6a7b6`
+- Main receipt commit: `THIS_COMMIT`
+- Integration verification: local `main`, fetched tracking ref, `ls-remote`,
+  and GitHub commit API matched.
+- Validation branch preserved:
+  `1c13ccbec74cf596832b11db1eed72a927e17268`
+- Force push: not used.
+
+Completion markers:
+
+- `FINAL_POLISH_COMPLETE`
+- `MAIN_REMOTE_VERIFIED`
+- `LOCAL_REVIEW_BUNDLE_READY`

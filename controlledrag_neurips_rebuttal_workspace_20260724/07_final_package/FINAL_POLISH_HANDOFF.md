@@ -17,19 +17,27 @@
 - Standalone fields and paste package: synchronized
 - Official per-review character limit: passed
 - Discussion-period response bank: created
-- Local review bundle: `CONTROLLEDRAG_FINAL_REBUTTAL_LOCAL/`
+- Local review bundle: `CONTROLLEDRAG_FINAL_REBUTTAL_LOCAL/` outside Git
 - Local ZIP: `CONTROLLEDRAG_FINAL_REBUTTAL_LOCAL.zip`
-- Local bundle tracking: prohibited
+- Local bundle files: 14; 13 copied files have SHA-256 manifest entries
+- Local bundle tracking: no
 
 ## Git receipt
 
-- Polish content commit: `PENDING_CONTENT_COMMIT`
-- Main integration commit: `PENDING_MAIN_INTEGRATION`
+- Polish content commit:
+  `4ed74fd9f4a889a21724b004b2761f829334ac3a`
+- Main integration commit:
+  `688be080b06c8cf02e61c9730934c28866a6a7b6`
 - Main receipt commit: `THIS_COMMIT`
-- Remote `main`: `PENDING_FIRST_MAIN_PUSH`
-- Validation branch: must remain at
+- Remote integration verification:
+  `SUCCESS_LOCAL_TRACKING_LSREMOTE_GITHUB_API_MATCH`
+- Remote `main` after this receipt: `THIS_COMMIT`
+- Validation branch preserved at
   `1c13ccbec74cf596832b11db1eed72a927e17268`
-- Force push: prohibited
+- Repository visibility: `PUBLIC`
+- Force push: not used
+- Full merge files outside the rebuttal workspace: 0
+- Confidential exact-review source on `main`: 0
 
 ## Remaining human decisions
 
