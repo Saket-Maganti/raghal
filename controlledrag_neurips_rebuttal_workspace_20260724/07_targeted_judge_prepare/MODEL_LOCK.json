@@ -1,0 +1,15 @@
+{
+  "compute_dtype": "float16",
+  "decoding": {
+    "do_sample": false,
+    "max_new_tokens": 96,
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "use_cache": true
+  },
+  "double_quant": true,
+  "model_id": "Qwen/Qwen2.5-7B-Instruct",
+  "quantization": "bitsandbytes_nf4_4bit",
+  "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "trust_remote_code": false
+}
