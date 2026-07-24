@@ -10,4 +10,13 @@
 - No real inference, API judge call, or model-weight download occurred.
 - Return `CONTROLLEDRAG_TARGETED_JUDGE_OUTPUT.zip` for Prompt B.
 
-Git receipts: `PENDING_GIT_RECEIPTS`.
+Git receipts:
+
+- content: `cd1ac9083a081374f4e063a89c7bb382f8123f6c`;
+- main integration: `95853923005e42e43038fd0dc1258b0f46b64a63`;
+- receipt: `THIS_COMMIT`;
+- remote verification:
+  `SUCCESS_LOCAL_TRACKING_LSREMOTE_GITHUB_API_MATCH`;
+- force push: not used;
+- preparation branch preserved:
+  `targeted-modern-judge-prepare-20260724`.
