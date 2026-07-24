@@ -1,0 +1,10 @@
+response_id,file,version,characters,words,official_limit,remaining,status
+current_initial_ac,06_reviewer_responses/META_REVIEW_RESPONSE.md,A,3144,425,10000,6856,PASS
+ac_synthesis_internal,06_reviewer_responses/AC_SYNTHESIS.md,A,3047,388,10000,6953,PASS
+uqxN,06_reviewer_responses/REVIEWER_uqxN_RESPONSE.md,A,1795,253,10000,8205,PASS
+uqxN_optional_modern_judge,06_reviewer_responses/REVIEWER_uqxN_RESPONSE.md,B_TEMPLATE_ONLY,345,47,10000,9655,DO_NOT_USE_UNEXECUTED
+wXNA,06_reviewer_responses/REVIEWER_wXNA_RESPONSE.md,A,1899,265,10000,8101,PASS
+diyB,06_reviewer_responses/REVIEWER_diyB_RESPONSE.md,A,2047,278,10000,7953,PASS
+d61o,06_reviewer_responses/REVIEWER_d61o_RESPONSE.md,A,1732,235,10000,8268,PASS
+wh9X,06_reviewer_responses/REVIEWER_wh9X_RESPONSE.md,A,2602,346,10000,7398,PASS
+all_six_paste_fields,07_final_package/FINAL_OPENREVIEW_PASTE_PACKAGE.md,A_FIELDS_SUM,13219,1802,,,INFORMATIONAL_FIELDS_PASTED_SEPARATELY

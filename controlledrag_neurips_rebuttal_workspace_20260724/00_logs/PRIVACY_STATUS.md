@@ -1,20 +1,27 @@
 # Privacy Status
 
-Status: `PUSH_BLOCKED_REPOSITORY_PUBLIC`
+Status: `PUBLIC_SAFE_PUSH_EXPLICITLY_AUTHORIZED`
 
-Authenticated GitHub CLI metadata reports the target repository visibility as
-`PUBLIC`. Under the prompt's privacy rules:
+Authenticated GitHub metadata reports the target repository visibility as
+`PUBLIC`. The latest authoritative Prompt 6 override explicitly authorizes a
+non-force push of sanitized rebuttal material to the dedicated branch despite
+public visibility. This supersedes earlier visibility-only push blocks.
 
-- no rebuttal material may be pushed;
-- exact confidential review text may not be committed;
-- reviewer concerns must be stored only as sanitized paraphrases;
-- branch work may be committed locally;
-- no remote branch URL will be created.
+The authorization does not relax content safety:
 
-The remote owner is redacted from committed logs. No external rater identity,
-personal absolute path, local username, credential, token, or environment file
-may enter the commit.
+- exact confidential review prose and screenshots remain excluded;
+- only sanitized concern paraphrases and public-safe response text may be
+  committed;
+- the external rater’s identity, private contacts, credentials, tokens,
+  environment files, personal absolute paths, local usernames, model weights,
+  caches, checkpoints, and transient outputs remain prohibited;
+- staged and full-workspace privacy/secret scans are required before every
+  commit and push;
+- only `neurips-rebuttal-validation-20260724` may be pushed;
+- force-push and merge to `main` remain prohibited; and
+- no pull request is created while the repository is public.
 
-This status remains in force unless a later authenticated check establishes a
-different repository or a private remote specifically authorized for the
-rebuttal.
+Prompt 6 scan and push results are recorded in
+`07_final_package/PROMPT_06_COMPLETE.md`,
+`07_final_package/GITHUB_REMOTE_HANDOFF.md`, and
+`GITHUB_HANDOFF_INDEX.md`.
