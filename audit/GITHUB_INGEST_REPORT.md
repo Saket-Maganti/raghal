@@ -17,6 +17,21 @@
 - Remote visibility: public
 - Authenticated permission: admin
 - Remote state observed before ingest: empty repository
-- Publication status: pending commit, push, tag, and remote verification
+- Branch: `main`
+- Snapshot commit: `035160fe0dc0c1a32f57c87e47f743243dd7b832`
+- Snapshot push: verified against `refs/heads/main`
+- Remote blob count at snapshot commit: 2,213
+- Remote blob bytes at snapshot commit: 155,422,145
+- Remote recursive tree: accessible and not truncated
+- Annotated tag: `pre-rebuttal-baseline-2026-07-24`
+- Final documentation commit: the commit containing this report
+- Publication status: verified
 
-This report is updated after publication with the verified branch, commit, tag, file count, and remote accessibility.
+## Verification
+
+- Documented lightweight workflow: pass
+- Total bounded checks: 20 pass, 4 fail, 0 blocked
+- GitHub hard-limit violations: 0
+- Credential findings staged: 0
+- Nested `.git` paths staged: 0
+- Original source directories modified: no
