@@ -1,0 +1,10 @@
+diagnostic,label,value,detail
+leave_one_pair_out_min,post-hoc diagnostic,10.15625,all 193 leave-one-pair-out estimates remain positive
+leave_one_pair_out_max,post-hoc diagnostic,11.458333333333334,no row identity published
+maximum_absolute_influence,post-hoc diagnostic,0.8365716753022454,no single pair determines the conclusion
+paired_sign_flip_p,post-hoc diagnostic,0.000039999800000999996,200000 Monte Carlo draws with seed 20260724
+invalid_output_worst_case_lower,post-hoc diagnostic,10.309278350515465,194-pair bounded sensitivity without changing the primary result
+invalid_output_worst_case_upper,post-hoc diagnostic,10.824742268041238,194-pair bounded sensitivity without imputation into the primary result
+positive_pair_effects,post-hoc diagnostic,59,context contrast minus answer-only contrast
+zero_pair_effects,post-hoc diagnostic,113,context contrast minus answer-only contrast
+negative_pair_effects,post-hoc diagnostic,21,context contrast minus answer-only contrast

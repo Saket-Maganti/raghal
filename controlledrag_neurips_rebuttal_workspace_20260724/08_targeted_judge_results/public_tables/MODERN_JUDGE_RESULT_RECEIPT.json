@@ -1,0 +1,42 @@
+{
+  "analysis_population": {
+    "common_complete_main_pairs": 193,
+    "disagreement_diagnostic_rows": 72,
+    "preregistered_primary_pairs": 194,
+    "typical_rows": 83
+  },
+  "inclusion": "STRONG_INCLUSION_GATE_PASS",
+  "method": {
+    "bootstrap_interval": "percentile_95",
+    "bootstrap_replicates": 10000,
+    "point_estimate": "direct_observed_difference",
+    "seed": 20260724
+  },
+  "model": {
+    "compute_dtype": "float16",
+    "double_quantization": true,
+    "id": "Qwen/Qwen2.5-7B-Instruct",
+    "quantization": "bitsandbytes NF4 4-bit",
+    "revision": "a09a35458c702b33eeacc393d103063234e8bc28"
+  },
+  "repair": {
+    "invalid_outputs_repaired_or_imputed": false,
+    "kind": "decoder_only_left_padding_only",
+    "scientific_changes": []
+  },
+  "status": "INDEPENDENT_RECOMPUTATION_COMPLETE",
+  "validation": {
+    "differential_missingness": 0.0078125,
+    "duplicate_keys": 0,
+    "invalid_categories": {
+      "threshold_inconsistency": 3
+    },
+    "invalid_outputs": 3,
+    "missing_outputs": 0,
+    "received_outputs": 1510,
+    "requested_outputs": 1510,
+    "unexpected_outputs": 0,
+    "valid_output_rate": 0.9980132450331126,
+    "valid_outputs": 1507
+  }
+}
