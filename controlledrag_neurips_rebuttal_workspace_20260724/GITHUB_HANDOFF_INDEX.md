@@ -12,6 +12,7 @@
 | 06 — Rebuttal red-team/final handoff | `READY_FOR_PROFESSOR_REVIEW` | `07_final_package/PROMPT_06_COMPLETE.md` | `07_final_package/PROMPT_06_HANDOFF.md` | `2d7699a0a3cf89375f10be8723b6d68d22a6f260` | `origin/neurips-rebuttal-validation-20260724`: content success; remotely verified |
 | Final polish — reviewer/AC package and main integration | `FINAL_POLISH_COMPLETE`; `MAIN_REMOTE_VERIFIED`; `LOCAL_REVIEW_BUNDLE_READY` | `07_final_package/FINAL_POLISH_COMPLETE.md` | `07_final_package/FINAL_POLISH_HANDOFF.md` | `4ed74fd9f4a889a21724b004b2761f829334ac3a` | Integration `688be080b06c8cf02e61c9730934c28866a6a7b6` pushed and verified; receipt `THIS_COMMIT` |
 | Prompt A — Targeted modern-judge preparation | `READY_FOR_TARGETED_KAGGLE_EXECUTION`; `MAIN_PANEL_WITH_ONE_VALID_HUMAN_SLICE`; `PREPARED_NOT_EXECUTED` | `07_targeted_judge_prepare/PROMPT_A_COMPLETE.md` | `07_targeted_judge_prepare/PROMPT_A_HANDOFF.md` | `cd1ac9083a081374f4e063a89c7bb382f8123f6c` | Main integration `95853923005e42e43038fd0dc1258b0f46b64a63` pushed and verified; receipt `THIS_COMMIT` |
+| Prompt B — Targeted-judge validation, artifact repair, and rebuttal | `PROMPT_B_BLOCKED`; numerical audit passes; repair ZIP and mirror refresh outstanding | `08_targeted_judge_results/PROMPT_B_COMPLETE.md` | `08_targeted_judge_results/PROMPT_B_HANDOFF.md` | Results `b444062f0fbc4d7bc306c26a6f7d58bd8f8c8720`; rebuttal `e98a3132fb0eea2f52fb1db7caf8aa32d24b82e6` | Main integration `473deffb72c5f65ddb268eb84567bc9780141cb5` verified; receipt `THIS_COMMIT` |
 
 The Prompt 01 content commit is recorded without rewriting it. See
 `01_provenance/COMMIT_RECEIPT.md`.
@@ -95,3 +96,32 @@ GitHub commit API before this receipt update.
   scored: zero
 - Scientific support class:
   `MAIN_PANEL_WITH_ONE_VALID_HUMAN_SLICE`
+
+## Prompt B targeted-judge validation and final package
+
+- Results content commit:
+  `b444062f0fbc4d7bc306c26a6f7d58bd8f8c8720`
+- Rebuttal and professor-pack commit:
+  `e98a3132fb0eea2f52fb1db7caf8aa32d24b82e6`
+- Main integration commit:
+  `473deffb72c5f65ddb268eb84567bc9780141cb5`
+- Main receipt commit: `THIS_COMMIT`
+- Remote integration verification:
+  `SUCCESS_LOCAL_TRACKING_LSREMOTE_GITHUB_API_MATCH`
+- Force push: not used
+- Prompt B branch preserved:
+  `neurips-rebuttal-prompt-b-20260725`
+- Source artifact integration:
+  `d26b29ee810c289e44233881f78364656f3d0612`
+- Source artifact receipt:
+  `37b3520f035e9b22ddbb606b4c5027abd88ee79a`
+- Preferred package:
+  `09_final_rebuttal_with_targeted_results/with_results/`
+- Fallback package:
+  `09_final_rebuttal_with_targeted_results/fallback_no_new_results/`
+- Recommended while blocked: fallback
+- Outstanding blockers:
+  `REPAIR_ZIP_NOT_LOCATED_CROSS_ZIP_IDENTITY_UNVERIFIED` and
+  `BLOCKED_BY_ANONYMOUS_MIRROR_REFRESH`
+- Professor approval, rendering review, and OpenReview submission: manual and
+  outstanding
