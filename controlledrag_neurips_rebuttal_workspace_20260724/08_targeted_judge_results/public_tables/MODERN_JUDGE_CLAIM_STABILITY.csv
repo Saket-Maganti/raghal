@@ -1,0 +1,7 @@
+claim,classification,evidence,forbidden_interpretation
+system_ordering_across_interfaces,Stable,both paired contrasts are positive,modern sign reversal
+effect_magnitude_across_interfaces,Conditional,difference in contrasts is 10.6218 with CI excluding zero,interface does not matter
+human_alignment_typical,Supported_with_scope,context-conditioned AP and Spearman are higher on 83 rows,universal superiority
+human_alignment_disagreement,Diagnostic_same_direction,context-conditioned AP and Spearman are higher on 72 targeted rows,confirmatory broad validation
+threshold_portability,Conditional,existing submitted evidence and not retested here,modern judge resolves threshold transfer
+quality_cost_decision,Conditional,existing submitted evidence and not retested here,one universal best system

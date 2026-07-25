@@ -1,0 +1,12 @@
+{
+  "artifact": "ControlledRAG reviewer-facing aggregate artifact",
+  "source_base_commit": "4aca9ae3442454d40effae4354b87e18a3de42c3",
+  "cleanup_commit": "62027ae80e32126110ffe3a70a03779154d9e412",
+  "source_main_integration_commit": "d26b29ee810c289e44233881f78364656f3d0612",
+  "source_receipt_commit": "37b3520f035e9b22ddbb606b4c5027abd88ee79a",
+  "source_remote_main_verified": true,
+  "release_gate_count": 13,
+  "mathematical_test_count": 19,
+  "anonymous_mirror_status": "refresh_required_by_user",
+  "anonymous_mirror_readme_matches_source_main": false
+}
